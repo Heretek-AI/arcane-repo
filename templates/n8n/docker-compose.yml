@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    hostname: n8n
+    ports:
+      - "${N8N_PORT:-5678}:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    restart: unless-stopped
+    environment:
+      # ── Encryption Key (CRITICAL) ────────────────────────────────────
+      # N8N_ENCRYPTION_KEY encrypts all stored credentials (database
+      # connections, API keys, OAuth tokens, etc.). If this value changes
+      # after credentials have been saved, they become permanently
+      # unrecoverable. Set this to a strong, fixed value before first run
+      # and never change it.
+      - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY:?N8N_ENCRYPTION_KEY is required — see .env.example}
+      # ── Webhook Configuration ─────────────────────────────────────────
+      - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_WEBHOOK_URL=${N8N_WEBHOOK_URL:-}
+      # ── Basic Auth ────────────────────────────────────────────────────
+      - N8N_BASIC_AUTH_ACTIVE=${N8N_BASIC_AUTH_ACTIVE:-false}
+      - N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:-}
+      # ── Optional: External Database ───────────────────────────────────
+      # To persist workflows, credentials, and execution data outside
+      # the container volume, uncomment and configure a PostgreSQL URL:
+      # DB_TYPE=postgresdb
+      # DB_POSTGRESDB_DATABASE=n8n
+      # DB_POSTGRESDB_HOST=postgres
+      # DB_POSTGRESDB_PORT=5432
+      # DB_POSTGRESDB_USER=n8n
+      # DB_POSTGRESDB_PASSWORD=your-password
+
+volumes:
+  n8n_data:
+    name: n8n_data

@@ -1,0 +1,8 @@
+{
+  "id": "n8n",
+  "name": "n8n",
+  "description": "Fair-code workflow automation platform — connect apps, APIs, and services with drag-and-drop logic, 400+ integrations, and customizable AI agents",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["automation", "workflow", "low-code"]
+}

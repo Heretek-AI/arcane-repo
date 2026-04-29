@@ -1,0 +1,8 @@
+{
+  "id": "dify",
+  "name": "Dify",
+  "description": "Open-source LLM application development platform — build AI apps with visual workflows, RAG pipelines, agent capabilities, and model management",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "llm", "platform", "low-code"]
+}

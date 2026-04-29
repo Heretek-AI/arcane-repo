@@ -1,0 +1,99 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: dify-postgres
+    hostname: dify-postgres
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${POSTGRES_DB:-dify}
+      - POSTGRES_USER=${POSTGRES_USER:-dify}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER:-dify}", "-d", "${POSTGRES_DB:-dify}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: dify-redis
+    hostname: dify-redis
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    image: langgenius/dify-api:latest
+    container_name: dify-api
+    hostname: dify-api
+    ports:
+      - "${DIFY_PORT:-5001}:5001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    environment:
+      # ── Core Configuration ───────────────────────────────────────────
+      - SECRET_KEY=${SECRET_KEY:?SECRET_KEY is required — see .env.example}
+      - MODE=api
+      # ── Database ─────────────────────────────────────────────────────
+      - DB_USERNAME=${POSTGRES_USER:-dify}
+      - DB_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
+      - DB_HOST=dify-postgres
+      - DB_PORT=${POSTGRES_PORT:-5432}
+      - DB_DATABASE=${POSTGRES_DB:-dify}
+      # ── Redis ────────────────────────────────────────────────────────
+      - REDIS_HOST=dify-redis
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - REDIS_PASSWORD=
+      # ── Debug / Initial Setup ────────────────────────────────────────
+      - DEBUG=${DIFY_DEBUG:-false}
+      - INIT_PASSWORD=${INIT_PASSWORD:-}
+
+  worker:
+    image: langgenius/dify-api:latest
+    container_name: dify-worker
+    hostname: dify-worker
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    environment:
+      # ── Core Configuration ───────────────────────────────────────────
+      - SECRET_KEY=${SECRET_KEY:?SECRET_KEY is required — see .env.example}
+      - MODE=worker
+      # ── Database ─────────────────────────────────────────────────────
+      - DB_USERNAME=${POSTGRES_USER:-dify}
+      - DB_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
+      - DB_HOST=dify-postgres
+      - DB_PORT=${POSTGRES_PORT:-5432}
+      - DB_DATABASE=${POSTGRES_DB:-dify}
+      # ── Redis ────────────────────────────────────────────────────────
+      - REDIS_HOST=dify-redis
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - REDIS_PASSWORD=
+      # ── Debug ────────────────────────────────────────────────────────
+      - DEBUG=${DIFY_DEBUG:-false}
+
+volumes:
+  postgres_data:
+    name: dify_postgres_data
+  redis_data:
+    name: dify_redis_data

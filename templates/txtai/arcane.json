@@ -1,0 +1,13 @@
+{
+  "id": "txtai",
+  "name": "txtai",
+  "description": "AI-powered semantic search and RAG platform",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "search",
+    "rag",
+    "embeddings"
+  ]
+}

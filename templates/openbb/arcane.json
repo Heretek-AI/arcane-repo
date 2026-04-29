@@ -1,0 +1,13 @@
+{
+  "id": "openbb",
+  "name": "OpenBB",
+  "description": "Open-source investment research platform with AI-powered trading strategies",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "finance",
+    "data",
+    "investing",
+    "analytics"
+  ]
+}

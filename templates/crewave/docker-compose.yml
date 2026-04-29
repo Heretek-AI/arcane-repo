@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  crewave:
+    image: crewai/crewai:latest
+    container_name: crewave
+    hostname: crewave
+    ports:
+      - "${CREWAI_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - CREWAI_PORT=${CREWAI_PORT:-8000}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required}
+

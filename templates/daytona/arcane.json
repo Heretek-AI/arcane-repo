@@ -1,0 +1,12 @@
+{
+  "id": "daytona",
+  "name": "Daytona",
+  "description": "Open-source development environment manager",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "devops",
+    "development",
+    "environments"
+  ]
+}

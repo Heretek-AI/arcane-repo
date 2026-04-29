@@ -1,0 +1,12 @@
+{
+  "id": "worldmonitor",
+  "name": "WorldMonitor",
+  "description": "Real-time global monitoring and alerting system",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "monitoring",
+    "alerts",
+    "analytics"
+  ]
+}

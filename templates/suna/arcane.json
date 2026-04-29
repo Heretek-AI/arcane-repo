@@ -1,0 +1,13 @@
+{
+  "id": "suna",
+  "name": "Suna",
+  "description": "AI-powered content generation with customizable brand voice",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "content",
+    "writing",
+    "marketing"
+  ]
+}

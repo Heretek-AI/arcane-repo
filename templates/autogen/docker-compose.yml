@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  autogen:
+    image: microsoft/autogen:latest
+    container_name: autogen
+    hostname: autogen
+    ports:
+      - "${AUTOGEN_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - AUTOGEN_PORT=${AUTOGEN_PORT:-8080}
+

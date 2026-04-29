@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  langgraph:
+    image: langchain/langgraph:latest
+    container_name: langgraph
+    hostname: langgraph
+    ports:
+      - "${LANGGRAPH_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - LANGRAPH_PORT=${LANGRAPH_PORT:-8000}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required}
+

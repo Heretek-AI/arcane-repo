@@ -1,0 +1,13 @@
+{
+  "id": "openwebui",
+  "name": "Open WebUI",
+  "description": "Self-hosted ChatGPT-like interface with RAG and multi-user",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "chat",
+    "llm",
+    "self-hosted"
+  ]
+}

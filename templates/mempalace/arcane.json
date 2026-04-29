@@ -1,0 +1,13 @@
+{
+  "id": "mempalace",
+  "name": "MemPalace",
+  "description": "Personal knowledge management with AI-powered semantic search",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "knowledge",
+    "memory",
+    "personal"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "photoprism",
+  "name": "PhotoPrism",
+  "description": "AI-powered photo management with automatic tagging and face recognition",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "media",
+    "photos",
+    "ai",
+    "self-hosted"
+  ]
+}

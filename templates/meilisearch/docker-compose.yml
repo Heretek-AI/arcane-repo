@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  meilisearch:
+    image: getmeili/meilisearch:latest
+    container_name: meilisearch
+    hostname: meilisearch
+    ports:
+      - "${MEILISEARCH_PORT:-7700}:7700"
+    restart: unless-stopped
+    environment:
+      - MEILISEARCH_PORT=${MEILISEARCH_PORT:-7700}
+

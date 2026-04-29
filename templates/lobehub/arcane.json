@@ -1,0 +1,13 @@
+{
+  "id": "lobehub",
+  "name": "LobeHub",
+  "description": "Modern AI chat platform with plugin ecosystem and multi-LLM support",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "chat",
+    "llm",
+    "plugins"
+  ]
+}

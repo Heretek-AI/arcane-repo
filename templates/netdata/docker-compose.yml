@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  netdata:
+    image: netdata/netdata:latest
+    container_name: netdata
+    hostname: netdata
+    ports:
+      - "${NETDATA_PORT:-19999}:19999"
+    restart: unless-stopped
+    environment:
+      - NETDATA_PORT=${NETDATA_PORT:-19999}
+

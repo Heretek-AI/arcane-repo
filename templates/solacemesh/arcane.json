@@ -1,0 +1,13 @@
+{
+  "id": "solacemesh",
+  "name": "Solace Agent Mesh",
+  "description": "Event-driven multi-agent framework with real-time collaboration",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "events",
+    "messaging"
+  ]
+}

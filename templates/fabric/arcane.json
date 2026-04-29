@@ -1,0 +1,13 @@
+{
+  "id": "fabric",
+  "name": "Fabric",
+  "description": "Open-source framework for augmenting human capability using AI",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "cli",
+    "automation",
+    "patterns"
+  ]
+}

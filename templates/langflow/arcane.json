@@ -1,0 +1,13 @@
+{
+  "id": "langflow",
+  "name": "LangFlow",
+  "description": "Visual framework for multi-agent RAG applications",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "low-code",
+    "rag",
+    "agents"
+  ]
+}

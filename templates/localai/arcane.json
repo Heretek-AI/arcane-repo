@@ -1,0 +1,13 @@
+{
+  "id": "localai",
+  "name": "LocalAI",
+  "description": "Self-hosted OpenAI-compatible API for LLMs and embeddings",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "llm",
+    "inference",
+    "self-hosted"
+  ]
+}

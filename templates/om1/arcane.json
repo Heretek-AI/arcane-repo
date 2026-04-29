@@ -1,0 +1,13 @@
+{
+  "id": "om1",
+  "name": "OM1",
+  "description": "Open-source AI operating system for multi-agent systems",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "platform",
+    "orchestration"
+  ]
+}

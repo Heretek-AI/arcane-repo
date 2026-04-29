@@ -1,0 +1,13 @@
+{
+  "id": "quivr",
+  "name": "Quivr",
+  "description": "Open-source second brain with RAG-powered Q&A and knowledge management",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "knowledge",
+    "rag",
+    "docs"
+  ]
+}

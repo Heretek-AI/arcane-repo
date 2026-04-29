@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  firecrawl:
+    image: firecrawl/firecrawl:latest
+    container_name: firecrawl
+    hostname: firecrawl
+    ports:
+      - "${FIRECRAWL_PORT:-3002}:3002"
+    restart: unless-stopped
+    environment:
+      - FIRECRAWL_PORT=${FIRECRAWL_PORT:-3002}
+

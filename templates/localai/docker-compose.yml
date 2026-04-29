@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  localai:
+    image: quay.io/go-skynet/local-ai:latest
+    container_name: localai
+    hostname: localai
+    ports:
+      - "${LOCALAI_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - LOCALAI_PORT=${LOCALAI_PORT:-8080}
+      - THREADS=${THREADS:-4}
+      - CONTEXT_SIZE=${CONTEXT_SIZE:-512}
+

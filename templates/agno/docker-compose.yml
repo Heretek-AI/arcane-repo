@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  agno:
+    image: agno/agno:latest
+    container_name: agno
+    hostname: agno
+    ports:
+      - "${AGNO_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - AGNO_PORT=${AGNO_PORT:-8000}
+

@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  clawith:
+    image: dataelement/clawith:latest
+    container_name: clawith
+    hostname: clawith
+    ports:
+      - "${CLAWITH_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - CLAWITH_PORT=${CLAWITH_PORT:-8080}
+

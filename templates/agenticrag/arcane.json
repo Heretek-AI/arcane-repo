@@ -1,0 +1,13 @@
+{
+  "id": "agenticrag",
+  "name": "AgenticRAG-Survey",
+  "description": "Survey of agentic RAG patterns and architectures",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "research",
+    "rag",
+    "agents"
+  ]
+}

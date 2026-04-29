@@ -1,0 +1,13 @@
+{
+  "id": "langgraphswarm",
+  "name": "LangGraph-Swarm",
+  "description": "Python swarm intelligence for multi-LLM agent coordination",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "swarm",
+    "python"
+  ]
+}

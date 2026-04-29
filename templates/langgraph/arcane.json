@@ -1,0 +1,13 @@
+{
+  "id": "langgraph",
+  "name": "LangGraph",
+  "description": "Framework for stateful multi-actor agent applications",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "graph",
+    "framework"
+  ]
+}

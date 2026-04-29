@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  quivr:
+    image: stangirard/quivr:latest
+    container_name: quivr
+    hostname: quivr
+    ports:
+      - "${QUIVR_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - QUIVR_PORT=${QUIVR_PORT:-3000}
+

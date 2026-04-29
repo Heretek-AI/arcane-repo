@@ -1,0 +1,12 @@
+{
+  "id": "netron",
+  "name": "Netron",
+  "description": "Model visualization tool for neural networks, machine learning, and AI models",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "visualization",
+    "tools"
+  ]
+}

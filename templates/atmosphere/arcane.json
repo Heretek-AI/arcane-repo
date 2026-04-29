@@ -1,0 +1,13 @@
+{
+  "id": "atmosphere",
+  "name": "Atmosphere",
+  "description": "Open-source incident management and alerting platform",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "devops",
+    "incident-management",
+    "alerting",
+    "monitoring"
+  ]
+}

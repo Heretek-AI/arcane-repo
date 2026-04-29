@@ -1,0 +1,12 @@
+{
+  "id": "nanobot",
+  "name": "NanoBot",
+  "description": "Lightweight AI chatbot framework with tool calling and multi-provider support",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "chatbot",
+    "framework"
+  ]
+}

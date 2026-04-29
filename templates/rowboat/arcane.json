@@ -1,0 +1,13 @@
+{
+  "id": "rowboat",
+  "name": "Rowboat",
+  "description": "AI-powered customer engagement platform",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "analytics",
+    "customer",
+    "automation"
+  ]
+}

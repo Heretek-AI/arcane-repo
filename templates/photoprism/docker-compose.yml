@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  photoprism:
+    image: photoprism/photoprism:latest
+    container_name: photoprism
+    hostname: photoprism
+    ports:
+      - "${PHOTOPRISM_PORT:-2342}:2342"
+    restart: unless-stopped
+    environment:
+      - PHOTOPRISM_PORT=${PHOTOPRISM_PORT:-2342}
+      - PHOTOPRISM_ADMIN_PASSWORD=${PHOTOPRISM_ADMIN_PASSWORD:-photoprism}
+

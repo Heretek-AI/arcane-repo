@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mempalace:
+    image: mempalace/mempalace:latest
+    container_name: mempalace
+    hostname: mempalace
+    ports:
+      - "${MEMPALACE_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - MEMPALACE_PORT=${MEMPALACE_PORT:-3000}
+

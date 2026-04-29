@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  vane:
+    image: itzcrazykns/vane:latest
+    container_name: vane
+    hostname: vane
+    ports:
+      - "${VANE_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - VANE_PORT=${VANE_PORT:-3000}
+

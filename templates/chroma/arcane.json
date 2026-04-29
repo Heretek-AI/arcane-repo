@@ -1,0 +1,13 @@
+{
+  "id": "chroma",
+  "name": "Chroma",
+  "description": "Open-source embedding database for RAG and similarity search",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "database",
+    "vectors",
+    "embeddings",
+    "rag"
+  ]
+}

@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  langserve:
+    image: python:3.12-slim
+    container_name: langserve
+    hostname: langserve
+    ports:
+      - "${LANGCHAIN_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      # ── LLM Provider (Required) ──────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required — see .env.example}
+      # ── Model Configuration ─────────────────────────────────────────
+      - MODEL_NAME=${MODEL_NAME:-gpt-4o-mini}
+      # ── LangSmith Tracing (Optional) ────────────────────────────────
+      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2:-false}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY:-}
+      - LANGCHAIN_PROJECT=${LANGCHAIN_PROJECT:-Arcane-LangServe}
+      # ── Runtime ────────────────────────────────────────────────────
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q langchain langchain-openai langserve fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+from langchain_openai import ChatOpenAI
+from langserve import add_routes
+
+model_name = os.environ.get('MODEL_NAME', 'gpt-4o-mini')
+model = ChatOpenAI(model=model_name)
+
+app = FastAPI(
+    title='LangServe',
+    version='1.0.0',
+    description='LangChain API server powered by LangServe'
+)
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'model': model_name, 'framework': 'LangChain'}
+
+add_routes(app, model, path='/chat')
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=int(os.environ.get('LANGCHAIN_PORT', '8000')))
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${LANGCHAIN_PORT:-8000}
+      "

@@ -1,0 +1,8 @@
+{
+  "id": "langchain",
+  "name": "LangChain",
+  "description": "LangServe API server — deploy LangChain chains and agents as REST endpoints with built-in streaming, batching, and health checks",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "llm", "framework", "api"]
+}

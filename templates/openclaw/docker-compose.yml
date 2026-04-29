@@ -1,0 +1,89 @@
+version: '3.8'
+
+# ── OpenClaw Foundation Template ────────────────────────────────────────────
+# This is a minimal starting point for a community/event platform API server.
+# The api service runs a Node.js 20 application with a PostgreSQL 16 backing
+# store. Use this template as a foundation — add service definitions, volumes,
+# health checks, and environment-specific overrides as your project grows.
+#
+# The api command is intentionally left as a placeholder (nodemon for dev,
+# node dist/server.js for production). Update the command or build a custom
+# Dockerfile once your application code is ready.
+# ────────────────────────────────────────────────────────────────────────────
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: openclaw-postgres
+    hostname: openclaw-postgres
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${POSTGRES_DB:-openclaw}
+      - POSTGRES_USER=${POSTGRES_USER:-openclaw}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER:-openclaw}", "-d", "${POSTGRES_DB:-openclaw}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    image: node:20-alpine
+    container_name: openclaw-api
+    hostname: openclaw-api
+    ports:
+      - "${API_PORT:-3000}:3000"
+    volumes:
+      # Mount a local data directory for application configuration, migrations,
+      # or seed files — create ./data/ at the project root as needed.
+      - ./data:/app/data
+    working_dir: /app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # ── Server Configuration ────────────────────────────────────────
+      - PORT=${API_PORT:-3000}
+      - NODE_ENV=${NODE_ENV:-development}
+      # ── Authentication ──────────────────────────────────────────────
+      - JWT_SECRET=${JWT_SECRET:?JWT_SECRET is required — see .env.example}
+      # ── Database ────────────────────────────────────────────────────
+      - DATABASE_URL=postgres://${POSTGRES_USER:-openclaw}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}@openclaw-postgres:5432/${POSTGRES_DB:-openclaw}
+    # ── Application Entrypoint (placeholder) ──────────────────────────
+    # Replace this command with your application's startup command:
+    #
+    #   Development: npx nodemon src/server.js
+    #   Production:  node dist/server.js
+    #
+    # For TypeScript projects, add a build step or use ts-node:
+    #   npx ts-node src/server.ts
+    command: >
+      sh -c "
+      echo 'OpenClaw API server — replace this command with your app entrypoint';
+      echo 'Waiting for PostgreSQL at openclaw-postgres:5432...';
+      node -e \"
+        const { createConnection } = require('net');
+        const conn = createConnection({ host: 'openclaw-postgres', port: 5432 });
+        conn.on('connect', () => { console.log('PostgreSQL is reachable.'); process.exit(0); });
+        conn.on('error', () => { console.log('Waiting for PostgreSQL...'); process.exit(1); });
+      \" 2>/dev/null || true;
+      echo '';
+      echo '╔══════════════════════════════════════════════════════════╗';
+      echo '║  OpenClaw — Foundation Template                         ║';
+      echo '║                                                        ║';
+      echo '║  The API service is running, but no application code    ║';
+      echo '║  has been configured yet. Update the command in         ║';
+      echo '║  docker-compose.yml to point to your Node.js app.      ║';
+      echo '╚══════════════════════════════════════════════════════════╝';
+      echo '';
+      tail -f /dev/null
+      "
+
+volumes:
+  postgres_data:
+    name: openclaw_postgres_data

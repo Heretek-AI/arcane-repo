@@ -1,0 +1,13 @@
+{
+  "id": "openfang",
+  "name": "OpenFang",
+  "description": "Open-source AI agent platform for development and debugging",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "development",
+    "debugging"
+  ]
+}

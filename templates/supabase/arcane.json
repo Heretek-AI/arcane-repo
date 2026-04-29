@@ -1,0 +1,13 @@
+{
+  "id": "supabase",
+  "name": "Supabase",
+  "description": "Open-source Firebase alternative with PostgreSQL, auth, and real-time",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "database",
+    "backend",
+    "auth",
+    "realtime"
+  ]
+}

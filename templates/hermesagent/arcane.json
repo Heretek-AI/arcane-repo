@@ -1,0 +1,13 @@
+{
+  "id": "hermesagent",
+  "name": "Hermes-Agent",
+  "description": "Nous Research autonomous AI agent framework",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "autonomous",
+    "framework"
+  ]
+}

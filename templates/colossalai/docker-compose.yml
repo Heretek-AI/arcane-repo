@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  colossalai:
+    image: hpcaitech/colossalai:latest
+    container_name: colossalai
+    hostname: colossalai
+    ports:
+      - "${COLOSSALAI_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - COLOSSALAI_PORT=${COLOSSALAI_PORT:-8080}
+

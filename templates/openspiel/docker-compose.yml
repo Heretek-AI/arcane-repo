@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  openspiel:
+    image: python:3.12-slim
+    container_name: openspiel
+    hostname: openspiel
+    ports:
+      - "${OPENSPIEL_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - OPENSPIEL_PORT=${OPENSPIEL_PORT:-8080}
+

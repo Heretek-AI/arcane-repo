@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  rowboat:
+    image: rowboat/rowboat:latest
+    container_name: rowboat
+    hostname: rowboat
+    ports:
+      - "${ROWBOAT_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - ROWBOAT_PORT=${ROWBOAT_PORT:-8080}
+

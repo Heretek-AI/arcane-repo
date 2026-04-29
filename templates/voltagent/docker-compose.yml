@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  voltagent:
+    image: voltagent/voltagent:latest
+    container_name: voltagent
+    hostname: voltagent
+    ports:
+      - "${VOLTAGENT_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - VOLTAGENT_PORT=${VOLTAGENT_PORT:-8000}
+

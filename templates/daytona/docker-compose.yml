@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  daytona:
+    image: daytonaio/daytona:latest
+    container_name: daytona
+    hostname: daytona
+    ports:
+      - "${DAYTONA_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - DAYTONA_PORT=${DAYTONA_PORT:-3000}
+

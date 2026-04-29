@@ -1,0 +1,13 @@
+{
+  "id": "kong",
+  "name": "Kong",
+  "description": "Cloud-native API gateway with plugins for auth, rate limiting, and logging",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "api",
+    "gateway",
+    "networking",
+    "microservices"
+  ]
+}

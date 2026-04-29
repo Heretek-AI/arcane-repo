@@ -1,0 +1,13 @@
+{
+  "id": "netdata",
+  "name": "Netdata",
+  "description": "Real-time monitoring with metrics, dashboards, and alerts",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "monitoring",
+    "observability",
+    "metrics",
+    "devops"
+  ]
+}

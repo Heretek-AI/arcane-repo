@@ -1,0 +1,13 @@
+{
+  "id": "plexe",
+  "name": "Plexe",
+  "description": "AI agent orchestration with observability and debugging",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "orchestration",
+    "observability"
+  ]
+}

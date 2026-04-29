@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  openfang:
+    image: rightnow/openfang:latest
+    container_name: openfang
+    hostname: openfang
+    ports:
+      - "${OPENFANG_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - OPENFANG_PORT=${OPENFANG_PORT:-8080}
+

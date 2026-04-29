@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mem0:
+    image: mem0ai/mem0:latest
+    container_name: mem0
+    hostname: mem0
+    ports:
+      - "${MEM0_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - MEM0_PORT=${MEM0_PORT:-8000}
+

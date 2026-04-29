@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  tidb:
+    image: pingcap/tidb:latest
+    container_name: tidb
+    hostname: tidb
+    ports:
+      - "${TIDB_PORT:-4000}:4000"
+    restart: unless-stopped
+    environment:
+      - TIDB_PORT=${TIDB_PORT:-4000}
+      - TIDB_STATUS_PORT=${TIDB_STATUS_PORT:-10080}
+

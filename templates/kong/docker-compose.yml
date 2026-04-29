@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  kong:
+    image: kong/kong-gateway:latest
+    container_name: kong
+    hostname: kong
+    ports:
+      - "${KONG_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - KONG_PROXY_PORT=${KONG_PROXY_PORT:-8000}
+      - KONG_ADMIN_PORT=${KONG_ADMIN_PORT:-8001}
+      - KONG_DATABASE=${KONG_DATABASE:-off}
+

@@ -1,0 +1,13 @@
+{
+  "id": "beeai",
+  "name": "BeeAI Framework",
+  "description": "IBM framework for production-ready AI agents",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "framework",
+    "enterprise"
+  ]
+}

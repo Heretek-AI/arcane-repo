@@ -1,0 +1,12 @@
+{
+  "id": "tidb",
+  "name": "TiDB",
+  "description": "Distributed SQL database with MySQL compatibility and HTAP capabilities",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "database",
+    "sql",
+    "distributed"
+  ]
+}

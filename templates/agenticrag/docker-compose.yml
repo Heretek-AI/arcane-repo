@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  agenticrag:
+    image: python:3.12-slim
+    container_name: agenticrag
+    hostname: agenticrag
+    ports:
+      - "${AGENTICRAG-SURVEY_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - AGENTICRAG_PORT=${AGENTICRAG_PORT:-8080}
+

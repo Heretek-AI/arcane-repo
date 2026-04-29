@@ -1,0 +1,12 @@
+{
+  "id": "meilisearch",
+  "name": "Meilisearch",
+  "description": "Fast open-source search engine with typo-tolerant full-text search",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "database",
+    "search",
+    "full-text"
+  ]
+}

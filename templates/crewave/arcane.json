@@ -1,0 +1,13 @@
+{
+  "id": "crewave",
+  "name": "CrewAI",
+  "description": "Multi-agent orchestration framework for AI agent teams",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "orchestration",
+    "framework"
+  ]
+}

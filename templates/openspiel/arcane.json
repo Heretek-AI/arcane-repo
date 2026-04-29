@@ -1,0 +1,13 @@
+{
+  "id": "openspiel",
+  "name": "OpenSpiel",
+  "description": "Google DeepMind framework for game theory and reinforcement learning",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "games",
+    "reinforcement-learning",
+    "research"
+  ]
+}

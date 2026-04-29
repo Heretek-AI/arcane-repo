@@ -1,0 +1,13 @@
+{
+  "id": "clawith",
+  "name": "Clawith",
+  "description": "Open-source AI workflow builder with visual canvas",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "workflow",
+    "low-code",
+    "pipelines"
+  ]
+}

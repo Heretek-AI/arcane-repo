@@ -1,0 +1,13 @@
+{
+  "id": "deerflow",
+  "name": "Deer-Flow",
+  "description": "Real-time event processing and workflow automation engine",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "automation",
+    "workflow",
+    "events",
+    "streaming"
+  ]
+}

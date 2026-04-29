@@ -1,0 +1,13 @@
+{
+  "id": "agno",
+  "name": "Agno",
+  "description": "Lightweight AI agent framework for multi-modal agents with tool use and memory",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "framework",
+    "python"
+  ]
+}

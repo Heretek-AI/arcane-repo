@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  suna:
+    image: kortix/suna:latest
+    container_name: suna
+    hostname: suna
+    ports:
+      - "${SUNA_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - SUNA_PORT=${SUNA_PORT:-3000}
+

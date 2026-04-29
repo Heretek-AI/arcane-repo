@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  netron:
+    image: lutzroeder/netron:latest
+    container_name: netron
+    hostname: netron
+    ports:
+      - "${NETRON_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - NETRON_PORT=${NETRON_PORT:-8080}
+

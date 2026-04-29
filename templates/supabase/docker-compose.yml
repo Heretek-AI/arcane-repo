@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  supabase:
+    image: supabase/supabase:latest
+    container_name: supabase
+    hostname: supabase
+    ports:
+      - "${SUPABASE_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - SUPABASE_STUDIO_PORT=${SUPABASE_STUDIO_PORT:-8000}
+      - SUPABASE_DB_PORT=${SUPABASE_DB_PORT:-5432}
+

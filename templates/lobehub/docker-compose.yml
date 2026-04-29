@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  lobehub:
+    image: lobehub/lobe-chat:latest
+    container_name: lobehub
+    hostname: lobehub
+    ports:
+      - "${LOBEHUB_PORT:-3210}:3210"
+    restart: unless-stopped
+    environment:
+      - LOBEHUB_PORT=${LOBEHUB_PORT:-3210}
+

@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  txtai:
+    image: neuml/txtai:latest
+    container_name: txtai
+    hostname: txtai
+    ports:
+      - "${TXTAI_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - TXTAI_PORT=${TXTAI_PORT:-8080}
+

@@ -1,0 +1,13 @@
+{
+  "id": "autogen",
+  "name": "AutoGen",
+  "description": "Multi-agent conversation framework by Microsoft",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "multi-agent",
+    "framework"
+  ]
+}

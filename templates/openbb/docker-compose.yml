@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  openbb:
+    image: openbb/openbb:latest
+    container_name: openbb
+    hostname: openbb
+    ports:
+      - "${OPENBB_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - OPENBB_PORT=${OPENBB_PORT:-8080}
+

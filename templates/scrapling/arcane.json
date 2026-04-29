@@ -1,0 +1,12 @@
+{
+  "id": "scrapling",
+  "name": "Scrapling",
+  "description": "Python web scraping library with AutoDetect parsing and anti-bot bypass",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "tools",
+    "scraping",
+    "python"
+  ]
+}

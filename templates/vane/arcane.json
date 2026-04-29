@@ -1,0 +1,13 @@
+{
+  "id": "vane",
+  "name": "Vane",
+  "description": "Visual AI agent builder with drag-and-drop canvas",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "low-code",
+    "visual"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dbeaver",
+  "name": "DBeaver",
+  "description": "Universal database tool for MySQL, PostgreSQL, SQLite, Oracle, SQL Server",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "database",
+    "tools",
+    "sql",
+    "admin"
+  ]
+}

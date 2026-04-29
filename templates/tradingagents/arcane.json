@@ -1,0 +1,13 @@
+{
+  "id": "tradingagents",
+  "name": "TradingAgents",
+  "description": "AI-powered algorithmic trading with multi-agent collaboration",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "finance",
+    "trading",
+    "ai",
+    "agents"
+  ]
+}

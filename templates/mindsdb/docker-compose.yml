@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mindsdb:
+    image: mindsdb/mindsdb:latest
+    container_name: mindsdb
+    hostname: mindsdb
+    ports:
+      - "${MINDSDB_PORT:-47334}:47334"
+    restart: unless-stopped
+    environment:
+      - MINDSDB_PORT=${MINDSDB_PORT:-47334}
+

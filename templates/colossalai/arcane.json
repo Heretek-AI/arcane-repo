@@ -1,0 +1,13 @@
+{
+  "id": "colossalai",
+  "name": "ColossalAI",
+  "description": "Large-scale AI training with data, tensor, pipeline, and sequence parallelism",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "training",
+    "deep-learning",
+    "distributed"
+  ]
+}

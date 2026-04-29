@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  atmosphere:
+    image: atmosphere/atmosphere:latest
+    container_name: atmosphere
+    hostname: atmosphere
+    ports:
+      - "${ATMOSPHERE_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - ATMOSPHERE_PORT=${ATMOSPHERE_PORT:-8080}
+

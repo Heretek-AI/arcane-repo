@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  solacemesh:
+    image: solacelabs/solace-agent-mesh:latest
+    container_name: solacemesh
+    hostname: solacemesh
+    ports:
+      - "${SOLACE AGENT MESH_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - SOLACE_PORT=${SOLACE_PORT:-8080}
+

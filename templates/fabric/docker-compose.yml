@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  fabric:
+    image: danielmiessler/fabric:latest
+    container_name: fabric
+    hostname: fabric
+    ports:
+      - "${FABRIC_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - FABRIC_PORT=${FABRIC_PORT:-8080}
+

@@ -1,0 +1,13 @@
+{
+  "id": "firecrawl",
+  "name": "Firecrawl",
+  "description": "AI-powered web scraping with JavaScript rendering",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "tools",
+    "scraping",
+    "ai",
+    "web"
+  ]
+}

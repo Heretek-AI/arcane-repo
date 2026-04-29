@@ -1,0 +1,13 @@
+{
+  "id": "voltagent",
+  "name": "VoltAgent",
+  "description": "Multi-agent framework for autonomous AI workflows",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "agents",
+    "workflow",
+    "automation"
+  ]
+}

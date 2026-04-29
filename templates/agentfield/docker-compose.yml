@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  agentfield:
+    image: agentfield/agentfield:latest
+    container_name: agentfield
+    hostname: agentfield
+    ports:
+      - "${AGENTFIELD_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - AGENTFIELD_PORT=${AGENTFIELD_PORT:-8080}
+

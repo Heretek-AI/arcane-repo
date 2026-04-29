@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  tradingagents:
+    image: tauric/trading-agents:latest
+    container_name: tradingagents
+    hostname: tradingagents
+    ports:
+      - "${TRADINGAGENTS_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - TRADING_PORT=${TRADING_PORT:-8080}
+

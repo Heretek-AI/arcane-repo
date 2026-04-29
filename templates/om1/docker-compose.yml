@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  om1:
+    image: openmind/om1:latest
+    container_name: om1
+    hostname: om1
+    ports:
+      - "${OM1_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - OM1_PORT=${OM1_PORT:-8080}
+

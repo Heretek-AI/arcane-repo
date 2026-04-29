@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:main-latest
+    container_name: litellm
+    hostname: litellm
+    ports:
+      - "${LITELLM_PORT:-4000}:4000"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - litellm_data:/app/data
+    restart: unless-stopped
+    environment:
+      - LITELLM_MASTER_KEY=${LITELLM_MASTER_KEY:-sk-liteLLM-master-key}
+      - LITELLM_SALT_KEY=${LITELLM_SALT_KEY:-sk-liteLLM-salt-key}
+      - DATABASE_URL=${DATABASE_URL:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - COHERE_API_KEY=${COHERE_API_KEY:-}
+      - TOGETHERAI_API_KEY=${TOGETHERAI_API_KEY:-}
+
+volumes:
+  litellm_data:
+    name: litellm_data

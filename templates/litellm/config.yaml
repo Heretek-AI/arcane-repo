@@ -1,0 +1,57 @@
+# ── LiteLLM Proxy Configuration ────────────────────────────────────────────
+# This file configures which LLM providers and models are available through
+# the LiteLLM proxy. The proxy presents an OpenAI-compatible API endpoint
+# that routes requests to the configured models.
+#
+# To add a provider, add an entry to the model_list below. Set the corresponding
+# environment variable (e.g. OPENAI_API_KEY) in your .env file.
+#
+# Full documentation: https://docs.litellm.ai/docs/proxy/configs
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+model_list:
+  # ── OpenAI ────────────────────────────────────────────────────────────────
+  # - model_name: gpt-4o           # The identifier your app sends
+  #   litellm_params:
+  #     model: openai/gpt-4o       # Passed to litellm.completion()
+  #     api_key: os.environ/OPENAI_API_KEY
+
+  # ── Anthropic ─────────────────────────────────────────────────────────────
+  # - model_name: claude-sonnet-4-20250514
+  #   litellm_params:
+  #     model: anthropic/claude-sonnet-4-20250514
+  #     api_key: os.environ/ANTHROPIC_API_KEY
+
+  # ── Google Gemini ─────────────────────────────────────────────────────────
+  # - model_name: gemini-2.0-flash
+  #   litellm_params:
+  #     model: gemini/gemini-2.0-flash
+  #     api_key: os.environ/GEMINI_API_KEY
+
+  # ── Together AI ───────────────────────────────────────────────────────────
+  # - model_name: llama-3.1-70b
+  #   litellm_params:
+  #     model: together_ai/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo
+  #     api_key: os.environ/TOGETHERAI_API_KEY
+
+  # ── Cohere ────────────────────────────────────────────────────────────────
+  # - model_name: command-r-plus
+  #   litellm_params:
+  #     model: cohere/command-r-plus
+  #     api_key: os.environ/COHERE_API_KEY
+
+  # ── Ollama (local) ────────────────────────────────────────────────────────
+  # - model_name: llama3.1-local
+  #   litellm_params:
+  #     model: ollama/llama3.1
+  #     api_base: http://host.docker.internal:11434
+
+# ── Router Settings ─────────────────────────────────────────────────────────
+router_settings:
+  routing_strategy: usage-based   # options: simple-shuffle, latency-based, usage-based
+  num_retries: 2
+  fallbacks: []
+  allowed_fails: 3
+  context_window_fallbacks: []

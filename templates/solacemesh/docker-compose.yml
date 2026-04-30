@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   solacemesh:
-    image: solacelabs/solace-agent-mesh:latest
+    image: ghcr.io/solacelabs/solace-agent-mesh:1.7.5
     container_name: solacemesh
     hostname: solacemesh
     ports:

@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   worldmonitor:
-    image: koala73/worldmonitor:latest
+    image: ghcr.io/arcane-repo/worldmonitor:latest
     container_name: worldmonitor
     hostname: worldmonitor
     ports:

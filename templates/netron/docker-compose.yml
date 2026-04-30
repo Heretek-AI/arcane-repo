@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   netron:
-    image: lutzroeder/netron:latest
+    image: python:3.12-slim
     container_name: netron
     hostname: netron
     ports:
@@ -10,4 +10,19 @@ services:
     restart: unless-stopped
     environment:
       - NETRON_PORT=${NETRON_PORT:-8080}
-
+    command: >
+      sh -c "
+      echo '╔══════════════════════════════════════════════════════════╗';
+      echo '║  Netron — ML Model Visualizer (Desktop App)             ║';
+      echo '║                                                        ║';
+      echo '║  Netron is an Electron desktop app for visualizing      ║';
+      echo '║  neural network models. Install it natively:            ║';
+      echo '║    npx netron model.onnx                                ║';
+      echo '║    (or download from https://netron.app)                ║';
+      echo '║                                                        ║';
+      echo '║  This container is a sandbox for documentation/reference.║';
+      echo '╚══════════════════════════════════════════════════════════╝';
+      echo '';
+      echo 'Available via: npx netron (native Node.js install required)';
+      tail -f /dev/null
+      "

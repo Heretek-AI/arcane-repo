@@ -2,12 +2,26 @@ version: "3.8"
 
 services:
   openbb:
-    image: openbb/openbb:latest
+    image: python:3.12-slim
     container_name: openbb
     hostname: openbb
     ports:
-      - "${OPENBB_PORT:-8080}:8080"
+      - "${OPENBB_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - OPENBB_PORT=${OPENBB_PORT:-8080}
-
+      - OPENBB_PORT=${OPENBB_PORT:-8000}
+    command: >
+      sh -c "
+      echo '╔══════════════════════════════════════════════════════════╗';
+      echo '║  OpenBB — Investment Research Platform                  ║';
+      echo '║                                                        ║';
+      echo '║  OpenBB is primarily a CLI + Python library. Install    ║';
+      echo '║  it natively for real use:                              ║';
+      echo '║    pip install openbb                                   ║';
+      echo '║                                                        ║';
+      echo '║  This container is a sandbox for documentation/reference.║';
+      echo '╚══════════════════════════════════════════════════════════╝';
+      echo '';
+      echo 'Available via: openbb CLI (native install required)';
+      tail -f /dev/null
+      "

@@ -1,5 +1,8 @@
 # Netron
 
+> **Status: Desktop App — Sandbox Only**
+> Netron is an Electron desktop application for visualizing neural network models. No Docker image exists for it. This template provides a documentation/sandbox container. Use `npx netron model.onnx` or visit [netron.app](https://netron.app) for real use.
+
 [Netron](https://github.com/lutzroeder/netron) — Model visualization tool for neural networks, machine learning, and AI models
 
 ## Quick Start

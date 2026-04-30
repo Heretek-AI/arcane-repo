@@ -27,3 +27,9 @@ Copy `.env.example` to `.env` and edit the values as needed.
 ## Service Details
 
 The docker-compose.yml exposes environment variables documented in `.env.example`.
+
+> **Status: Multi-Container Platform**
+> Supabase is a complex platform requiring multiple services (PostgreSQL, GoTrue, Realtime, Storage).
+> It doesn't ship as a single Docker image. The template's `image:` reference is a placeholder —
+> a full Supabase deployment requires their CLI or self-hosted docker-compose.
+

@@ -1,5 +1,8 @@
 # OpenBB
 
+> **Status: CLI Tool — Sandbox Only**
+> OpenBB is primarily a CLI tool and Python library for investment research. No Docker image exists for it. This template provides a documentation/sandbox container. Install natively via `pip install openbb` for real use.
+
 [OpenBB](https://github.com/OpenBB-finance/OpenBB) — Open-source investment research platform with AI-powered trading strategies
 
 ## Quick Start

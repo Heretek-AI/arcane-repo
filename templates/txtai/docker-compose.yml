@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   txtai:
-    image: neuml/txtai:latest
+    image: python:3.12-slim
     container_name: txtai
     hostname: txtai
     ports:
@@ -10,4 +10,8 @@ services:
     restart: unless-stopped
     environment:
       - TXTAI_PORT=${TXTAI_PORT:-8080}
-
+    command: >
+      sh -c "
+      pip install --no-cache-dir -q txtai uvicorn &&
+      python -m txtai.app --port ${TXTAI_PORT:-8080}
+      "

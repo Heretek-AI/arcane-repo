@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   deerflow:
-    image: bytedance/deer-flow:latest
+    image: ghcr.io/bytedance/deer-flow:main
     container_name: deerflow
     hostname: deerflow
     ports:

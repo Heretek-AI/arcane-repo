@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   nanobot:
-    image: hkunlp/nanobot:latest
+    image: ghcr.io/arcane-repo/nanobot:latest
     container_name: nanobot
     hostname: nanobot
     ports:

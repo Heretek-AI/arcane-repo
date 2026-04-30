@@ -27,3 +27,8 @@ Copy `.env.example` to `.env` and edit the values as needed.
 ## Service Details
 
 The docker-compose.yml exposes environment variables documented in `.env.example`.
+
+> **Status: Library — Uses python:3.12-slim base image**
+> This project is a Python library and does not publish a Docker image.
+> The template installs it via `pip install` at container startup.
+

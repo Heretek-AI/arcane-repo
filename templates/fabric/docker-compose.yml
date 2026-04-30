@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   fabric:
-    image: danielmiessler/fabric:latest
+    image: fabric/fabric:latest
     container_name: fabric
     hostname: fabric
     ports:

@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   quivr:
-    image: stangirard/quivr:latest
+    image: ghcr.io/quivrhq/quivr:latest
     container_name: quivr
     hostname: quivr
     ports:

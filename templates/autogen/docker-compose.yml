@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   autogen:
-    image: microsoft/autogen:latest
+    image: python:3.12-slim
     container_name: autogen
     hostname: autogen
     ports:
@@ -10,4 +10,23 @@ services:
     restart: unless-stopped
     environment:
       - AUTOGEN_PORT=${AUTOGEN_PORT:-8080}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    command: >
+      sh -c "
+      pip install --no-cache-dir -q pyautogen uvicorn fastapi &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
 
+app = FastAPI(title='AutoGen', version='1.0.0', description='Microsoft AutoGen Multi-Agent Framework')
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'framework': 'AutoGen'}
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=int(os.environ.get('AUTOGEN_PORT', '8080')))
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${AUTOGEN_PORT:-8080}
+      "

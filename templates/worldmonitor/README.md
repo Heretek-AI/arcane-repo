@@ -27,3 +27,8 @@ Copy `.env.example` to `.env` and edit the values as needed.
 ## Service Details
 
 The docker-compose.yml exposes environment variables documented in `.env.example`.
+
+> **Status: 🏗️ CI Build Pending**
+> The upstream project includes a Dockerfile, but no pre-built image is published. The template currently
+> references a non-existent image. A CI pipeline will build and publish to GHCR (planned for future update).
+

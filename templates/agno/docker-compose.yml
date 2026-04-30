@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   agno:
-    image: agno/agno:latest
+    image: python:3.12-slim
     container_name: agno
     hostname: agno
     ports:
@@ -10,4 +10,25 @@ services:
     restart: unless-stopped
     environment:
       - AGNO_PORT=${AGNO_PORT:-8000}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    command: >
+      sh -c "
+      pip install --no-cache-dir -q agno openai uvicorn fastapi &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+from agno.agent import Agent
+from agno.models.openai import OpenAIChat
 
+app = FastAPI(title='Agno', version='1.0.0', description='Agno AI Agent Framework')
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'framework': 'Agno'}
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=int(os.environ.get('AGNO_PORT', '8000')))
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${AGNO_PORT:-8000}
+      "

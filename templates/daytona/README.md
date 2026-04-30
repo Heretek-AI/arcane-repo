@@ -1,5 +1,8 @@
 # Daytona
 
+> **Status: CLI Tool — Sandbox Only**
+> Daytona is a command-line tool for managing development environments. No Docker image exists for it. This template provides a documentation/sandbox container. Install natively via `curl -sfL https://download.daytona.io/daytona/install | sh` for real use.
+
 [Daytona](https://github.com/daytonaio/daytona) — Open-source development environment manager
 
 ## Quick Start

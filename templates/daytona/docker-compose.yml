@@ -2,12 +2,26 @@ version: "3.8"
 
 services:
   daytona:
-    image: daytonaio/daytona:latest
+    image: python:3.12-slim
     container_name: daytona
     hostname: daytona
     ports:
-      - "${DAYTONA_PORT:-3000}:3000"
+      - "${DAYTONA_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - DAYTONA_PORT=${DAYTONA_PORT:-3000}
-
+      - DAYTONA_PORT=${DAYTONA_PORT:-8000}
+    command: >
+      sh -c "
+      echo '╔══════════════════════════════════════════════════════════╗';
+      echo '║  Daytona — Dev Environment Manager CLI                  ║';
+      echo '║                                                        ║';
+      echo '║  Daytona is a CLI tool (not a web service). Install it  ║';
+      echo '║  natively for real use:                                 ║';
+      echo '║    curl -sfL https://download.daytona.io/daytona/install | sh ║';
+      echo '║                                                        ║';
+      echo '║  This container is a sandbox for documentation/reference.║';
+      echo '╚══════════════════════════════════════════════════════════╝';
+      echo '';
+      echo 'Available via: daytona CLI (native install required)';
+      tail -f /dev/null
+      "

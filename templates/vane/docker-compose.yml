@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   vane:
-    image: itzcrazykns/vane:latest
+    image: ghcr.io/arcane-repo/vane:latest
     container_name: vane
     hostname: vane
     ports:

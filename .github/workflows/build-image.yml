@@ -60,7 +60,7 @@ jobs:
         run: |
           TEMPLATE="${{ matrix.template }}"
           DOCKERFILE="scripts/dockerfiles/$TEMPLATE/Dockerfile"
-          REPO="${{ lower(github.repository) }}"
+          REPO="$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')"
           IMAGE="${{ env.REGISTRY }}/$REPO/$TEMPLATE:${{ env.IMAGE_TAG }}"
 
           if [ ! -f "$DOCKERFILE" ]; then

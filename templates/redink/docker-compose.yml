@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  redink:
+    image: histonemax/redink:latest
+    container_name: redink
+    hostname: redink
+    ports:
+      - "${REDINK_PORT:-12398}:12398"
+    volumes:
+      - redink_data:/app/data
+      - redink_uploads:/app/uploads
+    restart: unless-stopped
+    environment:
+      - SECRET_KEY=${REDINK_SECRET_KEY:-}
+      - DATABASE_URL=${REDINK_DB_URL:-sqlite:///app/data/redink.db}
+      - LOG_LEVEL=${REDINK_LOG_LEVEL:-info}
+      - API_PROVIDER=${REDINK_API_PROVIDER:-openai}
+      - API_KEY=${REDINK_API_KEY:-}
+      - API_BASE_URL=${REDINK_API_BASE_URL:-}
+      - MODEL_NAME=${REDINK_MODEL_NAME:-gpt-4}
+      - IMAGE_API_KEY=${REDINK_IMAGE_API_KEY:-}
+      - TZ=${TZ:-UTC}
+
+volumes:
+  redink_data:
+    name: redink_data
+  redink_uploads:
+    name: redink_uploads

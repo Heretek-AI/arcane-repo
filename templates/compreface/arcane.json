@@ -1,0 +1,8 @@
+{
+  "id": "compreface",
+  "name": "CompreFace",
+  "description": "Leading free open-source face recognition system — REST API for face detection, recognition, and verification with Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "face-recognition", "computer-vision", "biometrics"]
+}

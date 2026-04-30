@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  pathway:
+    image: pathwaycom/pathway:latest
+    container_name: pathway
+    hostname: pathway
+    ports:
+      - "${PATHWAY_PORT:-8000}:8000"
+    volumes:
+      - pathway_data:/app/data
+    restart: unless-stopped
+    environment:
+      - PATHWAY_PERSISTENT_STORAGE=${PATHWAY_PERSISTENT_STORAGE:-/app/data}
+      - PATHWAY_LICENSE_KEY=${PATHWAY_LICENSE_KEY:-demo}
+      - OPENAI_API_KEY=${PATHWAY_OPENAI_API_KEY:-}
+      - HOST=${PATHWAY_HOST:-0.0.0.0}
+      - PORT=${PATHWAY_PORT:-8000}
+      - LOG_LEVEL=${PATHWAY_LOG_LEVEL:-INFO}
+    command: >
+      python -m pathway_app
+      --host 0.0.0.0
+      --port 8000
+
+volumes:
+  pathway_data:
+    name: pathway_data

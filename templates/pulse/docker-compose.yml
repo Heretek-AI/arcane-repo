@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  pulse-app:
+    image: rcourtman/pulse:latest
+    container_name: pulse-app
+    hostname: pulse-app
+    ports:
+      - "${PULSE_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://${PULSE_DB_USER:-pulse}:${PULSE_DB_PASSWORD:-changeme}@pulse-db:5432/${PULSE_DB_NAME:-pulse}
+      - REDIS_URL=redis://pulse-redis:6379/0
+      - SECRET_KEY=${PULSE_SECRET_KEY:-}
+      - LOG_LEVEL=${PULSE_LOG_LEVEL:-info}
+    depends_on:
+      pulse-db:
+        condition: service_healthy
+      pulse-redis:
+        condition: service_healthy
+
+  pulse-db:
+    image: postgres:15-alpine
+    container_name: pulse-db
+    hostname: pulse-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${PULSE_DB_NAME:-pulse}
+      - POSTGRES_USER=${PULSE_DB_USER:-pulse}
+      - POSTGRES_PASSWORD=${PULSE_DB_PASSWORD:-changeme}
+    volumes:
+      - pulse_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PULSE_DB_USER:-pulse}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  pulse-redis:
+    image: redis:7-alpine
+    container_name: pulse-redis
+    hostname: pulse-redis
+    restart: unless-stopped
+    volumes:
+      - pulse_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  pulse_db_data:
+    name: pulse_db_data
+  pulse_redis_data:
+    name: pulse_redis_data

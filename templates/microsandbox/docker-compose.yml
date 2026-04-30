@@ -1,0 +1,45 @@
+version: '3.8'
+
+# ── Microsandbox ───────────────────────────────────────────────────────────
+# Microsandbox is a CLI tool for managing secure, isolated micro-VMs using
+# Firecracker. It runs as a foreground process managing sandbox lifecycles.
+#
+# Prerequisites:
+#   - Linux host with KVM enabled (check: ls /dev/kvm)
+#   - On Apple Silicon: uses macOS Virtualization.framework (no KVM needed)
+#   - Firecracker binary available, or Microsandbox can manage it for you
+#
+# Usage (after container is running):
+#   docker compose exec microsandbox microsandbox --help
+#   docker compose exec microsandbox microsandbox create --image alpine
+#   docker compose exec microsandbox microsandbox exec <sandbox-id> -- code
+
+services:
+  microsandbox:
+    image: ghcr.io/superradcompany/microsandbox:latest
+    container_name: microsandbox
+    hostname: microsandbox
+    stdin_open: true
+    tty: true
+    restart: "no"
+    privileged: true
+    devices:
+      - /dev/kvm:/dev/kvm
+    volumes:
+      - microsandbox_data:/var/lib/microsandbox
+      - microsandbox_sockets:/var/run/microsandbox
+    environment:
+      - MICROSANDBOX_DATA_DIR=${MICROSANDBOX_DATA_DIR:-/var/lib/microsandbox}
+      - MICROSANDBOX_SOCKET_DIR=${MICROSANDBOX_SOCKET_DIR:-/var/run/microsandbox}
+      - MICROSANDBOX_DEFAULT_IMAGE=${MICROSANDBOX_DEFAULT_IMAGE:-alpine}
+      - MICROSANDBOX_MEMORY_MB=${MICROSANDBOX_MEMORY_MB:-512}
+      - MICROSANDBOX_CPU_COUNT=${MICROSANDBOX_CPU_COUNT:-1}
+      - MICROSANDBOX_TIMEOUT_SEC=${MICROSANDBOX_TIMEOUT_SEC:-30}
+      - MICROSANDBOX_LOG_LEVEL=${MICROSANDBOX_LOG_LEVEL:-info}
+    entrypoint: ["/bin/sh", "-c", "echo 'Microsandbox ready. Use: docker compose exec microsandbox microsandbox --help'; sleep infinity"]
+
+volumes:
+  microsandbox_data:
+    name: microsandbox_data
+  microsandbox_sockets:
+    name: microsandbox_sockets

@@ -1,0 +1,8 @@
+{
+  "id": "microsandbox",
+  "name": "Microsandbox",
+  "description": "Secure local programmable sandboxes for AI agents — run untrusted code in isolated micro-VMs with Firecracker, KVM, and resource limits",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "security", "sandbox", "agent-tooling"]
+}

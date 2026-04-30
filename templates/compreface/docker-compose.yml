@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  compreface-api:
+    image: exadel/compreface:latest
+    container_name: compreface-api
+    hostname: compreface-api
+    ports:
+      - "${COMPREFACE_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${COMPREFACE_DB:-compreface}
+      - POSTGRES_USER=${COMPREFACE_DB_USER:-compreface}
+      - POSTGRES_PASSWORD=${COMPREFACE_DB_PASSWORD:-changeme}
+      - POSTGRES_URL=jdbc:postgresql://compreface-db:5432/${COMPREFACE_DB:-compreface}
+      - PG_HOST=compreface-db
+      - JAVA_OPTS=${COMPREFACE_JAVA_OPTS:--Xms512m -Xmx2g}
+    depends_on:
+      compreface-db:
+        condition: service_healthy
+
+  compreface-db:
+    image: postgres:15-alpine
+    container_name: compreface-db
+    hostname: compreface-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${COMPREFACE_DB:-compreface}
+      - POSTGRES_USER=${COMPREFACE_DB_USER:-compreface}
+      - POSTGRES_PASSWORD=${COMPREFACE_DB_PASSWORD:-changeme}
+    volumes:
+      - compreface_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${COMPREFACE_DB_USER:-compreface}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+volumes:
+  compreface_db_data:
+    name: compreface_db_data

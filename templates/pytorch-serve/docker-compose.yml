@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  pytorch-serve:
+    image: pytorch/torchserve:latest
+    container_name: pytorch-serve
+    hostname: pytorch-serve
+    ports:
+      - "${TORCHSERVE_INFERENCE_PORT:-8080}:8080"
+      - "${TORCHSERVE_MANAGEMENT_PORT:-8081}:8081"
+    volumes:
+      - pytorch_serve_model_store:/home/model-server/model-store
+      - pytorch_serve_models:/home/model-server/models
+      - pytorch_serve_tmp:/tmp
+    restart: unless-stopped
+    environment:
+      - TS_SERVICE_ENVELOPE=${TS_SERVICE_ENVELOPE:-body}
+    command: >
+      torchserve
+      --start
+      --model-store /home/model-server/model-store
+      --models ${TORCHSERVE_MODELS:-all}
+      --ncs
+      --foreground
+
+volumes:
+  pytorch_serve_model_store:
+    name: pytorch_serve_model_store
+  pytorch_serve_models:
+    name: pytorch_serve_models
+  pytorch_serve_tmp:
+    name: pytorch_serve_tmp

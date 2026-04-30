@@ -1,0 +1,8 @@
+{
+  "id": "llm-app-pathway",
+  "name": "Pathway LLM App",
+  "description": "Ready-to-run RAG, AI pipelines, and enterprise search templates — deploy document-aware Q&A, live data indexing, and real-time AI with Pathway",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "rag", "llm", "data-pipeline"]
+}

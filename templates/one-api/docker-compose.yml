@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  one-api:
+    image: justsong/one-api:latest
+    container_name: one-api
+    hostname: one-api
+    ports:
+      - "${ONE_API_PORT:-3000}:3000"
+    volumes:
+      - one_api_data:/data
+    restart: unless-stopped
+    environment:
+      - TZ=${TZ:-UTC}
+      - SQL_DSN=${SQL_DSN:-one-api.db}
+      - SESSION_SECRET=${SESSION_SECRET:-}
+      - LOG_SQL_DSN=${LOG_SQL_DSN:-false}
+      - BATCH_UPDATE_INTERVAL=${BATCH_UPDATE_INTERVAL:-5}
+      - THEME=${THEME:-default}
+
+volumes:
+  one_api_data:
+    name: one_api_data

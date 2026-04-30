@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  jina-gateway:
+    image: jinaai/jina:latest
+    container_name: jina-gateway
+    hostname: jina-gateway
+    ports:
+      - "${JINA_GATEWAY_PORT:-8080}:8080"
+    volumes:
+      - jina_workspace:/workspace
+    restart: unless-stopped
+    environment:
+      - JINA_LOG_LEVEL=${JINA_LOG_LEVEL:-INFO}
+    command: >
+      gateway --port 8080
+      --protocol ${JINA_PROTOCOL:-grpc}
+
+  jina-executor:
+    image: jinaai/jina:latest
+    container_name: jina-executor
+    hostname: jina-executor
+    restart: unless-stopped
+    environment:
+      - JINA_LOG_LEVEL=${JINA_LOG_LEVEL:-INFO}
+    depends_on:
+      - jina-gateway
+    command: >
+      executor --port 8080
+      --gateway jina-gateway:8080
+      --protocol ${JINA_PROTOCOL:-grpc}
+
+volumes:
+  jina_workspace:
+    name: jina_workspace

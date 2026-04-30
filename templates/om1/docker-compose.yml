@@ -1,13 +1,24 @@
-version: "3.8"
+version: '3.8'
 
 services:
   om1:
-    image: openmind/om1:latest
+    image: ghcr.io/heretek-ai/arcane-repo/om1:latest
     container_name: om1
     hostname: om1
     ports:
-      - "${OM1_PORT:-8080}:8080"
+      - "${OM1_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - OM1_PORT=${OM1_PORT:-8080}
+      - OM1_PORT=${OM1_PORT:-8000}
+      - OM1_HEADLESS=true
+      - OM1_SKIP_INTERNET_CHECK=true
+    # Uncomment the following to pass through hardware devices:
+    # devices:
+    #   - /dev/video0:/dev/video0
+    #   - /dev/snd:/dev/snd
+    # volumes:
+    #   - /run/user/1000/pulse:/run/user/1000/pulse
 
+volumes:
+  om1_config:
+    name: om1_config

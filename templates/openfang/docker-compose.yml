@@ -1,13 +1,19 @@
-version: "3.8"
+version: '3.8'
 
 services:
   openfang:
-    image: rightnow/openfang:latest
+    image: ghcr.io/heretek-ai/arcane-repo/openfang:latest
     container_name: openfang
     hostname: openfang
     ports:
-      - "${OPENFANG_PORT:-8080}:8080"
+      - "${OPENFANG_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - OPENFANG_PORT=${OPENFANG_PORT:-8080}
+      - OPENFANG_PORT=${OPENFANG_PORT:-8000}
+      - OPENFANG_HOME=/data
+    volumes:
+      - openfang_data:/data
 
+volumes:
+  openfang_data:
+    name: openfang_data

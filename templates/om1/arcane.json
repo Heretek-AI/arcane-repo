@@ -1,13 +1,18 @@
 {
   "id": "om1",
   "name": "OM1",
-  "description": "Open-source AI operating system for multi-agent systems",
+  "description": "Modular AI Runtime for Robots — multi-modal AI agent with vision, audio, speech processing, and hardware integration (headless container mode with hardware passthrough support)",
   "version": "1.0.0",
   "author": "Arcane",
+  "upstream": "https://github.com/OpenMind/OM1",
+  "image": "ghcr.io/heretek-ai/arcane-repo/om1:latest",
   "tags": [
     "ai",
+    "robotics",
+    "multi-modal",
+    "vision",
+    "audio",
     "agents",
-    "platform",
-    "orchestration"
+    "hardware"
   ]
 }

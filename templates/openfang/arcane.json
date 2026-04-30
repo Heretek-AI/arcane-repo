@@ -1,13 +1,18 @@
 {
   "id": "openfang",
   "name": "OpenFang",
-  "description": "Open-source AI agent platform for development and debugging",
+  "description": "Open-source Agent Operating System — Federated Learning Attack Platform with multi-agent orchestration, tool integration, and development/debugging workflows",
   "version": "1.0.0",
   "author": "Arcane",
+  "upstream": "https://github.com/RightNow-AI/openfang",
+  "image": "ghcr.io/heretek-ai/arcane-repo/openfang:latest",
   "tags": [
     "ai",
     "agents",
-    "development",
-    "debugging"
+    "federated-learning",
+    "security",
+    "orchestration",
+    "rust",
+    "tools"
   ]
 }

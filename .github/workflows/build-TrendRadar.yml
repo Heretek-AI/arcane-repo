@@ -1,10 +1,10 @@
-name: Build Yuxi
+name: Build TrendRadar
 
 on:
   push:
     paths:
-      - 'scripts/dockerfiles/Yuxi/**'
-      - 'templates/yuxi/**'
+      - 'scripts/dockerfiles/TrendRadar/**'
+      - 'templates/trendradar/**'
   workflow_dispatch:
   schedule:
     - cron: '0 6 * * *'
@@ -26,10 +26,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push Yuxi
+      - name: Build and push TrendRadar
         run: |
-          IMAGE="ghcr.io/heretek-ai/arcane-repo/yuxi:latest"
+          IMAGE="ghcr.io/heretek-ai/arcane-repo/trendradar:latest"
           echo "Building $IMAGE..."
-          docker build -t "$IMAGE" -f scripts/dockerfiles/Yuxi/Dockerfile .
+          docker build -t "$IMAGE" -f scripts/dockerfiles/TrendRadar/Dockerfile .
           docker push "$IMAGE"
           echo "Published: $IMAGE"

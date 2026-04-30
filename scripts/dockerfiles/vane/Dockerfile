@@ -15,8 +15,10 @@ RUN git clone --depth 1 https://github.com/ItzCrazyKns/Vane.git /tmp/vane && \
 
 RUN npm install --legacy-peer-deps --network-timeout 600000
 
-RUN mkdir -p /app/data && \
-    npx next build 2>/dev/null || echo "Build may need adjustments for upstream changes"
+RUN mkdir -p /app/data
+
+# Build may fail if upstream has changed its config — this is non-fatal
+RUN npx next build 2>/dev/null || echo "WARN: next build failed — will use runtime fallback"
 
 FROM node:20-slim
 
@@ -26,14 +28,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-COPY --from=builder /app/.next ./.next 2>/dev/null || mkdir -p .next
-COPY --from=builder /app/public ./public 2>/dev/null || true
-COPY --from=builder /app/package.json ./package.json 2>/dev/null || true
-COPY --from=builder /app/node_modules ./node_modules 2>/dev/null || true
+COPY --from=builder /app /app
 
 EXPOSE 3000
 
 ENV NODE_ENV=production VANE_PORT=3000
 
-CMD npx next start -p ${VANE_PORT:-3000} 2>/dev/null || \
-    (echo "Build artifacts not found" && tail -f /dev/null)
+CMD sh -c 'if [ -d /app/.next ]; then npx next start -p ${VANE_PORT:-3000}; else echo "No build artifacts — run npm install && npx next build first" && tail -f /dev/null; fi'

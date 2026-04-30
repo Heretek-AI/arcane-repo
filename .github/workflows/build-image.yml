@@ -32,6 +32,13 @@ on:
           - worldmonitor
           - onyx
           - sillytavern
+          - aionui
+          - mlflow
+          - rd-agent
+          - kag
+          - page-agent
+          - ten-framework
+          - memvid
 
 permissions:
   contents: read
@@ -53,6 +60,13 @@ jobs:
           - worldmonitor
           - onyx
           - sillytavern
+          - aionui
+          - mlflow
+          - rd-agent
+          - kag
+          - page-agent
+          - ten-framework
+          - memvid
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

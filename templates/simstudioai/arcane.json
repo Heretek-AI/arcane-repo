@@ -1,0 +1,8 @@
+{
+  "id": "simstudioai",
+  "name": "SimStudio AI",
+  "description": "3D simulation and AI agent environment platform — create, train, and evaluate AI agents in photorealistic 3D virtual worlds for reinforcement learning and embodied AI research",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "3d", "simulation", "reinforcement-learning", "agents"]
+}

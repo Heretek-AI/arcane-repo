@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  simstudioai:
+    image: python:3.12-slim
+    container_name: simstudioai
+    hostname: simstudioai
+    ports:
+      - "${SIMSTUDIOAI_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='SimStudio AI',
+    version='1.0.0',
+    description=(
+        'SimStudio AI provides photorealistic 3D simulation environments '
+        'for training and evaluating AI agents. Due to its GPU-accelerated '
+        'rendering and 3D engine dependencies, Docker deployment of the '
+        'full platform is complex. This template provides a minimal '
+        'informational API.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'service': 'simstudioai',
+        'note': 'Informational stub — SimStudio AI requires GPU-accelerated rendering and 3D engine dependencies for full functionality',
+        'requirements': ['GPU (CUDA)', '3D rendering engine', 'Physics simulation libraries']
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'setup_notes': [
+            'SimStudio AI requires a GPU-accelerated environment with 3D rendering support.',
+            'For full functionality, install and run on bare metal or a GPU-enabled VM.',
+            'Consider using RunPod, Vast.ai, or Lambda Cloud for GPU instances.'
+        ],
+        'quick_start': [
+            'pip install simstudio-ai',
+            'simstudio run --scene kitchen --agent your_agent.py',
+            'simstudio eval --config evaluation_config.yaml'
+        ],
+        'documentation': 'https://github.com/simstudioai/simstudio',
+        'note': 'SimStudio AI runs best on GPU-accelerated bare metal or cloud instances.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('SIMSTUDIOAI_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${SIMSTUDIOAI_PORT:-8000}
+      "

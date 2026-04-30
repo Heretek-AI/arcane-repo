@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  voicebox:
+    image: python:3.12-slim
+    container_name: voicebox
+    hostname: voicebox
+    ports:
+      - "${VOICEBOX_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Voicebox',
+    version='1.0.0',
+    description=(
+        'Voicebox AI provides speech synthesis, voice cloning, '
+        'and expressive text-to-speech generation. Due to model '
+        'download sizes and GPU requirements, full deployment '
+        'typically runs on dedicated inference infrastructure. '
+        'This template provides a minimal informational API.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'service': 'voicebox',
+        'note': 'Informational stub — Voicebox AI requires GPU inference and model downloads for full speech synthesis capabilities',
+        'requirements': ['GPU (CUDA, 8GB+ VRAM)', 'Model storage: 5GB+'],
+        'installation': 'pip install voicebox-ai'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'installation': [
+            'pip install voicebox-ai',
+            '# or: pip install voicebox-ai[gpu] for CUDA acceleration'
+        ],
+        'quick_start': [
+            'voicebox speak --text "Hello, this is a test." --voice natural',
+            'voicebox clone --audio sample.wav --name "my_voice"',
+            'voicebox serve --port 8080'
+        ],
+        'python_usage': [
+            'from voicebox import Voicebox',
+            'vb = Voicebox(model="base")',
+            'audio = vb.synthesize("Hello world", voice="natural")',
+            'vb.save(audio, "output.wav")'
+        ],
+        'documentation': 'https://github.com/voicebox-ai/voicebox',
+        'note': 'Voicebox AI runs best on GPU-accelerated hardware with direct model access.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('VOICEBOX_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${VOICEBOX_PORT:-8000}
+      "

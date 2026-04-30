@@ -1,0 +1,8 @@
+{
+  "id": "puck",
+  "name": "Puck",
+  "description": "AI agent orchestration and automation tool — manage and coordinate multi-agent workflows with configurable pipelines and event-driven execution",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "orchestration", "automation", "agents", "workflow"]
+}

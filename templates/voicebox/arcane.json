@@ -1,0 +1,8 @@
+{
+  "id": "voicebox",
+  "name": "Voicebox",
+  "description": "AI voice synthesis and speech generation platform — create natural, expressive speech from text with voice cloning, emotion control, and multi-language support",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "speech", "tts", "voice", "audio"]
+}

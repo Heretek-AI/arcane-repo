@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  sillytavern:
+    image: ghcr.io/arcane-repo/sillytavern:latest
+    container_name: sillytavern
+    hostname: sillytavern
+    ports:
+      - "${SILLYTAVERN_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - SILLYTAVERN_PORT=${SILLYTAVERN_PORT:-8000}

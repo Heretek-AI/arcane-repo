@@ -1,0 +1,14 @@
+{
+  "id": "sillytavern",
+  "name": "SillyTavern",
+  "description": "LLM chat frontend for interacting with various AI backends — text generation, roleplay, and character management",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "chat",
+    "llm",
+    "frontend",
+    "roleplay"
+  ]
+}

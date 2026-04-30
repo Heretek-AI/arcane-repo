@@ -9,6 +9,8 @@ on:
       - 'templates/nanobot/**'
       - 'templates/vane/**'
       - 'templates/worldmonitor/**'
+      - 'templates/onyx/**'
+      - 'templates/sillytavern/**'
   workflow_dispatch:
     inputs:
       template:
@@ -21,6 +23,8 @@ on:
           - nanobot
           - vane
           - worldmonitor
+          - onyx
+          - sillytavern
 
 permissions:
   contents: read
@@ -40,6 +44,8 @@ jobs:
           - nanobot
           - vane
           - worldmonitor
+          - onyx
+          - sillytavern
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

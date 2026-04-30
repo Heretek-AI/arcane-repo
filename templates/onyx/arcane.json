@@ -1,0 +1,14 @@
+{
+  "id": "onyx",
+  "name": "Onyx",
+  "description": "Enterprise AI search platform for connecting, indexing, and searching organizational knowledge — formerly Danswer",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "search",
+    "enterprise",
+    "knowledge-management",
+    "rag"
+  ]
+}

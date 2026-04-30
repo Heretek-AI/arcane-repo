@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: docsgpt-postgres
+    hostname: docsgpt-postgres
+    ports:
+      - "${DOCSGPT_DB_PORT:-5432}:5432"
+    volumes:
+      - docsgpt_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${DOCSGPT_DB_USER:-docsgpt}
+      - POSTGRES_PASSWORD=${DOCSGPT_DB_PASSWORD:?DOCSGPT_DB_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${DOCSGPT_DB_NAME:-docsgpt}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DOCSGPT_DB_USER:-docsgpt}"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  docsgpt:
+    image: arc53/docsgpt:latest
+    container_name: docsgpt
+    hostname: docsgpt
+    ports:
+      - "${DOCSGPT_PORT:-3000}:3000"
+    volumes:
+      - docsgpt_data:/app/data
+      - docsgpt_indexes:/app/indexes
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # ── Database ────────────────────────────────────────────────────
+      - DB_HOST=docsgpt-postgres
+      - DB_PORT=5432
+      - DB_USER=${DOCSGPT_DB_USER:-docsgpt}
+      - DB_PASSWORD=${DOCSGPT_DB_PASSWORD:?DOCSGPT_DB_PASSWORD is required — see .env.example}
+      - DB_NAME=${DOCSGPT_DB_NAME:-docsgpt}
+      # ── LLM Provider ───────────────────────────────────────────────
+      - LLM_NAME=${LLM_NAME:-gpt-4o}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      # ── Embeddings ─────────────────────────────────────────────────
+      - EMBEDDINGS_NAME=${EMBEDDINGS_NAME:-}
+      - EMBEDDINGS_KEY=${EMBEDDINGS_KEY:-}
+      # ── Application ────────────────────────────────────────────────
+      - APP_ENV=${APP_ENV:-production}
+      - SECRET_KEY=${SECRET_KEY:?SECRET_KEY is required — see .env.example}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  docsgpt_postgres_data:
+    name: docsgpt_postgres_data
+  docsgpt_data:
+    name: docsgpt_data
+  docsgpt_indexes:
+    name: docsgpt_indexes

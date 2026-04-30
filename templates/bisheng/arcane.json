@@ -1,0 +1,8 @@
+{
+  "id": "bisheng",
+  "name": "Bishêng",
+  "description": "Open-source LLM application platform — build, deploy, and monitor AI applications with a visual workflow editor, RAG pipelines, and multi-model support",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "llm", "platform", "low-code", "rag"]
+}

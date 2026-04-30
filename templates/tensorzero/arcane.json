@@ -1,0 +1,8 @@
+{
+  "id": "tensorzero",
+  "name": "TensorZero",
+  "description": "Open-source AI inference gateway — unified API for OpenAI, Anthropic, AWS Bedrock, Ollama, and more with fallbacks, load balancing, and observability",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "llm", "gateway", "inference", "observability"]
+}

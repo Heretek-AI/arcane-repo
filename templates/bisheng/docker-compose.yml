@@ -1,0 +1,105 @@
+version: '3.8'
+
+networks:
+  bisheng_network:
+    name: bisheng_network
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: bisheng-postgres
+    hostname: bisheng-postgres
+    ports:
+      - "${BISHENG_DB_PORT:-5432}:5432"
+    volumes:
+      - bisheng_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${DB_USER:?DB_USER is required — see .env.example}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:?DB_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${DB_NAME:-bisheng}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:?}"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - bisheng_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: bisheng-redis
+    hostname: bisheng-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-bishengredis}
+    volumes:
+      - bisheng_redis_data:/data
+    networks:
+      - bisheng_network
+
+  backend:
+    image: dataelement/bisheng-backend:latest
+    container_name: bisheng-backend
+    hostname: bisheng-backend
+    ports:
+      - "${BISHENG_BACKEND_PORT:-9001}:9001"
+    volumes:
+      - bisheng_backend_data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      # ── Database ────────────────────────────────────────────────────
+      - DB_HOST=bisheng-postgres
+      - DB_PORT=5432
+      - DB_USER=${DB_USER:?DB_USER is required — see .env.example}
+      - DB_PASSWORD=${DB_PASSWORD:?DB_PASSWORD is required — see .env.example}
+      - DB_NAME=${DB_NAME:-bisheng}
+      # ── Redis ──────────────────────────────────────────────────────
+      - REDIS_HOST=bisheng-redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-bishengredis}
+      # ── LLM Backend ────────────────────────────────────────────────
+      - LLM_MODEL=${LLM_MODEL:-gpt-4o}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      # ── Application ────────────────────────────────────────────────
+      - BISHENG_LICENSE=${BISHENG_LICENSE:-}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - bisheng_network
+
+  frontend:
+    image: dataelement/bisheng-frontend:latest
+    container_name: bisheng-frontend
+    hostname: bisheng-frontend
+    ports:
+      - "${BISHENG_FRONTEND_PORT:-3000}:3000"
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    environment:
+      - BACKEND_URL=http://bisheng-backend:9001
+    networks:
+      - bisheng_network
+
+volumes:
+  bisheng_postgres_data:
+    name: bisheng_postgres_data
+  bisheng_redis_data:
+    name: bisheng_redis_data
+  bisheng_backend_data:
+    name: bisheng_backend_data

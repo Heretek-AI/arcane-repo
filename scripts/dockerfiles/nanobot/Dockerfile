@@ -1,11 +1,10 @@
 # NanoBot — Dockerfile
-# Builds HKUDS/nanobot research project
-# https://github.com/HKUDS/nanobot
+# Builds HKUDS/nanobot from source
 
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl ca-certificates gnupg git \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -14,27 +13,14 @@ RUN git clone --depth 1 https://github.com/HKUDS/nanobot.git /tmp/nanobot && \
     cp -r /tmp/nanobot/* /app/ && \
     rm -rf /tmp/nanobot
 
-RUN mkdir -p nanobot bridge && touch nanobot/__init__.py && \
-    uv pip install --system --no-cache-dir .
+RUN mkdir -p nanobot bridge && touch nanobot/__init__.py
 
-RUN pip install --no-cache-dir uvicorn fastapi
+RUN uv pip install --system --no-cache-dir . uvicorn fastapi
+
+COPY scripts/dockerfiles/nanobot/server.py /app/server.py
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "\
-cat > /app/server.py << 'PYEOF'
-import os
-from fastapi import FastAPI
+ENV NANOBOT_PORT=8000
 
-app = FastAPI(title='NanoBot', version='1.0.0', description='HKU NanoBot')
-
-@app.get('/health')
-async def health():
-    return {'status': 'ok', 'framework': 'NanoBot'}
-
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run(app, host='0.0.0.0', port=int(os.environ.get('NANOBOT_PORT', '8000')))
-PYEOF
-uvicorn server:app --host 0.0.0.0 --port ${NANOBOT_PORT:-8000}
-"]
+CMD python3 /app/server.py

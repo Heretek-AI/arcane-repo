@@ -1,6 +1,5 @@
 # OpenSpiel — Multi-stage Dockerfile
 # Builds Google DeepMind's OpenSpiel game theory framework
-# https://github.com/google-deepmind/open_spiel
 
 FROM python:3.12-bookworm AS builder
 
@@ -23,25 +22,10 @@ COPY --from=builder /usr/local/bin /usr/local/bin
 
 RUN pip install --no-cache-dir uvicorn fastapi
 
+COPY scripts/dockerfiles/openspiel/server.py /app/server.py
+
 EXPOSE 8080
 
-CMD ["sh", "-c", "\
-pip install --no-cache-dir -q uvicorn fastapi && \
-cat > /app/server.py << 'PYEOF'
-import os
-from fastapi import FastAPI
+ENV OPENSPIEL_PORT=8080
 
-app = FastAPI(title='OpenSpiel', version='1.0.0', description='Google DeepMind OpenSpiel')
-
-@app.get('/health')
-async def health():
-    import pyspiel
-    games = pyspiel.registered_games()
-    return {'status': 'ok', 'games_available': len(games), 'framework': 'OpenSpiel'}
-
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run(app, host='0.0.0.0', port=int(os.environ.get('OPENSPIEL_PORT', '8080')))
-PYEOF
-uvicorn server:app --host 0.0.0.0 --port ${OPENSPIEL_PORT:-8080}
-"]
+CMD python3 /app/server.py

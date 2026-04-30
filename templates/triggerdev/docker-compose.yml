@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: triggerdev-postgres
+    hostname: triggerdev-postgres
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - triggerdev_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${POSTGRES_DB:-triggerdev}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  triggerdev:
+    image: ghcr.io/triggerdotdev/trigger.dev:latest
+    container_name: triggerdev
+    hostname: triggerdev
+    ports:
+      - "${TRIGGERDEV_PORT:-3030}:3030"
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # ── Server Port ─────────────────────────────────────────────────
+      - PORT=${TRIGGERDEV_PORT:-3030}
+      # ── Database ────────────────────────────────────────────────────
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required — see .env.example}@triggerdev-postgres:5432/${POSTGRES_DB:-triggerdev}
+      - DIRECT_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}@triggerdev-postgres:5432/${POSTGRES_DB:-triggerdev}?sslmode=disable
+      # ── Required Secrets ────────────────────────────────────────────
+      - SESSION_SECRET=${SESSION_SECRET:?SESSION_SECRET is required — see .env.example}
+      - MAGIC_LINK_SECRET=${MAGIC_LINK_SECRET:?MAGIC_LINK_SECRET is required — see .env.example}
+      - TRIGGER_SECRET_KEY=${TRIGGER_SECRET_KEY:?TRIGGER_SECRET_KEY is required — see .env.example}
+      # ── Encryption ─────────────────────────────────────────────────
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY:?ENCRYPTION_KEY is required — see .env.example}
+      # ── Application URL (Required for magic links) ─────────────────
+      - APP_ORIGIN=${APP_ORIGIN:-http://localhost:3030}
+      # ── Optional Login Providers ────────────────────────────────────
+      - AUTH_GITHUB_CLIENT_ID=${AUTH_GITHUB_CLIENT_ID:-}
+      - AUTH_GITHUB_CLIENT_SECRET=${AUTH_GITHUB_CLIENT_SECRET:-}
+
+volumes:
+  triggerdev_postgres_data:
+    name: triggerdev_postgres_data

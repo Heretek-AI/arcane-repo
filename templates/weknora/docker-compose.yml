@@ -1,0 +1,114 @@
+version: '3.8'
+
+networks:
+  weknora_network:
+    name: weknora_network
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: weknora-postgres
+    hostname: weknora-postgres
+    ports:
+      - "${WEKNORA_DB_PORT:-5432}:5432"
+    volumes:
+      - weknora_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${DB_USER:?DB_USER is required — see .env.example}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:?DB_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${DB_NAME:-weknora}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:?}"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - weknora_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: weknora-redis
+    hostname: weknora-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-redispass}
+    volumes:
+      - weknora_redis_data:/data
+    networks:
+      - weknora_network
+
+  app:
+    image: wechatopenai/weknora-app:latest
+    container_name: weknora-app
+    hostname: weknora-app
+    ports:
+      - "${WEKNORA_APP_PORT:-8080}:8080"
+    volumes:
+      - weknora_files:/data/files
+      - ./config/config.yaml:/app/config/config.yaml:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      # ── Logging ─────────────────────────────────────────────────────
+      - GIN_MODE=${GIN_MODE:-release}
+      - LOG_LEVEL=${LOG_LEVEL:-}
+      # ── Database ────────────────────────────────────────────────────
+      - DB_DRIVER=postgres
+      - DB_HOST=weknora-postgres
+      - DB_PORT=5432
+      - DB_USER=${DB_USER:?DB_USER is required — see .env.example}
+      - DB_PASSWORD=${DB_PASSWORD:?DB_PASSWORD is required — see .env.example}
+      - DB_NAME=${DB_NAME:-weknora}
+      # ── Redis ──────────────────────────────────────────────────────
+      - REDIS_ADDR=weknora-redis:6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-redispass}
+      - REDIS_USERNAME=${REDIS_USERNAME:-}
+      # ── LLM Backend ────────────────────────────────────────────────
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      # ── Registration & Language ────────────────────────────────────
+      - DISABLE_REGISTRATION=${DISABLE_REGISTRATION:-false}
+      - WEKNORA_LANGUAGE=${WEKNORA_LANGUAGE:-en}
+      # ── JWT & Crypto ───────────────────────────────────────────────
+      - JWT_SECRET=${JWT_SECRET:?JWT_SECRET is required — see .env.example}
+      - MAX_FILE_SIZE_MB=${MAX_FILE_SIZE_MB:-50}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - weknora_network
+
+  frontend:
+    image: wechatopenai/weknora-ui:latest
+    container_name: weknora-frontend
+    hostname: weknora-frontend
+    ports:
+      - "${WEKNORA_UI_PORT:-80}:80"
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      - MAX_FILE_SIZE_MB=${MAX_FILE_SIZE_MB:-50}
+      - APP_HOST=weknora-app
+      - APP_PORT=8080
+      - APP_SCHEME=http
+    networks:
+      - weknora_network
+
+volumes:
+  weknora_postgres_data:
+    name: weknora_postgres_data
+  weknora_redis_data:
+    name: weknora_redis_data
+  weknora_files:
+    name: weknora_files

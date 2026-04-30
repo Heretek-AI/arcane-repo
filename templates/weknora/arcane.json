@@ -1,0 +1,8 @@
+{
+  "id": "weknora",
+  "name": "WeKnora (Tencent AI Assistant)",
+  "description": "Open-source enterprise AI knowledge assistant by Tencent — deploy a private RAG-powered assistant with document analysis, multi-LLM support, and built-in agent skills",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "knowledge", "rag", "assistant", "enterprise"]
+}

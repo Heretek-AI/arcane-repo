@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  databend:
+    image: datafuselabs/databend:latest
+    container_name: databend
+    hostname: databend
+    ports:
+      - "${DATABEND_PORT:-8000}:8000"
+      - "${DATABEND_HTTP_PORT:-8124}:8124"
+      - "${DATABEND_MINIO_PORT:-9000}:9000"
+    volumes:
+      - databend_data:/var/lib/databend
+      - databend_minio_data:/var/lib/minio
+    restart: unless-stopped
+    environment:
+      # ── Query Configuration ────────────────────────────────────────────
+      - QUERY_DEFAULT_USER=${QUERY_DEFAULT_USER:-root}
+      - QUERY_DEFAULT_PASSWORD=${QUERY_DEFAULT_PASSWORD:-}
+      # ── Storage Backend ────────────────────────────────────────────────
+      # Use 'fs' for local filesystem (default) or 's3' for object storage.
+      - QUERY_STORAGE_TYPE=${QUERY_STORAGE_TYPE:-fs}
+      # ── S3-Compatible Backend (when QUERY_STORAGE_TYPE=s3) ────────────
+      - AWS_S3_ENDPOINT=${AWS_S3_ENDPOINT:-}
+      - AWS_S3_BUCKET=${AWS_S3_BUCKET:-}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      # ── Embedded MinIO (Optional) ─────────────────────────────────────
+      # Set MINIO_ENABLED=true to run a built-in MinIO server inside the
+      # Databend container. MinIO will be available on port 9000.
+      - MINIO_ENABLED=${MINIO_ENABLED:-false}
+
+volumes:
+  databend_data:
+    name: databend_data
+  databend_minio_data:
+    name: databend_minio_data

@@ -1,0 +1,8 @@
+{
+  "id": "triggerdev",
+  "name": "Trigger.dev",
+  "description": "Open-source platform for creating reliable, long-running background jobs and workflows — durable execution with TypeScript, automatic retries, and real-time observability",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["workflow", "automation", "jobs", "typescript", "background"]
+}

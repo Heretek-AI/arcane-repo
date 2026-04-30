@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  joern:
+    image: ghcr.io/joernio/joern:master
+    container_name: joern
+    hostname: joern
+    ports:
+      - "${JOERN_PORT:-8080}:8080"
+    volumes:
+      - joern_project:/app/project
+      - joern_cache:/root/.cache
+      - joern_data:/root/.joern
+      # Mount source code to analyze:
+      #   ./source-code:/app/source-code:ro
+    restart: unless-stopped
+    environment:
+      # ── Server Mode ──────────────────────────────────────────────────
+      # Set to true to run the Joern REST server instead of the CLI.
+      - JOERN_SERVER=${JOERN_SERVER:-true}
+      # ── Server Port ──────────────────────────────────────────────────
+      - JOERN_PORT=${JOERN_PORT:-8080}
+      # ── JVM Options ─────────────────────────────────────────────────
+      - JOERN_OPTS=${JOERN_OPTS:--Xmx4G}
+      # ── Workspace ───────────────────────────────────────────────────
+      - JOERN_PROJECT_DIR=/app/project
+
+volumes:
+  joern_project:
+    name: joern_project
+  joern_cache:
+    name: joern_cache
+  joern_data:
+    name: joern_data

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  aionui:
+    image: ghcr.io/${REPO_OWNER:-heretek-ai}/${REPO_NAME:-arcane-repo}/aionui:latest
+    container_name: aionui
+    hostname: aionui
+    build:
+      context: ../..
+      dockerfile: scripts/dockerfiles/aionui/Dockerfile
+    ports:
+      - "${AIONUI_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - ALLOW_REMOTE=true
+      - DATA_DIR=/data
+      # ── API Keys ───────────────────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      # ── OAuth (optional) ───────────────────────────────────────────
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID:-}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET:-}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET:-}
+    volumes:
+      - aionui-data:/data
+
+volumes:
+  aionui-data:
+    driver: local

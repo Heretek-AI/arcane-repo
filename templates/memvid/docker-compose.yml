@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  memvid:
+    image: ghcr.io/arcane-repo/memvid:latest
+    container_name: memvid
+    hostname: memvid
+    ports:
+      - "${MEMVID_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - MEMVID_PORT=${MEMVID_PORT:-8000}
+      - MEMVID_DATA_DIR=${MEMVID_DATA_DIR:-/app/data}
+      - MEMVID_FILE=${MEMVID_FILE:-default.mv2}
+      - MEMVID_EMBED_MODE=${MEMVID_EMBED_MODE:-local}
+      - MEMVID_LOG_LEVEL=${MEMVID_LOG_LEVEL:-info}
+      # ── LLM API Key (optional, for api embed mode) ──────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - memvid-data:/app/data
+
+volumes:
+  memvid-data:

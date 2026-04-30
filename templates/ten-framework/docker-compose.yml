@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  ten-framework:
+    image: python:3.12-slim
+    container_name: ten-framework
+    hostname: ten-framework
+    ports:
+      - "${TEN_FRAMEWORK_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='TEN Framework (Development Platform)',
+    version='1.0.0',
+    description=(
+        'TEN Framework is a C++/GN build system for conversational voice '
+        'AI agents. Due to its complex build requirements (GN toolchain, '
+        'C++ submodules, specific build image), it is designed for '
+        'development workspace use, not standalone Docker deployment. '
+        'This container provides a minimal informational API.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'framework': 'ten-framework',
+        'type': 'dev-platform-stub',
+        'documentation': 'https://github.com/TEN-framework/ten-framework',
+        'note': 'This is an informational stub. Use the devcontainer for development.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'development_setup': [
+            'Open in VS Code with Dev Containers extension',
+            'Reopen in container (ghcr.io/ten-framework/ten_agent_build:0.7.14)',
+            'Navigate to /workspaces/ten-framework/ai_agents',
+            'Run agent via npm start or npx tman --config=your_config.json'
+        ],
+        'ports': {
+            '3000': 'Agent Example UI',
+            '49483': 'TMAN Designer',
+            '8080': 'TEN API Server',
+            '49484': 'TEN Service Hub'
+        },
+        'documentation': 'https://github.com/TEN-framework/ten-framework',
+        'note': 'TEN Framework runs best in its devcontainer environment, not as a Docker service.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('TEN_FRAMEWORK_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${TEN_FRAMEWORK_PORT:-8000}
+      "

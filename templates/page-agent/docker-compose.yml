@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  page-agent:
+    image: python:3.12-slim
+    container_name: page-agent
+    hostname: page-agent
+    ports:
+      - "${PAGE_AGENT_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Page Agent (CLI Tool)',
+    version='1.0.0',
+    description=(
+        'Page Agent by Alibaba is an in-browser GUI agent that controls '
+        'web interfaces with natural language. It runs primarily as a '
+        'Node.js CLI tool or browser extension, not as a standalone '
+        'Docker service. This Docker container provides a minimal '
+        'informational API — use npx for the full CLI experience.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'page-agent',
+        'type': 'cli-stub',
+        'documentation': 'https://github.com/alibaba/page-agent',
+        'note': 'This is an informational stub. Use npx @page-agent/core for full functionality.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'cli_usage': [
+            'npx page-agent <url> --instruction "click the login button"',
+            'npx page-agent <url> --instruction "fill the form with sample data"'
+        ],
+        'npm_package': '@page-agent/page-agent',
+        'documentation': 'https://github.com/alibaba/page-agent',
+        'note': 'Page Agent runs best as an npm CLI tool or browser extension, not as a Docker service.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('PAGE_AGENT_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${PAGE_AGENT_PORT:-8000}
+      "

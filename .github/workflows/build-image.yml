@@ -60,7 +60,8 @@ jobs:
         run: |
           TEMPLATE="${{ matrix.template }}"
           DOCKERFILE="scripts/dockerfiles/$TEMPLATE/Dockerfile"
-          IMAGE="${{ env.REGISTRY }}/${{ github.repository }}/$TEMPLATE:${{ env.IMAGE_TAG }}"
+          REPO="${{ lower(github.repository) }}"
+          IMAGE="${{ env.REGISTRY }}/$REPO/$TEMPLATE:${{ env.IMAGE_TAG }}"
 
           if [ ! -f "$DOCKERFILE" ]; then
             echo "No Dockerfile for $TEMPLATE — skipping"

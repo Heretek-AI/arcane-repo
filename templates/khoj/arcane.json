@@ -1,0 +1,8 @@
+{
+  "id": "khoj",
+  "name": "Khoj",
+  "description": "Open-source, AI-powered personal search assistant — index your documents, notes, and code, then search and chat with them using local or cloud LLMs",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "search", "knowledge", "productivity"]
+}

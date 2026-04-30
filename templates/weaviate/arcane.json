@@ -1,0 +1,8 @@
+{
+  "id": "weaviate",
+  "name": "Weaviate",
+  "description": "Open-source vector database — store, index, and search vector embeddings with built-in hybrid (vector + keyword) search, CRUD, and multi-tenancy",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "vector-database", "search", "ml"]
+}

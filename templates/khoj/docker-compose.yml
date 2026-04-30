@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  khoj:
+    image: ghcr.io/khoj-ai/khoj:latest
+    container_name: khoj
+    hostname: khoj
+    ports:
+      - "${KHOJ_PORT:-42110}:42110"
+    volumes:
+      - khoj_config:/root/.khoj
+      - khoj_data:/root/.khoj/data
+    restart: unless-stopped
+    environment:
+      # ── Application Configuration ─────────────────────────────────────
+      - KHOJ_PORT=${KHOJ_PORT:-42110}
+      # ── LLM Configuration ─────────────────────────────────────────────
+      # At least one of the following is required:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - KHOJ_OPENAI_MODEL=${KHOJ_OPENAI_MODEL:-gpt-4o-mini}
+      # ── Local Model (Optional — requires separate Ollama server) ─────
+      - KHOJ_LLM_MODEL_NAME=${KHOJ_LLM_MODEL_NAME:-}
+      - KHOJ_LLM_API_KEY=${KHOJ_LLM_API_KEY:-}
+      - KHOJ_LLM_API_BASE_URL=${KHOJ_LLM_API_BASE_URL:-}
+      # ── Search Configuration ──────────────────────────────────────────
+      - KHOJ_SEARCH_MODEL=${KHOJ_SEARCH_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      # ── Admin Account ─────────────────────────────────────────────────
+      - KHOJ_ADMIN_EMAIL=${KHOJ_ADMIN_EMAIL:-admin@example.com}
+      - KHOJ_ADMIN_PASSWORD=${KHOJ_ADMIN_PASSWORD:-password}
+
+volumes:
+  khoj_config:
+    name: khoj_config
+  khoj_data:
+    name: khoj_data

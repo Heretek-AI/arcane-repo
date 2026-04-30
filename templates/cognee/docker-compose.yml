@@ -1,0 +1,91 @@
+version: '3.8'
+
+services:
+  cognee:
+    image: python:3.12-slim
+    container_name: cognee
+    hostname: cognee
+    ports:
+      - "${COGNEE_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      # ── LLM Provider ─────────────────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required — see .env.example}
+      - COGNEE_LLM_MODEL=${COGNEE_LLM_MODEL:-gpt-4o-mini}
+      # ── Embeddings ────────────────────────────────────────────────────
+      - COGNEE_EMBEDDING_MODEL=${COGNEE_EMBEDDING_MODEL:-text-embedding-3-small}
+      # ── Graph Store ──────────────────────────────────────────────────
+      - COGNEE_GRAPH_DATABASE_URL=${COGNEE_GRAPH_DATABASE_URL:-}
+      - COGNEE_GRAPH_DATABASE_USER=${COGNEE_GRAPH_DATABASE_USER:-}
+      - COGNEE_GRAPH_DATABASE_PASSWORD=${COGNEE_GRAPH_DATABASE_PASSWORD:-}
+      # ── Vector Store ─────────────────────────────────────────────────
+      - COGNEE_VECTOR_DATABASE_URL=${COGNEE_VECTOR_DATABASE_URL:-}
+      # ── Server ───────────────────────────────────────────────────────
+      - PYTHONUNBUFFERED=1
+      - COGNEE_PORT=${COGNEE_PORT:-8000}
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q cognee fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+import sys
+from pathlib import Path
+
+# Ensure cognee can find its defaults
+os.environ.setdefault('COGNEE_LLM_MODEL', 'gpt-4o-mini')
+os.environ.setdefault('COGNEE_EMBEDDING_MODEL', 'text-embedding-3-small')
+
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+
+app = FastAPI(
+    title='Cognee',
+    version='1.0.0',
+    description='Graph-based RAG API — extract knowledge graphs from documents and query them with LLMs'
+)
+
+class QueryRequest(BaseModel):
+    query: str
+
+class IngestRequest(BaseModel):
+    text: str
+    dataset_name: str = 'default'
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'framework': 'cognee'}
+
+@app.post('/ingest')
+async def ingest(request: IngestRequest):
+    try:
+        from cognee.api.v1.add import add
+        await add(request.text, request.dataset_name)
+        return {'status': 'ingested', 'dataset': request.dataset_name}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post('/search')
+async def search(request: QueryRequest):
+    try:
+        from cognee.api.v1.search import search as cognee_search
+        results = await cognee_search(request.query)
+        return {'results': results}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post('/query')
+async def query(request: QueryRequest):
+    try:
+        from cognee.api.v1.ask import ask
+        answer = await ask(request.query)
+        return {'answer': answer}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('COGNEE_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${COGNEE_PORT:-8000}
+      "

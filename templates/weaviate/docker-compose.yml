@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  weaviate:
+    image: semitechnologies/weaviate:latest
+    container_name: weaviate
+    hostname: weaviate
+    ports:
+      - "${WEAVIATE_PORT:-8080}:8080"
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    restart: unless-stopped
+    environment:
+      # ── Authentication ─────────────────────────────────────────────────
+      - AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=${AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED:-true}
+      # ── Persistence ────────────────────────────────────────────────────
+      - PERSISTENCE_DATA_PATH=/var/lib/weaviate
+      # ── Cluster ────────────────────────────────────────────────────────
+      - CLUSTER_HOSTNAME=${CLUSTER_HOSTNAME:-weaviate-node-0}
+      # ── Vector Index ───────────────────────────────────────────────────
+      - DEFAULT_VECTORIZER_MODULE=${DEFAULT_VECTORIZER_MODULE:-none}
+      - ENABLE_MODULES=${ENABLE_MODULES:-text2vec-cohere,text2vec-huggingface,text2vec-openai,text2vec-ollama,generative-openai,generative-cohere,generative-ollama,qna-openai}
+
+volumes:
+  weaviate_data:
+    name: weaviate_data

@@ -11,6 +11,13 @@ on:
       - 'templates/worldmonitor/**'
       - 'templates/onyx/**'
       - 'templates/sillytavern/**'
+      - 'templates/aionui/**'
+      - 'templates/mlflow/**'
+      - 'templates/rd-agent/**'
+      - 'templates/kag/**'
+      - 'templates/page-agent/**'
+      - 'templates/ten-framework/**'
+      - 'templates/memvid/**'
   workflow_dispatch:
     inputs:
       template:

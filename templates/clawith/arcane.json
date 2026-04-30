@@ -1,13 +1,19 @@
 {
   "id": "clawith",
   "name": "Clawith",
-  "description": "Open-source AI workflow builder with visual canvas",
+  "description": "Enterprise AI digital employee platform — multi-service workflow builder with visual canvas, agent orchestration, and OKR management",
   "version": "1.0.0",
   "author": "Arcane",
+  "upstream": "https://github.com/dataelement/Clawith",
+  "image": "ghcr.io/heretek-ai/arcane-repo/clawith:latest",
   "tags": [
     "ai",
     "workflow",
+    "orchestration",
+    "agents",
+    "enterprise",
     "low-code",
-    "pipelines"
+    "pipelines",
+    "multi-service"
   ]
 }

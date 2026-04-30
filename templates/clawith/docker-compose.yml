@@ -1,13 +1,66 @@
-version: "3.8"
+version: '3.8'
 
 services:
   clawith:
-    image: dataelement/clawith:latest
+    image: ghcr.io/heretek-ai/arcane-repo/clawith:latest
     container_name: clawith
     hostname: clawith
     ports:
-      - "${CLAWITH_PORT:-8080}:8080"
+      - "${CLAWITH_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - CLAWITH_PORT=${CLAWITH_PORT:-8080}
+      - CLAWITH_PORT=${CLAWITH_PORT:-8000}
+      - CLAWITH_HOST=0.0.0.0
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-clawith}:${POSTGRES_PASSWORD:-clawith}@postgres:5432/${POSTGRES_DB:-clawith}
+      - REDIS_URL=redis://redis:6379/0
+      - AGENT_DATA_DIR=/data/agents
+      - AGENT_TEMPLATE_DIR=/app/agent_template
+      - SECRET_KEY=${SECRET_KEY:-change-me-in-production}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-change-me-jwt-secret}
+      - CORS_ORIGINS=${CORS_ORIGINS:-'["*"]'}
+      - PUBLIC_BASE_URL=${PUBLIC_BASE_URL:-http://localhost:8000}
+    volumes:
+      - clawith_agent_data:/data/agents
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
 
+  postgres:
+    image: postgres:15-alpine
+    container_name: clawith-postgres
+    hostname: postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-clawith}
+      - POSTGRES_USER=${POSTGRES_USER:-clawith}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-clawith}
+    volumes:
+      - clawith_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-clawith}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: clawith-redis
+    hostname: redis
+    volumes:
+      - clawith_redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  clawith_postgres_data:
+    name: clawith_postgres_data
+  clawith_redis_data:
+    name: clawith_redis_data
+  clawith_agent_data:
+    name: clawith_agent_data

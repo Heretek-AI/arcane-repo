@@ -1,0 +1,8 @@
+{
+  "id": "rd-agent",
+  "name": "RD-Agent",
+  "description": "Microsoft RD-Agent — automated research & development agent that uses LLMs to drive the R&D process autonomously, from idea formulation to code generation and evaluation",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "research", "automation", "llm", "code-generation"]
+}

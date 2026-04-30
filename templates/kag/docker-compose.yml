@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  kag:
+    image: ghcr.io/arcane-repo/kag:latest
+    container_name: kag
+    hostname: kag
+    ports:
+      - "${KAG_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - KAG_PORT=${KAG_PORT:-8000}
+      # ── LLM Provider ─────────────────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required — see .env.example}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o}
+      # ── Knowledge Base ───────────────────────────────────────────────
+      - KAG_KNOWLEDGE_BASE_DIR=${KAG_KNOWLEDGE_BASE_DIR:-/app/knowledge}
+      - PYTHONUNBUFFERED=1

@@ -1,0 +1,8 @@
+{
+  "id": "mlflow",
+  "name": "MLflow",
+  "description": "Open-source MLflow tracking server — experiment tracking, model registry, and deployment management for machine learning workflows",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "mlops", "machine-learning", "experiment-tracking", "model-registry"]
+}

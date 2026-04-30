@@ -1,0 +1,8 @@
+{
+  "id": "kag",
+  "name": "KAG",
+  "description": "OpenSPG Knowledge-Augmented Generation framework — build, query, and traverse knowledge graphs enhanced by LLM reasoning for more accurate and explainable AI responses",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "knowledge-graph", "rag", "llm", "spg"]
+}

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  astrbot:
+    image: ghcr.io/heretek-ai/arcane-repo/astrbot:latest
+    container_name: astrbot
+    hostname: astrbot
+    ports:
+      - "${ASTRBOT_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - ASTRBOT_PORT=${ASTRBOT_PORT:-8000}

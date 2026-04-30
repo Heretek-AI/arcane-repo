@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  streamer-sales:
+    image: ghcr.io/heretek-ai/arcane-repo/streamer-sales:latest
+    container_name: streamer-sales
+    hostname: streamer-sales
+    ports:
+      - "${STREAMER_SALES_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - STREAMER_SALES_PORT=${STREAMER_SALES_PORT:-8000}

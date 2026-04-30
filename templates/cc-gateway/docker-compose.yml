@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cc-gateway:
+    image: ghcr.io/heretek-ai/arcane-repo/cc-gateway:latest
+    container_name: cc-gateway
+    hostname: cc-gateway
+    ports:
+      - "${CC_GATEWAY_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - CC_GATEWAY_PORT=${CC_GATEWAY_PORT:-8000}

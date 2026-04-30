@@ -1,0 +1,8 @@
+{
+  "id": "Streamer-Sales",
+  "name": "Streamer Sales",
+  "description": "AI-powered live stream sales assistant — core bot service for automated product demonstrations and sales conversations",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "sales", "ecommerce", "live-streaming"]
+}

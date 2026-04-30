@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  harbor-llm:
+    image: ghcr.io/heretek-ai/arcane-repo/harbor-llm:latest
+    container_name: harbor-llm
+    hostname: harbor-llm
+    ports:
+      - "${HARBOR_LLM_PORT:-8000}:8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    environment:
+      - HARBOR_LLM_PORT=${HARBOR_LLM_PORT:-8000}

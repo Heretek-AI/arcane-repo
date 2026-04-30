@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  trendradar:
+    image: ghcr.io/heretek-ai/arcane-repo/trendradar:latest
+    container_name: trendradar
+    hostname: trendradar
+    ports:
+      - "${TRENDRADAR_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - TRENDRADAR_PORT=${TRENDRADAR_PORT:-8000}

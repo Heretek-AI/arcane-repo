@@ -1,0 +1,8 @@
+{
+  "id": "Yuxi",
+  "name": "Yuxi",
+  "description": "Multi-agent LLM conversation platform with modular agent architecture, knowledge base integration, and tool ecosystem",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "multi-agent", "llm", "knowledge-base"]
+}

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cog:
+    image: ghcr.io/heretek-ai/arcane-repo/cog:latest
+    container_name: cog
+    hostname: cog
+    ports:
+      - "${COG_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - COG_PORT=${COG_PORT:-8000}

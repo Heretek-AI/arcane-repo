@@ -1,0 +1,8 @@
+{
+  "id": "meetily",
+  "name": "Meetily",
+  "description": "AI-powered meeting assistant — native desktop Electron app for real-time transcription, summarization, and action item extraction from meetings",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "meetings", "transcription", "productivity", "desktop"]
+}

@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  opensandbox:
+    image: python:3.12-slim
+    container_name: opensandbox
+    hostname: opensandbox
+    ports:
+      - "${OPENSANDBOX_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      # ── Runtime ────────────────────────────────────────────────────
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='OpenSandbox',
+    version='1.0.0',
+    description=(
+        'OpenSandbox provides secure, isolated code execution for multiple '
+        'programming languages. This template uses a minimal inline API. '
+        'For production use, consider Judge0 CE, Piston, or similar '
+        'dedicated code execution services.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'service': 'opensandbox',
+        'note': 'Informational stub — deploy Judge0 CE for full code execution capability at https://github.com/judge0/judge0',
+        'alternatives': [
+            {'name': 'Judge0 CE', 'url': 'https://github.com/judge0/judge0'},
+            {'name': 'Piston', 'url': 'https://github.com/engineer-man/piston'},
+            {'name': 'Playwright (browser sandbox)', 'url': 'https://playwright.dev'}
+        ]
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('OPENSANDBOX_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${OPENSANDBOX_PORT:-8000}
+      "

@@ -1,0 +1,8 @@
+{
+  "id": "midscene",
+  "name": "Midscene",
+  "description": "AI-powered UI automation and testing tool — visually understand and interact with web UI using natural language, run via npx or integrate into Playwright/Jest test suites",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "testing", "automation", "ui", "e2e"]
+}

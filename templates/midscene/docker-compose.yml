@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  midscene:
+    image: python:3.12-slim
+    container_name: midscene
+    hostname: midscene
+    ports:
+      - "${MIDSCENE_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      # ── API Keys ───────────────────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      # ── Runtime ────────────────────────────────────────────────────
+      - PYTHONUNBUFFERED=1
+      - MIDSCENE_TIMEOUT=${MIDSCENE_TIMEOUT:-30000}
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI, HTTPException
+
+app = FastAPI(
+    title='Midscene',
+    version='1.0.0',
+    description=(
+        'Midscene is primarily an npm CLI tool for AI-powered UI automation. '
+        'This Docker image provides a minimal API wrapper for orchestration. '
+        'For full functionality, use npx @midscene/web directly.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'midscene',
+        'docs': 'https://midscene.js.org/',
+        'type': 'CLI-wrapper',
+        'note': 'For full features, use npx @midscene/web — this is a thin API shell'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'cli_usage': [
+            'npx @midscene/web run your-script.yaml',
+            'npx @midscene/web inspect https://example.com'
+        ],
+        'integration': [
+            'Playwright: import { Midscene } from "@midscene/web"',
+            'Jest: import { Midscene } from "@midscene/web"'
+        ],
+        'documentation': 'https://midscene.js.org/',
+        'note': 'Midscene runs best as a dev dependency in your test project, not as a Docker service'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('MIDSCENE_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${MIDSCENE_PORT:-8000}
+      "

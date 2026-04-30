@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  meetily:
+    image: python:3.12-slim
+    container_name: meetily
+    hostname: meetily
+    ports:
+      - "${MEETILY_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      # ── Runtime ────────────────────────────────────────────────────
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Meetily (Desktop App)',
+    version='1.0.0',
+    description=(
+        'Meetily is a native desktop Electron application for AI-powered '
+        'meeting assistance. This Docker container provides a minimal '
+        'informational API — the actual Meetily app runs on your desktop. '
+        'Download from https://meetily.app'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'app': 'meetily',
+        'type': 'desktop-electron-stub',
+        'download_url': 'https://meetily.app',
+        'note': 'This is an informational stub. Install the Meetily desktop app natively.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('MEETILY_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${MEETILY_PORT:-8000}
+      "

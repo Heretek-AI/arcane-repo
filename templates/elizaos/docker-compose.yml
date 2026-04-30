@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  elizaos:
+    image: ghcr.io/elizaos/eliza:latest
+    container_name: elizaos
+    hostname: elizaos
+    ports:
+      - "${ELIZAOS_PORT:-3000}:3000"
+    volumes:
+      - elizaos_data:/app/data
+    restart: unless-stopped
+    environment:
+      # ── LLM Provider ────────────────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GOOGLE_GEMINI_API_KEY=${GOOGLE_GEMINI_API_KEY:-}
+      # ── Agent Configuration ─────────────────────────────────────────
+      - ELIZA_CHARACTER=${ELIZA_CHARACTER:-}
+      - ELIZA_CHARACTER_DIR=/app/characters
+      # ── Application ────────────────────────────────────────────────
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - NODE_ENV=${NODE_ENV:-production}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  elizaos_data:
+    name: elizaos_data

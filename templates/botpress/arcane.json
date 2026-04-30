@@ -1,0 +1,8 @@
+{
+  "id": "botpress",
+  "name": "Botpress",
+  "description": "Open-source chatbot platform — build, deploy, and manage conversational AI agents with a visual flow editor, NLU engine, and multi-channel support",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "chatbot", "conversational", "nlu", "automation"]
+}

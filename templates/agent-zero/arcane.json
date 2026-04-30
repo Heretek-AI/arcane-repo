@@ -1,0 +1,8 @@
+{
+  "id": "agent-zero",
+  "name": "Agent Zero",
+  "description": "Open-source AI agent framework — autonomous agents with tool use, memory, multi-model support, and a built-in web interface",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "agent", "framework", "autonomous", "tools"]
+}

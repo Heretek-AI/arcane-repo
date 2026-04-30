@@ -1,0 +1,8 @@
+{
+  "id": "elizaos",
+  "name": "ElizaOS",
+  "description": "Open-source AI agent framework — create, deploy, and manage autonomous AI agents with multi-model support, plugin architecture, and cross-platform integrations",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["ai", "agent", "framework", "autonomous", "plugin"]
+}

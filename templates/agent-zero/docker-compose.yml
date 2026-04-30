@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  agent-zero:
+    image: agent0ai/agent-zero:latest
+    container_name: agent-zero
+    hostname: agent-zero
+    ports:
+      - "${AGENT_ZERO_PORT:-5000}:5000"
+    volumes:
+      - agent_zero_data:/app/data
+      - agent_zero_workspace:/app/workspace
+    restart: unless-stopped
+    environment:
+      # ── LLM Provider ────────────────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      # ── Application ────────────────────────────────────────────────
+      - AGENT_ZERO_HOST=${AGENT_ZERO_HOST:-0.0.0.0}
+      - AGENT_ZERO_PORT=${AGENT_ZERO_PORT:-5000}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  agent_zero_data:
+    name: agent_zero_data
+  agent_zero_workspace:
+    name: agent_zero_workspace

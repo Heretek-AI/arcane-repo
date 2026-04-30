@@ -1,0 +1,58 @@
+version: '3.8'
+
+networks:
+  botpress_network:
+    name: botpress_network
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: botpress-postgres
+    hostname: botpress-postgres
+    ports:
+      - "${BOTPRESS_DB_PORT:-5432}:5432"
+    volumes:
+      - botpress_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${DB_USER:?DB_USER is required — see .env.example}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:?DB_PASSWORD is required — see .env.example}
+      - POSTGRES_DB=${DB_NAME:-botpress}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:?}"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - botpress_network
+
+  botpress:
+    image: botpress/server:latest
+    container_name: botpress
+    hostname: botpress
+    ports:
+      - "${BOTPRESS_PORT:-3000}:3000"
+    volumes:
+      - botpress_data:/botpress/data
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # ── Database ────────────────────────────────────────────────────
+      - DATABASE_URL=postgres://${DB_USER:?}:${DB_PASSWORD:?}@botpress-postgres:5432/${DB_NAME:-botpress}
+      # ── Application ────────────────────────────────────────────────
+      - BP_PRODUCTION=${BP_PRODUCTION:-true}
+      - EXTERNAL_URL=${EXTERNAL_URL:-http://localhost:3000}
+      - BP_SERVER_HOST=${BP_SERVER_HOST:-0.0.0.0}
+      # ── Pro / Enterprise (Optional) ────────────────────────────────
+      - BP_LICENSE_KEY=${BP_LICENSE_KEY:-}
+    networks:
+      - botpress_network
+
+volumes:
+  botpress_postgres_data:
+    name: botpress_postgres_data
+  botpress_data:
+    name: botpress_data

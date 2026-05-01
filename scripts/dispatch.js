@@ -446,6 +446,290 @@ function parseSubagentJson(stdout) {
 }
 
 /**
+ * Merges all review-queue-batch-NNN.json fragment files into a unified
+ * review-queue.json using append-semantics per MEM097.
+ *
+ * Each fragment is expected to be an array of { candidateId, classification,
+ * decision, rationale, templatePath?, needsReview? } entries (object form per
+ * the template-builder agent contract). Flat arrays from fragments are
+ * concatenated into a single merged array.
+ *
+ * Fragment files are deleted after merge succeeds. Skips fragments that
+ * are missing or contain unparseable JSON (logs warning).
+ *
+ * Returns the merged array (may be empty if no fragments were found).
+ */
+function mergeReviewQueueFragments(flags) {
+  const fragmentPrefix = 'review-queue-batch-';
+  let allFragments = [];
+
+  console.error(`[collect] merging review-queue fragments → ${REVIEW_QUEUE_PATH}`);
+
+  if (!fs.existsSync(ROOT_DIR)) {
+    return allFragments;
+  }
+
+  const rootEntries = fs.readdirSync(ROOT_DIR);
+  const fragments = rootEntries
+    .filter(f => f.startsWith(fragmentPrefix) && f.endsWith('.json'))
+    .sort();
+
+  if (fragments.length === 0) {
+    console.error('[collect] no review-queue fragments found');
+    return allFragments;
+  }
+
+  console.error(`[collect] found ${fragments.length} review-queue fragments`);
+
+  for (const fragFile of fragments) {
+    const fragPath = path.join(ROOT_DIR, fragFile);
+    try {
+      const raw = fs.readFileSync(fragPath, 'utf8');
+      const parsed = JSON.parse(raw);
+
+      if (!Array.isArray(parsed)) {
+        warn(`skip fragment ${fragFile}: not a JSON array`);
+        continue;
+      }
+
+      allFragments = allFragments.concat(parsed);
+      verboseLog(flags, `  merged ${fragFile} (${parsed.length} entries)`);
+    } catch (e) {
+      warn(`skip fragment ${fragFile}: ${e.message}`);
+    }
+  }
+
+  // Deduplicate by candidateId if present
+  const seen = new Set();
+  const deduped = [];
+  for (const entry of allFragments) {
+    const key = entry.candidateId || JSON.stringify(entry);
+    if (!seen.has(key)) {
+      seen.add(key);
+      deduped.push(entry);
+    }
+  }
+
+  if (deduped.length < allFragments.length) {
+    console.error(`[collect] deduplicated: ${allFragments.length - deduped.length} duplicate entries removed`);
+  }
+
+  // Write merged review-queue.json
+  if (deduped.length > 0) {
+    fs.writeFileSync(REVIEW_QUEUE_PATH, JSON.stringify(deduped, null, 2) + '\n', 'utf8');
+    console.error(`[collect] wrote ${REVIEW_QUEUE_PATH} (${deduped.length} entries)`);
+  } else {
+    console.error('[collect] no review-queue entries to write');
+  }
+
+  // Clean up fragment files
+  for (const fragFile of fragments) {
+    const fragPath = path.join(ROOT_DIR, fragFile);
+    try {
+      fs.unlinkSync(fragPath);
+      verboseLog(flags, `  cleaned up ${fragFile}`);
+    } catch (e) {
+      warn(`could not clean up fragment ${fragFile}: ${e.message}`);
+    }
+  }
+
+  return deduped;
+}
+
+/**
+ * Runs `node scripts/build-registry.js --validate-only` as the final
+ * quality gate. If templates were created by subagents, this validates
+ * their arcane.json metadata and required files.
+ *
+ * Returns { verdict: 'PASS'|'FAIL', errors: string|null, exitCode: number }.
+ */
+function runValidation(flags) {
+  const validationTimeout = 60; // 60s — plan spec for registry validation
+  const buildRegistryPath = path.join(ROOT_DIR, 'scripts', 'build-registry.js');
+
+  if (!fs.existsSync(buildRegistryPath)) {
+    return { verdict: 'FAIL', errors: `build-registry.js not found at ${buildRegistryPath}`, exitCode: -1 };
+  }
+
+  console.error('[validate] running build-registry.js --validate-only');
+
+  const { spawnSync } = require('child_process');
+  const result = spawnSync('node', [buildRegistryPath, '--validate-only'], {
+    cwd: ROOT_DIR,
+    timeout: validationTimeout * 1000,
+    stdio: ['ignore', 'pipe', 'pipe'],
+    encoding: 'utf8',
+    env: process.env,
+    windowsHide: true
+  });
+
+  const stderr = (result.stderr || '').trim();
+  const stdout = (result.stdout || '').trim();
+
+  if (result.error) {
+    return { verdict: 'FAIL', errors: result.error.message, exitCode: -1 };
+  }
+
+  if (result.signal === 'SIGTERM' || result.signal === 'SIGKILL') {
+    return { verdict: 'FAIL', errors: `build-registry.js timed out after ${validationTimeout}s`, exitCode: -1 };
+  }
+
+  if (result.status !== 0) {
+    const errorSummary = stderr
+      ? stderr.split('\n').filter(l => l.startsWith('ERROR:')).join('\n')
+      : 'unknown validation errors';
+    return { verdict: 'FAIL', errors: errorSummary, exitCode: result.status };
+  }
+
+  // Extract template count from stdout
+  const match = stdout.match(/(\d+) templates/);
+  const templateCount = match ? parseInt(match[1], 10) : 0;
+
+  return { verdict: 'PASS', errors: null, exitCode: 0, templateCount };
+}
+
+/**
+ * Parses a subagent's stdout to extract classification counts.
+ * Expects structured JSON from `gsd headless --output-format json`.
+ *
+ * Returns { dockerReady, customBuild, nonServiceable, multiService, parseErrors }
+ * reflecting the subagent's reported template creation results.
+ */
+function extractTemplateCounts(result, flags) {
+  const counts = { dockerReady: 0, customBuild: 0, nonServiceable: 0, multiService: 0, parseErrors: 0 };
+
+  if (result.fatal) {
+    counts.parseErrors++;
+    return counts;
+  }
+
+  const parsed = parseSubagentJson(result.stdout);
+  if (parsed === null) {
+    warn(`batch ${result.paddedNum}: stdout is not valid JSON — cannot extract template counts`);
+    counts.parseErrors++;
+    return counts;
+  }
+
+  // Handle GSD HeadlessJsonResult structure: { result: <string> }
+  // The subagent prompt instructs a JSON summary; the actual output varies.
+  // We parse what we can from the structured output.
+  const data = typeof parsed.result === 'string'
+    ? (() => { try { return JSON.parse(parsed.result); } catch (_e) { return null; } })()
+    : parsed;
+
+  if (!data) {
+    warn(`batch ${result.paddedNum}: could not extract structured result from agent output`);
+    counts.parseErrors++;
+    return counts;
+  }
+
+  // Look for explicit classification counts in the agent's output
+  if (data.templates) {
+    for (const tpl of data.templates) {
+      const classification = (tpl.classification || '').toLowerCase();
+      if (classification === 'docker-ready') counts.dockerReady++;
+      else if (classification === 'custom-build') counts.customBuild++;
+      else if (classification === 'non-serviceable') counts.nonServiceable++;
+      else if (classification === 'multi-service') counts.multiService++;
+      else counts.dockerReady++; // default
+    }
+  }
+
+  // Also check summary fields
+  if (data.summary) {
+    const s = data.summary;
+    if (s.dockerReady !== undefined) counts.dockerReady = Math.max(counts.dockerReady, s.dockerReady);
+    if (s.customBuild !== undefined) counts.customBuild = Math.max(counts.customBuild, s.customBuild);
+    if (s.nonServiceable !== undefined) counts.nonServiceable = Math.max(counts.nonServiceable, s.nonServiceable);
+    if (s.multiService !== undefined) counts.multiService = Math.max(counts.multiService, s.multiService);
+  }
+
+  return counts;
+}
+
+/**
+ * Runs the collect phase: parses subagent results, merges review-queue
+ * fragments, runs validation gate, and prints the final summary.
+ *
+ * @param {Array} dispatchResults — raw results from runDispatch()
+ * @param {number} totalCandidates — original candidate count
+ * @param {Array} batches — original batch arrays (for per-batch counts)
+ * @param {Object} flags — CLI flags
+ */
+async function collectPhase(dispatchResults, totalCandidates, batches, flags) {
+  let dockerReady = 0;
+  let customBuild = 0;
+  let nonServiceable = 0;
+  let multiService = 0;
+  let parseErrors = 0;
+
+  for (const r of dispatchResults) {
+    const counts = extractTemplateCounts(r, flags);
+    dockerReady += counts.dockerReady;
+    customBuild += counts.customBuild;
+    nonServiceable += counts.nonServiceable;
+    multiService += counts.multiService;
+    parseErrors += counts.parseErrors;
+  }
+
+  // Merge review-queue fragments
+  const reviewQueue = mergeReviewQueueFragments(flags);
+
+  // Count dead-lettered batches
+  const deadLettered = dispatchResults.filter(r => r.exitCode !== 0 || r.timedOut).length;
+  const totalBatches = dispatchResults.length;
+
+  // Read dead-letter.json for count
+  let deadLetterCount = deadLettered;
+  if (fs.existsSync(DEAD_LETTER_PATH)) {
+    try {
+      const dl = JSON.parse(fs.readFileSync(DEAD_LETTER_PATH, 'utf8'));
+      if (Array.isArray(dl)) {
+        deadLetterCount = dl.length;
+      }
+    } catch (_e) { /* ignore parse error */ }
+  }
+
+  // Run validation gate
+  const totalTemplates = dockerReady + customBuild + nonServiceable + multiService;
+  let validationResult = null;
+
+  if (totalTemplates > 0 && !flags.dryRun) {
+    validationResult = runValidation(flags);
+  } else if (totalTemplates === 0 && !flags.dryRun) {
+    console.error('[validate] no templates created — skipping validation gate');
+  }
+
+  // Print final summary
+  console.log('');
+  console.log(`✓ Dispatched: ${totalBatches} batches, ${totalCandidates} candidates`);
+  console.log(`✓ Created: ${totalTemplates} templates (docker-ready: ${dockerReady}, custom-build: ${customBuild}, non-serviceable: ${multiService > 0 ? `, multi-service: ${multiService}` : ''})`.replace(', ,', ','));
+  // Fix formatting
+  const catParts = [];
+  catParts.push(`docker-ready: ${dockerReady}`);
+  catParts.push(`custom-build: ${customBuild}`);
+  if (multiService > 0) catParts.push(`multi-service: ${multiService}`);
+  catParts.push(`non-serviceable: ${nonServiceable}`);
+  console.log(`✓ Created: ${totalTemplates} templates (${catParts.join(', ')})`);
+
+  console.log(`✓ Review queue: ${reviewQueue.length} ambiguous entries`);
+  if (validationResult) {
+    const vVerdict = validationResult.verdict === 'PASS' ? 'PASS' : `FAIL with ${validationResult.errors ? validationResult.errors.split('\n').length : 0} errors`;
+    if (validationResult.templateCount !== undefined) {
+      console.log(`✓ Validation: ${validationResult.verdict} (${validationResult.templateCount} templates validated)`);
+    } else {
+      console.log(`✓ Validation: ${vVerdict}`);
+    }
+  } else if (totalTemplates === 0) {
+    console.log('✓ Validation: SKIPPED (no templates)');
+  }
+  console.log(`✓ Dead letter: ${deadLetterCount} unrecoverable batches`);
+
+  // Return verdict for exit code
+  return validationResult;
+}
+
+/**
  * Runs the full dispatch phase: processes all batch files with a semaphore
  * pattern, limiting concurrency to `concurrency` (default: batch count, cap 10).
  */
@@ -657,11 +941,24 @@ function main() {
   // ── Execute: spawn subagents ─────────────────────────────────────
   info(`Dispatching ${batchCount} batches with gsd headless subagents...`);
 
-  runDispatch(flags).then((results) => {
-    const succeeded = results.filter(r => r.exitCode === 0).length;
+  runDispatch(flags).then(async (results) => {
+    const validationResult = await collectPhase(results, candidates.length, batches, flags);
+
+    const hasValidationFailure = validationResult && validationResult.verdict !== 'PASS';
+
+    // Exit non-zero if validation failed or dead-letter entries exist
     const deadLettered = results.filter(r => r.exitCode !== 0 || r.timedOut).length;
-    console.error(`[collect] ${succeeded} batches completed successfully, ${deadLettered} dead-lettered`);
-    process.exit(0);
+
+    if (hasValidationFailure) {
+      console.error('');
+      if (validationResult.errors) {
+        for (const line of validationResult.errors.split('\n')) {
+          console.error(line);
+        }
+      }
+    }
+
+    process.exit(hasValidationFailure ? 1 : 0);
   }).catch((err) => {
     error(`Dispatch failed: ${err.message}`);
     process.exit(1);

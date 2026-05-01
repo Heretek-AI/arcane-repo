@@ -1,14 +1,61 @@
-version: "3.8"
+version: '3.8'
 
 services:
   langgraph:
-    image: langchain/langgraph:latest
+    image: python:3.12-slim
     container_name: langgraph
     hostname: langgraph
     ports:
       - "${LANGGRAPH_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - LANGRAPH_PORT=${LANGRAPH_PORT:-8000}
-      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required}
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn langgraph &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
 
+app = FastAPI(
+    title='LangGraph (Framework)',
+    version='1.0.0',
+    description=(
+        'LangGraph by LangChain is a Python framework for building '
+        'stateful, multi-actor agent applications with LLMs. It is not '
+        'a standalone Docker service — you integrate it into your own '
+        'Python application via pip install. This container provides a '
+        'minimal informational API stub for orchestration purposes.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'langgraph',
+        'type': 'framework-stub',
+        'documentation': 'https://langchain-ai.github.io/langgraph/',
+        'note': 'This is an informational stub. Use pip install langgraph in your Python project.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'usage': 'pip install langgraph',
+        'quickstart': [
+            'from langgraph.graph import StateGraph, END',
+            'Define your state schema, add nodes and edges, then compile and invoke.',
+        ],
+        'documentation': 'https://langchain-ai.github.io/langgraph/',
+        'source': 'https://github.com/langchain-ai/langgraph',
+        'note': 'LangGraph is a library, not a service. Build your own FastAPI/FastAPI app and import langgraph.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('LANGGRAPH_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${LANGGRAPH_PORT:-8000}
+      "

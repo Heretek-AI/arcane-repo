@@ -1,35 +1,83 @@
-# BeeAI Framework
+# BeeAI Framework — IBM Framework for Production-Ready AI Agents
 
-[BeeAI Framework](https://github.com/i-am-bee/beeai-framework) — IBM framework for production-ready AI agents
+> **Python/TypeScript framework — not a standalone Docker service.**
+> [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) by IBM is a
+> framework for building production-ready AI agents in Python and TypeScript.
+> This Docker template provides a minimal informational API stub.
+> Use `pip install beeai-framework` or `npm install beeai-framework` in your own project.
 
 ## Quick Start
 
-1. **Copy the environment file:**
+1. **Start the informational API wrapper:**
 
    ```bash
    cp .env.example .env
-   ```
-
-2. **Start the service:**
-
-   ```bash
    docker compose up -d
    ```
 
-3. **Access the service:**
+2. **Verify it's running:**
 
-   Open [http://localhost:8000](http://localhost:8000) in your browser.
+   ```bash
+   curl http://localhost:8000/health
+   ```
+
+## Full Python Usage (Recommended)
+
+BeeAI is primarily used as a Python or TypeScript library:
+
+### Python
+
+```bash
+pip install beeai-framework
+```
+
+```python
+from beeai_framework import Agent
+
+agent = Agent(name="my-agent", instructions="You are a helpful assistant")
+result = agent.run("Tell me about AI agents")
+print(result)
+```
+
+### TypeScript
+
+```bash
+npm install beeai-framework
+```
+
+```typescript
+import { Agent } from "beeai-framework";
+
+const agent = new Agent({ name: "my-agent", instructions: "You are a helpful assistant" });
+const result = await agent.run({ prompt: "Tell me about AI agents" });
+console.log(result);
+```
 
 ## Configuration
 
-Copy `.env.example` to `.env` and edit the values as needed.
+| Variable      | Default  | Description                                           |
+|---------------|----------|-------------------------------------------------------|
+| `BEEAI_PORT`  | `8000`   | Host port for the informational API stub              |
 
-## Service Details
+## API Endpoints
 
-The docker-compose.yml exposes environment variables documented in `.env.example`.
+| Endpoint   | Method | Description                                                    |
+|------------|--------|----------------------------------------------------------------|
+| `/health`  | GET    | Health check + info about the framework                        |
+| `/guide`   | GET    | Usage instructions and quickstart examples                     |
 
-> **Status: 🔍 Needs Investigation**
-> This template references a Docker image (`image:` in docker-compose.yml) that doesn't exist on any public registry.
-> The upstream project may have moved, renamed, or not publish Docker images. Use with caution — `docker compose up`
-> will fail at image pull until the reference is corrected.
+## Managing
 
+**View logs:**
+
+```bash
+docker compose logs -f beeai
+```
+
+## Troubleshooting
+
+| Symptom                                     | Likely Cause              | Fix                                                               |
+|---------------------------------------------|---------------------------|-------------------------------------------------------------------|
+| No agent functionality available            | This is a Docker stub     | Use `pip install beeai-framework` in your own project             |
+| Container exits immediately                 | pip install failure       | Run `docker compose logs beeai` for details                       |
+| Want production-grade agent workflows       | Using wrong deployment    | BeeAI is a library — integrate it into your own FastAPI app       |

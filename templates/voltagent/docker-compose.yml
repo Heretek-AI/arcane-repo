@@ -1,13 +1,60 @@
-version: "3.8"
+version: '3.8'
 
 services:
   voltagent:
-    image: voltagent/voltagent:latest
+    image: python:3.12-slim
     container_name: voltagent
     hostname: voltagent
     ports:
       - "${VOLTAGENT_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - VOLTAGENT_PORT=${VOLTAGENT_PORT:-8000}
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn voltagent &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
 
+app = FastAPI(
+    title='VoltAgent (Multi-Agent Framework)',
+    version='1.0.0',
+    description=(
+        'VoltAgent is a multi-agent framework for building autonomous AI '
+        'workflows. It is a Python library, not a standalone Docker service '
+        '— you integrate it into your own application via pip install. '
+        'This container provides a minimal informational API stub.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'voltagent',
+        'type': 'framework-stub',
+        'documentation': 'https://github.com/VoltAgent/voltagent',
+        'note': 'This is an informational stub. Use pip install voltagent in your Python project.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'usage': 'pip install voltagent',
+        'quickstart': [
+            'from voltagent import Agent',
+            'Define agents with tools and compose them into autonomous workflows.',
+        ],
+        'documentation': 'https://github.com/VoltAgent/voltagent',
+        'source': 'https://github.com/VoltAgent/voltagent',
+        'note': 'VoltAgent is a library, not a service. Build your own orchestrator and import the framework.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('VOLTAGENT_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${VOLTAGENT_PORT:-8000}
+      "

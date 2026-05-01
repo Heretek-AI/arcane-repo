@@ -1,35 +1,84 @@
-# LangGraph
+# LangGraph — Framework for Stateful Multi-Actor Agents
 
-[LangGraph](https://github.com/langchain-ai/langgraph) — Framework for stateful multi-actor agent applications
+> **Python framework — not a standalone Docker service.**
+> [LangGraph](https://github.com/langchain-ai/langgraph) by LangChain is a Python
+> framework for building stateful, multi-actor agent applications with LLMs.
+> This Docker template provides a minimal informational API stub.
+> Use `pip install langgraph` in your own Python project for full functionality.
 
 ## Quick Start
 
-1. **Copy the environment file:**
+1. **Start the informational API wrapper:**
 
    ```bash
    cp .env.example .env
-   ```
-
-2. **Start the service:**
-
-   ```bash
    docker compose up -d
    ```
 
-3. **Access the service:**
+2. **Verify it's running:**
 
-   Open [http://localhost:8000](http://localhost:8000) in your browser.
+   ```bash
+   curl http://localhost:8000/health
+   ```
+
+## Full Python Usage (Recommended)
+
+LangGraph is primarily used as a Python library integrated into your own application:
+
+```bash
+pip install langgraph
+```
+
+### Example
+
+```python
+from langgraph.graph import StateGraph, END
+from typing import TypedDict
+
+class AgentState(TypedDict):
+    messages: list[str]
+    next: str | None
+
+graph = StateGraph(AgentState)
+
+def agent_node(state: AgentState) -> AgentState:
+    # Your agent logic here
+    state["messages"].append("Agent processed")
+    state["next"] = END
+    return state
+
+graph.add_node("agent", agent_node)
+graph.set_entry_point("agent")
+
+compiled = graph.compile()
+result = compiled.invoke({"messages": [], "next": None})
+```
 
 ## Configuration
 
-Copy `.env.example` to `.env` and edit the values as needed.
+| Variable           | Default  | Description                                           |
+|--------------------|----------|-------------------------------------------------------|
+| `LANGGRAPH_PORT`   | `8000`   | Host port for the informational API stub              |
 
-## Service Details
+## API Endpoints
 
-The docker-compose.yml exposes environment variables documented in `.env.example`.
+| Endpoint   | Method | Description                                                    |
+|------------|--------|----------------------------------------------------------------|
+| `/health`  | GET    | Health check + info about the framework                        |
+| `/guide`   | GET    | Usage instructions and quickstart examples                     |
 
-> **Status: 🔍 Needs Investigation**
-> This template references a Docker image (`image:` in docker-compose.yml) that doesn't exist on any public registry.
-> The upstream project may have moved, renamed, or not publish Docker images. Use with caution — `docker compose up`
-> will fail at image pull until the reference is corrected.
+## Managing
 
+**View logs:**
+
+```bash
+docker compose logs -f langgraph
+```
+
+## Troubleshooting
+
+| Symptom                                     | Likely Cause              | Fix                                                               |
+|---------------------------------------------|---------------------------|-------------------------------------------------------------------|
+| No agent functionality available            | This is a Docker stub     | Use `pip install langgraph` in your own Python project            |
+| Container exits immediately                 | pip install failure       | Run `docker compose logs langgraph` for details                   |
+| Want to run multi-actor agents              | Using wrong deployment    | LangGraph is a library — build your own FastAPI app around it     |

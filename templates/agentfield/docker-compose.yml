@@ -1,13 +1,61 @@
-version: "3.8"
+version: '3.8'
 
 services:
   agentfield:
-    image: agentfield/agentfield:latest
+    image: python:3.12-slim
     container_name: agentfield
     hostname: agentfield
     ports:
       - "${AGENTFIELD_PORT:-8080}:8080"
     restart: unless-stopped
     environment:
-      - AGENTFIELD_PORT=${AGENTFIELD_PORT:-8080}
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn agentfield &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
 
+app = FastAPI(
+    title='AgentField (Simulation Environment)',
+    version='1.0.0',
+    description=(
+        'AgentField is a multi-agent simulation environment for training '
+        'and evaluating AI agents. It is a research/development tool — not '
+        'a standalone Docker service. Use it as a Python library within '
+        'your own research project via pip install. This container provides '
+        'a minimal informational API stub.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'agentfield',
+        'type': 'framework-stub',
+        'documentation': 'https://github.com/Agent-Field/agentfield',
+        'note': 'This is an informational stub. Use pip install agentfield in your Python project.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'usage': 'pip install agentfield',
+        'quickstart': [
+            'from agentfield import Environment',
+            'Create environments, register agents, and run simulations programmatically.',
+        ],
+        'documentation': 'https://github.com/Agent-Field/agentfield',
+        'source': 'https://github.com/Agent-Field/agentfield',
+        'note': 'AgentField is a library, not a service. Integrate it into your own simulation pipelines.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('AGENTFIELD_PORT', '8080'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${AGENTFIELD_PORT:-8080}
+      "

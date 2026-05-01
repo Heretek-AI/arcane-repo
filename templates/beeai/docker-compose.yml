@@ -1,13 +1,62 @@
-version: "3.8"
+version: '3.8'
 
 services:
   beeai:
-    image: i-am-bee/beeai:latest
+    image: python:3.12-slim
     container_name: beeai
     hostname: beeai
     ports:
-      - "${BEEAI FRAMEWORK_PORT:-8000}:8000"
+      - "${BEEAI_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - BEEAI_PORT=${BEEAI_PORT:-8000}
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn beeai-framework &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
 
+app = FastAPI(
+    title='BeeAI Framework',
+    version='1.0.0',
+    description=(
+        'BeeAI Framework by IBM is a Python/TypeScript framework for '
+        'building production-ready AI agents. It is not a standalone '
+        'Docker service — you integrate it into your own application via '
+        'pip install or npm. This container provides a minimal '
+        'informational API stub for orchestration purposes.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'beeai-framework',
+        'type': 'framework-stub',
+        'documentation': 'https://i-am-bee.github.io/beeai-framework/',
+        'note': 'This is an informational stub. Use pip install beeai-framework or npm install beeai-framework in your project.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'usage_python': 'pip install beeai-framework',
+        'usage_typescript': 'npm install beeai-framework',
+        'quickstart': [
+            'from beeai_framework import Agent',
+            'Define agents and compose them into workflows.',
+        ],
+        'documentation': 'https://i-am-bee.github.io/beeai-framework/',
+        'source': 'https://github.com/i-am-bee/beeai-framework',
+        'note': 'BeeAI is a library, not a service. Build your own application and import the framework.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('BEEAI_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${BEEAI_PORT:-8000}
+      "

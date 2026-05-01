@@ -1,35 +1,75 @@
-# VoltAgent
+# VoltAgent — Multi-Agent Framework for Autonomous AI Workflows
 
-[VoltAgent](https://github.com/VoltAgent/voltagent) — Multi-agent framework for autonomous AI workflows
+> **Python library — not a standalone Docker service.**
+> [VoltAgent](https://github.com/VoltAgent/voltagent) is a multi-agent framework
+> for building autonomous AI workflows.
+> This Docker template provides a minimal informational API stub.
+> Use `pip install voltagent` in your own application for full functionality.
 
 ## Quick Start
 
-1. **Copy the environment file:**
+1. **Start the informational API wrapper:**
 
    ```bash
    cp .env.example .env
-   ```
-
-2. **Start the service:**
-
-   ```bash
    docker compose up -d
    ```
 
-3. **Access the service:**
+2. **Verify it's running:**
 
-   Open [http://localhost:8000](http://localhost:8000) in your browser.
+   ```bash
+   curl http://localhost:8000/health
+   ```
+
+## Full Python Usage (Recommended)
+
+VoltAgent is primarily used as a Python library:
+
+```bash
+pip install voltagent
+```
+
+### Example
+
+```python
+from voltagent import Agent
+
+# Define agents with custom tools
+agent = Agent(
+    name="workflow-agent",
+    tools=[my_custom_tool],
+    instructions="Automate the given workflow"
+)
+
+# Run autonomous workflows
+# Full API at: https://github.com/VoltAgent/voltagent
+```
 
 ## Configuration
 
-Copy `.env.example` to `.env` and edit the values as needed.
+| Variable           | Default  | Description                                           |
+|--------------------|----------|-------------------------------------------------------|
+| `VOLTAGENT_PORT`   | `8000`   | Host port for the informational API stub              |
 
-## Service Details
+## API Endpoints
 
-The docker-compose.yml exposes environment variables documented in `.env.example`.
+| Endpoint   | Method | Description                                                    |
+|------------|--------|----------------------------------------------------------------|
+| `/health`  | GET    | Health check + info about the framework                        |
+| `/guide`   | GET    | Usage instructions and quickstart examples                     |
 
-> **Status: 🔍 Needs Investigation**
-> This template references a Docker image (`image:` in docker-compose.yml) that doesn't exist on any public registry.
-> The upstream project may have moved, renamed, or not publish Docker images. Use with caution — `docker compose up`
-> will fail at image pull until the reference is corrected.
+## Managing
 
+**View logs:**
+
+```bash
+docker compose logs -f voltagent
+```
+
+## Troubleshooting
+
+| Symptom                                     | Likely Cause              | Fix                                                               |
+|---------------------------------------------|---------------------------|-------------------------------------------------------------------|
+| No workflow automation available            | This is a Docker stub     | Use `pip install voltagent` in your own Python project            |
+| Container exits immediately                 | pip install failure       | Run `docker compose logs voltagent` for details                   |
+| Want autonomous multi-agent workflows       | Using wrong deployment    | VoltAgent is a library — build your own orchestrator around it    |

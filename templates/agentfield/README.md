@@ -1,35 +1,71 @@
-# AgentField
+# AgentField — Multi-Agent Simulation Environment
 
-[AgentField](https://github.com/Agent-Field/agentfield) — Multi-agent environment for training and evaluating AI agents
+> **Python library — not a standalone Docker service.**
+> [AgentField](https://github.com/Agent-Field/agentfield) is a multi-agent
+> simulation environment for training and evaluating AI agents.
+> This Docker template provides a minimal informational API stub.
+> Use `pip install agentfield` in your own research project for full functionality.
 
 ## Quick Start
 
-1. **Copy the environment file:**
+1. **Start the informational API wrapper:**
 
    ```bash
    cp .env.example .env
-   ```
-
-2. **Start the service:**
-
-   ```bash
    docker compose up -d
    ```
 
-3. **Access the service:**
+2. **Verify it's running:**
 
-   Open [http://localhost:8080](http://localhost:8080) in your browser.
+   ```bash
+   curl http://localhost:8080/health
+   ```
+
+## Full Python Usage (Recommended)
+
+AgentField is primarily used as a Python library in research projects:
+
+```bash
+pip install agentfield
+```
+
+### Example
+
+```python
+from agentfield import Environment
+
+# Create a simulation environment
+env = Environment(name="research-lab")
+
+# Register agents and define interactions
+# Full API at: https://github.com/Agent-Field/agentfield
+```
 
 ## Configuration
 
-Copy `.env.example` to `.env` and edit the values as needed.
+| Variable           | Default  | Description                                           |
+|--------------------|----------|-------------------------------------------------------|
+| `AGENTFIELD_PORT`  | `8080`   | Host port for the informational API stub              |
 
-## Service Details
+## API Endpoints
 
-The docker-compose.yml exposes environment variables documented in `.env.example`.
+| Endpoint   | Method | Description                                                    |
+|------------|--------|----------------------------------------------------------------|
+| `/health`  | GET    | Health check + info about the framework                        |
+| `/guide`   | GET    | Usage instructions and quickstart examples                     |
 
-> **Status: 🔍 Needs Investigation**
-> This template references a Docker image (`image:` in docker-compose.yml) that doesn't exist on any public registry.
-> The upstream project may have moved, renamed, or not publish Docker images. Use with caution — `docker compose up`
-> will fail at image pull until the reference is corrected.
+## Managing
 
+**View logs:**
+
+```bash
+docker compose logs -f agentfield
+```
+
+## Troubleshooting
+
+| Symptom                                     | Likely Cause              | Fix                                                               |
+|---------------------------------------------|---------------------------|-------------------------------------------------------------------|
+| No simulation features available            | This is a Docker stub     | Use `pip install agentfield` in your own Python project           |
+| Container exits immediately                 | pip install failure       | Run `docker compose logs agentfield` for details                  |
+| Want multi-agent training and evaluation    | Using wrong deployment    | AgentField is a library — build your own research pipeline        |

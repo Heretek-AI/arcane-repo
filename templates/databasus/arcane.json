@@ -1,0 +1,8 @@
+{
+  "id": "databasus",
+  "name": "Databasus",
+  "description": "Web-based PostgreSQL database browser — query, visualize, and manage Postgres databases through a clean web UI",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["database", "postgresql", "admin", "web-ui", "sql"]
+}

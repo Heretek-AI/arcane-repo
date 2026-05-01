@@ -1,0 +1,8 @@
+{
+  "id": "opengist",
+  "name": "OpenGist",
+  "description": "Self-hosted pastebin and git snippet host — create, share, and manage code snippets with Git-backed versioning",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["pastebin", "snippets", "git", "code-sharing", "web-ui"]
+}

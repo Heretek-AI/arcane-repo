@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  opengist:
+    image: thomiceli/opengist:latest
+    container_name: opengist
+    hostname: opengist
+    ports:
+      - "${OPENGIST_PORT:-6157}:6157"
+    restart: unless-stopped
+    environment:
+      - OG_OPENGIST_HOME=/opengist
+    volumes:
+      - opengist_data:/opengist
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:6157"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  opengist_data:
+    driver: local

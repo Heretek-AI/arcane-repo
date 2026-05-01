@@ -1,0 +1,8 @@
+{
+  "id": "sismics-docs",
+  "name": "Sismics Docs",
+  "description": "Lightweight self-hosted document management system — store, organize, tag, and search documents with a clean web interface",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["document-management", "dms", "search", "ocr", "tagging"]
+}

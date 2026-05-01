@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  mirotalksfu:
+    image: mirotalk/sfu:latest
+    container_name: mirotalksfu
+    hostname: mirotalksfu
+    ports:
+      - "${MIROTALK_PORT:-3012}:3012"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3012"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s

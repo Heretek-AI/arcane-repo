@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  sismics-docs:
+    image: sismics/docs:latest
+    container_name: sismics-docs
+    hostname: sismics-docs
+    ports:
+      - "${SISMICS_PORT:-8080}:8080"
+    restart: unless-stopped
+    environment:
+      - DOCS_BASE_URL=${SISMICS_BASE_URL:-http://localhost:8080}
+    volumes:
+      - sismics_data:/data
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  sismics_data:
+    driver: local

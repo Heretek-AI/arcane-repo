@@ -1,0 +1,8 @@
+{
+  "id": "mirotalksfu",
+  "name": "MiroTalk SFU",
+  "description": "Self-hosted WebRTC video conferencing — multi-party video calls with screen sharing, chat, and recording using a Selective Forwarding Unit architecture",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["webrtc", "video-conferencing", "screensharing", "chat", "streaming"]
+}

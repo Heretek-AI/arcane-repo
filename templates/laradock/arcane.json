@@ -1,0 +1,16 @@
+{
+  "id": "laradock",
+  "name": "Laradock",
+  "description": "Simplified PHP deployment environment — nginx + php-fpm + mysql + redis (not the full Laradock dev stack)",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "php",
+    "laravel",
+    "nginx",
+    "mysql",
+    "redis",
+    "web",
+    "multi-service"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "music-tag-web",
+  "name": "Music Tag Web",
+  "description": "Non-serviceable: Music Tag Web has no Docker Hub image and no Dockerfile in its upstream repository. This placeholder documents the project and suggests alternatives.",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["non-serviceable", "reference", "music", "tagging", "media"]
+}

@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  docker-flare:
+    image: python:3.12-slim
+    container_name: docker-flare
+    hostname: docker-flare
+    ports:
+      - "${DOCKER_FLARE_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Docker Flare',
+    version='1.0.0',
+    description='Placeholder — no Docker image or Dockerfile available upstream'
+)
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'note': 'placeholder — no containerized deployment available'}
+
+@app.get('/')
+async def root():
+    return {
+        'service': 'docker-flare',
+        'status': 'non-serviceable',
+        'reason': 'Docker Flare has no published Docker image on Docker Hub and no Dockerfile in its upstream repository. It cannot be deployed as a containerized service through this registry.',
+        'suggestion': 'Use the upstream project directly, or consider alternative self-hosted dashboards and start pages.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'what_is_docker_flare': 'Docker Flare is a self-hosted start page / dashboard for organizing links, bookmarks, and service shortcuts in a clean, modern interface.',
+        'why_non_serviceable': 'The project has no Docker Hub image and no Dockerfile in its source repository, making automated containerized deployment infeasible.',
+        'upstream': 'https://github.com/soulteary/docker-flare',
+        'alternatives': [
+            'Homepage — modern, feature-rich self-hosted dashboard with service widgets',
+            'Dashy — highly customizable self-hosted start page',
+            'Homarr — self-hosted dashboard with integrations and drag-and-drop',
+            'Flame — simple, fast self-hosted start page'
+        ]
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=8000)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port 8000
+      "

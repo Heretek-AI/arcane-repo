@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  ezbookkeeping:
+    image: python:3.12-slim
+    container_name: ezbookkeeping
+    hostname: ezbookkeeping
+    ports:
+      - "${EZBOOKKEEPING_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='ezBookkeeping',
+    version='1.0.0',
+    description='Placeholder — upstream project is no longer available'
+)
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'note': 'placeholder — upstream repository removed'}
+
+@app.get('/')
+async def root():
+    return {
+        'service': 'ezbookkeeping',
+        'status': 'unavailable',
+        'reason': 'The ezbookkeeping upstream repository (ezbookkeeping/ezbookkeeping) has been removed from GitHub. This project is no longer maintained or accessible.',
+        'suggestion': 'Consider alternative self-hosted bookkeeping and personal finance tools.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'what_was_ezbookkeeping': 'ezBookkeeping was a lightweight self-hosted personal bookkeeping application for tracking income and expenses.',
+        'current_status': 'The upstream project has been removed. No replacement or fork has been identified.',
+        'alternatives': [
+            'Firefly III — self-hosted personal finance manager with double-entry bookkeeping',
+            'Actual Budget — self-hosted budgeting app with envelope-based budgeting',
+            'GnuCash — desktop double-entry accounting with SQL backend option',
+            'Ledger — plain-text accounting with powerful CLI reporting'
+        ]
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=8000)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port 8000
+      "

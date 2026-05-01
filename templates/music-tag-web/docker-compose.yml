@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  music-tag-web:
+    image: python:3.12-slim
+    container_name: music-tag-web
+    hostname: music-tag-web
+    ports:
+      - "${MUSIC_TAG_WEB_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Music Tag Web',
+    version='1.0.0',
+    description='Placeholder — no Docker image or Dockerfile available upstream'
+)
+
+@app.get('/health')
+async def health():
+    return {'status': 'ok', 'note': 'placeholder — no containerized deployment available'}
+
+@app.get('/')
+async def root():
+    return {
+        'service': 'music-tag-web',
+        'status': 'non-serviceable',
+        'reason': 'Music Tag Web has no Docker Hub image and no Dockerfile in its source repository. It cannot be deployed as a containerized service through this registry.',
+        'suggestion': 'The upstream project (5.7k stars) is a mature Django+Vue application. Consider contributing a Dockerfile upstream or using alternative music tagging tools.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'what_is_music_tag_web': 'Music Tag Web (音乐标签Web版) is a web-based music metadata editor supporting FLAC, APE, WAV, MP3, M4A, OGG, WMA, DSF, and other formats. Built with Django backend + Vue frontend.',
+        'why_non_serviceable': 'Despite being a web application with a local.yml compose file, the project has no Dockerfile for building a container image and no published image on Docker Hub. The local.yml references a non-existent pre-built image.',
+        'upstream': 'https://github.com/xhongc/music-tag-web',
+        'stars': '5,700+',
+        'alternatives': [
+            'Beets — CLI music library manager with web plugin (beets-web)',
+            'Navidrome — self-hosted music server with web UI and metadata support',
+            'Airsonic — self-hosted music streamer with metadata editing',
+            'Plex + Plexamp — commercial solution with rich metadata capabilities'
+        ]
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=8000)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port 8000
+      "

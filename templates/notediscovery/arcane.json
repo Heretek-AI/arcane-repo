@@ -1,0 +1,8 @@
+{
+  "id": "notediscovery",
+  "name": "Notediscovery",
+  "description": "Non-serviceable: The notediscovery project is no longer available (upstream repository removed). This placeholder serves as a historical reference.",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["non-serviceable", "unavailable", "reference"]
+}

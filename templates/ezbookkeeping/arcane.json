@@ -1,0 +1,8 @@
+{
+  "id": "ezbookkeeping",
+  "name": "ezBookkeeping",
+  "description": "Non-serviceable: The ezbookkeeping project is no longer available (upstream repository removed). This placeholder serves as a historical reference.",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["non-serviceable", "unavailable", "reference", "finance"]
+}

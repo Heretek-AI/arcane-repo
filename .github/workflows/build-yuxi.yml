@@ -1,10 +1,10 @@
-name: Build Streamer-Sales
+name: Build Yuxi
 
 on:
   push:
     paths:
-      - 'scripts/dockerfiles/Streamer-Sales/**'
-      - 'templates/streamer-sales/**'
+      - 'scripts/dockerfiles/yuxi/**'
+      - 'templates/yuxi/**'
   workflow_dispatch:
   schedule:
     - cron: '0 6 * * *'
@@ -26,10 +26,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push Streamer-Sales
+      - name: Build and push Yuxi
         run: |
-          IMAGE="ghcr.io/heretek-ai/arcane-repo/streamer-sales:latest"
+          IMAGE="ghcr.io/heretek-ai/arcane-repo/yuxi:latest"
           echo "Building $IMAGE..."
-          docker build -t "$IMAGE" -f scripts/dockerfiles/Streamer-Sales/Dockerfile .
+          docker build -t "$IMAGE" -f scripts/dockerfiles/yuxi/Dockerfile .
           docker push "$IMAGE"
           echo "Published: $IMAGE"

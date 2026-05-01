@@ -1,10 +1,10 @@
-name: Build TrendRadar
+name: Build Streamer-Sales
 
 on:
   push:
     paths:
-      - 'scripts/dockerfiles/TrendRadar/**'
-      - 'templates/trendradar/**'
+      - 'scripts/dockerfiles/streamer-sales/**'
+      - 'templates/streamer-sales/**'
   workflow_dispatch:
   schedule:
     - cron: '0 6 * * *'
@@ -26,10 +26,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push TrendRadar
+      - name: Build and push Streamer-Sales
         run: |
-          IMAGE="ghcr.io/heretek-ai/arcane-repo/trendradar:latest"
+          IMAGE="ghcr.io/heretek-ai/arcane-repo/streamer-sales:latest"
           echo "Building $IMAGE..."
-          docker build -t "$IMAGE" -f scripts/dockerfiles/TrendRadar/Dockerfile .
+          docker build -t "$IMAGE" -f scripts/dockerfiles/streamer-sales/Dockerfile .
           docker push "$IMAGE"
           echo "Published: $IMAGE"

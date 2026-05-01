@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  tianji-app:
+    image: moonrailgun/tianji:latest
+    container_name: tianji-app
+    hostname: tianji-app
+    ports:
+      - "${TIANJI_PORT:-12345}:12345"
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://${TIANJI_DB_USER:-tianji}:${TIANJI_DB_PASSWORD:-changeme}@tianji-db:5432/${TIANJI_DB_NAME:-tianji}
+      - JWT_SECRET=${TIANJI_JWT_SECRET:-}
+      - ALLOW_REGISTER=${TIANJI_ALLOW_REGISTER:-true}
+    depends_on:
+      tianji-db:
+        condition: service_healthy
+
+  tianji-db:
+    image: postgres:15.4-alpine
+    container_name: tianji-db
+    hostname: tianji-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${TIANJI_DB_NAME:-tianji}
+      - POSTGRES_USER=${TIANJI_DB_USER:-tianji}
+      - POSTGRES_PASSWORD=${TIANJI_DB_PASSWORD:-changeme}
+    volumes:
+      - tianji_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${TIANJI_DB_USER:-tianji}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+volumes:
+  tianji_db_data:
+    name: tianji_db_data

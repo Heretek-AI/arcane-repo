@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  dokploy:
+    image: dokploy/dokploy:latest
+    container_name: dokploy
+    hostname: dokploy
+    ports:
+      - "${DOKPLOY_PORT:-3000}:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=${DOKPLOY_NODE_ENV:-production}
+      - SECRET_KEY=${DOKPLOY_SECRET_KEY:-}
+    volumes:
+      - dokploy_data:/data
+      # Uncomment the line below to enable Docker management on the host.
+      # Required for creating, managing, and monitoring containers via the Dokploy dashboard.
+      # - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  dokploy_data:
+    name: dokploy_data

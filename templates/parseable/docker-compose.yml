@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  parseable:
+    image: parseable/parseable:latest
+    container_name: parseable
+    hostname: parseable
+    command: parseable local-store
+    ports:
+      - "${PARSEABLE_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - P_USERNAME=${PARSEABLE_USERNAME:-admin}
+      - P_PASSWORD=${PARSEABLE_PASSWORD:-changeme}
+    volumes:
+      - parseable_data:/data
+      - parseable_staging:/staging
+
+volumes:
+  parseable_data:
+    name: parseable_data
+  parseable_staging:
+    name: parseable_staging

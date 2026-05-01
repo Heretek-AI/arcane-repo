@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  harness:
+    image: harness/harness:latest
+    container_name: harness
+    hostname: harness
+    ports:
+      - "${HARNESS_WEB_PORT:-3000}:3000"
+      - "${HARNESS_SSH_PORT:-3022}:3022"
+    restart: unless-stopped
+    environment:
+      - HARNESS_MODE=${HARNESS_MODE:-standalone}
+      - ADMIN_PASSWORD=${HARNESS_ADMIN_PASSWORD:-changeme}
+    volumes:
+      - harness_data:/data
+      # Uncomment the line below to enable Docker-in-Docker for CI/CD pipeline execution.
+      # Required for building images, running containers, and executing pipeline steps.
+      # - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  harness_data:
+    name: harness_data

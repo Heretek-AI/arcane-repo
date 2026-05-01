@@ -1,0 +1,8 @@
+{
+  "id": "tianji",
+  "name": "Tianji",
+  "description": "All-in-one website analytics, uptime monitoring, and server status dashboard — lightweight, self-hosted, and privacy-first",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["monitoring", "analytics", "uptime", "observability"]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "sftpgo",
+  "name": "SFTPGo",
+  "description": "Fully featured SFTP server with web admin UI",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "sftp",
+    "file-transfer",
+    "storage",
+    "webdav",
+    "ftp"
+  ]
+}

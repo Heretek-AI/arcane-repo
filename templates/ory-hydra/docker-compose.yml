@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  hydra-migrate:
+    image: oryd/hydra:v2
+    container_name: ory-hydra-migrate
+    hostname: ory-hydra-migrate
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DSN=postgres://${POSTGRES_USER:-hydra}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required — see .env.example}@ory-hydra-db:5432/${POSTGRES_DB:-hydra}?sslmode=disable
+    command: migrate sql -e --yes
+    networks:
+      - ory_hydra_net
+
+  hydra:
+    image: oryd/hydra:v2
+    container_name: ory-hydra
+    hostname: ory-hydra
+    ports:
+      - "${HYDRA_PUBLIC_PORT:-4444}:4444"
+      - "${HYDRA_ADMIN_PORT:-4445}:4445"
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      hydra-migrate:
+        condition: service_completed_successfully
+    environment:
+      # ── Database ─────────────────────────────────────────────────
+      - DSN=postgres://${POSTGRES_USER:-hydra}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}@ory-hydra-db:5432/${POSTGRES_DB:-hydra}?sslmode=disable
+      # ── Secrets ──────────────────────────────────────────────────
+      - SECRETS_SYSTEM=${SECRETS_SYSTEM:?SECRETS_SYSTEM is required — see .env.example}
+      # ── URLs ──────────────────────────────────────────────────
+      - URLS_SELF_ISSUER=${HYDRA_ISSUER_URL:-http://localhost:4444}
+      - URLS_CONSENT=${HYDRA_CONSENT_URL:-http://localhost:3000/consent}
+      - URLS_LOGIN=${HYDRA_LOGIN_URL:-http://localhost:3000/login}
+      - URLS_LOGOUT=${HYDRA_LOGOUT_URL:-http://localhost:3000/logout}
+      # ── Debug ────────────────────────────────────────────────────
+      - LOG_LEVEL=${HYDRA_LOG_LEVEL:-info}
+    command: serve all --dev
+    networks:
+      - ory_hydra_net
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: ory-hydra-db
+    hostname: ory-hydra-db
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-hydra}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
+      - POSTGRES_DB=${POSTGRES_DB:-hydra}
+    volumes:
+      - ory_hydra_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER:-hydra}", "-d", "${POSTGRES_DB:-hydra}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - ory_hydra_net
+
+networks:
+  ory_hydra_net:
+    name: ory_hydra_network
+    driver: bridge
+
+volumes:
+  ory_hydra_db_data:
+    name: ory_hydra_db_data

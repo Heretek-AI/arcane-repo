@@ -1,0 +1,109 @@
+version: '3.8'
+
+services:
+  # ── Core Honeypot Services ─────────────────────────────────────────────
+
+  conpot:
+    image: dtagdevsec/conpot:latest
+    container_name: tpotce-conpot
+    hostname: tpotce-conpot
+    restart: unless-stopped
+    volumes:
+      - conpot_data:/data
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - tpotce_net
+
+  cowrie:
+    image: dtagdevsec/cowrie:latest
+    container_name: tpotce-cowrie
+    hostname: tpotce-cowrie
+    ports:
+      - "${COWRIE_SSH_PORT:-2222}:2222"
+      - "${COWRIE_TELNET_PORT:-2323}:2323"
+    restart: unless-stopped
+    volumes:
+      - cowrie_data:/data
+    networks:
+      - tpotce_net
+
+  dionaea:
+    image: dtagdevsec/dionaea:latest
+    container_name: tpotce-dionaea
+    hostname: tpotce-dionaea
+    restart: unless-stopped
+    volumes:
+      - dionaea_data:/data
+    networks:
+      - tpotce_net
+
+  elasticpot:
+    image: dtagdevsec/elasticpot:latest
+    container_name: tpotce-elasticpot
+    hostname: tpotce-elasticpot
+    ports:
+      - "${ELASTICPOT_PORT:-9200}:9200"
+    restart: unless-stopped
+    volumes:
+      - elasticpot_data:/data
+    networks:
+      - tpotce_net
+
+  honeytrap:
+    image: dtagdevsec/honeytrap:latest
+    container_name: tpotce-honeytrap
+    hostname: tpotce-honeytrap
+    restart: unless-stopped
+    volumes:
+      - honeytrap_data:/data
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - tpotce_net
+
+  # ── Management Web UI ─────────────────────────────────────────────────
+
+  tpot-ui:
+    image: dtagdevsec/tpotce:latest
+    container_name: tpotce-ui
+    hostname: tpotce-ui
+    ports:
+      - "${TPOT_UI_PORT:-64297}:64297"
+      - "${TPOT_WEB_PORT:-64294}:64294"
+    restart: unless-stopped
+    depends_on:
+      - conpot
+      - cowrie
+      - dionaea
+      - elasticpot
+      - honeytrap
+    volumes:
+      - tpotce_ui_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - TPOTCE_VERSION=${TPOTCE_VERSION:-latest}
+      - MY_EXTIP=${TPOT_EXTIP:-0.0.0.0}
+      - WEB_USER=${TPOT_WEB_USER:-admin}
+      - WEB_PW=${TPOT_WEB_PW:?TPOT_WEB_PW is required — see .env.example}
+    networks:
+      - tpotce_net
+
+networks:
+  tpotce_net:
+    name: tpotce_network
+    driver: bridge
+
+volumes:
+  conpot_data:
+    name: tpotce_conpot_data
+  cowrie_data:
+    name: tpotce_cowrie_data
+  dionaea_data:
+    name: tpotce_dionaea_data
+  elasticpot_data:
+    name: tpotce_elasticpot_data
+  honeytrap_data:
+    name: tpotce_honeytrap_data
+  tpotce_ui_data:
+    name: tpotce_ui_data

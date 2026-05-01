@@ -1,0 +1,8 @@
+{
+  "id": "flagsmith",
+  "name": "Flagsmith",
+  "description": "Open-source feature flag and remote config platform — release features, run A/B tests, and manage configuration across web, mobile, and server-side apps",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["feature-flags", "remote-config", "ab-testing", "devops", "multi-service"]
+}

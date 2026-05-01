@@ -1,0 +1,143 @@
+version: "3.8"
+
+# Chatwoot — open-source customer engagement platform
+# Core services (4): postgres, redis, rails (web), sidekiq (worker)
+# Optional services documented in README.md: mailcatcher, elasticsearch
+# D010 core+optionals: simplified from the full 8+ service upstream compose
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  # ── PostgreSQL ──────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: chatwoot-postgres
+    hostname: postgres
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - POSTGRES_USER=${CHATWOOT_DB_USER:-chatwoot}
+      - POSTGRES_PASSWORD=${CHATWOOT_DB_PASSWORD:?err}
+      - POSTGRES_DB=${CHATWOOT_DB_NAME:-chatwoot}
+    volumes:
+      - chatwoot_postgres_data:/var/lib/postgresql/data
+    networks:
+      - chatwoot-net
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${CHATWOOT_DB_USER:-chatwoot}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── Redis ───────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: chatwoot-redis
+    hostname: redis
+    restart: unless-stopped
+    logging: *default-logging
+    command: redis-server --save 60 1 --loglevel warning
+    volumes:
+      - chatwoot_redis_data:/data
+    networks:
+      - chatwoot-net
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli PING | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  # ── Chatwoot Rails (web server) ─────────────────────────────────────
+  rails:
+    image: chatwoot/chatwoot:latest
+    container_name: chatwoot-rails
+    hostname: rails
+    restart: unless-stopped
+    logging: *default-logging
+    ports:
+      - "${CHATWOOT_PORT:-3000}:3000"
+    environment:
+      - RAILS_ENV=production
+      - SECRET_KEY_BASE=${CHATWOOT_SECRET_KEY_BASE:?err}
+      - FRONTEND_URL=http://localhost:${CHATWOOT_PORT:-3000}
+      - DATABASE_URL=postgres://${CHATWOOT_DB_USER:-chatwoot}:${CHATWOOT_DB_PASSWORD:?err}@postgres:5432/${CHATWOOT_DB_NAME:-chatwoot}
+      - REDIS_URL=redis://redis:6379
+      - ACTIVE_STORAGE_SERVICE=local
+      - SMTP_ADDRESS=${CHATWOOT_SMTP_ADDRESS:-}
+      - SMTP_PORT=${CHATWOOT_SMTP_PORT:-587}
+      - SMTP_USERNAME=${CHATWOOT_SMTP_USERNAME:-}
+      - SMTP_PASSWORD=${CHATWOOT_SMTP_PASSWORD:-}
+      - SMTP_AUTHENTICATION=plain
+      - SMTP_DOMAIN=${CHATWOOT_SMTP_DOMAIN:-}
+      - MAILER_SENDER_EMAIL=${CHATWOOT_MAILER_SENDER:-}
+      - DEFAULT_LOCALE=en
+      - ENABLE_ACCOUNT_SIGNUP=true
+      - FORCE_SSL=false
+    volumes:
+      - chatwoot_rails_storage:/app/storage
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - chatwoot-net
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  # ── Chatwoot Sidekiq (background worker) ────────────────────────────
+  sidekiq:
+    image: chatwoot/chatwoot:latest
+    container_name: chatwoot-sidekiq
+    hostname: sidekiq
+    restart: unless-stopped
+    logging: *default-logging
+    command: bundle exec sidekiq -C config/sidekiq.yml
+    environment:
+      - RAILS_ENV=production
+      - SECRET_KEY_BASE=${CHATWOOT_SECRET_KEY_BASE:?err}
+      - DATABASE_URL=postgres://${CHATWOOT_DB_USER:-chatwoot}:${CHATWOOT_DB_PASSWORD:?err}@postgres:5432/${CHATWOOT_DB_NAME:-chatwoot}
+      - REDIS_URL=redis://redis:6379
+      - ACTIVE_STORAGE_SERVICE=local
+      - SMTP_ADDRESS=${CHATWOOT_SMTP_ADDRESS:-}
+      - SMTP_PORT=${CHATWOOT_SMTP_PORT:-587}
+      - SMTP_USERNAME=${CHATWOOT_SMTP_USERNAME:-}
+      - SMTP_PASSWORD=${CHATWOOT_SMTP_PASSWORD:-}
+      - SMTP_AUTHENTICATION=plain
+      - SMTP_DOMAIN=${CHATWOOT_SMTP_DOMAIN:-}
+      - MAILER_SENDER_EMAIL=${CHATWOOT_MAILER_SENDER:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - chatwoot-net
+    healthcheck:
+      test: ["CMD-SHELL", "bundle exec sidekiqmon processes | grep -q 'Identity' || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+networks:
+  chatwoot-net:
+    driver: bridge
+
+volumes:
+  chatwoot_postgres_data:
+    driver: local
+  chatwoot_redis_data:
+    driver: local
+  chatwoot_rails_storage:
+    driver: local

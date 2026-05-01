@@ -1,0 +1,79 @@
+version: "3.8"
+
+# Flagsmith — open-source feature flag & remote config platform
+# Core services (2): postgres + flagsmith (Django app)
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  # ── PostgreSQL ──────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: flagsmith-postgres
+    hostname: postgres
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - POSTGRES_USER=${FLAGSMITH_DB_USER:-flagsmith}
+      - POSTGRES_PASSWORD=${FLAGSMITH_DB_PASSWORD:?err}
+      - POSTGRES_DB=${FLAGSMITH_DB_NAME:-flagsmith}
+    volumes:
+      - flagsmith_postgres_data:/var/lib/postgresql/data
+    networks:
+      - flagsmith-net
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${FLAGSMITH_DB_USER:-flagsmith}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── Flagsmith (Django app) ──────────────────────────────────────────
+  flagsmith:
+    image: flagsmith/flagsmith:latest
+    container_name: flagsmith-app
+    hostname: flagsmith
+    restart: unless-stopped
+    logging: *default-logging
+    ports:
+      - "${FLAGSMITH_PORT:-8000}:8000"
+    environment:
+      - DATABASE_URL=postgres://${FLAGSMITH_DB_USER:-flagsmith}:${FLAGSMITH_DB_PASSWORD:?err}@postgres:5432/${FLAGSMITH_DB_NAME:-flagsmith}
+      - SECRET_KEY=${FLAGSMITH_SECRET_KEY:?err}
+      - DJANGO_SETTINGS_MODULE=app.settings.production
+      - ALLOWED_HOSTS=*
+      - ENABLE_ADMIN_ACCESS_USER_PASS=true
+      - ADMIN_EMAIL=${FLAGSMITH_ADMIN_EMAIL:-admin@example.com}
+      - ADMIN_INITIAL_PASSWORD=${FLAGSMITH_ADMIN_PASSWORD:-changeme}
+      - PREVENT_SIGNUP=${FLAGSMITH_PREVENT_SIGNUP:-false}
+      - ALLOW_REGISTRATION_WITHOUT_INVITE=${FLAGSMITH_ALLOW_OPEN_REGISTRATION:-true}
+      - EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+      - EMAIL_HOST=${FLAGSMITH_SMTP_HOST:-}
+      - EMAIL_PORT=${FLAGSMITH_SMTP_PORT:-587}
+      - EMAIL_HOST_USER=${FLAGSMITH_SMTP_USER:-}
+      - EMAIL_HOST_PASSWORD=${FLAGSMITH_SMTP_PASSWORD:-}
+      - EMAIL_USE_TLS=${FLAGSMITH_SMTP_USE_TLS:-true}
+      - DEFAULT_FROM_EMAIL=${FLAGSMITH_FROM_EMAIL:-noreply@flagsmith.com}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - flagsmith-net
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+networks:
+  flagsmith-net:
+    driver: bridge
+
+volumes:
+  flagsmith_postgres_data:
+    driver: local

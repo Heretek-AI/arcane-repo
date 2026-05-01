@@ -1,0 +1,36 @@
+version: "3.8"
+
+# Docker IPSec VPN Server — self-hosted IPsec/L2TP VPN
+# Requires network_mode: host and NET_ADMIN capability per MEM059
+# Security: exposes host networking stack — review implications in README
+
+services:
+  ipsec-vpn:
+    image: hwdsl2/ipsec-vpn-server:latest
+    container_name: ipsec-vpn-server
+    hostname: ipsec-vpn-server
+    network_mode: host
+    restart: unless-stopped
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_IPSEC_PSK=${VPN_IPSEC_PSK:?err}
+      - VPN_USER=${VPN_USER:?err}
+      - VPN_PASSWORD=${VPN_PASSWORD:?err}
+      - VPN_DNS_SRV1=${VPN_DNS_SRV1:-8.8.8.8}
+      - VPN_DNS_SRV2=${VPN_DNS_SRV2:-8.8.4.4}
+      - VPN_SHA2_TRUNCBUG=${VPN_SHA2_TRUNCBUG:-yes}
+    volumes:
+      - ikev2-vpn-data:/etc/ipsec.d
+      - /lib/modules:/lib/modules:ro
+    healthcheck:
+      test: ["CMD-SHELL", "ipsec status > /dev/null 2>&1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  ikev2-vpn-data:
+    driver: local

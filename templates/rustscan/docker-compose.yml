@@ -1,0 +1,35 @@
+version: '3.8'
+
+# ── RustScan ──────────────────────────────────────────────────────────────
+# RustScan is a lightning-fast port scanner that scans all 65,535 ports in
+# ~3 seconds. It calls Nmap automatically for service fingerprinting after
+# discovering open ports.
+#
+# Prerequisites:
+#   - Network access to target hosts
+#   - CAP_NET_RAW capability needed for SYN scans (add --cap-add=NET_RAW
+#     to docker compose or use -c 500 for slower TCP connect mode)
+#
+# Usage (after container is running):
+#   docker compose exec rustscan rustscan -a 192.168.1.1
+#   docker compose exec rustscan rustscan -a 10.0.0.0/24 -- -A
+#   docker compose exec rustscan rustscan -a targets.txt
+
+services:
+  rustscan:
+    image: rustscan/rustscan:latest
+    container_name: rustscan
+    hostname: rustscan
+    stdin_open: true
+    tty: true
+    restart: "no"
+    network_mode: host
+    cap_add:
+      - NET_RAW
+    volumes:
+      - ./:/scan-target:ro
+    environment:
+      - RUSTSCAN_BATCH_SIZE=${RUSTSCAN_BATCH_SIZE:-4500}
+      - RUSTSCAN_TIMEOUT=${RUSTSCAN_TIMEOUT:-1500}
+      - RUSTSCAN_ULIMIT=${RUSTSCAN_ULIMIT:-5000}
+    entrypoint: ["/bin/sh", "-c", "echo 'RustScan ready. Use: docker compose exec rustscan rustscan --help'; sleep infinity"]

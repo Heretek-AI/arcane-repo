@@ -1,0 +1,40 @@
+version: '3.8'
+
+# ── UFW Docker ───────────────────────────────────────────────────────────
+# Fix the Docker and UFW security flaw — Docker manipulates iptables
+# directly, which bypasses UFW rules. Published ports become accessible
+# from any IP regardless of UFW policy.
+#
+# ufw-docker fixes this by adding UFW rules for each Docker container,
+# ensuring only allowed IPs/ranges can access published ports.
+#
+# Prerequisites:
+#   - UFW installed and enabled on the host
+#   - Docker installed and running
+#
+# Usage (after container is running):
+#   docker compose exec ufw-docker ufw-docker --help
+#   docker compose exec ufw-docker ufw-docker allow <container>
+#   docker compose exec ufw-docker ufw-docker list
+
+services:
+  ufw-docker:
+    image: chaifeng/ufw-docker:latest
+    container_name: ufw-docker
+    hostname: ufw-docker
+    stdin_open: true
+    tty: true
+    restart: "no"
+    pid: host
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/ufw:/etc/ufw:ro
+      - /lib/ufw:/lib/ufw:ro
+      - /etc/default/ufw:/etc/default/ufw:ro
+    environment:
+      - UFW_MODE=${UFW_MODE:-managed}
+    entrypoint: ["/bin/sh", "-c", "echo 'ufw-docker ready. Use: docker compose exec ufw-docker ufw-docker --help'; sleep infinity"]

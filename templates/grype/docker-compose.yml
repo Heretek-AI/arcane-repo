@@ -1,0 +1,38 @@
+version: '3.8'
+
+# ── Grype ─────────────────────────────────────────────────────────────────
+# Grype is a fast vulnerability scanner for container images and filesystems
+# by Anchore. It matches CVEs against multiple databases including NVD,
+# GitHub Advisory Database, and distro-specific feeds.
+#
+# Prerequisites:
+#   - Docker installed and running
+#   - Images to scan already pulled (or specify registry images)
+#
+# Usage (after container is running):
+#   docker compose exec grype grype nginx:latest
+#   docker compose exec grype grype dir:/
+
+services:
+  grype:
+    image: anchore/grype:latest
+    container_name: grype
+    hostname: grype
+    stdin_open: true
+    tty: true
+    restart: "no"
+    volumes:
+      - grype_cache:/root/.cache/grype
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/scan-target:ro
+    environment:
+      - GRYPE_DB_CACHE_DIR=${GRYPE_DB_CACHE_DIR:-/root/.cache/grype/db}
+      - GRYPE_DB_AUTO_UPDATE=${GRYPE_DB_AUTO_UPDATE:-true}
+      - GRYPE_CHECK_FOR_APP_UPDATE=${GRYPE_CHECK_FOR_APP_UPDATE:-false}
+      - GRYPE_OUTPUT=${GRYPE_OUTPUT:-table}
+      - GRYPE_FAIL_ON_SEVERITY=${GRYPE_FAIL_ON_SEVERITY:-critical}
+    entrypoint: ["/bin/sh", "-c", "echo 'Grype ready. Use: docker compose exec grype grype --help'; sleep infinity"]
+
+volumes:
+  grype_cache:
+    name: grype_cache

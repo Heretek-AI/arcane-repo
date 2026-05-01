@@ -1,0 +1,8 @@
+{
+  "id": "ufw-docker",
+  "name": "UFW Docker",
+  "description": "Fix Docker and UFW security flaw — automatically manages UFW firewall rules for Docker containers so published ports respect UFW policies instead of bypassing them via iptables",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["security", "firewall", "docker", "ufw", "iptables", "networking"]
+}

@@ -1,0 +1,39 @@
+version: '3.8'
+
+# ── Trivy ────────────────────────────────────────────────────────────────
+# Trivy is a comprehensive security scanner for containers, filesystems,
+# Git repositories, and Kubernetes. It detects vulnerabilities, misconfigs,
+# and exposed secrets.
+#
+# Prerequisites:
+#   - Docker installed and running
+#   - Images to scan already pulled (or specify remote images)
+#
+# Usage (after container is running):
+#   docker compose exec trivy trivy image nginx:latest
+#   docker compose exec trivy trivy fs /
+#   docker compose exec trivy trivy repo https://github.com/user/repo
+
+services:
+  trivy:
+    image: aquasec/trivy:latest
+    container_name: trivy
+    hostname: trivy
+    stdin_open: true
+    tty: true
+    restart: "no"
+    volumes:
+      - trivy_cache:/root/.cache/trivy
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/scan-target:ro
+    environment:
+      - TRIVY_CACHE_DIR=${TRIVY_CACHE_DIR:-/root/.cache/trivy}
+      - TRIVY_QUIET=${TRIVY_QUIET:-false}
+      - TRIVY_DEBUG=${TRIVY_DEBUG:-false}
+      - TRIVY_SEVERITY=${TRIVY_SEVERITY:-CRITICAL,HIGH,MEDIUM}
+      - TRIVY_TIMEOUT=${TRIVY_TIMEOUT:-5m0s}
+    entrypoint: ["/bin/sh", "-c", "echo 'Trivy ready. Use: docker compose exec trivy trivy --help'; sleep infinity"]
+
+volumes:
+  trivy_cache:
+    name: trivy_cache

@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  shynet:
+    image: python:3.12-slim
+    container_name: shynet
+    hostname: shynet
+    ports:
+      - "${SHYNET_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Shynet (Django Web Analytics)',
+    version='1.0.0',
+    description=(
+        'Shynet is a modern, privacy-friendly, cookie-free web analytics '
+        'platform built with Django. No public Docker image or upstream '
+        'Dockerfile exists — it must be deployed as a Django application '
+        'with a PostgreSQL database. This container provides an informational '
+        'API stub with /health and /guide endpoints.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'shynet',
+        'type': 'no-dockerfile-stub',
+        'documentation': 'https://github.com/milesmcc/shynet',
+        'note': 'No Docker image or Dockerfile exists. Deploy as a Django app with PostgreSQL.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'installation': [
+            'git clone https://github.com/milesmcc/shynet',
+            'cd shynet',
+            'pip install -r requirements.txt',
+            'python manage.py migrate',
+            'python manage.py runserver'
+        ],
+        'requires': ['Python 3.8+', 'PostgreSQL', 'Redis (optional)'],
+        'documentation': 'https://github.com/milesmcc/shynet',
+        'note': 'Shynet is a Django application — deploy with gunicorn + PostgreSQL.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('SHYNET_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${SHYNET_PORT:-8000}
+      "

@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  xiaomusic:
+    image: ghcr.io/heretek-ai/arcane-repo/xiaomusic:latest
+    build:
+      context: ../..
+      dockerfile: scripts/dockerfiles/xiaomusic/Dockerfile
+    container_name: xiaomusic
+    hostname: xiaomusic
+    ports:
+      - "${XIAOMUSIC_WEB_PORT:-8090}:8090"
+      - "${XIAOMUSIC_HEALTH_PORT:-8091}:8091"
+    restart: unless-stopped
+    environment:
+      - XIAOMUSIC_HEALTH_PORT=${XIAOMUSIC_HEALTH_PORT:-8091}
+      - XIAOMUSIC_WEB_PORT=${XIAOMUSIC_WEB_PORT:-8090}
+      - TZ=${TZ:-Asia/Shanghai}
+      - XIAOMUSIC_MI_USER=${XIAOMUSIC_MI_USER:-}
+      - XIAOMUSIC_MI_PASSWORD=${XIAOMUSIC_MI_PASSWORD:-}
+      - XIAOMUSIC_MI_DID=${XIAOMUSIC_MI_DID:-}
+      - XIAOMUSIC_MI_HARDWARE=${XIAOMUSIC_MI_HARDWARE:-}
+    volumes:
+      - ${XIAOMUSIC_CONF_DIR:-./conf}:/app/conf
+      - ${XIAOMUSIC_MUSIC_DIR:-./music}:/app/music

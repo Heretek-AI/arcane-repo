@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  mailu:
+    image: python:3.12-slim
+    container_name: mailu
+    hostname: mailu
+    ports:
+      - "${MAILU_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Mailu (Missing Docker Images)',
+    version='1.0.0',
+    description=(
+        'Mailu is a lightweight yet complete mail server suite with webmail, '
+        'admin UI, anti-spam, and antivirus. No public Docker images were '
+        'found on Docker Hub (mailu/ namespace returned 404). This container '
+        'provides an informational API stub with /health and /guide endpoints '
+        'pointing to the official setup instructions.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'mailu',
+        'type': 'no-images-stub',
+        'documentation': 'https://mailu.io',
+        'upstream_repo': 'https://github.com/Mailu/Mailu',
+        'note': 'No public Docker images found. Build from source or use the official setup script.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'installation': [
+            'git clone https://github.com/Mailu/Mailu',
+            'cd Mailu',
+            'docker compose up -d'
+        ],
+        'official_setup': 'https://setup.mailu.io',
+        'documentation': 'https://mailu.io',
+        'note': 'Use the official setup wizard at setup.mailu.io to generate a compose config.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('MAILU_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${MAILU_PORT:-8000}
+      "

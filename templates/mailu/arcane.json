@@ -1,0 +1,8 @@
+{
+  "id": "mailu",
+  "name": "Mailu",
+  "description": "Mailu mail server — lightweight email server with webmail, admin UI, and anti-spam. No public Docker images found on Docker Hub; this template provides an informational API stub",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["email", "mail-server", "postfix", "dovecot", "roundcube", "imap", "smtp"]
+}

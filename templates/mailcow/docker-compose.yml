@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  mailcow:
+    image: python:3.12-slim
+    container_name: mailcow
+    hostname: mailcow
+    ports:
+      - "${MAILCOW_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Mailcow (Circular Compose Reference)',
+    version='1.0.0',
+    description=(
+        'Mailcow is a complete mail server suite. The dockerized version '
+        '(mailcow/mailcow-dockerized) IS its own docker-compose repository — '
+        'adding another compose wrapper around it would be circular. '
+        'This container provides an informational API stub pointing to the '
+        'official installation method.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'mailcow',
+        'type': 'circular-compose-stub',
+        'documentation': 'https://mailcow.email',
+        'upstream_repo': 'https://github.com/mailcow/mailcow-dockerized',
+        'note': 'Mailcow IS a compose repo. Clone and run directly — no wrapper needed.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'installation': [
+            'git clone https://github.com/mailcow/mailcow-dockerized',
+            'cd mailcow-dockerized',
+            './generate_config.sh',
+            'docker compose up -d'
+        ],
+        'documentation': 'https://docs.mailcow.email',
+        'note': 'mailcow/mailcow-dockerized is a self-contained compose project. Deploy it directly.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('MAILCOW_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${MAILCOW_PORT:-8000}
+      "

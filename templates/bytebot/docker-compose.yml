@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  bytebot:
+    image: python:3.12-slim
+    container_name: bytebot
+    hostname: bytebot
+    ports:
+      - "${BYTEBOT_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Bytebot (Browser Automation Library)',
+    version='1.0.0',
+    description=(
+        'Bytebot is a browser automation agent that controls web browsers '
+        'with natural language. It runs as a Python library or CLI — not as '
+        'a standalone Docker service. No public Docker image or upstream '
+        'Dockerfile exists. This container provides a minimal informational '
+        'API stub with /health and /guide endpoints.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'bytebot',
+        'type': 'library-stub',
+        'documentation': 'https://github.com/bytebot-ai/bytebot',
+        'note': 'This is an informational stub. Install via pip and use as a Python library.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'python_usage': [
+            'pip install bytebot',
+            'from bytebot import Bytebot',
+            "bot = Bytebot(api_key='your-key')",
+            "result = bot.navigate('https://example.com', instruction='click sign up')"
+        ],
+        'documentation': 'https://github.com/bytebot-ai/bytebot',
+        'note': 'Bytebot is a Python library and CLI — pip install bytebot on your host machine.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('BYTEBOT_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${BYTEBOT_PORT:-8000}
+      "

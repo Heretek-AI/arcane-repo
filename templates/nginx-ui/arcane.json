@@ -1,0 +1,19 @@
+{
+  "id": "nginx-ui",
+  "name": "Nginx UI",
+  "description": "Web-based Nginx configuration manager — edit sites, manage certs, view logs from a modern dashboard",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "nginx",
+    "web-server",
+    "reverse-proxy",
+    "lets-encrypt",
+    "devops"
+  ],
+  "upstream": {
+    "repo": "0xJacky/nginx-ui",
+    "image": "uozi/nginx-ui:latest"
+  },
+  "classification": "docker-ready"
+}

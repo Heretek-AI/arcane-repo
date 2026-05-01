@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  nginx-ui:
+    image: uozi/nginx-ui:latest
+    container_name: nginx-ui
+    hostname: nginx-ui
+    ports:
+      - "${NGINX_UI_HTTP_PORT:-8080}:80"
+      - "${NGINX_UI_HTTPS_PORT:-8443}:443"
+    restart: unless-stopped
+    environment:
+      - TZ=${TZ:-UTC}
+    volumes:
+      - nginx_config:/etc/nginx
+      - nginx_ui_data:/etc/nginx-ui
+      - ${NGINX_WEBROOT:-./www}:/var/www
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  nginx_config:
+    driver: local
+  nginx_ui_data:
+    driver: local

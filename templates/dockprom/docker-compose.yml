@@ -1,0 +1,191 @@
+version: '3.8'
+
+services:
+  # ── Prometheus — Metrics Collection & Storage ────────────────────
+  prometheus:
+    image: prom/prometheus:v3.10.0
+    container_name: dockprom-prometheus
+    hostname: prometheus
+    restart: unless-stopped
+    volumes:
+      - prometheus_data:/prometheus
+      - ../../scripts/dockerfiles/dockprom/configs/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ../../scripts/dockerfiles/dockprom/configs/prometheus/alert.rules:/etc/prometheus/alert.rules:ro
+    ports:
+      - "${PROMETHEUS_PORT:-9090}:9090"
+    depends_on:
+      alertmanager:
+        condition: service_healthy
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=${PROMETHEUS_RETENTION:-15d}'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    networks:
+      - dockprom-net
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:9090/-/healthy || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # ── AlertManager — Alert Routing & Notification ─────────────────
+  alertmanager:
+    image: prom/alertmanager:v0.31.1
+    container_name: dockprom-alertmanager
+    hostname: alertmanager
+    restart: unless-stopped
+    volumes:
+      - ../../scripts/dockerfiles/dockprom/configs/alertmanager/config.yml:/etc/alertmanager/config.yml:ro
+    ports:
+      - "${ALERTMANAGER_PORT:-9093}:9093"
+    command:
+      - '--config.file=/etc/alertmanager/config.yml'
+      - '--storage.path=/alertmanager'
+    networks:
+      - dockprom-net
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:9093/-/healthy || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ── Node Exporter — Host-Level Metrics ──────────────────────────
+  nodeexporter:
+    image: prom/node-exporter:v1.10.2
+    container_name: dockprom-nodeexporter
+    hostname: nodeexporter
+    restart: unless-stopped
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--path.rootfs=/rootfs'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+      - '--collector.textfile.directory=/etc/node-exporter/'
+    networks:
+      - dockprom-net
+    pid: host
+
+  # ── cAdvisor — Per-Container Resource Metrics ───────────────────
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.55.1
+    container_name: dockprom-cadvisor
+    hostname: cadvisor
+    restart: unless-stopped
+    privileged: true
+    devices:
+      - /dev/kmsg
+    volumes:
+      - /:/rootfs:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      - /dev/disk:/dev/disk:ro
+    ports:
+      - "${CADVISOR_PORT:-8080}:8080"
+    networks:
+      - dockprom-net
+    command:
+      - '--housekeeping_interval=15s'
+      - '--docker_only=true'
+      - '--storage_duration=2m0s'
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:8080/healthz || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ── Grafana — Dashboards & Visualization ────────────────────────
+  grafana:
+    image: grafana/grafana:12.4.0
+    container_name: dockprom-grafana
+    hostname: grafana
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-changeme}
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+      - GF_PATHS_CONFIG=/etc/grafana/grafana.ini
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ../../scripts/dockerfiles/dockprom/configs/grafana/datasources/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml:ro
+      - ../../scripts/dockerfiles/dockprom/configs/grafana/dashboards/default.yml:/etc/grafana/provisioning/dashboards/default.yml:ro
+    ports:
+      - "${GRAFANA_PORT:-3000}:3000"
+    networks:
+      - dockprom-net
+    depends_on:
+      prometheus:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:3000/api/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # ── Pushgateway — Ephemeral & Batch Job Metrics ─────────────────
+  pushgateway:
+    image: prom/pushgateway:v1.11.2
+    container_name: dockprom-pushgateway
+    hostname: pushgateway
+    restart: unless-stopped
+    ports:
+      - "${PUSHGATEWAY_PORT:-9091}:9091"
+    networks:
+      - dockprom-net
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:9091/-/healthy || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+  # ── Caddy — Reverse Proxy ───────────────────────────────────────
+  caddy:
+    image: caddy:2.11.2
+    container_name: dockprom-caddy
+    hostname: caddy
+    restart: unless-stopped
+    volumes:
+      - ../../scripts/dockerfiles/dockprom/configs/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+    ports:
+      - "${CADDY_HTTP_PORT:-80}:80"
+    networks:
+      - dockprom-net
+    depends_on:
+      prometheus:
+        condition: service_healthy
+      grafana:
+        condition: service_healthy
+      alertmanager:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:80/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+networks:
+  dockprom-net:
+    name: dockprom-net
+    driver: bridge
+
+volumes:
+  prometheus_data:
+    name: dockprom_prometheus_data
+  grafana_data:
+    name: dockprom_grafana_data
+  caddy_data:
+    name: dockprom_caddy_data

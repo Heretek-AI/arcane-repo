@@ -1,0 +1,46 @@
+# ── Prometheus Alerting Rules ─────────────────────────────────────
+
+groups:
+  - name: container_alerts
+    rules:
+      # High CPU usage on any container
+      - alert: HighCpuUsage
+        expr: rate(container_cpu_usage_seconds_total{image!=""}[5m]) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container {{ $labels.name }} has high CPU usage"
+          description: "CPU usage is {{ $value | humanize }}% for container {{ $labels.name }} on {{ $labels.instance }}."
+
+      # Container memory usage exceeds 90%
+      - alert: HighMemoryUsage
+        expr: container_memory_usage_bytes{image!=""} / container_spec_memory_limit_bytes{image!=""} * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container {{ $labels.name }} has high memory usage"
+          description: "Memory usage is {{ $value | humanize }}% for container {{ $labels.name }} on {{ $labels.instance }}."
+
+      # Container has been restarting frequently
+      - alert: ContainerRestarting
+        expr: rate(container_last_seen{image!=""}[15m]) * 60 > 2
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container {{ $labels.name }} is restarting frequently"
+          description: "Container {{ $labels.name }} has restarted {{ $value | humanize }} times in the last 15 minutes."
+
+  - name: node_alerts
+    rules:
+      # High disk space usage
+      - alert: HighDiskUsage
+        expr: (node_filesystem_size_bytes{fstype!~"tmpfs|squashfs"} - node_filesystem_free_bytes{fstype!~"tmpfs|squashfs"}) / node_filesystem_size_bytes{fstype!~"tmpfs|squashfs"} * 100 > 85
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High disk usage on {{ $labels.instance }}"
+          description: "Filesystem {{ $labels.mountpoint }} on {{ $labels.instance }} is {{ $value | humanize }}% full."

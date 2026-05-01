@@ -1,0 +1,132 @@
+version: '3.8'
+
+services:
+  # ── Coolify — Core Application ──────────────────────────────────
+  coolify:
+    image: ghcr.io/coollabsio/coolify:latest
+    container_name: coolify-app
+    hostname: coolify
+    restart: unless-stopped
+    environment:
+      - APP_ENV=${COOLIFY_APP_ENV:-local}
+      - APP_KEY=${COOLIFY_APP_KEY:?}
+      - APP_URL=http://localhost:${COOLIFY_PORT:-8000}
+      - DB_CONNECTION=pgsql
+      - DB_HOST=coolify-db
+      - DB_PORT=5432
+      - DB_DATABASE=${COOLIFY_DB_NAME:-coolify}
+      - DB_USERNAME=${COOLIFY_DB_USER:-coolify}
+      - DB_PASSWORD=${COOLIFY_DB_PASSWORD:-changeme}
+      - REDIS_HOST=coolify-redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-null}
+      - SOKETI_HOST=coolify-soketi
+      - SOKETI_PORT=6001
+      - SOKETI_DEFAULT_APP_ID=${SOKETI_DEFAULT_APP_ID:-coolify}
+      - SOKETI_DEFAULT_APP_KEY=${SOKETI_DEFAULT_APP_KEY:-}
+      - SOKETI_DEFAULT_APP_SECRET=${SOKETI_DEFAULT_APP_SECRET:-}
+      - PUSHER_APP_ID=${SOKETI_DEFAULT_APP_ID:-coolify}
+      - PUSHER_APP_KEY=${SOKETI_DEFAULT_APP_KEY:-}
+      - PUSHER_APP_SECRET=${SOKETI_DEFAULT_APP_SECRET:-}
+    volumes:
+      - coolify_data:/data
+      # ── Docker Socket (required for PaaS container management) ──
+      # Uncomment the line below to allow Coolify to manage containers on this host.
+      # WARNING: This grants the container full control over your Docker daemon.
+      # Review https://coolify.io/docs/security before enabling in production.
+      # - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "${COOLIFY_PORT:-8000}:80"
+    networks:
+      - coolify-net
+    depends_on:
+      coolify-db:
+        condition: service_healthy
+      coolify-redis:
+        condition: service_healthy
+      coolify-soketi:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:80/api/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 8
+      start_period: 60s
+
+  # ── PostgreSQL — Primary Data Store ─────────────────────────────
+  coolify-db:
+    image: postgres:15-alpine
+    container_name: coolify-db
+    hostname: coolify-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${COOLIFY_DB_NAME:-coolify}
+      - POSTGRES_USER=${COOLIFY_DB_USER:-coolify}
+      - POSTGRES_PASSWORD=${COOLIFY_DB_PASSWORD:-changeme}
+    volumes:
+      - coolify_db_data:/var/lib/postgresql/data
+    networks:
+      - coolify-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${COOLIFY_DB_USER:-coolify}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # ── Redis — Cache & Queue ───────────────────────────────────────
+  coolify-redis:
+    image: redis:7-alpine
+    container_name: coolify-redis
+    hostname: coolify-redis
+    restart: unless-stopped
+    command:
+      - redis-server
+      - --appendonly yes
+      - --requirepass ${REDIS_PASSWORD:-}
+    volumes:
+      - coolify_redis_data:/data
+    networks:
+      - coolify-net
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep -q PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ── Soketi — WebSocket Server (Realtime Updates) ────────────────
+  coolify-soketi:
+    image: ghcr.io/coollabsio/coolify-realtime:1.0.13
+    container_name: coolify-soketi
+    hostname: coolify-soketi
+    restart: unless-stopped
+    environment:
+      - DEFAULT_APP_ID=${SOKETI_DEFAULT_APP_ID:-coolify}
+      - DEFAULT_APP_KEY=${SOKETI_DEFAULT_APP_KEY:-}
+      - DEFAULT_APP_SECRET=${SOKETI_DEFAULT_APP_SECRET:-}
+      - METRICS_SERVER_PORT=${SOKETI_METRICS_SERVER_PORT:-9601}
+      - DEBUG=false
+    ports:
+      - "${SOKETI_PORT:-6001}:6001"
+    networks:
+      - coolify-net
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:9601/ready || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+networks:
+  coolify-net:
+    name: coolify-net
+    driver: bridge
+
+volumes:
+  coolify_data:
+    name: coolify_data
+  coolify_db_data:
+    name: coolify_db_data
+  coolify_redis_data:
+    name: coolify_redis_data

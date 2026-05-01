@@ -1,0 +1,51 @@
+# ── Arcane dockprom: Prometheus Configuration ─────────────────────
+# Based on upstream dockprom: https://github.com/stefanprodan/dockprom
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'arcane-dockprom'
+
+# Alertmanager configuration (loaded from alertmanager service)
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+
+# Rule files (loaded from bundled config directory)
+rule_files:
+  - 'alert.rules'
+
+# ── Scrape Configs ────────────────────────────────────────────────
+
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+          - localhost:9090
+
+  # Node Exporter — host-level CPU, memory, disk, network
+  - job_name: 'nodeexporter'
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+          - nodeexporter:9100
+
+  # cAdvisor — per-container CPU, memory, disk, network
+  - job_name: 'cadvisor'
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+          - cadvisor:8080
+
+  # Pushgateway — ephemeral/batch job metrics
+  - job_name: 'pushgateway'
+    scrape_interval: 10s
+    honor_labels: true
+    static_configs:
+      - targets:
+          - pushgateway:9091

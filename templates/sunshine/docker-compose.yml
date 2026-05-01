@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  sunshine:
+    image: ghcr.io/heretek-ai/arcane-repo/sunshine:latest
+    container_name: sunshine
+    hostname: sunshine
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - PUID=${SUNSHINE_UID:-1000}
+      - PGID=${SUNSHINE_GID:-1000}
+      - TZ=${SUNSHINE_TZ:-UTC}
+    volumes:
+      - sunshine_config:/config
+    # ── GPU / hardware acceleration ──────────────────────────────────
+    # Uncomment for Intel/AMD GPU encoding (VA-API):
+    # devices:
+    #   - /dev/dri:/dev/dri
+    #
+    # For NVIDIA GPU encoding, use the NVIDIA container runtime instead:
+    # runtime: nvidia
+    # environment:
+    #   - NVIDIA_VISIBLE_DEVICES=all
+    #
+    # For gamepad passthrough:
+    # devices:
+    #   - /dev/uinput:/dev/uinput
+
+volumes:
+  sunshine_config:
+    driver: local

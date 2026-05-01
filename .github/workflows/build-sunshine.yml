@@ -1,0 +1,35 @@
+name: Build Sunshine
+
+on:
+  push:
+    paths:
+      - 'scripts/dockerfiles/sunshine/**'
+      - 'templates/sunshine/**'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Sunshine
+        run: |
+          IMAGE="ghcr.io/heretek-ai/arcane-repo/sunshine:latest"
+          echo "Building $IMAGE..."
+          docker build -t "$IMAGE" -f scripts/dockerfiles/sunshine/Dockerfile .
+          docker push "$IMAGE"
+          echo "Published: $IMAGE"

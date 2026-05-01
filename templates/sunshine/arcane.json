@@ -1,0 +1,14 @@
+{
+  "id": "sunshine",
+  "name": "Sunshine",
+  "description": "Self-hosted game stream host for Moonlight — stream games to any device",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "game-streaming",
+    "moonlight",
+    "remote-gaming",
+    "gpu",
+    "low-latency"
+  ]
+}

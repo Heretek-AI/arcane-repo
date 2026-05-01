@@ -1,13 +1,17 @@
 {
   "id": "supabase",
   "name": "Supabase",
-  "description": "Open-source Firebase alternative with PostgreSQL, auth, and real-time",
+  "description": "Open-source Firebase alternative — PostgreSQL database, auth, realtime subscriptions, storage, and edge functions",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [
     "database",
     "backend",
     "auth",
-    "realtime"
+    "realtime",
+    "storage",
+    "postgresql",
+    "api",
+    "multi-service"
   ]
 }

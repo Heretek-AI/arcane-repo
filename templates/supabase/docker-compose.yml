@@ -1,14 +1,272 @@
 version: "3.8"
 
-services:
-  supabase:
-    image: supabase/supabase:latest
-    container_name: supabase
-    hostname: supabase
-    ports:
-      - "${SUPABASE_PORT:-8000}:8000"
-    restart: unless-stopped
-    environment:
-      - SUPABASE_STUDIO_PORT=${SUPABASE_STUDIO_PORT:-8000}
-      - SUPABASE_DB_PORT=${SUPABASE_DB_PORT:-5432}
+# Supabase — self-hosted Firebase alternative
+# Core services (8): postgres, studio, kong, auth, rest, realtime, storage, edge-runtime
+# Optional services documented in README.md: imgproxy, meta
 
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  # ── PostgreSQL with Supabase extensions ──────────────────────────────
+  postgres:
+    image: supabase/postgres:15.8.1
+    container_name: supabase-postgres
+    hostname: postgres
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?err}
+      - POSTGRES_DB=postgres
+    volumes:
+      - supabase_postgres_data:/var/lib/postgresql/data
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── Kong API Gateway ─────────────────────────────────────────────────
+  kong:
+    image: supabase/kong:2.8.1
+    container_name: supabase-kong
+    hostname: kong
+    restart: unless-stopped
+    logging: *default-logging
+    ports:
+      - "${KONG_HTTP_PORT:-8000}:8000"
+      - "${KONG_ADMIN_PORT:-8001}:8001"
+    environment:
+      - KONG_DATABASE=off
+      - KONG_DECLARATIVE_CONFIG=/var/lib/kong/kong.yml
+      - KONG_DNS_ORDER=LAST,A,CNAME
+      - KONG_PLUGINS=request-transformer,cors,key-auth,acl,basic-auth
+      - KONG_NGINX_HTTP_INCLUDE=/etc/kong/custom-nginx.conf
+      - ANON_KEY=${ANON_KEY:?err}
+      - SERVICE_ROLE_KEY=${SERVICE_ROLE_KEY:?err}
+    volumes:
+      - supabase_kong_config:/var/lib/kong
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/status"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+  # ── GoTrue Auth ──────────────────────────────────────────────────────
+  auth:
+    image: supabase/auth:2.172.0
+    container_name: supabase-auth
+    hostname: auth
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - GOTRUE_API_HOST=0.0.0.0
+      - GOTRUE_API_PORT=9999
+      - API_EXTERNAL_URL=http://localhost:${KONG_HTTP_PORT:-8000}
+      - GOTRUE_DB_DRIVER=postgres
+      - GOTRUE_DB_DATABASE_URL=postgres://supabase_auth_admin:${POSTGRES_PASSWORD:?err}@postgres:5432/postgres
+      - GOTRUE_SITE_URL=http://localhost:3000
+      - GOTRUE_URI_ALLOW_LIST=
+      - GOTRUE_JWT_ADMIN_ROLES=service_role
+      - GOTRUE_JWT_AUD=authenticated
+      - GOTRUE_JWT_DEFAULT_GROUP_NAME=authenticated
+      - GOTRUE_JWT_EXP=3600
+      - GOTRUE_JWT_SECRET=${JWT_SECRET:?err}
+      - GOTRUE_EXTERNAL_EMAIL_ENABLED=true
+      - GOTRUE_EXTERNAL_ANONYMOUS_USERS_ENABLED=false
+      - GOTRUE_MAILER_AUTOCONFIRM=true
+      - GOTRUE_SMS_AUTOCONFIRM=true
+      - GOTRUE_SECURITY_MANUAL_LINKING_ENABLED=true
+      - GOTRUE_DISABLE_SIGNUP=false
+      - GOTRUE_LOG_LEVEL=info
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9999/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+  # ── PostgREST API ────────────────────────────────────────────────────
+  rest:
+    image: supabase/rest:12.2.6
+    container_name: supabase-rest
+    hostname: rest
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - PGRST_DB_URI=postgres://authenticator:${POSTGRES_PASSWORD:?err}@postgres:5432/postgres
+      - PGRST_DB_SCHEMAS=public,storage,graphql_public
+      - PGRST_DB_EXTRA_SEARCH_PATH=public,extensions
+      - PGRST_DB_ANON_ROLE=anon
+      - PGRST_JWT_SECRET=${JWT_SECRET:?err}
+      - PGRST_DB_USE_LEGACY_GUCS=false
+      - PGRST_APP_SETTINGS_JWT_SECRET=${JWT_SECRET:?err}
+      - PGRST_LOG_LEVEL=info
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/ready"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+  # ── Realtime (WebSocket) ─────────────────────────────────────────────
+  realtime:
+    image: supabase/realtime:2.34.16
+    container_name: supabase-realtime
+    hostname: realtime
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - PORT=4000
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=supabase_realtime_admin
+      - DB_PASSWORD=${POSTGRES_PASSWORD:?err}
+      - DB_NAME=postgres
+      - DB_SSL=false
+      - DB_AFTER_CONNECT_QUERY=SET search_path TO _realtime
+      - JWT_SECRET=${JWT_SECRET:?err}
+      - SECURE_CHANNELS=true
+      - REPLICATION_MODE=RLS
+      - REPLICATION_POLL_INTERVAL=100
+      - API_JWT_SECRET=${JWT_SECRET:?err}
+      - SLOT_NAME=supabase_realtime_replication_slot
+      - TEMPORARY_SLOT=true
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/api/ping"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+  # ── Storage API ──────────────────────────────────────────────────────
+  storage:
+    image: supabase/storage-api:1.20.3
+    container_name: supabase-storage
+    hostname: storage
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - DATABASE_URL=postgres://supabase_storage_admin:${POSTGRES_PASSWORD:?err}@postgres:5432/postgres
+      - ANON_KEY=${ANON_KEY:?err}
+      - SERVICE_KEY=${SERVICE_ROLE_KEY:?err}
+      - AUTH_JWT_SECRET=${JWT_SECRET:?err}
+      - FILE_SIZE_LIMIT=52428800
+      - STORAGE_BACKEND=file
+      - FILE_STORAGE_BACKEND_PATH=/var/lib/storage
+      - TENANT_ID=stub
+      - REGION=local
+      - GLOBAL_S3_BUCKET=stub
+      - PGRST_JWT_SECRET=${JWT_SECRET:?err}
+      - PGRST_URL=http://rest:3000
+      - POSTGREST_URL=http://rest:3000
+      - POSTGREST_URL_SUPABASE=http://rest:3000
+      - PROJECT_REF=local
+      - IMGPROXY_URL=http://imgproxy:5001
+      - IMGPROXY_REQUEST_TIMEOUT=15
+      - ENABLE_IMAGE_TRANSFORMATION=false
+    volumes:
+      - supabase_storage_data:/var/lib/storage
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rest:
+        condition: service_healthy
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/status"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+  # ── Edge Runtime (Deno) ──────────────────────────────────────────────
+  edge-runtime:
+    image: supabase/edge-runtime:v1.67.5
+    container_name: supabase-edge-runtime
+    hostname: edge-runtime
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - JWT_SECRET=${JWT_SECRET:?err}
+      - SUPABASE_URL=http://kong:8000
+      - SUPABASE_ANON_KEY=${ANON_KEY:?err}
+      - SUPABASE_SERVICE_ROLE_KEY=${SERVICE_ROLE_KEY:?err}
+    depends_on:
+      kong:
+        condition: service_healthy
+    networks:
+      - supabase-net
+
+  # ── Studio (Admin Dashboard) ─────────────────────────────────────────
+  studio:
+    image: supabase/studio:2026.04.21
+    container_name: supabase-studio
+    hostname: studio
+    restart: unless-stopped
+    logging: *default-logging
+    ports:
+      - "${STUDIO_PORT:-8082}:3000"
+    environment:
+      - STUDIO_PG_META_URL=http://meta:8080
+      - SUPABASE_URL=http://kong:8000
+      - SUPABASE_REST_URL=http://rest:3000
+      - SUPABASE_ANON_KEY=${ANON_KEY:?err}
+      - SUPABASE_SERVICE_KEY=${SERVICE_ROLE_KEY:?err}
+      - DEFAULT_ORGANIZATION_NAME=Arcane
+      - DEFAULT_PROJECT_NAME=supabase-local
+      - IS_PLATFORM=false
+      - LOGFLARE_URL=http://logflare:4000
+      - LOGFLARE_API_KEY=${LOGFLARE_API_KEY:-api-key}
+      - NEXT_PUBLIC_ENABLE_LOGS=true
+      - NEXT_ANALYTICS_BACKEND_PROVIDER=postgres
+    depends_on:
+      kong:
+        condition: service_healthy
+      rest:
+        condition: service_healthy
+    networks:
+      - supabase-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/platform/profile"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  supabase_postgres_data:
+    name: supabase_postgres_data
+  supabase_kong_config:
+    name: supabase_kong_config
+  supabase_storage_data:
+    name: supabase_storage_data
+
+networks:
+  supabase-net:
+    driver: bridge

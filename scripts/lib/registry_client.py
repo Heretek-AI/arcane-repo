@@ -320,8 +320,9 @@ def check_ghcr_image(
 ) -> dict:
     """Check a GHCR image by requesting its tag list.
 
-    ``GET https://ghcr.io/v2/<org>/<image>/tags/list`` — no auth
-    required for public images.
+    Two-step flow:
+    1. Obtain a Bearer token from ``ghcr.io/token`` (anonymous scope pull).
+    2. ``GET https://ghcr.io/v2/<org>/<image>/tags/list`` with auth header.
 
     Returns
     -------
@@ -329,13 +330,39 @@ def check_ghcr_image(
         ``reachable``, ``tags`` (list of str), ``status_code``,
         ``org``, ``image``.
     """
-    url = f"https://ghcr.io/v2/{org}/{image}/tags/list"
+    base: dict = {"org": org, "image": image}
+
+    # ── Step 1: acquire anonymous Bearer token ───────────────────────
+    token_url = (
+        f"https://ghcr.io/token"
+        f"?scope=repository:{org}/{image}:pull"
+        f"&service=ghcr.io"
+    )
+    status, body, _headers = _retry_with_backoff(
+        lambda: _http_get(token_url, timeout=10.0)
+    )
+    token: str = ""
+    if status == 200:
+        try:
+            token_data = json.loads(body)
+            token = token_data.get("token", "")
+        except json.JSONDecodeError:
+            logger.error("Malformed GHCR token response for %s/%s", org, image)
+
+    if not token:
+        # Cannot obtain token — the repo may be private, or auth is required.
+        # Fall through to a token-less probe.
+        pass
+
+    # ── Step 2: fetch tag list (with token if we have one) ──────────
+    tags_url = f"https://ghcr.io/v2/{org}/{image}/tags/list"
+    req_headers: dict[str, str] = {}
+    if token:
+        req_headers["Authorization"] = f"Bearer {token}"
 
     status, body, _headers = _retry_with_backoff(
-        lambda: _http_get(url, timeout=10.0)
+        lambda: _http_get(tags_url, headers=req_headers, timeout=10.0)
     )
-
-    base: dict = {"org": org, "image": image}
 
     if status == 200:
         try:
@@ -348,10 +375,9 @@ def check_ghcr_image(
             }
         except json.JSONDecodeError:
             logger.error(
-                "Malformed JSON from GHCR for %s/%s — raw: %.200s",
+                "Malformed JSON from GHCR for %s/%s",
                 org,
                 image,
-                body,
             )
             return {**base, "reachable": False, "tags": [], "status_code": status}
     else:

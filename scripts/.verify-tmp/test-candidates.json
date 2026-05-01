@@ -1,0 +1,33 @@
+[
+  {
+    "name": "nginx",
+    "source": "docker-hub-smoke",
+    "github_url": "https://github.com/nginx/nginx",
+    "probable_images": [
+      "docker.io/library/nginx:latest"
+    ]
+  },
+  {
+    "name": "homepage",
+    "source": "ghcr-smoke",
+    "github_url": "https://github.com/gethomepage/homepage",
+    "probable_images": [
+      "ghcr.io/gethomepage/homepage:latest"
+    ]
+  },
+  {
+    "name": "definitely-not-real",
+    "source": "fake-smoke",
+    "github_url": null,
+    "probable_images": [
+      "docker.io/definitelynotreal12345/fakeimage:latest",
+      "ghcr.io/definitelynotreal12345/fakeimage:latest"
+    ]
+  },
+  {
+    "name": "zero-images-edge",
+    "source": "edge-case",
+    "github_url": null,
+    "probable_images": []
+  }
+]

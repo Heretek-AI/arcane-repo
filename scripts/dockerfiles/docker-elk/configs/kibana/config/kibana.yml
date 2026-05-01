@@ -1,0 +1,15 @@
+# ── Kibana Configuration ───────────────────────────────────────────
+# Bundled from upstream docker-elk: https://github.com/deviantony/docker-elk
+
+server.name: kibana
+server.host: 0.0.0.0
+
+# ── Elasticsearch Connection ──────────────────────────────────────
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+
+# ── Monitoring ─────────────────────────────────────────────────────
+monitoring.ui.container.elasticsearch.enabled: true
+
+# ── i18n ───────────────────────────────────────────────────────────
+# Override default locale: en, zh-CN, ja-JP, etc.
+i18n.locale: en

@@ -1,0 +1,115 @@
+version: '3.8'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION:-8.17.0}
+    container_name: elasticsearch
+    hostname: elasticsearch
+    restart: unless-stopped
+    environment:
+      - ES_JAVA_OPTS=-Xms${ES_HEAP_SIZE:-1g} -Xmx${ES_HEAP_SIZE:-1g}
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-changeme}
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - xpack.security.enrollment.enabled=true
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+      - ../../scripts/dockerfiles/docker-elk/configs/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    ports:
+      - "${ES_PORT:-9200}:9200"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -s -u elastic:${ELASTIC_PASSWORD:-changeme} http://localhost:9200/_cluster/health | grep -vq '\"status\":\"red\"'"
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 8
+      start_period: 60s
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:${ELK_VERSION:-8.17.0}
+    container_name: logstash
+    hostname: logstash
+    restart: unless-stopped
+    environment:
+      - LS_JAVA_OPTS=-Xms256m -Xmx256m
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-changeme}
+      - XPACK_MONITORING_ENABLED=false
+    volumes:
+      - ../../scripts/dockerfiles/docker-elk/configs/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ../../scripts/dockerfiles/docker-elk/configs/logstash/pipeline:/usr/share/logstash/pipeline:ro
+    ports:
+      - "${LOGSTASH_BEATS_PORT:-5044}:5044"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9600/_node/stats | grep -q '\"status\":\"green\"'"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:${ELK_VERSION:-8.17.0}
+    container_name: kibana
+    hostname: kibana
+    restart: unless-stopped
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=kibana_system
+      - ELASTICSEARCH_PASSWORD=${ELASTIC_PASSWORD:-changeme}
+      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY:-}
+      - XPACK_SECURITY_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY:-}
+      - XPACK_REPORTING_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY:-}
+    volumes:
+      - ../../scripts/dockerfiles/docker-elk/configs/kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+    ports:
+      - "${KIBANA_PORT:-5601}:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:5601/api/status | grep -q '\"level\":\"available\"'"]
+      interval: 15s
+      timeout: 10s
+      retries: 8
+      start_period: 90s
+
+  setup:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION:-8.17.0}
+    container_name: elk-setup
+    hostname: elk-setup
+    profiles:
+      - setup
+    environment:
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-changeme}
+    volumes:
+      - ../../scripts/dockerfiles/docker-elk/configs/setup:/usr/share/elasticsearch/setup:ro
+    entrypoint: ["/bin/bash"]
+    command:
+      - "/usr/share/elasticsearch/setup/init.sh"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /usr/share/elasticsearch/setup/.done && echo 'ok' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 1
+      start_period: 10s
+
+volumes:
+  elasticsearch_data:
+    name: elasticsearch_data

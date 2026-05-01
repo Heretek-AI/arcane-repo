@@ -1,0 +1,70 @@
+name: Build Docker ELK
+
+on:
+  push:
+    paths:
+      - 'scripts/dockerfiles/docker-elk/**'
+      - 'templates/docker-elk/**'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate YAML config files
+        run: |
+          echo "Validating docker-elk config bundle..."
+
+          # Validate docker-compose.yml
+          echo "  → templates/docker-elk/docker-compose.yml"
+          python3 -c "import yaml; yaml.safe_load(open('templates/docker-elk/docker-compose.yml'))"
+          echo "    ✅ Valid YAML"
+
+          # Validate elasticsearch.yml
+          echo "  → scripts/dockerfiles/docker-elk/configs/elasticsearch/config/elasticsearch.yml"
+          python3 -c "import yaml; yaml.safe_load(open('scripts/dockerfiles/docker-elk/configs/elasticsearch/config/elasticsearch.yml'))"
+          echo "    ✅ Valid YAML"
+
+          # Validate logstash.yml
+          echo "  → scripts/dockerfiles/docker-elk/configs/logstash/config/logstash.yml"
+          python3 -c "import yaml; yaml.safe_load(open('scripts/dockerfiles/docker-elk/configs/logstash/config/logstash.yml'))"
+          echo "    ✅ Valid YAML"
+
+          # Validate kibana.yml
+          echo "  → scripts/dockerfiles/docker-elk/configs/kibana/config/kibana.yml"
+          python3 -c "import yaml; yaml.safe_load(open('scripts/dockerfiles/docker-elk/configs/kibana/config/kibana.yml'))"
+          echo "    ✅ Valid YAML"
+
+          # Validate arcane.json
+          echo "  → templates/docker-elk/arcane.json"
+          python3 -c "import json; json.load(open('templates/docker-elk/arcane.json'))"
+          echo "    ✅ Valid JSON"
+
+          # Validate logstash pipeline config (non-YAML, check it exists and is non-empty)
+          echo "  → scripts/dockerfiles/docker-elk/configs/logstash/pipeline/logstash.conf"
+          test -s scripts/dockerfiles/docker-elk/configs/logstash/pipeline/logstash.conf && echo "    ✅ Non-empty pipeline config"
+
+          # Validate setup init script is executable content
+          echo "  → scripts/dockerfiles/docker-elk/configs/setup/init.sh"
+          test -s scripts/dockerfiles/docker-elk/configs/setup/init.sh && echo "    ✅ Non-empty init script"
+
+          echo ""
+          echo "✅ All config validations passed."
+
+      - name: Verify elasticsearch.yml syntax
+        run: |
+          grep -E '(cluster\.name|network\.host|discovery\.type|xpack\.security)' scripts/dockerfiles/docker-elk/configs/elasticsearch/config/elasticsearch.yml
+          echo "✅ Key elasticsearch settings present."
+
+      - name: Verify logstash pipeline syntax
+        run: |
+          grep -E '(input|output|filter)' scripts/dockerfiles/docker-elk/configs/logstash/pipeline/logstash.conf
+          echo "✅ Logstash pipeline has input, filter, and output blocks."

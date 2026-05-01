@@ -1,0 +1,19 @@
+# ── Elasticsearch Configuration ────────────────────────────────────
+# Bundled from upstream docker-elk: https://github.com/deviantony/docker-elk
+# This config ships with the template — no need to clone the upstream repo.
+
+cluster.name: docker-cluster
+network.host: 0.0.0.0
+
+# ── Security ──────────────────────────────────────────────────────
+xpack.license.self_generated.type: basic
+xpack.security.enabled: true
+xpack.monitoring.collection.enabled: true
+
+# ── Node Settings ─────────────────────────────────────────────────
+# Single-node mode — for multi-node clusters, adjust discovery settings.
+discovery.type: single-node
+
+# ── Paths ─────────────────────────────────────────────────────────
+path.data: /usr/share/elasticsearch/data
+path.logs: /usr/share/elasticsearch/logs

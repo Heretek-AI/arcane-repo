@@ -1,0 +1,15 @@
+# ── Logstash Configuration ─────────────────────────────────────────
+# Bundled from upstream docker-elk: https://github.com/deviantony/docker-elk
+
+http.host: 0.0.0.0
+
+# ── Pipeline Settings ─────────────────────────────────────────────
+# Pipeline configuration files are loaded from /usr/share/logstash/pipeline/
+# via the volume mount in docker-compose.yml
+
+# ── Monitoring ─────────────────────────────────────────────────────
+xpack.monitoring.enabled: false
+
+# ── Persistent Queues ─────────────────────────────────────────────
+# Enable for at-least-once delivery guarantees (requires more disk)
+queue.type: memory

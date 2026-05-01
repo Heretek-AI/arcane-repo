@@ -1,0 +1,35 @@
+name: Build OpenSpiel
+
+on:
+  push:
+    paths:
+      - 'scripts/dockerfiles/openspiel/**'
+      - 'templates/openspiel/**'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push OpenSpiel
+        run: |
+          IMAGE="ghcr.io/heretek-ai/arcane-repo/openspiel:latest"
+          echo "Building $IMAGE..."
+          docker build -t "$IMAGE" -f scripts/dockerfiles/openspiel/Dockerfile .
+          docker push "$IMAGE"
+          echo "Published: $IMAGE"

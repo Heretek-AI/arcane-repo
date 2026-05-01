@@ -15,8 +15,6 @@ on:
       - 'templates/mlflow/**'
       - 'templates/rd-agent/**'
       - 'templates/kag/**'
-      - 'templates/page-agent/**'
-      - 'templates/ten-framework/**'
       - 'templates/memvid/**'
   workflow_dispatch:
     inputs:
@@ -36,8 +34,6 @@ on:
           - mlflow
           - rd-agent
           - kag
-          - page-agent
-          - ten-framework
           - memvid
 
 permissions:
@@ -64,8 +60,6 @@ jobs:
           - mlflow
           - rd-agent
           - kag
-          - page-agent
-          - ten-framework
           - memvid
     runs-on: ubuntu-latest
     steps:

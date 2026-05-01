@@ -1,0 +1,35 @@
+name: Build RD-Agent
+
+on:
+  push:
+    paths:
+      - 'scripts/dockerfiles/rd-agent/**'
+      - 'templates/rd-agent/**'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push RD-Agent
+        run: |
+          IMAGE="ghcr.io/heretek-ai/arcane-repo/rd-agent:latest"
+          echo "Building $IMAGE..."
+          docker build -t "$IMAGE" -f scripts/dockerfiles/rd-agent/Dockerfile .
+          docker push "$IMAGE"
+          echo "Published: $IMAGE"

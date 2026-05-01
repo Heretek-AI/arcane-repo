@@ -1,13 +1,18 @@
 {
   "id": "rowboat",
   "name": "Rowboat",
-  "description": "AI-powered customer engagement platform",
+  "description": "Open-source AI coworker with knowledge graph — turns work into a knowledge graph and acts on it",
   "version": "1.0.0",
   "author": "Arcane",
+  "type": "custom-build",
+  "image": "ghcr.io/heretek-ai/arcane-repo/rowboat:latest",
   "tags": [
     "ai",
-    "analytics",
-    "customer",
-    "automation"
-  ]
+    "knowledge-graph",
+    "productivity",
+    "nextjs",
+    "multi-service"
+  ],
+  "upstream": "https://github.com/rowboatlabs/rowboat",
+  "stars": 13200
 }

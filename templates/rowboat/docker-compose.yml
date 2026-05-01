@@ -1,13 +1,97 @@
-version: "3.8"
+version: '3.8'
 
 services:
   rowboat:
-    image: rowboat/rowboat:latest
+    image: ghcr.io/heretek-ai/arcane-repo/rowboat:latest
     container_name: rowboat
     hostname: rowboat
     ports:
-      - "${ROWBOAT_PORT:-8080}:8080"
+      - "${ROWBOAT_PORT:-8080}:8000"
     restart: unless-stopped
     environment:
-      - ROWBOAT_PORT=${ROWBOAT_PORT:-8080}
+      - ROWBOAT_WRAPPER_PORT=8000
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - MONGODB_CONNECTION_STRING=mongodb://${MONGO_USER:-rowboat}:${MONGO_PASSWORD:-rowboat}@mongo:27017/rowboat?authSource=admin
+      - REDIS_URL=redis://redis:6379
+      - QDRANT_URL=http://qdrant:6333
+      - QDRANT_API_KEY=${QDRANT_API_KEY:-}
+      - USE_RAG=${USE_RAG:-false}
+      - USE_COMPOSIO_TOOLS=${USE_COMPOSIO_TOOLS:-false}
+      - COMPOSIO_API_KEY=${COMPOSIO_API_KEY:-}
+      - AGENTS_API_KEY=${AGENTS_API_KEY:-change-me}
+      - COPILOT_API_KEY=${COPILOT_API_KEY:-change-me}
+      - PROVIDER_API_KEY=${PROVIDER_API_KEY:-}
+      - PROVIDER_BASE_URL=${PROVIDER_BASE_URL:-}
+      - PROVIDER_DEFAULT_MODEL=${PROVIDER_DEFAULT_MODEL:-gpt-4o}
+      - PROVIDER_COPILOT_MODEL=${PROVIDER_COPILOT_MODEL:-gpt-4o-mini}
+      - USE_AUTH=${USE_AUTH:-false}
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthz"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 90s
 
+  mongo:
+    image: mongo:7
+    container_name: rowboat-mongo
+    hostname: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_USER:-rowboat}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD:-rowboat}
+      - MONGO_INITDB_DATABASE=rowboat
+    volumes:
+      - rowboat_mongo_data:/data/db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')", "--quiet"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+  redis:
+    image: redis:7-alpine
+    container_name: rowboat-redis
+    hostname: redis
+    volumes:
+      - rowboat_redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: rowboat-qdrant
+    hostname: qdrant
+    environment:
+      - QDRANT__SERVICE__GRPC_PORT=6334
+    volumes:
+      - rowboat_qdrant_data:/qdrant/storage
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/healthz"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+volumes:
+  rowboat_mongo_data:
+    name: rowboat_mongo_data
+  rowboat_redis_data:
+    name: rowboat_redis_data
+  rowboat_qdrant_data:
+    name: rowboat_qdrant_data

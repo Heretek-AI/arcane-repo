@@ -1,0 +1,100 @@
+version: '3.8'
+
+# ── Vulhub ────────────────────────────────────────────────────────────────
+# Vulhub is a collection of ~200 vulnerable-environment Docker Compose files,
+# not a single deployable Docker image. This template runs a thin FastAPI
+# informational service that links to the upstream catalog.
+#
+# To use real Vulhub environments, clone the upstream repo:
+#   git clone https://github.com/vulhub/vulhub
+#   cd vulhub/<cve-id> && docker compose up -d
+#
+# This container is an index/navigator, not a proxy or runtime.
+
+services:
+  vulhub:
+    image: python:3.12-slim
+    container_name: vulhub
+    hostname: vulhub
+    ports:
+      - "${VULHUB_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Vulhub (Reference Catalog)',
+    version='1.0.0',
+    description=(
+        'Vulhub by Vulhub.org is a collection of ~200 pre-built '
+        'vulnerable environments based on Docker Compose, organized '
+        'by CVE identifier. Each CVE has its own docker-compose.yml '
+        'in the upstream GitHub repository. This container is an '
+        'informational index — clone the upstream repo for hands-on labs.'
+    ),
+    docs_url=None,
+    redoc_url='/docs'
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'vulhub',
+        'type': 'reference-catalog',
+        'upstream': 'https://github.com/vulhub/vulhub',
+        'environments': '~200+ CVE-specific Docker Compose labs',
+        'note': 'This is a reference index. Clone vulhub/vulhub for working environments.'
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'description': 'Pre-built vulnerable environments based on Docker Compose',
+        'usage': [
+            'git clone https://github.com/vulhub/vulhub',
+            'cd vulhub/<cve-id>',
+            'docker compose up -d',
+            'Exploit the vulnerable service on the exposed port',
+            'docker compose down when finished'
+        ],
+        'categories': [
+            'Web applications (Apache, Nginx, Tomcat, WordPress, etc.)',
+            'Databases (MySQL, PostgreSQL, Redis, MongoDB, etc.)',
+            'CMS (WordPress, Drupal, Joomla, etc.)',
+            'Network services (FTP, SSH, SMTP, DNS, etc.)',
+            'Programming languages and frameworks',
+            'OS-level vulnerabilities'
+        ],
+        'stars': 20612,
+        'documentation': 'https://github.com/vulhub/vulhub',
+        'website': 'https://vulhub.org',
+        'note': 'Each CVE directory is self-contained — cd in, compose up, test, compose down.'
+    }
+
+@app.get('/categories')
+async def categories():
+    return {
+        'top_cves': [
+            {'cve': 'CVE-2021-44228', 'name': 'Log4Shell', 'path': 'log4j/CVE-2021-44228'},
+            {'cve': 'CVE-2021-41773', 'name': 'Apache HTTPD Path Traversal', 'path': 'httpd/CVE-2021-41773'},
+            {'cve': 'CVE-2017-5638', 'name': 'Struts2 RCE', 'path': 'struts2/s2-045'},
+            {'cve': 'CVE-2022-22965', 'name': 'Spring4Shell', 'path': 'spring/CVE-2022-22965'},
+        ],
+        'full_catalog': 'https://github.com/vulhub/vulhub#vulnerability-environment',
+        'note': 'Over 200 environments covering web, database, CMS, network, and OS CVEs.'
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('VULHUB_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${VULHUB_PORT:-8000}
+      "

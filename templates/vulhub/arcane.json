@@ -1,0 +1,8 @@
+{
+  "id": "vulhub",
+  "name": "Vulhub",
+  "description": "Pre-built vulnerable environments collection — ~200 compose-based CVE labs for security training and exploit development",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["security", "vulnerability", "cve", "training", "exploit"]
+}

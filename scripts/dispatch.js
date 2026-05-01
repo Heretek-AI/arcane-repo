@@ -19,6 +19,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { spawn } = require('child_process');
 
 // ── Configuration ──────────────────────────────────────────────────────
 
@@ -29,6 +30,8 @@ const FACT_CARDS_PATH = process.env.FACT_CARDS_PATH
 const BATCHES_DIR = path.join(ROOT_DIR, 'scripts', 'batches');
 const REVIEW_QUEUE_PATH = path.join(ROOT_DIR, 'review-queue.json');
 const DEAD_LETTER_PATH = path.join(ROOT_DIR, 'dead-letter.json');
+
+const CONCURRENCY_CAP = 10;
 
 const KNOWN_SOURCES = [
   'yunohost',
@@ -49,6 +52,7 @@ function parseFlags(argv) {
     dryRun: false,
     verbose: false,
     timeout: 300,
+    concurrency: 0,
     help: false
   };
 
@@ -90,6 +94,12 @@ function parseFlags(argv) {
       case '--timeout':
         if (next !== undefined && !next.startsWith('-')) {
           flags.timeout = parseInt(next, 10);
+          i++;
+        }
+        break;
+      case '--concurrency':
+        if (next !== undefined && !next.startsWith('-')) {
+          flags.concurrency = parseInt(next, 10);
           i++;
         }
         break;
@@ -145,6 +155,7 @@ Flags:
   --dry-run         Print batch plan without writing files or spawning agents
   --verbose         Enable verbose debug logging to stderr
   --timeout SECS    Subagent timeout in seconds (default: 300)
+  --concurrency N   Max concurrent subagents (default: batch count capped at 10)
   --help            Print this help and exit
 
 Examples:
@@ -247,6 +258,277 @@ function writeBatchFiles(batches, flags) {
     fs.writeFileSync(batchPath, JSON.stringify(batchPayload, null, 2) + '\n', 'utf8');
     verboseLog(flags, `Wrote ${batchPath} (${batches[i].length} candidates)`);
   }
+}
+
+// ── Subagent spawning ─────────────────────────────────────────────────
+
+/**
+ * Builds the self-contained task prompt piped to the subagent's stdin.
+ *
+ * The prompt tells the template-builder agent to read the batch file,
+ * classify each candidate, create template directories, and write
+ * review-queue fragments for ambiguous cases.
+ */
+function buildSubagentPrompt(batchFilePath, flags) {
+  const batchNum = path.basename(batchFilePath, '.json').replace('batch-', '');
+  const fragmentPath = path.join(ROOT_DIR, `review-queue-batch-${batchNum}.json`);
+  return `You are processing a batch of Arcane template candidates.
+
+Read the batch file at ${batchFilePath}.
+For each candidate, use the template-builder agent (loaded from .gsd/agents/template-builder.md) to classify and create a template directory under templates/<slug>/ with these required files:
+  - arcane.json
+  - docker-compose.yml
+  - .env.example
+  - README.md
+
+For candidates that cannot be cleanly classified, write a review-queue fragment to ${fragmentPath} using this append format per entry:
+  { "candidate": "<name>", "source": "<source>", "ambiguity": "<what's unclear>", "hypothesis": "<best-guess classification>", "recommendation": "<next step>", "agent": "template-builder", "timestamp": "<ISO-8601>" }
+
+After processing all candidates, return a structured JSON summary of what was created or categorized.`;
+}
+
+/**
+ * Spawns a single `gsd headless` subagent for one batch file.
+ *
+ * Returns a Promise that resolves with { batchFile, exitCode, stdout, stderr, retries }
+ * or rejects on critical failure (e.g., gsd binary not found).
+ */
+function spawnSubagent(batchFilePath, flags) {
+  return new Promise((resolve, reject) => {
+    const paddedNum = path.basename(batchFilePath, '.json').replace('batch-', '');
+
+    const gsdCmd = process.platform === 'win32' ? 'gsd.cmd' : 'gsd';
+    const args = [
+      'headless',
+      '--model', flags.model,
+      '--output-format', 'json',
+      'auto'
+    ];
+
+    const prompt = buildSubagentPrompt(batchFilePath, flags);
+
+    verboseLog(flags, `Spawning: ${gsdCmd} ${args.join(' ')}`);
+    verboseLog(flags, `Prompt length: ${prompt.length} chars`);
+
+    const child = spawn(gsdCmd, args, {
+      stdio: ['pipe', 'pipe', 'pipe'],
+      env: process.env,
+      windowsHide: true,
+      shell: process.platform === 'win32'
+    });
+
+    // Write the task prompt to stdin, then close it
+    child.stdin.write(prompt);
+    child.stdin.end();
+
+    let stdout = '';
+    let stderr = '';
+
+    child.stdout.on('data', (data) => {
+      stdout += data.toString();
+    });
+
+    child.stderr.on('data', (data) => {
+      stderr += data.toString();
+    });
+
+    // Timeout handling: after --timeout seconds, send SIGTERM, wait 5s, SIGKILL
+    let timeoutHandle = null;
+    let killHandle = null;
+    let timedOut = false;
+
+    if (flags.timeout > 0) {
+      timeoutHandle = setTimeout(() => {
+        timedOut = true;
+        child.kill('SIGTERM');
+
+        killHandle = setTimeout(() => {
+          child.kill('SIGKILL');
+        }, 5000);
+      }, flags.timeout * 1000);
+    }
+
+    child.on('error', (err) => {
+      clearTimer();
+      reject(err);
+    });
+
+    child.on('close', (exitCode) => {
+      clearTimer();
+      resolve({
+        batchFile: batchFilePath,
+        paddedNum,
+        exitCode: exitCode,
+        stdout,
+        stderr,
+        timedOut,
+        retries: 0
+      });
+    });
+
+    function clearTimer() {
+      if (timeoutHandle) {
+        clearTimeout(timeoutHandle);
+        timeoutHandle = null;
+      }
+      if (killHandle) {
+        clearTimeout(killHandle);
+        killHandle = null;
+      }
+    }
+  });
+}
+
+/**
+ * Retries a failed batch by re-spawning the subagent.
+ *
+ * Returns { ...dispatchResult, retries: 1 } on success, or the original
+ * failure result with retries: 1 on second failure.
+ */
+async function retrySubagent(lastResult, flags) {
+  const paddedNum = lastResult.paddedNum;
+  console.error(`[dispatch] batch ${paddedNum} FAILED (exit=${lastResult.exitCode}, retrying...)`);
+
+  try {
+    const result = await spawnSubagent(lastResult.batchFile, flags);
+    result.retries = 1;
+    return result;
+  } catch (_err) {
+    // Second failure — return the original result with retries incremented
+    lastResult.retries = 1;
+    return lastResult;
+  }
+}
+
+/**
+ * Writes a dead-letter entry for a batch that failed all retries.
+ * Dead-letter.json is an array of objects with batch metadata + failure reason.
+ */
+function writeDeadLetter(result, flags) {
+  let deadLetters = [];
+  if (fs.existsSync(DEAD_LETTER_PATH)) {
+    try {
+      const raw = fs.readFileSync(DEAD_LETTER_PATH, 'utf8');
+      deadLetters = JSON.parse(raw);
+      if (!Array.isArray(deadLetters)) {
+        deadLetters = [];
+      }
+    } catch (_e) {
+      deadLetters = [];
+    }
+  }
+
+  const entry = {
+    batchFile: path.basename(result.batchFile),
+    batchPath: result.batchFile,
+    exitCode: result.exitCode,
+    timedOut: result.timedOut || false,
+    retries: result.retries,
+    stderrSnippet: result.stderr ? result.stderr.slice(-500) : '',
+    timestamp: new Date().toISOString()
+  };
+  deadLetters.push(entry);
+
+  fs.writeFileSync(DEAD_LETTER_PATH, JSON.stringify(deadLetters, null, 2) + '\n', 'utf8');
+  verboseLog(flags, `Wrote dead-letter entry for ${entry.batchFile}`);
+}
+
+/**
+ * Tries to parse subagent stdout as JSON. Returns the parsed object
+ * or null if the output is not valid JSON.
+ */
+function parseSubagentJson(stdout) {
+  try {
+    return JSON.parse(stdout);
+  } catch (_e) {
+    return null;
+  }
+}
+
+/**
+ * Runs the full dispatch phase: processes all batch files with a semaphore
+ * pattern, limiting concurrency to `concurrency` (default: batch count, cap 10).
+ */
+async function runDispatch(flags) {
+  const batchFiles = fs.readdirSync(BATCHES_DIR)
+    .filter(f => f.startsWith('batch-') && f.endsWith('.json'))
+    .sort()
+    .map(f => path.join(BATCHES_DIR, f));
+
+  if (batchFiles.length === 0) {
+    error(`No batch files found in ${BATCHES_DIR}. Run without --dry-run first to create them.`);
+    process.exit(1);
+  }
+
+  const concurrency = flags.concurrency > 0
+    ? Math.min(flags.concurrency, CONCURRENCY_CAP)
+    : Math.min(batchFiles.length, CONCURRENCY_CAP);
+
+  console.error(`[dispatch] Starting dispatch: ${batchFiles.length} batches, concurrency=${concurrency}, timeout=${flags.timeout}s`);
+
+  const results = [];
+  let completed = 0;
+  let failed = 0;
+
+  // Semaphore: process batches in waves of N
+  for (let i = 0; i < batchFiles.length; i += concurrency) {
+    const wave = batchFiles.slice(i, i + concurrency);
+
+    const wavePromises = wave.map(async (batchFile) => {
+      const paddedNum = path.basename(batchFile, '.json').replace('batch-', '');
+      console.error(`[dispatch] batch ${paddedNum}/${batchFiles.length} pid=${process.pid} ...`);
+
+      let result;
+      try {
+        result = await spawnSubagent(batchFile, flags);
+      } catch (err) {
+        // gsd binary not found or similar fatal error
+        console.error(`[dispatch] batch ${paddedNum} DEAD (spawn error: ${err.message})`);
+        failed++;
+        return { batchFile, exitCode: -1, stderr: err.message, timedOut: false, retries: 0, fatal: true };
+      }
+
+      // Check for exit code, timeout, or malformed JSON
+      const isFailure = result.exitCode !== 0 || result.timedOut;
+      const parsed = parseSubagentJson(result.stdout);
+
+      if (isFailure || parsed === null) {
+        // Retry once
+        const retryResult = await retrySubagent(result, flags);
+
+        const retryParsed = parseSubagentJson(retryResult.stdout);
+        const retryFailed = retryResult.exitCode !== 0 || retryResult.timedOut || retryParsed === null;
+
+        if (retryFailed) {
+          // Dead letter
+          console.error(`[dispatch] batch ${paddedNum} DEAD (exit=${retryResult.exitCode})`);
+          writeDeadLetter(retryResult, flags);
+          failed++;
+          results.push(retryResult);
+          completed++;
+          return retryResult;
+        }
+
+        // Retry succeeded
+        console.error(`[dispatch] batch ${paddedNum} done (exit=${retryResult.exitCode}, ${retryResult.retries} retries)`);
+        results.push(retryResult);
+        completed++;
+        return retryResult;
+      }
+
+      // First attempt succeeded
+      const elapsed = 'N/A'; // we don't track timing in this version
+      console.error(`[dispatch] batch ${paddedNum} done (exit=${result.exitCode}, ${elapsed})`);
+      results.push(result);
+      completed++;
+      return result;
+    });
+
+    await Promise.all(wavePromises);
+  }
+
+  console.error(`[dispatch] Complete: ${completed} batches processed, ${failed} dead-lettered`);
+  return results;
 }
 
 // ── Main ───────────────────────────────────────────────────────────────
@@ -371,9 +653,19 @@ function main() {
   writeBatchFiles(batches, flags);
 
   info(`Batch files written. ${batchCount} batches ready for dispatch.`);
-  // T02 will add the dispatch phase (subagent spawning) here.
 
-  process.exit(0);
+  // ── Execute: spawn subagents ─────────────────────────────────────
+  info(`Dispatching ${batchCount} batches with gsd headless subagents...`);
+
+  runDispatch(flags).then((results) => {
+    const succeeded = results.filter(r => r.exitCode === 0).length;
+    const deadLettered = results.filter(r => r.exitCode !== 0 || r.timedOut).length;
+    console.error(`[collect] ${succeeded} batches completed successfully, ${deadLettered} dead-lettered`);
+    process.exit(0);
+  }).catch((err) => {
+    error(`Dispatch failed: ${err.message}`);
+    process.exit(1);
+  });
 }
 
 main();

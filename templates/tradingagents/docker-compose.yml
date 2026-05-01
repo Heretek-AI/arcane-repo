@@ -2,12 +2,21 @@ version: "3.8"
 
 services:
   tradingagents:
-    image: tauric/trading-agents:latest
+    image: ghcr.io/heretek-ai/arcane-repo/tradingagents:latest
+    build:
+      context: ../..
+      dockerfile: scripts/dockerfiles/tradingagents/Dockerfile
     container_name: tradingagents
     hostname: tradingagents
     ports:
-      - "${TRADINGAGENTS_PORT:-8080}:8080"
+      - "${TRADINGAGENTS_PORT:-8000}:8000"
     restart: unless-stopped
     environment:
-      - TRADING_PORT=${TRADING_PORT:-8080}
+      - TRADINGAGENTS_PORT=${TRADINGAGENTS_PORT:-8000}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - XAI_API_KEY=${XAI_API_KEY:-}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY:-}
 

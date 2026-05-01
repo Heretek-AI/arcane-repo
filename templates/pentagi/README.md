@@ -26,10 +26,5 @@ Copy `.env.example` to `.env` and edit the values as needed.
 
 ## Service Details
 
-The docker-compose.yml exposes environment variables documented in `.env.example`.
-
-> **Status: 🔍 Needs Investigation**
-> This template references a Docker image (`image:` in docker-compose.yml) that doesn't exist on any public registry.
-> The upstream project may have moved, renamed, or not publish Docker images. Use with caution — `docker compose up`
-> will fail at image pull until the reference is corrected.
+The docker-compose.yml exposes environment variables documented in `.env.example`. The container includes a healthcheck on port 8080 with a 60s start period.
 

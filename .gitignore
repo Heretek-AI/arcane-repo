@@ -33,3 +33,6 @@ vendor/
 coverage/
 .cache/
 tmp/
+
+# Dispatch batch output files
+scripts/batches/batch-*.json

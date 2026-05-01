@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  casaos:
+    image: python:3.12-slim
+    container_name: casaos
+    hostname: casaos
+    ports:
+      - "${CASAOS_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='CasaOS (Host-Level Daemon)',
+    version='1.0.0',
+    description=(
+        'CasaOS is a host-level personal cloud operating system — installed '
+        'as a Go binary via one-liner curl command, not deployable via '
+        'docker compose up. This container provides a minimal informational '
+        'API stub for orchestration purposes.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'casaos',
+        'type': 'host-level-daemon-stub',
+        'install_command': 'curl -fsSL https://get.casaos.io | sudo bash',
+        'documentation': 'https://www.casaos.io/',
+        'note': (
+            'CasaOS is a host-level Go binary that manages Docker containers '
+            'via systemd. It is NOT deployable as a Docker container — it must '
+            'be installed directly on the host OS. This is an informational stub.'
+        )
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'tool': 'casaos',
+        'type': 'host-level-daemon',
+        'why_not_docker': (
+            'CasaOS installs as a native Go binary on the host filesystem, '
+            'registers a systemd service, and manages Docker containers directly. '
+            'A Docker Compose wrapper would be misleading — it would create a '
+            'container that tries to manage the Docker daemon from inside Docker, '
+            'adding unnecessary complexity and potential security issues.'
+        ),
+        'install': {
+            'command': 'curl -fsSL https://get.casaos.io | sudo bash',
+            'requirements': [
+                'Ubuntu Server 20.04+ / Debian 11+ / Raspberry Pi OS',
+                'curl installed (sudo apt install curl)',
+                'sudo access',
+            ],
+            'what_it_does': [
+                'Downloads and installs the CasaOS Go binary',
+                'Registers a systemd service (casaos.service)',
+                'Starts the CasaOS web UI on port 80',
+                'Auto-detects Docker and registers existing containers',
+            ]
+        },
+        'features': [
+            'Web-based file manager (drag-and-drop uploads)',
+            'App Store for one-click Docker app installation',
+            'Smart home integration (Home Assistant compatible)',
+            'Multi-user support with permissions',
+            'System monitoring dashboard (CPU, RAM, disk, network)',
+            'DDNS and remote access via CasaConnect',
+        ],
+        'documentation': 'https://wiki.casaos.io/',
+        'source': 'https://github.com/IceWhaleTech/CasaOS',
+        'note': (
+            'Use the curl install command on your host OS. '
+            'This Docker Compose template is an informational stub — '
+            'it documents what CasaOS is and how to install it.'
+        )
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('CASAOS_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${CASAOS_PORT:-8000}
+      "

@@ -1,0 +1,263 @@
+# ═══════════════════════════════════════════════════════════════════
+# WARNING: This is a REFERENCE ARCHITECTURE — you MUST run the
+# official install.sh first for one-time setup (key generation,
+# database migrations, initial user creation).
+#
+#    git clone https://github.com/getsentry/self-hosted.git
+#    cd self-hosted && ./install.sh
+#
+# This docker-compose.yml is a simplified core (7 services) that
+# works AFTER install.sh has completed. It is NOT a standalone
+# 'docker compose up' deploy — use it to understand the architecture
+# or as a post-install maintenance reference.
+#
+# Full docs: https://develop.sentry.dev/self-hosted/
+# ═══════════════════════════════════════════════════════════════════
+
+version: '3.8'
+
+x-sentry-defaults: &sentry_defaults
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options:
+      max-size: 50m
+      max-file: 3
+
+services:
+  # ── PostgreSQL ─────────────────────────────────────────────────
+  postgres:
+    <<: *sentry_defaults
+    image: postgres:16-alpine
+    container_name: sentry-postgres
+    hostname: postgres
+    volumes:
+      - sentry-pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${SENTRY_PG_USER:-sentry}
+      POSTGRES_PASSWORD: ${SENTRY_PG_PASSWORD:?PostgreSQL password required}
+      POSTGRES_DB: ${SENTRY_PG_DB:-sentry}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${SENTRY_PG_USER:-sentry} -d ${SENTRY_PG_DB:-sentry}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ── Redis ──────────────────────────────────────────────────────
+  redis:
+    <<: *sentry_defaults
+    image: redis:7-alpine
+    container_name: sentry-redis
+    hostname: redis
+    volumes:
+      - sentry-redisdata:/data
+    command: redis-server --save 60 1 --loglevel warning
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # ── Kafka (KRaft mode — no Zookeeper) ─────────────────────────
+  kafka:
+    <<: *sentry_defaults
+    image: confluentinc/cp-kafka:7.9.0
+    container_name: sentry-kafka
+    hostname: kafka
+    ports:
+      - "${SENTRY_KAFKA_PORT:-9092}:9092"
+    environment:
+      CLUSTER_ID: ${SENTRY_KAFKA_CLUSTER_ID:-sentry-selfhosted-cluster}
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_LISTENERS: PLAINTEXT://kafka:29092,CONTROLLER://kafka:9093,EXTERNAL://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,EXTERNAL://${SENTRY_KAFKA_ADVERTISED_HOST:-localhost}:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_LOG_RETENTION_HOURS: 168
+      KAFKA_LOG_SEGMENT_BYTES: 1073741824
+    volumes:
+      - sentry-kafkadata:/var/lib/kafka/data
+    healthcheck:
+      test: ["CMD-SHELL", "kafka-broker-api-versions --bootstrap-server localhost:29092 &>/dev/null"]
+      interval: 10s
+      timeout: 10s
+      retries: 15
+      start_period: 30s
+
+  # ── ClickHouse ─────────────────────────────────────────────────
+  clickhouse:
+    <<: *sentry_defaults
+    image: clickhouse/clickhouse-server:24.12-alpine
+    container_name: sentry-clickhouse
+    hostname: clickhouse
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    volumes:
+      - sentry-chdata:/var/lib/clickhouse
+    environment:
+      CLICKHOUSE_DB: ${SENTRY_CH_DB:-sentry}
+      CLICKHOUSE_USER: ${SENTRY_CH_USER:-sentry}
+      CLICKHOUSE_PASSWORD: ${SENTRY_CH_PASSWORD:?ClickHouse password required}
+    healthcheck:
+      test: ["CMD-SHELL", "clickhouse-client --user ${SENTRY_CH_USER:-sentry} --password ${SENTRY_CH_PASSWORD:?} --query 'SELECT 1' 2>/dev/null"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+
+  # ── Snuba (ClickHouse query layer) ────────────────────────────
+  snuba:
+    <<: *sentry_defaults
+    image: getsentry/snuba:latest
+    container_name: sentry-snuba
+    hostname: snuba
+    environment:
+      SNUBA_SETTINGS: /etc/snuba/settings.py
+      DEFAULT_BROKERS: kafka:29092
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: 9000
+      CLICKHOUSE_USER: ${SENTRY_CH_USER:-sentry}
+      CLICKHOUSE_PASSWORD: ${SENTRY_CH_PASSWORD:?}
+      CLICKHOUSE_DATABASE: ${SENTRY_CH_DB:-sentry}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      SENTRY_DSN: ""
+    depends_on:
+      kafka:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # ── Sentry Web ─────────────────────────────────────────────────
+  sentry-web:
+    <<: *sentry_defaults
+    image: getsentry/sentry:latest
+    container_name: sentry-web
+    hostname: sentry-web
+    ports:
+      - "${SENTRY_WEB_PORT:-9000}:9000"
+    environment:
+      SENTRY_SECRET_KEY: ${SENTRY_SECRET_KEY:?Sentry secret key required — run install.sh to generate}
+      SENTRY_POSTGRES_HOST: postgres
+      SENTRY_DB_USER: ${SENTRY_PG_USER:-sentry}
+      SENTRY_DB_PASSWORD: ${SENTRY_PG_PASSWORD:?}
+      SENTRY_DB_NAME: ${SENTRY_PG_DB:-sentry}
+      SENTRY_REDIS_HOST: redis
+      SENTRY_KAFKA_BROKERS: kafka:29092
+      SENTRY_CLICKHOUSE_HOST: clickhouse
+      SENTRY_CLICKHOUSE_USER: ${SENTRY_CH_USER:-sentry}
+      SENTRY_CLICKHOUSE_PASSWORD: ${SENTRY_CH_PASSWORD:?}
+      SENTRY_SNUBA: http://snuba:1218
+      SENTRY_SERVER_EMAIL: ${SENTRY_SERVER_EMAIL:-sentry@localhost}
+      SENTRY_EMAIL_HOST: ${SENTRY_EMAIL_HOST:-smtp}
+      SENTRY_EVENT_RETENTION_DAYS: ${SENTRY_EVENT_RETENTION_DAYS:-90}
+      SENTRY_SINGLE_ORGANIZATION: ${SENTRY_SINGLE_ORG:-true}
+      SENTRY_USE_SSL: "false"
+    command: run web
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+      snuba:
+        condition: service_started
+
+  # ── Sentry Worker ──────────────────────────────────────────────
+  sentry-worker:
+    <<: *sentry_defaults
+    image: getsentry/sentry:latest
+    container_name: sentry-worker
+    hostname: sentry-worker
+    environment:
+      SENTRY_SECRET_KEY: ${SENTRY_SECRET_KEY:?}
+      SENTRY_POSTGRES_HOST: postgres
+      SENTRY_DB_USER: ${SENTRY_PG_USER:-sentry}
+      SENTRY_DB_PASSWORD: ${SENTRY_PG_PASSWORD:?}
+      SENTRY_DB_NAME: ${SENTRY_PG_DB:-sentry}
+      SENTRY_REDIS_HOST: redis
+      SENTRY_KAFKA_BROKERS: kafka:29092
+      SENTRY_CLICKHOUSE_HOST: clickhouse
+      SENTRY_CLICKHOUSE_USER: ${SENTRY_CH_USER:-sentry}
+      SENTRY_CLICKHOUSE_PASSWORD: ${SENTRY_CH_PASSWORD:?}
+      SENTRY_SNUBA: http://snuba:1218
+      SENTRY_SERVER_EMAIL: ${SENTRY_SERVER_EMAIL:-sentry@localhost}
+      SENTRY_EVENT_RETENTION_DAYS: ${SENTRY_EVENT_RETENTION_DAYS:-90}
+    command: run worker
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+      snuba:
+        condition: service_started
+
+  # ── Sentry Cron ────────────────────────────────────────────────
+  sentry-cron:
+    <<: *sentry_defaults
+    image: getsentry/sentry:latest
+    container_name: sentry-cron
+    hostname: sentry-cron
+    environment:
+      SENTRY_SECRET_KEY: ${SENTRY_SECRET_KEY:?}
+      SENTRY_POSTGRES_HOST: postgres
+      SENTRY_DB_USER: ${SENTRY_PG_USER:-sentry}
+      SENTRY_DB_PASSWORD: ${SENTRY_PG_PASSWORD:?}
+      SENTRY_DB_NAME: ${SENTRY_PG_DB:-sentry}
+      SENTRY_REDIS_HOST: redis
+      SENTRY_CLICKHOUSE_HOST: clickhouse
+      SENTRY_CLICKHOUSE_USER: ${SENTRY_CH_USER:-sentry}
+      SENTRY_CLICKHOUSE_PASSWORD: ${SENTRY_CH_PASSWORD:?}
+      SENTRY_SNUBA: http://snuba:1218
+      SENTRY_SERVER_EMAIL: ${SENTRY_SERVER_EMAIL:-sentry@localhost}
+      SENTRY_EVENT_RETENTION_DAYS: ${SENTRY_EVENT_RETENTION_DAYS:-90}
+    command: run cron
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+      snuba:
+        condition: service_started
+
+  # ── Nginx (reverse proxy) ──────────────────────────────────────
+  nginx:
+    <<: *sentry_defaults
+    image: nginx:alpine
+    container_name: sentry-nginx
+    hostname: nginx
+    ports:
+      - "${SENTRY_NGINX_PORT:-80}:80"
+    volumes:
+      - sentry-nginxdata:/etc/nginx/conf.d
+    depends_on:
+      sentry-web:
+        condition: service_started
+
+volumes:
+  sentry-pgdata:
+  sentry-redisdata:
+  sentry-kafkadata:
+  sentry-chdata:
+  sentry-nginxdata:
+
+networks:
+  default:
+    name: sentry-selfhosted

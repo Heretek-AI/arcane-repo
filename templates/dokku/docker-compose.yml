@@ -1,0 +1,112 @@
+version: '3.8'
+
+services:
+  dokku:
+    image: python:3.12-slim
+    container_name: dokku
+    hostname: dokku
+    ports:
+      - "${DOKKU_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: |
+      sh -c "
+      pip install --no-cache-dir -q fastapi uvicorn &&
+      cat > /app/server.py << 'PYEOF'
+import os
+from fastapi import FastAPI
+
+app = FastAPI(
+    title='Dokku (Host-Level PaaS)',
+    version='1.0.0',
+    description=(
+        'Dokku is a Docker-powered PaaS installed via bootstrap.sh to the '
+        'host system — not deployable as a standalone Docker container. '
+        'The bootstrap process configures SSH, nginx, dokku user, and the '
+        'plugin system at the host OS level. This container provides a '
+        'minimal informational API stub.'
+    )
+)
+
+@app.get('/health')
+async def health():
+    return {
+        'status': 'ok',
+        'tool': 'dokku',
+        'type': 'host-level-paas-stub',
+        'install_command': 'wget -qO- https://dokku.com/install/v0.35.15/bootstrap.sh | sudo bash',
+        'documentation': 'https://dokku.com/docs/',
+        'note': (
+            'Dokku is a Docker-powered PaaS that installs at the host OS level. '
+            'The bootstrap.sh configures SSH (git push deploys), nginx (vhosts '
+            'per app), the dokku system user, and the plugin system. It is NOT '
+            'deployable as a standalone container — it must be installed directly '
+            'on the host. This is an informational stub.'
+        )
+    }
+
+@app.get('/guide')
+async def guide():
+    return {
+        'tool': 'dokku',
+        'type': 'host-level-paas',
+        'docker_image_exists': {
+            'image': 'dokku/dokku:latest',
+            'why_not_deployable': (
+                'While a Docker image exists (dokku/dokku:latest), '
+                'the bootstrap process performs host-level configuration '
+                '(SSH setup, nginx reverse proxy, dokku system user, '
+                'plugin management) that a standalone container cannot '
+                'replicate. The image is used internally by bootstrap.sh '
+                'for the dokku daemon, not as a standalone deployment target.'
+            )
+        },
+        'why_not_docker_compose': (
+            'Dokku integrates deeply with the host OS: SSH server for '
+            'git-push deploys, nginx for per-app virtual hosts, and plugin '
+            'management that requires filesystem-level access. A Docker Compose '
+            'wrapper would be misleading — it would create a container that '
+            'can\'t configure the host SSH/nginx/services that dokku needs.'
+        ),
+        'install': {
+            'command': 'wget -qO- https://dokku.com/install/v0.35.15/bootstrap.sh | sudo bash',
+            'requirements': [
+                'Ubuntu 20.04/22.04/24.04 x64 (fresh install recommended)',
+                'At least 1 GB RAM',
+                'A domain or subdomain pointing to the server IP',
+                'sudo access',
+            ],
+            'what_it_does': [
+                'Installs Docker and dokku system packages',
+                'Configures the dokku system user and SSH command',
+                'Sets up nginx as a reverse proxy for apps',
+                'Creates the plugin management system',
+                'Prompts for domain and SSH key setup',
+            ]
+        },
+        'features': [
+            'Git-push deployment workflow (git push dokku main)',
+            'Heroku-compatible buildpacks (Node.js, Python, Ruby, Go, Java, PHP)',
+            'Dockerfile-based deployments',
+            'Plugin system (PostgreSQL, Redis, Let\'s Encrypt, monitoring)',
+            'Per-app environment variable management',
+            'Zero-downtime deploys with checks',
+            'Process scaling (dokku ps:scale web=2)',
+        ],
+        'documentation': 'https://dokku.com/docs/',
+        'source': 'https://github.com/dokku/dokku',
+        'note': (
+            'Use the bootstrap.sh command to install dokku on your host OS. '
+            'This Docker Compose template is an informational stub — '
+            'it documents what dokku is and how to install it.'
+        )
+    }
+
+if __name__ == '__main__':
+    import uvicorn
+    port = int(os.environ.get('DOKKU_PORT', '8000'))
+    uvicorn.run(app, host='0.0.0.0', port=port)
+PYEOF
+      uvicorn server:app --host 0.0.0.0 --port ${DOKKU_PORT:-8000}
+      "

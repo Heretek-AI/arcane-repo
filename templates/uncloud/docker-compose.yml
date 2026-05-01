@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  uncloud:
+    image: ghcr.io/heretek-ai/arcane-repo/uncloud:latest
+    container_name: uncloud
+    hostname: uncloud
+    ports:
+      - "${UNCLOUD_PORT:-8000}:8000"
+    restart: unless-stopped
+    environment:
+      - UNCLOUD_PORT=${UNCLOUD_PORT:-8000}

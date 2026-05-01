@@ -1,0 +1,8 @@
+{
+  "id": "uncloud",
+  "name": "Uncloud",
+  "description": "Lightweight container orchestration across Docker hosts with WireGuard mesh networking — bridge the gap between Docker and Kubernetes",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": ["paas", "orchestration", "clustering"]
+}

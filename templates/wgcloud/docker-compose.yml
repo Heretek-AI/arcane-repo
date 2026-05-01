@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  # ── MySQL — Required database for WGCloud server ────────────────
+  mysql:
+    image: mysql:5.7
+    container_name: wgcloud-mysql
+    hostname: wgcloud-mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-changeme}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-wgcloud}
+    volumes:
+      - wgcloud_mysql_data:/var/lib/mysql
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -u root -p${MYSQL_ROOT_PASSWORD:-changeme} || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── WGCloud Server — Java Spring Boot monitoring app ────────────
+  wgcloud:
+    image: ghcr.io/heretek-ai/arcane-repo/wgcloud:latest
+    container_name: wgcloud-server
+    hostname: wgcloud
+    restart: unless-stopped
+    ports:
+      - "${WGCLOUD_PORT:-9999}:9999"
+    environment:
+      - WGCLOUD_PORT=${WGCLOUD_PORT:-9999}
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-wgcloud}
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MYSQL_ROOT_PASSWORD:-changeme}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - wgcloud_logs:/app/log
+
+volumes:
+  wgcloud_mysql_data:
+  wgcloud_logs:

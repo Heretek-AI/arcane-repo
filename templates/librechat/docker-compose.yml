@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  librechat:
+    image: docker.io/librechat/librechat:latest
+    container_name: librechat
+    hostname: librechat
+    ports:
+      - "${LIBRECHAT_PORT:-8080}:8080"
+    volumes:
+      - librechat_data:/data
+    restart: unless-stopped
+
+volumes:
+  librechat_data:
+    name: librechat_data

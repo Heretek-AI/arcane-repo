@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rotki:
+    image: docker.io/rotki/rotki:latest
+    container_name: rotki
+    hostname: rotki
+    ports:
+      - "${ROTKI_PORT:-8080}:8080"
+    volumes:
+      - rotki_data:/data
+    restart: unless-stopped
+
+volumes:
+  rotki_data:
+    name: rotki_data

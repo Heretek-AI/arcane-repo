@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  monetr:
+    image: ghcr.io/monetr/monetr:latest
+    container_name: monetr
+    hostname: monetr
+    ports:
+      - "${MONETR_PORT:-8080}:8080"
+    volumes:
+      - monetr_data:/data
+    restart: unless-stopped
+
+volumes:
+  monetr_data:
+    name: monetr_data

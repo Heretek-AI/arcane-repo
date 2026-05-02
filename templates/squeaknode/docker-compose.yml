@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  squeaknode:
+    image: ghcr.io/squeaknode/squeaknode:latest
+    container_name: squeaknode
+    hostname: squeaknode
+    ports:
+      - "${SQUEAKNODE_PORT:-8080}:8080"
+    volumes:
+      - squeaknode_data:/data
+    restart: unless-stopped
+
+volumes:
+  squeaknode_data:
+    name: squeaknode_data

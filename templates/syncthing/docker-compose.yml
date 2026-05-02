@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  syncthing:
+    image: ghcr.io/syncthing/syncthing:latest
+    container_name: syncthing
+    hostname: syncthing
+    ports:
+      - "${SYNCTHING_PORT:-8080}:8080"
+    volumes:
+      - syncthing_data:/data
+    restart: unless-stopped
+
+volumes:
+  syncthing_data:
+    name: syncthing_data

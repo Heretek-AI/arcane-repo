@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  linkwarden:
+    image: ghcr.io/linkwarden/linkwarden:latest
+    container_name: linkwarden
+    hostname: linkwarden
+    ports:
+      - "${LINKWARDEN_PORT:-8080}:8080"
+    volumes:
+      - linkwarden_data:/data
+    restart: unless-stopped
+
+volumes:
+  linkwarden_data:
+    name: linkwarden_data

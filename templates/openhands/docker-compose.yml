@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openhands:
+    image: ghcr.io/openhands/openhands:latest
+    container_name: openhands
+    hostname: openhands
+    ports:
+      - "${OPENHANDS_PORT:-8080}:8080"
+    volumes:
+      - openhands_data:/data
+    restart: unless-stopped
+
+volumes:
+  openhands_data:
+    name: openhands_data

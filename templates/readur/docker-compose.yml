@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  readur:
+    image: ghcr.io/readur/readur:latest
+    container_name: readur
+    hostname: readur
+    ports:
+      - "${READUR_PORT:-8080}:8080"
+    volumes:
+      - readur_data:/data
+    restart: unless-stopped
+
+volumes:
+  readur_data:
+    name: readur_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bentopdf:
+    image: docker.io/bentopdf/bentopdf:latest
+    container_name: bentopdf
+    hostname: bentopdf
+    ports:
+      - "${BENTOPDF_PORT:-8080}:8080"
+    volumes:
+      - bentopdf_data:/data
+    restart: unless-stopped
+
+volumes:
+  bentopdf_data:
+    name: bentopdf_data

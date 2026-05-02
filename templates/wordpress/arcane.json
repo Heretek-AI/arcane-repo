@@ -1,0 +1,11 @@
+{
+  "id": "wordpress",
+  "name": "Wordpress",
+  "description": "Self-hosted Wordpress deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

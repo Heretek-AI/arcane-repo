@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  libretranslate:
+    image: docker.io/libretranslate/libretranslate:latest
+    container_name: libretranslate
+    hostname: libretranslate
+    ports:
+      - "${LIBRETRANSLATE_PORT:-8080}:8080"
+    volumes:
+      - libretranslate_data:/data
+    restart: unless-stopped
+
+volumes:
+  libretranslate_data:
+    name: libretranslate_data

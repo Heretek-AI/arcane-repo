@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tailscale:
+    image: ghcr.io/tailscale/tailscale:latest
+    container_name: tailscale
+    hostname: tailscale
+    ports:
+      - "${TAILSCALE_PORT:-8080}:8080"
+    volumes:
+      - tailscale_data:/data
+    restart: unless-stopped
+
+volumes:
+  tailscale_data:
+    name: tailscale_data

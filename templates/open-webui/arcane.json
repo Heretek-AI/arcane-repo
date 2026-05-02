@@ -1,0 +1,11 @@
+{
+  "id": "open-webui",
+  "name": "Open Webui",
+  "description": "Self-hosted Open Webui deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

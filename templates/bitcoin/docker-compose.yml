@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bitcoin:
+    image: docker.io/bitcoin/bitcoin:latest
+    container_name: bitcoin
+    hostname: bitcoin
+    ports:
+      - "${BITCOIN_PORT:-8080}:8080"
+    volumes:
+      - bitcoin_data:/data
+    restart: unless-stopped
+
+volumes:
+  bitcoin_data:
+    name: bitcoin_data

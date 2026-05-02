@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lnbits:
+    image: docker.io/lnbits/lnbits:latest
+    container_name: lnbits
+    hostname: lnbits
+    ports:
+      - "${LNBITS_PORT:-8080}:8080"
+    volumes:
+      - lnbits_data:/data
+    restart: unless-stopped
+
+volumes:
+  lnbits_data:
+    name: lnbits_data

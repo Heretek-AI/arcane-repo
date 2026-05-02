@@ -1,0 +1,12 @@
+{
+  "id": "librechat",
+  "name": "Librechat",
+  "description": "Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "communication",
+    "umbrel"
+  ]
+}

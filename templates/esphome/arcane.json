@@ -1,0 +1,11 @@
+{
+  "id": "esphome",
+  "name": "Esphome",
+  "description": "Self-hosted Esphome deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

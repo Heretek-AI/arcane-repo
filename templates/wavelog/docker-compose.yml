@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wavelog:
+    image: ghcr.io/wavelog/wavelog:latest
+    container_name: wavelog
+    hostname: wavelog
+    ports:
+      - "${WAVELOG_PORT:-8080}:8080"
+    volumes:
+      - wavelog_data:/data
+    restart: unless-stopped
+
+volumes:
+  wavelog_data:
+    name: wavelog_data

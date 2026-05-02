@@ -1,0 +1,11 @@
+{
+  "id": "ghost",
+  "name": "Ghost",
+  "description": "Self-hosted Ghost deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

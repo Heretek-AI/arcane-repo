@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  donetick:
+    image: docker.io/donetick/donetick:latest
+    container_name: donetick
+    hostname: donetick
+    ports:
+      - "${DONETICK_PORT:-8080}:8080"
+    volumes:
+      - donetick_data:/data
+    restart: unless-stopped
+
+volumes:
+  donetick_data:
+    name: donetick_data

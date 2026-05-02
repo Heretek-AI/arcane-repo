@@ -1,0 +1,11 @@
+{
+  "id": "squeaknode",
+  "name": "Squeaknode",
+  "description": "Self-hosted Squeaknode deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

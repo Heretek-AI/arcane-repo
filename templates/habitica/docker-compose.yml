@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  habitica:
+    image: docker.io/habitica/habitica:latest
+    container_name: habitica
+    hostname: habitica
+    ports:
+      - "${HABITICA_PORT:-8080}:8080"
+    volumes:
+      - habitica_data:/data
+    restart: unless-stopped
+
+volumes:
+  habitica_data:
+    name: habitica_data

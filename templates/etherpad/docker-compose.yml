@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  etherpad:
+    image: docker.io/etherpad/etherpad:latest
+    container_name: etherpad
+    hostname: etherpad
+    ports:
+      - "${ETHERPAD_PORT:-8080}:8080"
+    volumes:
+      - etherpad_data:/data
+    restart: unless-stopped
+
+volumes:
+  etherpad_data:
+    name: etherpad_data

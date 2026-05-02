@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cobalt:
+    image: docker.io/cobalt/cobalt:latest
+    container_name: cobalt
+    hostname: cobalt
+    ports:
+      - "${COBALT_PORT:-8080}:8080"
+    volumes:
+      - cobalt_data:/data
+    restart: unless-stopped
+
+volumes:
+  cobalt_data:
+    name: cobalt_data

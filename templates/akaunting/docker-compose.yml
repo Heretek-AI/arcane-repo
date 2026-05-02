@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  akaunting:
+    image: docker.io/akaunting/akaunting:latest
+    container_name: akaunting
+    hostname: akaunting
+    ports:
+      - "${AKAUNTING_PORT:-8080}:8080"
+    volumes:
+      - akaunting_data:/data
+    restart: unless-stopped
+
+volumes:
+  akaunting_data:
+    name: akaunting_data

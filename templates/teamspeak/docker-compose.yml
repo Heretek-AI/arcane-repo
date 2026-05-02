@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  teamspeak:
+    image: docker.io/library/teamspeak:latest
+    container_name: teamspeak
+    hostname: teamspeak
+    ports:
+      - "${TEAMSPEAK_PORT:-8080}:8080"
+    volumes:
+      - teamspeak_data:/data
+    restart: unless-stopped
+
+volumes:
+  teamspeak_data:
+    name: teamspeak_data

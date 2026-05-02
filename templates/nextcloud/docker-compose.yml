@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nextcloud:
+    image: docker.io/library/nextcloud:latest
+    container_name: nextcloud
+    hostname: nextcloud
+    ports:
+      - "${NEXTCLOUD_PORT:-80}:80"
+    volumes:
+      - nextcloud_data:/data
+    restart: unless-stopped
+
+volumes:
+  nextcloud_data:
+    name: nextcloud_data

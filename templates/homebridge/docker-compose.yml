@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  homebridge:
+    image: ghcr.io/homebridge/homebridge:latest
+    container_name: homebridge
+    hostname: homebridge
+    ports:
+      - "${HOMEBRIDGE_PORT:-8080}:8080"
+    volumes:
+      - homebridge_data:/data
+    restart: unless-stopped
+
+volumes:
+  homebridge_data:
+    name: homebridge_data

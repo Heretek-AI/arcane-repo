@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  woofbot:
+    image: docker.io/woofbot/woofbot:latest
+    container_name: woofbot
+    hostname: woofbot
+    ports:
+      - "${WOOFBOT_PORT:-8080}:8080"
+    volumes:
+      - woofbot_data:/data
+    restart: unless-stopped
+
+volumes:
+  woofbot_data:
+    name: woofbot_data

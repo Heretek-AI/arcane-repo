@@ -646,6 +646,14 @@ def check_ports(td: TemplateData) -> list[dict]:
             "No ports exposed in docker-compose.yml",
             "Verify this is intentional (e.g. background worker, CLI tool)",
         ))
+    elif not findings:
+        # All ports are clean — record a pass finding so the dimension appears
+        # in the report even when nothing is wrong.
+        findings.append(td._finding(
+            "ports", "pass",
+            f"Port mappings OK — {sum(len(s.get('ports',[])) for s in td.services)} port(s) mapped",
+            None,
+        ))
 
     return findings
 
@@ -1026,14 +1034,32 @@ def _write_markdown_report(report: dict, path: Path) -> None:
     lines.append("## Per-Dimension Findings\n")
     for dim in sorted(by_dim.keys()):
         lines.append(f"### {dim.capitalize()}\n")
+        lines.append(f"**Total findings in this dimension: {by_dim.get(dim, 0)}**\n")
+
+        dim_by_sev: dict[str, int] = {"pass": 0, "info": 0, "warning": 0, "error": 0}
         dim_findings = []
         for t in report["templates"]:
             for f in t["findings"]:
                 if f["dimension"] == dim:
                     dim_findings.append((t["id"], t.get("name", t["id"]), f))
+                    sev = f["severity"]
+                    if sev in dim_by_sev:
+                        dim_by_sev[sev] += 1
+
         if not dim_findings:
             lines.append("_No findings in this dimension._\n")
             continue
+
+        lines.append("#### Severity Breakdown\n")
+        lines.append("| Severity | Count |")
+        lines.append("|----------|-------|")
+        for sev in ("error", "warning", "info", "pass"):
+            cnt = dim_by_sev.get(sev, 0)
+            if cnt > 0:
+                lines.append(f"| {sev} | {cnt} |")
+        lines.append("")
+
+        lines.append("#### Per-Template Findings\n")
         lines.append("| Template ID | Name | Severity | Message | Suggested Fix |")
         lines.append("|-------------|------|----------|---------|---------------|")
         for tid, tname, f in dim_findings:

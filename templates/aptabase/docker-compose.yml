@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  aptabase:
+    image: ghcr.io/aptabase/aptabase:latest
+    container_name: aptabase
+    hostname: aptabase
+    ports:
+      - "${APTABASE_PORT:-8080}:8080"
+    volumes:
+      - aptabase_data:/data
+    restart: unless-stopped
+
+volumes:
+  aptabase_data:
+    name: aptabase_data

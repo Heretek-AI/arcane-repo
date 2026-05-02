@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  otter-wiki:
+    image: docker.io/redimp/otterwiki:latest
+    container_name: otter-wiki
+    hostname: otter-wiki
+    ports:
+      - "${OTTER_WIKI_PORT:-80}:80"
+    volumes:
+      - otter-wiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  otter-wiki_data:
+    name: otter-wiki_data

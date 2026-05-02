@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vouchervault:
+    image: docker.io/l4rm4nd/vouchervault:latest
+    container_name: vouchervault
+    hostname: vouchervault
+    ports:
+      - "${VOUCHERVAULT_PORT:-8080}:8080"
+    volumes:
+      - vouchervault_data:/data
+    restart: unless-stopped
+
+volumes:
+  vouchervault_data:
+    name: vouchervault_data

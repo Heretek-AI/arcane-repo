@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  convertx:
+    image: ghcr.io/c4illin/convertx:latest
+    container_name: convertx
+    hostname: convertx
+    ports:
+      - "${CONVERTX_PORT:-8080}:8080"
+    volumes:
+      - convertx_data:/data
+    restart: unless-stopped
+
+volumes:
+  convertx_data:
+    name: convertx_data

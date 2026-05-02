@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  oras:
+    image: ghcr.io/oras-project/oras:latest
+    container_name: oras
+    hostname: oras
+    ports:
+      - "${ORAS_PORT:-8080}:8080"
+    volumes:
+      - oras_data:/data
+    restart: unless-stopped
+
+volumes:
+  oras_data:
+    name: oras_data

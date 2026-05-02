@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shifter:
+    image: ghcr.io/tobysuch/shifter:latest
+    container_name: shifter
+    hostname: shifter
+    ports:
+      - "${SHIFTER_PORT:-8080}:8080"
+    volumes:
+      - shifter_data:/data
+    restart: unless-stopped
+
+volumes:
+  shifter_data:
+    name: shifter_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  telepresence:
+    image: ghcr.io/telepresenceio/telepresence:latest
+    container_name: telepresence
+    hostname: telepresence
+    ports:
+      - "${TELEPRESENCE_PORT:-8080}:8080"
+    volumes:
+      - telepresence_data:/data
+    restart: unless-stopped
+
+volumes:
+  telepresence_data:
+    name: telepresence_data

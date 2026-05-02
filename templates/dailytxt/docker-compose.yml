@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dailytxt:
+    image: docker.io/phitux/dailytxt:latest
+    container_name: dailytxt
+    hostname: dailytxt
+    ports:
+      - "${DAILYTXT_PORT:-8080}:8080"
+    volumes:
+      - dailytxt_data:/data
+    restart: unless-stopped
+
+volumes:
+  dailytxt_data:
+    name: dailytxt_data

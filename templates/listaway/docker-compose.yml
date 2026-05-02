@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  listaway:
+    image: ghcr.io/jeffrpowell/listaway:latest
+    container_name: listaway
+    hostname: listaway
+    ports:
+      - "${LISTAWAY_PORT:-8080}:8080"
+    volumes:
+      - listaway_data:/data
+    restart: unless-stopped
+
+volumes:
+  listaway_data:
+    name: listaway_data

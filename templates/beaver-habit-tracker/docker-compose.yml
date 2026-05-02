@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  beaver-habit-tracker:
+    image: docker.io/daya0576/beaverhabits:latest
+    container_name: beaver-habit-tracker
+    hostname: beaver-habit-tracker
+    ports:
+      - "${BEAVER_HABIT_TRACKER_PORT:-8080}:8080"
+    volumes:
+      - beaver-habit-tracker_data:/data
+    restart: unless-stopped
+
+volumes:
+  beaver-habit-tracker_data:
+    name: beaver-habit-tracker_data

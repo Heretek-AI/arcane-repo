@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  langfuse:
+    image: ghcr.io/langfuse/langfuse:latest
+    container_name: langfuse
+    hostname: langfuse
+    ports:
+      - "${LANGFUSE_PORT:-8080}:8080"
+    volumes:
+      - langfuse_data:/data
+    restart: unless-stopped
+
+volumes:
+  langfuse_data:
+    name: langfuse_data

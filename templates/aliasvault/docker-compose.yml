@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  aliasvault:
+    image: ghcr.io/aliasvault/aliasvault:latest
+    container_name: aliasvault
+    hostname: aliasvault
+    ports:
+      - "${ALIASVAULT_PORT:-8080}:8080"
+    volumes:
+      - aliasvault_data:/data
+    restart: unless-stopped
+
+volumes:
+  aliasvault_data:
+    name: aliasvault_data

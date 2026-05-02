@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  discourse:
+    image: docker.io/discourse/discourse:latest
+    container_name: discourse
+    hostname: discourse
+    ports:
+      - "${DISCOURSE_PORT:-8080}:8080"
+    volumes:
+      - discourse_data:/data
+    restart: unless-stopped
+
+volumes:
+  discourse_data:
+    name: discourse_data

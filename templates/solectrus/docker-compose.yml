@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  solectrus:
+    image: ghcr.io/solectrus/solectrus:latest
+    container_name: solectrus
+    hostname: solectrus
+    ports:
+      - "${SOLECTRUS_PORT:-8080}:8080"
+    volumes:
+      - solectrus_data:/data
+    restart: unless-stopped
+
+volumes:
+  solectrus_data:
+    name: solectrus_data

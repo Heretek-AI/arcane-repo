@@ -1,0 +1,11 @@
+{
+  "id": "calibre-web-automated",
+  "name": "Calibre Web Automated",
+  "description": "Self-hosted Calibre Web Automated deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

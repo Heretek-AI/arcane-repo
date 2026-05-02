@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  docker-mailserver:
+    image: ghcr.io/docker-mailserver/docker-mailserver:latest
+    container_name: docker-mailserver
+    hostname: docker-mailserver
+    ports:
+      - "${DOCKER_MAILSERVER_PORT:-8080}:8080"
+    volumes:
+      - docker-mailserver_data:/data
+    restart: unless-stopped
+
+volumes:
+  docker-mailserver_data:
+    name: docker-mailserver_data

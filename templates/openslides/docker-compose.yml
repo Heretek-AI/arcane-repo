@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openslides:
+    image: docker.io/openslides/openslides:latest
+    container_name: openslides
+    hostname: openslides
+    ports:
+      - "${OPENSLIDES_PORT:-8080}:8080"
+    volumes:
+      - openslides_data:/data
+    restart: unless-stopped
+
+volumes:
+  openslides_data:
+    name: openslides_data

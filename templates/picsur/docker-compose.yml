@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  picsur:
+    image: ghcr.io/caramelfur/picsur:latest
+    container_name: picsur
+    hostname: picsur
+    ports:
+      - "${PICSUR_PORT:-8080}:8080"
+    volumes:
+      - picsur_data:/data
+    restart: unless-stopped
+
+volumes:
+  picsur_data:
+    name: picsur_data

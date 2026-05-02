@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  our-shopping-list:
+    image: docker.io/nanawel/our-shopping-list:latest
+    container_name: our-shopping-list
+    hostname: our-shopping-list
+    ports:
+      - "${OUR_SHOPPING_LIST_PORT:-8080}:8080"
+    volumes:
+      - our-shopping-list_data:/data
+    restart: unless-stopped
+
+volumes:
+  our-shopping-list_data:
+    name: our-shopping-list_data

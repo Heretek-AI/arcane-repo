@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bytestash:
+    image: ghcr.io/jordan-dalby/bytestash:latest
+    container_name: bytestash
+    hostname: bytestash
+    ports:
+      - "${BYTESTASH_PORT:-8080}:8080"
+    volumes:
+      - bytestash_data:/data
+    restart: unless-stopped
+
+volumes:
+  bytestash_data:
+    name: bytestash_data

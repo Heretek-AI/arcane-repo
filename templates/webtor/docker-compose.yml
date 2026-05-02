@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  webtor:
+    image: ghcr.io/webtor-io/self-hosted:latest
+    container_name: webtor
+    hostname: webtor
+    ports:
+      - "${WEBTOR_PORT:-8080}:8080"
+    volumes:
+      - webtor_data:/data
+    restart: unless-stopped
+
+volumes:
+  webtor_data:
+    name: webtor_data

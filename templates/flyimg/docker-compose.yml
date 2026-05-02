@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flyimg:
+    image: docker.io/flyimg/flyimg:latest
+    container_name: flyimg
+    hostname: flyimg
+    ports:
+      - "${FLYIMG_PORT:-8080}:8080"
+    volumes:
+      - flyimg_data:/data
+    restart: unless-stopped
+
+volumes:
+  flyimg_data:
+    name: flyimg_data

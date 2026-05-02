@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sure:
+    image: ghcr.io/we-promise/sure:latest
+    container_name: sure
+    hostname: sure
+    ports:
+      - "${SURE_PORT:-8080}:8080"
+    volumes:
+      - sure_data:/data
+    restart: unless-stopped
+
+volumes:
+  sure_data:
+    name: sure_data

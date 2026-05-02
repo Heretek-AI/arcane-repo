@@ -1,0 +1,11 @@
+{
+  "id": "rook",
+  "name": "Rook",
+  "description": "Self-hosted Rook deployment via Docker, sourced from Priority catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "priority"
+  ]
+}

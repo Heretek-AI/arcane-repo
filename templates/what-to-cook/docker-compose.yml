@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  what-to-cook:
+    image: ghcr.io/kassner/whattocook:latest
+    container_name: what-to-cook
+    hostname: what-to-cook
+    ports:
+      - "${WHAT_TO_COOK_PORT:-8080}:8080"
+    volumes:
+      - what-to-cook_data:/data
+    restart: unless-stopped
+
+volumes:
+  what-to-cook_data:
+    name: what-to-cook_data

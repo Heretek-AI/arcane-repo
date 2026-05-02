@@ -1,0 +1,11 @@
+{
+  "id": "telepresence",
+  "name": "Telepresence",
+  "description": "Self-hosted Telepresence deployment via Docker, sourced from Priority catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "priority"
+  ]
+}

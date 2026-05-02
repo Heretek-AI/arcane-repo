@@ -9007,5 +9007,743 @@
     "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
     "agent": "template-builder",
     "timestamp": "2026-05-02T02:12:11.996439+00:00"
+  },
+  {
+    "candidate": "015",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352952+00:00"
+  },
+  {
+    "candidate": "AdGuard Home",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352971+00:00"
+  },
+  {
+    "candidate": "AdventureLog",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352975+00:00"
+  },
+  {
+    "candidate": "AFFiNE Community Edition",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352977+00:00"
+  },
+  {
+    "candidate": "Agenta",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352979+00:00"
+  },
+  {
+    "candidate": "AzuraCast",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352981+00:00"
+  },
+  {
+    "candidate": "Bigcapital",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352983+00:00"
+  },
+  {
+    "candidate": "BookLogr",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352985+00:00"
+  },
+  {
+    "candidate": "Cannery",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352987+00:00"
+  },
+  {
+    "candidate": "ClearFlask",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352992+00:00"
+  },
+  {
+    "candidate": "Databunker",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352994+00:00"
+  },
+  {
+    "candidate": "Dittofeed",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352996+00:00"
+  },
+  {
+    "candidate": "Drop",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.352998+00:00"
+  },
+  {
+    "candidate": "E-Label",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353000+00:00"
+  },
+  {
+    "candidate": "Econumo",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353002+00:00"
+  },
+  {
+    "candidate": "Endurain",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353004+00:00"
+  },
+  {
+    "candidate": "Fider",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353006+00:00"
+  },
+  {
+    "candidate": "Flink",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353008+00:00"
+  },
+  {
+    "candidate": "Fork Recipes",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353010+00:00"
+  },
+  {
+    "candidate": "Frappe Helpdesk",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353012+00:00"
+  },
+  {
+    "candidate": "Geeftlist",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353014+00:00"
+  },
+  {
+    "candidate": "Gramps Web",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353016+00:00"
+  },
+  {
+    "candidate": "HandBrake Web",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353017+00:00"
+  },
+  {
+    "candidate": "HeyForm",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353019+00:00"
+  },
+  {
+    "candidate": "Hi.Events",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353021+00:00"
+  },
+  {
+    "candidate": "Inkheart",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353023+00:00"
+  },
+  {
+    "candidate": "IT-Tools by sharevb",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353025+00:00"
+  },
+  {
+    "candidate": "Jotty",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353027+00:00"
+  },
+  {
+    "candidate": "Karakeep",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353029+00:00"
+  },
+  {
+    "candidate": "Keila",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353033+00:00"
+  },
+  {
+    "candidate": "Kyoo",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353035+00:00"
+  },
+  {
+    "candidate": "Litlyx",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353039+00:00"
+  },
+  {
+    "candidate": "mail-archiver",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353041+00:00"
+  },
+  {
+    "candidate": "ManageMeals",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353043+00:00"
+  },
+  {
+    "candidate": "Manyfold",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353045+00:00"
+  },
+  {
+    "candidate": "Matchering",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353047+00:00"
+  },
+  {
+    "candidate": "Meelo",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353049+00:00"
+  },
+  {
+    "candidate": "memEx",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353051+00:00"
+  },
+  {
+    "candidate": "Misago",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353053+00:00"
+  },
+  {
+    "candidate": "Nginx Proxy Manager",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353055+00:00"
+  },
+  {
+    "candidate": "Note Mark",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353058+00:00"
+  },
+  {
+    "candidate": "Ocular",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353060+00:00"
+  },
+  {
+    "candidate": "OmniTools",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353062+00:00"
+  },
+  {
+    "candidate": "Open Archiver",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353064+00:00"
+  },
+  {
+    "candidate": "OpenHabitTracker",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353065+00:00"
+  },
+  {
+    "candidate": "OpenReader",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353067+00:00"
+  },
+  {
+    "candidate": "paaster",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353069+00:00"
+  },
+  {
+    "candidate": "Pangolin",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353071+00:00"
+  },
+  {
+    "candidate": "Papra",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353074+00:00"
+  },
+  {
+    "candidate": "penpot",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353076+00:00"
+  },
+  {
+    "candidate": "Personal Management System",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353077+00:00"
+  },
+  {
+    "candidate": "Pinepods",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353079+00:00"
+  },
+  {
+    "candidate": "Prisme Analytics",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353081+00:00"
+  },
+  {
+    "candidate": "Rybbit",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353083+00:00"
+  },
+  {
+    "candidate": "SafeLine",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353085+00:00"
+  },
+  {
+    "candidate": "Seatsurfing",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353086+00:00"
+  },
+  {
+    "candidate": "ShellHub",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353088+00:00"
+  },
+  {
+    "candidate": "ShipShipShip",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353090+00:00"
+  },
+  {
+    "candidate": "Slink",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353092+00:00"
+  },
+  {
+    "candidate": "SnyPy",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353094+00:00"
+  },
+  {
+    "candidate": "socks5-proxy-server",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353095+00:00"
+  },
+  {
+    "candidate": "Specifically Clementines",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353097+00:00"
+  },
+  {
+    "candidate": "Super Productivity",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353099+00:00"
+  },
+  {
+    "candidate": "SWAG (Secure Web Application Gateway)",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353101+00:00"
+  },
+  {
+    "candidate": "Swetrix",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353102+00:00"
+  },
+  {
+    "candidate": "Termix",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353105+00:00"
+  },
+  {
+    "candidate": "Tine",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353107+00:00"
+  },
+  {
+    "candidate": "tududi",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353108+00:00"
+  },
+  {
+    "candidate": "Twenty",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353111+00:00"
+  },
+  {
+    "candidate": "Typebot",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353113+00:00"
+  },
+  {
+    "candidate": "Viseron",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353115+00:00"
+  },
+  {
+    "candidate": "Warracker",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353118+00:00"
+  },
+  {
+    "candidate": "WebDB",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353120+00:00"
+  },
+  {
+    "candidate": "Zero-TOTP",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353122+00:00"
+  },
+  {
+    "candidate": "Ziit",
+    "source": "awesome-selfhosted",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:17.353124+00:00"
+  },
+  {
+    "candidate": "colima",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561779+00:00"
+  },
+  {
+    "candidate": "slimtoolkit",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561795+00:00"
+  },
+  {
+    "candidate": "ctop",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561799+00:00"
+  },
+  {
+    "candidate": "openebs",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561801+00:00"
+  },
+  {
+    "candidate": "kata-containers",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561803+00:00"
+  },
+  {
+    "candidate": "pachyderm",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561805+00:00"
+  },
+  {
+    "candidate": "YunoHost",
+    "source": "priority",
+    "ambiguity": "no reachable Docker image found across Docker Hub library, Docker Hub org, and GHCR",
+    "hypothesis": "needs-investigation",
+    "recommendation": "Manual review: check if Docker image exists under different name or requires custom-build",
+    "agent": "template-builder",
+    "timestamp": "2026-05-02T02:32:20.561807+00:00"
   }
 ]

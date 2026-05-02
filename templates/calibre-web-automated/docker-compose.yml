@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  calibre-web-automated:
+    image: ghcr.io/crocodilestick/calibre-web-automated:latest
+    container_name: calibre-web-automated
+    hostname: calibre-web-automated
+    ports:
+      - "${CALIBRE_WEB_AUTOMATED_PORT:-8083}:8083"
+    volumes:
+      - calibre-web-automated_data:/data
+    restart: unless-stopped
+
+volumes:
+  calibre-web-automated_data:
+    name: calibre-web-automated_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redash:
+    image: docker.io/redash/redash:latest
+    container_name: redash
+    hostname: redash
+    ports:
+      - "${REDASH_PORT:-8080}:8080"
+    volumes:
+      - redash_data:/data
+    restart: unless-stopped
+
+volumes:
+  redash_data:
+    name: redash_data

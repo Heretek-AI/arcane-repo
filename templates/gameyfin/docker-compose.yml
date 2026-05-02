@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gameyfin:
+    image: ghcr.io/gameyfin/gameyfin:latest
+    container_name: gameyfin
+    hostname: gameyfin
+    ports:
+      - "${GAMEYFIN_PORT:-8080}:8080"
+    volumes:
+      - gameyfin_data:/data
+    restart: unless-stopped
+
+volumes:
+  gameyfin_data:
+    name: gameyfin_data

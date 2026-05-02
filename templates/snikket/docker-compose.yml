@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snikket:
+    image: docker.io/snikket/snikket:latest
+    container_name: snikket
+    hostname: snikket
+    ports:
+      - "${SNIKKET_PORT:-8080}:8080"
+    volumes:
+      - snikket_data:/data
+    restart: unless-stopped
+
+volumes:
+  snikket_data:
+    name: snikket_data

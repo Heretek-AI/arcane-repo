@@ -1,0 +1,12 @@
+{
+  "id": "minimal-git-server",
+  "name": "Minimal Git Server",
+  "description": "Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "devops",
+    "awesome-selfhosted"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "beaver-habit-tracker",
+  "name": "Beaver Habit Tracker",
+  "description": "Self-hosted Beaver Habit Tracker deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lago:
+    image: docker.io/getlago/lago:latest
+    container_name: lago
+    hostname: lago
+    ports:
+      - "${LAGO_PORT:-8080}:8080"
+    volumes:
+      - lago_data:/data
+    restart: unless-stopped
+
+volumes:
+  lago_data:
+    name: lago_data

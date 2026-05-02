@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  loomio:
+    image: docker.io/loomio/loomio:latest
+    container_name: loomio
+    hostname: loomio
+    ports:
+      - "${LOOMIO_PORT:-8080}:8080"
+    volumes:
+      - loomio_data:/data
+    restart: unless-stopped
+
+volumes:
+  loomio_data:
+    name: loomio_data

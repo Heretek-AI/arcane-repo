@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  neonlink:
+    image: docker.io/alexscifier/neonlink:latest
+    container_name: neonlink
+    hostname: neonlink
+    ports:
+      - "${NEONLINK_PORT:-8080}:8080"
+    volumes:
+      - neonlink_data:/data
+    restart: unless-stopped
+
+volumes:
+  neonlink_data:
+    name: neonlink_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tasks-md:
+    image: docker.io/baldissaramatheus/tasks.md:latest
+    container_name: tasks-md
+    hostname: tasks-md
+    ports:
+      - "${TASKS_MD_PORT:-8080}:8080"
+    volumes:
+      - tasks-md_data:/data
+    restart: unless-stopped
+
+volumes:
+  tasks-md_data:
+    name: tasks-md_data

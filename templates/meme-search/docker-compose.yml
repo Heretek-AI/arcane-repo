@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  meme-search:
+    image: ghcr.io/neonwatty/meme-search:latest
+    container_name: meme-search
+    hostname: meme-search
+    ports:
+      - "${MEME_SEARCH_PORT:-8080}:8080"
+    volumes:
+      - meme-search_data:/data
+    restart: unless-stopped
+
+volumes:
+  meme-search_data:
+    name: meme-search_data

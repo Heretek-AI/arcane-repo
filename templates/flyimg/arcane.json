@@ -1,0 +1,11 @@
+{
+  "id": "flyimg",
+  "name": "Flyimg",
+  "description": "Self-hosted Flyimg deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

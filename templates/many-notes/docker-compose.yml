@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  many-notes:
+    image: docker.io/brufdev/many-notes:latest
+    container_name: many-notes
+    hostname: many-notes
+    ports:
+      - "${MANY_NOTES_PORT:-8080}:8080"
+    volumes:
+      - many-notes_data:/data
+    restart: unless-stopped
+
+volumes:
+  many-notes_data:
+    name: many-notes_data

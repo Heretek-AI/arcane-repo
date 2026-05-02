@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cronmaster:
+    image: ghcr.io/fccview/cronmaster:latest
+    container_name: cronmaster
+    hostname: cronmaster
+    ports:
+      - "${CRONMASTER_PORT:-8080}:8080"
+    volumes:
+      - cronmaster_data:/data
+    restart: unless-stopped
+
+volumes:
+  cronmaster_data:
+    name: cronmaster_data

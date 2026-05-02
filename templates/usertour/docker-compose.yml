@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  usertour:
+    image: docker.io/usertour/usertour:latest
+    container_name: usertour
+    hostname: usertour
+    ports:
+      - "${USERTOUR_PORT:-8080}:8080"
+    volumes:
+      - usertour_data:/data
+    restart: unless-stopped
+
+volumes:
+  usertour_data:
+    name: usertour_data

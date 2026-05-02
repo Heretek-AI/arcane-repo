@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jetlog:
+    image: docker.io/pbogre/jetlog:latest
+    container_name: jetlog
+    hostname: jetlog
+    ports:
+      - "${JETLOG_PORT:-8080}:8080"
+    volumes:
+      - jetlog_data:/data
+    restart: unless-stopped
+
+volumes:
+  jetlog_data:
+    name: jetlog_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chiyogami:
+    image: ghcr.io/rhee876527/chiyogami:latest
+    container_name: chiyogami
+    hostname: chiyogami
+    ports:
+      - "${CHIYOGAMI_PORT:-8080}:8080"
+    volumes:
+      - chiyogami_data:/data
+    restart: unless-stopped
+
+volumes:
+  chiyogami_data:
+    name: chiyogami_data

@@ -1,0 +1,11 @@
+{
+  "id": "watcharr",
+  "name": "Watcharr",
+  "description": "Self-hosted Watcharr deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

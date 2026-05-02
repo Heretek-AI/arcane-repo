@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  automatisch:
+    image: ghcr.io/automatisch/automatisch:latest
+    container_name: automatisch
+    hostname: automatisch
+    ports:
+      - "${AUTOMATISCH_PORT:-8080}:8080"
+    volumes:
+      - automatisch_data:/data
+    restart: unless-stopped
+
+volumes:
+  automatisch_data:
+    name: automatisch_data

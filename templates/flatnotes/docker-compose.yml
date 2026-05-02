@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flatnotes:
+    image: docker.io/dullage/flatnotes:latest
+    container_name: flatnotes
+    hostname: flatnotes
+    ports:
+      - "${FLATNOTES_PORT:-8080}:8080"
+    volumes:
+      - flatnotes_data:/data
+    restart: unless-stopped
+
+volumes:
+  flatnotes_data:
+    name: flatnotes_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rook:
+    image: docker.io/rook/rook:latest
+    container_name: rook
+    hostname: rook
+    ports:
+      - "${ROOK_PORT:-8080}:8080"
+    volumes:
+      - rook_data:/data
+    restart: unless-stopped
+
+volumes:
+  rook_data:
+    name: rook_data

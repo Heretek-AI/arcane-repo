@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  homelabos:
+    image: docker.io/homelabos/homelabos:latest
+    container_name: homelabos
+    hostname: homelabos
+    ports:
+      - "${HOMELABOS_PORT:-8080}:8080"
+    volumes:
+      - homelabos_data:/data
+    restart: unless-stopped
+
+volumes:
+  homelabos_data:
+    name: homelabos_data

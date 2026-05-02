@@ -1,0 +1,11 @@
+{
+  "id": "tasks-md",
+  "name": "Tasks.Md",
+  "description": "Self-hosted Tasks.Md deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gocron:
+    image: ghcr.io/flohoss/gocron:latest
+    container_name: gocron
+    hostname: gocron
+    ports:
+      - "${GOCRON_PORT:-8080}:8080"
+    volumes:
+      - gocron_data:/data
+    restart: unless-stopped
+
+volumes:
+  gocron_data:
+    name: gocron_data

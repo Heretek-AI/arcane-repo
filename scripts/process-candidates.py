@@ -96,10 +96,10 @@ def extract_tags(candidate_name, hints, source_name):
     if any(kw in name_lower for kw in sto_kw): tags.append('storage')
     if any(kw in name_lower for kw in com_kw): tags.append('communication')
     if any(kw in name_lower for kw in dev_kw): tags.append('devops')
-    source_tag = '%s-source' % source_name
-    if source_tag in hints:
+    # Always include source name as a tag (per M005 ingestion contract)
+    if source_name not in tags:
         tags.append(source_name)
-    return tags[:4]
+    return tags[:6]
 
 
 def create_arcane_json(slug, data, source_name):
@@ -331,9 +331,16 @@ def main():
         sys.exit(1)
     
     with open(fact_cards_path, 'r', encoding='utf-8') as f:
-        fact_cards = json.load(f)
+        all_cards = json.load(f)
     
-    print("Loaded %d fact cards (source: %s)" % (len(fact_cards), source_name))
+    # Filter to only this source's candidates (if source field present)
+    source_cards = [c for c in all_cards if c.get('source', '').lower() == source_name]
+    if not source_cards:
+        print("ERROR: No fact cards found for source '%s'" % source_name, file=sys.stderr)
+        sys.exit(1)
+    fact_cards = source_cards
+    
+    print("Loaded %d fact cards (source: %s, filtered from %d total)" % (len(fact_cards), source_name, len(all_cards)))
     
     reachable = [c for c in fact_cards if c.get('recommend_image')]
     unreachable = [c for c in fact_cards if not c.get('recommend_image')]

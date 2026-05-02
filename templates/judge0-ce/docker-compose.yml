@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  judge0-ce:
+    image: docker.io/judge0/judge0:latest
+    container_name: judge0-ce
+    hostname: judge0-ce
+    ports:
+      - "${JUDGE0_CE_PORT:-8080}:8080"
+    volumes:
+      - judge0-ce_data:/data
+    restart: unless-stopped
+
+volumes:
+  judge0-ce_data:
+    name: judge0-ce_data

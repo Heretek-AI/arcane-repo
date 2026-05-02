@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bewcloud:
+    image: ghcr.io/bewcloud/bewcloud:latest
+    container_name: bewcloud
+    hostname: bewcloud
+    ports:
+      - "${BEWCLOUD_PORT:-8080}:8080"
+    volumes:
+      - bewcloud_data:/data
+    restart: unless-stopped
+
+volumes:
+  bewcloud_data:
+    name: bewcloud_data

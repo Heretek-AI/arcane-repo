@@ -24,9 +24,7 @@
 
 FROM $BUILDER_IMAGE AS builder
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    git ca-certificates $EXTRA_DEPS \
-    && rm -rf /var/lib/apt/lists/*
+$SYSTEM_DEPS
 
 $BUN_SETUP
 
@@ -36,21 +34,23 @@ RUN git clone --depth 1 $UPSTREAM_REPO /tmp/$APP_SLUG && \
     cp -r /tmp/$APP_SLUG/* /app/ && \
     rm -rf /tmp/$APP_SLUG
 
-RUN $BUILD_TOOL install --ignore-scripts --network-timeout 600000
+$INSTALL_CMD
 
-RUN $BUILD_CMD
+$BUILD_CMD_BLOCK
 
 # ---- Runtime stage ----
 FROM $RUNTIME_IMAGE
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+$RUNTIME_SYSTEM_DEPS
 
 WORKDIR /app
 
-COPY --from=builder /app /app
+$COPY_CMD
 
 EXPOSE $EXPOSE_PORT
+
+$ENV_BLOCK
+
+$HEALTHCHECK_CMD
 
 CMD $ENTRYPOINT_CMD

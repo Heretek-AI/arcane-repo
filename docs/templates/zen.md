@@ -1,0 +1,28 @@
+---
+title: "Zen"
+description: "Self-hosted Zen deployment via Docker, sourced from Umbrel catalog"
+---
+
+# Zen
+
+Self-hosted Zen deployment via Docker, sourced from Umbrel catalog
+
+## Tags
+
+<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+
+## Links
+
+- [docker-compose.yml](https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/zen/docker-compose.yml)
+- [.env.example](https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/zen/.env.example)
+- [Documentation](https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/zen/README.md)
+
+
+## Metadata
+
+| Field | Value |
+|-------|-------|
+| ID | `zen` |
+| Version | 1.0.0 |
+| Author | Arcane |
+| Content Hash | `25e422573e56356a618400ee0585ee2f4c9e44d7c140340ff61390fc26f8a8b0` |

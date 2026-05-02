@@ -1,0 +1,2678 @@
+[
+  {
+    "name": "affine",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "affine",
+    "stars": null,
+    "probable_images": [
+      "docker.io/affine/affine:latest",
+      "docker.io/library/affine:latest",
+      "ghcr.io/affine/affine:latest"
+    ]
+  },
+  {
+    "name": "agora",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "agora",
+    "stars": null,
+    "probable_images": [
+      "docker.io/agora/agora:latest",
+      "docker.io/library/agora:latest",
+      "ghcr.io/agora/agora:latest"
+    ]
+  },
+  {
+    "name": "airtrail",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "airtrail",
+    "stars": null,
+    "probable_images": [
+      "docker.io/airtrail/airtrail:latest",
+      "docker.io/library/airtrail:latest",
+      "ghcr.io/airtrail/airtrail:latest"
+    ]
+  },
+  {
+    "name": "akaunting",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "akaunting",
+    "stars": null,
+    "probable_images": [
+      "docker.io/akaunting/akaunting:latest",
+      "docker.io/library/akaunting:latest",
+      "ghcr.io/akaunting/akaunting:latest"
+    ]
+  },
+  {
+    "name": "alby-nostr-wallet-connect",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "alby-nostr-wallet-connect",
+    "stars": null,
+    "probable_images": [
+      "docker.io/alby-nostr-wallet-connect/alby-nostr-wallet-connect:latest",
+      "docker.io/library/alby-nostr-wallet-connect:latest",
+      "ghcr.io/alby-nostr-wallet-connect/alby-nostr-wallet-connect:latest"
+    ]
+  },
+  {
+    "name": "albyhub",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "albyhub",
+    "stars": null,
+    "probable_images": [
+      "docker.io/albyhub/albyhub:latest",
+      "docker.io/library/albyhub:latest",
+      "ghcr.io/albyhub/albyhub:latest"
+    ]
+  },
+  {
+    "name": "back-that-mac-up",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "back-that-mac-up",
+    "stars": null,
+    "probable_images": [
+      "docker.io/back-that-mac-up/back-that-mac-up:latest",
+      "docker.io/library/back-that-mac-up:latest",
+      "ghcr.io/back-that-mac-up/back-that-mac-up:latest"
+    ]
+  },
+  {
+    "name": "bassin",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bassin",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bassin/bassin:latest",
+      "docker.io/library/bassin:latest",
+      "ghcr.io/bassin/bassin:latest"
+    ]
+  },
+  {
+    "name": "bazarr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bazarr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bazarr/bazarr:latest",
+      "docker.io/library/bazarr:latest",
+      "ghcr.io/bazarr/bazarr:latest"
+    ]
+  },
+  {
+    "name": "bentopdf",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bentopdf",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bentopdf/bentopdf:latest",
+      "docker.io/library/bentopdf:latest",
+      "ghcr.io/bentopdf/bentopdf:latest"
+    ]
+  },
+  {
+    "name": "bffless",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bffless",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bffless/bffless:latest",
+      "docker.io/library/bffless:latest",
+      "ghcr.io/bffless/bffless:latest"
+    ]
+  },
+  {
+    "name": "bitaxe-sentry",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bitaxe-sentry",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bitaxe-sentry/bitaxe-sentry:latest",
+      "docker.io/library/bitaxe-sentry:latest",
+      "ghcr.io/bitaxe-sentry/bitaxe-sentry:latest"
+    ]
+  },
+  {
+    "name": "bitbalance",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bitbalance",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bitbalance/bitbalance:latest",
+      "docker.io/library/bitbalance:latest",
+      "ghcr.io/bitbalance/bitbalance:latest"
+    ]
+  },
+  {
+    "name": "bitcoin",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bitcoin",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bitcoin/bitcoin:latest",
+      "docker.io/library/bitcoin:latest",
+      "ghcr.io/bitcoin/bitcoin:latest"
+    ]
+  },
+  {
+    "name": "bitcoin-knots",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bitcoin-knots",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bitcoin-knots/bitcoin-knots:latest",
+      "docker.io/library/bitcoin-knots:latest",
+      "ghcr.io/bitcoin-knots/bitcoin-knots:latest"
+    ]
+  },
+  {
+    "name": "bitfeed",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bitfeed",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bitfeed/bitfeed:latest",
+      "docker.io/library/bitfeed:latest",
+      "ghcr.io/bitfeed/bitfeed:latest"
+    ]
+  },
+  {
+    "name": "bitwatch",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bitwatch",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bitwatch/bitwatch:latest",
+      "docker.io/library/bitwatch:latest",
+      "ghcr.io/bitwatch/bitwatch:latest"
+    ]
+  },
+  {
+    "name": "bleskomat-server",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bleskomat-server",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bleskomat-server/bleskomat-server:latest",
+      "docker.io/library/bleskomat-server:latest",
+      "ghcr.io/bleskomat-server/bleskomat-server:latest"
+    ]
+  },
+  {
+    "name": "blockstream-blind-oracle",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "blockstream-blind-oracle",
+    "stars": null,
+    "probable_images": [
+      "docker.io/blockstream-blind-oracle/blockstream-blind-oracle:latest",
+      "docker.io/library/blockstream-blind-oracle:latest",
+      "ghcr.io/blockstream-blind-oracle/blockstream-blind-oracle:latest"
+    ]
+  },
+  {
+    "name": "bluewallet",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "bluewallet",
+    "stars": null,
+    "probable_images": [
+      "docker.io/bluewallet/bluewallet:latest",
+      "docker.io/library/bluewallet:latest",
+      "ghcr.io/bluewallet/bluewallet:latest"
+    ]
+  },
+  {
+    "name": "booklore",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "booklore",
+    "stars": null,
+    "probable_images": [
+      "docker.io/booklore/booklore:latest",
+      "docker.io/library/booklore:latest",
+      "ghcr.io/booklore/booklore:latest"
+    ]
+  },
+  {
+    "name": "btc-rpc-explorer",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "btc-rpc-explorer",
+    "stars": null,
+    "probable_images": [
+      "docker.io/btc-rpc-explorer/btc-rpc-explorer:latest",
+      "docker.io/library/btc-rpc-explorer:latest",
+      "ghcr.io/btc-rpc-explorer/btc-rpc-explorer:latest"
+    ]
+  },
+  {
+    "name": "btcpay-server",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "btcpay-server",
+    "stars": null,
+    "probable_images": [
+      "docker.io/btcpay-server/btcpay-server:latest",
+      "docker.io/library/btcpay-server:latest",
+      "ghcr.io/btcpay-server/btcpay-server:latest"
+    ]
+  },
+  {
+    "name": "btctracker",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "btctracker",
+    "stars": null,
+    "probable_images": [
+      "docker.io/btctracker/btctracker:latest",
+      "docker.io/library/btctracker:latest",
+      "ghcr.io/btctracker/btctracker:latest"
+    ]
+  },
+  {
+    "name": "campfire",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "campfire",
+    "stars": null,
+    "probable_images": [
+      "docker.io/campfire/campfire:latest",
+      "docker.io/library/campfire:latest",
+      "ghcr.io/campfire/campfire:latest"
+    ]
+  },
+  {
+    "name": "canary",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "canary",
+    "stars": null,
+    "probable_images": [
+      "docker.io/canary/canary:latest",
+      "docker.io/library/canary:latest",
+      "ghcr.io/canary/canary:latest"
+    ]
+  },
+  {
+    "name": "cashu-me",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "cashu-me",
+    "stars": null,
+    "probable_images": [
+      "docker.io/cashu-me/cashu-me:latest",
+      "docker.io/library/cashu-me:latest",
+      "ghcr.io/cashu-me/cashu-me:latest"
+    ]
+  },
+  {
+    "name": "chantools",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "chantools",
+    "stars": null,
+    "probable_images": [
+      "docker.io/chantools/chantools:latest",
+      "docker.io/library/chantools:latest",
+      "ghcr.io/chantools/chantools:latest"
+    ]
+  },
+  {
+    "name": "chatbot-ui",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "chatbot-ui",
+    "stars": null,
+    "probable_images": [
+      "docker.io/chatbot-ui/chatbot-ui:latest",
+      "docker.io/library/chatbot-ui:latest",
+      "ghcr.io/chatbot-ui/chatbot-ui:latest"
+    ]
+  },
+  {
+    "name": "chatpad-ai",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "chatpad-ai",
+    "stars": null,
+    "probable_images": [
+      "docker.io/chatpad-ai/chatpad-ai:latest",
+      "docker.io/library/chatpad-ai:latest",
+      "ghcr.io/chatpad-ai/chatpad-ai:latest"
+    ]
+  },
+  {
+    "name": "chromium",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "chromium",
+    "stars": null,
+    "probable_images": [
+      "docker.io/chromium/chromium:latest",
+      "docker.io/library/chromium:latest",
+      "ghcr.io/chromium/chromium:latest"
+    ]
+  },
+  {
+    "name": "circuitbreaker",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "circuitbreaker",
+    "stars": null,
+    "probable_images": [
+      "docker.io/circuitbreaker/circuitbreaker:latest",
+      "docker.io/library/circuitbreaker:latest",
+      "ghcr.io/circuitbreaker/circuitbreaker:latest"
+    ]
+  },
+  {
+    "name": "cloudflared",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "cloudflared",
+    "stars": null,
+    "probable_images": [
+      "docker.io/cloudflared/cloudflared:latest",
+      "docker.io/library/cloudflared:latest",
+      "ghcr.io/cloudflared/cloudflared:latest"
+    ]
+  },
+  {
+    "name": "cobalt",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "cobalt",
+    "stars": null,
+    "probable_images": [
+      "docker.io/cobalt/cobalt:latest",
+      "docker.io/library/cobalt:latest",
+      "ghcr.io/cobalt/cobalt:latest"
+    ]
+  },
+  {
+    "name": "copyparty",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "copyparty",
+    "stars": null,
+    "probable_images": [
+      "docker.io/copyparty/copyparty:latest",
+      "docker.io/library/copyparty:latest",
+      "ghcr.io/copyparty/copyparty:latest"
+    ]
+  },
+  {
+    "name": "core-lightning",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "core-lightning",
+    "stars": null,
+    "probable_images": [
+      "docker.io/core-lightning/core-lightning:latest",
+      "docker.io/library/core-lightning:latest",
+      "ghcr.io/core-lightning/core-lightning:latest"
+    ]
+  },
+  {
+    "name": "core-lightning-rtl",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "core-lightning-rtl",
+    "stars": null,
+    "probable_images": [
+      "docker.io/core-lightning-rtl/core-lightning-rtl:latest",
+      "docker.io/library/core-lightning-rtl:latest",
+      "ghcr.io/core-lightning-rtl/core-lightning-rtl:latest"
+    ]
+  },
+  {
+    "name": "datum",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "datum",
+    "stars": null,
+    "probable_images": [
+      "docker.io/datum/datum:latest",
+      "docker.io/library/datum:latest",
+      "ghcr.io/datum/datum:latest"
+    ]
+  },
+  {
+    "name": "dcrpulse",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "dcrpulse",
+    "stars": null,
+    "probable_images": [
+      "docker.io/dcrpulse/dcrpulse:latest",
+      "docker.io/library/dcrpulse:latest",
+      "ghcr.io/dcrpulse/dcrpulse:latest"
+    ]
+  },
+  {
+    "name": "deepsea",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "deepsea",
+    "stars": null,
+    "probable_images": [
+      "docker.io/deepsea/deepsea:latest",
+      "docker.io/library/deepsea:latest",
+      "ghcr.io/deepsea/deepsea:latest"
+    ]
+  },
+  {
+    "name": "domain-locker",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "domain-locker",
+    "stars": null,
+    "probable_images": [
+      "docker.io/domain-locker/domain-locker:latest",
+      "docker.io/library/domain-locker:latest",
+      "ghcr.io/domain-locker/domain-locker:latest"
+    ]
+  },
+  {
+    "name": "donetick",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "donetick",
+    "stars": null,
+    "probable_images": [
+      "docker.io/donetick/donetick:latest",
+      "docker.io/library/donetick:latest",
+      "ghcr.io/donetick/donetick:latest"
+    ]
+  },
+  {
+    "name": "downtify",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "downtify",
+    "stars": null,
+    "probable_images": [
+      "docker.io/downtify/downtify:latest",
+      "docker.io/library/downtify:latest",
+      "ghcr.io/downtify/downtify:latest"
+    ]
+  },
+  {
+    "name": "dumbpad",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "dumbpad",
+    "stars": null,
+    "probable_images": [
+      "docker.io/dumbpad/dumbpad:latest",
+      "docker.io/library/dumbpad:latest",
+      "ghcr.io/dumbpad/dumbpad:latest"
+    ]
+  },
+  {
+    "name": "electrs",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "electrs",
+    "stars": null,
+    "probable_images": [
+      "docker.io/electrs/electrs:latest",
+      "docker.io/library/electrs:latest",
+      "ghcr.io/electrs/electrs:latest"
+    ]
+  },
+  {
+    "name": "electrumx",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "electrumx",
+    "stars": null,
+    "probable_images": [
+      "docker.io/electrumx/electrumx:latest",
+      "docker.io/library/electrumx:latest",
+      "ghcr.io/electrumx/electrumx:latest"
+    ]
+  },
+  {
+    "name": "element",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "element",
+    "stars": null,
+    "probable_images": [
+      "docker.io/element/element:latest",
+      "docker.io/library/element:latest",
+      "ghcr.io/element/element:latest"
+    ]
+  },
+  {
+    "name": "elements",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "elements",
+    "stars": null,
+    "probable_images": [
+      "docker.io/elements/elements:latest",
+      "docker.io/library/elements:latest",
+      "ghcr.io/elements/elements:latest"
+    ]
+  },
+  {
+    "name": "enclosed",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "enclosed",
+    "stars": null,
+    "probable_images": [
+      "docker.io/enclosed/enclosed:latest",
+      "docker.io/library/enclosed:latest",
+      "ghcr.io/enclosed/enclosed:latest"
+    ]
+  },
+  {
+    "name": "esphome",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "esphome",
+    "stars": null,
+    "probable_images": [
+      "docker.io/esphome/esphome:latest",
+      "docker.io/library/esphome:latest",
+      "ghcr.io/esphome/esphome:latest"
+    ]
+  },
+  {
+    "name": "etherpad",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "etherpad",
+    "stars": null,
+    "probable_images": [
+      "docker.io/etherpad/etherpad:latest",
+      "docker.io/library/etherpad:latest",
+      "ghcr.io/etherpad/etherpad:latest"
+    ]
+  },
+  {
+    "name": "fedimint-gateway",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "fedimint-gateway",
+    "stars": null,
+    "probable_images": [
+      "docker.io/fedimint-gateway/fedimint-gateway:latest",
+      "docker.io/library/fedimint-gateway:latest",
+      "ghcr.io/fedimint-gateway/fedimint-gateway:latest"
+    ]
+  },
+  {
+    "name": "fedimintd",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "fedimintd",
+    "stars": null,
+    "probable_images": [
+      "docker.io/fedimintd/fedimintd:latest",
+      "docker.io/library/fedimintd:latest",
+      "ghcr.io/fedimintd/fedimintd:latest"
+    ]
+  },
+  {
+    "name": "file-browser",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "file-browser",
+    "stars": null,
+    "probable_images": [
+      "docker.io/file-browser/file-browser:latest",
+      "docker.io/library/file-browser:latest",
+      "ghcr.io/file-browser/file-browser:latest"
+    ]
+  },
+  {
+    "name": "file-drop",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "file-drop",
+    "stars": null,
+    "probable_images": [
+      "docker.io/file-drop/file-drop:latest",
+      "docker.io/library/file-drop:latest",
+      "ghcr.io/file-drop/file-drop:latest"
+    ]
+  },
+  {
+    "name": "firefly-iii",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "firefly-iii",
+    "stars": null,
+    "probable_images": [
+      "docker.io/firefly-iii/firefly-iii:latest",
+      "docker.io/library/firefly-iii:latest",
+      "ghcr.io/firefly-iii/firefly-iii:latest"
+    ]
+  },
+  {
+    "name": "firefly-iii-importer",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "firefly-iii-importer",
+    "stars": null,
+    "probable_images": [
+      "docker.io/firefly-iii-importer/firefly-iii-importer:latest",
+      "docker.io/library/firefly-iii-importer:latest",
+      "ghcr.io/firefly-iii-importer/firefly-iii-importer:latest"
+    ]
+  },
+  {
+    "name": "fizzy",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "fizzy",
+    "stars": null,
+    "probable_images": [
+      "docker.io/fizzy/fizzy:latest",
+      "docker.io/library/fizzy:latest",
+      "ghcr.io/fizzy/fizzy:latest"
+    ]
+  },
+  {
+    "name": "formicaio",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "formicaio",
+    "stars": null,
+    "probable_images": [
+      "docker.io/formicaio/formicaio:latest",
+      "docker.io/library/formicaio:latest",
+      "ghcr.io/formicaio/formicaio:latest"
+    ]
+  },
+  {
+    "name": "fossflow",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "fossflow",
+    "stars": null,
+    "probable_images": [
+      "docker.io/fossflow/fossflow:latest",
+      "docker.io/library/fossflow:latest",
+      "ghcr.io/fossflow/fossflow:latest"
+    ]
+  },
+  {
+    "name": "frigate",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "frigate",
+    "stars": null,
+    "probable_images": [
+      "docker.io/frigate/frigate:latest",
+      "docker.io/library/frigate:latest",
+      "ghcr.io/frigate/frigate:latest"
+    ]
+  },
+  {
+    "name": "fulcrum",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "fulcrum",
+    "stars": null,
+    "probable_images": [
+      "docker.io/fulcrum/fulcrum:latest",
+      "docker.io/library/fulcrum:latest",
+      "ghcr.io/fulcrum/fulcrum:latest"
+    ]
+  },
+  {
+    "name": "ghost",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "ghost",
+    "stars": null,
+    "probable_images": [
+      "docker.io/ghost/ghost:latest",
+      "docker.io/library/ghost:latest",
+      "ghcr.io/ghost/ghost:latest"
+    ]
+  },
+  {
+    "name": "gitea-mirror",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "gitea-mirror",
+    "stars": null,
+    "probable_images": [
+      "docker.io/gitea-mirror/gitea-mirror:latest",
+      "docker.io/library/gitea-mirror:latest",
+      "ghcr.io/gitea-mirror/gitea-mirror:latest"
+    ]
+  },
+  {
+    "name": "gitingest",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "gitingest",
+    "stars": null,
+    "probable_images": [
+      "docker.io/gitingest/gitingest:latest",
+      "docker.io/library/gitingest:latest",
+      "ghcr.io/gitingest/gitingest:latest"
+    ]
+  },
+  {
+    "name": "gitlab",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "gitlab",
+    "stars": null,
+    "probable_images": [
+      "docker.io/gitlab/gitlab:latest",
+      "docker.io/library/gitlab:latest",
+      "ghcr.io/gitlab/gitlab:latest"
+    ]
+  },
+  {
+    "name": "habitica",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "habitica",
+    "stars": null,
+    "probable_images": [
+      "docker.io/habitica/habitica:latest",
+      "docker.io/library/habitica:latest",
+      "ghcr.io/habitica/habitica:latest"
+    ]
+  },
+  {
+    "name": "helipad",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "helipad",
+    "stars": null,
+    "probable_images": [
+      "docker.io/helipad/helipad:latest",
+      "docker.io/library/helipad:latest",
+      "ghcr.io/helipad/helipad:latest"
+    ]
+  },
+  {
+    "name": "hermes-agent",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "hermes-agent",
+    "stars": null,
+    "probable_images": [
+      "docker.io/hermes-agent/hermes-agent:latest",
+      "docker.io/library/hermes-agent:latest",
+      "ghcr.io/hermes-agent/hermes-agent:latest"
+    ]
+  },
+  {
+    "name": "holesail-switchboard",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "holesail-switchboard",
+    "stars": null,
+    "probable_images": [
+      "docker.io/holesail-switchboard/holesail-switchboard:latest",
+      "docker.io/library/holesail-switchboard:latest",
+      "ghcr.io/holesail-switchboard/holesail-switchboard:latest"
+    ]
+  },
+  {
+    "name": "homarr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "homarr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/homarr/homarr:latest",
+      "docker.io/library/homarr:latest",
+      "ghcr.io/homarr/homarr:latest"
+    ]
+  },
+  {
+    "name": "home-assistant-fusion-ui",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "home-assistant-fusion-ui",
+    "stars": null,
+    "probable_images": [
+      "docker.io/home-assistant-fusion-ui/home-assistant-fusion-ui:latest",
+      "docker.io/library/home-assistant-fusion-ui:latest",
+      "ghcr.io/home-assistant-fusion-ui/home-assistant-fusion-ui:latest"
+    ]
+  },
+  {
+    "name": "homebridge",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "homebridge",
+    "stars": null,
+    "probable_images": [
+      "docker.io/homebridge/homebridge:latest",
+      "docker.io/library/homebridge:latest",
+      "ghcr.io/homebridge/homebridge:latest"
+    ]
+  },
+  {
+    "name": "homehub",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "homehub",
+    "stars": null,
+    "probable_images": [
+      "docker.io/homehub/homehub:latest",
+      "docker.io/library/homehub:latest",
+      "ghcr.io/homehub/homehub:latest"
+    ]
+  },
+  {
+    "name": "hortusfox",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "hortusfox",
+    "stars": null,
+    "probable_images": [
+      "docker.io/hortusfox/hortusfox:latest",
+      "docker.io/library/hortusfox:latest",
+      "ghcr.io/hortusfox/hortusfox:latest"
+    ]
+  },
+  {
+    "name": "influxdb2",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "influxdb2",
+    "stars": null,
+    "probable_images": [
+      "docker.io/influxdb2/influxdb2:latest",
+      "docker.io/library/influxdb2:latest",
+      "ghcr.io/influxdb2/influxdb2:latest"
+    ]
+  },
+  {
+    "name": "invio",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "invio",
+    "stars": null,
+    "probable_images": [
+      "docker.io/invio/invio:latest",
+      "docker.io/library/invio:latest",
+      "ghcr.io/invio/invio:latest"
+    ]
+  },
+  {
+    "name": "invoice-ninja",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "invoice-ninja",
+    "stars": null,
+    "probable_images": [
+      "docker.io/invoice-ninja/invoice-ninja:latest",
+      "docker.io/library/invoice-ninja:latest",
+      "ghcr.io/invoice-ninja/invoice-ninja:latest"
+    ]
+  },
+  {
+    "name": "ipfs-podcasting",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "ipfs-podcasting",
+    "stars": null,
+    "probable_images": [
+      "docker.io/ipfs-podcasting/ipfs-podcasting:latest",
+      "docker.io/library/ipfs-podcasting:latest",
+      "ghcr.io/ipfs-podcasting/ipfs-podcasting:latest"
+    ]
+  },
+  {
+    "name": "itchysats",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "itchysats",
+    "stars": null,
+    "probable_images": [
+      "docker.io/itchysats/itchysats:latest",
+      "docker.io/library/itchysats:latest",
+      "ghcr.io/itchysats/itchysats:latest"
+    ]
+  },
+  {
+    "name": "ittools",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "ittools",
+    "stars": null,
+    "probable_images": [
+      "docker.io/ittools/ittools:latest",
+      "docker.io/library/ittools:latest",
+      "ghcr.io/ittools/ittools:latest"
+    ]
+  },
+  {
+    "name": "jam",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "jam",
+    "stars": null,
+    "probable_images": [
+      "docker.io/jam/jam:latest",
+      "docker.io/library/jam:latest",
+      "ghcr.io/jam/jam:latest"
+    ]
+  },
+  {
+    "name": "jupyterlab",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "jupyterlab",
+    "stars": null,
+    "probable_images": [
+      "docker.io/jupyterlab/jupyterlab:latest",
+      "docker.io/library/jupyterlab:latest",
+      "ghcr.io/jupyterlab/jupyterlab:latest"
+    ]
+  },
+  {
+    "name": "just-download",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "just-download",
+    "stars": null,
+    "probable_images": [
+      "docker.io/just-download/just-download:latest",
+      "docker.io/library/just-download:latest",
+      "ghcr.io/just-download/just-download:latest"
+    ]
+  },
+  {
+    "name": "kan",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "kan",
+    "stars": null,
+    "probable_images": [
+      "docker.io/kan/kan:latest",
+      "docker.io/library/kan:latest",
+      "ghcr.io/kan/kan:latest"
+    ]
+  },
+  {
+    "name": "kimai",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "kimai",
+    "stars": null,
+    "probable_images": [
+      "docker.io/kimai/kimai:latest",
+      "docker.io/library/kimai:latest",
+      "ghcr.io/kimai/kimai:latest"
+    ]
+  },
+  {
+    "name": "kitchenowl",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "kitchenowl",
+    "stars": null,
+    "probable_images": [
+      "docker.io/kitchenowl/kitchenowl:latest",
+      "docker.io/library/kitchenowl:latest",
+      "ghcr.io/kitchenowl/kitchenowl:latest"
+    ]
+  },
+  {
+    "name": "kokoro",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "kokoro",
+    "stars": null,
+    "probable_images": [
+      "docker.io/kokoro/kokoro:latest",
+      "docker.io/library/kokoro:latest",
+      "ghcr.io/kokoro/kokoro:latest"
+    ]
+  },
+  {
+    "name": "kollider",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "kollider",
+    "stars": null,
+    "probable_images": [
+      "docker.io/kollider/kollider:latest",
+      "docker.io/library/kollider:latest",
+      "ghcr.io/kollider/kollider:latest"
+    ]
+  },
+  {
+    "name": "komodo",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "komodo",
+    "stars": null,
+    "probable_images": [
+      "docker.io/komodo/komodo:latest",
+      "docker.io/library/komodo:latest",
+      "ghcr.io/komodo/komodo:latest"
+    ]
+  },
+  {
+    "name": "krystal-bull",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "krystal-bull",
+    "stars": null,
+    "probable_images": [
+      "docker.io/krystal-bull/krystal-bull:latest",
+      "docker.io/library/krystal-bull:latest",
+      "ghcr.io/krystal-bull/krystal-bull:latest"
+    ]
+  },
+  {
+    "name": "libre-relay",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "libre-relay",
+    "stars": null,
+    "probable_images": [
+      "docker.io/libre-relay/libre-relay:latest",
+      "docker.io/library/libre-relay:latest",
+      "ghcr.io/libre-relay/libre-relay:latest"
+    ]
+  },
+  {
+    "name": "librechat",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "librechat",
+    "stars": null,
+    "probable_images": [
+      "docker.io/librechat/librechat:latest",
+      "docker.io/library/librechat:latest",
+      "ghcr.io/librechat/librechat:latest"
+    ]
+  },
+  {
+    "name": "libreoffice",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "libreoffice",
+    "stars": null,
+    "probable_images": [
+      "docker.io/libreoffice/libreoffice:latest",
+      "docker.io/library/libreoffice:latest",
+      "ghcr.io/libreoffice/libreoffice:latest"
+    ]
+  },
+  {
+    "name": "librephotos",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "librephotos",
+    "stars": null,
+    "probable_images": [
+      "docker.io/librephotos/librephotos:latest",
+      "docker.io/library/librephotos:latest",
+      "ghcr.io/librephotos/librephotos:latest"
+    ]
+  },
+  {
+    "name": "libretranslate",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "libretranslate",
+    "stars": null,
+    "probable_images": [
+      "docker.io/libretranslate/libretranslate:latest",
+      "docker.io/library/libretranslate:latest",
+      "ghcr.io/libretranslate/libretranslate:latest"
+    ]
+  },
+  {
+    "name": "lightning",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lightning",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lightning/lightning:latest",
+      "docker.io/library/lightning:latest",
+      "ghcr.io/lightning/lightning:latest"
+    ]
+  },
+  {
+    "name": "lightning-shell",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lightning-shell",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lightning-shell/lightning-shell:latest",
+      "docker.io/library/lightning-shell:latest",
+      "ghcr.io/lightning-shell/lightning-shell:latest"
+    ]
+  },
+  {
+    "name": "lightning-terminal",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lightning-terminal",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lightning-terminal/lightning-terminal:latest",
+      "docker.io/library/lightning-terminal:latest",
+      "ghcr.io/lightning-terminal/lightning-terminal:latest"
+    ]
+  },
+  {
+    "name": "linkwarden",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "linkwarden",
+    "stars": null,
+    "probable_images": [
+      "docker.io/linkwarden/linkwarden:latest",
+      "docker.io/library/linkwarden:latest",
+      "ghcr.io/linkwarden/linkwarden:latest"
+    ]
+  },
+  {
+    "name": "llama-gpt",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "llama-gpt",
+    "stars": null,
+    "probable_images": [
+      "docker.io/llama-gpt/llama-gpt:latest",
+      "docker.io/library/llama-gpt:latest",
+      "ghcr.io/llama-gpt/llama-gpt:latest"
+    ]
+  },
+  {
+    "name": "ln-visualizer",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "ln-visualizer",
+    "stars": null,
+    "probable_images": [
+      "docker.io/ln-visualizer/ln-visualizer:latest",
+      "docker.io/library/ln-visualizer:latest",
+      "ghcr.io/ln-visualizer/ln-visualizer:latest"
+    ]
+  },
+  {
+    "name": "lnbits",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lnbits",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lnbits/lnbits:latest",
+      "docker.io/library/lnbits:latest",
+      "ghcr.io/lnbits/lnbits:latest"
+    ]
+  },
+  {
+    "name": "lnbits-holesail-proxy",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lnbits-holesail-proxy",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lnbits-holesail-proxy/lnbits-holesail-proxy:latest",
+      "docker.io/library/lnbits-holesail-proxy:latest",
+      "ghcr.io/lnbits-holesail-proxy/lnbits-holesail-proxy:latest"
+    ]
+  },
+  {
+    "name": "lndboss",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lndboss",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lndboss/lndboss:latest",
+      "docker.io/library/lndboss:latest",
+      "ghcr.io/lndboss/lndboss:latest"
+    ]
+  },
+  {
+    "name": "lndg",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lndg",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lndg/lndg:latest",
+      "docker.io/library/lndg:latest",
+      "ghcr.io/lndg/lndg:latest"
+    ]
+  },
+  {
+    "name": "lnmarkets",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lnmarkets",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lnmarkets/lnmarkets:latest",
+      "docker.io/library/lnmarkets:latest",
+      "ghcr.io/lnmarkets/lnmarkets:latest"
+    ]
+  },
+  {
+    "name": "lnplus",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lnplus",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lnplus/lnplus:latest",
+      "docker.io/library/lnplus:latest",
+      "ghcr.io/lnplus/lnplus:latest"
+    ]
+  },
+  {
+    "name": "lobe-chat",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lobe-chat",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lobe-chat/lobe-chat:latest",
+      "docker.io/library/lobe-chat:latest",
+      "ghcr.io/lobe-chat/lobe-chat:latest"
+    ]
+  },
+  {
+    "name": "lubelogger",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "lubelogger",
+    "stars": null,
+    "probable_images": [
+      "docker.io/lubelogger/lubelogger:latest",
+      "docker.io/library/lubelogger:latest",
+      "ghcr.io/lubelogger/lubelogger:latest"
+    ]
+  },
+  {
+    "name": "mailarchiver",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mailarchiver",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mailarchiver/mailarchiver:latest",
+      "docker.io/library/mailarchiver:latest",
+      "ghcr.io/mailarchiver/mailarchiver:latest"
+    ]
+  },
+  {
+    "name": "mainsail",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mainsail",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mainsail/mainsail:latest",
+      "docker.io/library/mainsail:latest",
+      "ghcr.io/mainsail/mainsail:latest"
+    ]
+  },
+  {
+    "name": "matter-server",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "matter-server",
+    "stars": null,
+    "probable_images": [
+      "docker.io/matter-server/matter-server:latest",
+      "docker.io/library/matter-server:latest",
+      "ghcr.io/matter-server/matter-server:latest"
+    ]
+  },
+  {
+    "name": "mattermost",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mattermost",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mattermost/mattermost:latest",
+      "docker.io/library/mattermost:latest",
+      "ghcr.io/mattermost/mattermost:latest"
+    ]
+  },
+  {
+    "name": "maybe",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "maybe",
+    "stars": null,
+    "probable_images": [
+      "docker.io/maybe/maybe:latest",
+      "docker.io/library/maybe:latest",
+      "ghcr.io/maybe/maybe:latest"
+    ]
+  },
+  {
+    "name": "mazanoke",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mazanoke",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mazanoke/mazanoke:latest",
+      "docker.io/library/mazanoke:latest",
+      "ghcr.io/mazanoke/mazanoke:latest"
+    ]
+  },
+  {
+    "name": "memos",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "memos",
+    "stars": null,
+    "probable_images": [
+      "docker.io/memos/memos:latest",
+      "docker.io/library/memos:latest",
+      "ghcr.io/memos/memos:latest"
+    ]
+  },
+  {
+    "name": "mempool",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mempool",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mempool/mempool:latest",
+      "docker.io/library/mempool:latest",
+      "ghcr.io/mempool/mempool:latest"
+    ]
+  },
+  {
+    "name": "miner-sentinel",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "miner-sentinel",
+    "stars": null,
+    "probable_images": [
+      "docker.io/miner-sentinel/miner-sentinel:latest",
+      "docker.io/library/miner-sentinel:latest",
+      "ghcr.io/miner-sentinel/miner-sentinel:latest"
+    ]
+  },
+  {
+    "name": "monero",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "monero",
+    "stars": null,
+    "probable_images": [
+      "docker.io/monero/monero:latest",
+      "docker.io/library/monero:latest",
+      "ghcr.io/monero/monero:latest"
+    ]
+  },
+  {
+    "name": "monetr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "monetr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/monetr/monetr:latest",
+      "docker.io/library/monetr:latest",
+      "ghcr.io/monetr/monetr:latest"
+    ]
+  },
+  {
+    "name": "morphos",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "morphos",
+    "stars": null,
+    "probable_images": [
+      "docker.io/morphos/morphos:latest",
+      "docker.io/library/morphos:latest",
+      "ghcr.io/morphos/morphos:latest"
+    ]
+  },
+  {
+    "name": "mosquitto",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mosquitto",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mosquitto/mosquitto:latest",
+      "docker.io/library/mosquitto:latest",
+      "ghcr.io/mosquitto/mosquitto:latest"
+    ]
+  },
+  {
+    "name": "mqttx-web",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "mqttx-web",
+    "stars": null,
+    "probable_images": [
+      "docker.io/mqttx-web/mqttx-web:latest",
+      "docker.io/library/mqttx-web:latest",
+      "ghcr.io/mqttx-web/mqttx-web:latest"
+    ]
+  },
+  {
+    "name": "music-assistant",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "music-assistant",
+    "stars": null,
+    "probable_images": [
+      "docker.io/music-assistant/music-assistant:latest",
+      "docker.io/library/music-assistant:latest",
+      "ghcr.io/music-assistant/music-assistant:latest"
+    ]
+  },
+  {
+    "name": "myspeed",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "myspeed",
+    "stars": null,
+    "probable_images": [
+      "docker.io/myspeed/myspeed:latest",
+      "docker.io/library/myspeed:latest",
+      "ghcr.io/myspeed/myspeed:latest"
+    ]
+  },
+  {
+    "name": "netbird",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "netbird",
+    "stars": null,
+    "probable_images": [
+      "docker.io/netbird/netbird:latest",
+      "docker.io/library/netbird:latest",
+      "ghcr.io/netbird/netbird:latest"
+    ]
+  },
+  {
+    "name": "networkingtoolbox",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "networkingtoolbox",
+    "stars": null,
+    "probable_images": [
+      "docker.io/networkingtoolbox/networkingtoolbox:latest",
+      "docker.io/library/networkingtoolbox:latest",
+      "ghcr.io/networkingtoolbox/networkingtoolbox:latest"
+    ]
+  },
+  {
+    "name": "nextcloud",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "nextcloud",
+    "stars": null,
+    "probable_images": [
+      "docker.io/nextcloud/nextcloud:latest",
+      "docker.io/library/nextcloud:latest",
+      "ghcr.io/nextcloud/nextcloud:latest"
+    ]
+  },
+  {
+    "name": "node-red-standalone",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "node-red-standalone",
+    "stars": null,
+    "probable_images": [
+      "docker.io/node-red-standalone/node-red-standalone:latest",
+      "docker.io/library/node-red-standalone:latest",
+      "ghcr.io/node-red-standalone/node-red-standalone:latest"
+    ]
+  },
+  {
+    "name": "nolooking",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "nolooking",
+    "stars": null,
+    "probable_images": [
+      "docker.io/nolooking/nolooking:latest",
+      "docker.io/library/nolooking:latest",
+      "ghcr.io/nolooking/nolooking:latest"
+    ]
+  },
+  {
+    "name": "nostr-relay",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "nostr-relay",
+    "stars": null,
+    "probable_images": [
+      "docker.io/nostr-relay/nostr-relay:latest",
+      "docker.io/library/nostr-relay:latest",
+      "ghcr.io/nostr-relay/nostr-relay:latest"
+    ]
+  },
+  {
+    "name": "nostrudel",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "nostrudel",
+    "stars": null,
+    "probable_images": [
+      "docker.io/nostrudel/nostrudel:latest",
+      "docker.io/library/nostrudel:latest",
+      "ghcr.io/nostrudel/nostrudel:latest"
+    ]
+  },
+  {
+    "name": "nutstash-wallet",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "nutstash-wallet",
+    "stars": null,
+    "probable_images": [
+      "docker.io/nutstash-wallet/nutstash-wallet:latest",
+      "docker.io/library/nutstash-wallet:latest",
+      "ghcr.io/nutstash-wallet/nutstash-wallet:latest"
+    ]
+  },
+  {
+    "name": "oak-node",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "oak-node",
+    "stars": null,
+    "probable_images": [
+      "docker.io/oak-node/oak-node:latest",
+      "docker.io/library/oak-node:latest",
+      "ghcr.io/oak-node/oak-node:latest"
+    ]
+  },
+  {
+    "name": "obsidian",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "obsidian",
+    "stars": null,
+    "probable_images": [
+      "docker.io/obsidian/obsidian:latest",
+      "docker.io/library/obsidian:latest",
+      "ghcr.io/obsidian/obsidian:latest"
+    ]
+  },
+  {
+    "name": "onlyoffice-nextcloud",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "onlyoffice-nextcloud",
+    "stars": null,
+    "probable_images": [
+      "docker.io/onlyoffice-nextcloud/onlyoffice-nextcloud:latest",
+      "docker.io/library/onlyoffice-nextcloud:latest",
+      "ghcr.io/onlyoffice-nextcloud/onlyoffice-nextcloud:latest"
+    ]
+  },
+  {
+    "name": "open-webui",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "open-webui",
+    "stars": null,
+    "probable_images": [
+      "docker.io/open-webui/open-webui:latest",
+      "docker.io/library/open-webui:latest",
+      "ghcr.io/open-webui/open-webui:latest"
+    ]
+  },
+  {
+    "name": "opencode",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "opencode",
+    "stars": null,
+    "probable_images": [
+      "docker.io/opencode/opencode:latest",
+      "docker.io/library/opencode:latest",
+      "ghcr.io/opencode/opencode:latest"
+    ]
+  },
+  {
+    "name": "openhands",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "openhands",
+    "stars": null,
+    "probable_images": [
+      "docker.io/openhands/openhands:latest",
+      "docker.io/library/openhands:latest",
+      "ghcr.io/openhands/openhands:latest"
+    ]
+  },
+  {
+    "name": "openresty-manager",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "openresty-manager",
+    "stars": null,
+    "probable_images": [
+      "docker.io/openresty-manager/openresty-manager:latest",
+      "docker.io/library/openresty-manager:latest",
+      "ghcr.io/openresty-manager/openresty-manager:latest"
+    ]
+  },
+  {
+    "name": "ordinals",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "ordinals",
+    "stars": null,
+    "probable_images": [
+      "docker.io/ordinals/ordinals:latest",
+      "docker.io/library/ordinals:latest",
+      "ghcr.io/ordinals/ordinals:latest"
+    ]
+  },
+  {
+    "name": "overseerr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "overseerr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/overseerr/overseerr:latest",
+      "docker.io/library/overseerr:latest",
+      "ghcr.io/overseerr/overseerr:latest"
+    ]
+  },
+  {
+    "name": "palmr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "palmr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/palmr/palmr:latest",
+      "docker.io/library/palmr:latest",
+      "ghcr.io/palmr/palmr:latest"
+    ]
+  },
+  {
+    "name": "paperless",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "paperless",
+    "stars": null,
+    "probable_images": [
+      "docker.io/paperless/paperless:latest",
+      "docker.io/library/paperless:latest",
+      "ghcr.io/paperless/paperless:latest"
+    ]
+  },
+  {
+    "name": "pastefy",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "pastefy",
+    "stars": null,
+    "probable_images": [
+      "docker.io/pastefy/pastefy:latest",
+      "docker.io/library/pastefy:latest",
+      "ghcr.io/pastefy/pastefy:latest"
+    ]
+  },
+  {
+    "name": "peerswap",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "peerswap",
+    "stars": null,
+    "probable_images": [
+      "docker.io/peerswap/peerswap:latest",
+      "docker.io/library/peerswap:latest",
+      "ghcr.io/peerswap/peerswap:latest"
+    ]
+  },
+  {
+    "name": "perplexica",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "perplexica",
+    "stars": null,
+    "probable_images": [
+      "docker.io/perplexica/perplexica:latest",
+      "docker.io/library/perplexica:latest",
+      "ghcr.io/perplexica/perplexica:latest"
+    ]
+  },
+  {
+    "name": "pingvin-share",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "pingvin-share",
+    "stars": null,
+    "probable_images": [
+      "docker.io/pingvin-share/pingvin-share:latest",
+      "docker.io/library/pingvin-share:latest",
+      "ghcr.io/pingvin-share/pingvin-share:latest"
+    ]
+  },
+  {
+    "name": "plausible",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "plausible",
+    "stars": null,
+    "probable_images": [
+      "docker.io/plausible/plausible:latest",
+      "docker.io/library/plausible:latest",
+      "ghcr.io/plausible/plausible:latest"
+    ]
+  },
+  {
+    "name": "pocketbase",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "pocketbase",
+    "stars": null,
+    "probable_images": [
+      "docker.io/pocketbase/pocketbase:latest",
+      "docker.io/library/pocketbase:latest",
+      "ghcr.io/pocketbase/pocketbase:latest"
+    ]
+  },
+  {
+    "name": "portainer",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "portainer",
+    "stars": null,
+    "probable_images": [
+      "docker.io/portainer/portainer:latest",
+      "docker.io/library/portainer:latest",
+      "ghcr.io/portainer/portainer:latest"
+    ]
+  },
+  {
+    "name": "poznote",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "poznote",
+    "stars": null,
+    "probable_images": [
+      "docker.io/poznote/poznote:latest",
+      "docker.io/library/poznote:latest",
+      "ghcr.io/poznote/poznote:latest"
+    ]
+  },
+  {
+    "name": "public-pool",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "public-pool",
+    "stars": null,
+    "probable_images": [
+      "docker.io/public-pool/public-pool:latest",
+      "docker.io/library/public-pool:latest",
+      "ghcr.io/public-pool/public-pool:latest"
+    ]
+  },
+  {
+    "name": "public-pool-web",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "public-pool-web",
+    "stars": null,
+    "probable_images": [
+      "docker.io/public-pool-web/public-pool-web:latest",
+      "docker.io/library/public-pool-web:latest",
+      "ghcr.io/public-pool-web/public-pool-web:latest"
+    ]
+  },
+  {
+    "name": "pyload-ng",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "pyload-ng",
+    "stars": null,
+    "probable_images": [
+      "docker.io/pyload-ng/pyload-ng:latest",
+      "docker.io/library/pyload-ng:latest",
+      "ghcr.io/pyload-ng/pyload-ng:latest"
+    ]
+  },
+  {
+    "name": "readarr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "readarr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/readarr/readarr:latest",
+      "docker.io/library/readarr:latest",
+      "ghcr.io/readarr/readarr:latest"
+    ]
+  },
+  {
+    "name": "readur",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "readur",
+    "stars": null,
+    "probable_images": [
+      "docker.io/readur/readur:latest",
+      "docker.io/library/readur:latest",
+      "ghcr.io/readur/readur:latest"
+    ]
+  },
+  {
+    "name": "remmina",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "remmina",
+    "stars": null,
+    "probable_images": [
+      "docker.io/remmina/remmina:latest",
+      "docker.io/library/remmina:latest",
+      "ghcr.io/remmina/remmina:latest"
+    ]
+  },
+  {
+    "name": "restreamer",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "restreamer",
+    "stars": null,
+    "probable_images": [
+      "docker.io/restreamer/restreamer:latest",
+      "docker.io/library/restreamer:latest",
+      "ghcr.io/restreamer/restreamer:latest"
+    ]
+  },
+  {
+    "name": "ride-the-lightning",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "ride-the-lightning",
+    "stars": null,
+    "probable_images": [
+      "docker.io/ride-the-lightning/ride-the-lightning:latest",
+      "docker.io/library/ride-the-lightning:latest",
+      "ghcr.io/ride-the-lightning/ride-the-lightning:latest"
+    ]
+  },
+  {
+    "name": "robosats",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "robosats",
+    "stars": null,
+    "probable_images": [
+      "docker.io/robosats/robosats:latest",
+      "docker.io/library/robosats:latest",
+      "ghcr.io/robosats/robosats:latest"
+    ]
+  },
+  {
+    "name": "rotki",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "rotki",
+    "stars": null,
+    "probable_images": [
+      "docker.io/rotki/rotki:latest",
+      "docker.io/library/rotki:latest",
+      "ghcr.io/rotki/rotki:latest"
+    ]
+  },
+  {
+    "name": "route96",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "route96",
+    "stars": null,
+    "probable_images": [
+      "docker.io/route96/route96:latest",
+      "docker.io/library/route96:latest",
+      "ghcr.io/route96/route96:latest"
+    ]
+  },
+  {
+    "name": "rustdesk-server",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "rustdesk-server",
+    "stars": null,
+    "probable_images": [
+      "docker.io/rustdesk-server/rustdesk-server:latest",
+      "docker.io/library/rustdesk-server:latest",
+      "ghcr.io/rustdesk-server/rustdesk-server:latest"
+    ]
+  },
+  {
+    "name": "rusty-kaspad",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "rusty-kaspad",
+    "stars": null,
+    "probable_images": [
+      "docker.io/rusty-kaspad/rusty-kaspad:latest",
+      "docker.io/library/rusty-kaspad:latest",
+      "ghcr.io/rusty-kaspad/rusty-kaspad:latest"
+    ]
+  },
+  {
+    "name": "saifa",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "saifa",
+    "stars": null,
+    "probable_images": [
+      "docker.io/saifa/saifa:latest",
+      "docker.io/library/saifa:latest",
+      "ghcr.io/saifa/saifa:latest"
+    ]
+  },
+  {
+    "name": "samourai-server",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "samourai-server",
+    "stars": null,
+    "probable_images": [
+      "docker.io/samourai-server/samourai-server:latest",
+      "docker.io/library/samourai-server:latest",
+      "ghcr.io/samourai-server/samourai-server:latest"
+    ]
+  },
+  {
+    "name": "satsale",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "satsale",
+    "stars": null,
+    "probable_images": [
+      "docker.io/satsale/satsale:latest",
+      "docker.io/library/satsale:latest",
+      "ghcr.io/satsale/satsale:latest"
+    ]
+  },
+  {
+    "name": "satwatch",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "satwatch",
+    "stars": null,
+    "probable_images": [
+      "docker.io/satwatch/satwatch:latest",
+      "docker.io/library/satwatch:latest",
+      "ghcr.io/satwatch/satwatch:latest"
+    ]
+  },
+  {
+    "name": "scanservjs",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "scanservjs",
+    "stars": null,
+    "probable_images": [
+      "docker.io/scanservjs/scanservjs:latest",
+      "docker.io/library/scanservjs:latest",
+      "ghcr.io/scanservjs/scanservjs:latest"
+    ]
+  },
+  {
+    "name": "seafile",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "seafile",
+    "stars": null,
+    "probable_images": [
+      "docker.io/seafile/seafile:latest",
+      "docker.io/library/seafile:latest",
+      "ghcr.io/seafile/seafile:latest"
+    ]
+  },
+  {
+    "name": "shopstr",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "shopstr",
+    "stars": null,
+    "probable_images": [
+      "docker.io/shopstr/shopstr:latest",
+      "docker.io/library/shopstr:latest",
+      "ghcr.io/shopstr/shopstr:latest"
+    ]
+  },
+  {
+    "name": "simple-torrent",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "simple-torrent",
+    "stars": null,
+    "probable_images": [
+      "docker.io/simple-torrent/simple-torrent:latest",
+      "docker.io/library/simple-torrent:latest",
+      "ghcr.io/simple-torrent/simple-torrent:latest"
+    ]
+  },
+  {
+    "name": "snapdrop",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "snapdrop",
+    "stars": null,
+    "probable_images": [
+      "docker.io/snapdrop/snapdrop:latest",
+      "docker.io/library/snapdrop:latest",
+      "ghcr.io/snapdrop/snapdrop:latest"
+    ]
+  },
+  {
+    "name": "snort",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "snort",
+    "stars": null,
+    "probable_images": [
+      "docker.io/snort/snort:latest",
+      "docker.io/library/snort:latest",
+      "ghcr.io/snort/snort:latest"
+    ]
+  },
+  {
+    "name": "snowflake",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "snowflake",
+    "stars": null,
+    "probable_images": [
+      "docker.io/snowflake/snowflake:latest",
+      "docker.io/library/snowflake:latest",
+      "ghcr.io/snowflake/snowflake:latest"
+    ]
+  },
+  {
+    "name": "sparkkiosk",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "sparkkiosk",
+    "stars": null,
+    "probable_images": [
+      "docker.io/sparkkiosk/sparkkiosk:latest",
+      "docker.io/library/sparkkiosk:latest",
+      "ghcr.io/sparkkiosk/sparkkiosk:latest"
+    ]
+  },
+  {
+    "name": "specter-desktop",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "specter-desktop",
+    "stars": null,
+    "probable_images": [
+      "docker.io/specter-desktop/specter-desktop:latest",
+      "docker.io/library/specter-desktop:latest",
+      "ghcr.io/specter-desktop/specter-desktop:latest"
+    ]
+  },
+  {
+    "name": "sphinx-relay",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "sphinx-relay",
+    "stars": null,
+    "probable_images": [
+      "docker.io/sphinx-relay/sphinx-relay:latest",
+      "docker.io/library/sphinx-relay:latest",
+      "ghcr.io/sphinx-relay/sphinx-relay:latest"
+    ]
+  },
+  {
+    "name": "sqlitebrowser",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "sqlitebrowser",
+    "stars": null,
+    "probable_images": [
+      "docker.io/sqlitebrowser/sqlitebrowser:latest",
+      "docker.io/library/sqlitebrowser:latest",
+      "ghcr.io/sqlitebrowser/sqlitebrowser:latest"
+    ]
+  },
+  {
+    "name": "squeaknode",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "squeaknode",
+    "stars": null,
+    "probable_images": [
+      "docker.io/squeaknode/squeaknode:latest",
+      "docker.io/library/squeaknode:latest",
+      "ghcr.io/squeaknode/squeaknode:latest"
+    ]
+  },
+  {
+    "name": "squeakroad",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "squeakroad",
+    "stars": null,
+    "probable_images": [
+      "docker.io/squeakroad/squeakroad:latest",
+      "docker.io/library/squeakroad:latest",
+      "ghcr.io/squeakroad/squeakroad:latest"
+    ]
+  },
+  {
+    "name": "stalwart",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "stalwart",
+    "stars": null,
+    "probable_images": [
+      "docker.io/stalwart/stalwart:latest",
+      "docker.io/library/stalwart:latest",
+      "ghcr.io/stalwart/stalwart:latest"
+    ]
+  },
+  {
+    "name": "strix",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "strix",
+    "stars": null,
+    "probable_images": [
+      "docker.io/strix/strix:latest",
+      "docker.io/library/strix:latest",
+      "ghcr.io/strix/strix:latest"
+    ]
+  },
+  {
+    "name": "suredbits-wallet",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "suredbits-wallet",
+    "stars": null,
+    "probable_images": [
+      "docker.io/suredbits-wallet/suredbits-wallet:latest",
+      "docker.io/library/suredbits-wallet:latest",
+      "ghcr.io/suredbits-wallet/suredbits-wallet:latest"
+    ]
+  },
+  {
+    "name": "swingmusic",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "swingmusic",
+    "stars": null,
+    "probable_images": [
+      "docker.io/swingmusic/swingmusic:latest",
+      "docker.io/library/swingmusic:latest",
+      "ghcr.io/swingmusic/swingmusic:latest"
+    ]
+  },
+  {
+    "name": "synapse",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "synapse",
+    "stars": null,
+    "probable_images": [
+      "docker.io/synapse/synapse:latest",
+      "docker.io/library/synapse:latest",
+      "ghcr.io/synapse/synapse:latest"
+    ]
+  },
+  {
+    "name": "syncthing",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "syncthing",
+    "stars": null,
+    "probable_images": [
+      "docker.io/syncthing/syncthing:latest",
+      "docker.io/library/syncthing:latest",
+      "ghcr.io/syncthing/syncthing:latest"
+    ]
+  },
+  {
+    "name": "tailscale",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "tailscale",
+    "stars": null,
+    "probable_images": [
+      "docker.io/tailscale/tailscale:latest",
+      "docker.io/library/tailscale:latest",
+      "ghcr.io/tailscale/tailscale:latest"
+    ]
+  },
+  {
+    "name": "tallycoin-connect",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "tallycoin-connect",
+    "stars": null,
+    "probable_images": [
+      "docker.io/tallycoin-connect/tallycoin-connect:latest",
+      "docker.io/library/tallycoin-connect:latest",
+      "ghcr.io/tallycoin-connect/tallycoin-connect:latest"
+    ]
+  },
+  {
+    "name": "tdex",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "tdex",
+    "stars": null,
+    "probable_images": [
+      "docker.io/tdex/tdex:latest",
+      "docker.io/library/tdex:latest",
+      "ghcr.io/tdex/tdex:latest"
+    ]
+  },
+  {
+    "name": "teamspeak",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "teamspeak",
+    "stars": null,
+    "probable_images": [
+      "docker.io/teamspeak/teamspeak:latest",
+      "docker.io/library/teamspeak:latest",
+      "ghcr.io/teamspeak/teamspeak:latest"
+    ]
+  },
+  {
+    "name": "thinkdashboard",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "thinkdashboard",
+    "stars": null,
+    "probable_images": [
+      "docker.io/thinkdashboard/thinkdashboard:latest",
+      "docker.io/library/thinkdashboard:latest",
+      "ghcr.io/thinkdashboard/thinkdashboard:latest"
+    ]
+  },
+  {
+    "name": "threema",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "threema",
+    "stars": null,
+    "probable_images": [
+      "docker.io/threema/threema:latest",
+      "docker.io/library/threema:latest",
+      "ghcr.io/threema/threema:latest"
+    ]
+  },
+  {
+    "name": "thunderhub",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "thunderhub",
+    "stars": null,
+    "probable_images": [
+      "docker.io/thunderhub/thunderhub:latest",
+      "docker.io/library/thunderhub:latest",
+      "ghcr.io/thunderhub/thunderhub:latest"
+    ]
+  },
+  {
+    "name": "torbrowser",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "torbrowser",
+    "stars": null,
+    "probable_images": [
+      "docker.io/torbrowser/torbrowser:latest",
+      "docker.io/library/torbrowser:latest",
+      "ghcr.io/torbrowser/torbrowser:latest"
+    ]
+  },
+  {
+    "name": "torq",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "torq",
+    "stars": null,
+    "probable_images": [
+      "docker.io/torq/torq:latest",
+      "docker.io/library/torq:latest",
+      "ghcr.io/torq/torq:latest"
+    ]
+  },
+  {
+    "name": "toshi-moto",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "toshi-moto",
+    "stars": null,
+    "probable_images": [
+      "docker.io/toshi-moto/toshi-moto:latest",
+      "docker.io/library/toshi-moto:latest",
+      "ghcr.io/toshi-moto/toshi-moto:latest"
+    ]
+  },
+  {
+    "name": "trilium-notes",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "trilium-notes",
+    "stars": null,
+    "probable_images": [
+      "docker.io/trilium-notes/trilium-notes:latest",
+      "docker.io/library/trilium-notes:latest",
+      "ghcr.io/trilium-notes/trilium-notes:latest"
+    ]
+  },
+  {
+    "name": "umami",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "umami",
+    "stars": null,
+    "probable_images": [
+      "docker.io/umami/umami:latest",
+      "docker.io/library/umami:latest",
+      "ghcr.io/umami/umami:latest"
+    ]
+  },
+  {
+    "name": "uptime-kuma",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "uptime-kuma",
+    "stars": null,
+    "probable_images": [
+      "docker.io/uptime-kuma/uptime-kuma:latest",
+      "docker.io/library/uptime-kuma:latest",
+      "ghcr.io/uptime-kuma/uptime-kuma:latest"
+    ]
+  },
+  {
+    "name": "urbit",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "urbit",
+    "stars": null,
+    "probable_images": [
+      "docker.io/urbit/urbit:latest",
+      "docker.io/library/urbit:latest",
+      "ghcr.io/urbit/urbit:latest"
+    ]
+  },
+  {
+    "name": "urbit-bitcoin-connector",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "urbit-bitcoin-connector",
+    "stars": null,
+    "probable_images": [
+      "docker.io/urbit-bitcoin-connector/urbit-bitcoin-connector:latest",
+      "docker.io/library/urbit-bitcoin-connector:latest",
+      "ghcr.io/urbit-bitcoin-connector/urbit-bitcoin-connector:latest"
+    ]
+  },
+  {
+    "name": "usocial",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "usocial",
+    "stars": null,
+    "probable_images": [
+      "docker.io/usocial/usocial:latest",
+      "docker.io/library/usocial:latest",
+      "ghcr.io/usocial/usocial:latest"
+    ]
+  },
+  {
+    "name": "vert",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "vert",
+    "stars": null,
+    "probable_images": [
+      "docker.io/vert/vert:latest",
+      "docker.io/library/vert:latest",
+      "ghcr.io/vert/vert:latest"
+    ]
+  },
+  {
+    "name": "wanderer",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "wanderer",
+    "stars": null,
+    "probable_images": [
+      "docker.io/wanderer/wanderer:latest",
+      "docker.io/library/wanderer:latest",
+      "ghcr.io/wanderer/wanderer:latest"
+    ]
+  },
+  {
+    "name": "watch-your-lan",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "watch-your-lan",
+    "stars": null,
+    "probable_images": [
+      "docker.io/watch-your-lan/watch-your-lan:latest",
+      "docker.io/library/watch-your-lan:latest",
+      "ghcr.io/watch-your-lan/watch-your-lan:latest"
+    ]
+  },
+  {
+    "name": "wavelog",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "wavelog",
+    "stars": null,
+    "probable_images": [
+      "docker.io/wavelog/wavelog:latest",
+      "docker.io/library/wavelog:latest",
+      "ghcr.io/wavelog/wavelog:latest"
+    ]
+  },
+  {
+    "name": "webcheck",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "webcheck",
+    "stars": null,
+    "probable_images": [
+      "docker.io/webcheck/webcheck:latest",
+      "docker.io/library/webcheck:latest",
+      "ghcr.io/webcheck/webcheck:latest"
+    ]
+  },
+  {
+    "name": "whoogle-search",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "whoogle-search",
+    "stars": null,
+    "probable_images": [
+      "docker.io/whoogle-search/whoogle-search:latest",
+      "docker.io/library/whoogle-search:latest",
+      "ghcr.io/whoogle-search/whoogle-search:latest"
+    ]
+  },
+  {
+    "name": "wingfit",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "wingfit",
+    "stars": null,
+    "probable_images": [
+      "docker.io/wingfit/wingfit:latest",
+      "docker.io/library/wingfit:latest",
+      "ghcr.io/wingfit/wingfit:latest"
+    ]
+  },
+  {
+    "name": "wireguard",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "wireguard",
+    "stars": null,
+    "probable_images": [
+      "docker.io/wireguard/wireguard:latest",
+      "docker.io/library/wireguard:latest",
+      "ghcr.io/wireguard/wireguard:latest"
+    ]
+  },
+  {
+    "name": "woofbot",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "woofbot",
+    "stars": null,
+    "probable_images": [
+      "docker.io/woofbot/woofbot:latest",
+      "docker.io/library/woofbot:latest",
+      "ghcr.io/woofbot/woofbot:latest"
+    ]
+  },
+  {
+    "name": "woofbot-lnd",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "woofbot-lnd",
+    "stars": null,
+    "probable_images": [
+      "docker.io/woofbot-lnd/woofbot-lnd:latest",
+      "docker.io/library/woofbot-lnd:latest",
+      "ghcr.io/woofbot-lnd/woofbot-lnd:latest"
+    ]
+  },
+  {
+    "name": "wordpress",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "wordpress",
+    "stars": null,
+    "probable_images": [
+      "docker.io/wordpress/wordpress:latest",
+      "docker.io/library/wordpress:latest",
+      "ghcr.io/wordpress/wordpress:latest"
+    ]
+  },
+  {
+    "name": "yamtrack",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "yamtrack",
+    "stars": null,
+    "probable_images": [
+      "docker.io/yamtrack/yamtrack:latest",
+      "docker.io/library/yamtrack:latest",
+      "ghcr.io/yamtrack/yamtrack:latest"
+    ]
+  },
+  {
+    "name": "yucca",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "yucca",
+    "stars": null,
+    "probable_images": [
+      "docker.io/yucca/yucca:latest",
+      "docker.io/library/yucca:latest",
+      "ghcr.io/yucca/yucca:latest"
+    ]
+  },
+  {
+    "name": "zabbix",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "zabbix",
+    "stars": null,
+    "probable_images": [
+      "docker.io/zabbix/zabbix:latest",
+      "docker.io/library/zabbix:latest",
+      "ghcr.io/zabbix/zabbix:latest"
+    ]
+  },
+  {
+    "name": "zen",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "zen",
+    "stars": null,
+    "probable_images": [
+      "docker.io/zen/zen:latest",
+      "docker.io/library/zen:latest",
+      "ghcr.io/zen/zen:latest"
+    ]
+  },
+  {
+    "name": "zeronote",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "zeronote",
+    "stars": null,
+    "probable_images": [
+      "docker.io/zeronote/zeronote:latest",
+      "docker.io/library/zeronote:latest",
+      "ghcr.io/zeronote/zeronote:latest"
+    ]
+  },
+  {
+    "name": "zigbee2mqtt",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "zigbee2mqtt",
+    "stars": null,
+    "probable_images": [
+      "docker.io/zigbee2mqtt/zigbee2mqtt:latest",
+      "docker.io/library/zigbee2mqtt:latest",
+      "ghcr.io/zigbee2mqtt/zigbee2mqtt:latest"
+    ]
+  },
+  {
+    "name": "zoraxy",
+    "source": "umbrel",
+    "github_url": null,
+    "yunohost_app": "zoraxy",
+    "stars": null,
+    "probable_images": [
+      "docker.io/zoraxy/zoraxy:latest",
+      "docker.io/library/zoraxy:latest",
+      "ghcr.io/zoraxy/zoraxy:latest"
+    ]
+  }
+]

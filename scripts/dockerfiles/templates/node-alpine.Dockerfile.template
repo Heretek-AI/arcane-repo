@@ -1,0 +1,56 @@
+# node-alpine Dockerfile template
+# Rendered with string.Template.safe_substitute()
+#
+# Core variables (9):
+#   UPSTREAM_REPO  — git clone URL
+#   APP_SLUG       — short name for temp dir
+#   BUILDER_IMAGE  — base image for builder stage (e.g., node:20-slim, node:lts-alpine)
+#   RUNTIME_IMAGE  — base image for runtime stage
+#   BUILD_TOOL     — npm or bun
+#   BUILD_CMD      — build command (e.g., npm run build, bun run build)
+#   EXPOSE_PORT    — port number
+#   ENTRYPOINT_CMD — CMD argument(s) — shell form or JSON array
+#   EXTRA_DEPS     — additional system packages for builder (space-separated)
+#
+# Block variables (optional — provide full commands, leave empty to skip):
+#   SYSTEM_DEPS          — system package install for builder (overrides default apt-get)
+#   BUN_SETUP            — bun installation (e.g., RUN npm install -g bun)
+#   INSTALL_CMD          — dependency install command (overrides default $BUILD_TOOL install)
+#   BUILD_CMD_BLOCK      — build command block (overrides default RUN $BUILD_CMD)
+#   RUNTIME_SYSTEM_DEPS  — system package install for runtime stage
+#   COPY_CMD             — COPY from builder (overrides default COPY --from=builder /app /app)
+#   ENV_BLOCK            — ENV declarations
+#   HEALTHCHECK_CMD      — HEALTHCHECK directive
+
+FROM $BUILDER_IMAGE AS builder
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git ca-certificates $EXTRA_DEPS \
+    && rm -rf /var/lib/apt/lists/*
+
+$BUN_SETUP
+
+WORKDIR /app
+
+RUN git clone --depth 1 $UPSTREAM_REPO /tmp/$APP_SLUG && \
+    cp -r /tmp/$APP_SLUG/* /app/ && \
+    rm -rf /tmp/$APP_SLUG
+
+RUN $BUILD_TOOL install --ignore-scripts --network-timeout 600000
+
+RUN $BUILD_CMD
+
+# ---- Runtime stage ----
+FROM $RUNTIME_IMAGE
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY --from=builder /app /app
+
+EXPOSE $EXPOSE_PORT
+
+CMD $ENTRYPOINT_CMD

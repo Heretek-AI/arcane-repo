@@ -231,6 +231,7 @@ def check_dockerhub_image(
             "is_private": bool(data.get("is_private", False)),
             "description": str(data.get("description", "") or ""),
             "stars": int(data.get("star_count", 0) or 0),
+            "last_updated": data.get("last_updated"),
             "error": None,
         }
     else:

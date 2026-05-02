@@ -1,0 +1,209 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-05-02T10:52:42.641764+00:00",
+    "duration_seconds": 1.32,
+    "total_templates_scanned": 10,
+    "api_stats": {
+      "requests": 12,
+      "retries": 0,
+      "errors": 0,
+      "rate_limit_hits": 0
+    },
+    "script_version": "1.0.0"
+  },
+  "summary": {
+    "total_templates": 10,
+    "total_findings": 10,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 0,
+      "pass": 10
+    },
+    "by_dimension": {
+      "reachability": 10
+    }
+  },
+  "templates": [
+    {
+      "id": "015",
+      "name": "015",
+      "tags": [
+        "self-hosted",
+        "awesome-selfhosted"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service '015': image docker.io/bantul/015:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "13ft",
+      "name": "13Ft",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service '13ft': image docker.io/wasimaster/13ft:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "2fauth",
+      "name": "2Fauth",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service '2fauth': image docker.io/2fauth/2fauth:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "abantecart",
+      "name": "Abantecart",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'abantecart': image docker.io/abantecart/abantecart:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "activepieces",
+      "name": "Activepieces",
+      "tags": [
+        "self-hosted",
+        "portainer"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'activepieces': image ghcr.io/activepieces/activepieces:latest is reachable on GHCR",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "actual",
+      "name": "Actual",
+      "tags": [
+        "self-hosted",
+        "portainer"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'actual': image docker.io/phoenixashes/actual:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "adguardhome",
+      "name": "Adguardhome",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'adguardhome': image docker.io/adguard/adguardhome:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "admidio",
+      "name": "Admidio",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'admidio': image docker.io/admidio/admidio:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "adminer",
+      "name": "Adminer",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'adminer': image docker.io/library/adminer:latest is reachable on Docker Hub",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "adminerevo",
+      "name": "Adminerevo",
+      "tags": [
+        "self-hosted",
+        "yunohost"
+      ],
+      "findings": [
+        {
+          "dimension": "reachability",
+          "severity": "pass",
+          "message": "Service 'adminerevo': image ghcr.io/shyim/adminerevo:latest is reachable on GHCR",
+          "suggested_fix": null,
+          "details": {}
+        }
+      ],
+      "error": null
+    }
+  ]
+}

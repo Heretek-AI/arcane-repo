@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  couchdb:
+    image: docker.io/library/couchdb:latest
+    container_name: couchdb
+    hostname: couchdb
+    ports:
+      - "${COUCHDB_PORT:-8080}:8080"
+    volumes:
+      - couchdb_data:/data
+    restart: unless-stopped
+
+volumes:
+  couchdb_data:
+    name: couchdb_data

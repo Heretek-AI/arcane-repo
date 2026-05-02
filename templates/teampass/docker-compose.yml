@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  teampass:
+    image: docker.io/teampass/teampass:latest
+    container_name: teampass
+    hostname: teampass
+    ports:
+      - "${TEAMPASS_PORT:-8080}:8080"
+    volumes:
+      - teampass_data:/data
+    restart: unless-stopped
+
+volumes:
+  teampass_data:
+    name: teampass_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  writefreely:
+    image: ghcr.io/writefreely/writefreely:latest
+    container_name: writefreely
+    hostname: writefreely
+    ports:
+      - "${WRITEFREELY_PORT:-8080}:8080"
+    volumes:
+      - writefreely_data:/data
+    restart: unless-stopped
+
+volumes:
+  writefreely_data:
+    name: writefreely_data

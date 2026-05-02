@@ -1,0 +1,11 @@
+{
+  "id": "itflow",
+  "name": "Itflow",
+  "description": "Self-hosted Itflow deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "wekan",
+  "name": "Wekan",
+  "description": "Self-hosted Wekan deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  selfoss:
+    image: docker.io/selfoss/selfoss:latest
+    container_name: selfoss
+    hostname: selfoss
+    ports:
+      - "${SELFOSS_PORT:-8080}:8080"
+    volumes:
+      - selfoss_data:/data
+    restart: unless-stopped
+
+volumes:
+  selfoss_data:
+    name: selfoss_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  humhub:
+    image: docker.io/humhub/humhub:latest
+    container_name: humhub
+    hostname: humhub
+    ports:
+      - "${HUMHUB_PORT:-8080}:8080"
+    volumes:
+      - humhub_data:/data
+    restart: unless-stopped
+
+volumes:
+  humhub_data:
+    name: humhub_data

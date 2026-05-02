@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  paheko:
+    image: docker.io/paheko/paheko:latest
+    container_name: paheko
+    hostname: paheko
+    ports:
+      - "${PAHEKO_PORT:-8080}:8080"
+    volumes:
+      - paheko_data:/data
+    restart: unless-stopped
+
+volumes:
+  paheko_data:
+    name: paheko_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ampache:
+    image: docker.io/ampache/ampache:latest
+    container_name: ampache
+    hostname: ampache
+    ports:
+      - "${AMPACHE_PORT:-8080}:8080"
+    volumes:
+      - ampache_data:/data
+    restart: unless-stopped
+
+volumes:
+  ampache_data:
+    name: ampache_data

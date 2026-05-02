@@ -1,0 +1,11 @@
+{
+  "id": "galette",
+  "name": "Galette",
+  "description": "Self-hosted Galette deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

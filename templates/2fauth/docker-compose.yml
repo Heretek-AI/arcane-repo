@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  2fauth:
+    image: docker.io/2fauth/2fauth:latest
+    container_name: 2fauth
+    hostname: 2fauth
+    ports:
+      - "${2FAUTH_PORT:-8080}:8080"
+    volumes:
+      - 2fauth_data:/data
+    restart: unless-stopped
+
+volumes:
+  2fauth_data:
+    name: 2fauth_data

@@ -1,0 +1,11 @@
+{
+  "id": "prestashop",
+  "name": "Prestashop",
+  "description": "Self-hosted Prestashop deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

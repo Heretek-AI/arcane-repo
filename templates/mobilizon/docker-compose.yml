@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mobilizon:
+    image: docker.io/mobilizon/mobilizon:latest
+    container_name: mobilizon
+    hostname: mobilizon
+    ports:
+      - "${MOBILIZON_PORT:-8080}:8080"
+    volumes:
+      - mobilizon_data:/data
+    restart: unless-stopped
+
+volumes:
+  mobilizon_data:
+    name: mobilizon_data

@@ -1,0 +1,11 @@
+{
+  "id": "sheetable",
+  "name": "Sheetable",
+  "description": "Self-hosted Sheetable deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

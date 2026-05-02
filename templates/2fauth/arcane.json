@@ -1,0 +1,11 @@
+{
+  "id": "2fauth",
+  "name": "2Fauth",
+  "description": "Self-hosted 2fauth deployment via Docker \u2014 sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

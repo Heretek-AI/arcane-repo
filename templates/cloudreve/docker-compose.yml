@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cloudreve:
+    image: docker.io/cloudreve/cloudreve:latest
+    container_name: cloudreve
+    hostname: cloudreve
+    ports:
+      - "${CLOUDREVE_PORT:-8080}:8080"
+    volumes:
+      - cloudreve_data:/data
+    restart: unless-stopped
+
+volumes:
+  cloudreve_data:
+    name: cloudreve_data

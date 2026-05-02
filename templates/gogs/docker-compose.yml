@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gogs:
+    image: ghcr.io/gogs/gogs:latest
+    container_name: gogs
+    hostname: gogs
+    ports:
+      - "${GOGS_PORT:-8080}:8080"
+    volumes:
+      - gogs_data:/data
+    restart: unless-stopped
+
+volumes:
+  gogs_data:
+    name: gogs_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  borgwarehouse:
+    image: docker.io/borgwarehouse/borgwarehouse:latest
+    container_name: borgwarehouse
+    hostname: borgwarehouse
+    ports:
+      - "${BORGWAREHOUSE_PORT:-8080}:8080"
+    volumes:
+      - borgwarehouse_data:/data
+    restart: unless-stopped
+
+volumes:
+  borgwarehouse_data:
+    name: borgwarehouse_data

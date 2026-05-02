@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pixelfed:
+    image: docker.io/pixelfed/pixelfed:latest
+    container_name: pixelfed
+    hostname: pixelfed
+    ports:
+      - "${PIXELFED_PORT:-80}:80"
+    volumes:
+      - pixelfed_data:/data
+    restart: unless-stopped
+
+volumes:
+  pixelfed_data:
+    name: pixelfed_data

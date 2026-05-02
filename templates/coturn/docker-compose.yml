@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  coturn:
+    image: ghcr.io/coturn/coturn:latest
+    container_name: coturn
+    hostname: coturn
+    ports:
+      - "${COTURN_PORT:-8080}:8080"
+    volumes:
+      - coturn_data:/data
+    restart: unless-stopped
+
+volumes:
+  coturn_data:
+    name: coturn_data

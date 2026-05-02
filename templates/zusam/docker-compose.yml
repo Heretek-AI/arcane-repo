@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zusam:
+    image: docker.io/zusam/zusam:latest
+    container_name: zusam
+    hostname: zusam
+    ports:
+      - "${ZUSAM_PORT:-8080}:8080"
+    volumes:
+      - zusam_data:/data
+    restart: unless-stopped
+
+volumes:
+  zusam_data:
+    name: zusam_data

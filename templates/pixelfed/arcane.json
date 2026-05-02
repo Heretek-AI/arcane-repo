@@ -1,0 +1,11 @@
+{
+  "id": "pixelfed",
+  "name": "Pixelfed",
+  "description": "Self-hosted Pixelfed deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openobserve:
+    image: docker.io/openobserve/openobserve:latest
+    container_name: openobserve
+    hostname: openobserve
+    ports:
+      - "${OPENOBSERVE_PORT:-8080}:8080"
+    volumes:
+      - openobserve_data:/data
+    restart: unless-stopped
+
+volumes:
+  openobserve_data:
+    name: openobserve_data

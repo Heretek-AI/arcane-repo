@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  peer-calls:
+    image: ghcr.io/peer-calls/peer-calls:latest
+    container_name: peer-calls
+    hostname: peer-calls
+    ports:
+      - "${PEER_CALLS_PORT:-8080}:8080"
+    volumes:
+      - peer-calls_data:/data
+    restart: unless-stopped
+
+volumes:
+  peer-calls_data:
+    name: peer-calls_data

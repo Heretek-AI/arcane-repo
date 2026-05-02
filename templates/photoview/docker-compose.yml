@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  photoview:
+    image: docker.io/photoview/photoview:latest
+    container_name: photoview
+    hostname: photoview
+    ports:
+      - "${PHOTOVIEW_PORT:-8080}:8080"
+    volumes:
+      - photoview_data:/data
+    restart: unless-stopped
+
+volumes:
+  photoview_data:
+    name: photoview_data

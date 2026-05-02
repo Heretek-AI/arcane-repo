@@ -1,0 +1,12 @@
+{
+  "id": "openobserve",
+  "name": "Openobserve",
+  "description": "Self-hosted Openobserve deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "monitoring",
+    "yunohost"
+  ]
+}

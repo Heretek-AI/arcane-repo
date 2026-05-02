@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rclone:
+    image: ghcr.io/rclone/rclone:latest
+    container_name: rclone
+    hostname: rclone
+    ports:
+      - "${RCLONE_PORT:-8080}:8080"
+    volumes:
+      - rclone_data:/data
+    restart: unless-stopped
+
+volumes:
+  rclone_data:
+    name: rclone_data

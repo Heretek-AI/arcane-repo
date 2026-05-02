@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpservermon:
+    image: docker.io/phpservermon/phpservermon:latest
+    container_name: phpservermon
+    hostname: phpservermon
+    ports:
+      - "${PHPSERVERMON_PORT:-8080}:8080"
+    volumes:
+      - phpservermon_data:/data
+    restart: unless-stopped
+
+volumes:
+  phpservermon_data:
+    name: phpservermon_data

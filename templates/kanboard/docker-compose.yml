@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kanboard:
+    image: ghcr.io/kanboard/kanboard:latest
+    container_name: kanboard
+    hostname: kanboard
+    ports:
+      - "${KANBOARD_PORT:-8080}:8080"
+    volumes:
+      - kanboard_data:/data
+    restart: unless-stopped
+
+volumes:
+  kanboard_data:
+    name: kanboard_data

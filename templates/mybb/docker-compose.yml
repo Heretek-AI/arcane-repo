@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mybb:
+    image: docker.io/mybb/mybb:latest
+    container_name: mybb
+    hostname: mybb
+    ports:
+      - "${MYBB_PORT:-8080}:8080"
+    volumes:
+      - mybb_data:/data
+    restart: unless-stopped
+
+volumes:
+  mybb_data:
+    name: mybb_data

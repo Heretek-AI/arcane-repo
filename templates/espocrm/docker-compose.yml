@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  espocrm:
+    image: docker.io/espocrm/espocrm:latest
+    container_name: espocrm
+    hostname: espocrm
+    ports:
+      - "${ESPOCRM_PORT:-8080}:8080"
+    volumes:
+      - espocrm_data:/data
+    restart: unless-stopped
+
+volumes:
+  espocrm_data:
+    name: espocrm_data

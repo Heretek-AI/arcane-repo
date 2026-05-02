@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jeedom:
+    image: docker.io/jeedom/jeedom:latest
+    container_name: jeedom
+    hostname: jeedom
+    ports:
+      - "${JEEDOM_PORT:-8080}:8080"
+    volumes:
+      - jeedom_data:/data
+    restart: unless-stopped
+
+volumes:
+  jeedom_data:
+    name: jeedom_data

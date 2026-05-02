@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  traccar:
+    image: docker.io/traccar/traccar:latest
+    container_name: traccar
+    hostname: traccar
+    ports:
+      - "${TRACCAR_PORT:-8080}:8080"
+    volumes:
+      - traccar_data:/data
+    restart: unless-stopped
+
+volumes:
+  traccar_data:
+    name: traccar_data

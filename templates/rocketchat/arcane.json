@@ -1,0 +1,12 @@
+{
+  "id": "rocketchat",
+  "name": "Rocketchat",
+  "description": "Self-hosted Rocketchat deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "communication",
+    "yunohost"
+  ]
+}

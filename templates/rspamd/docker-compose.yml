@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rspamd:
+    image: docker.io/rspamd/rspamd:latest
+    container_name: rspamd
+    hostname: rspamd
+    ports:
+      - "${RSPAMD_PORT:-8080}:8080"
+    volumes:
+      - rspamd_data:/data
+    restart: unless-stopped
+
+volumes:
+  rspamd_data:
+    name: rspamd_data

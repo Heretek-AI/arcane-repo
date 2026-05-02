@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backdrop:
+    image: docker.io/library/backdrop:latest
+    container_name: backdrop
+    hostname: backdrop
+    ports:
+      - "${BACKDROP_PORT:-8080}:8080"
+    volumes:
+      - backdrop_data:/data
+    restart: unless-stopped
+
+volumes:
+  backdrop_data:
+    name: backdrop_data

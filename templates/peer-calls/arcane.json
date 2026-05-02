@@ -1,0 +1,11 @@
+{
+  "id": "peer-calls",
+  "name": "Peer Calls",
+  "description": "Self-hosted Peer Calls deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

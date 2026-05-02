@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pihole:
+    image: docker.io/pihole/pihole:latest
+    container_name: pihole
+    hostname: pihole
+    ports:
+      - "${PIHOLE_PORT:-8080}:8080"
+    volumes:
+      - pihole_data:/data
+    restart: unless-stopped
+
+volumes:
+  pihole_data:
+    name: pihole_data

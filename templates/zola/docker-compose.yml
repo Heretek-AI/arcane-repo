@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zola:
+    image: docker.io/zola/zola:latest
+    container_name: zola
+    hostname: zola
+    ports:
+      - "${ZOLA_PORT:-8080}:8080"
+    volumes:
+      - zola_data:/data
+    restart: unless-stopped
+
+volumes:
+  zola_data:
+    name: zola_data

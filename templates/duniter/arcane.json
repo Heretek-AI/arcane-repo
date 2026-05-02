@@ -1,0 +1,11 @@
+{
+  "id": "duniter",
+  "name": "Duniter",
+  "description": "Self-hosted Duniter deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

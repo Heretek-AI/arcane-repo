@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  invoiceshelf:
+    image: docker.io/invoiceshelf/invoiceshelf:latest
+    container_name: invoiceshelf
+    hostname: invoiceshelf
+    ports:
+      - "${INVOICESHELF_PORT:-8080}:8080"
+    volumes:
+      - invoiceshelf_data:/data
+    restart: unless-stopped
+
+volumes:
+  invoiceshelf_data:
+    name: invoiceshelf_data

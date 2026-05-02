@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  paymenter:
+    image: ghcr.io/paymenter/paymenter:latest
+    container_name: paymenter
+    hostname: paymenter
+    ports:
+      - "${PAYMENTER_PORT:-8080}:8080"
+    volumes:
+      - paymenter_data:/data
+    restart: unless-stopped
+
+volumes:
+  paymenter_data:
+    name: paymenter_data

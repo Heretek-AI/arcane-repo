@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  restic:
+    image: ghcr.io/restic/restic:latest
+    container_name: restic
+    hostname: restic
+    ports:
+      - "${RESTIC_PORT:-8080}:8080"
+    volumes:
+      - restic_data:/data
+    restart: unless-stopped
+
+volumes:
+  restic_data:
+    name: restic_data

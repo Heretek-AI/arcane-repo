@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sheetable:
+    image: ghcr.io/sheetable/sheetable:latest
+    container_name: sheetable
+    hostname: sheetable
+    ports:
+      - "${SHEETABLE_PORT:-8080}:8080"
+    volumes:
+      - sheetable_data:/data
+    restart: unless-stopped
+
+volumes:
+  sheetable_data:
+    name: sheetable_data

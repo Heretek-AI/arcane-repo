@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  librebooking:
+    image: docker.io/librebooking/librebooking:latest
+    container_name: librebooking
+    hostname: librebooking
+    ports:
+      - "${LIBREBOOKING_PORT:-8080}:8080"
+    volumes:
+      - librebooking_data:/data
+    restart: unless-stopped
+
+volumes:
+  librebooking_data:
+    name: librebooking_data

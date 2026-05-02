@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  weblate:
+    image: docker.io/weblate/weblate:latest
+    container_name: weblate
+    hostname: weblate
+    ports:
+      - "${WEBLATE_PORT:-8080}:8080"
+    volumes:
+      - weblate_data:/data
+    restart: unless-stopped
+
+volumes:
+  weblate_data:
+    name: weblate_data

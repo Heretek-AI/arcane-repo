@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dolibarr:
+    image: docker.io/dolibarr/dolibarr:latest
+    container_name: dolibarr
+    hostname: dolibarr
+    ports:
+      - "${DOLIBARR_PORT:-8080}:8080"
+    volumes:
+      - dolibarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  dolibarr_data:
+    name: dolibarr_data

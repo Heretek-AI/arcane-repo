@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  seaweedfs:
+    image: ghcr.io/seaweedfs/seaweedfs:latest
+    container_name: seaweedfs
+    hostname: seaweedfs
+    ports:
+      - "${SEAWEEDFS_PORT:-8080}:8080"
+    volumes:
+      - seaweedfs_data:/data
+    restart: unless-stopped
+
+volumes:
+  seaweedfs_data:
+    name: seaweedfs_data

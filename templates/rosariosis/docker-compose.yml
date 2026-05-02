@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rosariosis:
+    image: docker.io/rosariosis/rosariosis:latest
+    container_name: rosariosis
+    hostname: rosariosis
+    ports:
+      - "${ROSARIOSIS_PORT:-8080}:8080"
+    volumes:
+      - rosariosis_data:/data
+    restart: unless-stopped
+
+volumes:
+  rosariosis_data:
+    name: rosariosis_data

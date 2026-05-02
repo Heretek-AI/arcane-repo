@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  misskey:
+    image: docker.io/misskey/misskey:latest
+    container_name: misskey
+    hostname: misskey
+    ports:
+      - "${MISSKEY_PORT:-8080}:8080"
+    volumes:
+      - misskey_data:/data
+    restart: unless-stopped
+
+volumes:
+  misskey_data:
+    name: misskey_data

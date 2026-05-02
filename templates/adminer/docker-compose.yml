@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  adminer:
+    image: docker.io/library/adminer:latest
+    container_name: adminer
+    hostname: adminer
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+    volumes:
+      - adminer_data:/data
+    restart: unless-stopped
+
+volumes:
+  adminer_data:
+    name: adminer_data

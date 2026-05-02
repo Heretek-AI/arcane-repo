@@ -1,0 +1,11 @@
+{
+  "id": "photoview",
+  "name": "Photoview",
+  "description": "Self-hosted Photoview deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

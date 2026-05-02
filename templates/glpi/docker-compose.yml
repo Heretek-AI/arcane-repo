@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  glpi:
+    image: docker.io/glpi/glpi:latest
+    container_name: glpi
+    hostname: glpi
+    ports:
+      - "${GLPI_PORT:-8080}:8080"
+    volumes:
+      - glpi_data:/data
+    restart: unless-stopped
+
+volumes:
+  glpi_data:
+    name: glpi_data

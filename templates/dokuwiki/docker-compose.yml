@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dokuwiki:
+    image: ghcr.io/dokuwiki/dokuwiki:latest
+    container_name: dokuwiki
+    hostname: dokuwiki
+    ports:
+      - "${DOKUWIKI_PORT:-80}:80"
+    volumes:
+      - dokuwiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  dokuwiki_data:
+    name: dokuwiki_data

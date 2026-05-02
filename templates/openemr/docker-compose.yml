@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openemr:
+    image: docker.io/openemr/openemr:latest
+    container_name: openemr
+    hostname: openemr
+    ports:
+      - "${OPENEMR_PORT:-8080}:8080"
+    volumes:
+      - openemr_data:/data
+    restart: unless-stopped
+
+volumes:
+  openemr_data:
+    name: openemr_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wekan:
+    image: ghcr.io/wekan/wekan:latest
+    container_name: wekan
+    hostname: wekan
+    ports:
+      - "${WEKAN_PORT:-8080}:8080"
+    volumes:
+      - wekan_data:/data
+    restart: unless-stopped
+
+volumes:
+  wekan_data:
+    name: wekan_data

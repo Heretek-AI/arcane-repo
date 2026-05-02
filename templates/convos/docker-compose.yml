@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  convos:
+    image: docker.io/convos/convos:latest
+    container_name: convos
+    hostname: convos
+    ports:
+      - "${CONVOS_PORT:-8080}:8080"
+    volumes:
+      - convos_data:/data
+    restart: unless-stopped
+
+volumes:
+  convos_data:
+    name: convos_data

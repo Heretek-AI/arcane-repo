@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mautic:
+    image: docker.io/mautic/mautic:latest
+    container_name: mautic
+    hostname: mautic
+    ports:
+      - "${MAUTIC_PORT:-8080}:8080"
+    volumes:
+      - mautic_data:/data
+    restart: unless-stopped
+
+volumes:
+  mautic_data:
+    name: mautic_data

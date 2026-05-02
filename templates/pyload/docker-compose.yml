@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pyload:
+    image: docker.io/pyload/pyload:latest
+    container_name: pyload
+    hostname: pyload
+    ports:
+      - "${PYLOAD_PORT:-8080}:8080"
+    volumes:
+      - pyload_data:/data
+    restart: unless-stopped
+
+volumes:
+  pyload_data:
+    name: pyload_data

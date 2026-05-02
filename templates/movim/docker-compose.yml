@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  movim:
+    image: docker.io/movim/movim:latest
+    container_name: movim
+    hostname: movim
+    ports:
+      - "${MOVIM_PORT:-8080}:8080"
+    volumes:
+      - movim_data:/data
+    restart: unless-stopped
+
+volumes:
+  movim_data:
+    name: movim_data

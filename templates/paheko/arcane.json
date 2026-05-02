@@ -1,0 +1,11 @@
+{
+  "id": "paheko",
+  "name": "Paheko",
+  "description": "Self-hosted Paheko deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

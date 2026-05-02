@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  owncast:
+    image: ghcr.io/owncast/owncast:latest
+    container_name: owncast
+    hostname: owncast
+    ports:
+      - "${OWNCAST_PORT:-8080}:8080"
+    volumes:
+      - owncast_data:/data
+    restart: unless-stopped
+
+volumes:
+  owncast_data:
+    name: owncast_data

@@ -1,0 +1,11 @@
+{
+  "id": "teampass",
+  "name": "Teampass",
+  "description": "Self-hosted Teampass deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

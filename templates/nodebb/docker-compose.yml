@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nodebb:
+    image: ghcr.io/nodebb/nodebb:latest
+    container_name: nodebb
+    hostname: nodebb
+    ports:
+      - "${NODEBB_PORT:-8080}:8080"
+    volumes:
+      - nodebb_data:/data
+    restart: unless-stopped
+
+volumes:
+  nodebb_data:
+    name: nodebb_data

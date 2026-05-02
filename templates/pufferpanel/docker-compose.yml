@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pufferpanel:
+    image: ghcr.io/pufferpanel/pufferpanel:latest
+    container_name: pufferpanel
+    hostname: pufferpanel
+    ports:
+      - "${PUFFERPANEL_PORT:-8080}:8080"
+    volumes:
+      - pufferpanel_data:/data
+    restart: unless-stopped
+
+volumes:
+  pufferpanel_data:
+    name: pufferpanel_data

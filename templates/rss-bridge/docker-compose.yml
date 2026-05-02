@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rss-bridge:
+    image: ghcr.io/rss-bridge/rss-bridge:latest
+    container_name: rss-bridge
+    hostname: rss-bridge
+    ports:
+      - "${RSS_BRIDGE_PORT:-8080}:8080"
+    volumes:
+      - rss-bridge_data:/data
+    restart: unless-stopped
+
+volumes:
+  rss-bridge_data:
+    name: rss-bridge_data

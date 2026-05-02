@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  orangehrm:
+    image: docker.io/orangehrm/orangehrm:latest
+    container_name: orangehrm
+    hostname: orangehrm
+    ports:
+      - "${ORANGEHRM_PORT:-8080}:8080"
+    volumes:
+      - orangehrm_data:/data
+    restart: unless-stopped
+
+volumes:
+  orangehrm_data:
+    name: orangehrm_data

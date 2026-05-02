@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zerotier:
+    image: docker.io/zerotier/zerotier:latest
+    container_name: zerotier
+    hostname: zerotier
+    ports:
+      - "${ZEROTIER_PORT:-8080}:8080"
+    volumes:
+      - zerotier_data:/data
+    restart: unless-stopped
+
+volumes:
+  zerotier_data:
+    name: zerotier_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  prosody:
+    image: docker.io/prosody/prosody:latest
+    container_name: prosody
+    hostname: prosody
+    ports:
+      - "${PROSODY_PORT:-8080}:8080"
+    volumes:
+      - prosody_data:/data
+    restart: unless-stopped
+
+volumes:
+  prosody_data:
+    name: prosody_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  airsonic:
+    image: docker.io/airsonic/airsonic:latest
+    container_name: airsonic
+    hostname: airsonic
+    ports:
+      - "${AIRSONIC_PORT:-4040}:4040"
+    volumes:
+      - airsonic_data:/data
+    restart: unless-stopped
+
+volumes:
+  airsonic_data:
+    name: airsonic_data

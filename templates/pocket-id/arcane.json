@@ -1,0 +1,11 @@
+{
+  "id": "pocket-id",
+  "name": "Pocket Id",
+  "description": "Self-hosted Pocket Id deployment via Docker, sourced from YunoHost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

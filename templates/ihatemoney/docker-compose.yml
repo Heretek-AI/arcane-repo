@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ihatemoney:
+    image: docker.io/ihatemoney/ihatemoney:latest
+    container_name: ihatemoney
+    hostname: ihatemoney
+    ports:
+      - "${IHATEMONEY_PORT:-8080}:8080"
+    volumes:
+      - ihatemoney_data:/data
+    restart: unless-stopped
+
+volumes:
+  ihatemoney_data:
+    name: ihatemoney_data

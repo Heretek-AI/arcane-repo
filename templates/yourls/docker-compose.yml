@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yourls:
+    image: ghcr.io/yourls/yourls:latest
+    container_name: yourls
+    hostname: yourls
+    ports:
+      - "${YOURLS_PORT:-8080}:8080"
+    volumes:
+      - yourls_data:/data
+    restart: unless-stopped
+
+volumes:
+  yourls_data:
+    name: yourls_data

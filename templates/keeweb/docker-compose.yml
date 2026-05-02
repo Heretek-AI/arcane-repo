@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  keeweb:
+    image: ghcr.io/keeweb/keeweb:latest
+    container_name: keeweb
+    hostname: keeweb
+    ports:
+      - "${KEEWEB_PORT:-8080}:8080"
+    volumes:
+      - keeweb_data:/data
+    restart: unless-stopped
+
+volumes:
+  keeweb_data:
+    name: keeweb_data

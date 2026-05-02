@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  duniter:
+    image: docker.io/duniter/duniter:latest
+    container_name: duniter
+    hostname: duniter
+    ports:
+      - "${DUNITER_PORT:-8080}:8080"
+    volumes:
+      - duniter_data:/data
+    restart: unless-stopped
+
+volumes:
+  duniter_data:
+    name: duniter_data

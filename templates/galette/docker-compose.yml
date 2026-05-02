@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  galette:
+    image: docker.io/galette/galette:latest
+    container_name: galette
+    hostname: galette
+    ports:
+      - "${GALETTE_PORT:-8080}:8080"
+    volumes:
+      - galette_data:/data
+    restart: unless-stopped
+
+volumes:
+  galette_data:
+    name: galette_data

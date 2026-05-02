@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  friendica:
+    image: docker.io/library/friendica:latest
+    container_name: friendica
+    hostname: friendica
+    ports:
+      - "${FRIENDICA_PORT:-8080}:8080"
+    volumes:
+      - friendica_data:/data
+    restart: unless-stopped
+
+volumes:
+  friendica_data:
+    name: friendica_data

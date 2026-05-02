@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  automad:
+    image: docker.io/automad/automad:latest
+    container_name: automad
+    hostname: automad
+    ports:
+      - "${AUTOMAD_PORT:-8080}:8080"
+    volumes:
+      - automad_data:/data
+    restart: unless-stopped
+
+volumes:
+  automad_data:
+    name: automad_data

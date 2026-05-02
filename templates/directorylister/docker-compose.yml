@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  directorylister:
+    image: docker.io/directorylister/directorylister:latest
+    container_name: directorylister
+    hostname: directorylister
+    ports:
+      - "${DIRECTORYLISTER_PORT:-8080}:8080"
+    volumes:
+      - directorylister_data:/data
+    restart: unless-stopped
+
+volumes:
+  directorylister_data:
+    name: directorylister_data

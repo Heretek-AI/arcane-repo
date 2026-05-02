@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  headscale:
+    image: docker.io/headscale/headscale:latest
+    container_name: headscale
+    hostname: headscale
+    ports:
+      - "${HEADSCALE_PORT:-8080}:8080"
+    volumes:
+      - headscale_data:/data
+    restart: unless-stopped
+
+volumes:
+  headscale_data:
+    name: headscale_data

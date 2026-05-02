@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fossbilling:
+    image: docker.io/fossbilling/fossbilling:latest
+    container_name: fossbilling
+    hostname: fossbilling
+    ports:
+      - "${FOSSBILLING_PORT:-8080}:8080"
+    volumes:
+      - fossbilling_data:/data
+    restart: unless-stopped
+
+volumes:
+  fossbilling_data:
+    name: fossbilling_data

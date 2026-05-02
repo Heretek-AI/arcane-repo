@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  prestashop:
+    image: docker.io/prestashop/prestashop:latest
+    container_name: prestashop
+    hostname: prestashop
+    ports:
+      - "${PRESTASHOP_PORT:-8080}:8080"
+    volumes:
+      - prestashop_data:/data
+    restart: unless-stopped
+
+volumes:
+  prestashop_data:
+    name: prestashop_data

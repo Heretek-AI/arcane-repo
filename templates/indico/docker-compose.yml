@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  indico:
+    image: ghcr.io/indico/indico:latest
+    container_name: indico
+    hostname: indico
+    ports:
+      - "${INDICO_PORT:-8080}:8080"
+    volumes:
+      - indico_data:/data
+    restart: unless-stopped
+
+volumes:
+  indico_data:
+    name: indico_data

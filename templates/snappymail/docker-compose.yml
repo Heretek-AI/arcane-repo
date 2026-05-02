@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snappymail:
+    image: docker.io/snappymail/snappymail:latest
+    container_name: snappymail
+    hostname: snappymail
+    ports:
+      - "${SNAPPYMAIL_PORT:-8080}:8080"
+    volumes:
+      - snappymail_data:/data
+    restart: unless-stopped
+
+volumes:
+  snappymail_data:
+    name: snappymail_data

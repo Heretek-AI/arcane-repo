@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cypht:
+    image: docker.io/cypht/cypht:latest
+    container_name: cypht
+    hostname: cypht
+    ports:
+      - "${CYPHT_PORT:-8080}:8080"
+    volumes:
+      - cypht_data:/data
+    restart: unless-stopped
+
+volumes:
+  cypht_data:
+    name: cypht_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  linkace:
+    image: docker.io/linkace/linkace:latest
+    container_name: linkace
+    hostname: linkace
+    ports:
+      - "${LINKACE_PORT:-8080}:8080"
+    volumes:
+      - linkace_data:/data
+    restart: unless-stopped
+
+volumes:
+  linkace_data:
+    name: linkace_data

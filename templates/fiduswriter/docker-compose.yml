@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fiduswriter:
+    image: docker.io/fiduswriter/fiduswriter:latest
+    container_name: fiduswriter
+    hostname: fiduswriter
+    ports:
+      - "${FIDUSWRITER_PORT:-8080}:8080"
+    volumes:
+      - fiduswriter_data:/data
+    restart: unless-stopped
+
+volumes:
+  fiduswriter_data:
+    name: fiduswriter_data

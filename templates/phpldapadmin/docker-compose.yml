@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpldapadmin:
+    image: docker.io/phpldapadmin/phpldapadmin:latest
+    container_name: phpldapadmin
+    hostname: phpldapadmin
+    ports:
+      - "${PHPLDAPADMIN_PORT:-8080}:8080"
+    volumes:
+      - phpldapadmin_data:/data
+    restart: unless-stopped
+
+volumes:
+  phpldapadmin_data:
+    name: phpldapadmin_data

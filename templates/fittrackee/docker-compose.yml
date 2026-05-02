@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fittrackee:
+    image: docker.io/fittrackee/fittrackee:latest
+    container_name: fittrackee
+    hostname: fittrackee
+    ports:
+      - "${FITTRACKEE_PORT:-8080}:8080"
+    volumes:
+      - fittrackee_data:/data
+    restart: unless-stopped
+
+volumes:
+  fittrackee_data:
+    name: fittrackee_data

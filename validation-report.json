@@ -1,0 +1,205 @@
+{
+  "timestamp": "2026-05-02T22:58:31.654534+00:00",
+  "total": 28,
+  "passed": 28,
+  "failed": 0,
+  "registry_ok": true,
+  "templates": {
+    "aionui": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "astrbot": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "cc-gateway": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "clawith": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "cog": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "harbor-llm": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "kag": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "memvid": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "mlflow": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "nanobot": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "om1": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "onyx": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "openfang": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "openspiel": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "plexe": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "rd-agent": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "rowboat": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "sillytavern": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "streamer-sales": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "sunshine": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "tradingagents": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "trendradar": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "uncloud": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "vane": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "wgcloud": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "worldmonitor": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "xiaomusic": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    },
+    "yuxi": {
+      "workflow": true,
+      "dockerfile": true,
+      "template_dir": true,
+      "server_py": true,
+      "errors": []
+    }
+  }
+}

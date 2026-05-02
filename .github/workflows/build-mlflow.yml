@@ -15,21 +15,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Log in to GHCR
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push MLflow
-        run: |
-          IMAGE="ghcr.io/heretek-ai/arcane-repo/mlflow:latest"
-          echo "Building $IMAGE..."
-          docker build -t "$IMAGE" -f scripts/dockerfiles/mlflow/Dockerfile .
-          docker push "$IMAGE"
-          echo "Published: $IMAGE"
+    uses: ./.github/workflows/build-custom.yml
+    with:
+      template-name: mlflow
+    secrets: inherit

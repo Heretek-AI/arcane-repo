@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  octoprint:
+    image: docker.io/octoprint/octoprint:latest
+    container_name: octoprint
+    hostname: octoprint
+    ports:
+      - "${OCTOPRINT_PORT:-8080}:8080"
+    volumes:
+      - octoprint_data:/data
+    restart: unless-stopped
+
+volumes:
+  octoprint_data:
+    name: octoprint_data

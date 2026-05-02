@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  couchpotato:
+    image: docker.io/couchpotato/couchpotato:latest
+    container_name: couchpotato
+    hostname: couchpotato
+    ports:
+      - "${COUCHPOTATO_PORT:-8080}:8080"
+    volumes:
+      - couchpotato_data:/data
+    restart: unless-stopped
+
+volumes:
+  couchpotato_data:
+    name: couchpotato_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sickrage:
+    image: docker.io/sickrage/sickrage:latest
+    container_name: sickrage
+    hostname: sickrage
+    ports:
+      - "${SICKRAGE_PORT:-8080}:8080"
+    volumes:
+      - sickrage_data:/data
+    restart: unless-stopped
+
+volumes:
+  sickrage_data:
+    name: sickrage_data

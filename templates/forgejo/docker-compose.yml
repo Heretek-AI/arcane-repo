@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  forgejo:
+    image: docker.io/forgejo/forgejo:latest
+    container_name: forgejo
+    hostname: forgejo
+    ports:
+      - "${FORGEJO_PORT:-8080}:8080"
+    volumes:
+      - forgejo_data:/data
+    restart: unless-stopped
+
+volumes:
+  forgejo_data:
+    name: forgejo_data

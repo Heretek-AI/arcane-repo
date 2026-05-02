@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  unmanic:
+    image: ghcr.io/unmanic/unmanic:latest
+    container_name: unmanic
+    hostname: unmanic
+    ports:
+      - "${UNMANIC_PORT:-8080}:8080"
+    volumes:
+      - unmanic_data:/data
+    restart: unless-stopped
+
+volumes:
+  unmanic_data:
+    name: unmanic_data

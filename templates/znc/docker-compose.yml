@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  znc:
+    image: docker.io/library/znc:latest
+    container_name: znc
+    hostname: znc
+    ports:
+      - "${ZNC_PORT:-8080}:8080"
+    volumes:
+      - znc_data:/data
+    restart: unless-stopped
+
+volumes:
+  znc_data:
+    name: znc_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tooljet:
+    image: docker.io/tooljet/tooljet:latest
+    container_name: tooljet
+    hostname: tooljet
+    ports:
+      - "${TOOLJET_PORT:-8080}:8080"
+    volumes:
+      - tooljet_data:/data
+    restart: unless-stopped
+
+volumes:
+  tooljet_data:
+    name: tooljet_data

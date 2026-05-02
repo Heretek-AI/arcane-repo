@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  statping:
+    image: docker.io/statping/statping:latest
+    container_name: statping
+    hostname: statping
+    ports:
+      - "${STATPING_PORT:-8080}:8080"
+    volumes:
+      - statping_data:/data
+    restart: unless-stopped
+
+volumes:
+  statping_data:
+    name: statping_data

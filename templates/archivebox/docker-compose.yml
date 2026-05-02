@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  archivebox:
+    image: ghcr.io/archivebox/archivebox:latest
+    container_name: archivebox
+    hostname: archivebox
+    ports:
+      - "${ARCHIVEBOX_PORT:-8080}:8080"
+    volumes:
+      - archivebox_data:/data
+    restart: unless-stopped
+
+volumes:
+  archivebox_data:
+    name: archivebox_data

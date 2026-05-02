@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  matomo:
+    image: docker.io/library/matomo:latest
+    container_name: matomo
+    hostname: matomo
+    ports:
+      - "${MATOMO_PORT:-8080}:8080"
+    volumes:
+      - matomo_data:/data
+    restart: unless-stopped
+
+volumes:
+  matomo_data:
+    name: matomo_data

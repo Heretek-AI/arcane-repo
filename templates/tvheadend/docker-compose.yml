@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tvheadend:
+    image: ghcr.io/tvheadend/tvheadend:latest
+    container_name: tvheadend
+    hostname: tvheadend
+    ports:
+      - "${TVHEADEND_PORT:-8080}:8080"
+    volumes:
+      - tvheadend_data:/data
+    restart: unless-stopped
+
+volumes:
+  tvheadend_data:
+    name: tvheadend_data

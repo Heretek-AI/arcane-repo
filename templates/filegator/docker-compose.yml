@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  filegator:
+    image: docker.io/filegator/filegator:latest
+    container_name: filegator
+    hostname: filegator
+    ports:
+      - "${FILEGATOR_PORT:-8080}:8080"
+    volumes:
+      - filegator_data:/data
+    restart: unless-stopped
+
+volumes:
+  filegator_data:
+    name: filegator_data

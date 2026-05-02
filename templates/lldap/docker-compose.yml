@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lldap:
+    image: ghcr.io/lldap/lldap:latest
+    container_name: lldap
+    hostname: lldap
+    ports:
+      - "${LLDAP_PORT:-8080}:8080"
+    volumes:
+      - lldap_data:/data
+    restart: unless-stopped
+
+volumes:
+  lldap_data:
+    name: lldap_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  paperless-ngx:
+    image: ghcr.io/paperless-ngx/paperless-ngx:latest
+    container_name: paperless-ngx
+    hostname: paperless-ngx
+    ports:
+      - "${PAPERLESS_NGX_PORT:-8000}:8000"
+    volumes:
+      - paperless-ngx_data:/data
+    restart: unless-stopped
+
+volumes:
+  paperless-ngx_data:
+    name: paperless-ngx_data

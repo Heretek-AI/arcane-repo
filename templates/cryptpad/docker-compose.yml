@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cryptpad:
+    image: docker.io/cryptpad/cryptpad:latest
+    container_name: cryptpad
+    hostname: cryptpad
+    ports:
+      - "${CRYPTPAD_PORT:-8080}:8080"
+    volumes:
+      - cryptpad_data:/data
+    restart: unless-stopped
+
+volumes:
+  cryptpad_data:
+    name: cryptpad_data

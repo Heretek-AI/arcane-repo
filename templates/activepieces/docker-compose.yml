@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  activepieces:
+    image: ghcr.io/activepieces/activepieces:latest
+    container_name: activepieces
+    hostname: activepieces
+    ports:
+      - "${ACTIVEPIECES_PORT:-8080}:8080"
+    volumes:
+      - activepieces_data:/data
+    restart: unless-stopped
+
+volumes:
+  activepieces_data:
+    name: activepieces_data

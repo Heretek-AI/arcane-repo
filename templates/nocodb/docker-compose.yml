@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nocodb:
+    image: docker.io/nocodb/nocodb:latest
+    container_name: nocodb
+    hostname: nocodb
+    ports:
+      - "${NOCODB_PORT:-8080}:8080"
+    volumes:
+      - nocodb_data:/data
+    restart: unless-stopped
+
+volumes:
+  nocodb_data:
+    name: nocodb_data

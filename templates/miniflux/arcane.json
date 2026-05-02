@@ -1,0 +1,11 @@
+{
+  "id": "miniflux",
+  "name": "Miniflux",
+  "description": "Self-hosted Miniflux deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

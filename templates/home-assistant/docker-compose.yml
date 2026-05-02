@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  home-assistant:
+    image: ghcr.io/home-assistant/home-assistant:latest
+    container_name: home-assistant
+    hostname: home-assistant
+    ports:
+      - "${HOME_ASSISTANT_PORT:-8080}:8080"
+    volumes:
+      - home-assistant_data:/data
+    restart: unless-stopped
+
+volumes:
+  home-assistant_data:
+    name: home-assistant_data

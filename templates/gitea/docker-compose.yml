@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gitea:
+    image: docker.io/gitea/gitea:latest
+    container_name: gitea
+    hostname: gitea
+    ports:
+      - "${GITEA_PORT:-3000}:3000"
+    volumes:
+      - gitea_data:/data
+    restart: unless-stopped
+
+volumes:
+  gitea_data:
+    name: gitea_data

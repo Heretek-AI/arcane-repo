@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chiefonboarding:
+    image: docker.io/chiefonboarding/chiefonboarding:latest
+    container_name: chiefonboarding
+    hostname: chiefonboarding
+    ports:
+      - "${CHIEFONBOARDING_PORT:-8080}:8080"
+    volumes:
+      - chiefonboarding_data:/data
+    restart: unless-stopped
+
+volumes:
+  chiefonboarding_data:
+    name: chiefonboarding_data

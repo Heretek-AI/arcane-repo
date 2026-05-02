@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mastodon:
+    image: ghcr.io/mastodon/mastodon:latest
+    container_name: mastodon
+    hostname: mastodon
+    ports:
+      - "${MASTODON_PORT:-3000}:3000"
+    volumes:
+      - mastodon_data:/data
+    restart: unless-stopped
+
+volumes:
+  mastodon_data:
+    name: mastodon_data

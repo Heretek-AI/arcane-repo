@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  clamav:
+    image: docker.io/clamav/clamav:latest
+    container_name: clamav
+    hostname: clamav
+    ports:
+      - "${CLAMAV_PORT:-8080}:8080"
+    volumes:
+      - clamav_data:/data
+    restart: unless-stopped
+
+volumes:
+  clamav_data:
+    name: clamav_data

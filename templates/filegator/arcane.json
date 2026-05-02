@@ -1,0 +1,12 @@
+{
+  "id": "filegator",
+  "name": "Filegator",
+  "description": "Self-hosted Filegator deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "storage",
+    "portainer"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  koillection:
+    image: docker.io/koillection/koillection:latest
+    container_name: koillection
+    hostname: koillection
+    ports:
+      - "${KOILLECTION_PORT:-8080}:8080"
+    volumes:
+      - koillection_data:/data
+    restart: unless-stopped
+
+volumes:
+  koillection_data:
+    name: koillection_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: docker.io/library/nginx:latest
+    container_name: nginx
+    hostname: nginx
+    ports:
+      - "${NGINX_PORT:-8080}:8080"
+    volumes:
+      - nginx_data:/data
+    restart: unless-stopped
+
+volumes:
+  nginx_data:
+    name: nginx_data

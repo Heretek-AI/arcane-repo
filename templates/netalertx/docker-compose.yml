@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  netalertx:
+    image: ghcr.io/netalertx/netalertx:latest
+    container_name: netalertx
+    hostname: netalertx
+    ports:
+      - "${NETALERTX_PORT:-8080}:8080"
+    volumes:
+      - netalertx_data:/data
+    restart: unless-stopped
+
+volumes:
+  netalertx_data:
+    name: netalertx_data

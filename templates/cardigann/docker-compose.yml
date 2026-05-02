@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cardigann:
+    image: docker.io/cardigann/cardigann:latest
+    container_name: cardigann
+    hostname: cardigann
+    ports:
+      - "${CARDIGANN_PORT:-8080}:8080"
+    volumes:
+      - cardigann_data:/data
+    restart: unless-stopped
+
+volumes:
+  cardigann_data:
+    name: cardigann_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  docmost:
+    image: docker.io/docmost/docmost:latest
+    container_name: docmost
+    hostname: docmost
+    ports:
+      - "${DOCMOST_PORT:-8080}:8080"
+    volumes:
+      - docmost_data:/data
+    restart: unless-stopped
+
+volumes:
+  docmost_data:
+    name: docmost_data

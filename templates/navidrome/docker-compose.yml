@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  navidrome:
+    image: ghcr.io/navidrome/navidrome:latest
+    container_name: navidrome
+    hostname: navidrome
+    ports:
+      - "${NAVIDROME_PORT:-4533}:4533"
+    volumes:
+      - navidrome_data:/data
+    restart: unless-stopped
+
+volumes:
+  navidrome_data:
+    name: navidrome_data

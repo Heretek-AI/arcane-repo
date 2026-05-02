@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  monica:
+    image: docker.io/library/monica:latest
+    container_name: monica
+    hostname: monica
+    ports:
+      - "${MONICA_PORT:-8080}:8080"
+    volumes:
+      - monica_data:/data
+    restart: unless-stopped
+
+volumes:
+  monica_data:
+    name: monica_data

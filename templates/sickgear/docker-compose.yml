@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sickgear:
+    image: docker.io/sickgear/sickgear:latest
+    container_name: sickgear
+    hostname: sickgear
+    ports:
+      - "${SICKGEAR_PORT:-8080}:8080"
+    volumes:
+      - sickgear_data:/data
+    restart: unless-stopped
+
+volumes:
+  sickgear_data:
+    name: sickgear_data

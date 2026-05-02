@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  passbolt:
+    image: docker.io/passbolt/passbolt:latest
+    container_name: passbolt
+    hostname: passbolt
+    ports:
+      - "${PASSBOLT_PORT:-8080}:8080"
+    volumes:
+      - passbolt_data:/data
+    restart: unless-stopped
+
+volumes:
+  passbolt_data:
+    name: passbolt_data

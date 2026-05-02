@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sickchill:
+    image: ghcr.io/sickchill/sickchill:latest
+    container_name: sickchill
+    hostname: sickchill
+    ports:
+      - "${SICKCHILL_PORT:-8080}:8080"
+    volumes:
+      - sickchill_data:/data
+    restart: unless-stopped
+
+volumes:
+  sickchill_data:
+    name: sickchill_data

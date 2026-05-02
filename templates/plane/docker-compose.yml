@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plane:
+    image: docker.io/plane/plane:latest
+    container_name: plane
+    hostname: plane
+    ports:
+      - "${PLANE_PORT:-8000}:8000"
+    volumes:
+      - plane_data:/data
+    restart: unless-stopped
+
+volumes:
+  plane_data:
+    name: plane_data

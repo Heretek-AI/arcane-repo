@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  appwrite:
+    image: docker.io/appwrite/appwrite:latest
+    container_name: appwrite
+    hostname: appwrite
+    ports:
+      - "${APPWRITE_PORT:-8080}:8080"
+    volumes:
+      - appwrite_data:/data
+    restart: unless-stopped
+
+volumes:
+  appwrite_data:
+    name: appwrite_data

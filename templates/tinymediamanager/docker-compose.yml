@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tinymediamanager:
+    image: docker.io/tinymediamanager/tinymediamanager:latest
+    container_name: tinymediamanager
+    hostname: tinymediamanager
+    ports:
+      - "${TINYMEDIAMANAGER_PORT:-8080}:8080"
+    volumes:
+      - tinymediamanager_data:/data
+    restart: unless-stopped
+
+volumes:
+  tinymediamanager_data:
+    name: tinymediamanager_data

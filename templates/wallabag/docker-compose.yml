@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wallabag:
+    image: docker.io/wallabag/wallabag:latest
+    container_name: wallabag
+    hostname: wallabag
+    ports:
+      - "${WALLABAG_PORT:-80}:80"
+    volumes:
+      - wallabag_data:/data
+    restart: unless-stopped
+
+volumes:
+  wallabag_data:
+    name: wallabag_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tautulli:
+    image: ghcr.io/tautulli/tautulli:latest
+    container_name: tautulli
+    hostname: tautulli
+    ports:
+      - "${TAUTULLI_PORT:-8080}:8080"
+    volumes:
+      - tautulli_data:/data
+    restart: unless-stopped
+
+volumes:
+  tautulli_data:
+    name: tautulli_data

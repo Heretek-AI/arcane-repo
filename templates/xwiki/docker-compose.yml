@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  xwiki:
+    image: docker.io/library/xwiki:latest
+    container_name: xwiki
+    hostname: xwiki
+    ports:
+      - "${XWIKI_PORT:-80}:80"
+    volumes:
+      - xwiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  xwiki_data:
+    name: xwiki_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vikunja:
+    image: docker.io/vikunja/vikunja:latest
+    container_name: vikunja
+    hostname: vikunja
+    ports:
+      - "${VIKUNJA_PORT:-8080}:8080"
+    volumes:
+      - vikunja_data:/data
+    restart: unless-stopped
+
+volumes:
+  vikunja_data:
+    name: vikunja_data

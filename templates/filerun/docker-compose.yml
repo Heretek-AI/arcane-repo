@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  filerun:
+    image: docker.io/filerun/filerun:latest
+    container_name: filerun
+    hostname: filerun
+    ports:
+      - "${FILERUN_PORT:-8080}:8080"
+    volumes:
+      - filerun_data:/data
+    restart: unless-stopped
+
+volumes:
+  filerun_data:
+    name: filerun_data

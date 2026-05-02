@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  owncloud:
+    image: docker.io/library/owncloud:latest
+    container_name: owncloud
+    hostname: owncloud
+    ports:
+      - "${OWNCLOUD_PORT:-8080}:8080"
+    volumes:
+      - owncloud_data:/data
+    restart: unless-stopped
+
+volumes:
+  owncloud_data:
+    name: owncloud_data

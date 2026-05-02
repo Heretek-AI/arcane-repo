@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  piwigo:
+    image: ghcr.io/piwigo/piwigo:latest
+    container_name: piwigo
+    hostname: piwigo
+    ports:
+      - "${PIWIGO_PORT:-8080}:8080"
+    volumes:
+      - piwigo_data:/data
+    restart: unless-stopped
+
+volumes:
+  piwigo_data:
+    name: piwigo_data

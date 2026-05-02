@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  iobroker:
+    image: docker.io/iobroker/iobroker:latest
+    container_name: iobroker
+    hostname: iobroker
+    ports:
+      - "${IOBROKER_PORT:-8080}:8080"
+    volumes:
+      - iobroker_data:/data
+    restart: unless-stopped
+
+volumes:
+  iobroker_data:
+    name: iobroker_data

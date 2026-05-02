@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: ghcr.io/jellyfin/jellyfin:latest
+    container_name: jellyfin
+    hostname: jellyfin
+    ports:
+      - "${JELLYFIN_PORT:-8096}:8096"
+    volumes:
+      - jellyfin_data:/data
+    restart: unless-stopped
+
+volumes:
+  jellyfin_data:
+    name: jellyfin_data

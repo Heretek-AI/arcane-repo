@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  domoticz:
+    image: docker.io/domoticz/domoticz:latest
+    container_name: domoticz
+    hostname: domoticz
+    ports:
+      - "${DOMOTICZ_PORT:-8080}:8080"
+    volumes:
+      - domoticz_data:/data
+    restart: unless-stopped
+
+volumes:
+  domoticz_data:
+    name: domoticz_data

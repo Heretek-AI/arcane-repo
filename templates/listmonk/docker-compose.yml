@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  listmonk:
+    image: docker.io/listmonk/listmonk:latest
+    container_name: listmonk
+    hostname: listmonk
+    ports:
+      - "${LISTMONK_PORT:-8080}:8080"
+    volumes:
+      - listmonk_data:/data
+    restart: unless-stopped
+
+volumes:
+  listmonk_data:
+    name: listmonk_data

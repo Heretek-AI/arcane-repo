@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  solidtime:
+    image: docker.io/solidtime/solidtime:latest
+    container_name: solidtime
+    hostname: solidtime
+    ports:
+      - "${SOLIDTIME_PORT:-8080}:8080"
+    volumes:
+      - solidtime_data:/data
+    restart: unless-stopped
+
+volumes:
+  solidtime_data:
+    name: solidtime_data

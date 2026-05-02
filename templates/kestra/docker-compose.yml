@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kestra:
+    image: docker.io/kestra/kestra:latest
+    container_name: kestra
+    hostname: kestra
+    ports:
+      - "${KESTRA_PORT:-8080}:8080"
+    volumes:
+      - kestra_data:/data
+    restart: unless-stopped
+
+volumes:
+  kestra_data:
+    name: kestra_data

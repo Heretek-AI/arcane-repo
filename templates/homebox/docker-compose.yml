@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  homebox:
+    image: ghcr.io/sysadminsmedia/homebox:la
+    container_name: homebox
+    hostname: homebox
+    ports:
+      - "${HOMEBOX_PORT:-8080}:8080"
+    volumes:
+      - homebox_data:/data
+    restart: unless-stopped
+
+volumes:
+  homebox_data:
+    name: homebox_data

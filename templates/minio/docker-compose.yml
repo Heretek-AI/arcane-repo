@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  minio:
+    image: docker.io/minio/minio:latest
+    container_name: minio
+    hostname: minio
+    ports:
+      - "${MINIO_PORT:-9000}:9000"
+    volumes:
+      - minio_data:/data
+    restart: unless-stopped
+
+volumes:
+  minio_data:
+    name: minio_data

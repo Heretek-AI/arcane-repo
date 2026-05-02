@@ -316,6 +316,8 @@ def main():
                         help='Path to fact-cards.json (default: fact-cards.json)')
     parser.add_argument('--output', default=DEFAULT_REVIEW_QUEUE,
                         help='Path to review-queue.json output (default: review-queue.json)')
+    parser.add_argument('--review-queue', dest='output',
+                        help='Alias for --output (review-queue.json path)')
     parser.add_argument('--dry-run', action='store_true',
                         help='Simulate without writing files')
     args = parser.parse_args()
@@ -357,10 +359,26 @@ def main():
         review_entries.append(build_review_entry(candidate, source_name))
     
     if not args.dry_run:
+        # Merge with existing entries: load existing, filter out duplicates by (candidate, source), append new
+        existing_entries = []
+        if os.path.exists(review_queue_path):
+            try:
+                with open(review_queue_path, 'r', encoding='utf-8') as f:
+                    existing_entries = json.load(f)
+            except (json.JSONDecodeError, IOError):
+                existing_entries = []
+        
+        # Deduplicate: remove existing entries for the same (candidate, source) to allow re-runs
+        existing_keys = {(e['candidate'], e.get('source', '')) for e in existing_entries}
+        new_unique = [e for e in review_entries if (e['candidate'], e.get('source', '')) not in existing_keys]
+        merged = existing_entries + new_unique
+        
         with open(review_queue_path, 'w', encoding='utf-8') as f:
-            json.dump(review_entries, f, indent=2)
+            json.dump(merged, f, indent=2)
             f.write('\n')
-        print("Wrote %d entries to %s" % (len(review_entries), os.path.basename(review_queue_path)))
+        print("Wrote %d new entries to %s (total: %d, %d deduplicated)" % (
+            len(new_unique), os.path.basename(review_queue_path), len(merged),
+            len(review_entries) - len(new_unique)))
     else:
         print("[DRY-RUN] Would write %d entries to %s" % (len(review_entries), os.path.basename(review_queue_path)))
     

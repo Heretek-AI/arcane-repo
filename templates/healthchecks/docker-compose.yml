@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  healthchecks:
+    image: docker.io/healthchecks/healthchecks:latest
+    container_name: healthchecks
+    hostname: healthchecks
+    ports:
+      - "${HEALTHCHECKS_PORT:-8080}:8080"
+    volumes:
+      - healthchecks_data:/data
+    restart: unless-stopped
+
+volumes:
+  healthchecks_data:
+    name: healthchecks_data

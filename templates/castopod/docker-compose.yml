@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  castopod:
+    image: docker.io/castopod/castopod:latest
+    container_name: castopod
+    hostname: castopod
+    ports:
+      - "${CASTOPOD_PORT:-8080}:8080"
+    volumes:
+      - castopod_data:/data
+    restart: unless-stopped
+
+volumes:
+  castopod_data:
+    name: castopod_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  influxdb:
+    image: docker.io/influxdb/influxdb:latest
+    container_name: influxdb
+    hostname: influxdb
+    ports:
+      - "${INFLUXDB_PORT:-8086}:8086"
+    volumes:
+      - influxdb_data:/data
+    restart: unless-stopped
+
+volumes:
+  influxdb_data:
+    name: influxdb_data

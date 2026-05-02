@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  filebrowser:
+    image: docker.io/filebrowser/filebrowser:latest
+    container_name: filebrowser
+    hostname: filebrowser
+    ports:
+      - "${FILEBROWSER_PORT:-8080}:8080"
+    volumes:
+      - filebrowser_data:/data
+    restart: unless-stopped
+
+volumes:
+  filebrowser_data:
+    name: filebrowser_data

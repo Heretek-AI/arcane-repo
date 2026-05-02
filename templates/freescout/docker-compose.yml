@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  freescout:
+    image: docker.io/freescout/freescout:latest
+    container_name: freescout
+    hostname: freescout
+    ports:
+      - "${FREESCOUT_PORT:-8080}:8080"
+    volumes:
+      - freescout_data:/data
+    restart: unless-stopped
+
+volumes:
+  freescout_data:
+    name: freescout_data

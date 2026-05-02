@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  node-red:
+    image: ghcr.io/node-red/node-red:latest
+    container_name: node-red
+    hostname: node-red
+    ports:
+      - "${NODE_RED_PORT:-8080}:8080"
+    volumes:
+      - node-red_data:/data
+    restart: unless-stopped
+
+volumes:
+  node-red_data:
+    name: node-red_data

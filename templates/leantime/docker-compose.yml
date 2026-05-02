@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  leantime:
+    image: docker.io/leantime/leantime:latest
+    container_name: leantime
+    hostname: leantime
+    ports:
+      - "${LEANTIME_PORT:-8080}:8080"
+    volumes:
+      - leantime_data:/data
+    restart: unless-stopped
+
+volumes:
+  leantime_data:
+    name: leantime_data

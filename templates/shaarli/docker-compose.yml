@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shaarli:
+    image: ghcr.io/shaarli/shaarli:latest
+    container_name: shaarli
+    hostname: shaarli
+    ports:
+      - "${SHAARLI_PORT:-8080}:8080"
+    volumes:
+      - shaarli_data:/data
+    restart: unless-stopped
+
+volumes:
+  shaarli_data:
+    name: shaarli_data

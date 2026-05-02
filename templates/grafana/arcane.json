@@ -1,0 +1,12 @@
+{
+  "id": "grafana",
+  "name": "Grafana",
+  "description": "Self-hosted Grafana deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "monitoring",
+    "portainer"
+  ]
+}

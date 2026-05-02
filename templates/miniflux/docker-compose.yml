@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  miniflux:
+    image: ghcr.io/miniflux/miniflux:latest
+    container_name: miniflux
+    hostname: miniflux
+    ports:
+      - "${MINIFLUX_PORT:-8080}:8080"
+    volumes:
+      - miniflux_data:/data
+    restart: unless-stopped
+
+volumes:
+  miniflux_data:
+    name: miniflux_data

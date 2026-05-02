@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  caddy:
+    image: docker.io/caddy/caddy:latest
+    container_name: caddy
+    hostname: caddy
+    ports:
+      - "${CADDY_PORT:-8080}:8080"
+    volumes:
+      - caddy_data:/data
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+    name: caddy_data

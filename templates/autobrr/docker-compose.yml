@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  autobrr:
+    image: ghcr.io/autobrr/autobrr:latest
+    container_name: autobrr
+    hostname: autobrr
+    ports:
+      - "${AUTOBRR_PORT:-8080}:8080"
+    volumes:
+      - autobrr_data:/data
+    restart: unless-stopped
+
+volumes:
+  autobrr_data:
+    name: autobrr_data

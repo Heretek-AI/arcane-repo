@@ -7,6 +7,8 @@ on:
       - 'templates/**'
       - 'schema.json'
       - 'scripts/build-registry.js'
+      - 'scripts/generate-docs.js'
+      - 'docs/**'
 
 permissions:
   contents: read
@@ -30,13 +32,22 @@ jobs:
       - name: Build registry.json
         run: node scripts/build-registry.js
 
+      - name: Install VitePress dependencies
+        run: cd docs && npm ci
+
+      - name: Generate docs from registry
+        run: cd docs && npm run docs:generate
+
+      - name: Build VitePress site
+        run: cd docs && npm run docs:build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: docs/.vitepress/dist
 
   deploy:
     needs: build

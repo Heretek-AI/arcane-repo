@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mytinytodo:
+    image: docker.io/beiselmn/mytinytodo:latest
+    container_name: mytinytodo
+    hostname: mytinytodo
+    ports:
+      - "${MYTINYTODO_PORT:-8080}:8080"
+    volumes:
+      - mytinytodo_data:/data
+    restart: unless-stopped
+
+volumes:
+  mytinytodo_data:
+    name: mytinytodo_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  musicbrainz:
+    image: ghcr.io/linuxserver/musicbrainz:latest
+    container_name: musicbrainz
+    hostname: musicbrainz
+    ports:
+      - "${MUSICBRAINZ_PORT:-8080}:8080"
+    volumes:
+      - musicbrainz_data:/data
+    restart: unless-stopped
+
+volumes:
+  musicbrainz_data:
+    name: musicbrainz_data

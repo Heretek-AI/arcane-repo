@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  filestash:
+    image: docker.io/machines/filestash:latest
+    container_name: filestash
+    hostname: filestash
+    ports:
+      - "${FILESTASH_PORT:-8080}:8080"
+    volumes:
+      - filestash_data:/data
+    restart: unless-stopped
+
+volumes:
+  filestash_data:
+    name: filestash_data

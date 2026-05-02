@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cryptofolio:
+    image: docker.io/xtrendence/cryptofolio:latest
+    container_name: cryptofolio
+    hostname: cryptofolio
+    ports:
+      - "${CRYPTOFOLIO_PORT:-8080}:8080"
+    volumes:
+      - cryptofolio_data:/data
+    restart: unless-stopped
+
+volumes:
+  cryptofolio_data:
+    name: cryptofolio_data

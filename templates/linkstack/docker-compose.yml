@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  linkstack:
+    image: ghcr.io/linkstackorg/linkstack:latest
+    container_name: linkstack
+    hostname: linkstack
+    ports:
+      - "${LINKSTACK_PORT:-8080}:8080"
+    volumes:
+      - linkstack_data:/data
+    restart: unless-stopped
+
+volumes:
+  linkstack_data:
+    name: linkstack_data

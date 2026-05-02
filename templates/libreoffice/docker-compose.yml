@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  libreoffice:
+    image: docker.io/instructure/libreoffice:latest
+    container_name: libreoffice
+    hostname: libreoffice
+    ports:
+      - "${LIBREOFFICE_PORT:-8080}:8080"
+    volumes:
+      - libreoffice_data:/data
+    restart: unless-stopped
+
+volumes:
+  libreoffice_data:
+    name: libreoffice_data

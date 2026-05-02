@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  guacamole:
+    image: docker.io/guacamole/guacamole:latest
+    container_name: guacamole
+    hostname: guacamole
+    ports:
+      - "${GUACAMOLE_PORT:-8080}:8080"
+    volumes:
+      - guacamole_data:/data
+    restart: unless-stopped
+
+volumes:
+  guacamole_data:
+    name: guacamole_data

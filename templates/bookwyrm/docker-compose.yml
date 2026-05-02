@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bookwyrm:
+    image: ghcr.io/contrun/bookwyrm:latest
+    container_name: bookwyrm
+    hostname: bookwyrm
+    ports:
+      - "${BOOKWYRM_PORT:-8080}:8080"
+    volumes:
+      - bookwyrm_data:/data
+    restart: unless-stopped
+
+volumes:
+  bookwyrm_data:
+    name: bookwyrm_data

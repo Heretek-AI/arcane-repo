@@ -1,0 +1,11 @@
+{
+  "id": "sabnzbd",
+  "name": "Sabnzbd",
+  "description": "Self-hosted Sabnzbd deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

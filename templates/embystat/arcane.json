@@ -1,0 +1,11 @@
+{
+  "id": "embystat",
+  "name": "Embystat",
+  "description": "Self-hosted Embystat deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

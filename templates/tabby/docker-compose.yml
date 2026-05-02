@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tabby:
+    image: ghcr.io/tabbyml/tabby:latest
+    container_name: tabby
+    hostname: tabby
+    ports:
+      - "${TABBY_PORT:-8080}:8080"
+    volumes:
+      - tabby_data:/data
+    restart: unless-stopped
+
+volumes:
+  tabby_data:
+    name: tabby_data

@@ -1,0 +1,11 @@
+{
+  "id": "signaturepdf",
+  "name": "Signaturepdf",
+  "description": "Self-hosted Signaturepdf deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

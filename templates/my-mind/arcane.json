@@ -1,0 +1,11 @@
+{
+  "id": "my-mind",
+  "name": "My Mind",
+  "description": "Self-hosted My Mind deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

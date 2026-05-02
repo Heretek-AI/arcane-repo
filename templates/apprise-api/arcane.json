@@ -1,0 +1,11 @@
+{
+  "id": "apprise-api",
+  "name": "Apprise Api",
+  "description": "Self-hosted Apprise Api deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  actual:
+    image: docker.io/phoenixashes/actual:latest
+    container_name: actual
+    hostname: actual
+    ports:
+      - "${ACTUAL_PORT:-5006}:5006"
+    volumes:
+      - actual_data:/data
+    restart: unless-stopped
+
+volumes:
+  actual_data:
+    name: actual_data

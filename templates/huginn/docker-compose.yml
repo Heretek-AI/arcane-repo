@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  huginn:
+    image: ghcr.io/huginn/huginn:latest
+    container_name: huginn
+    hostname: huginn
+    ports:
+      - "${HUGINN_PORT:-8080}:8080"
+    volumes:
+      - huginn_data:/data
+    restart: unless-stopped
+
+volumes:
+  huginn_data:
+    name: huginn_data

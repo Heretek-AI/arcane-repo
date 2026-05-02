@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  airtrail:
+    image: docker.io/johly/airtrail:latest
+    container_name: airtrail
+    hostname: airtrail
+    ports:
+      - "${AIRTRAIL_PORT:-8080}:8080"
+    volumes:
+      - airtrail_data:/data
+    restart: unless-stopped
+
+volumes:
+  airtrail_data:
+    name: airtrail_data

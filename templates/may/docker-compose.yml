@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  may:
+    image: docker.io/mickeywaley/may:latest
+    container_name: may
+    hostname: may
+    ports:
+      - "${MAY_PORT:-8080}:8080"
+    volumes:
+      - may_data:/data
+    restart: unless-stopped
+
+volumes:
+  may_data:
+    name: may_data

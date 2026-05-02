@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gamja:
+    image: docker.io/mariamjamal32/gamja:latest
+    container_name: gamja
+    hostname: gamja
+    ports:
+      - "${GAMJA_PORT:-8080}:8080"
+    volumes:
+      - gamja_data:/data
+    restart: unless-stopped
+
+volumes:
+  gamja_data:
+    name: gamja_data

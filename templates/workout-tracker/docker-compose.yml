@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  workout-tracker:
+    image: docker.io/ninjatec/workout-tracker:latest
+    container_name: workout-tracker
+    hostname: workout-tracker
+    ports:
+      - "${WORKOUT_TRACKER_PORT:-8080}:8080"
+    volumes:
+      - workout-tracker_data:/data
+    restart: unless-stopped
+
+volumes:
+  workout-tracker_data:
+    name: workout-tracker_data

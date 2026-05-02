@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  keila:
+    image: docker.io/pentacent/keila:latest
+    container_name: keila
+    hostname: keila
+    ports:
+      - "${KEILA_PORT:-8080}:8080"
+    volumes:
+      - keila_data:/data
+    restart: unless-stopped
+
+volumes:
+  keila_data:
+    name: keila_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flood:
+    image: ghcr.io/jesec/flood:latest
+    container_name: flood
+    hostname: flood
+    ports:
+      - "${FLOOD_PORT:-8080}:8080"
+    volumes:
+      - flood_data:/data
+    restart: unless-stopped
+
+volumes:
+  flood_data:
+    name: flood_data

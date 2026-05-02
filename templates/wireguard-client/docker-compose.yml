@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wireguard-client:
+    image: docker.io/bigmoby/wireguard_client:latest
+    container_name: wireguard-client
+    hostname: wireguard-client
+    ports:
+      - "${WIREGUARD_CLIENT_PORT:-8080}:8080"
+    volumes:
+      - wireguard-client_data:/data
+    restart: unless-stopped
+
+volumes:
+  wireguard-client_data:
+    name: wireguard-client_data

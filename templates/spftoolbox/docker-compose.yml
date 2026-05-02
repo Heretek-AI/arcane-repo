@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  spftoolbox:
+    image: docker.io/sumarsono/spftoolbox:latest
+    container_name: spftoolbox
+    hostname: spftoolbox
+    ports:
+      - "${SPFTOOLBOX_PORT:-8080}:8080"
+    volumes:
+      - spftoolbox_data:/data
+    restart: unless-stopped
+
+volumes:
+  spftoolbox_data:
+    name: spftoolbox_data

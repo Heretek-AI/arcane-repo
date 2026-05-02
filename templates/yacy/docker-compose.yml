@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yacy:
+    image: docker.io/luccioman/yacy:latest
+    container_name: yacy
+    hostname: yacy
+    ports:
+      - "${YACY_PORT:-8080}:8080"
+    volumes:
+      - yacy_data:/data
+    restart: unless-stopped
+
+volumes:
+  yacy_data:
+    name: yacy_data

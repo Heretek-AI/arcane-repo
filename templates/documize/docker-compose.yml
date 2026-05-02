@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  documize:
+    image: docker.io/targodan/documize:latest
+    container_name: documize
+    hostname: documize
+    ports:
+      - "${DOCUMIZE_PORT:-8080}:8080"
+    volumes:
+      - documize_data:/data
+    restart: unless-stopped
+
+volumes:
+  documize_data:
+    name: documize_data

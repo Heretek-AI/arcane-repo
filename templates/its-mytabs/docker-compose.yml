@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  its-mytabs:
+    image: ghcr.io/louislam/its-mytabs:latest
+    container_name: its-mytabs
+    hostname: its-mytabs
+    ports:
+      - "${ITS_MYTABS_PORT:-8080}:8080"
+    volumes:
+      - its-mytabs_data:/data
+    restart: unless-stopped
+
+volumes:
+  its-mytabs_data:
+    name: its-mytabs_data

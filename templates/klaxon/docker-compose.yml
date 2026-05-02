@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  klaxon:
+    image: docker.io/mediadepot/klaxon:latest
+    container_name: klaxon
+    hostname: klaxon
+    ports:
+      - "${KLAXON_PORT:-8080}:8080"
+    volumes:
+      - klaxon_data:/data
+    restart: unless-stopped
+
+volumes:
+  klaxon_data:
+    name: klaxon_data

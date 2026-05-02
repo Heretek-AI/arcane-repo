@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  murmur:
+    image: docker.io/mattikus/murmur:latest
+    container_name: murmur
+    hostname: murmur
+    ports:
+      - "${MURMUR_PORT:-8080}:8080"
+    volumes:
+      - murmur_data:/data
+    restart: unless-stopped
+
+volumes:
+  murmur_data:
+    name: murmur_data

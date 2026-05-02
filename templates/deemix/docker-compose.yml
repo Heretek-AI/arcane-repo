@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  deemix:
+    image: docker.io/finniedj/deemix:latest
+    container_name: deemix
+    hostname: deemix
+    ports:
+      - "${DEEMIX_PORT:-8080}:8080"
+    volumes:
+      - deemix_data:/data
+    restart: unless-stopped
+
+volumes:
+  deemix_data:
+    name: deemix_data

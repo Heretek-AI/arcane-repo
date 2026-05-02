@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plausible:
+    image: docker.io/vrsoftbr/plausible:latest
+    container_name: plausible
+    hostname: plausible
+    ports:
+      - "${PLAUSIBLE_PORT:-8080}:8080"
+    volumes:
+      - plausible_data:/data
+    restart: unless-stopped
+
+volumes:
+  plausible_data:
+    name: plausible_data

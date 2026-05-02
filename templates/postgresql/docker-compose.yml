@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgresql:
+    image: docker.io/bitnami/postgresql:latest
+    container_name: postgresql
+    hostname: postgresql
+    ports:
+      - "${POSTGRESQL_PORT:-8080}:8080"
+    volumes:
+      - postgresql_data:/data
+    restart: unless-stopped
+
+volumes:
+  postgresql_data:
+    name: postgresql_data

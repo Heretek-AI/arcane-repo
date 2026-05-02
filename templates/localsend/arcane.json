@@ -1,0 +1,11 @@
+{
+  "id": "localsend",
+  "name": "Localsend",
+  "description": "Self-hosted Localsend deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

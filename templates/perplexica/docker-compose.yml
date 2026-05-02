@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  perplexica:
+    image: docker.io/itzcrazykns1337/perplexica:latest
+    container_name: perplexica
+    hostname: perplexica
+    ports:
+      - "${PERPLEXICA_PORT:-32400}:32400"
+    volumes:
+      - perplexica_data:/data
+    restart: unless-stopped
+
+volumes:
+  perplexica_data:
+    name: perplexica_data

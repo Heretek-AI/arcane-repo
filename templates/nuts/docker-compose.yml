@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nuts:
+    image: docker.io/gitbook/nuts:latest
+    container_name: nuts
+    hostname: nuts
+    ports:
+      - "${NUTS_PORT:-8080}:8080"
+    volumes:
+      - nuts_data:/data
+    restart: unless-stopped
+
+volumes:
+  nuts_data:
+    name: nuts_data

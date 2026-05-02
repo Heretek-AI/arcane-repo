@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shipshipship:
+    image: docker.io/nelkinsky/shipshipship:latest
+    container_name: shipshipship
+    hostname: shipshipship
+    ports:
+      - "${SHIPSHIPSHIP_PORT:-8080}:8080"
+    volumes:
+      - shipshipship_data:/data
+    restart: unless-stopped
+
+volumes:
+  shipshipship_data:
+    name: shipshipship_data

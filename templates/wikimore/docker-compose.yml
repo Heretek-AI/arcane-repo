@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wikimore:
+    image: docker.io/tlan16/wikimore:latest
+    container_name: wikimore
+    hostname: wikimore
+    ports:
+      - "${WIKIMORE_PORT:-80}:80"
+    volumes:
+      - wikimore_data:/data
+    restart: unless-stopped
+
+volumes:
+  wikimore_data:
+    name: wikimore_data

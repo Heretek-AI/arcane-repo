@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  concrete5:
+    image: docker.io/opensaas/concrete5:latest
+    container_name: concrete5
+    hostname: concrete5
+    ports:
+      - "${CONCRETE5_PORT:-8080}:8080"
+    volumes:
+      - concrete5_data:/data
+    restart: unless-stopped
+
+volumes:
+  concrete5_data:
+    name: concrete5_data

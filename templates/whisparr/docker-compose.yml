@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  whisparr:
+    image: ghcr.io/thespad/whisparr:latest
+    container_name: whisparr
+    hostname: whisparr
+    ports:
+      - "${WHISPARR_PORT:-8080}:8080"
+    volumes:
+      - whisparr_data:/data
+    restart: unless-stopped
+
+volumes:
+  whisparr_data:
+    name: whisparr_data

@@ -1,0 +1,11 @@
+{
+  "id": "vpnclient",
+  "name": "Vpnclient",
+  "description": "Self-hosted Vpnclient deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

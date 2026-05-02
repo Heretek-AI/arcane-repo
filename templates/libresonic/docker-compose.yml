@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  libresonic:
+    image: docker.io/linuxserver/libresonic:latest
+    container_name: libresonic
+    hostname: libresonic
+    ports:
+      - "${LIBRESONIC_PORT:-8080}:8080"
+    volumes:
+      - libresonic_data:/data
+    restart: unless-stopped
+
+volumes:
+  libresonic_data:
+    name: libresonic_data

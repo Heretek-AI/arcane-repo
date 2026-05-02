@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jump:
+    image: docker.io/daledavies/jump:latest
+    container_name: jump
+    hostname: jump
+    ports:
+      - "${JUMP_PORT:-8080}:8080"
+    volumes:
+      - jump_data:/data
+    restart: unless-stopped
+
+volumes:
+  jump_data:
+    name: jump_data

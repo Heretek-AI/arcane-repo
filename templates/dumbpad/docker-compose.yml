@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dumbpad:
+    image: docker.io/dumbwareio/dumbpad:latest
+    container_name: dumbpad
+    hostname: dumbpad
+    ports:
+      - "${DUMBPAD_PORT:-8080}:8080"
+    volumes:
+      - dumbpad_data:/data
+    restart: unless-stopped
+
+volumes:
+  dumbpad_data:
+    name: dumbpad_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  memex:
+    image: docker.io/shibaobun/memex:latest
+    container_name: memex
+    hostname: memex
+    ports:
+      - "${MEMEX_PORT:-8080}:8080"
+    volumes:
+      - memex_data:/data
+    restart: unless-stopped
+
+volumes:
+  memex_data:
+    name: memex_data

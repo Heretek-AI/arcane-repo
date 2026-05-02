@@ -1,0 +1,12 @@
+{
+  "id": "fluffychat",
+  "name": "Fluffychat",
+  "description": "Self-hosted Fluffychat deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "communication",
+    "yunohost"
+  ]
+}

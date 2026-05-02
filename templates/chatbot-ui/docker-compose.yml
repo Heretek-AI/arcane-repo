@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chatbot-ui:
+    image: ghcr.io/nmfretz/chatbot-ui:latest
+    container_name: chatbot-ui
+    hostname: chatbot-ui
+    ports:
+      - "${CHATBOT_UI_PORT:-3000}:3000"
+    volumes:
+      - chatbot-ui_data:/data
+    restart: unless-stopped
+
+volumes:
+  chatbot-ui_data:
+    name: chatbot-ui_data

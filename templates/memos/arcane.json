@@ -1,0 +1,11 @@
+{
+  "id": "memos",
+  "name": "Memos",
+  "description": "Self-hosted Memos deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

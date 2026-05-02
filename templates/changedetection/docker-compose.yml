@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  changedetection:
+    image: docker.io/thib4ut/changedetection:latest
+    container_name: changedetection
+    hostname: changedetection
+    ports:
+      - "${CHANGEDETECTION_PORT:-5000}:5000"
+    volumes:
+      - changedetection_data:/data
+    restart: unless-stopped
+
+volumes:
+  changedetection_data:
+    name: changedetection_data

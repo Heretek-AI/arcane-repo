@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  borgserver:
+    image: ghcr.io/nold360/borgserver:latest
+    container_name: borgserver
+    hostname: borgserver
+    ports:
+      - "${BORGSERVER_PORT:-8080}:8080"
+    volumes:
+      - borgserver_data:/data
+    restart: unless-stopped
+
+volumes:
+  borgserver_data:
+    name: borgserver_data

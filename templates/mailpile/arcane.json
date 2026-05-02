@@ -1,0 +1,13 @@
+{
+  "id": "mailpile",
+  "name": "Mailpile",
+  "description": "Self-hosted Mailpile deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "communication",
+    "portainer"
+  ]
+}

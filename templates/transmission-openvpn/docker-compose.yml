@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  transmission-openvpn:
+    image: docker.io/haugene/transmission-openvpn:latest
+    container_name: transmission-openvpn
+    hostname: transmission-openvpn
+    ports:
+      - "${TRANSMISSION_OPENVPN_PORT:-9091}:9091"
+    volumes:
+      - transmission-openvpn_data:/data
+    restart: unless-stopped
+
+volumes:
+  transmission-openvpn_data:
+    name: transmission-openvpn_data

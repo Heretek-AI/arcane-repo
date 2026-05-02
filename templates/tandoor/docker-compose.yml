@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tandoor:
+    image: docker.io/nkay08/tandoor:latest
+    container_name: tandoor
+    hostname: tandoor
+    ports:
+      - "${TANDOOR_PORT:-8080}:8080"
+    volumes:
+      - tandoor_data:/data
+    restart: unless-stopped
+
+volumes:
+  tandoor_data:
+    name: tandoor_data

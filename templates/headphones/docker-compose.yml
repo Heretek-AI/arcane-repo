@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  headphones:
+    image: ghcr.io/linuxserver/headphones:latest
+    container_name: headphones
+    hostname: headphones
+    ports:
+      - "${HEADPHONES_PORT:-8080}:8080"
+    volumes:
+      - headphones_data:/data
+    restart: unless-stopped
+
+volumes:
+  headphones_data:
+    name: headphones_data

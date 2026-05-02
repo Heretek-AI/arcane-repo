@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  localsend:
+    image: docker.io/jocams/localsend:latest
+    container_name: localsend
+    hostname: localsend
+    ports:
+      - "${LOCALSEND_PORT:-8080}:8080"
+    volumes:
+      - localsend_data:/data
+    restart: unless-stopped
+
+volumes:
+  localsend_data:
+    name: localsend_data

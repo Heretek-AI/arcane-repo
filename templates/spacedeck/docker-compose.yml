@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  spacedeck:
+    image: docker.io/gigaspaces/spacedeck:latest
+    container_name: spacedeck
+    hostname: spacedeck
+    ports:
+      - "${SPACEDECK_PORT:-8080}:8080"
+    volumes:
+      - spacedeck_data:/data
+    restart: unless-stopped
+
+volumes:
+  spacedeck_data:
+    name: spacedeck_data

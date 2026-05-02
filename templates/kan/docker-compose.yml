@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kan:
+    image: docker.io/muhamandal33/kan:latest
+    container_name: kan
+    hostname: kan
+    ports:
+      - "${KAN_PORT:-8080}:8080"
+    volumes:
+      - kan_data:/data
+    restart: unless-stopped
+
+volumes:
+  kan_data:
+    name: kan_data

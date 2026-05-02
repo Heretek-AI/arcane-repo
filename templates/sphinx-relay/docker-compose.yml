@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sphinx-relay:
+    image: docker.io/sphinxlightning/sphinx-relay:latest
+    container_name: sphinx-relay
+    hostname: sphinx-relay
+    ports:
+      - "${SPHINX_RELAY_PORT:-8080}:8080"
+    volumes:
+      - sphinx-relay_data:/data
+    restart: unless-stopped
+
+volumes:
+  sphinx-relay_data:
+    name: sphinx-relay_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  checkcle:
+    image: docker.io/operacle/checkcle:latest
+    container_name: checkcle
+    hostname: checkcle
+    ports:
+      - "${CHECKCLE_PORT:-8080}:8080"
+    volumes:
+      - checkcle_data:/data
+    restart: unless-stopped
+
+volumes:
+  checkcle_data:
+    name: checkcle_data

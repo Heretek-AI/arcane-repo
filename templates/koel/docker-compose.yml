@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  koel:
+    image: docker.io/hyzual/koel:latest
+    container_name: koel
+    hostname: koel
+    ports:
+      - "${KOEL_PORT:-8080}:8080"
+    volumes:
+      - koel_data:/data
+    restart: unless-stopped
+
+volumes:
+  koel_data:
+    name: koel_data

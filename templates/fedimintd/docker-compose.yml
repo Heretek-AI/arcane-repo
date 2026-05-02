@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fedimintd:
+    image: docker.io/fedimint/fedimintd:latest
+    container_name: fedimintd
+    hostname: fedimintd
+    ports:
+      - "${FEDIMINTD_PORT:-8080}:8080"
+    volumes:
+      - fedimintd_data:/data
+    restart: unless-stopped
+
+volumes:
+  fedimintd_data:
+    name: fedimintd_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  appflowy:
+    image: docker.io/pablocastellano/appflowy:latest
+    container_name: appflowy
+    hostname: appflowy
+    ports:
+      - "${APPFLOWY_PORT:-8080}:8080"
+    volumes:
+      - appflowy_data:/data
+    restart: unless-stopped
+
+volumes:
+  appflowy_data:
+    name: appflowy_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mumbleserver:
+    image: docker.io/gymnae/mumbleserver:latest
+    container_name: mumbleserver
+    hostname: mumbleserver
+    ports:
+      - "${MUMBLESERVER_PORT:-8080}:8080"
+    volumes:
+      - mumbleserver_data:/data
+    restart: unless-stopped
+
+volumes:
+  mumbleserver_data:
+    name: mumbleserver_data

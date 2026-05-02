@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sogo:
+    image: ghcr.io/mailcow/sogo:latest
+    container_name: sogo
+    hostname: sogo
+    ports:
+      - "${SOGO_PORT:-8080}:8080"
+    volumes:
+      - sogo_data:/data
+    restart: unless-stopped
+
+volumes:
+  sogo_data:
+    name: sogo_data

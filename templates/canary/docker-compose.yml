@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  canary:
+    image: docker.io/appsvc/canary:latest
+    container_name: canary
+    hostname: canary
+    ports:
+      - "${CANARY_PORT:-8080}:8080"
+    volumes:
+      - canary_data:/data
+    restart: unless-stopped
+
+volumes:
+  canary_data:
+    name: canary_data

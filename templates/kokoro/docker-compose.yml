@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kokoro:
+    image: docker.io/anujn1/kokoro:latest
+    container_name: kokoro
+    hostname: kokoro
+    ports:
+      - "${KOKORO_PORT:-8080}:8080"
+    volumes:
+      - kokoro_data:/data
+    restart: unless-stopped
+
+volumes:
+  kokoro_data:
+    name: kokoro_data

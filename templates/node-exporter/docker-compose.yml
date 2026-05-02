@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  node-exporter:
+    image: docker.io/quboleinc/node_exporter:latest
+    container_name: node-exporter
+    hostname: node-exporter
+    ports:
+      - "${NODE_EXPORTER_PORT:-8080}:8080"
+    volumes:
+      - node-exporter_data:/data
+    restart: unless-stopped
+
+volumes:
+  node-exporter_data:
+    name: node-exporter_data

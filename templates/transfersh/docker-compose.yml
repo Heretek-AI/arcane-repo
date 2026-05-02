@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  transfersh:
+    image: docker.io/martinbouillaud/transfersh:latest
+    container_name: transfersh
+    hostname: transfersh
+    ports:
+      - "${TRANSFERSH_PORT:-8080}:8080"
+    volumes:
+      - transfersh_data:/data
+    restart: unless-stopped
+
+volumes:
+  transfersh_data:
+    name: transfersh_data

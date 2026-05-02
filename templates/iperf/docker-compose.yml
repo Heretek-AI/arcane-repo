@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  iperf:
+    image: docker.io/diamanti/iperf:latest
+    container_name: iperf
+    hostname: iperf
+    ports:
+      - "${IPERF_PORT:-8080}:8080"
+    volumes:
+      - iperf_data:/data
+    restart: unless-stopped
+
+volumes:
+  iperf_data:
+    name: iperf_data

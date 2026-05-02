@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  timetagger:
+    image: docker.io/danipozo/timetagger:latest
+    container_name: timetagger
+    hostname: timetagger
+    ports:
+      - "${TIMETAGGER_PORT:-8080}:8080"
+    volumes:
+      - timetagger_data:/data
+    restart: unless-stopped
+
+volumes:
+  timetagger_data:
+    name: timetagger_data

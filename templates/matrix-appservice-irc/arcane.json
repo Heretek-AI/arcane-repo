@@ -1,0 +1,12 @@
+{
+  "id": "matrix-appservice-irc",
+  "name": "Matrix Appservice Irc",
+  "description": "Self-hosted Matrix Appservice Irc deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "communication",
+    "yunohost"
+  ]
+}

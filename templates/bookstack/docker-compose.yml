@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bookstack:
+    image: ghcr.io/linuxserver/bookstack:latest
+    container_name: bookstack
+    hostname: bookstack
+    ports:
+      - "${BOOKSTACK_PORT:-8080}:8080"
+    volumes:
+      - bookstack_data:/data
+    restart: unless-stopped
+
+volumes:
+  bookstack_data:
+    name: bookstack_data

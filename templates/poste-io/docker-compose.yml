@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  poste-io:
+    image: docker.io/analogic/poste.io:latest
+    container_name: poste-io
+    hostname: poste-io
+    ports:
+      - "${POSTE_IO_PORT:-8080}:8080"
+    volumes:
+      - poste-io_data:/data
+    restart: unless-stopped
+
+volumes:
+  poste-io_data:
+    name: poste-io_data

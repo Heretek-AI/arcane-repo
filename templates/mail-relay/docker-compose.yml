@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mail-relay:
+    image: docker.io/engdan77/mail_relay:latest
+    container_name: mail-relay
+    hostname: mail-relay
+    ports:
+      - "${MAIL_RELAY_PORT:-8080}:8080"
+    volumes:
+      - mail-relay_data:/data
+    restart: unless-stopped
+
+volumes:
+  mail-relay_data:
+    name: mail-relay_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  outline:
+    image: docker.io/outlinewiki/outline:latest
+    container_name: outline
+    hostname: outline
+    ports:
+      - "${OUTLINE_PORT:-3000}:3000"
+    volumes:
+      - outline_data:/data
+    restart: unless-stopped
+
+volumes:
+  outline_data:
+    name: outline_data

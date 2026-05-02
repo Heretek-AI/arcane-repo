@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  marreta:
+    image: ghcr.io/manualdousuario/marreta:latest
+    container_name: marreta
+    hostname: marreta
+    ports:
+      - "${MARRETA_PORT:-8080}:8080"
+    volumes:
+      - marreta_data:/data
+    restart: unless-stopped
+
+volumes:
+  marreta_data:
+    name: marreta_data

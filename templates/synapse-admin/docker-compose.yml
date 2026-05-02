@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  synapse-admin:
+    image: docker.io/awesometechnologies/synapse-admin:latest
+    container_name: synapse-admin
+    hostname: synapse-admin
+    ports:
+      - "${SYNAPSE_ADMIN_PORT:-8008}:8008"
+    volumes:
+      - synapse-admin_data:/data
+    restart: unless-stopped
+
+volumes:
+  synapse-admin_data:
+    name: synapse-admin_data

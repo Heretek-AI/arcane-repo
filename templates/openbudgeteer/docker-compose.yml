@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openbudgeteer:
+    image: docker.io/axelander/openbudgeteer:latest
+    container_name: openbudgeteer
+    hostname: openbudgeteer
+    ports:
+      - "${OPENBUDGETEER_PORT:-8080}:8080"
+    volumes:
+      - openbudgeteer_data:/data
+    restart: unless-stopped
+
+volumes:
+  openbudgeteer_data:
+    name: openbudgeteer_data

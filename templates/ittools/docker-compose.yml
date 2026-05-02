@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ittools:
+    image: docker.io/bordercolli/ittools:latest
+    container_name: ittools
+    hostname: ittools
+    ports:
+      - "${ITTOOLS_PORT:-8080}:8080"
+    volumes:
+      - ittools_data:/data
+    restart: unless-stopped
+
+volumes:
+  ittools_data:
+    name: ittools_data

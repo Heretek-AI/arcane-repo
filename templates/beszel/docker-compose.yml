@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  beszel:
+    image: docker.io/henrygd/beszel:latest
+    container_name: beszel
+    hostname: beszel
+    ports:
+      - "${BESZEL_PORT:-8080}:8080"
+    volumes:
+      - beszel_data:/data
+    restart: unless-stopped
+
+volumes:
+  beszel_data:
+    name: beszel_data

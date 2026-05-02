@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  monero:
+    image: docker.io/novalanto/monero:latest
+    container_name: monero
+    hostname: monero
+    ports:
+      - "${MONERO_PORT:-8080}:8080"
+    volumes:
+      - monero_data:/data
+    restart: unless-stopped
+
+volumes:
+  monero_data:
+    name: monero_data

@@ -1,0 +1,11 @@
+{
+  "id": "nullboard",
+  "name": "Nullboard",
+  "description": "Self-hosted Nullboard deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

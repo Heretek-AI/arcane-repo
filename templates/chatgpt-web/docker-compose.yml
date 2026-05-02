@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chatgpt-web:
+    image: docker.io/chenzhaoyu94/chatgpt-web:latest
+    container_name: chatgpt-web
+    hostname: chatgpt-web
+    ports:
+      - "${CHATGPT_WEB_PORT:-8080}:8080"
+    volumes:
+      - chatgpt-web_data:/data
+    restart: unless-stopped
+
+volumes:
+  chatgpt-web_data:
+    name: chatgpt-web_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lxd-dashboard:
+    image: docker.io/peterpan404/lxd-dashboard:latest
+    container_name: lxd-dashboard
+    hostname: lxd-dashboard
+    ports:
+      - "${LXD_DASHBOARD_PORT:-8080}:8080"
+    volumes:
+      - lxd-dashboard_data:/data
+    restart: unless-stopped
+
+volumes:
+  lxd-dashboard_data:
+    name: lxd-dashboard_data

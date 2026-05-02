@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  qr:
+    image: docker.io/gameprogressive/qr:latest
+    container_name: qr
+    hostname: qr
+    ports:
+      - "${QR_PORT:-8080}:8080"
+    volumes:
+      - qr_data:/data
+    restart: unless-stopped
+
+volumes:
+  qr_data:
+    name: qr_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  helloworld:
+    image: docker.io/nimak/helloworld:latest
+    container_name: helloworld
+    hostname: helloworld
+    ports:
+      - "${HELLOWORLD_PORT:-8080}:8080"
+    volumes:
+      - helloworld_data:/data
+    restart: unless-stopped
+
+volumes:
+  helloworld_data:
+    name: helloworld_data

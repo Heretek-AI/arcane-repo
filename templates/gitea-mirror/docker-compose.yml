@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gitea-mirror:
+    image: docker.io/ckevi/gitea-mirror:latest
+    container_name: gitea-mirror
+    hostname: gitea-mirror
+    ports:
+      - "${GITEA_MIRROR_PORT:-3000}:3000"
+    volumes:
+      - gitea-mirror_data:/data
+    restart: unless-stopped
+
+volumes:
+  gitea-mirror_data:
+    name: gitea-mirror_data

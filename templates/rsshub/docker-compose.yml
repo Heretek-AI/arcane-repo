@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rsshub:
+    image: ghcr.io/diygod/rsshub:latest
+    container_name: rsshub
+    hostname: rsshub
+    ports:
+      - "${RSSHUB_PORT:-8080}:8080"
+    volumes:
+      - rsshub_data:/data
+    restart: unless-stopped
+
+volumes:
+  rsshub_data:
+    name: rsshub_data

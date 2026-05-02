@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  codiad:
+    image: docker.io/linuxserver/codiad:latest
+    container_name: codiad
+    hostname: codiad
+    ports:
+      - "${CODIAD_PORT:-8080}:8080"
+    volumes:
+      - codiad_data:/data
+    restart: unless-stopped
+
+volumes:
+  codiad_data:
+    name: codiad_data

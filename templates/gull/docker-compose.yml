@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gull:
+    image: ghcr.io/aeolyus/gull:latest
+    container_name: gull
+    hostname: gull
+    ports:
+      - "${GULL_PORT:-8080}:8080"
+    volumes:
+      - gull_data:/data
+    restart: unless-stopped
+
+volumes:
+  gull_data:
+    name: gull_data

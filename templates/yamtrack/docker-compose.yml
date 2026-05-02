@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yamtrack:
+    image: docker.io/dmintz37/yamtrack:latest
+    container_name: yamtrack
+    hostname: yamtrack
+    ports:
+      - "${YAMTRACK_PORT:-8080}:8080"
+    volumes:
+      - yamtrack_data:/data
+    restart: unless-stopped
+
+volumes:
+  yamtrack_data:
+    name: yamtrack_data

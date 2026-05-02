@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  homechart:
+    image: ghcr.io/candiddev/homechart:latest
+    container_name: homechart
+    hostname: homechart
+    ports:
+      - "${HOMECHART_PORT:-8080}:8080"
+    volumes:
+      - homechart_data:/data
+    restart: unless-stopped
+
+volumes:
+  homechart_data:
+    name: homechart_data

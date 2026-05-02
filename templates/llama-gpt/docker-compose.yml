@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  llama-gpt:
+    image: docker.io/nativeplanet/llama-gpt:latest
+    container_name: llama-gpt
+    hostname: llama-gpt
+    ports:
+      - "${LLAMA_GPT_PORT:-8000}:8000"
+    volumes:
+      - llama-gpt_data:/data
+    restart: unless-stopped
+
+volumes:
+  llama-gpt_data:
+    name: llama-gpt_data

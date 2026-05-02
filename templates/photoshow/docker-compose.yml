@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  photoshow:
+    image: ghcr.io/linuxserver/photoshow:latest
+    container_name: photoshow
+    hostname: photoshow
+    ports:
+      - "${PHOTOSHOW_PORT:-8080}:8080"
+    volumes:
+      - photoshow_data:/data
+    restart: unless-stopped
+
+volumes:
+  photoshow_data:
+    name: photoshow_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gotosocial:
+    image: docker.io/superseriousbusiness/gotosocial:latest
+    container_name: gotosocial
+    hostname: gotosocial
+    ports:
+      - "${GOTOSOCIAL_PORT:-8080}:8080"
+    volumes:
+      - gotosocial_data:/data
+    restart: unless-stopped
+
+volumes:
+  gotosocial_data:
+    name: gotosocial_data

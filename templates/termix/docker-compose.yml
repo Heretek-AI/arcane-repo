@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  termix:
+    image: docker.io/bugattiguy527/termix:latest
+    container_name: termix
+    hostname: termix
+    ports:
+      - "${TERMIX_PORT:-8080}:8080"
+    volumes:
+      - termix_data:/data
+    restart: unless-stopped
+
+volumes:
+  termix_data:
+    name: termix_data

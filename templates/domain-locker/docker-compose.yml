@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  domain-locker:
+    image: ghcr.io/lissy93/domain-locker:latest
+    container_name: domain-locker
+    hostname: domain-locker
+    ports:
+      - "${DOMAIN_LOCKER_PORT:-8080}:8080"
+    volumes:
+      - domain-locker_data:/data
+    restart: unless-stopped
+
+volumes:
+  domain-locker_data:
+    name: domain-locker_data

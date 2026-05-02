@@ -1,0 +1,12 @@
+{
+  "id": "file-browser",
+  "name": "File Browser",
+  "description": "Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "storage",
+    "umbrel"
+  ]
+}

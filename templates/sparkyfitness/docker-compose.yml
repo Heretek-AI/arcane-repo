@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sparkyfitness:
+    image: docker.io/codewithcj/sparkyfitness:latest
+    container_name: sparkyfitness
+    hostname: sparkyfitness
+    ports:
+      - "${SPARKYFITNESS_PORT:-8080}:8080"
+    volumes:
+      - sparkyfitness_data:/data
+    restart: unless-stopped
+
+volumes:
+  sparkyfitness_data:
+    name: sparkyfitness_data

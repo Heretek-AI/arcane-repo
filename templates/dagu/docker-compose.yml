@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dagu:
+    image: docker.io/coralhl/dagu:latest
+    container_name: dagu
+    hostname: dagu
+    ports:
+      - "${DAGU_PORT:-8080}:8080"
+    volumes:
+      - dagu_data:/data
+    restart: unless-stopped
+
+volumes:
+  dagu_data:
+    name: dagu_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  registry:
+    image: docker.io/convox/registry:latest
+    container_name: registry
+    hostname: registry
+    ports:
+      - "${REGISTRY_PORT:-8080}:8080"
+    volumes:
+      - registry_data:/data
+    restart: unless-stopped
+
+volumes:
+  registry_data:
+    name: registry_data

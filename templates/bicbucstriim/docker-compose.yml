@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bicbucstriim:
+    image: docker.io/undergrid/bicbucstriim:latest
+    container_name: bicbucstriim
+    hostname: bicbucstriim
+    ports:
+      - "${BICBUCSTRIIM_PORT:-8080}:8080"
+    volumes:
+      - bicbucstriim_data:/data
+    restart: unless-stopped
+
+volumes:
+  bicbucstriim_data:
+    name: bicbucstriim_data

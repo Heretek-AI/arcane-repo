@@ -1,0 +1,11 @@
+{
+  "id": "pi-hole-unbound",
+  "name": "Pi Hole Unbound",
+  "description": "Self-hosted Pi Hole Unbound deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dato:
+    image: docker.io/rubygem/dato:latest
+    container_name: dato
+    hostname: dato
+    ports:
+      - "${DATO_PORT:-8080}:8080"
+    volumes:
+      - dato_data:/data
+    restart: unless-stopped
+
+volumes:
+  dato_data:
+    name: dato_data

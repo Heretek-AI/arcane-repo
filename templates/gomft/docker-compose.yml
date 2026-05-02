@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gomft:
+    image: ghcr.io/starfleetcptn/gomft:latest
+    container_name: gomft
+    hostname: gomft
+    ports:
+      - "${GOMFT_PORT:-8080}:8080"
+    volumes:
+      - gomft_data:/data
+    restart: unless-stopped
+
+volumes:
+  gomft_data:
+    name: gomft_data

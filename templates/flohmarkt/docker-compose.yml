@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flohmarkt:
+    image: docker.io/yonggan/flohmarkt:latest
+    container_name: flohmarkt
+    hostname: flohmarkt
+    ports:
+      - "${FLOHMARKT_PORT:-8080}:8080"
+    volumes:
+      - flohmarkt_data:/data
+    restart: unless-stopped
+
+volumes:
+  flohmarkt_data:
+    name: flohmarkt_data

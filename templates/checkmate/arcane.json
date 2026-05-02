@@ -1,0 +1,11 @@
+{
+  "id": "checkmate",
+  "name": "Checkmate",
+  "description": "Self-hosted Checkmate deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

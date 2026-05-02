@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snowflake:
+    image: docker.io/tzuehlke/snowflake:latest
+    container_name: snowflake
+    hostname: snowflake
+    ports:
+      - "${SNOWFLAKE_PORT:-8080}:8080"
+    volumes:
+      - snowflake_data:/data
+    restart: unless-stopped
+
+volumes:
+  snowflake_data:
+    name: snowflake_data

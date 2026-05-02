@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pi-hole-unbound:
+    image: docker.io/pauls671/pi-hole-unbound:latest
+    container_name: pi-hole-unbound
+    hostname: pi-hole-unbound
+    ports:
+      - "${PI_HOLE_UNBOUND_PORT:-8080}:8080"
+    volumes:
+      - pi-hole-unbound_data:/data
+    restart: unless-stopped
+
+volumes:
+  pi-hole-unbound_data:
+    name: pi-hole-unbound_data

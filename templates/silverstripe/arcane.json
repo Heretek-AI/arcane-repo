@@ -1,0 +1,11 @@
+{
+  "id": "silverstripe",
+  "name": "Silverstripe",
+  "description": "Self-hosted Silverstripe deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

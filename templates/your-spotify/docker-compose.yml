@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  your-spotify:
+    image: ghcr.io/linuxserver/your_spotify:latest
+    container_name: your-spotify
+    hostname: your-spotify
+    ports:
+      - "${YOUR_SPOTIFY_PORT:-8080}:8080"
+    volumes:
+      - your-spotify_data:/data
+    restart: unless-stopped
+
+volumes:
+  your-spotify_data:
+    name: your-spotify_data

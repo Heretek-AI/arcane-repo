@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  affine:
+    image: docker.io/affinefoundation/affine:latest
+    container_name: affine
+    hostname: affine
+    ports:
+      - "${AFFINE_PORT:-8080}:8080"
+    volumes:
+      - affine_data:/data
+    restart: unless-stopped
+
+volumes:
+  affine_data:
+    name: affine_data

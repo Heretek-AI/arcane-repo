@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zwave-js-ui:
+    image: docker.io/zwavejs/zwave-js-ui:latest
+    container_name: zwave-js-ui
+    hostname: zwave-js-ui
+    ports:
+      - "${ZWAVE_JS_UI_PORT:-8080}:8080"
+    volumes:
+      - zwave-js-ui_data:/data
+    restart: unless-stopped
+
+volumes:
+  zwave-js-ui_data:
+    name: zwave-js-ui_data

@@ -1,0 +1,11 @@
+{
+  "id": "hasty-paste",
+  "name": "Hasty Paste",
+  "description": "Self-hosted Hasty Paste deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

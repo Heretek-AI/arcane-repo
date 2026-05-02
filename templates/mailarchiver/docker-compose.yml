@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mailarchiver:
+    image: ghcr.io/s1t5/mailarchiver:latest
+    container_name: mailarchiver
+    hostname: mailarchiver
+    ports:
+      - "${MAILARCHIVER_PORT:-8080}:8080"
+    volumes:
+      - mailarchiver_data:/data
+    restart: unless-stopped
+
+volumes:
+  mailarchiver_data:
+    name: mailarchiver_data

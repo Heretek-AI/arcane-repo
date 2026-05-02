@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  satdress:
+    image: docker.io/jaonoctus/satdress:latest
+    container_name: satdress
+    hostname: satdress
+    ports:
+      - "${SATDRESS_PORT:-8080}:8080"
+    volumes:
+      - satdress_data:/data
+    restart: unless-stopped
+
+volumes:
+  satdress_data:
+    name: satdress_data

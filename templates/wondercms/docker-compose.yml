@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wondercms:
+    image: docker.io/mablanco/wondercms:latest
+    container_name: wondercms
+    hostname: wondercms
+    ports:
+      - "${WONDERCMS_PORT:-8080}:8080"
+    volumes:
+      - wondercms_data:/data
+    restart: unless-stopped
+
+volumes:
+  wondercms_data:
+    name: wondercms_data

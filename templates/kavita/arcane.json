@@ -1,0 +1,11 @@
+{
+  "id": "kavita",
+  "name": "Kavita",
+  "description": "Self-hosted Kavita deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

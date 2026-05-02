@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pocketbase:
+    image: docker.io/spectado/pocketbase:latest
+    container_name: pocketbase
+    hostname: pocketbase
+    ports:
+      - "${POCKETBASE_PORT:-8080}:8080"
+    volumes:
+      - pocketbase_data:/data
+    restart: unless-stopped
+
+volumes:
+  pocketbase_data:
+    name: pocketbase_data

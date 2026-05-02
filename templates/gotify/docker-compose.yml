@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gotify:
+    image: docker.io/pocoyo/gotify:latest
+    container_name: gotify
+    hostname: gotify
+    ports:
+      - "${GOTIFY_PORT:-80}:80"
+    volumes:
+      - gotify_data:/data
+    restart: unless-stopped
+
+volumes:
+  gotify_data:
+    name: gotify_data

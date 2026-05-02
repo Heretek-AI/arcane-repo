@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cloudflared:
+    image: docker.io/cloudflare/cloudflared:latest
+    container_name: cloudflared
+    hostname: cloudflared
+    ports:
+      - "${CLOUDFLARED_PORT:-8080}:8080"
+    volumes:
+      - cloudflared_data:/data
+    restart: unless-stopped
+
+volumes:
+  cloudflared_data:
+    name: cloudflared_data

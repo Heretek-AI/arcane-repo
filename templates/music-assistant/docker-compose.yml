@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  music-assistant:
+    image: docker.io/vladlogyin/music-assistant:latest
+    container_name: music-assistant
+    hostname: music-assistant
+    ports:
+      - "${MUSIC_ASSISTANT_PORT:-8080}:8080"
+    volumes:
+      - music-assistant_data:/data
+    restart: unless-stopped
+
+volumes:
+  music-assistant_data:
+    name: music-assistant_data

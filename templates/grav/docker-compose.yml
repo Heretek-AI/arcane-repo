@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  grav:
+    image: ghcr.io/linuxserver/grav:latest
+    container_name: grav
+    hostname: grav
+    ports:
+      - "${GRAV_PORT:-8080}:8080"
+    volumes:
+      - grav_data:/data
+    restart: unless-stopped
+
+volumes:
+  grav_data:
+    name: grav_data

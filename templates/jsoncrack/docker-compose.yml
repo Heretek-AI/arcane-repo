@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jsoncrack:
+    image: docker.io/shokohsc/jsoncrack:latest
+    container_name: jsoncrack
+    hostname: jsoncrack
+    ports:
+      - "${JSONCRACK_PORT:-8080}:8080"
+    volumes:
+      - jsoncrack_data:/data
+    restart: unless-stopped
+
+volumes:
+  jsoncrack_data:
+    name: jsoncrack_data

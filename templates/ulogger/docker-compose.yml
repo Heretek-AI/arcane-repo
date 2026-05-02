@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ulogger:
+    image: docker.io/plaguedr/ulogger:latest
+    container_name: ulogger
+    hostname: ulogger
+    ports:
+      - "${ULOGGER_PORT:-8080}:8080"
+    volumes:
+      - ulogger_data:/data
+    restart: unless-stopped
+
+volumes:
+  ulogger_data:
+    name: ulogger_data

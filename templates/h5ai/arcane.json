@@ -1,0 +1,12 @@
+{
+  "id": "h5ai",
+  "name": "H5Ai",
+  "description": "Self-hosted H5Ai deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "yunohost"
+  ]
+}

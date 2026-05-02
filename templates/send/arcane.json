@@ -1,0 +1,11 @@
+{
+  "id": "send",
+  "name": "Send",
+  "description": "Self-hosted Send deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

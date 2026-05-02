@@ -1,0 +1,11 @@
+{
+  "id": "webhook",
+  "name": "Webhook",
+  "description": "Self-hosted Webhook deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

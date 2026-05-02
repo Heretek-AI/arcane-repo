@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  peertube:
+    image: docker.io/chocobozzz/peertube:latest
+    container_name: peertube
+    hostname: peertube
+    ports:
+      - "${PEERTUBE_PORT:-9000}:9000"
+    volumes:
+      - peertube_data:/data
+    restart: unless-stopped
+
+volumes:
+  peertube_data:
+    name: peertube_data

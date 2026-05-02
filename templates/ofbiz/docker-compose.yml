@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ofbiz:
+    image: docker.io/vulhub/ofbiz:latest
+    container_name: ofbiz
+    hostname: ofbiz
+    ports:
+      - "${OFBIZ_PORT:-8080}:8080"
+    volumes:
+      - ofbiz_data:/data
+    restart: unless-stopped
+
+volumes:
+  ofbiz_data:
+    name: ofbiz_data

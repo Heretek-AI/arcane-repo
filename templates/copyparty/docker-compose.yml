@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  copyparty:
+    image: docker.io/icewhaletech/copyparty:latest
+    container_name: copyparty
+    hostname: copyparty
+    ports:
+      - "${COPYPARTY_PORT:-8080}:8080"
+    volumes:
+      - copyparty_data:/data
+    restart: unless-stopped
+
+volumes:
+  copyparty_data:
+    name: copyparty_data

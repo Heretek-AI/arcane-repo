@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tubearchivist:
+    image: docker.io/bbilly1/tubearchivist:latest
+    container_name: tubearchivist
+    hostname: tubearchivist
+    ports:
+      - "${TUBEARCHIVIST_PORT:-8080}:8080"
+    volumes:
+      - tubearchivist_data:/data
+    restart: unless-stopped
+
+volumes:
+  tubearchivist_data:
+    name: tubearchivist_data

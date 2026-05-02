@@ -1,0 +1,11 @@
+{
+  "id": "zigbee2mqtt",
+  "name": "Zigbee2Mqtt",
+  "description": "Self-hosted Zigbee2Mqtt deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

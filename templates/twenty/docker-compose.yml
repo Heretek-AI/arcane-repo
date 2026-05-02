@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  twenty:
+    image: docker.io/twentycrm/twenty:latest
+    container_name: twenty
+    hostname: twenty
+    ports:
+      - "${TWENTY_PORT:-8080}:8080"
+    volumes:
+      - twenty_data:/data
+    restart: unless-stopped
+
+volumes:
+  twenty_data:
+    name: twenty_data

@@ -1,0 +1,11 @@
+{
+  "id": "open-web-calendar",
+  "name": "Open Web Calendar",
+  "description": "Self-hosted Open Web Calendar deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyseerr:
+    image: ghcr.io/fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    hostname: jellyseerr
+    ports:
+      - "${JELLYSEERR_PORT:-8080}:8080"
+    volumes:
+      - jellyseerr_data:/data
+    restart: unless-stopped
+
+volumes:
+  jellyseerr_data:
+    name: jellyseerr_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elasticsearch7:
+    image: docker.io/egwestate/elasticsearch7:latest
+    container_name: elasticsearch7
+    hostname: elasticsearch7
+    ports:
+      - "${ELASTICSEARCH7_PORT:-9200}:9200"
+    volumes:
+      - elasticsearch7_data:/data
+    restart: unless-stopped
+
+volumes:
+  elasticsearch7_data:
+    name: elasticsearch7_data

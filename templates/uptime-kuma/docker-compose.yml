@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  uptime-kuma:
+    image: ghcr.io/louislam/uptime-kuma:latest
+    container_name: uptime-kuma
+    hostname: uptime-kuma
+    ports:
+      - "${UPTIME_KUMA_PORT:-3001}:3001"
+    volumes:
+      - uptime-kuma_data:/data
+    restart: unless-stopped
+
+volumes:
+  uptime-kuma_data:
+    name: uptime-kuma_data

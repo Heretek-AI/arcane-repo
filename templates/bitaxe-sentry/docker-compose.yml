@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bitaxe-sentry:
+    image: docker.io/zachprice105/bitaxe-sentry:latest
+    container_name: bitaxe-sentry
+    hostname: bitaxe-sentry
+    ports:
+      - "${BITAXE_SENTRY_PORT:-8080}:8080"
+    volumes:
+      - bitaxe-sentry_data:/data
+    restart: unless-stopped
+
+volumes:
+  bitaxe-sentry_data:
+    name: bitaxe-sentry_data

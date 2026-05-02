@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  booklore:
+    image: docker.io/balazsszucs/booklore:latest
+    container_name: booklore
+    hostname: booklore
+    ports:
+      - "${BOOKLORE_PORT:-8080}:8080"
+    volumes:
+      - booklore_data:/data
+    restart: unless-stopped
+
+volumes:
+  booklore_data:
+    name: booklore_data

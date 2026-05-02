@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ferdium:
+    image: ghcr.io/linuxserver/ferdium:latest
+    container_name: ferdium
+    hostname: ferdium
+    ports:
+      - "${FERDIUM_PORT:-8080}:8080"
+    volumes:
+      - ferdium_data:/data
+    restart: unless-stopped
+
+volumes:
+  ferdium_data:
+    name: ferdium_data

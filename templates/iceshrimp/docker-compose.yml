@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  iceshrimp:
+    image: docker.io/garionion/iceshrimp:latest
+    container_name: iceshrimp
+    hostname: iceshrimp
+    ports:
+      - "${ICESHRIMP_PORT:-8080}:8080"
+    volumes:
+      - iceshrimp_data:/data
+    restart: unless-stopped
+
+volumes:
+  iceshrimp_data:
+    name: iceshrimp_data

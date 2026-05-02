@@ -1,0 +1,11 @@
+{
+  "id": "retroarch",
+  "name": "Retroarch",
+  "description": "Self-hosted Retroarch deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

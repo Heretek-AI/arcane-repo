@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cyberchef:
+    image: docker.io/mpepping/cyberchef:latest
+    container_name: cyberchef
+    hostname: cyberchef
+    ports:
+      - "${CYBERCHEF_PORT:-8080}:8080"
+    volumes:
+      - cyberchef_data:/data
+    restart: unless-stopped
+
+volumes:
+  cyberchef_data:
+    name: cyberchef_data

@@ -1,0 +1,11 @@
+{
+  "id": "cesium",
+  "name": "Cesium",
+  "description": "Self-hosted Cesium deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

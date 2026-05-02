@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  docuseal:
+    image: docker.io/docuseal/docuseal:latest
+    container_name: docuseal
+    hostname: docuseal
+    ports:
+      - "${DOCUSEAL_PORT:-8080}:8080"
+    volumes:
+      - docuseal_data:/data
+    restart: unless-stopped
+
+volumes:
+  docuseal_data:
+    name: docuseal_data

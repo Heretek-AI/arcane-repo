@@ -1,0 +1,11 @@
+{
+  "id": "pingvin-share",
+  "name": "Pingvin Share",
+  "description": "Self-hosted Pingvin Share deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

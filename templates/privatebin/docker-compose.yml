@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  privatebin:
+    image: docker.io/treehouses/privatebin:latest
+    container_name: privatebin
+    hostname: privatebin
+    ports:
+      - "${PRIVATEBIN_PORT:-8080}:8080"
+    volumes:
+      - privatebin_data:/data
+    restart: unless-stopped
+
+volumes:
+  privatebin_data:
+    name: privatebin_data

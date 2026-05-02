@@ -1,0 +1,11 @@
+{
+  "id": "spip",
+  "name": "Spip",
+  "description": "Self-hosted Spip deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gaps:
+    image: docker.io/housewrecker/gaps:latest
+    container_name: gaps
+    hostname: gaps
+    ports:
+      - "${GAPS_PORT:-8080}:8080"
+    volumes:
+      - gaps_data:/data
+    restart: unless-stopped
+
+volumes:
+  gaps_data:
+    name: gaps_data

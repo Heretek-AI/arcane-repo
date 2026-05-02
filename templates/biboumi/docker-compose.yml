@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  biboumi:
+    image: docker.io/louiz/biboumi:latest
+    container_name: biboumi
+    hostname: biboumi
+    ports:
+      - "${BIBOUMI_PORT:-8080}:8080"
+    volumes:
+      - biboumi_data:/data
+    restart: unless-stopped
+
+volumes:
+  biboumi_data:
+    name: biboumi_data

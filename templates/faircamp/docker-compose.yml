@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  faircamp:
+    image: docker.io/n3wjack/faircamp:latest
+    container_name: faircamp
+    hostname: faircamp
+    ports:
+      - "${FAIRCAMP_PORT:-8080}:8080"
+    volumes:
+      - faircamp_data:/data
+    restart: unless-stopped
+
+volumes:
+  faircamp_data:
+    name: faircamp_data

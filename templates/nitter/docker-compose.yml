@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nitter:
+    image: docker.io/zedeus/nitter:latest
+    container_name: nitter
+    hostname: nitter
+    ports:
+      - "${NITTER_PORT:-8080}:8080"
+    volumes:
+      - nitter_data:/data
+    restart: unless-stopped
+
+volumes:
+  nitter_data:
+    name: nitter_data

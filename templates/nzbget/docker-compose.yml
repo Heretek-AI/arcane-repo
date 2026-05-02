@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nzbget:
+    image: ghcr.io/linuxserver/nzbget:latest
+    container_name: nzbget
+    hostname: nzbget
+    ports:
+      - "${NZBGET_PORT:-8080}:8080"
+    volumes:
+      - nzbget_data:/data
+    restart: unless-stopped
+
+volumes:
+  nzbget_data:
+    name: nzbget_data

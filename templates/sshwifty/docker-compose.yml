@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sshwifty:
+    image: docker.io/niruix/sshwifty:latest
+    container_name: sshwifty
+    hostname: sshwifty
+    ports:
+      - "${SSHWIFTY_PORT:-8080}:8080"
+    volumes:
+      - sshwifty_data:/data
+    restart: unless-stopped
+
+volumes:
+  sshwifty_data:
+    name: sshwifty_data

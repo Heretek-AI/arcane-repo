@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  trilium-notes:
+    image: docker.io/enganderson/trilium-notes:latest
+    container_name: trilium-notes
+    hostname: trilium-notes
+    ports:
+      - "${TRILIUM_NOTES_PORT:-8080}:8080"
+    volumes:
+      - trilium-notes_data:/data
+    restart: unless-stopped
+
+volumes:
+  trilium-notes_data:
+    name: trilium-notes_data

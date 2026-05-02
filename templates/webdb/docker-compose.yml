@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  webdb:
+    image: docker.io/ozgurozturknet/webdb:latest
+    container_name: webdb
+    hostname: webdb
+    ports:
+      - "${WEBDB_PORT:-8080}:8080"
+    volumes:
+      - webdb_data:/data
+    restart: unless-stopped
+
+volumes:
+  webdb_data:
+    name: webdb_data

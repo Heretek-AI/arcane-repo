@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  azuracast:
+    image: ghcr.io/azuracast/azuracast:latest
+    container_name: azuracast
+    hostname: azuracast
+    ports:
+      - "${AZURACAST_PORT:-8080}:8080"
+    volumes:
+      - azuracast_data:/data
+    restart: unless-stopped
+
+volumes:
+  azuracast_data:
+    name: azuracast_data

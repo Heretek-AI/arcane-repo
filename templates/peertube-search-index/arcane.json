@@ -1,0 +1,11 @@
+{
+  "id": "peertube-search-index",
+  "name": "Peertube Search Index",
+  "description": "Self-hosted Peertube Search Index deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

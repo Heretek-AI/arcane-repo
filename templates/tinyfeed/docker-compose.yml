@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tinyfeed:
+    image: docker.io/thebigroomxxl/tinyfeed:latest
+    container_name: tinyfeed
+    hostname: tinyfeed
+    ports:
+      - "${TINYFEED_PORT:-8080}:8080"
+    volumes:
+      - tinyfeed_data:/data
+    restart: unless-stopped
+
+volumes:
+  tinyfeed_data:
+    name: tinyfeed_data

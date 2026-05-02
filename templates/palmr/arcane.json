@@ -1,0 +1,11 @@
+{
+  "id": "palmr",
+  "name": "Palmr",
+  "description": "Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fluffychat:
+    image: ghcr.io/aceberg/fluffychat:latest
+    container_name: fluffychat
+    hostname: fluffychat
+    ports:
+      - "${FLUFFYCHAT_PORT:-8080}:8080"
+    volumes:
+      - fluffychat_data:/data
+    restart: unless-stopped
+
+volumes:
+  fluffychat_data:
+    name: fluffychat_data

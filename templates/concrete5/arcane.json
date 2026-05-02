@@ -1,0 +1,11 @@
+{
+  "id": "concrete5",
+  "name": "Concrete5",
+  "description": "Self-hosted Concrete5 deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

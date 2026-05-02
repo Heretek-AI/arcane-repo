@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  languagetool:
+    image: docker.io/erikvl87/languagetool:latest
+    container_name: languagetool
+    hostname: languagetool
+    ports:
+      - "${LANGUAGETOOL_PORT:-8080}:8080"
+    volumes:
+      - languagetool_data:/data
+    restart: unless-stopped
+
+volumes:
+  languagetool_data:
+    name: languagetool_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  emby:
+    image: ghcr.io/linuxserver/emby:latest
+    container_name: emby
+    hostname: emby
+    ports:
+      - "${EMBY_PORT:-8096}:8096"
+    volumes:
+      - emby_data:/data
+    restart: unless-stopped
+
+volumes:
+  emby_data:
+    name: emby_data

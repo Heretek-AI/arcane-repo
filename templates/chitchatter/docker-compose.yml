@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chitchatter:
+    image: docker.io/noxcis/chitchatter:latest
+    container_name: chitchatter
+    hostname: chitchatter
+    ports:
+      - "${CHITCHATTER_PORT:-8080}:8080"
+    volumes:
+      - chitchatter_data:/data
+    restart: unless-stopped
+
+volumes:
+  chitchatter_data:
+    name: chitchatter_data

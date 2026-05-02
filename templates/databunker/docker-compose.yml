@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  databunker:
+    image: docker.io/securitybunker/databunker:latest
+    container_name: databunker
+    hostname: databunker
+    ports:
+      - "${DATABUNKER_PORT:-8080}:8080"
+    volumes:
+      - databunker_data:/data
+    restart: unless-stopped
+
+volumes:
+  databunker_data:
+    name: databunker_data

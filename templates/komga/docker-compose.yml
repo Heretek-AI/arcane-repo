@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  komga:
+    image: ghcr.io/gotson/komga:latest
+    container_name: komga
+    hostname: komga
+    ports:
+      - "${KOMGA_PORT:-8080}:8080"
+    volumes:
+      - komga_data:/data
+    restart: unless-stopped
+
+volumes:
+  komga_data:
+    name: komga_data

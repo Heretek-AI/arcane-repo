@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bludit:
+    image: docker.io/sybex/bludit:latest
+    container_name: bludit
+    hostname: bludit
+    ports:
+      - "${BLUDIT_PORT:-8080}:8080"
+    volumes:
+      - bludit_data:/data
+    restart: unless-stopped
+
+volumes:
+  bludit_data:
+    name: bludit_data

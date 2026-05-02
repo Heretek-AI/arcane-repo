@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  forgejo-runner:
+    image: docker.io/techvoyager/forgejo_runner:latest
+    container_name: forgejo-runner
+    hostname: forgejo-runner
+    ports:
+      - "${FORGEJO_RUNNER_PORT:-8080}:8080"
+    volumes:
+      - forgejo-runner_data:/data
+    restart: unless-stopped
+
+volumes:
+  forgejo-runner_data:
+    name: forgejo-runner_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fdo:
+    image: docker.io/venkatay96/fdo:latest
+    container_name: fdo
+    hostname: fdo
+    ports:
+      - "${FDO_PORT:-8080}:8080"
+    volumes:
+      - fdo_data:/data
+    restart: unless-stopped
+
+volumes:
+  fdo_data:
+    name: fdo_data

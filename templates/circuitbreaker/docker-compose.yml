@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  circuitbreaker:
+    image: docker.io/carlakirkcohen/circuitbreaker:latest
+    container_name: circuitbreaker
+    hostname: circuitbreaker
+    ports:
+      - "${CIRCUITBREAKER_PORT:-8080}:8080"
+    volumes:
+      - circuitbreaker_data:/data
+    restart: unless-stopped
+
+volumes:
+  circuitbreaker_data:
+    name: circuitbreaker_data

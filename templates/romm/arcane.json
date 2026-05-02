@@ -1,0 +1,11 @@
+{
+  "id": "romm",
+  "name": "Romm",
+  "description": "Self-hosted Romm deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "quassel-core",
+  "name": "Quassel Core",
+  "description": "Self-hosted Quassel Core deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

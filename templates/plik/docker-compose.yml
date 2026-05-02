@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plik:
+    image: docker.io/rootgg/plik:latest
+    container_name: plik
+    hostname: plik
+    ports:
+      - "${PLIK_PORT:-8080}:8080"
+    volumes:
+      - plik_data:/data
+    restart: unless-stopped
+
+volumes:
+  plik_data:
+    name: plik_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  translite:
+    image: docker.io/ahmedrachid/translite:latest
+    container_name: translite
+    hostname: translite
+    ports:
+      - "${TRANSLITE_PORT:-8080}:8080"
+    volumes:
+      - translite_data:/data
+    restart: unless-stopped
+
+volumes:
+  translite_data:
+    name: translite_data

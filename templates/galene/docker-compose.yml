@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  galene:
+    image: docker.io/deburau/galene:latest
+    container_name: galene
+    hostname: galene
+    ports:
+      - "${GALENE_PORT:-8080}:8080"
+    volumes:
+      - galene_data:/data
+    restart: unless-stopped
+
+volumes:
+  galene_data:
+    name: galene_data

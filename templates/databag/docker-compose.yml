@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  databag:
+    image: docker.io/balzack/databag:latest
+    container_name: databag
+    hostname: databag
+    ports:
+      - "${DATABAG_PORT:-8080}:8080"
+    volumes:
+      - databag_data:/data
+    restart: unless-stopped
+
+volumes:
+  databag_data:
+    name: databag_data

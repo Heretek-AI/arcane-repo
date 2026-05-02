@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  grr:
+    image: docker.io/grrdocker/grr:latest
+    container_name: grr
+    hostname: grr
+    ports:
+      - "${GRR_PORT:-8080}:8080"
+    volumes:
+      - grr_data:/data
+    restart: unless-stopped
+
+volumes:
+  grr_data:
+    name: grr_data

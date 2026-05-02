@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plateau:
+    image: docker.io/remykonings35/plateau:latest
+    container_name: plateau
+    hostname: plateau
+    ports:
+      - "${PLATEAU_PORT:-8080}:8080"
+    volumes:
+      - plateau_data:/data
+    restart: unless-stopped
+
+volumes:
+  plateau_data:
+    name: plateau_data

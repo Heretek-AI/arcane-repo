@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  z-push:
+    image: docker.io/17halbe/z-push:latest
+    container_name: z-push
+    hostname: z-push
+    ports:
+      - "${Z_PUSH_PORT:-8080}:8080"
+    volumes:
+      - z-push_data:/data
+    restart: unless-stopped
+
+volumes:
+  z-push_data:
+    name: z-push_data

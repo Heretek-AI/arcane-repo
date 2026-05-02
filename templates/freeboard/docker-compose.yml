@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  freeboard:
+    image: docker.io/iofog/freeboard:latest
+    container_name: freeboard
+    hostname: freeboard
+    ports:
+      - "${FREEBOARD_PORT:-8080}:8080"
+    volumes:
+      - freeboard_data:/data
+    restart: unless-stopped
+
+volumes:
+  freeboard_data:
+    name: freeboard_data

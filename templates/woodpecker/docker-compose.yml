@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  woodpecker:
+    image: ghcr.io/daemonless/woodpecker:latest
+    container_name: woodpecker
+    hostname: woodpecker
+    ports:
+      - "${WOODPECKER_PORT:-8000}:8000"
+    volumes:
+      - woodpecker_data:/data
+    restart: unless-stopped
+
+volumes:
+  woodpecker_data:
+    name: woodpecker_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plextraktsync:
+    image: docker.io/p2bauer/plextraktsync:latest
+    container_name: plextraktsync
+    hostname: plextraktsync
+    ports:
+      - "${PLEXTRAKTSYNC_PORT:-32400}:32400"
+    volumes:
+      - plextraktsync_data:/data
+    restart: unless-stopped
+
+volumes:
+  plextraktsync_data:
+    name: plextraktsync_data

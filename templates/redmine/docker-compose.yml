@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redmine:
+    image: ghcr.io/sameersbn/redmine:latest
+    container_name: redmine
+    hostname: redmine
+    ports:
+      - "${REDMINE_PORT:-8080}:8080"
+    volumes:
+      - redmine_data:/data
+    restart: unless-stopped
+
+volumes:
+  redmine_data:
+    name: redmine_data

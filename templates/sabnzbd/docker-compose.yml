@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sabnzbd:
+    image: ghcr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    hostname: sabnzbd
+    ports:
+      - "${SABNZBD_PORT:-8080}:8080"
+    volumes:
+      - sabnzbd_data:/data
+    restart: unless-stopped
+
+volumes:
+  sabnzbd_data:
+    name: sabnzbd_data

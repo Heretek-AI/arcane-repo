@@ -1,0 +1,11 @@
+{
+  "id": "ride-the-lightning",
+  "name": "Ride The Lightning",
+  "description": "Self-hosted Ride The Lightning deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

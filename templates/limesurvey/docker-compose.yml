@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  limesurvey:
+    image: docker.io/acspri/limesurvey:latest
+    container_name: limesurvey
+    hostname: limesurvey
+    ports:
+      - "${LIMESURVEY_PORT:-8080}:8080"
+    volumes:
+      - limesurvey_data:/data
+    restart: unless-stopped
+
+volumes:
+  limesurvey_data:
+    name: limesurvey_data

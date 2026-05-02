@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pumperly:
+    image: docker.io/drumsergio/pumperly:latest
+    container_name: pumperly
+    hostname: pumperly
+    ports:
+      - "${PUMPERLY_PORT:-8080}:8080"
+    volumes:
+      - pumperly_data:/data
+    restart: unless-stopped
+
+volumes:
+  pumperly_data:
+    name: pumperly_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flowiseai:
+    image: docker.io/elestio/flowiseai:latest
+    container_name: flowiseai
+    hostname: flowiseai
+    ports:
+      - "${FLOWISEAI_PORT:-3000}:3000"
+    volumes:
+      - flowiseai_data:/data
+    restart: unless-stopped
+
+volumes:
+  flowiseai_data:
+    name: flowiseai_data

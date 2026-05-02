@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jdownloader:
+    image: ghcr.io/jaymoulin/jdownloader:latest
+    container_name: jdownloader
+    hostname: jdownloader
+    ports:
+      - "${JDOWNLOADER_PORT:-8080}:8080"
+    volumes:
+      - jdownloader_data:/data
+    restart: unless-stopped
+
+volumes:
+  jdownloader_data:
+    name: jdownloader_data

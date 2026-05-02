@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mitra:
+    image: docker.io/bleakfuture0/mitra:latest
+    container_name: mitra
+    hostname: mitra
+    ports:
+      - "${MITRA_PORT:-8080}:8080"
+    volumes:
+      - mitra_data:/data
+    restart: unless-stopped
+
+volumes:
+  mitra_data:
+    name: mitra_data

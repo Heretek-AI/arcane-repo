@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  influxdb-v2:
+    image: docker.io/emoneth/influxdb_v2:latest
+    container_name: influxdb-v2
+    hostname: influxdb-v2
+    ports:
+      - "${INFLUXDB_V2_PORT:-8086}:8086"
+    volumes:
+      - influxdb-v2_data:/data
+    restart: unless-stopped
+
+volumes:
+  influxdb-v2_data:
+    name: influxdb-v2_data

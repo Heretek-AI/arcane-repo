@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  xrsh:
+    image: docker.io/coderofsalvation/xrsh:latest
+    container_name: xrsh
+    hostname: xrsh
+    ports:
+      - "${XRSH_PORT:-8080}:8080"
+    volumes:
+      - xrsh_data:/data
+    restart: unless-stopped
+
+volumes:
+  xrsh_data:
+    name: xrsh_data

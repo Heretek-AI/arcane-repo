@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wetty:
+    image: ghcr.io/butlerx/wetty:latest
+    container_name: wetty
+    hostname: wetty
+    ports:
+      - "${WETTY_PORT:-8080}:8080"
+    volumes:
+      - wetty_data:/data
+    restart: unless-stopped
+
+volumes:
+  wetty_data:
+    name: wetty_data

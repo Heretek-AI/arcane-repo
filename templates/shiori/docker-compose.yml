@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shiori:
+    image: docker.io/radhifadlillah/shiori:latest
+    container_name: shiori
+    hostname: shiori
+    ports:
+      - "${SHIORI_PORT:-8080}:8080"
+    volumes:
+      - shiori_data:/data
+    restart: unless-stopped
+
+volumes:
+  shiori_data:
+    name: shiori_data

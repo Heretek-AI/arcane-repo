@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redis:
+    image: docker.io/redislabs/redis:latest
+    container_name: redis
+    hostname: redis
+    ports:
+      - "${REDIS_PORT:-8080}:8080"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+    name: redis_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fathom:
+    image: docker.io/usefathom/fathom:latest
+    container_name: fathom
+    hostname: fathom
+    ports:
+      - "${FATHOM_PORT:-8080}:8080"
+    volumes:
+      - fathom_data:/data
+    restart: unless-stopped
+
+volumes:
+  fathom_data:
+    name: fathom_data

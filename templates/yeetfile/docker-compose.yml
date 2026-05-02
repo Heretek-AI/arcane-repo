@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yeetfile:
+    image: ghcr.io/benbusby/yeetfile:latest
+    container_name: yeetfile
+    hostname: yeetfile
+    ports:
+      - "${YEETFILE_PORT:-8080}:8080"
+    volumes:
+      - yeetfile_data:/data
+    restart: unless-stopped
+
+volumes:
+  yeetfile_data:
+    name: yeetfile_data

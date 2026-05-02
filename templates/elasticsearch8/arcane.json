@@ -1,0 +1,11 @@
+{
+  "id": "elasticsearch8",
+  "name": "Elasticsearch8",
+  "description": "Self-hosted Elasticsearch8 deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

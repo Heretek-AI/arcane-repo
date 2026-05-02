@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  passed:
+    image: docker.io/shokohsc/passed:latest
+    container_name: passed
+    hostname: passed
+    ports:
+      - "${PASSED_PORT:-8080}:8080"
+    volumes:
+      - passed_data:/data
+    restart: unless-stopped
+
+volumes:
+  passed_data:
+    name: passed_data

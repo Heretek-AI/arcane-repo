@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  matrix-appservice-irc:
+    image: docker.io/matrixdotorg/matrix-appservice-irc:latest
+    container_name: matrix-appservice-irc
+    hostname: matrix-appservice-irc
+    ports:
+      - "${MATRIX_APPSERVICE_IRC_PORT:-8008}:8008"
+    volumes:
+      - matrix-appservice-irc_data:/data
+    restart: unless-stopped
+
+volumes:
+  matrix-appservice-irc_data:
+    name: matrix-appservice-irc_data

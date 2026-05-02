@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  baikal:
+    image: docker.io/ckulka/baikal:latest
+    container_name: baikal
+    hostname: baikal
+    ports:
+      - "${BAIKAL_PORT:-8080}:8080"
+    volumes:
+      - baikal_data:/data
+    restart: unless-stopped
+
+volumes:
+  baikal_data:
+    name: baikal_data

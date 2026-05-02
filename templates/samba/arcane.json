@@ -1,0 +1,11 @@
+{
+  "id": "samba",
+  "name": "Samba",
+  "description": "Self-hosted Samba deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

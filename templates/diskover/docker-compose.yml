@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  diskover:
+    image: ghcr.io/linuxserver/diskover:latest
+    container_name: diskover
+    hostname: diskover
+    ports:
+      - "${DISKOVER_PORT:-8080}:8080"
+    volumes:
+      - diskover_data:/data
+    restart: unless-stopped
+
+volumes:
+  diskover_data:
+    name: diskover_data

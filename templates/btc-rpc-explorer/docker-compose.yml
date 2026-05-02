@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  btc-rpc-explorer:
+    image: docker.io/getumbrel/btc-rpc-explorer:latest
+    container_name: btc-rpc-explorer
+    hostname: btc-rpc-explorer
+    ports:
+      - "${BTC_RPC_EXPLORER_PORT:-8080}:8080"
+    volumes:
+      - btc-rpc-explorer_data:/data
+    restart: unless-stopped
+
+volumes:
+  btc-rpc-explorer_data:
+    name: btc-rpc-explorer_data

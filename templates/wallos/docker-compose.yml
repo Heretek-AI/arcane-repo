@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wallos:
+    image: docker.io/bellamy/wallos:latest
+    container_name: wallos
+    hostname: wallos
+    ports:
+      - "${WALLOS_PORT:-8080}:8080"
+    volumes:
+      - wallos_data:/data
+    restart: unless-stopped
+
+volumes:
+  wallos_data:
+    name: wallos_data

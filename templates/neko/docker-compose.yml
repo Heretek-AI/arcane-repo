@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  neko:
+    image: docker.io/m1k1o/neko:latest
+    container_name: neko
+    hostname: neko
+    ports:
+      - "${NEKO_PORT:-8080}:8080"
+    volumes:
+      - neko_data:/data
+    restart: unless-stopped
+
+volumes:
+  neko_data:
+    name: neko_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  firefly-iii:
+    image: ghcr.io/supersandro2000/firefly-iii:latest
+    container_name: firefly-iii
+    hostname: firefly-iii
+    ports:
+      - "${FIREFLY_III_PORT:-8080}:8080"
+    volumes:
+      - firefly-iii_data:/data
+    restart: unless-stopped
+
+volumes:
+  firefly-iii_data:
+    name: firefly-iii_data

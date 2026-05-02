@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  file-drop:
+    image: docker.io/peek1e/file-drop:latest
+    container_name: file-drop
+    hostname: file-drop
+    ports:
+      - "${FILE_DROP_PORT:-8080}:8080"
+    volumes:
+      - file-drop_data:/data
+    restart: unless-stopped
+
+volumes:
+  file-drop_data:
+    name: file-drop_data

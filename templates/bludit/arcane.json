@@ -1,0 +1,11 @@
+{
+  "id": "bludit",
+  "name": "Bludit",
+  "description": "Self-hosted Bludit deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

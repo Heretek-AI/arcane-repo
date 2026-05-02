@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mantis:
+    image: docker.io/sublimesec/mantis:latest
+    container_name: mantis
+    hostname: mantis
+    ports:
+      - "${MANTIS_PORT:-8080}:8080"
+    volumes:
+      - mantis_data:/data
+    restart: unless-stopped
+
+volumes:
+  mantis_data:
+    name: mantis_data

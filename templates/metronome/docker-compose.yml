@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  metronome:
+    image: docker.io/mesoshq/metronome:latest
+    container_name: metronome
+    hostname: metronome
+    ports:
+      - "${METRONOME_PORT:-8080}:8080"
+    volumes:
+      - metronome_data:/data
+    restart: unless-stopped
+
+volumes:
+  metronome_data:
+    name: metronome_data

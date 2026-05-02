@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  timemachine:
+    image: docker.io/odarriba/timemachine:latest
+    container_name: timemachine
+    hostname: timemachine
+    ports:
+      - "${TIMEMACHINE_PORT:-8080}:8080"
+    volumes:
+      - timemachine_data:/data
+    restart: unless-stopped
+
+volumes:
+  timemachine_data:
+    name: timemachine_data

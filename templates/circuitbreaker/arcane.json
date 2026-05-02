@@ -1,0 +1,13 @@
+{
+  "id": "circuitbreaker",
+  "name": "Circuitbreaker",
+  "description": "Self-hosted Circuitbreaker deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "communication",
+    "devops",
+    "umbrel"
+  ]
+}

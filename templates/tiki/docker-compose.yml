@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tiki:
+    image: docker.io/godbout/tiki:latest
+    container_name: tiki
+    hostname: tiki
+    ports:
+      - "${TIKI_PORT:-8080}:8080"
+    volumes:
+      - tiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  tiki_data:
+    name: tiki_data

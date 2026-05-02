@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ttrss:
+    image: docker.io/wangqiru/ttrss:latest
+    container_name: ttrss
+    hostname: ttrss
+    ports:
+      - "${TTRSS_PORT:-80}:80"
+    volumes:
+      - ttrss_data:/data
+    restart: unless-stopped
+
+volumes:
+  ttrss_data:
+    name: ttrss_data

@@ -1,0 +1,12 @@
+{
+  "id": "lazytainer",
+  "name": "Lazytainer",
+  "description": "Self-hosted Lazytainer deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "portainer"
+  ]
+}

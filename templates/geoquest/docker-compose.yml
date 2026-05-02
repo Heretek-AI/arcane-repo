@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  geoquest:
+    image: docker.io/swisschris/geoquest:latest
+    container_name: geoquest
+    hostname: geoquest
+    ports:
+      - "${GEOQUEST_PORT:-8080}:8080"
+    volumes:
+      - geoquest_data:/data
+    restart: unless-stopped
+
+volumes:
+  geoquest_data:
+    name: geoquest_data

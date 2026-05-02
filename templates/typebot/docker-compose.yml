@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  typebot:
+    image: docker.io/samuellopes123/typebot:latest
+    container_name: typebot
+    hostname: typebot
+    ports:
+      - "${TYPEBOT_PORT:-8080}:8080"
+    volumes:
+      - typebot_data:/data
+    restart: unless-stopped
+
+volumes:
+  typebot_data:
+    name: typebot_data

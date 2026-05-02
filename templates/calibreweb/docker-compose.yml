@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  calibreweb:
+    image: docker.io/fluffybacon/calibreweb:latest
+    container_name: calibreweb
+    hostname: calibreweb
+    ports:
+      - "${CALIBREWEB_PORT:-8083}:8083"
+    volumes:
+      - calibreweb_data:/data
+    restart: unless-stopped
+
+volumes:
+  calibreweb_data:
+    name: calibreweb_data

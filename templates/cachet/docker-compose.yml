@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cachet:
+    image: docker.io/shuttleops/cachet:latest
+    container_name: cachet
+    hostname: cachet
+    ports:
+      - "${CACHET_PORT:-80}:80"
+    volumes:
+      - cachet_data:/data
+    restart: unless-stopped
+
+volumes:
+  cachet_data:
+    name: cachet_data

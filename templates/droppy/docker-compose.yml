@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  droppy:
+    image: docker.io/silverwind/droppy:latest
+    container_name: droppy
+    hostname: droppy
+    ports:
+      - "${DROPPY_PORT:-8080}:8080"
+    volumes:
+      - droppy_data:/data
+    restart: unless-stopped
+
+volumes:
+  droppy_data:
+    name: droppy_data

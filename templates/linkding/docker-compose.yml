@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  linkding:
+    image: ghcr.io/sissbruecker/linkding:latest
+    container_name: linkding
+    hostname: linkding
+    ports:
+      - "${LINKDING_PORT:-8080}:8080"
+    volumes:
+      - linkding_data:/data
+    restart: unless-stopped
+
+volumes:
+  linkding_data:
+    name: linkding_data

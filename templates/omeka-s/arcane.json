@@ -1,0 +1,11 @@
+{
+  "id": "omeka-s",
+  "name": "Omeka S",
+  "description": "Self-hosted Omeka S deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

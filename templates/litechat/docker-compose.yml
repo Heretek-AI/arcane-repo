@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  litechat:
+    image: docker.io/dimitrigilbert/litechat:latest
+    container_name: litechat
+    hostname: litechat
+    ports:
+      - "${LITECHAT_PORT:-8080}:8080"
+    volumes:
+      - litechat_data:/data
+    restart: unless-stopped
+
+volumes:
+  litechat_data:
+    name: litechat_data

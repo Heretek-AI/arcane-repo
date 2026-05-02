@@ -1,0 +1,11 @@
+{
+  "id": "collabora",
+  "name": "Collabora",
+  "description": "Self-hosted Collabora deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

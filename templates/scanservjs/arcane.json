@@ -1,0 +1,11 @@
+{
+  "id": "scanservjs",
+  "name": "Scanservjs",
+  "description": "Self-hosted Scanservjs deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

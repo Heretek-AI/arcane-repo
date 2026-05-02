@@ -1,0 +1,11 @@
+{
+  "id": "lidarr",
+  "name": "Lidarr",
+  "description": "Self-hosted Lidarr deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

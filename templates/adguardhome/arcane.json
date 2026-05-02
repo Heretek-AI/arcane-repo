@@ -1,0 +1,11 @@
+{
+  "id": "adguardhome",
+  "name": "Adguardhome",
+  "description": "Self-hosted Adguardhome deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

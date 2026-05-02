@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lychee:
+    image: ghcr.io/linuxserver/lychee:latest
+    container_name: lychee
+    hostname: lychee
+    ports:
+      - "${LYCHEE_PORT:-8080}:8080"
+    volumes:
+      - lychee_data:/data
+    restart: unless-stopped
+
+volumes:
+  lychee_data:
+    name: lychee_data

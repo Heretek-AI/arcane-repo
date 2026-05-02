@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ergo:
+    image: ghcr.io/ergochat/ergo:latest
+    container_name: ergo
+    hostname: ergo
+    ports:
+      - "${ERGO_PORT:-8080}:8080"
+    volumes:
+      - ergo_data:/data
+    restart: unless-stopped
+
+volumes:
+  ergo_data:
+    name: ergo_data

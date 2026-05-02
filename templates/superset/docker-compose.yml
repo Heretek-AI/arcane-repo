@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  superset:
+    image: docker.io/apache/superset:latest
+    container_name: superset
+    hostname: superset
+    ports:
+      - "${SUPERSET_PORT:-8080}:8080"
+    volumes:
+      - superset_data:/data
+    restart: unless-stopped
+
+volumes:
+  superset_data:
+    name: superset_data

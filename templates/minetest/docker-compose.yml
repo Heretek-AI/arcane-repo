@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  minetest:
+    image: ghcr.io/linuxserver/minetest:latest
+    container_name: minetest
+    hostname: minetest
+    ports:
+      - "${MINETEST_PORT:-8080}:8080"
+    volumes:
+      - minetest_data:/data
+    restart: unless-stopped
+
+volumes:
+  minetest_data:
+    name: minetest_data

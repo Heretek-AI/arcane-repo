@@ -1,0 +1,11 @@
+{
+  "id": "may",
+  "name": "May",
+  "description": "Self-hosted May deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

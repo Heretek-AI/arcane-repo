@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  checkmate:
+    image: docker.io/hypothesis/checkmate:latest
+    container_name: checkmate
+    hostname: checkmate
+    ports:
+      - "${CHECKMATE_PORT:-8080}:8080"
+    volumes:
+      - checkmate_data:/data
+    restart: unless-stopped
+
+volumes:
+  checkmate_data:
+    name: checkmate_data

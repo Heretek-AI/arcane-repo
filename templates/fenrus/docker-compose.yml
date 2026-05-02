@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fenrus:
+    image: docker.io/revenz/fenrus:latest
+    container_name: fenrus
+    hostname: fenrus
+    ports:
+      - "${FENRUS_PORT:-8080}:8080"
+    volumes:
+      - fenrus_data:/data
+    restart: unless-stopped
+
+volumes:
+  fenrus_data:
+    name: fenrus_data

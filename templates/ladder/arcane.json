@@ -1,0 +1,11 @@
+{
+  "id": "ladder",
+  "name": "Ladder",
+  "description": "Self-hosted Ladder deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rutorrent:
+    image: ghcr.io/linuxserver/rutorrent:latest
+    container_name: rutorrent
+    hostname: rutorrent
+    ports:
+      - "${RUTORRENT_PORT:-8080}:8080"
+    volumes:
+      - rutorrent_data:/data
+    restart: unless-stopped
+
+volumes:
+  rutorrent_data:
+    name: rutorrent_data

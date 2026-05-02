@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fireshare:
+    image: docker.io/shaneisrael/fireshare:latest
+    container_name: fireshare
+    hostname: fireshare
+    ports:
+      - "${FIRESHARE_PORT:-8080}:8080"
+    volumes:
+      - fireshare_data:/data
+    restart: unless-stopped
+
+volumes:
+  fireshare_data:
+    name: fireshare_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tuwunel:
+    image: docker.io/jevolk/tuwunel:latest
+    container_name: tuwunel
+    hostname: tuwunel
+    ports:
+      - "${TUWUNEL_PORT:-8080}:8080"
+    volumes:
+      - tuwunel_data:/data
+    restart: unless-stopped
+
+volumes:
+  tuwunel_data:
+    name: tuwunel_data

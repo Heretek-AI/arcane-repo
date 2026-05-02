@@ -1,0 +1,11 @@
+{
+  "id": "cops",
+  "name": "Cops",
+  "description": "Self-hosted Cops deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

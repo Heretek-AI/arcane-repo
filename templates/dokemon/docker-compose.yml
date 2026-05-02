@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dokemon:
+    image: docker.io/productiveops/dokemon:latest
+    container_name: dokemon
+    hostname: dokemon
+    ports:
+      - "${DOKEMON_PORT:-8080}:8080"
+    volumes:
+      - dokemon_data:/data
+    restart: unless-stopped
+
+volumes:
+  dokemon_data:
+    name: dokemon_data

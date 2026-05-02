@@ -1,0 +1,11 @@
+{
+  "id": "turtl",
+  "name": "Turtl",
+  "description": "Self-hosted Turtl deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "element-call",
+  "name": "Element Call",
+  "description": "Self-hosted Element Call deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

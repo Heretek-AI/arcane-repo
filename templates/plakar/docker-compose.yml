@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plakar:
+    image: docker.io/barcus/plakar:latest
+    container_name: plakar
+    hostname: plakar
+    ports:
+      - "${PLAKAR_PORT:-8080}:8080"
+    volumes:
+      - plakar_data:/data
+    restart: unless-stopped
+
+volumes:
+  plakar_data:
+    name: plakar_data

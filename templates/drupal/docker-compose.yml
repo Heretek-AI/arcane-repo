@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  drupal:
+    image: docker.io/bitnami/drupal:latest
+    container_name: drupal
+    hostname: drupal
+    ports:
+      - "${DRUPAL_PORT:-8080}:8080"
+    volumes:
+      - drupal_data:/data
+    restart: unless-stopped
+
+volumes:
+  drupal_data:
+    name: drupal_data

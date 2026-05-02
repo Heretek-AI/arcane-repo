@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zerobin:
+    image: docker.io/jgeusebroek/zerobin:latest
+    container_name: zerobin
+    hostname: zerobin
+    ports:
+      - "${ZEROBIN_PORT:-8080}:8080"
+    volumes:
+      - zerobin_data:/data
+    restart: unless-stopped
+
+volumes:
+  zerobin_data:
+    name: zerobin_data

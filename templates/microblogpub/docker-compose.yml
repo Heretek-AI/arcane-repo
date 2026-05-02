@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  microblogpub:
+    image: docker.io/heywoodlh/microblogpub:latest
+    container_name: microblogpub
+    hostname: microblogpub
+    ports:
+      - "${MICROBLOGPUB_PORT:-8080}:8080"
+    volumes:
+      - microblogpub_data:/data
+    restart: unless-stopped
+
+volumes:
+  microblogpub_data:
+    name: microblogpub_data

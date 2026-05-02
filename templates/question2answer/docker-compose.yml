@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  question2answer:
+    image: docker.io/wiesom/question2answer:latest
+    container_name: question2answer
+    hostname: question2answer
+    ports:
+      - "${QUESTION2ANSWER_PORT:-8080}:8080"
+    volumes:
+      - question2answer_data:/data
+    restart: unless-stopped
+
+volumes:
+  question2answer_data:
+    name: question2answer_data

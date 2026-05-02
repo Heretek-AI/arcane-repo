@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hasty-paste:
+    image: docker.io/loadmodel/hasty-paste:latest
+    container_name: hasty-paste
+    hostname: hasty-paste
+    ports:
+      - "${HASTY_PASTE_PORT:-8080}:8080"
+    volumes:
+      - hasty-paste_data:/data
+    restart: unless-stopped
+
+volumes:
+  hasty-paste_data:
+    name: hasty-paste_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  torbrowser:
+    image: docker.io/forwardcomputers/torbrowser:latest
+    container_name: torbrowser
+    hostname: torbrowser
+    ports:
+      - "${TORBROWSER_PORT:-8080}:8080"
+    volumes:
+      - torbrowser_data:/data
+    restart: unless-stopped
+
+volumes:
+  torbrowser_data:
+    name: torbrowser_data

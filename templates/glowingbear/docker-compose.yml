@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  glowingbear:
+    image: docker.io/zknt/glowingbear:latest
+    container_name: glowingbear
+    hostname: glowingbear
+    ports:
+      - "${GLOWINGBEAR_PORT:-8080}:8080"
+    volumes:
+      - glowingbear_data:/data
+    restart: unless-stopped
+
+volumes:
+  glowingbear_data:
+    name: glowingbear_data

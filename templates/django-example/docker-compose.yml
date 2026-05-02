@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  django-example:
+    image: docker.io/sajoku/django_example:latest
+    container_name: django-example
+    hostname: django-example
+    ports:
+      - "${DJANGO_EXAMPLE_PORT:-8080}:8080"
+    volumes:
+      - django-example_data:/data
+    restart: unless-stopped
+
+volumes:
+  django-example_data:
+    name: django-example_data

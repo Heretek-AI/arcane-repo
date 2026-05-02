@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lstu:
+    image: docker.io/xataz/lstu:latest
+    container_name: lstu
+    hostname: lstu
+    ports:
+      - "${LSTU_PORT:-8080}:8080"
+    volumes:
+      - lstu_data:/data
+    restart: unless-stopped
+
+volumes:
+  lstu_data:
+    name: lstu_data

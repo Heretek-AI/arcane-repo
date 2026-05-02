@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  karakeep:
+    image: docker.io/cyangze/karakeep:latest
+    container_name: karakeep
+    hostname: karakeep
+    ports:
+      - "${KARAKEEP_PORT:-8080}:8080"
+    volumes:
+      - karakeep_data:/data
+    restart: unless-stopped
+
+volumes:
+  karakeep_data:
+    name: karakeep_data

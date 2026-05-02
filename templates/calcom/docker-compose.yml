@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  calcom:
+    image: docker.io/kaumudpa/calcom:latest
+    container_name: calcom
+    hostname: calcom
+    ports:
+      - "${CALCOM_PORT:-8080}:8080"
+    volumes:
+      - calcom_data:/data
+    restart: unless-stopped
+
+volumes:
+  calcom_data:
+    name: calcom_data

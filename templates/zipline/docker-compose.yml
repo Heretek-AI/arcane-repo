@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zipline:
+    image: docker.io/adegtyarev/zipline:latest
+    container_name: zipline
+    hostname: zipline
+    ports:
+      - "${ZIPLINE_PORT:-8080}:8080"
+    volumes:
+      - zipline_data:/data
+    restart: unless-stopped
+
+volumes:
+  zipline_data:
+    name: zipline_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  epicyon:
+    image: docker.io/charims/epicyon:latest
+    container_name: epicyon
+    hostname: epicyon
+    ports:
+      - "${EPICYON_PORT:-8080}:8080"
+    volumes:
+      - epicyon_data:/data
+    restart: unless-stopped
+
+volumes:
+  epicyon_data:
+    name: epicyon_data

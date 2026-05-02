@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  incus:
+    image: docker.io/imgur/incus:latest
+    container_name: incus
+    hostname: incus
+    ports:
+      - "${INCUS_PORT:-8080}:8080"
+    volumes:
+      - incus_data:/data
+    restart: unless-stopped
+
+volumes:
+  incus_data:
+    name: incus_data

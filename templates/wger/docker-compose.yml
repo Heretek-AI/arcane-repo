@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wger:
+    image: docker.io/aronwk/wger:latest
+    container_name: wger
+    hostname: wger
+    ports:
+      - "${WGER_PORT:-8080}:8080"
+    volumes:
+      - wger_data:/data
+    restart: unless-stopped
+
+volumes:
+  wger_data:
+    name: wger_data

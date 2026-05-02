@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pgweb:
+    image: ghcr.io/sosedoff/pgweb:latest
+    container_name: pgweb
+    hostname: pgweb
+    ports:
+      - "${PGWEB_PORT:-8080}:8080"
+    volumes:
+      - pgweb_data:/data
+    restart: unless-stopped
+
+volumes:
+  pgweb_data:
+    name: pgweb_data

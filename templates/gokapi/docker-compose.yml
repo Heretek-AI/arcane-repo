@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gokapi:
+    image: docker.io/f0rc3/gokapi:latest
+    container_name: gokapi
+    hostname: gokapi
+    ports:
+      - "${GOKAPI_PORT:-8080}:8080"
+    volumes:
+      - gokapi_data:/data
+    restart: unless-stopped
+
+volumes:
+  gokapi_data:
+    name: gokapi_data

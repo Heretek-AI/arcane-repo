@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mediatracker:
+    image: docker.io/bonukai/mediatracker:latest
+    container_name: mediatracker
+    hostname: mediatracker
+    ports:
+      - "${MEDIATRACKER_PORT:-8080}:8080"
+    volumes:
+      - mediatracker_data:/data
+    restart: unless-stopped
+
+volumes:
+  mediatracker_data:
+    name: mediatracker_data

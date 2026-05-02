@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pelican:
+    image: docker.io/orthanc2/pelican:latest
+    container_name: pelican
+    hostname: pelican
+    ports:
+      - "${PELICAN_PORT:-8080}:8080"
+    volumes:
+      - pelican_data:/data
+    restart: unless-stopped
+
+volumes:
+  pelican_data:
+    name: pelican_data

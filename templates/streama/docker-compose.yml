@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  streama:
+    image: docker.io/gkiko/streama:latest
+    container_name: streama
+    hostname: streama
+    ports:
+      - "${STREAMA_PORT:-8080}:8080"
+    volumes:
+      - streama_data:/data
+    restart: unless-stopped
+
+volumes:
+  streama_data:
+    name: streama_data

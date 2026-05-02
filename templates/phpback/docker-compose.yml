@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpback:
+    image: docker.io/prodevstudio/phpback:latest
+    container_name: phpback
+    hostname: phpback
+    ports:
+      - "${PHPBACK_PORT:-8080}:8080"
+    volumes:
+      - phpback_data:/data
+    restart: unless-stopped
+
+volumes:
+  phpback_data:
+    name: phpback_data

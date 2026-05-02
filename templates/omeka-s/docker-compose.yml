@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  omeka-s:
+    image: docker.io/dodeeric/omeka-s:latest
+    container_name: omeka-s
+    hostname: omeka-s
+    ports:
+      - "${OMEKA_S_PORT:-8080}:8080"
+    volumes:
+      - omeka-s_data:/data
+    restart: unless-stopped
+
+volumes:
+  omeka-s_data:
+    name: omeka-s_data

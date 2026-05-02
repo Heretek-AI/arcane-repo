@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snort:
+    image: docker.io/alexandreoda/snort:latest
+    container_name: snort
+    hostname: snort
+    ports:
+      - "${SNORT_PORT:-8080}:8080"
+    volumes:
+      - snort_data:/data
+    restart: unless-stopped
+
+volumes:
+  snort_data:
+    name: snort_data

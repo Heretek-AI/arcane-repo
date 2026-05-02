@@ -1,0 +1,11 @@
+{
+  "id": "ctop",
+  "name": "Ctop",
+  "description": "Self-hosted Ctop deployment via Docker, sourced from Priority catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "priority"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  commandbox:
+    image: docker.io/ortussolutions/commandbox:latest
+    container_name: commandbox
+    hostname: commandbox
+    ports:
+      - "${COMMANDBOX_PORT:-8080}:8080"
+    volumes:
+      - commandbox_data:/data
+    restart: unless-stopped
+
+volumes:
+  commandbox_data:
+    name: commandbox_data

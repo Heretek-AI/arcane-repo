@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nomad:
+    image: docker.io/discobean/nomad:latest
+    container_name: nomad
+    hostname: nomad
+    ports:
+      - "${NOMAD_PORT:-8080}:8080"
+    volumes:
+      - nomad_data:/data
+    restart: unless-stopped
+
+volumes:
+  nomad_data:
+    name: nomad_data

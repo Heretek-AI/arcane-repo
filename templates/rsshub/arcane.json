@@ -1,0 +1,11 @@
+{
+  "id": "rsshub",
+  "name": "Rsshub",
+  "description": "Self-hosted Rsshub deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

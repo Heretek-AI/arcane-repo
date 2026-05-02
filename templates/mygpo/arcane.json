@@ -1,0 +1,11 @@
+{
+  "id": "mygpo",
+  "name": "Mygpo",
+  "description": "Self-hosted Mygpo deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

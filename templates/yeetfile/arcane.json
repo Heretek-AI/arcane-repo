@@ -1,0 +1,12 @@
+{
+  "id": "yeetfile",
+  "name": "Yeetfile",
+  "description": "Self-hosted Yeetfile deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "storage",
+    "yunohost"
+  ]
+}

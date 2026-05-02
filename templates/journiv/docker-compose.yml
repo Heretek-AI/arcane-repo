@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  journiv:
+    image: docker.io/idjohnson/journiv:latest
+    container_name: journiv
+    hostname: journiv
+    ports:
+      - "${JOURNIV_PORT:-8080}:8080"
+    volumes:
+      - journiv_data:/data
+    restart: unless-stopped
+
+volumes:
+  journiv_data:
+    name: journiv_data

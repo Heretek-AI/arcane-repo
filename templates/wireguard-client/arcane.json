@@ -1,0 +1,11 @@
+{
+  "id": "wireguard-client",
+  "name": "Wireguard Client",
+  "description": "Self-hosted Wireguard Client deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

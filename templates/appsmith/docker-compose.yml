@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  appsmith:
+    image: docker.io/bitnamicharts/appsmith:latest
+    container_name: appsmith
+    hostname: appsmith
+    ports:
+      - "${APPSMITH_PORT:-80}:80"
+    volumes:
+      - appsmith_data:/data
+    restart: unless-stopped
+
+volumes:
+  appsmith_data:
+    name: appsmith_data

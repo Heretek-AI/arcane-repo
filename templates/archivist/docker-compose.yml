@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  archivist:
+    image: docker.io/amdavidson/archivist:latest
+    container_name: archivist
+    hostname: archivist
+    ports:
+      - "${ARCHIVIST_PORT:-8080}:8080"
+    volumes:
+      - archivist_data:/data
+    restart: unless-stopped
+
+volumes:
+  archivist_data:
+    name: archivist_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  heyform:
+    image: docker.io/crownshy/heyform:latest
+    container_name: heyform
+    hostname: heyform
+    ports:
+      - "${HEYFORM_PORT:-8080}:8080"
+    volumes:
+      - heyform_data:/data
+    restart: unless-stopped
+
+volumes:
+  heyform_data:
+    name: heyform_data

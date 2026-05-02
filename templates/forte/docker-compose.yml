@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  forte:
+    image: docker.io/kaangiray26/forte:latest
+    container_name: forte
+    hostname: forte
+    ports:
+      - "${FORTE_PORT:-8080}:8080"
+    volumes:
+      - forte_data:/data
+    restart: unless-stopped
+
+volumes:
+  forte_data:
+    name: forte_data

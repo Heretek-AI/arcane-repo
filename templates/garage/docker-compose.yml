@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  garage:
+    image: docker.io/dxflrs/garage:latest
+    container_name: garage
+    hostname: garage
+    ports:
+      - "${GARAGE_PORT:-8080}:8080"
+    volumes:
+      - garage_data:/data
+    restart: unless-stopped
+
+volumes:
+  garage_data:
+    name: garage_data

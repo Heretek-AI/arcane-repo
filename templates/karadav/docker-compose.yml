@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  karadav:
+    image: docker.io/putraeka/karadav:latest
+    container_name: karadav
+    hostname: karadav
+    ports:
+      - "${KARADAV_PORT:-8080}:8080"
+    volumes:
+      - karadav_data:/data
+    restart: unless-stopped
+
+volumes:
+  karadav_data:
+    name: karadav_data

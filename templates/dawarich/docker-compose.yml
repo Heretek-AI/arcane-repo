@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dawarich:
+    image: docker.io/freikin/dawarich:latest
+    container_name: dawarich
+    hostname: dawarich
+    ports:
+      - "${DAWARICH_PORT:-8080}:8080"
+    volumes:
+      - dawarich_data:/data
+    restart: unless-stopped
+
+volumes:
+  dawarich_data:
+    name: dawarich_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ketesa:
+    image: ghcr.io/etkecc/ketesa:latest
+    container_name: ketesa
+    hostname: ketesa
+    ports:
+      - "${KETESA_PORT:-8080}:8080"
+    volumes:
+      - ketesa_data:/data
+    restart: unless-stopped
+
+volumes:
+  ketesa_data:
+    name: ketesa_data

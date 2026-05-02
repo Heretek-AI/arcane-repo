@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  archisteamfarm:
+    image: docker.io/justarchi/archisteamfarm:latest
+    container_name: archisteamfarm
+    hostname: archisteamfarm
+    ports:
+      - "${ARCHISTEAMFARM_PORT:-8080}:8080"
+    volumes:
+      - archisteamfarm_data:/data
+    restart: unless-stopped
+
+volumes:
+  archisteamfarm_data:
+    name: archisteamfarm_data

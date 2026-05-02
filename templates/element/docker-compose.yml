@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  element:
+    image: docker.io/asonix/element:latest
+    container_name: element
+    hostname: element
+    ports:
+      - "${ELEMENT_PORT:-8080}:8080"
+    volumes:
+      - element_data:/data
+    restart: unless-stopped
+
+volumes:
+  element_data:
+    name: element_data

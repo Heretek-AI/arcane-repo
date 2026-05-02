@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  argos:
+    image: docker.io/soytul/argos:latest
+    container_name: argos
+    hostname: argos
+    ports:
+      - "${ARGOS_PORT:-8080}:8080"
+    volumes:
+      - argos_data:/data
+    restart: unless-stopped
+
+volumes:
+  argos_data:
+    name: argos_data

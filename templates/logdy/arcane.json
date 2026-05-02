@@ -1,0 +1,11 @@
+{
+  "id": "logdy",
+  "name": "Logdy",
+  "description": "Self-hosted Logdy deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

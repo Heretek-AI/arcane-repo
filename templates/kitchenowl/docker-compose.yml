@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kitchenowl:
+    image: docker.io/tombursch/kitchenowl:latest
+    container_name: kitchenowl
+    hostname: kitchenowl
+    ports:
+      - "${KITCHENOWL_PORT:-8080}:8080"
+    volumes:
+      - kitchenowl_data:/data
+    restart: unless-stopped
+
+volumes:
+  kitchenowl_data:
+    name: kitchenowl_data

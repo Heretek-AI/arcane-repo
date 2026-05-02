@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  joplin:
+    image: ghcr.io/linuxserver/joplin:latest
+    container_name: joplin
+    hostname: joplin
+    ports:
+      - "${JOPLIN_PORT:-8080}:8080"
+    volumes:
+      - joplin_data:/data
+    restart: unless-stopped
+
+volumes:
+  joplin_data:
+    name: joplin_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  daapd:
+    image: ghcr.io/linuxserver/daapd:latest
+    container_name: daapd
+    hostname: daapd
+    ports:
+      - "${DAAPD_PORT:-8080}:8080"
+    volumes:
+      - daapd_data:/data
+    restart: unless-stopped
+
+volumes:
+  daapd_data:
+    name: daapd_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cowyo:
+    image: docker.io/schollz/cowyo:latest
+    container_name: cowyo
+    hostname: cowyo
+    ports:
+      - "${COWYO_PORT:-8080}:8080"
+    volumes:
+      - cowyo_data:/data
+    restart: unless-stopped
+
+volumes:
+  cowyo_data:
+    name: cowyo_data

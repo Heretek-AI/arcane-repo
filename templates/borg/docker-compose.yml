@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  borg:
+    image: docker.io/pschiffe/borg:latest
+    container_name: borg
+    hostname: borg
+    ports:
+      - "${BORG_PORT:-8080}:8080"
+    volumes:
+      - borg_data:/data
+    restart: unless-stopped
+
+volumes:
+  borg_data:
+    name: borg_data

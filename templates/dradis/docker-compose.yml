@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dradis:
+    image: docker.io/raesene/dradis:latest
+    container_name: dradis
+    hostname: dradis
+    ports:
+      - "${DRADIS_PORT:-8080}:8080"
+    volumes:
+      - dradis_data:/data
+    restart: unless-stopped
+
+volumes:
+  dradis_data:
+    name: dradis_data

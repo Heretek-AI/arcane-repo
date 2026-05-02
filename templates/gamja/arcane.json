@@ -1,0 +1,11 @@
+{
+  "id": "gamja",
+  "name": "Gamja",
+  "description": "Self-hosted Gamja deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

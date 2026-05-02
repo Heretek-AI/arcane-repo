@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  coin:
+    image: docker.io/relmos/coin:latest
+    container_name: coin
+    hostname: coin
+    ports:
+      - "${COIN_PORT:-8080}:8080"
+    volumes:
+      - coin_data:/data
+    restart: unless-stopped
+
+volumes:
+  coin_data:
+    name: coin_data

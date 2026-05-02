@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  btctracker:
+    image: docker.io/matteo29mar/btctracker:latest
+    container_name: btctracker
+    hostname: btctracker
+    ports:
+      - "${BTCTRACKER_PORT:-8080}:8080"
+    volumes:
+      - btctracker_data:/data
+    restart: unless-stopped
+
+volumes:
+  btctracker_data:
+    name: btctracker_data

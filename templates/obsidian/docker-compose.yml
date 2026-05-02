@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  obsidian:
+    image: ghcr.io/linuxserver/obsidian:latest
+    container_name: obsidian
+    hostname: obsidian
+    ports:
+      - "${OBSIDIAN_PORT:-8080}:8080"
+    volumes:
+      - obsidian_data:/data
+    restart: unless-stopped
+
+volumes:
+  obsidian_data:
+    name: obsidian_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  simplex:
+    image: docker.io/chetanketh/simplex:latest
+    container_name: simplex
+    hostname: simplex
+    ports:
+      - "${SIMPLEX_PORT:-32400}:32400"
+    volumes:
+      - simplex_data:/data
+    restart: unless-stopped
+
+volumes:
+  simplex_data:
+    name: simplex_data

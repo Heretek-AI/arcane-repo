@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  piefed:
+    image: docker.io/fedihost/piefed:latest
+    container_name: piefed
+    hostname: piefed
+    ports:
+      - "${PIEFED_PORT:-8080}:8080"
+    volumes:
+      - piefed_data:/data
+    restart: unless-stopped
+
+volumes:
+  piefed_data:
+    name: piefed_data

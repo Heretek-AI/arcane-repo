@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yeswiki:
+    image: docker.io/ethibox/yeswiki:latest
+    container_name: yeswiki
+    hostname: yeswiki
+    ports:
+      - "${YESWIKI_PORT:-80}:80"
+    volumes:
+      - yeswiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  yeswiki_data:
+    name: yeswiki_data

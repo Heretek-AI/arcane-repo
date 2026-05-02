@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  enclosed:
+    image: ghcr.io/corentinth/enclosed:latest
+    container_name: enclosed
+    hostname: enclosed
+    ports:
+      - "${ENCLOSED_PORT:-8080}:8080"
+    volumes:
+      - enclosed_data:/data
+    restart: unless-stopped
+
+volumes:
+  enclosed_data:
+    name: enclosed_data

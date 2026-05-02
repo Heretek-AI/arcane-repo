@@ -1,0 +1,11 @@
+{
+  "id": "zwave-js-ui",
+  "name": "Zwave Js Ui",
+  "description": "Self-hosted Zwave Js Ui deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

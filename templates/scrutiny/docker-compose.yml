@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  scrutiny:
+    image: ghcr.io/linuxserver/scrutiny:latest
+    container_name: scrutiny
+    hostname: scrutiny
+    ports:
+      - "${SCRUTINY_PORT:-8080}:8080"
+    volumes:
+      - scrutiny_data:/data
+    restart: unless-stopped
+
+volumes:
+  scrutiny_data:
+    name: scrutiny_data

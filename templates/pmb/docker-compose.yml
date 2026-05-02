@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pmb:
+    image: docker.io/jperon/pmb:latest
+    container_name: pmb
+    hostname: pmb
+    ports:
+      - "${PMB_PORT:-8080}:8080"
+    volumes:
+      - pmb_data:/data
+    restart: unless-stopped
+
+volumes:
+  pmb_data:
+    name: pmb_data

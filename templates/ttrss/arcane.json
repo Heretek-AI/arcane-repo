@@ -1,0 +1,11 @@
+{
+  "id": "ttrss",
+  "name": "Ttrss",
+  "description": "Self-hosted Ttrss deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

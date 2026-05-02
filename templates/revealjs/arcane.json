@@ -1,0 +1,11 @@
+{
+  "id": "revealjs",
+  "name": "Revealjs",
+  "description": "Self-hosted Revealjs deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

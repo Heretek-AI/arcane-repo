@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ums:
+    image: docker.io/mbentley/ums:latest
+    container_name: ums
+    hostname: ums
+    ports:
+      - "${UMS_PORT:-8080}:8080"
+    volumes:
+      - ums_data:/data
+    restart: unless-stopped
+
+volumes:
+  ums_data:
+    name: ums_data

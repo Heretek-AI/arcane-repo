@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyfin-vue:
+    image: ghcr.io/jellyfin/jellyfin-vue:latest
+    container_name: jellyfin-vue
+    hostname: jellyfin-vue
+    ports:
+      - "${JELLYFIN_VUE_PORT:-8096}:8096"
+    volumes:
+      - jellyfin-vue_data:/data
+    restart: unless-stopped
+
+volumes:
+  jellyfin-vue_data:
+    name: jellyfin-vue_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  traggo:
+    image: docker.io/elestio/traggo:latest
+    container_name: traggo
+    hostname: traggo
+    ports:
+      - "${TRAGGO_PORT:-8080}:8080"
+    volumes:
+      - traggo_data:/data
+    restart: unless-stopped
+
+volumes:
+  traggo_data:
+    name: traggo_data

@@ -1,0 +1,11 @@
+{
+  "id": "armadietto",
+  "name": "Armadietto",
+  "description": "Self-hosted Armadietto deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

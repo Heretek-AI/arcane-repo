@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  squid3:
+    image: docker.io/jam7/squid3:latest
+    container_name: squid3
+    hostname: squid3
+    ports:
+      - "${SQUID3_PORT:-8080}:8080"
+    volumes:
+      - squid3_data:/data
+    restart: unless-stopped
+
+volumes:
+  squid3_data:
+    name: squid3_data

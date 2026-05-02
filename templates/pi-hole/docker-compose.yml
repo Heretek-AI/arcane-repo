@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pi-hole:
+    image: docker.io/diginc/pi-hole:latest
+    container_name: pi-hole
+    hostname: pi-hole
+    ports:
+      - "${PI_HOLE_PORT:-8080}:8080"
+    volumes:
+      - pi-hole_data:/data
+    restart: unless-stopped
+
+volumes:
+  pi-hole_data:
+    name: pi-hole_data

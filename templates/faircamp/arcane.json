@@ -1,0 +1,13 @@
+{
+  "id": "faircamp",
+  "name": "Faircamp",
+  "description": "Self-hosted Faircamp deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "communication",
+    "yunohost"
+  ]
+}

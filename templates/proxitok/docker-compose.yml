@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  proxitok:
+    image: docker.io/idocker1688/proxitok:latest
+    container_name: proxitok
+    hostname: proxitok
+    ports:
+      - "${PROXITOK_PORT:-8080}:8080"
+    volumes:
+      - proxitok_data:/data
+    restart: unless-stopped
+
+volumes:
+  proxitok_data:
+    name: proxitok_data

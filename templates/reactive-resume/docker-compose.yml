@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  reactive-resume:
+    image: ghcr.io/amruthpillai/reactive-resume:latest
+    container_name: reactive-resume
+    hostname: reactive-resume
+    ports:
+      - "${REACTIVE_RESUME_PORT:-8080}:8080"
+    volumes:
+      - reactive-resume_data:/data
+    restart: unless-stopped
+
+volumes:
+  reactive-resume_data:
+    name: reactive-resume_data

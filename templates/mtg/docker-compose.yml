@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mtg:
+    image: docker.io/nineseconds/mtg:latest
+    container_name: mtg
+    hostname: mtg
+    ports:
+      - "${MTG_PORT:-8080}:8080"
+    volumes:
+      - mtg_data:/data
+    restart: unless-stopped
+
+volumes:
+  mtg_data:
+    name: mtg_data

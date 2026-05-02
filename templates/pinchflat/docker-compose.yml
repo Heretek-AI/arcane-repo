@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pinchflat:
+    image: docker.io/keglin/pinchflat:latest
+    container_name: pinchflat
+    hostname: pinchflat
+    ports:
+      - "${PINCHFLAT_PORT:-8080}:8080"
+    volumes:
+      - pinchflat_data:/data
+    restart: unless-stopped
+
+volumes:
+  pinchflat_data:
+    name: pinchflat_data

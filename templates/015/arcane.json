@@ -1,0 +1,11 @@
+{
+  "id": "015",
+  "name": "015",
+  "description": "Self-hosted 015 deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

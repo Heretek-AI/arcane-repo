@@ -1,0 +1,12 @@
+{
+  "id": "usocial",
+  "name": "Usocial",
+  "description": "Self-hosted Usocial deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "devops",
+    "umbrel"
+  ]
+}

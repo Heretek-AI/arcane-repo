@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  penpot:
+    image: docker.io/cloudstaxx/penpot:latest
+    container_name: penpot
+    hostname: penpot
+    ports:
+      - "${PENPOT_PORT:-8080}:8080"
+    volumes:
+      - penpot_data:/data
+    restart: unless-stopped
+
+volumes:
+  penpot_data:
+    name: penpot_data

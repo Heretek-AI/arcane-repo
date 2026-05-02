@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  opnform:
+    image: docker.io/elestio/opnform:latest
+    container_name: opnform
+    hostname: opnform
+    ports:
+      - "${OPNFORM_PORT:-8080}:8080"
+    volumes:
+      - opnform_data:/data
+    restart: unless-stopped
+
+volumes:
+  opnform_data:
+    name: opnform_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lidify:
+    image: docker.io/thewicklowwolf/lidify:latest
+    container_name: lidify
+    hostname: lidify
+    ports:
+      - "${LIDIFY_PORT:-3000}:3000"
+    volumes:
+      - lidify_data:/data
+    restart: unless-stopped
+
+volumes:
+  lidify_data:
+    name: lidify_data

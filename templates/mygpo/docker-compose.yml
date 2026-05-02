@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mygpo:
+    image: docker.io/maxolasersquad/mygpo:latest
+    container_name: mygpo
+    hostname: mygpo
+    ports:
+      - "${MYGPO_PORT:-8080}:8080"
+    volumes:
+      - mygpo_data:/data
+    restart: unless-stopped
+
+volumes:
+  mygpo_data:
+    name: mygpo_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  stump:
+    image: docker.io/aaronleopold/stump:latest
+    container_name: stump
+    hostname: stump
+    ports:
+      - "${STUMP_PORT:-8080}:8080"
+    volumes:
+      - stump_data:/data
+    restart: unless-stopped
+
+volumes:
+  stump_data:
+    name: stump_data

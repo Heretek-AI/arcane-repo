@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  webmin:
+    image: docker.io/johanp/webmin:latest
+    container_name: webmin
+    hostname: webmin
+    ports:
+      - "${WEBMIN_PORT:-8080}:8080"
+    volumes:
+      - webmin_data:/data
+    restart: unless-stopped
+
+volumes:
+  webmin_data:
+    name: webmin_data

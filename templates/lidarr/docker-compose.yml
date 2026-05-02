@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lidarr:
+    image: ghcr.io/linuxserver/lidarr:latest
+    container_name: lidarr
+    hostname: lidarr
+    ports:
+      - "${LIDARR_PORT:-8080}:8080"
+    volumes:
+      - lidarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  lidarr_data:
+    name: lidarr_data

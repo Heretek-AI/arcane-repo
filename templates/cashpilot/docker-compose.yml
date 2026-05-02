@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cashpilot:
+    image: docker.io/drumsergio/cashpilot:latest
+    container_name: cashpilot
+    hostname: cashpilot
+    ports:
+      - "${CASHPILOT_PORT:-8080}:8080"
+    volumes:
+      - cashpilot_data:/data
+    restart: unless-stopped
+
+volumes:
+  cashpilot_data:
+    name: cashpilot_data

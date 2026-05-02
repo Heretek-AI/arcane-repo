@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  thunderhub:
+    image: docker.io/apotdevin/thunderhub:latest
+    container_name: thunderhub
+    hostname: thunderhub
+    ports:
+      - "${THUNDERHUB_PORT:-8080}:8080"
+    volumes:
+      - thunderhub_data:/data
+    restart: unless-stopped
+
+volumes:
+  thunderhub_data:
+    name: thunderhub_data

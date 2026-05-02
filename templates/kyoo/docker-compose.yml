@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kyoo:
+    image: docker.io/redeyeapps/kyoo:latest
+    container_name: kyoo
+    hostname: kyoo
+    ports:
+      - "${KYOO_PORT:-8080}:8080"
+    volumes:
+      - kyoo_data:/data
+    restart: unless-stopped
+
+volumes:
+  kyoo_data:
+    name: kyoo_data

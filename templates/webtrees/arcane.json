@@ -1,0 +1,11 @@
+{
+  "id": "webtrees",
+  "name": "Webtrees",
+  "description": "Self-hosted Webtrees deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

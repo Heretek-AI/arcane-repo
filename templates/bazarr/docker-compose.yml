@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bazarr:
+    image: ghcr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    hostname: bazarr
+    ports:
+      - "${BAZARR_PORT:-8080}:8080"
+    volumes:
+      - bazarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  bazarr_data:
+    name: bazarr_data

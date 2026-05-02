@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pritunl:
+    image: docker.io/jippi/pritunl:latest
+    container_name: pritunl
+    hostname: pritunl
+    ports:
+      - "${PRITUNL_PORT:-8080}:8080"
+    volumes:
+      - pritunl_data:/data
+    restart: unless-stopped
+
+volumes:
+  pritunl_data:
+    name: pritunl_data

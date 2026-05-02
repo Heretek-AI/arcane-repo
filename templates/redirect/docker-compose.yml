@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redirect:
+    image: docker.io/cusspvz/redirect:latest
+    container_name: redirect
+    hostname: redirect
+    ports:
+      - "${REDIRECT_PORT:-8080}:8080"
+    volumes:
+      - redirect_data:/data
+    restart: unless-stopped
+
+volumes:
+  redirect_data:
+    name: redirect_data

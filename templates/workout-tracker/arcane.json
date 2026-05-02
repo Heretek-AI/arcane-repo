@@ -1,0 +1,11 @@
+{
+  "id": "workout-tracker",
+  "name": "Workout Tracker",
+  "description": "Self-hosted Workout Tracker deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

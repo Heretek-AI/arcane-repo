@@ -1,0 +1,11 @@
+{
+  "id": "drupal",
+  "name": "Drupal",
+  "description": "Self-hosted Drupal deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

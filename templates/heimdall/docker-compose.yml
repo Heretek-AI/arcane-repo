@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  heimdall:
+    image: ghcr.io/linuxserver/heimdall:latest
+    container_name: heimdall
+    hostname: heimdall
+    ports:
+      - "${HEIMDALL_PORT:-8080}:8080"
+    volumes:
+      - heimdall_data:/data
+    restart: unless-stopped
+
+volumes:
+  heimdall_data:
+    name: heimdall_data

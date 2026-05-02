@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  isso:
+    image: docker.io/angristan/isso:latest
+    container_name: isso
+    hostname: isso
+    ports:
+      - "${ISSO_PORT:-8080}:8080"
+    volumes:
+      - isso_data:/data
+    restart: unless-stopped
+
+volumes:
+  isso_data:
+    name: isso_data

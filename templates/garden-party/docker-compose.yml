@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  garden-party:
+    image: docker.io/jbreitenbaumer/garden-party:latest
+    container_name: garden-party
+    hostname: garden-party
+    ports:
+      - "${GARDEN_PARTY_PORT:-8080}:8080"
+    volumes:
+      - garden-party_data:/data
+    restart: unless-stopped
+
+volumes:
+  garden-party_data:
+    name: garden-party_data

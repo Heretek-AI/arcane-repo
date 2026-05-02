@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyfin-accounts:
+    image: docker.io/hrfee/jellyfin-accounts:latest
+    container_name: jellyfin-accounts
+    hostname: jellyfin-accounts
+    ports:
+      - "${JELLYFIN_ACCOUNTS_PORT:-8096}:8096"
+    volumes:
+      - jellyfin-accounts_data:/data
+    restart: unless-stopped
+
+volumes:
+  jellyfin-accounts_data:
+    name: jellyfin-accounts_data

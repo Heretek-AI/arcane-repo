@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  scanservjs:
+    image: docker.io/sbs20/scanservjs:latest
+    container_name: scanservjs
+    hostname: scanservjs
+    ports:
+      - "${SCANSERVJS_PORT:-8080}:8080"
+    volumes:
+      - scanservjs_data:/data
+    restart: unless-stopped
+
+volumes:
+  scanservjs_data:
+    name: scanservjs_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fontcompare:
+    image: docker.io/agasta/fontcompare:latest
+    container_name: fontcompare
+    hostname: fontcompare
+    ports:
+      - "${FONTCOMPARE_PORT:-8080}:8080"
+    volumes:
+      - fontcompare_data:/data
+    restart: unless-stopped
+
+volumes:
+  fontcompare_data:
+    name: fontcompare_data

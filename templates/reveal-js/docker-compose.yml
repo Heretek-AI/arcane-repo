@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  reveal-js:
+    image: ghcr.io/cloudogu/reveal.js:latest
+    container_name: reveal-js
+    hostname: reveal-js
+    ports:
+      - "${REVEAL_JS_PORT:-8080}:8080"
+    volumes:
+      - reveal-js_data:/data
+    restart: unless-stopped
+
+volumes:
+  reveal-js_data:
+    name: reveal-js_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zigbee2mqtt:
+    image: ghcr.io/koenkk/zigbee2mqtt:latest
+    container_name: zigbee2mqtt
+    hostname: zigbee2mqtt
+    ports:
+      - "${ZIGBEE2MQTT_PORT:-8080}:8080"
+    volumes:
+      - zigbee2mqtt_data:/data
+    restart: unless-stopped
+
+volumes:
+  zigbee2mqtt_data:
+    name: zigbee2mqtt_data

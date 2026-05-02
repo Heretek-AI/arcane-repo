@@ -1,0 +1,11 @@
+{
+  "id": "matter-server",
+  "name": "Matter Server",
+  "description": "Self-hosted Matter Server deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

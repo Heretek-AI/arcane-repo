@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lobe-chat:
+    image: docker.io/lobehub/lobe-chat:latest
+    container_name: lobe-chat
+    hostname: lobe-chat
+    ports:
+      - "${LOBE_CHAT_PORT:-8080}:8080"
+    volumes:
+      - lobe-chat_data:/data
+    restart: unless-stopped
+
+volumes:
+  lobe-chat_data:
+    name: lobe-chat_data

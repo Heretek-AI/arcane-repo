@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pixel-server:
+    image: docker.io/olegvorobyov90/pixel-server:latest
+    container_name: pixel-server
+    hostname: pixel-server
+    ports:
+      - "${PIXEL_SERVER_PORT:-8080}:8080"
+    volumes:
+      - pixel-server_data:/data
+    restart: unless-stopped
+
+volumes:
+  pixel-server_data:
+    name: pixel-server_data

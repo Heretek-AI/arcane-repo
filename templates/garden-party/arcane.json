@@ -1,0 +1,11 @@
+{
+  "id": "garden-party",
+  "name": "Garden Party",
+  "description": "Self-hosted Garden Party deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

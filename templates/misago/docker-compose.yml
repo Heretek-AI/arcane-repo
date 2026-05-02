@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  misago:
+    image: docker.io/raliang/misago:latest
+    container_name: misago
+    hostname: misago
+    ports:
+      - "${MISAGO_PORT:-8080}:8080"
+    volumes:
+      - misago_data:/data
+    restart: unless-stopped
+
+volumes:
+  misago_data:
+    name: misago_data

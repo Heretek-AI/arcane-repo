@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gonic:
+    image: ghcr.io/sentriz/gonic:latest
+    container_name: gonic
+    hostname: gonic
+    ports:
+      - "${GONIC_PORT:-8080}:8080"
+    volumes:
+      - gonic_data:/data
+    restart: unless-stopped
+
+volumes:
+  gonic_data:
+    name: gonic_data

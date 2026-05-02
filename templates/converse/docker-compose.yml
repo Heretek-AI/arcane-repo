@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  converse:
+    image: docker.io/deepdockerpro/converse:latest
+    container_name: converse
+    hostname: converse
+    ports:
+      - "${CONVERSE_PORT:-8080}:8080"
+    volumes:
+      - converse_data:/data
+    restart: unless-stopped
+
+volumes:
+  converse_data:
+    name: converse_data

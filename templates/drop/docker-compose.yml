@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  drop:
+    image: docker.io/clinicalgenomics/drop:latest
+    container_name: drop
+    hostname: drop
+    ports:
+      - "${DROP_PORT:-8080}:8080"
+    volumes:
+      - drop_data:/data
+    restart: unless-stopped
+
+volumes:
+  drop_data:
+    name: drop_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  peerswap:
+    image: docker.io/prettyrollcake/peerswap:latest
+    container_name: peerswap
+    hostname: peerswap
+    ports:
+      - "${PEERSWAP_PORT:-8080}:8080"
+    volumes:
+      - peerswap_data:/data
+    restart: unless-stopped
+
+volumes:
+  peerswap_data:
+    name: peerswap_data

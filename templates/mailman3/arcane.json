@@ -1,0 +1,13 @@
+{
+  "id": "mailman3",
+  "name": "Mailman3",
+  "description": "Self-hosted Mailman3 deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "communication",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  owntracks:
+    image: docker.io/jessestuart/owntracks:latest
+    container_name: owntracks
+    hostname: owntracks
+    ports:
+      - "${OWNTRACKS_PORT:-8080}:8080"
+    volumes:
+      - owntracks_data:/data
+    restart: unless-stopped
+
+volumes:
+  owntracks_data:
+    name: owntracks_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  seafile:
+    image: docker.io/jenserat/seafile:latest
+    container_name: seafile
+    hostname: seafile
+    ports:
+      - "${SEAFILE_PORT:-80}:80"
+    volumes:
+      - seafile_data:/data
+    restart: unless-stopped
+
+volumes:
+  seafile_data:
+    name: seafile_data

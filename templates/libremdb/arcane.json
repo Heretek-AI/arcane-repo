@@ -1,0 +1,11 @@
+{
+  "id": "libremdb",
+  "name": "Libremdb",
+  "description": "Self-hosted Libremdb deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

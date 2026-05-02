@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vaultwarden:
+    image: docker.io/fulhambuilds/vaultwarden:latest
+    container_name: vaultwarden
+    hostname: vaultwarden
+    ports:
+      - "${VAULTWARDEN_PORT:-80}:80"
+    volumes:
+      - vaultwarden_data:/data
+    restart: unless-stopped
+
+volumes:
+  vaultwarden_data:
+    name: vaultwarden_data

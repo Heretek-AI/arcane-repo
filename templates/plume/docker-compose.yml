@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plume:
+    image: docker.io/plumeorg/plume:latest
+    container_name: plume
+    hostname: plume
+    ports:
+      - "${PLUME_PORT:-8080}:8080"
+    volumes:
+      - plume_data:/data
+    restart: unless-stopped
+
+volumes:
+  plume_data:
+    name: plume_data

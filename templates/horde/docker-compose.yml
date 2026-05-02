@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  horde:
+    image: docker.io/zauberertz/horde:latest
+    container_name: horde
+    hostname: horde
+    ports:
+      - "${HORDE_PORT:-8080}:8080"
+    volumes:
+      - horde_data:/data
+    restart: unless-stopped
+
+volumes:
+  horde_data:
+    name: horde_data

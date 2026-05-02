@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  opencode:
+    image: docker.io/smanx/opencode:latest
+    container_name: opencode
+    hostname: opencode
+    ports:
+      - "${OPENCODE_PORT:-8080}:8080"
+    volumes:
+      - opencode_data:/data
+    restart: unless-stopped
+
+volumes:
+  opencode_data:
+    name: opencode_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  authentik:
+    image: ghcr.io/beryju/authentik:latest
+    container_name: authentik
+    hostname: authentik
+    ports:
+      - "${AUTHENTIK_PORT:-9000}:9000"
+    volumes:
+      - authentik_data:/data
+    restart: unless-stopped
+
+volumes:
+  authentik_data:
+    name: authentik_data

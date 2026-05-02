@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  my-webapp:
+    image: docker.io/nikhil997164/my_webapp:latest
+    container_name: my-webapp
+    hostname: my-webapp
+    ports:
+      - "${MY_WEBAPP_PORT:-8080}:8080"
+    volumes:
+      - my-webapp_data:/data
+    restart: unless-stopped
+
+volumes:
+  my-webapp_data:
+    name: my-webapp_data

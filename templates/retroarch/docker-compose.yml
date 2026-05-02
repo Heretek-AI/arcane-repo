@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  retroarch:
+    image: docker.io/kasmweb/retroarch:latest
+    container_name: retroarch
+    hostname: retroarch
+    ports:
+      - "${RETROARCH_PORT:-8080}:8080"
+    volumes:
+      - retroarch_data:/data
+    restart: unless-stopped
+
+volumes:
+  retroarch_data:
+    name: retroarch_data

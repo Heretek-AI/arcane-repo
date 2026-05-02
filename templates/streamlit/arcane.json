@@ -1,0 +1,12 @@
+{
+  "id": "streamlit",
+  "name": "Streamlit",
+  "description": "Self-hosted Streamlit deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "yunohost"
+  ]
+}

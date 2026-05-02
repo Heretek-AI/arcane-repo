@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fizzy:
+    image: docker.io/findingfocusdev/fizzy:latest
+    container_name: fizzy
+    hostname: fizzy
+    ports:
+      - "${FIZZY_PORT:-8080}:8080"
+    volumes:
+      - fizzy_data:/data
+    restart: unless-stopped
+
+volumes:
+  fizzy_data:
+    name: fizzy_data

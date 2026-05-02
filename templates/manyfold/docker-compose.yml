@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  manyfold:
+    image: ghcr.io/linuxserver/manyfold:latest
+    container_name: manyfold
+    hostname: manyfold
+    ports:
+      - "${MANYFOLD_PORT:-8080}:8080"
+    volumes:
+      - manyfold_data:/data
+    restart: unless-stopped
+
+volumes:
+  manyfold_data:
+    name: manyfold_data

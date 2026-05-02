@@ -1,0 +1,11 @@
+{
+  "id": "ergo",
+  "name": "Ergo",
+  "description": "Self-hosted Ergo deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

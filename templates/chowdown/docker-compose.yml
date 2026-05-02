@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chowdown:
+    image: docker.io/gregyankovoy/chowdown:latest
+    container_name: chowdown
+    hostname: chowdown
+    ports:
+      - "${CHOWDOWN_PORT:-8080}:8080"
+    volumes:
+      - chowdown_data:/data
+    restart: unless-stopped
+
+volumes:
+  chowdown_data:
+    name: chowdown_data

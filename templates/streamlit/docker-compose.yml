@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  streamlit:
+    image: docker.io/samdobson/streamlit:latest
+    container_name: streamlit
+    hostname: streamlit
+    ports:
+      - "${STREAMLIT_PORT:-8080}:8080"
+    volumes:
+      - streamlit_data:/data
+    restart: unless-stopped
+
+volumes:
+  streamlit_data:
+    name: streamlit_data

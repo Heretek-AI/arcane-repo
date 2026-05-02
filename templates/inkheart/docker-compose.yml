@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  inkheart:
+    image: docker.io/nobbe/inkheart:latest
+    container_name: inkheart
+    hostname: inkheart
+    ports:
+      - "${INKHEART_PORT:-8080}:8080"
+    volumes:
+      - inkheart_data:/data
+    restart: unless-stopped
+
+volumes:
+  inkheart_data:
+    name: inkheart_data

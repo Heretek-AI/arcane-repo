@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nostr-relay:
+    image: ghcr.io/mattn/nostr-relay:latest
+    container_name: nostr-relay
+    hostname: nostr-relay
+    ports:
+      - "${NOSTR_RELAY_PORT:-8080}:8080"
+    volumes:
+      - nostr-relay_data:/data
+    restart: unless-stopped
+
+volumes:
+  nostr-relay_data:
+    name: nostr-relay_data

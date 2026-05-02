@@ -1,0 +1,11 @@
+{
+  "id": "focalboard",
+  "name": "Focalboard",
+  "description": "Self-hosted Focalboard deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

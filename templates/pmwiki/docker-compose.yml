@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pmwiki:
+    image: docker.io/sesceu/pmwiki:latest
+    container_name: pmwiki
+    hostname: pmwiki
+    ports:
+      - "${PMWIKI_PORT:-80}:80"
+    volumes:
+      - pmwiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  pmwiki_data:
+    name: pmwiki_data

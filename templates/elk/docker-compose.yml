@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elk:
+    image: docker.io/sebp/elk:latest
+    container_name: elk
+    hostname: elk
+    ports:
+      - "${ELK_PORT:-8080}:8080"
+    volumes:
+      - elk_data:/data
+    restart: unless-stopped
+
+volumes:
+  elk_data:
+    name: elk_data

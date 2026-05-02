@@ -1,0 +1,11 @@
+{
+  "id": "qbittorrent",
+  "name": "Qbittorrent",
+  "description": "Self-hosted Qbittorrent deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  synapse:
+    image: docker.io/matrixdotorg/synapse:latest
+    container_name: synapse
+    hostname: synapse
+    ports:
+      - "${SYNAPSE_PORT:-8008}:8008"
+    volumes:
+      - synapse_data:/data
+    restart: unless-stopped
+
+volumes:
+  synapse_data:
+    name: synapse_data

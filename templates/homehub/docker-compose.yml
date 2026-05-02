@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  homehub:
+    image: docker.io/pcjacobse/homehub:latest
+    container_name: homehub
+    hostname: homehub
+    ports:
+      - "${HOMEHUB_PORT:-8080}:8080"
+    volumes:
+      - homehub_data:/data
+    restart: unless-stopped
+
+volumes:
+  homehub_data:
+    name: homehub_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  monitorix:
+    image: docker.io/erikmroll/monitorix:latest
+    container_name: monitorix
+    hostname: monitorix
+    ports:
+      - "${MONITORIX_PORT:-8080}:8080"
+    volumes:
+      - monitorix_data:/data
+    restart: unless-stopped
+
+volumes:
+  monitorix_data:
+    name: monitorix_data

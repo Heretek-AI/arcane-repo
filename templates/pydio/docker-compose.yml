@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pydio:
+    image: ghcr.io/linuxserver/pydio:latest
+    container_name: pydio
+    hostname: pydio
+    ports:
+      - "${PYDIO_PORT:-8080}:8080"
+    volumes:
+      - pydio_data:/data
+    restart: unless-stopped
+
+volumes:
+  pydio_data:
+    name: pydio_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  loops:
+    image: docker.io/ashutoshk1/loops:latest
+    container_name: loops
+    hostname: loops
+    ports:
+      - "${LOOPS_PORT:-8080}:8080"
+    volumes:
+      - loops_data:/data
+    restart: unless-stopped
+
+volumes:
+  loops_data:
+    name: loops_data

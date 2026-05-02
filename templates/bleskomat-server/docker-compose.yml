@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bleskomat-server:
+    image: docker.io/bleskomat/bleskomat-server:latest
+    container_name: bleskomat-server
+    hostname: bleskomat-server
+    ports:
+      - "${BLESKOMAT_SERVER_PORT:-8080}:8080"
+    volumes:
+      - bleskomat-server_data:/data
+    restart: unless-stopped
+
+volumes:
+  bleskomat-server_data:
+    name: bleskomat-server_data

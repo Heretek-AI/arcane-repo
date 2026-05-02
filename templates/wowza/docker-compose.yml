@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wowza:
+    image: docker.io/sameersbn/wowza:latest
+    container_name: wowza
+    hostname: wowza
+    ports:
+      - "${WOWZA_PORT:-8080}:8080"
+    volumes:
+      - wowza_data:/data
+    restart: unless-stopped
+
+volumes:
+  wowza_data:
+    name: wowza_data

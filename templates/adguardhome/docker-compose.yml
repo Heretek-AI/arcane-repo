@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  adguardhome:
+    image: docker.io/adguard/adguardhome:latest
+    container_name: adguardhome
+    hostname: adguardhome
+    ports:
+      - "${ADGUARDHOME_PORT:-8080}:8080"
+    volumes:
+      - adguardhome_data:/data
+    restart: unless-stopped
+
+volumes:
+  adguardhome_data:
+    name: adguardhome_data

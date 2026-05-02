@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mailpile:
+    image: docker.io/viossat/mailpile:latest
+    container_name: mailpile
+    hostname: mailpile
+    ports:
+      - "${MAILPILE_PORT:-8080}:8080"
+    volumes:
+      - mailpile_data:/data
+    restart: unless-stopped
+
+volumes:
+  mailpile_data:
+    name: mailpile_data

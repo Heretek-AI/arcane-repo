@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  urbackup:
+    image: docker.io/cfstras/urbackup:latest
+    container_name: urbackup
+    hostname: urbackup
+    ports:
+      - "${URBACKUP_PORT:-8080}:8080"
+    volumes:
+      - urbackup_data:/data
+    restart: unless-stopped
+
+volumes:
+  urbackup_data:
+    name: urbackup_data

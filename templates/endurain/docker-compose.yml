@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  endurain:
+    image: docker.io/dk2077392/endurain:latest
+    container_name: endurain
+    hostname: endurain
+    ports:
+      - "${ENDURAIN_PORT:-8080}:8080"
+    volumes:
+      - endurain_data:/data
+    restart: unless-stopped
+
+volumes:
+  endurain_data:
+    name: endurain_data

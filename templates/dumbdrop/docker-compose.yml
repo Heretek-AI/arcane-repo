@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dumbdrop:
+    image: docker.io/dumbwareio/dumbdrop:latest
+    container_name: dumbdrop
+    hostname: dumbdrop
+    ports:
+      - "${DUMBDROP_PORT:-8080}:8080"
+    volumes:
+      - dumbdrop_data:/data
+    restart: unless-stopped
+
+volumes:
+  dumbdrop_data:
+    name: dumbdrop_data

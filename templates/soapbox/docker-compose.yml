@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  soapbox:
+    image: docker.io/nfinstana/soapbox:latest
+    container_name: soapbox
+    hostname: soapbox
+    ports:
+      - "${SOAPBOX_PORT:-8080}:8080"
+    volumes:
+      - soapbox_data:/data
+    restart: unless-stopped
+
+volumes:
+  soapbox_data:
+    name: soapbox_data

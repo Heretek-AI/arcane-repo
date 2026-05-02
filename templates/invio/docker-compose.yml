@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  invio:
+    image: docker.io/merehead/invio:latest
+    container_name: invio
+    hostname: invio
+    ports:
+      - "${INVIO_PORT:-8080}:8080"
+    volumes:
+      - invio_data:/data
+    restart: unless-stopped
+
+volumes:
+  invio_data:
+    name: invio_data

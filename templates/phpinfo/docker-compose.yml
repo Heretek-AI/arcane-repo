@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpinfo:
+    image: docker.io/cfortier/phpinfo:latest
+    container_name: phpinfo
+    hostname: phpinfo
+    ports:
+      - "${PHPINFO_PORT:-8080}:8080"
+    volumes:
+      - phpinfo_data:/data
+    restart: unless-stopped
+
+volumes:
+  phpinfo_data:
+    name: phpinfo_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shlink:
+    image: ghcr.io/shlinkio/shlink:latest
+    container_name: shlink
+    hostname: shlink
+    ports:
+      - "${SHLINK_PORT:-8080}:8080"
+    volumes:
+      - shlink_data:/data
+    restart: unless-stopped
+
+volumes:
+  shlink_data:
+    name: shlink_data

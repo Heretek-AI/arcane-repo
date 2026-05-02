@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  simple-torrent:
+    image: docker.io/jas612/simple-torrent:latest
+    container_name: simple-torrent
+    hostname: simple-torrent
+    ports:
+      - "${SIMPLE_TORRENT_PORT:-8080}:8080"
+    volumes:
+      - simple-torrent_data:/data
+    restart: unless-stopped
+
+volumes:
+  simple-torrent_data:
+    name: simple-torrent_data

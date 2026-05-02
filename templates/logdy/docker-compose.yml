@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  logdy:
+    image: docker.io/rickraven/logdy:latest
+    container_name: logdy
+    hostname: logdy
+    ports:
+      - "${LOGDY_PORT:-8080}:8080"
+    volumes:
+      - logdy_data:/data
+    restart: unless-stopped
+
+volumes:
+  logdy_data:
+    name: logdy_data

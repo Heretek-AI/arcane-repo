@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ctop:
+    image: docker.io/wrfly/ctop:latest
+    container_name: ctop
+    hostname: ctop
+    ports:
+      - "${CTOP_PORT:-8080}:8080"
+    volumes:
+      - ctop_data:/data
+    restart: unless-stopped
+
+volumes:
+  ctop_data:
+    name: ctop_data

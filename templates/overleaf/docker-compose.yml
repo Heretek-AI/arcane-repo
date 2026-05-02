@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  overleaf:
+    image: docker.io/koehlerlukas/overleaf:latest
+    container_name: overleaf
+    hostname: overleaf
+    ports:
+      - "${OVERLEAF_PORT:-8080}:8080"
+    volumes:
+      - overleaf_data:/data
+    restart: unless-stopped
+
+volumes:
+  overleaf_data:
+    name: overleaf_data

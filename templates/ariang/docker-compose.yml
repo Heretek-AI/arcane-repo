@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ariang:
+    image: docker.io/p3terx/ariang:latest
+    container_name: ariang
+    hostname: ariang
+    ports:
+      - "${ARIANG_PORT:-8080}:8080"
+    volumes:
+      - ariang_data:/data
+    restart: unless-stopped
+
+volumes:
+  ariang_data:
+    name: ariang_data

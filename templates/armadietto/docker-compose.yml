@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  armadietto:
+    image: docker.io/bytesnz/armadietto:latest
+    container_name: armadietto
+    hostname: armadietto
+    ports:
+      - "${ARMADIETTO_PORT:-8080}:8080"
+    volumes:
+      - armadietto_data:/data
+    restart: unless-stopped
+
+volumes:
+  armadietto_data:
+    name: armadietto_data

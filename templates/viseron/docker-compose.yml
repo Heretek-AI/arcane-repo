@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  viseron:
+    image: docker.io/roflcoopter/viseron:latest
+    container_name: viseron
+    hostname: viseron
+    ports:
+      - "${VISERON_PORT:-8080}:8080"
+    volumes:
+      - viseron_data:/data
+    restart: unless-stopped
+
+volumes:
+  viseron_data:
+    name: viseron_data

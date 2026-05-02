@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  apprise-api:
+    image: ghcr.io/linuxserver/apprise-api:latest
+    container_name: apprise-api
+    hostname: apprise-api
+    ports:
+      - "${APPRISE_API_PORT:-8080}:8080"
+    volumes:
+      - apprise-api_data:/data
+    restart: unless-stopped
+
+volumes:
+  apprise-api_data:
+    name: apprise-api_data

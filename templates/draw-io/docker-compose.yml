@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  draw-io:
+    image: docker.io/fjudith/draw.io:latest
+    container_name: draw-io
+    hostname: draw-io
+    ports:
+      - "${DRAW_IO_PORT:-8080}:8080"
+    volumes:
+      - draw-io_data:/data
+    restart: unless-stopped
+
+volumes:
+  draw-io_data:
+    name: draw-io_data

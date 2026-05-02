@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wireguard:
+    image: ghcr.io/linuxserver/wireguard:latest
+    container_name: wireguard
+    hostname: wireguard
+    ports:
+      - "${WIREGUARD_PORT:-8080}:8080"
+    volumes:
+      - wireguard_data:/data
+    restart: unless-stopped
+
+volumes:
+  wireguard_data:
+    name: wireguard_data

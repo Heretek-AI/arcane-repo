@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lunalytics:
+    image: docker.io/ksjaay/lunalytics:latest
+    container_name: lunalytics
+    hostname: lunalytics
+    ports:
+      - "${LUNALYTICS_PORT:-8080}:8080"
+    volumes:
+      - lunalytics_data:/data
+    restart: unless-stopped
+
+volumes:
+  lunalytics_data:
+    name: lunalytics_data

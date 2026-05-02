@@ -1,0 +1,11 @@
+{
+  "id": "tunarr",
+  "name": "Tunarr",
+  "description": "Self-hosted Tunarr deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "libreoffice",
+  "name": "Libreoffice",
+  "description": "Self-hosted Libreoffice deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

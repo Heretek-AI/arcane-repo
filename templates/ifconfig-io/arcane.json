@@ -1,0 +1,11 @@
+{
+  "id": "ifconfig-io",
+  "name": "Ifconfig Io",
+  "description": "Self-hosted Ifconfig Io deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  terraforming-mars:
+    image: docker.io/andrewsav/terraforming-mars:latest
+    container_name: terraforming-mars
+    hostname: terraforming-mars
+    ports:
+      - "${TERRAFORMING_MARS_PORT:-8080}:8080"
+    volumes:
+      - terraforming-mars_data:/data
+    restart: unless-stopped
+
+volumes:
+  terraforming-mars_data:
+    name: terraforming-mars_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cusdis:
+    image: docker.io/djyde/cusdis:latest
+    container_name: cusdis
+    hostname: cusdis
+    ports:
+      - "${CUSDIS_PORT:-8080}:8080"
+    volumes:
+      - cusdis_data:/data
+    restart: unless-stopped
+
+volumes:
+  cusdis_data:
+    name: cusdis_data

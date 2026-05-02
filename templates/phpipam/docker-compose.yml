@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpipam:
+    image: docker.io/pierrecdn/phpipam:latest
+    container_name: phpipam
+    hostname: phpipam
+    ports:
+      - "${PHPIPAM_PORT:-8080}:8080"
+    volumes:
+      - phpipam_data:/data
+    restart: unless-stopped
+
+volumes:
+  phpipam_data:
+    name: phpipam_data

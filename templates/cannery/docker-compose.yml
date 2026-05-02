@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cannery:
+    image: docker.io/shibaobun/cannery:latest
+    container_name: cannery
+    hostname: cannery
+    ports:
+      - "${CANNERY_PORT:-8080}:8080"
+    volumes:
+      - cannery_data:/data
+    restart: unless-stopped
+
+volumes:
+  cannery_data:
+    name: cannery_data

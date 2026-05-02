@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  audiobookshelf:
+    image: ghcr.io/advplyr/audiobookshelf:latest
+    container_name: audiobookshelf
+    hostname: audiobookshelf
+    ports:
+      - "${AUDIOBOOKSHELF_PORT:-8080}:8080"
+    volumes:
+      - audiobookshelf_data:/data
+    restart: unless-stopped
+
+volumes:
+  audiobookshelf_data:
+    name: audiobookshelf_data

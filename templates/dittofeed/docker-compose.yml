@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dittofeed:
+    image: docker.io/sefiroed/dittofeed:latest
+    container_name: dittofeed
+    hostname: dittofeed
+    ports:
+      - "${DITTOFEED_PORT:-8080}:8080"
+    volumes:
+      - dittofeed_data:/data
+    restart: unless-stopped
+
+volumes:
+  dittofeed_data:
+    name: dittofeed_data

@@ -1,0 +1,11 @@
+{
+  "id": "hydrogen",
+  "name": "Hydrogen",
+  "description": "Self-hosted Hydrogen deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

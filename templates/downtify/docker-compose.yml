@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  downtify:
+    image: ghcr.io/henriquesebastiao/downtify:latest
+    container_name: downtify
+    hostname: downtify
+    ports:
+      - "${DOWNTIFY_PORT:-8080}:8080"
+    volumes:
+      - downtify_data:/data
+    restart: unless-stopped
+
+volumes:
+  downtify_data:
+    name: downtify_data

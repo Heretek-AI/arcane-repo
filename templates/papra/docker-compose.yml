@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  papra:
+    image: docker.io/corentinth/papra:latest
+    container_name: papra
+    hostname: papra
+    ports:
+      - "${PAPRA_PORT:-8080}:8080"
+    volumes:
+      - papra_data:/data
+    restart: unless-stopped
+
+volumes:
+  papra_data:
+    name: papra_data

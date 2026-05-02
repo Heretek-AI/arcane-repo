@@ -1,0 +1,11 @@
+{
+  "id": "django-example",
+  "name": "Django Example",
+  "description": "Self-hosted Django Example deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

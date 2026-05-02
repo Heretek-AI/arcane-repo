@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vvveb:
+    image: docker.io/hamidno/vvveb:latest
+    container_name: vvveb
+    hostname: vvveb
+    ports:
+      - "${VVVEB_PORT:-8080}:8080"
+    volumes:
+      - vvveb_data:/data
+    restart: unless-stopped
+
+volumes:
+  vvveb_data:
+    name: vvveb_data

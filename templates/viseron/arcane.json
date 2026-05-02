@@ -1,0 +1,11 @@
+{
+  "id": "viseron",
+  "name": "Viseron",
+  "description": "Self-hosted Viseron deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "awesome-selfhosted"
+  ]
+}

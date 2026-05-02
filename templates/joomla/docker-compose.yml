@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  joomla:
+    image: docker.io/amd64/joomla:latest
+    container_name: joomla
+    hostname: joomla
+    ports:
+      - "${JOOMLA_PORT:-8080}:8080"
+    volumes:
+      - joomla_data:/data
+    restart: unless-stopped
+
+volumes:
+  joomla_data:
+    name: joomla_data

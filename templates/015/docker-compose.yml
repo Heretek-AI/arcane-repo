@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  015:
+    image: docker.io/bantul/015:latest
+    container_name: 015
+    hostname: 015
+    ports:
+      - "${015_PORT:-8080}:8080"
+    volumes:
+      - 015_data:/data
+    restart: unless-stopped
+
+volumes:
+  015_data:
+    name: 015_data

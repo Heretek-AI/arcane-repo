@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pinepods:
+    image: docker.io/madeofpendletonwool/pinepods:latest
+    container_name: pinepods
+    hostname: pinepods
+    ports:
+      - "${PINEPODS_PORT:-8080}:8080"
+    volumes:
+      - pinepods_data:/data
+    restart: unless-stopped
+
+volumes:
+  pinepods_data:
+    name: pinepods_data

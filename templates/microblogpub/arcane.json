@@ -1,0 +1,12 @@
+{
+  "id": "microblogpub",
+  "name": "Microblogpub",
+  "description": "Self-hosted Microblogpub deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "cms",
+    "yunohost"
+  ]
+}

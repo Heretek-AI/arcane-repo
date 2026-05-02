@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  libre-relay:
+    image: docker.io/levinster82/libre-relay:latest
+    container_name: libre-relay
+    hostname: libre-relay
+    ports:
+      - "${LIBRE_RELAY_PORT:-8080}:8080"
+    volumes:
+      - libre-relay_data:/data
+    restart: unless-stopped
+
+volumes:
+  libre-relay_data:
+    name: libre-relay_data

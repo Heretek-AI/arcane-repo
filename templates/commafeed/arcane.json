@@ -1,0 +1,11 @@
+{
+  "id": "commafeed",
+  "name": "Commafeed",
+  "description": "Self-hosted Commafeed deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

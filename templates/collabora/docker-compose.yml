@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  collabora:
+    image: docker.io/freenas/collabora:latest
+    container_name: collabora
+    hostname: collabora
+    ports:
+      - "${COLLABORA_PORT:-8080}:8080"
+    volumes:
+      - collabora_data:/data
+    restart: unless-stopped
+
+volumes:
+  collabora_data:
+    name: collabora_data

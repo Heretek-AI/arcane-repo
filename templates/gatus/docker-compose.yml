@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gatus:
+    image: docker.io/twinproduction/gatus:latest
+    container_name: gatus
+    hostname: gatus
+    ports:
+      - "${GATUS_PORT:-8080}:8080"
+    volumes:
+      - gatus_data:/data
+    restart: unless-stopped
+
+volumes:
+  gatus_data:
+    name: gatus_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elasticsearch8:
+    image: docker.io/danielberteaud/elasticsearch8:latest
+    container_name: elasticsearch8
+    hostname: elasticsearch8
+    ports:
+      - "${ELASTICSEARCH8_PORT:-9200}:9200"
+    volumes:
+      - elasticsearch8_data:/data
+    restart: unless-stopped
+
+volumes:
+  elasticsearch8_data:
+    name: elasticsearch8_data

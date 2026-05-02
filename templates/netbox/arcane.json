@@ -1,0 +1,11 @@
+{
+  "id": "netbox",
+  "name": "Netbox",
+  "description": "Self-hosted Netbox deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "teleport",
+  "name": "Teleport",
+  "description": "Self-hosted Teleport deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

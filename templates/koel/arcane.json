@@ -1,0 +1,11 @@
+{
+  "id": "koel",
+  "name": "Koel",
+  "description": "Self-hosted Koel deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

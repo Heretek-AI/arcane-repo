@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  odoo:
+    image: docker.io/bitnami/odoo:latest
+    container_name: odoo
+    hostname: odoo
+    ports:
+      - "${ODOO_PORT:-8080}:8080"
+    volumes:
+      - odoo_data:/data
+    restart: unless-stopped
+
+volumes:
+  odoo_data:
+    name: odoo_data

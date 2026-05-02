@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  albyhub:
+    image: docker.io/netmojo/albyhub:latest
+    container_name: albyhub
+    hostname: albyhub
+    ports:
+      - "${ALBYHUB_PORT:-8080}:8080"
+    volumes:
+      - albyhub_data:/data
+    restart: unless-stopped
+
+volumes:
+  albyhub_data:
+    name: albyhub_data

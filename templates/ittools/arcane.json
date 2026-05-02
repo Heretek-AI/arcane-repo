@@ -1,0 +1,11 @@
+{
+  "id": "ittools",
+  "name": "Ittools",
+  "description": "Self-hosted Ittools deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

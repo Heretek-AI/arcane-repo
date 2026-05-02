@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pingvin-share:
+    image: ghcr.io/stonith404/pingvin-share:latest
+    container_name: pingvin-share
+    hostname: pingvin-share
+    ports:
+      - "${PINGVIN_SHARE_PORT:-8080}:8080"
+    volumes:
+      - pingvin-share_data:/data
+    restart: unless-stopped
+
+volumes:
+  pingvin-share_data:
+    name: pingvin-share_data

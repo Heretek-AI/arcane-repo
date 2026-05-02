@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  svgedit:
+    image: docker.io/sjqzhang/svgedit:latest
+    container_name: svgedit
+    hostname: svgedit
+    ports:
+      - "${SVGEDIT_PORT:-8080}:8080"
+    volumes:
+      - svgedit_data:/data
+    restart: unless-stopped
+
+volumes:
+  svgedit_data:
+    name: svgedit_data

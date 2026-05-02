@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zen:
+    image: ghcr.io/linuxserver/zen:latest
+    container_name: zen
+    hostname: zen
+    ports:
+      - "${ZEN_PORT:-8080}:8080"
+    volumes:
+      - zen_data:/data
+    restart: unless-stopped
+
+volumes:
+  zen_data:
+    name: zen_data

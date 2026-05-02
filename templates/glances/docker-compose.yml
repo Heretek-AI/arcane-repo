@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  glances:
+    image: docker.io/nicolargo/glances:latest
+    container_name: glances
+    hostname: glances
+    ports:
+      - "${GLANCES_PORT:-8080}:8080"
+    volumes:
+      - glances_data:/data
+    restart: unless-stopped
+
+volumes:
+  glances_data:
+    name: glances_data

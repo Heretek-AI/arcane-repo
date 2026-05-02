@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  screego:
+    image: docker.io/l11r/screego:latest
+    container_name: screego
+    hostname: screego
+    ports:
+      - "${SCREEGO_PORT:-8080}:8080"
+    volumes:
+      - screego_data:/data
+    restart: unless-stopped
+
+volumes:
+  screego_data:
+    name: screego_data

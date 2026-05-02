@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kavita:
+    image: docker.io/jvmilazz0/kavita:latest
+    container_name: kavita
+    hostname: kavita
+    ports:
+      - "${KAVITA_PORT:-8080}:8080"
+    volumes:
+      - kavita_data:/data
+    restart: unless-stopped
+
+volumes:
+  kavita_data:
+    name: kavita_data

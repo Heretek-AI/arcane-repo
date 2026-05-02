@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  servas:
+    image: docker.io/beromir/servas:latest
+    container_name: servas
+    hostname: servas
+    ports:
+      - "${SERVAS_PORT:-8080}:8080"
+    volumes:
+      - servas_data:/data
+    restart: unless-stopped
+
+volumes:
+  servas_data:
+    name: servas_data

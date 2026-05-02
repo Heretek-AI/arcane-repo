@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flarum:
+    image: docker.io/crazymax/flarum:latest
+    container_name: flarum
+    hostname: flarum
+    ports:
+      - "${FLARUM_PORT:-8080}:8080"
+    volumes:
+      - flarum_data:/data
+    restart: unless-stopped
+
+volumes:
+  flarum_data:
+    name: flarum_data

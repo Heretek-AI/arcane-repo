@@ -1,0 +1,11 @@
+{
+  "id": "flood",
+  "name": "Flood",
+  "description": "Self-hosted Flood deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

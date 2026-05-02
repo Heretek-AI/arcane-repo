@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  piped:
+    image: docker.io/1337kavin/piped:latest
+    container_name: piped
+    hostname: piped
+    ports:
+      - "${PIPED_PORT:-8080}:8080"
+    volumes:
+      - piped_data:/data
+    restart: unless-stopped
+
+volumes:
+  piped_data:
+    name: piped_data

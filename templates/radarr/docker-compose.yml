@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  radarr:
+    image: ghcr.io/linuxserver/radarr:latest
+    container_name: radarr
+    hostname: radarr
+    ports:
+      - "${RADARR_PORT:-8080}:8080"
+    volumes:
+      - radarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  radarr_data:
+    name: radarr_data

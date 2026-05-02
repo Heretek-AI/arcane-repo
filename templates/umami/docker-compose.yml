@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  umami:
+    image: docker.io/pabloszx/umami:latest
+    container_name: umami
+    hostname: umami
+    ports:
+      - "${UMAMI_PORT:-8080}:8080"
+    volumes:
+      - umami_data:/data
+    restart: unless-stopped
+
+volumes:
+  umami_data:
+    name: umami_data

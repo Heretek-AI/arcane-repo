@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  opentracker:
+    image: docker.io/anthonyzou/opentracker:latest
+    container_name: opentracker
+    hostname: opentracker
+    ports:
+      - "${OPENTRACKER_PORT:-8080}:8080"
+    volumes:
+      - opentracker_data:/data
+    restart: unless-stopped
+
+volumes:
+  opentracker_data:
+    name: opentracker_data

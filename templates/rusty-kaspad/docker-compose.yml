@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rusty-kaspad:
+    image: docker.io/kaspanet/rusty-kaspad:latest
+    container_name: rusty-kaspad
+    hostname: rusty-kaspad
+    ports:
+      - "${RUSTY_KASPAD_PORT:-8080}:8080"
+    volumes:
+      - rusty-kaspad_data:/data
+    restart: unless-stopped
+
+volumes:
+  rusty-kaspad_data:
+    name: rusty-kaspad_data

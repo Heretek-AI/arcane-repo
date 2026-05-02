@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  warracker:
+    image: docker.io/legamy/warracker:latest
+    container_name: warracker
+    hostname: warracker
+    ports:
+      - "${WARRACKER_PORT:-8080}:8080"
+    volumes:
+      - warracker_data:/data
+    restart: unless-stopped
+
+volumes:
+  warracker_data:
+    name: warracker_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  psitransfer:
+    image: docker.io/psitrax/psitransfer:latest
+    container_name: psitransfer
+    hostname: psitransfer
+    ports:
+      - "${PSITRANSFER_PORT:-8080}:8080"
+    volumes:
+      - psitransfer_data:/data
+    restart: unless-stopped
+
+volumes:
+  psitransfer_data:
+    name: psitransfer_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  adventurelog:
+    image: docker.io/jannismar/adventurelog:latest
+    container_name: adventurelog
+    hostname: adventurelog
+    ports:
+      - "${ADVENTURELOG_PORT:-8080}:8080"
+    volumes:
+      - adventurelog_data:/data
+    restart: unless-stopped
+
+volumes:
+  adventurelog_data:
+    name: adventurelog_data

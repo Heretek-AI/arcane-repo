@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pleroma:
+    image: docker.io/pandentia/pleroma:latest
+    container_name: pleroma
+    hostname: pleroma
+    ports:
+      - "${PLEROMA_PORT:-4000}:4000"
+    volumes:
+      - pleroma_data:/data
+    restart: unless-stopped
+
+volumes:
+  pleroma_data:
+    name: pleroma_data

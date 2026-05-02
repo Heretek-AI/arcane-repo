@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openresty-manager:
+    image: docker.io/uusec/openresty-manager:latest
+    container_name: openresty-manager
+    hostname: openresty-manager
+    ports:
+      - "${OPENRESTY_MANAGER_PORT:-8080}:8080"
+    volumes:
+      - openresty-manager_data:/data
+    restart: unless-stopped
+
+volumes:
+  openresty-manager_data:
+    name: openresty-manager_data

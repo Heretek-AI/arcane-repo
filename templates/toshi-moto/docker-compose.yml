@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  toshi-moto:
+    image: docker.io/toshimoto821/toshi-moto:latest
+    container_name: toshi-moto
+    hostname: toshi-moto
+    ports:
+      - "${TOSHI_MOTO_PORT:-8080}:8080"
+    volumes:
+      - toshi-moto_data:/data
+    restart: unless-stopped
+
+volumes:
+  toshi-moto_data:
+    name: toshi-moto_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tracim:
+    image: docker.io/algooci/tracim:latest
+    container_name: tracim
+    hostname: tracim
+    ports:
+      - "${TRACIM_PORT:-8080}:8080"
+    volumes:
+      - tracim_data:/data
+    restart: unless-stopped
+
+volumes:
+  tracim_data:
+    name: tracim_data

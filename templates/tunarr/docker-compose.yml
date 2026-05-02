@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tunarr:
+    image: ghcr.io/chrisbenincasa/tunarr:latest
+    container_name: tunarr
+    hostname: tunarr
+    ports:
+      - "${TUNARR_PORT:-8080}:8080"
+    volumes:
+      - tunarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  tunarr_data:
+    name: tunarr_data

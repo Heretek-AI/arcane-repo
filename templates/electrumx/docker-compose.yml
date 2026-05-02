@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  electrumx:
+    image: docker.io/lukechilds/electrumx:latest
+    container_name: electrumx
+    hostname: electrumx
+    ports:
+      - "${ELECTRUMX_PORT:-8080}:8080"
+    volumes:
+      - electrumx_data:/data
+    restart: unless-stopped
+
+volumes:
+  electrumx_data:
+    name: electrumx_data

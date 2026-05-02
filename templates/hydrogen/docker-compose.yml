@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hydrogen:
+    image: docker.io/laughingsquirrel/hydrogen:latest
+    container_name: hydrogen
+    hostname: hydrogen
+    ports:
+      - "${HYDROGEN_PORT:-8080}:8080"
+    volumes:
+      - hydrogen_data:/data
+    restart: unless-stopped
+
+volumes:
+  hydrogen_data:
+    name: hydrogen_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  docsify:
+    image: ghcr.io/sujaykumarh/docsify:latest
+    container_name: docsify
+    hostname: docsify
+    ports:
+      - "${DOCSIFY_PORT:-8080}:8080"
+    volumes:
+      - docsify_data:/data
+    restart: unless-stopped
+
+volumes:
+  docsify_data:
+    name: docsify_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rahoot:
+    image: docker.io/ralex91/rahoot:latest
+    container_name: rahoot
+    hostname: rahoot
+    ports:
+      - "${RAHOOT_PORT:-8080}:8080"
+    volumes:
+      - rahoot_data:/data
+    restart: unless-stopped
+
+volumes:
+  rahoot_data:
+    name: rahoot_data

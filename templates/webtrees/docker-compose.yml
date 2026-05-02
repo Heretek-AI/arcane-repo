@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  webtrees:
+    image: docker.io/dtjs48jkt/webtrees:latest
+    container_name: webtrees
+    hostname: webtrees
+    ports:
+      - "${WEBTREES_PORT:-8080}:8080"
+    volumes:
+      - webtrees_data:/data
+    restart: unless-stopped
+
+volumes:
+  webtrees_data:
+    name: webtrees_data

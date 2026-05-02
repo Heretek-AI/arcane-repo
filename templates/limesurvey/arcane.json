@@ -1,0 +1,11 @@
+{
+  "id": "limesurvey",
+  "name": "Limesurvey",
+  "description": "Self-hosted Limesurvey deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

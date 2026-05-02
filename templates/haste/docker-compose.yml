@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  haste:
+    image: docker.io/sebastiansterk/haste:latest
+    container_name: haste
+    hostname: haste
+    ports:
+      - "${HASTE_PORT:-8080}:8080"
+    volumes:
+      - haste_data:/data
+    restart: unless-stopped
+
+volumes:
+  haste_data:
+    name: haste_data

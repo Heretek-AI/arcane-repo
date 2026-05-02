@@ -1,0 +1,11 @@
+{
+  "id": "hydra2",
+  "name": "Hydra2",
+  "description": "Self-hosted Hydra2 deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

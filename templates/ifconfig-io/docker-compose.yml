@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ifconfig-io:
+    image: docker.io/gaoyifan/ifconfig-io:latest
+    container_name: ifconfig-io
+    hostname: ifconfig-io
+    ports:
+      - "${IFCONFIG_IO_PORT:-8080}:8080"
+    volumes:
+      - ifconfig-io_data:/data
+    restart: unless-stopped
+
+volumes:
+  ifconfig-io_data:
+    name: ifconfig-io_data

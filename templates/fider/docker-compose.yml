@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fider:
+    image: docker.io/getfider/fider:latest
+    container_name: fider
+    hostname: fider
+    ports:
+      - "${FIDER_PORT:-8080}:8080"
+    volumes:
+      - fider_data:/data
+    restart: unless-stopped
+
+volumes:
+  fider_data:
+    name: fider_data

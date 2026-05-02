@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plainpad:
+    image: docker.io/alextselegidis/plainpad:latest
+    container_name: plainpad
+    hostname: plainpad
+    ports:
+      - "${PLAINPAD_PORT:-8080}:8080"
+    volumes:
+      - plainpad_data:/data
+    restart: unless-stopped
+
+volumes:
+  plainpad_data:
+    name: plainpad_data

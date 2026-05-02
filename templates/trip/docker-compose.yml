@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  trip:
+    image: docker.io/yisraelbdocker/trip:latest
+    container_name: trip
+    hostname: trip
+    ports:
+      - "${TRIP_PORT:-8080}:8080"
+    volumes:
+      - trip_data:/data
+    restart: unless-stopped
+
+volumes:
+  trip_data:
+    name: trip_data

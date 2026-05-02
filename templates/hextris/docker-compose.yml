@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hextris:
+    image: docker.io/boxboat/hextris:latest
+    container_name: hextris
+    hostname: hextris
+    ports:
+      - "${HEXTRIS_PORT:-8080}:8080"
+    volumes:
+      - hextris_data:/data
+    restart: unless-stopped
+
+volumes:
+  hextris_data:
+    name: hextris_data

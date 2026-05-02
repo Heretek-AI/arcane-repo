@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  influxdb2:
+    image: docker.io/samerlabban/influxdb2:latest
+    container_name: influxdb2
+    hostname: influxdb2
+    ports:
+      - "${INFLUXDB2_PORT:-8086}:8086"
+    volumes:
+      - influxdb2_data:/data
+    restart: unless-stopped
+
+volumes:
+  influxdb2_data:
+    name: influxdb2_data

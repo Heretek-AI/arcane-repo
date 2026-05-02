@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mqttx-web:
+    image: docker.io/emqx/mqttx-web:latest
+    container_name: mqttx-web
+    hostname: mqttx-web
+    ports:
+      - "${MQTTX_WEB_PORT:-8080}:8080"
+    volumes:
+      - mqttx-web_data:/data
+    restart: unless-stopped
+
+volumes:
+  mqttx-web_data:
+    name: mqttx-web_data

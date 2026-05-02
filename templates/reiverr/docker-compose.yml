@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  reiverr:
+    image: docker.io/t0bis/reiverr:latest
+    container_name: reiverr
+    hostname: reiverr
+    ports:
+      - "${REIVERR_PORT:-8080}:8080"
+    volumes:
+      - reiverr_data:/data
+    restart: unless-stopped
+
+volumes:
+  reiverr_data:
+    name: reiverr_data

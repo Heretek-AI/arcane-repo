@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jenkins:
+    image: docker.io/jenkins/jenkins:latest
+    container_name: jenkins
+    hostname: jenkins
+    ports:
+      - "${JENKINS_PORT:-8080}:8080"
+    volumes:
+      - jenkins_data:/data
+    restart: unless-stopped
+
+volumes:
+  jenkins_data:
+    name: jenkins_data

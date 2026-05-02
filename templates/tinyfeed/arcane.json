@@ -1,0 +1,11 @@
+{
+  "id": "tinyfeed",
+  "name": "Tinyfeed",
+  "description": "Self-hosted Tinyfeed deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

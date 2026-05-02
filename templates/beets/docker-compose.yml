@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  beets:
+    image: ghcr.io/linuxserver/beets:latest
+    container_name: beets
+    hostname: beets
+    ports:
+      - "${BEETS_PORT:-8080}:8080"
+    volumes:
+      - beets_data:/data
+    restart: unless-stopped
+
+volumes:
+  beets_data:
+    name: beets_data

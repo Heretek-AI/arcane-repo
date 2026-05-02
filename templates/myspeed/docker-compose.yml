@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  myspeed:
+    image: docker.io/germannewsmaker/myspeed:latest
+    container_name: myspeed
+    hostname: myspeed
+    ports:
+      - "${MYSPEED_PORT:-8080}:8080"
+    volumes:
+      - myspeed_data:/data
+    restart: unless-stopped
+
+volumes:
+  myspeed_data:
+    name: myspeed_data

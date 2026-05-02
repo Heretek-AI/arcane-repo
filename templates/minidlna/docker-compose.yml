@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  minidlna:
+    image: docker.io/vladgh/minidlna:latest
+    container_name: minidlna
+    hostname: minidlna
+    ports:
+      - "${MINIDLNA_PORT:-8080}:8080"
+    volumes:
+      - minidlna_data:/data
+    restart: unless-stopped
+
+volumes:
+  minidlna_data:
+    name: minidlna_data

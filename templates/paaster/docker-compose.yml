@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  paaster:
+    image: docker.io/wardpearce/paaster:latest
+    container_name: paaster
+    hostname: paaster
+    ports:
+      - "${PAASTER_PORT:-8080}:8080"
+    volumes:
+      - paaster_data:/data
+    restart: unless-stopped
+
+volumes:
+  paaster_data:
+    name: paaster_data

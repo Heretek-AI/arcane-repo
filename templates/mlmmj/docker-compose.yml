@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mlmmj:
+    image: docker.io/fabianwe/mlmmj:latest
+    container_name: mlmmj
+    hostname: mlmmj
+    ports:
+      - "${MLMMJ_PORT:-8080}:8080"
+    volumes:
+      - mlmmj_data:/data
+    restart: unless-stopped
+
+volumes:
+  mlmmj_data:
+    name: mlmmj_data

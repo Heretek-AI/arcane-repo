@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ztncui:
+    image: docker.io/keynetworks/ztncui:latest
+    container_name: ztncui
+    hostname: ztncui
+    ports:
+      - "${ZTNCUI_PORT:-8080}:8080"
+    volumes:
+      - ztncui_data:/data
+    restart: unless-stopped
+
+volumes:
+  ztncui_data:
+    name: ztncui_data

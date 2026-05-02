@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  thelounge:
+    image: ghcr.io/thelounge/thelounge:latest
+    container_name: thelounge
+    hostname: thelounge
+    ports:
+      - "${THELOUNGE_PORT:-8080}:8080"
+    volumes:
+      - thelounge_data:/data
+    restart: unless-stopped
+
+volumes:
+  thelounge_data:
+    name: thelounge_data

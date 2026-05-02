@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  warpgate:
+    image: docker.io/heywoodlh/warpgate:latest
+    container_name: warpgate
+    hostname: warpgate
+    ports:
+      - "${WARPGATE_PORT:-8080}:8080"
+    volumes:
+      - warpgate_data:/data
+    restart: unless-stopped
+
+volumes:
+  warpgate_data:
+    name: warpgate_data

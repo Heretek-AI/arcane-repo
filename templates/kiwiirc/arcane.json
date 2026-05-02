@@ -1,0 +1,12 @@
+{
+  "id": "kiwiirc",
+  "name": "Kiwiirc",
+  "description": "Self-hosted Kiwiirc deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "communication",
+    "yunohost"
+  ]
+}

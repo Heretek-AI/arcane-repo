@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  homeassistant:
+    image: ghcr.io/linuxserver/homeassistant:latest
+    container_name: homeassistant
+    hostname: homeassistant
+    ports:
+      - "${HOMEASSISTANT_PORT:-8123}:8123"
+    volumes:
+      - homeassistant_data:/data
+    restart: unless-stopped
+
+volumes:
+  homeassistant_data:
+    name: homeassistant_data

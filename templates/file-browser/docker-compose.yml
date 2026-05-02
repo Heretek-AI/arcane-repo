@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  file-browser:
+    image: docker.io/krisss/file-browser:latest
+    container_name: file-browser
+    hostname: file-browser
+    ports:
+      - "${FILE_BROWSER_PORT:-8080}:8080"
+    volumes:
+      - file-browser_data:/data
+    restart: unless-stopped
+
+volumes:
+  file-browser_data:
+    name: file-browser_data

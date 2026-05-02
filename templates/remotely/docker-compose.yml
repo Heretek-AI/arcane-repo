@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  remotely:
+    image: docker.io/immybot/remotely:latest
+    container_name: remotely
+    hostname: remotely
+    ports:
+      - "${REMOTELY_PORT:-8080}:8080"
+    volumes:
+      - remotely_data:/data
+    restart: unless-stopped
+
+volumes:
+  remotely_data:
+    name: remotely_data

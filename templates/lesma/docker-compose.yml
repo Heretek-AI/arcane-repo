@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lesma:
+    image: ghcr.io/ogarcia/lesma:latest
+    container_name: lesma
+    hostname: lesma
+    ports:
+      - "${LESMA_PORT:-8080}:8080"
+    volumes:
+      - lesma_data:/data
+    restart: unless-stopped
+
+volumes:
+  lesma_data:
+    name: lesma_data

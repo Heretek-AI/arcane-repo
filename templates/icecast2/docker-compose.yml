@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  icecast2:
+    image: ghcr.io/pltnk/icecast2:latest
+    container_name: icecast2
+    hostname: icecast2
+    ports:
+      - "${ICECAST2_PORT:-8080}:8080"
+    volumes:
+      - icecast2_data:/data
+    restart: unless-stopped
+
+volumes:
+  icecast2_data:
+    name: icecast2_data

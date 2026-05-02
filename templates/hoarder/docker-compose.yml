@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hoarder:
+    image: docker.io/optimuscloud/hoarder:latest
+    container_name: hoarder
+    hostname: hoarder
+    ports:
+      - "${HOARDER_PORT:-8080}:8080"
+    volumes:
+      - hoarder_data:/data
+    restart: unless-stopped
+
+volumes:
+  hoarder_data:
+    name: hoarder_data

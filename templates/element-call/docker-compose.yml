@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  element-call:
+    image: docker.io/mhanotaux/element-call:latest
+    container_name: element-call
+    hostname: element-call
+    ports:
+      - "${ELEMENT_CALL_PORT:-8080}:8080"
+    volumes:
+      - element-call_data:/data
+    restart: unless-stopped
+
+volumes:
+  element-call_data:
+    name: element-call_data

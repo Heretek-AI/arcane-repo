@@ -1,0 +1,11 @@
+{
+  "id": "gokapi",
+  "name": "Gokapi",
+  "description": "Self-hosted Gokapi deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

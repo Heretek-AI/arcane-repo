@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  metube:
+    image: ghcr.io/alexta69/metube:latest
+    container_name: metube
+    hostname: metube
+    ports:
+      - "${METUBE_PORT:-8080}:8080"
+    volumes:
+      - metube_data:/data
+    restart: unless-stopped
+
+volumes:
+  metube_data:
+    name: metube_data

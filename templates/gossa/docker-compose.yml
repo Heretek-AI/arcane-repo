@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gossa:
+    image: docker.io/pldubouilh/gossa:latest
+    container_name: gossa
+    hostname: gossa
+    ports:
+      - "${GOSSA_PORT:-8080}:8080"
+    volumes:
+      - gossa_data:/data
+    restart: unless-stopped
+
+volumes:
+  gossa_data:
+    name: gossa_data

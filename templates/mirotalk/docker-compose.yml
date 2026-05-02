@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mirotalk:
+    image: docker.io/elestio/mirotalk:latest
+    container_name: mirotalk
+    hostname: mirotalk
+    ports:
+      - "${MIROTALK_PORT:-8080}:8080"
+    volumes:
+      - mirotalk_data:/data
+    restart: unless-stopped
+
+volumes:
+  mirotalk_data:
+    name: mirotalk_data

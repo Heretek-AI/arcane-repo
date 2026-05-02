@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  it-tools:
+    image: ghcr.io/corentinth/it-tools:latest
+    container_name: it-tools
+    hostname: it-tools
+    ports:
+      - "${IT_TOOLS_PORT:-80}:80"
+    volumes:
+      - it-tools_data:/data
+    restart: unless-stopped
+
+volumes:
+  it-tools_data:
+    name: it-tools_data

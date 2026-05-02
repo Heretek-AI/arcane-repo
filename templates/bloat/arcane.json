@@ -1,0 +1,11 @@
+{
+  "id": "bloat",
+  "name": "Bloat",
+  "description": "Self-hosted Bloat deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

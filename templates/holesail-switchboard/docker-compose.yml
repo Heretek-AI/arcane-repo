@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  holesail-switchboard:
+    image: docker.io/orenz0/holesail-switchboard:latest
+    container_name: holesail-switchboard
+    hostname: holesail-switchboard
+    ports:
+      - "${HOLESAIL_SWITCHBOARD_PORT:-8080}:8080"
+    volumes:
+      - holesail-switchboard_data:/data
+    restart: unless-stopped
+
+volumes:
+  holesail-switchboard_data:
+    name: holesail-switchboard_data

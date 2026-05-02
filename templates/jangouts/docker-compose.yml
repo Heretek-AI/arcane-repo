@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jangouts:
+    image: docker.io/kiview/jangouts:latest
+    container_name: jangouts
+    hostname: jangouts
+    ports:
+      - "${JANGOUTS_PORT:-8080}:8080"
+    volumes:
+      - jangouts_data:/data
+    restart: unless-stopped
+
+volumes:
+  jangouts_data:
+    name: jangouts_data

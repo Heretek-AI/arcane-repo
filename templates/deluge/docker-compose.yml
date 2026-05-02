@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  deluge:
+    image: ghcr.io/linuxserver/deluge:latest
+    container_name: deluge
+    hostname: deluge
+    ports:
+      - "${DELUGE_PORT:-8112}:8112"
+    volumes:
+      - deluge_data:/data
+    restart: unless-stopped
+
+volumes:
+  deluge_data:
+    name: deluge_data

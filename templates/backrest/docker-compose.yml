@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backrest:
+    image: ghcr.io/garethgeorge/backrest:latest
+    container_name: backrest
+    hostname: backrest
+    ports:
+      - "${BACKREST_PORT:-8080}:8080"
+    volumes:
+      - backrest_data:/data
+    restart: unless-stopped
+
+volumes:
+  backrest_data:
+    name: backrest_data

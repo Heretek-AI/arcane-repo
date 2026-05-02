@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  enafore:
+    image: docker.io/dusnm1/enafore:latest
+    container_name: enafore
+    hostname: enafore
+    ports:
+      - "${ENAFORE_PORT:-8080}:8080"
+    volumes:
+      - enafore_data:/data
+    restart: unless-stopped
+
+volumes:
+  enafore_data:
+    name: enafore_data

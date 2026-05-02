@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyseer:
+    image: docker.io/gabinino/jellyseer:latest
+    container_name: jellyseer
+    hostname: jellyseer
+    ports:
+      - "${JELLYSEER_PORT:-8080}:8080"
+    volumes:
+      - jellyseer_data:/data
+    restart: unless-stopped
+
+volumes:
+  jellyseer_data:
+    name: jellyseer_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phanpy:
+    image: docker.io/ganeshlab/phanpy:latest
+    container_name: phanpy
+    hostname: phanpy
+    ports:
+      - "${PHANPY_PORT:-8080}:8080"
+    volumes:
+      - phanpy_data:/data
+    restart: unless-stopped
+
+volumes:
+  phanpy_data:
+    name: phanpy_data

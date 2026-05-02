@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bitcoin-knots:
+    image: ghcr.io/linuxserver/bitcoin-knots:latest
+    container_name: bitcoin-knots
+    hostname: bitcoin-knots
+    ports:
+      - "${BITCOIN_KNOTS_PORT:-8080}:8080"
+    volumes:
+      - bitcoin-knots_data:/data
+    restart: unless-stopped
+
+volumes:
+  bitcoin-knots_data:
+    name: bitcoin-knots_data

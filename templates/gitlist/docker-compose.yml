@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gitlist:
+    image: docker.io/garethjevans/gitlist:latest
+    container_name: gitlist
+    hostname: gitlist
+    ports:
+      - "${GITLIST_PORT:-8080}:8080"
+    volumes:
+      - gitlist_data:/data
+    restart: unless-stopped
+
+volumes:
+  gitlist_data:
+    name: gitlist_data

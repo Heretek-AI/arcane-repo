@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hedgedoc:
+    image: ghcr.io/linuxserver/hedgedoc:latest
+    container_name: hedgedoc
+    hostname: hedgedoc
+    ports:
+      - "${HEDGEDOC_PORT:-3000}:3000"
+    volumes:
+      - hedgedoc_data:/data
+    restart: unless-stopped
+
+volumes:
+  hedgedoc_data:
+    name: hedgedoc_data

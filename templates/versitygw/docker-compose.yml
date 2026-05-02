@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  versitygw:
+    image: ghcr.io/versity/versitygw:latest
+    container_name: versitygw
+    hostname: versitygw
+    ports:
+      - "${VERSITYGW_PORT:-8080}:8080"
+    volumes:
+      - versitygw_data:/data
+    restart: unless-stopped
+
+volumes:
+  versitygw_data:
+    name: versitygw_data

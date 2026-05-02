@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kapowarr:
+    image: docker.io/mrcas/kapowarr:latest
+    container_name: kapowarr
+    hostname: kapowarr
+    ports:
+      - "${KAPOWARR_PORT:-8080}:8080"
+    volumes:
+      - kapowarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  kapowarr_data:
+    name: kapowarr_data

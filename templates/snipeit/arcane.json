@@ -1,0 +1,11 @@
+{
+  "id": "snipeit",
+  "name": "Snipeit",
+  "description": "Self-hosted Snipeit deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

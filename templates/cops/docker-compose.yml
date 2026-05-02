@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cops:
+    image: ghcr.io/linuxserver/cops:latest
+    container_name: cops
+    hostname: cops
+    ports:
+      - "${COPS_PORT:-8080}:8080"
+    volumes:
+      - cops_data:/data
+    restart: unless-stopped
+
+volumes:
+  cops_data:
+    name: cops_data

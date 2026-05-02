@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  13ft:
+    image: docker.io/wasimaster/13ft:latest
+    container_name: 13ft
+    hostname: 13ft
+    ports:
+      - "${13FT_PORT:-8080}:8080"
+    volumes:
+      - 13ft_data:/data
+    restart: unless-stopped
+
+volumes:
+  13ft_data:
+    name: 13ft_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jam:
+    image: docker.io/scrollagency/jam:latest
+    container_name: jam
+    hostname: jam
+    ports:
+      - "${JAM_PORT:-8080}:8080"
+    volumes:
+      - jam_data:/data
+    restart: unless-stopped
+
+volumes:
+  jam_data:
+    name: jam_data

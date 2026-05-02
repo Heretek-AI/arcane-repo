@@ -1,0 +1,11 @@
+{
+  "id": "jdownloader",
+  "name": "Jdownloader",
+  "description": "Self-hosted Jdownloader deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

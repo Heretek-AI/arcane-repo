@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gathio:
+    image: docker.io/pheezer/gathio:latest
+    container_name: gathio
+    hostname: gathio
+    ports:
+      - "${GATHIO_PORT:-8080}:8080"
+    volumes:
+      - gathio_data:/data
+    restart: unless-stopped
+
+volumes:
+  gathio_data:
+    name: gathio_data

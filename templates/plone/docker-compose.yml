@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plone:
+    image: docker.io/plone/plone:latest
+    container_name: plone
+    hostname: plone
+    ports:
+      - "${PLONE_PORT:-8080}:8080"
+    volumes:
+      - plone_data:/data
+    restart: unless-stopped
+
+volumes:
+  plone_data:
+    name: plone_data

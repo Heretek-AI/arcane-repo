@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shopstr:
+    image: docker.io/calvadev/shopstr:latest
+    container_name: shopstr
+    hostname: shopstr
+    ports:
+      - "${SHOPSTR_PORT:-8080}:8080"
+    volumes:
+      - shopstr_data:/data
+    restart: unless-stopped
+
+volumes:
+  shopstr_data:
+    name: shopstr_data

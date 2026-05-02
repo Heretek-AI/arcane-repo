@@ -1,0 +1,11 @@
+{
+  "id": "pyinventory",
+  "name": "Pyinventory",
+  "description": "Self-hosted Pyinventory deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

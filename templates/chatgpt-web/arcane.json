@@ -1,0 +1,13 @@
+{
+  "id": "chatgpt-web",
+  "name": "Chatgpt Web",
+  "description": "Self-hosted Chatgpt Web deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "communication",
+    "yunohost"
+  ]
+}

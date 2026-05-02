@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  deepsea:
+    image: docker.io/asingh100/deepsea:latest
+    container_name: deepsea
+    hostname: deepsea
+    ports:
+      - "${DEEPSEA_PORT:-8080}:8080"
+    volumes:
+      - deepsea_data:/data
+    restart: unless-stopped
+
+volumes:
+  deepsea_data:
+    name: deepsea_data

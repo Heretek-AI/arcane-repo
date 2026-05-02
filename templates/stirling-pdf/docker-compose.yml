@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  stirling-pdf:
+    image: docker.io/stirlingtools/stirling-pdf:latest
+    container_name: stirling-pdf
+    hostname: stirling-pdf
+    ports:
+      - "${STIRLING_PDF_PORT:-8080}:8080"
+    volumes:
+      - stirling-pdf_data:/data
+    restart: unless-stopped
+
+volumes:
+  stirling-pdf_data:
+    name: stirling-pdf_data

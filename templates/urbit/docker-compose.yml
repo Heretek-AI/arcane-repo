@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  urbit:
+    image: docker.io/tloncorp/urbit:latest
+    container_name: urbit
+    hostname: urbit
+    ports:
+      - "${URBIT_PORT:-8080}:8080"
+    volumes:
+      - urbit_data:/data
+    restart: unless-stopped
+
+volumes:
+  urbit_data:
+    name: urbit_data

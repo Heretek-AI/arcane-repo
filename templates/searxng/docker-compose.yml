@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  searxng:
+    image: ghcr.io/searxng/searxng:latest
+    container_name: searxng
+    hostname: searxng
+    ports:
+      - "${SEARXNG_PORT:-8080}:8080"
+    volumes:
+      - searxng_data:/data
+    restart: unless-stopped
+
+volumes:
+  searxng_data:
+    name: searxng_data

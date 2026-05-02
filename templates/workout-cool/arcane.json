@@ -1,0 +1,11 @@
+{
+  "id": "workout-cool",
+  "name": "Workout Cool",
+  "description": "Self-hosted Workout Cool deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

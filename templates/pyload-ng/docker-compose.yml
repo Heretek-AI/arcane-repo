@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pyload-ng:
+    image: ghcr.io/linuxserver/pyload-ng:latest
+    container_name: pyload-ng
+    hostname: pyload-ng
+    ports:
+      - "${PYLOAD_NG_PORT:-8080}:8080"
+    volumes:
+      - pyload-ng_data:/data
+    restart: unless-stopped
+
+volumes:
+  pyload-ng_data:
+    name: pyload-ng_data

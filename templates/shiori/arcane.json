@@ -1,0 +1,11 @@
+{
+  "id": "shiori",
+  "name": "Shiori",
+  "description": "Self-hosted Shiori deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

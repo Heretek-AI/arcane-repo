@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  prowlarr:
+    image: ghcr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    hostname: prowlarr
+    ports:
+      - "${PROWLARR_PORT:-8080}:8080"
+    volumes:
+      - prowlarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  prowlarr_data:
+    name: prowlarr_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  grist:
+    image: docker.io/gristlabs/grist:latest
+    container_name: grist
+    hostname: grist
+    ports:
+      - "${GRIST_PORT:-8080}:8080"
+    volumes:
+      - grist_data:/data
+    restart: unless-stopped
+
+volumes:
+  grist_data:
+    name: grist_data

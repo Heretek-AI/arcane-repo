@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ocular:
+    image: docker.io/daksharma05/ocular:latest
+    container_name: ocular
+    hostname: ocular
+    ports:
+      - "${OCULAR_PORT:-8080}:8080"
+    volumes:
+      - ocular_data:/data
+    restart: unless-stopped
+
+volumes:
+  ocular_data:
+    name: ocular_data

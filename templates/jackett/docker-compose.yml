@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jackett:
+    image: ghcr.io/linuxserver/jackett:latest
+    container_name: jackett
+    hostname: jackett
+    ports:
+      - "${JACKETT_PORT:-8080}:8080"
+    volumes:
+      - jackett_data:/data
+    restart: unless-stopped
+
+volumes:
+  jackett_data:
+    name: jackett_data

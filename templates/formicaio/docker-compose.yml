@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  formicaio:
+    image: docker.io/bochaco/formicaio:latest
+    container_name: formicaio
+    hostname: formicaio
+    ports:
+      - "${FORMICAIO_PORT:-8080}:8080"
+    volumes:
+      - formicaio_data:/data
+    restart: unless-stopped
+
+volumes:
+  formicaio_data:
+    name: formicaio_data

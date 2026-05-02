@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cashu-me:
+    image: docker.io/rstmsn/cashu-me:latest
+    container_name: cashu-me
+    hostname: cashu-me
+    ports:
+      - "${CASHU_ME_PORT:-8080}:8080"
+    volumes:
+      - cashu-me_data:/data
+    restart: unless-stopped
+
+volumes:
+  cashu-me_data:
+    name: cashu-me_data

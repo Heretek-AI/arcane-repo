@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ubooquity:
+    image: ghcr.io/linuxserver/ubooquity:latest
+    container_name: ubooquity
+    hostname: ubooquity
+    ports:
+      - "${UBOOQUITY_PORT:-8080}:8080"
+    volumes:
+      - ubooquity_data:/data
+    restart: unless-stopped
+
+volumes:
+  ubooquity_data:
+    name: ubooquity_data

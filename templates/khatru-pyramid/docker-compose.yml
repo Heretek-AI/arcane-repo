@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  khatru-pyramid:
+    image: docker.io/tijlxyz/khatru-pyramid:latest
+    container_name: khatru-pyramid
+    hostname: khatru-pyramid
+    ports:
+      - "${KHATRU_PYRAMID_PORT:-8080}:8080"
+    volumes:
+      - khatru-pyramid_data:/data
+    restart: unless-stopped
+
+volumes:
+  khatru-pyramid_data:
+    name: khatru-pyramid_data

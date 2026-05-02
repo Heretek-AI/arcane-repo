@@ -1,0 +1,11 @@
+{
+  "id": "mempool",
+  "name": "Mempool",
+  "description": "Self-hosted Mempool deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

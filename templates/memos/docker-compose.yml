@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  memos:
+    image: docker.io/neosmemo/memos:latest
+    container_name: memos
+    hostname: memos
+    ports:
+      - "${MEMOS_PORT:-8080}:8080"
+    volumes:
+      - memos_data:/data
+    restart: unless-stopped
+
+volumes:
+  memos_data:
+    name: memos_data

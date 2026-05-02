@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pyinventory:
+    image: ghcr.io/korylprince/pyinventory:latest
+    container_name: pyinventory
+    hostname: pyinventory
+    ports:
+      - "${PYINVENTORY_PORT:-8080}:8080"
+    volumes:
+      - pyinventory_data:/data
+    restart: unless-stopped
+
+volumes:
+  pyinventory_data:
+    name: pyinventory_data

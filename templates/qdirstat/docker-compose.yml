@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  qdirstat:
+    image: ghcr.io/jlesage/qdirstat:latest
+    container_name: qdirstat
+    hostname: qdirstat
+    ports:
+      - "${QDIRSTAT_PORT:-8080}:8080"
+    volumes:
+      - qdirstat_data:/data
+    restart: unless-stopped
+
+volumes:
+  qdirstat_data:
+    name: qdirstat_data

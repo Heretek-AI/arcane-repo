@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  streams:
+    image: docker.io/lykkex/streams:latest
+    container_name: streams
+    hostname: streams
+    ports:
+      - "${STREAMS_PORT:-8080}:8080"
+    volumes:
+      - streams_data:/data
+    restart: unless-stopped
+
+volumes:
+  streams_data:
+    name: streams_data

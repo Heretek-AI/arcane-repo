@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mainsail:
+    image: docker.io/dimalo/mainsail:latest
+    container_name: mainsail
+    hostname: mainsail
+    ports:
+      - "${MAINSAIL_PORT:-8080}:8080"
+    volumes:
+      - mainsail_data:/data
+    restart: unless-stopped
+
+volumes:
+  mainsail_data:
+    name: mainsail_data

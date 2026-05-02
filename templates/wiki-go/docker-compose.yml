@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wiki-go:
+    image: docker.io/leomoonstudios/wiki-go:latest
+    container_name: wiki-go
+    hostname: wiki-go
+    ports:
+      - "${WIKI_GO_PORT:-80}:80"
+    volumes:
+      - wiki-go_data:/data
+    restart: unless-stopped
+
+volumes:
+  wiki-go_data:
+    name: wiki-go_data

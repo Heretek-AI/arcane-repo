@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  swingmusic:
+    image: docker.io/bitnik212/swingmusic:latest
+    container_name: swingmusic
+    hostname: swingmusic
+    ports:
+      - "${SWINGMUSIC_PORT:-8080}:8080"
+    volumes:
+      - swingmusic_data:/data
+    restart: unless-stopped
+
+volumes:
+  swingmusic_data:
+    name: swingmusic_data

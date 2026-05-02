@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snipeit:
+    image: docker.io/fajarito/snipeit:latest
+    container_name: snipeit
+    hostname: snipeit
+    ports:
+      - "${SNIPEIT_PORT:-8080}:8080"
+    volumes:
+      - snipeit_data:/data
+    restart: unless-stopped
+
+volumes:
+  snipeit_data:
+    name: snipeit_data

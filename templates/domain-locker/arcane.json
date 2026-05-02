@@ -1,0 +1,12 @@
+{
+  "id": "domain-locker",
+  "name": "Domain Locker",
+  "description": "Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "umbrel"
+  ]
+}

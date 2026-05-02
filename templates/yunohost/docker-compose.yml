@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yunohost:
+    image: docker.io/domainelibre/yunohost:latest
+    container_name: yunohost
+    hostname: yunohost
+    ports:
+      - "${YUNOHOST_PORT:-8080}:8080"
+    volumes:
+      - yunohost_data:/data
+    restart: unless-stopped
+
+volumes:
+  yunohost_data:
+    name: yunohost_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  roundcube:
+    image: docker.io/robbertkl/roundcube:latest
+    container_name: roundcube
+    hostname: roundcube
+    ports:
+      - "${ROUNDCUBE_PORT:-80}:80"
+    volumes:
+      - roundcube_data:/data
+    restart: unless-stopped
+
+volumes:
+  roundcube_data:
+    name: roundcube_data

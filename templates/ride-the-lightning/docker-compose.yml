@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ride-the-lightning:
+    image: docker.io/dsbaars/ride-the-lightning:latest
+    container_name: ride-the-lightning
+    hostname: ride-the-lightning
+    ports:
+      - "${RIDE_THE_LIGHTNING_PORT:-8080}:8080"
+    volumes:
+      - ride-the-lightning_data:/data
+    restart: unless-stopped
+
+volumes:
+  ride-the-lightning_data:
+    name: ride-the-lightning_data

@@ -1,0 +1,11 @@
+{
+  "id": "prose",
+  "name": "Prose",
+  "description": "Self-hosted Prose deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

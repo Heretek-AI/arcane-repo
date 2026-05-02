@@ -1,0 +1,12 @@
+{
+  "id": "kimai2",
+  "name": "Kimai2",
+  "description": "Self-hosted Kimai2 deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "yunohost"
+  ]
+}

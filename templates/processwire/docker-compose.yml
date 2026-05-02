@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  processwire:
+    image: docker.io/poljpocket/processwire:latest
+    container_name: processwire
+    hostname: processwire
+    ports:
+      - "${PROCESSWIRE_PORT:-8080}:8080"
+    volumes:
+      - processwire_data:/data
+    restart: unless-stopped
+
+volumes:
+  processwire_data:
+    name: processwire_data

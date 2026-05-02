@@ -1,0 +1,11 @@
+{
+  "id": "firefly-iii",
+  "name": "Firefly Iii",
+  "description": "Self-hosted Firefly Iii deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

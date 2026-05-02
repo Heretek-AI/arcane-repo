@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  spip:
+    image: docker.io/ipeos/spip:latest
+    container_name: spip
+    hostname: spip
+    ports:
+      - "${SPIP_PORT:-8080}:8080"
+    volumes:
+      - spip_data:/data
+    restart: unless-stopped
+
+volumes:
+  spip_data:
+    name: spip_data

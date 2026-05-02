@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vpnclient:
+    image: docker.io/softethervpn/vpnclient:latest
+    container_name: vpnclient
+    hostname: vpnclient
+    ports:
+      - "${VPNCLIENT_PORT:-8080}:8080"
+    volumes:
+      - vpnclient_data:/data
+    restart: unless-stopped
+
+volumes:
+  vpnclient_data:
+    name: vpnclient_data

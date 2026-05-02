@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  adminerevo:
+    image: ghcr.io/shyim/adminerevo:latest
+    container_name: adminerevo
+    hostname: adminerevo
+    ports:
+      - "${ADMINEREVO_PORT:-8080}:8080"
+    volumes:
+      - adminerevo_data:/data
+    restart: unless-stopped
+
+volumes:
+  adminerevo_data:
+    name: adminerevo_data

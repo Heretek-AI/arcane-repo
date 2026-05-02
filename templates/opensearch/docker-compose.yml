@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  opensearch:
+    image: docker.io/opensearchproject/opensearch:latest
+    container_name: opensearch
+    hostname: opensearch
+    ports:
+      - "${OPENSEARCH_PORT:-8080}:8080"
+    volumes:
+      - opensearch_data:/data
+    restart: unless-stopped
+
+volumes:
+  opensearch_data:
+    name: opensearch_data

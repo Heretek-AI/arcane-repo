@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lufi:
+    image: docker.io/xataz/lufi:latest
+    container_name: lufi
+    hostname: lufi
+    ports:
+      - "${LUFI_PORT:-8080}:8080"
+    volumes:
+      - lufi_data:/data
+    restart: unless-stopped
+
+volumes:
+  lufi_data:
+    name: lufi_data

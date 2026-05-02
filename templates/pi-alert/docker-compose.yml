@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pi-alert:
+    image: docker.io/jokobsk/pi.alert:latest
+    container_name: pi-alert
+    hostname: pi-alert
+    ports:
+      - "${PI_ALERT_PORT:-8080}:8080"
+    volumes:
+      - pi-alert_data:/data
+    restart: unless-stopped
+
+volumes:
+  pi-alert_data:
+    name: pi-alert_data

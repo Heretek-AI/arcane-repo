@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  quassel-core:
+    image: ghcr.io/linuxserver/quassel-core:latest
+    container_name: quassel-core
+    hostname: quassel-core
+    ports:
+      - "${QUASSEL_CORE_PORT:-8080}:8080"
+    volumes:
+      - quassel-core_data:/data
+    restart: unless-stopped
+
+volumes:
+  quassel-core_data:
+    name: quassel-core_data

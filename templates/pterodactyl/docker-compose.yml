@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pterodactyl:
+    image: docker.io/azery12356/pterodactyl:latest
+    container_name: pterodactyl
+    hostname: pterodactyl
+    ports:
+      - "${PTERODACTYL_PORT:-8080}:8080"
+    volumes:
+      - pterodactyl_data:/data
+    restart: unless-stopped
+
+volumes:
+  pterodactyl_data:
+    name: pterodactyl_data

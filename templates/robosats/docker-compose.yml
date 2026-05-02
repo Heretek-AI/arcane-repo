@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  robosats:
+    image: docker.io/recksato/robosats:latest
+    container_name: robosats
+    hostname: robosats
+    ports:
+      - "${ROBOSATS_PORT:-8080}:8080"
+    volumes:
+      - robosats_data:/data
+    restart: unless-stopped
+
+volumes:
+  robosats_data:
+    name: robosats_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  slink:
+    image: docker.io/anirdev/slink:latest
+    container_name: slink
+    hostname: slink
+    ports:
+      - "${SLINK_PORT:-8080}:8080"
+    volumes:
+      - slink_data:/data
+    restart: unless-stopped
+
+volumes:
+  slink_data:
+    name: slink_data

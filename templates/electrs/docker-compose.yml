@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  electrs:
+    image: docker.io/getumbrel/electrs:latest
+    container_name: electrs
+    hostname: electrs
+    ports:
+      - "${ELECTRS_PORT:-8080}:8080"
+    volumes:
+      - electrs_data:/data
+    restart: unless-stopped
+
+volumes:
+  electrs_data:
+    name: electrs_data

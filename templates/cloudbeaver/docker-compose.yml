@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cloudbeaver:
+    image: docker.io/dbeaver/cloudbeaver:latest
+    container_name: cloudbeaver
+    hostname: cloudbeaver
+    ports:
+      - "${CLOUDBEAVER_PORT:-8080}:8080"
+    volumes:
+      - cloudbeaver_data:/data
+    restart: unless-stopped
+
+volumes:
+  cloudbeaver_data:
+    name: cloudbeaver_data

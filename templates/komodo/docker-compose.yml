@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  komodo:
+    image: docker.io/komodoofficial/komodo:latest
+    container_name: komodo
+    hostname: komodo
+    ports:
+      - "${KOMODO_PORT:-8080}:8080"
+    volumes:
+      - komodo_data:/data
+    restart: unless-stopped
+
+volumes:
+  komodo_data:
+    name: komodo_data

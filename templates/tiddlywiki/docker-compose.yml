@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tiddlywiki:
+    image: docker.io/mazzolino/tiddlywiki:latest
+    container_name: tiddlywiki
+    hostname: tiddlywiki
+    ports:
+      - "${TIDDLYWIKI_PORT:-80}:80"
+    volumes:
+      - tiddlywiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  tiddlywiki_data:
+    name: tiddlywiki_data

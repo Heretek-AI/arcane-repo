@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: docker.io/toke/mosquitto:latest
+    container_name: mosquitto
+    hostname: mosquitto
+    ports:
+      - "${MOSQUITTO_PORT:-8080}:8080"
+    volumes:
+      - mosquitto_data:/data
+    restart: unless-stopped
+
+volumes:
+  mosquitto_data:
+    name: mosquitto_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  syncserver-rs:
+    image: docker.io/kannasama/syncserver-rs:latest
+    container_name: syncserver-rs
+    hostname: syncserver-rs
+    ports:
+      - "${SYNCSERVER_RS_PORT:-8080}:8080"
+    volumes:
+      - syncserver-rs_data:/data
+    restart: unless-stopped
+
+volumes:
+  syncserver-rs_data:
+    name: syncserver-rs_data

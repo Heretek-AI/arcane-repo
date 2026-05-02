@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  feber:
+    image: docker.io/up2technology/feber:latest
+    container_name: feber
+    hostname: feber
+    ports:
+      - "${FEBER_PORT:-8080}:8080"
+    volumes:
+      - feber_data:/data
+    restart: unless-stopped
+
+volumes:
+  feber_data:
+    name: feber_data

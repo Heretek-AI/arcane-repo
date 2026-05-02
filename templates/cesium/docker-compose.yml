@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cesium:
+    image: docker.io/rampantmonkey/cesium:latest
+    container_name: cesium
+    hostname: cesium
+    ports:
+      - "${CESIUM_PORT:-8080}:8080"
+    volumes:
+      - cesium_data:/data
+    restart: unless-stopped
+
+volumes:
+  cesium_data:
+    name: cesium_data

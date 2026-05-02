@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  geeftlist:
+    image: docker.io/nanawel/geeftlist:latest
+    container_name: geeftlist
+    hostname: geeftlist
+    ports:
+      - "${GEEFTLIST_PORT:-8080}:8080"
+    volumes:
+      - geeftlist_data:/data
+    restart: unless-stopped
+
+volumes:
+  geeftlist_data:
+    name: geeftlist_data

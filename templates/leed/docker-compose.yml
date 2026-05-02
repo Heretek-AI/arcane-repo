@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  leed:
+    image: docker.io/ahmet2mir/leed:latest
+    container_name: leed
+    hostname: leed
+    ports:
+      - "${LEED_PORT:-8080}:8080"
+    volumes:
+      - leed_data:/data
+    restart: unless-stopped
+
+volumes:
+  leed_data:
+    name: leed_data

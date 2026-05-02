@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sutom:
+    image: docker.io/flanfl/sutom:latest
+    container_name: sutom
+    hostname: sutom
+    ports:
+      - "${SUTOM_PORT:-8080}:8080"
+    volumes:
+      - sutom_data:/data
+    restart: unless-stopped
+
+volumes:
+  sutom_data:
+    name: sutom_data

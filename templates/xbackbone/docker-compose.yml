@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  xbackbone:
+    image: ghcr.io/linuxserver/xbackbone:latest
+    container_name: xbackbone
+    hostname: xbackbone
+    ports:
+      - "${XBACKBONE_PORT:-8080}:8080"
+    volumes:
+      - xbackbone_data:/data
+    restart: unless-stopped
+
+volumes:
+  xbackbone_data:
+    name: xbackbone_data

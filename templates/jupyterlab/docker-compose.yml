@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jupyterlab:
+    image: docker.io/mikebirdgeneau/jupyterlab:latest
+    container_name: jupyterlab
+    hostname: jupyterlab
+    ports:
+      - "${JUPYTERLAB_PORT:-8080}:8080"
+    volumes:
+      - jupyterlab_data:/data
+    restart: unless-stopped
+
+volumes:
+  jupyterlab_data:
+    name: jupyterlab_data

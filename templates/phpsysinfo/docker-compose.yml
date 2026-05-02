@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpsysinfo:
+    image: docker.io/piuma/phpsysinfo:latest
+    container_name: phpsysinfo
+    hostname: phpsysinfo
+    ports:
+      - "${PHPSYSINFO_PORT:-8080}:8080"
+    volumes:
+      - phpsysinfo_data:/data
+    restart: unless-stopped
+
+volumes:
+  phpsysinfo_data:
+    name: phpsysinfo_data

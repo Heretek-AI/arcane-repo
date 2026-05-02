@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  profilarr:
+    image: docker.io/santiagosayshey/profilarr:latest
+    container_name: profilarr
+    hostname: profilarr
+    ports:
+      - "${PROFILARR_PORT:-8080}:8080"
+    volumes:
+      - profilarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  profilarr_data:
+    name: profilarr_data

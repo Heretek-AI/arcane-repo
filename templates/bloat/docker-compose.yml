@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bloat:
+    image: docker.io/poesty/bloat:latest
+    container_name: bloat
+    hostname: bloat
+    ports:
+      - "${BLOAT_PORT:-8080}:8080"
+    volumes:
+      - bloat_data:/data
+    restart: unless-stopped
+
+volumes:
+  bloat_data:
+    name: bloat_data

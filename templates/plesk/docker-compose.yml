@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plesk:
+    image: docker.io/plesk/plesk:latest
+    container_name: plesk
+    hostname: plesk
+    ports:
+      - "${PLESK_PORT:-8080}:8080"
+    volumes:
+      - plesk_data:/data
+    restart: unless-stopped
+
+volumes:
+  plesk_data:
+    name: plesk_data

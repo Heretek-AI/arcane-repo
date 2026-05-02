@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pureblog:
+    image: docker.io/dujunio/pureblog:latest
+    container_name: pureblog
+    hostname: pureblog
+    ports:
+      - "${PUREBLOG_PORT:-8080}:8080"
+    volumes:
+      - pureblog_data:/data
+    restart: unless-stopped
+
+volumes:
+  pureblog_data:
+    name: pureblog_data

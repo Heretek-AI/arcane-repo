@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mail-archiver:
+    image: docker.io/robinweitzel/mail-archiver:latest
+    container_name: mail-archiver
+    hostname: mail-archiver
+    ports:
+      - "${MAIL_ARCHIVER_PORT:-8080}:8080"
+    volumes:
+      - mail-archiver_data:/data
+    restart: unless-stopped
+
+volumes:
+  mail-archiver_data:
+    name: mail-archiver_data

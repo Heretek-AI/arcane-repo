@@ -1,0 +1,12 @@
+{
+  "id": "hermes-agent",
+  "name": "Hermes Agent",
+  "description": "Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "umbrel"
+  ]
+}

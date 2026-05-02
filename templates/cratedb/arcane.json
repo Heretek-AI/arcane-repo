@@ -1,0 +1,11 @@
+{
+  "id": "cratedb",
+  "name": "Cratedb",
+  "description": "Self-hosted Cratedb deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

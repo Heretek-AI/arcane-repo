@@ -1,0 +1,12 @@
+{
+  "id": "mlmmj",
+  "name": "Mlmmj",
+  "description": "Self-hosted Mlmmj deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "yunohost"
+  ]
+}

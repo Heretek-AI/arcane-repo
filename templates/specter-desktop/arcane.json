@@ -1,0 +1,11 @@
+{
+  "id": "specter-desktop",
+  "name": "Specter Desktop",
+  "description": "Self-hosted Specter Desktop deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

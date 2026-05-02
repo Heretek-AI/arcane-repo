@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  peertube-search-index:
+    image: docker.io/nguyenleminhquan/peertube-search-index:latest
+    container_name: peertube-search-index
+    hostname: peertube-search-index
+    ports:
+      - "${PEERTUBE_SEARCH_INDEX_PORT:-9000}:9000"
+    volumes:
+      - peertube-search-index_data:/data
+    restart: unless-stopped
+
+volumes:
+  peertube-search-index_data:
+    name: peertube-search-index_data

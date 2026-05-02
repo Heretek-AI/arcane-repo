@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  core-lightning:
+    image: docker.io/1maa/core-lightning:latest
+    container_name: core-lightning
+    hostname: core-lightning
+    ports:
+      - "${CORE_LIGHTNING_PORT:-8080}:8080"
+    volumes:
+      - core-lightning_data:/data
+    restart: unless-stopped
+
+volumes:
+  core-lightning_data:
+    name: core-lightning_data

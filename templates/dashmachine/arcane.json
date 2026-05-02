@@ -1,0 +1,11 @@
+{
+  "id": "dashmachine",
+  "name": "Dashmachine",
+  "description": "Self-hosted Dashmachine deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

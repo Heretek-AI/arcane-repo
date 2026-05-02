@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rybbit:
+    image: docker.io/allocateengineering/rybbit:latest
+    container_name: rybbit
+    hostname: rybbit
+    ports:
+      - "${RYBBIT_PORT:-8080}:8080"
+    volumes:
+      - rybbit_data:/data
+    restart: unless-stopped
+
+volumes:
+  rybbit_data:
+    name: rybbit_data

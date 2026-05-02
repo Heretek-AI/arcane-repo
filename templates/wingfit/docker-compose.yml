@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wingfit:
+    image: docker.io/106401f4/wingfit:latest
+    container_name: wingfit
+    hostname: wingfit
+    ports:
+      - "${WINGFIT_PORT:-8080}:8080"
+    volumes:
+      - wingfit_data:/data
+    restart: unless-stopped
+
+volumes:
+  wingfit_data:
+    name: wingfit_data

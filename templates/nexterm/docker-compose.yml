@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nexterm:
+    image: docker.io/germannewsmaker/nexterm:latest
+    container_name: nexterm
+    hostname: nexterm
+    ports:
+      - "${NEXTERM_PORT:-8080}:8080"
+    volumes:
+      - nexterm_data:/data
+    restart: unless-stopped
+
+volumes:
+  nexterm_data:
+    name: nexterm_data

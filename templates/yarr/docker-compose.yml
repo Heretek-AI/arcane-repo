@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yarr:
+    image: ghcr.io/arsfeld/yarr:latest
+    container_name: yarr
+    hostname: yarr
+    ports:
+      - "${YARR_PORT:-8080}:8080"
+    volumes:
+      - yarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  yarr_data:
+    name: yarr_data

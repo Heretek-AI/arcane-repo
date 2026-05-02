@@ -1,0 +1,11 @@
+{
+  "id": "checkcle",
+  "name": "Checkcle",
+  "description": "Self-hosted Checkcle deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

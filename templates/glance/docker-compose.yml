@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  glance:
+    image: docker.io/glanceapp/glance:latest
+    container_name: glance
+    hostname: glance
+    ports:
+      - "${GLANCE_PORT:-8080}:8080"
+    volumes:
+      - glance_data:/data
+    restart: unless-stopped
+
+volumes:
+  glance_data:
+    name: glance_data

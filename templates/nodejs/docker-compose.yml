@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nodejs:
+    image: docker.io/paketobuildpacks/nodejs:latest
+    container_name: nodejs
+    hostname: nodejs
+    ports:
+      - "${NODEJS_PORT:-8080}:8080"
+    volumes:
+      - nodejs_data:/data
+    restart: unless-stopped
+
+volumes:
+  nodejs_data:
+    name: nodejs_data

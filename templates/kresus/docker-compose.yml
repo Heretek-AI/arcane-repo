@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kresus:
+    image: docker.io/bnjbvr/kresus:latest
+    container_name: kresus
+    hostname: kresus
+    ports:
+      - "${KRESUS_PORT:-8080}:8080"
+    volumes:
+      - kresus_data:/data
+    restart: unless-stopped
+
+volumes:
+  kresus_data:
+    name: kresus_data

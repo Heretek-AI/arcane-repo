@@ -1,0 +1,11 @@
+{
+  "id": "dradis",
+  "name": "Dradis",
+  "description": "Self-hosted Dradis deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  torrelay:
+    image: docker.io/vpetersson/torrelay:latest
+    container_name: torrelay
+    hostname: torrelay
+    ports:
+      - "${TORRELAY_PORT:-8080}:8080"
+    volumes:
+      - torrelay_data:/data
+    restart: unless-stopped
+
+volumes:
+  torrelay_data:
+    name: torrelay_data

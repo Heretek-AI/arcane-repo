@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  public-pool-web:
+    image: docker.io/martinbarilik/public-pool-web:latest
+    container_name: public-pool-web
+    hostname: public-pool-web
+    ports:
+      - "${PUBLIC_POOL_WEB_PORT:-8080}:8080"
+    volumes:
+      - public-pool-web_data:/data
+    restart: unless-stopped
+
+volumes:
+  public-pool-web_data:
+    name: public-pool-web_data

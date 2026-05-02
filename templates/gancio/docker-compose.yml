@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gancio:
+    image: docker.io/cisti/gancio:latest
+    container_name: gancio
+    hostname: gancio
+    ports:
+      - "${GANCIO_PORT:-8080}:8080"
+    volumes:
+      - gancio_data:/data
+    restart: unless-stopped
+
+volumes:
+  gancio_data:
+    name: gancio_data

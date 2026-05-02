@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  findmydevice:
+    image: docker.io/dickyt/findmydevice:latest
+    container_name: findmydevice
+    hostname: findmydevice
+    ports:
+      - "${FINDMYDEVICE_PORT:-8080}:8080"
+    volumes:
+      - findmydevice_data:/data
+    restart: unless-stopped
+
+volumes:
+  findmydevice_data:
+    name: findmydevice_data

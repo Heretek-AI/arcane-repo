@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gitlab-runner:
+    image: docker.io/gitlab/gitlab-runner:latest
+    container_name: gitlab-runner
+    hostname: gitlab-runner
+    ports:
+      - "${GITLAB_RUNNER_PORT:-80}:80"
+    volumes:
+      - gitlab-runner_data:/data
+    restart: unless-stopped
+
+volumes:
+  gitlab-runner_data:
+    name: gitlab-runner_data

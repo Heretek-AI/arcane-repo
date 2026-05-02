@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  turtl:
+    image: docker.io/halkeye/turtl:latest
+    container_name: turtl
+    hostname: turtl
+    ports:
+      - "${TURTL_PORT:-8080}:8080"
+    volumes:
+      - turtl_data:/data
+    restart: unless-stopped
+
+volumes:
+  turtl_data:
+    name: turtl_data

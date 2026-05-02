@@ -1,0 +1,11 @@
+{
+  "id": "influxdb2",
+  "name": "Influxdb2",
+  "description": "Self-hosted Influxdb2 deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

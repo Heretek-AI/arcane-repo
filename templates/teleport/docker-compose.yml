@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  teleport:
+    image: docker.io/skyscrapers/teleport:latest
+    container_name: teleport
+    hostname: teleport
+    ports:
+      - "${TELEPORT_PORT:-8080}:8080"
+    volumes:
+      - teleport_data:/data
+    restart: unless-stopped
+
+volumes:
+  teleport_data:
+    name: teleport_data

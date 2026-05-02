@@ -1,0 +1,11 @@
+{
+  "id": "pleroma",
+  "name": "Pleroma",
+  "description": "Self-hosted Pleroma deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  whoogle:
+    image: docker.io/iganesh/whoogle:latest
+    container_name: whoogle
+    hostname: whoogle
+    ports:
+      - "${WHOOGLE_PORT:-8080}:8080"
+    volumes:
+      - whoogle_data:/data
+    restart: unless-stopped
+
+volumes:
+  whoogle_data:
+    name: whoogle_data

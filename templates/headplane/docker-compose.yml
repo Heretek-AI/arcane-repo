@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  headplane:
+    image: docker.io/tkaxv7s/headplane:latest
+    container_name: headplane
+    hostname: headplane
+    ports:
+      - "${HEADPLANE_PORT:-8000}:8000"
+    volumes:
+      - headplane_data:/data
+    restart: unless-stopped
+
+volumes:
+  headplane_data:
+    name: headplane_data

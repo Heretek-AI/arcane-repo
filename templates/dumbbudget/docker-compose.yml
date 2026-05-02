@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dumbbudget:
+    image: docker.io/dumbwareio/dumbbudget:latest
+    container_name: dumbbudget
+    hostname: dumbbudget
+    ports:
+      - "${DUMBBUDGET_PORT:-8080}:8080"
+    volumes:
+      - dumbbudget_data:/data
+    restart: unless-stopped
+
+volumes:
+  dumbbudget_data:
+    name: dumbbudget_data

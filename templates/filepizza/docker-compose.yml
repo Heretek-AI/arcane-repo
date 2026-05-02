@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  filepizza:
+    image: docker.io/kern/filepizza:latest
+    container_name: filepizza
+    hostname: filepizza
+    ports:
+      - "${FILEPIZZA_PORT:-8080}:8080"
+    volumes:
+      - filepizza_data:/data
+    restart: unless-stopped
+
+volumes:
+  filepizza_data:
+    name: filepizza_data

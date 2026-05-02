@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  trilium:
+    image: ghcr.io/zadam/trilium:latest
+    container_name: trilium
+    hostname: trilium
+    ports:
+      - "${TRILIUM_PORT:-8080}:8080"
+    volumes:
+      - trilium_data:/data
+    restart: unless-stopped
+
+volumes:
+  trilium_data:
+    name: trilium_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cratedb:
+    image: docker.io/irfius/cratedb:latest
+    container_name: cratedb
+    hostname: cratedb
+    ports:
+      - "${CRATEDB_PORT:-8080}:8080"
+    volumes:
+      - cratedb_data:/data
+    restart: unless-stopped
+
+volumes:
+  cratedb_data:
+    name: cratedb_data

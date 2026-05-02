@@ -1,0 +1,12 @@
+{
+  "id": "monitorix",
+  "name": "Monitorix",
+  "description": "Self-hosted Monitorix deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "monitoring",
+    "yunohost"
+  ]
+}

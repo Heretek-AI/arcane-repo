@@ -1,0 +1,13 @@
+{
+  "id": "mail-archiver",
+  "name": "Mail Archiver",
+  "description": "Self-hosted Mail Archiver deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "communication",
+    "awesome-selfhosted"
+  ]
+}

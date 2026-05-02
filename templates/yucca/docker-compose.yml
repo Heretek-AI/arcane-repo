@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yucca:
+    image: docker.io/yuccastream/yucca:latest
+    container_name: yucca
+    hostname: yucca
+    ports:
+      - "${YUCCA_PORT:-8080}:8080"
+    volumes:
+      - yucca_data:/data
+    restart: unless-stopped
+
+volumes:
+  yucca_data:
+    name: yucca_data

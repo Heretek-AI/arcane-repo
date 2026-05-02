@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mempool:
+    image: docker.io/dipdup/mempool:latest
+    container_name: mempool
+    hostname: mempool
+    ports:
+      - "${MEMPOOL_PORT:-8080}:8080"
+    volumes:
+      - mempool_data:/data
+    restart: unless-stopped
+
+volumes:
+  mempool_data:
+    name: mempool_data

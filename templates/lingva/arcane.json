@@ -1,0 +1,11 @@
+{
+  "id": "lingva",
+  "name": "Lingva",
+  "description": "Self-hosted Lingva deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  grammalecte:
+    image: docker.io/mykiwi/grammalecte:latest
+    container_name: grammalecte
+    hostname: grammalecte
+    ports:
+      - "${GRAMMALECTE_PORT:-8080}:8080"
+    volumes:
+      - grammalecte_data:/data
+    restart: unless-stopped
+
+volumes:
+  grammalecte_data:
+    name: grammalecte_data

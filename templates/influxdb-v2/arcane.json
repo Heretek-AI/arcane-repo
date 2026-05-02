@@ -1,0 +1,11 @@
+{
+  "id": "influxdb-v2",
+  "name": "Influxdb V2",
+  "description": "Self-hosted Influxdb V2 deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

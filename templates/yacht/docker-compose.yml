@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yacht:
+    image: ghcr.io/selfhostedpro/yacht:latest
+    container_name: yacht
+    hostname: yacht
+    ports:
+      - "${YACHT_PORT:-8080}:8080"
+    volumes:
+      - yacht_data:/data
+    restart: unless-stopped
+
+volumes:
+  yacht_data:
+    name: yacht_data

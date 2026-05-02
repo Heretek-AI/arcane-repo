@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  antigen:
+    image: docker.io/srdjank/antigen:latest
+    container_name: antigen
+    hostname: antigen
+    ports:
+      - "${ANTIGEN_PORT:-8080}:8080"
+    volumes:
+      - antigen_data:/data
+    restart: unless-stopped
+
+volumes:
+  antigen_data:
+    name: antigen_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  booksonic:
+    image: ghcr.io/linuxserver/booksonic:latest
+    container_name: booksonic
+    hostname: booksonic
+    ports:
+      - "${BOOKSONIC_PORT:-8080}:8080"
+    volumes:
+      - booksonic_data:/data
+    restart: unless-stopped
+
+volumes:
+  booksonic_data:
+    name: booksonic_data

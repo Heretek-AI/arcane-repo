@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cinny:
+    image: docker.io/ajbura/cinny:latest
+    container_name: cinny
+    hostname: cinny
+    ports:
+      - "${CINNY_PORT:-8080}:8080"
+    volumes:
+      - cinny_data:/data
+    restart: unless-stopped
+
+volumes:
+  cinny_data:
+    name: cinny_data

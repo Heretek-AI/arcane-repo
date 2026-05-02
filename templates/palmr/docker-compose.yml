@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  palmr:
+    image: docker.io/kyantech/palmr:latest
+    container_name: palmr
+    hostname: palmr
+    ports:
+      - "${PALMR_PORT:-8080}:8080"
+    volumes:
+      - palmr_data:/data
+    restart: unless-stopped
+
+volumes:
+  palmr_data:
+    name: palmr_data

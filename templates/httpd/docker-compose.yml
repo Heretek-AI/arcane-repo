@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  httpd:
+    image: docker.io/dockerpinata/httpd:latest
+    container_name: httpd
+    hostname: httpd
+    ports:
+      - "${HTTPD_PORT:-8080}:8080"
+    volumes:
+      - httpd_data:/data
+    restart: unless-stopped
+
+volumes:
+  httpd_data:
+    name: httpd_data

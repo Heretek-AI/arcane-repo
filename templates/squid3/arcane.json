@@ -1,0 +1,11 @@
+{
+  "id": "squid3",
+  "name": "Squid3",
+  "description": "Self-hosted Squid3 deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

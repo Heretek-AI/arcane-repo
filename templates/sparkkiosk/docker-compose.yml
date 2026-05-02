@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sparkkiosk:
+    image: docker.io/jensgertsen/sparkkiosk:latest
+    container_name: sparkkiosk
+    hostname: sparkkiosk
+    ports:
+      - "${SPARKKIOSK_PORT:-8080}:8080"
+    volumes:
+      - sparkkiosk_data:/data
+    restart: unless-stopped
+
+volumes:
+  sparkkiosk_data:
+    name: sparkkiosk_data

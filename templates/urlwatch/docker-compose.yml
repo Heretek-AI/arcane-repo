@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  urlwatch:
+    image: docker.io/vimagick/urlwatch:latest
+    container_name: urlwatch
+    hostname: urlwatch
+    ports:
+      - "${URLWATCH_PORT:-8080}:8080"
+    volumes:
+      - urlwatch_data:/data
+    restart: unless-stopped
+
+volumes:
+  urlwatch_data:
+    name: urlwatch_data

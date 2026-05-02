@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gitingest:
+    image: docker.io/elestio/gitingest:latest
+    container_name: gitingest
+    hostname: gitingest
+    ports:
+      - "${GITINGEST_PORT:-8080}:8080"
+    volumes:
+      - gitingest_data:/data
+    restart: unless-stopped
+
+volumes:
+  gitingest_data:
+    name: gitingest_data

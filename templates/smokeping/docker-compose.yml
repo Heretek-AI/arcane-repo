@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  smokeping:
+    image: ghcr.io/linuxserver/smokeping:latest
+    container_name: smokeping
+    hostname: smokeping
+    ports:
+      - "${SMOKEPING_PORT:-8080}:8080"
+    volumes:
+      - smokeping_data:/data
+    restart: unless-stopped
+
+volumes:
+  smokeping_data:
+    name: smokeping_data

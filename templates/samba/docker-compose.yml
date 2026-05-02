@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  samba:
+    image: docker.io/dperson/samba:latest
+    container_name: samba
+    hostname: samba
+    ports:
+      - "${SAMBA_PORT:-8080}:8080"
+    volumes:
+      - samba_data:/data
+    restart: unless-stopped
+
+volumes:
+  samba_data:
+    name: samba_data

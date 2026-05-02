@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chyrplite:
+    image: docker.io/tbelbek/chyrplite:latest
+    container_name: chyrplite
+    hostname: chyrplite
+    ports:
+      - "${CHYRPLITE_PORT:-8080}:8080"
+    volumes:
+      - chyrplite_data:/data
+    restart: unless-stopped
+
+volumes:
+  chyrplite_data:
+    name: chyrplite_data

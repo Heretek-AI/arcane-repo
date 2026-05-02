@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redlib:
+    image: docker.io/manwichmakesameal/redlib:latest
+    container_name: redlib
+    hostname: redlib
+    ports:
+      - "${REDLIB_PORT:-8080}:8080"
+    volumes:
+      - redlib_data:/data
+    restart: unless-stopped
+
+volumes:
+  redlib_data:
+    name: redlib_data

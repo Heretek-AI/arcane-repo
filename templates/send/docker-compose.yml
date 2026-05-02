@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  send:
+    image: docker.io/tripdubroot/send:latest
+    container_name: send
+    hostname: send
+    ports:
+      - "${SEND_PORT:-8080}:8080"
+    volumes:
+      - send_data:/data
+    restart: unless-stopped
+
+volumes:
+  send_data:
+    name: send_data

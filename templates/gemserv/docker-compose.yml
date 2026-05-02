@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gemserv:
+    image: docker.io/080h/gemserv:latest
+    container_name: gemserv
+    hostname: gemserv
+    ports:
+      - "${GEMSERV_PORT:-8080}:8080"
+    volumes:
+      - gemserv_data:/data
+    restart: unless-stopped
+
+volumes:
+  gemserv_data:
+    name: gemserv_data

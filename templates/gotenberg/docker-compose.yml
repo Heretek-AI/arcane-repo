@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gotenberg:
+    image: docker.io/gotenberg/gotenberg:latest
+    container_name: gotenberg
+    hostname: gotenberg
+    ports:
+      - "${GOTENBERG_PORT:-8080}:8080"
+    volumes:
+      - gotenberg_data:/data
+    restart: unless-stopped
+
+volumes:
+  gotenberg_data:
+    name: gotenberg_data

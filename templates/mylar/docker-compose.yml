@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mylar:
+    image: ghcr.io/linuxserver/mylar:latest
+    container_name: mylar
+    hostname: mylar
+    ports:
+      - "${MYLAR_PORT:-8080}:8080"
+    volumes:
+      - mylar_data:/data
+    restart: unless-stopped
+
+volumes:
+  mylar_data:
+    name: mylar_data

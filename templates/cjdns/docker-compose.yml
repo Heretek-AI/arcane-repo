@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cjdns:
+    image: docker.io/chpio/cjdns:latest
+    container_name: cjdns
+    hostname: cjdns
+    ports:
+      - "${CJDNS_PORT:-8080}:8080"
+    volumes:
+      - cjdns_data:/data
+    restart: unless-stopped
+
+volumes:
+  cjdns_data:
+    name: cjdns_data

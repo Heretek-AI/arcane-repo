@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  diaspora:
+    image: docker.io/koehn/diaspora:latest
+    container_name: diaspora
+    hostname: diaspora
+    ports:
+      - "${DIASPORA_PORT:-8080}:8080"
+    volumes:
+      - diaspora_data:/data
+    restart: unless-stopped
+
+volumes:
+  diaspora_data:
+    name: diaspora_data

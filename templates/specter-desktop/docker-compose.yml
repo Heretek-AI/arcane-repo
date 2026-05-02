@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  specter-desktop:
+    image: docker.io/lncm/specter-desktop:latest
+    container_name: specter-desktop
+    hostname: specter-desktop
+    ports:
+      - "${SPECTER_DESKTOP_PORT:-8080}:8080"
+    volumes:
+      - specter-desktop_data:/data
+    restart: unless-stopped
+
+volumes:
+  specter-desktop_data:
+    name: specter-desktop_data

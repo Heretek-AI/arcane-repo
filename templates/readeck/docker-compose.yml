@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  readeck:
+    image: docker.io/pan93412/readeck:latest
+    container_name: readeck
+    hostname: readeck
+    ports:
+      - "${READECK_PORT:-8080}:8080"
+    volumes:
+      - readeck_data:/data
+    restart: unless-stopped
+
+volumes:
+  readeck_data:
+    name: readeck_data

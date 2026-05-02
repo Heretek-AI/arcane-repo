@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fusion:
+    image: docker.io/builderio/fusion:latest
+    container_name: fusion
+    hostname: fusion
+    ports:
+      - "${FUSION_PORT:-8080}:8080"
+    volumes:
+      - fusion_data:/data
+    restart: unless-stopped
+
+volumes:
+  fusion_data:
+    name: fusion_data

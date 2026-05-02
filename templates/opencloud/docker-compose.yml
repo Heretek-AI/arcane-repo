@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  opencloud:
+    image: docker.io/opencloudeu/opencloud:latest
+    container_name: opencloud
+    hostname: opencloud
+    ports:
+      - "${OPENCLOUD_PORT:-8080}:8080"
+    volumes:
+      - opencloud_data:/data
+    restart: unless-stopped
+
+volumes:
+  opencloud_data:
+    name: opencloud_data

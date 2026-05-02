@@ -1,0 +1,12 @@
+{
+  "id": "wikimore",
+  "name": "Wikimore",
+  "description": "Self-hosted Wikimore deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "cms",
+    "yunohost"
+  ]
+}

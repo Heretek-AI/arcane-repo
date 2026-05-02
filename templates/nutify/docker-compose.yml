@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nutify:
+    image: docker.io/dartsteven/nutify:latest
+    container_name: nutify
+    hostname: nutify
+    ports:
+      - "${NUTIFY_PORT:-8080}:8080"
+    volumes:
+      - nutify_data:/data
+    restart: unless-stopped
+
+volumes:
+  nutify_data:
+    name: nutify_data

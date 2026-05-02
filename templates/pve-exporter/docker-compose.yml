@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pve-exporter:
+    image: docker.io/andreineustroev/pve-exporter:latest
+    container_name: pve-exporter
+    hostname: pve-exporter
+    ports:
+      - "${PVE_EXPORTER_PORT:-8080}:8080"
+    volumes:
+      - pve-exporter_data:/data
+    restart: unless-stopped
+
+volumes:
+  pve-exporter_data:
+    name: pve-exporter_data

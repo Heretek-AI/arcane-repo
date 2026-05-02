@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  webcheck:
+    image: docker.io/aolifu/webcheck:latest
+    container_name: webcheck
+    hostname: webcheck
+    ports:
+      - "${WEBCHECK_PORT:-8080}:8080"
+    volumes:
+      - webcheck_data:/data
+    restart: unless-stopped
+
+volumes:
+  webcheck_data:
+    name: webcheck_data

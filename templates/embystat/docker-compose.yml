@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  embystat:
+    image: ghcr.io/linuxserver/embystat:latest
+    container_name: embystat
+    hostname: embystat
+    ports:
+      - "${EMBYSTAT_PORT:-8096}:8096"
+    volumes:
+      - embystat_data:/data
+    restart: unless-stopped
+
+volumes:
+  embystat_data:
+    name: embystat_data

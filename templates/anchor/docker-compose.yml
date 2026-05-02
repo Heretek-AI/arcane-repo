@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  anchor:
+    image: docker.io/solanafoundation/anchor:latest
+    container_name: anchor
+    hostname: anchor
+    ports:
+      - "${ANCHOR_PORT:-8080}:8080"
+    volumes:
+      - anchor_data:/data
+    restart: unless-stopped
+
+volumes:
+  anchor_data:
+    name: anchor_data

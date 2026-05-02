@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lndboss:
+    image: docker.io/niteshbalusu/lndboss:latest
+    container_name: lndboss
+    hostname: lndboss
+    ports:
+      - "${LNDBOSS_PORT:-8080}:8080"
+    volumes:
+      - lndboss_data:/data
+    restart: unless-stopped
+
+volumes:
+  lndboss_data:
+    name: lndboss_data

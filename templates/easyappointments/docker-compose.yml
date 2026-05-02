@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  easyappointments:
+    image: docker.io/jamrizzi/easyappointments:latest
+    container_name: easyappointments
+    hostname: easyappointments
+    ports:
+      - "${EASYAPPOINTMENTS_PORT:-8080}:8080"
+    volumes:
+      - easyappointments_data:/data
+    restart: unless-stopped
+
+volumes:
+  easyappointments_data:
+    name: easyappointments_data

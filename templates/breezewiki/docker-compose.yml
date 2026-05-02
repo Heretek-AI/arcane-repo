@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  breezewiki:
+    image: ghcr.io/fariszr/breezewiki:latest
+    container_name: breezewiki
+    hostname: breezewiki
+    ports:
+      - "${BREEZEWIKI_PORT:-80}:80"
+    volumes:
+      - breezewiki_data:/data
+    restart: unless-stopped
+
+volumes:
+  breezewiki_data:
+    name: breezewiki_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dozzle:
+    image: ghcr.io/amir20/dozzle:latest
+    container_name: dozzle
+    hostname: dozzle
+    ports:
+      - "${DOZZLE_PORT:-8080}:8080"
+    volumes:
+      - dozzle_data:/data
+    restart: unless-stopped
+
+volumes:
+  dozzle_data:
+    name: dozzle_data

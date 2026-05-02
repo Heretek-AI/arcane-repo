@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lazytainer:
+    image: docker.io/afatsini/lazytainer:latest
+    container_name: lazytainer
+    hostname: lazytainer
+    ports:
+      - "${LAZYTAINER_PORT:-8080}:8080"
+    volumes:
+      - lazytainer_data:/data
+    restart: unless-stopped
+
+volumes:
+  lazytainer_data:
+    name: lazytainer_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sonarr:
+    image: ghcr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    hostname: sonarr
+    ports:
+      - "${SONARR_PORT:-8080}:8080"
+    volumes:
+      - sonarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  sonarr_data:
+    name: sonarr_data

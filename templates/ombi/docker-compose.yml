@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ombi:
+    image: ghcr.io/linuxserver/ombi:latest
+    container_name: ombi
+    hostname: ombi
+    ports:
+      - "${OMBI_PORT:-8080}:8080"
+    volumes:
+      - ombi_data:/data
+    restart: unless-stopped
+
+volumes:
+  ombi_data:
+    name: ombi_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kimai2:
+    image: docker.io/kimai/kimai2:latest
+    container_name: kimai2
+    hostname: kimai2
+    ports:
+      - "${KIMAI2_PORT:-8080}:8080"
+    volumes:
+      - kimai2_data:/data
+    restart: unless-stopped
+
+volumes:
+  kimai2_data:
+    name: kimai2_data

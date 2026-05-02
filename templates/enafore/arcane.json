@@ -1,0 +1,11 @@
+{
+  "id": "enafore",
+  "name": "Enafore",
+  "description": "Self-hosted Enafore deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

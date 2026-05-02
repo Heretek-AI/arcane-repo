@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openamt:
+    image: docker.io/ptrrd/openamt:latest
+    container_name: openamt
+    hostname: openamt
+    ports:
+      - "${OPENAMT_PORT:-8080}:8080"
+    volumes:
+      - openamt_data:/data
+    restart: unless-stopped
+
+volumes:
+  openamt_data:
+    name: openamt_data

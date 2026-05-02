@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  readarr:
+    image: ghcr.io/linuxserver/readarr:latest
+    container_name: readarr
+    hostname: readarr
+    ports:
+      - "${READARR_PORT:-8080}:8080"
+    volumes:
+      - readarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  readarr_data:
+    name: readarr_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  arcane:
+    image: docker.io/arcanetracing/arcane:latest
+    container_name: arcane
+    hostname: arcane
+    ports:
+      - "${ARCANE_PORT:-8080}:8080"
+    volumes:
+      - arcane_data:/data
+    restart: unless-stopped
+
+volumes:
+  arcane_data:
+    name: arcane_data

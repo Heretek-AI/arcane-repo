@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  diagramsnet:
+    image: docker.io/kallelindqvist391/diagramsnet:latest
+    container_name: diagramsnet
+    hostname: diagramsnet
+    ports:
+      - "${DIAGRAMSNET_PORT:-8080}:8080"
+    volumes:
+      - diagramsnet_data:/data
+    restart: unless-stopped
+
+volumes:
+  diagramsnet_data:
+    name: diagramsnet_data

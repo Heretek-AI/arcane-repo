@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  campfire:
+    image: docker.io/xw134/campfire:latest
+    container_name: campfire
+    hostname: campfire
+    ports:
+      - "${CAMPFIRE_PORT:-8080}:8080"
+    volumes:
+      - campfire_data:/data
+    restart: unless-stopped
+
+volumes:
+  campfire_data:
+    name: campfire_data

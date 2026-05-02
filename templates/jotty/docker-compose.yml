@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jotty:
+    image: ghcr.io/fccview/jotty:latest
+    container_name: jotty
+    hostname: jotty
+    ports:
+      - "${JOTTY_PORT:-8080}:8080"
+    volumes:
+      - jotty_data:/data
+    restart: unless-stopped
+
+volumes:
+  jotty_data:
+    name: jotty_data

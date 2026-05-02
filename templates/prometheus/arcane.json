@@ -1,0 +1,12 @@
+{
+  "id": "prometheus",
+  "name": "Prometheus",
+  "description": "Self-hosted Prometheus deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "monitoring",
+    "yunohost"
+  ]
+}

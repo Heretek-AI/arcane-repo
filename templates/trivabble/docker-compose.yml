@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  trivabble:
+    image: docker.io/mrtn42/trivabble:latest
+    container_name: trivabble
+    hostname: trivabble
+    ports:
+      - "${TRIVABBLE_PORT:-8080}:8080"
+    volumes:
+      - trivabble_data:/data
+    restart: unless-stopped
+
+volumes:
+  trivabble_data:
+    name: trivabble_data

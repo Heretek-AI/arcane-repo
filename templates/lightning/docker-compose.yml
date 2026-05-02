@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lightning:
+    image: docker.io/btcpayserver/lightning:latest
+    container_name: lightning
+    hostname: lightning
+    ports:
+      - "${LIGHTNING_PORT:-8080}:8080"
+    volumes:
+      - lightning_data:/data
+    restart: unless-stopped
+
+volumes:
+  lightning_data:
+    name: lightning_data

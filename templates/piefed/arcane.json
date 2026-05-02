@@ -1,0 +1,11 @@
+{
+  "id": "piefed",
+  "name": "Piefed",
+  "description": "Self-hosted Piefed deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

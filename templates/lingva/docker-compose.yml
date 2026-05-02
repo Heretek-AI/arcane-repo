@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lingva:
+    image: docker.io/humanlyhuman/lingva:latest
+    container_name: lingva
+    hostname: lingva
+    ports:
+      - "${LINGVA_PORT:-8080}:8080"
+    volumes:
+      - lingva_data:/data
+    restart: unless-stopped
+
+volumes:
+  lingva_data:
+    name: lingva_data

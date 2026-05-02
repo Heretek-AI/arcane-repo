@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elasticsearch:
+    image: docker.io/bitnamicharts/elasticsearch:latest
+    container_name: elasticsearch
+    hostname: elasticsearch
+    ports:
+      - "${ELASTICSEARCH_PORT:-9200}:9200"
+    volumes:
+      - elasticsearch_data:/data
+    restart: unless-stopped
+
+volumes:
+  elasticsearch_data:
+    name: elasticsearch_data

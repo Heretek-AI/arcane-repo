@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rport:
+    image: docker.io/cfredericksen/rport:latest
+    container_name: rport
+    hostname: rport
+    ports:
+      - "${RPORT_PORT:-8080}:8080"
+    volumes:
+      - rport_data:/data
+    restart: unless-stopped
+
+volumes:
+  rport_data:
+    name: rport_data

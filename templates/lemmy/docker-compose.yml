@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lemmy:
+    image: docker.io/dessalines/lemmy:latest
+    container_name: lemmy
+    hostname: lemmy
+    ports:
+      - "${LEMMY_PORT:-8080}:8080"
+    volumes:
+      - lemmy_data:/data
+    restart: unless-stopped
+
+volumes:
+  lemmy_data:
+    name: lemmy_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hubzilla:
+    image: docker.io/dhitchenor/hubzilla:latest
+    container_name: hubzilla
+    hostname: hubzilla
+    ports:
+      - "${HUBZILLA_PORT:-8080}:8080"
+    volumes:
+      - hubzilla_data:/data
+    restart: unless-stopped
+
+volumes:
+  hubzilla_data:
+    name: hubzilla_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  codimd:
+    image: ghcr.io/linuxserver/codimd:latest
+    container_name: codimd
+    hostname: codimd
+    ports:
+      - "${CODIMD_PORT:-3000}:3000"
+    volumes:
+      - codimd_data:/data
+    restart: unless-stopped
+
+volumes:
+  codimd_data:
+    name: codimd_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  remmina:
+    image: docker.io/kasmweb/remmina:latest
+    container_name: remmina
+    hostname: remmina
+    ports:
+      - "${REMMINA_PORT:-8080}:8080"
+    volumes:
+      - remmina_data:/data
+    restart: unless-stopped
+
+volumes:
+  remmina_data:
+    name: remmina_data

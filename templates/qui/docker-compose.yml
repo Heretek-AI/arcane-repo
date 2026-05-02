@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  qui:
+    image: docker.io/fvboegeld/qui:latest
+    container_name: qui
+    hostname: qui
+    ports:
+      - "${QUI_PORT:-8080}:8080"
+    volumes:
+      - qui_data:/data
+    restart: unless-stopped
+
+volumes:
+  qui_data:
+    name: qui_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mstream:
+    image: ghcr.io/linuxserver/mstream:latest
+    container_name: mstream
+    hostname: mstream
+    ports:
+      - "${MSTREAM_PORT:-8080}:8080"
+    volumes:
+      - mstream_data:/data
+    restart: unless-stopped
+
+volumes:
+  mstream_data:
+    name: mstream_data

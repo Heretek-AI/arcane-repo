@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: docker.io/circleci/mysql:latest
+    container_name: mysql
+    hostname: mysql
+    ports:
+      - "${MYSQL_PORT:-8080}:8080"
+    volumes:
+      - mysql_data:/data
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+    name: mysql_data

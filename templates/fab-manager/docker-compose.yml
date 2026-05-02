@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fab-manager:
+    image: docker.io/sleede/fab-manager:latest
+    container_name: fab-manager
+    hostname: fab-manager
+    ports:
+      - "${FAB_MANAGER_PORT:-8080}:8080"
+    volumes:
+      - fab-manager_data:/data
+    restart: unless-stopped
+
+volumes:
+  fab-manager_data:
+    name: fab-manager_data

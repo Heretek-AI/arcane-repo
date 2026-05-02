@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nolooking:
+    image: docker.io/chaincase/nolooking:latest
+    container_name: nolooking
+    hostname: nolooking
+    ports:
+      - "${NOLOOKING_PORT:-8080}:8080"
+    volumes:
+      - nolooking_data:/data
+    restart: unless-stopped
+
+volumes:
+  nolooking_data:
+    name: nolooking_data

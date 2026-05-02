@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frigate:
+    image: ghcr.io/blakeblackshear/frigate:latest
+    container_name: frigate
+    hostname: frigate
+    ports:
+      - "${FRIGATE_PORT:-8080}:8080"
+    volumes:
+      - frigate_data:/data
+    restart: unless-stopped
+
+volumes:
+  frigate_data:
+    name: frigate_data

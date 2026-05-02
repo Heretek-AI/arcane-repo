@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  paperless:
+    image: docker.io/thepaperlessproject/paperless:latest
+    container_name: paperless
+    hostname: paperless
+    ports:
+      - "${PAPERLESS_PORT:-8000}:8000"
+    volumes:
+      - paperless_data:/data
+    restart: unless-stopped
+
+volumes:
+  paperless_data:
+    name: paperless_data

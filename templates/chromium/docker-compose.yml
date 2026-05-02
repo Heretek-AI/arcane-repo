@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chromium:
+    image: docker.io/kasmweb/chromium:latest
+    container_name: chromium
+    hostname: chromium
+    ports:
+      - "${CHROMIUM_PORT:-8080}:8080"
+    volumes:
+      - chromium_data:/data
+    restart: unless-stopped
+
+volumes:
+  chromium_data:
+    name: chromium_data

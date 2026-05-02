@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chantools:
+    image: docker.io/guggero/chantools:latest
+    container_name: chantools
+    hostname: chantools
+    ports:
+      - "${CHANTOOLS_PORT:-8080}:8080"
+    volumes:
+      - chantools_data:/data
+    restart: unless-stopped
+
+volumes:
+  chantools_data:
+    name: chantools_data

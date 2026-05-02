@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  my-mind:
+    image: docker.io/sjqzhang/my-mind:latest
+    container_name: my-mind
+    hostname: my-mind
+    ports:
+      - "${MY_MIND_PORT:-8080}:8080"
+    volumes:
+      - my-mind_data:/data
+    restart: unless-stopped
+
+volumes:
+  my-mind_data:
+    name: my-mind_data

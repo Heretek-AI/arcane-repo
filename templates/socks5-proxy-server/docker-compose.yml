@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  socks5-proxy-server:
+    image: docker.io/kamuri/socks5-proxy-server:latest
+    container_name: socks5-proxy-server
+    hostname: socks5-proxy-server
+    ports:
+      - "${SOCKS5_PROXY_SERVER_PORT:-8080}:8080"
+    volumes:
+      - socks5-proxy-server_data:/data
+    restart: unless-stopped
+
+volumes:
+  socks5-proxy-server_data:
+    name: socks5-proxy-server_data

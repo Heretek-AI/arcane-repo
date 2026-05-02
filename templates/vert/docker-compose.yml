@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vert:
+    image: docker.io/shant1010/vert:latest
+    container_name: vert
+    hostname: vert
+    ports:
+      - "${VERT_PORT:-8080}:8080"
+    volumes:
+      - vert_data:/data
+    restart: unless-stopped
+
+volumes:
+  vert_data:
+    name: vert_data

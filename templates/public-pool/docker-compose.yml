@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  public-pool:
+    image: ghcr.io/sethforprivacy/public-pool:latest
+    container_name: public-pool
+    hostname: public-pool
+    ports:
+      - "${PUBLIC_POOL_PORT:-8080}:8080"
+    volumes:
+      - public-pool_data:/data
+    restart: unless-stopped
+
+volumes:
+  public-pool_data:
+    name: public-pool_data

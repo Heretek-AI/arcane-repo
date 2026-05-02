@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elabftw:
+    image: docker.io/arielzn/elabftw:latest
+    container_name: elabftw
+    hostname: elabftw
+    ports:
+      - "${ELABFTW_PORT:-8080}:8080"
+    volumes:
+      - elabftw_data:/data
+    restart: unless-stopped
+
+volumes:
+  elabftw_data:
+    name: elabftw_data

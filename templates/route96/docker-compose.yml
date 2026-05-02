@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  route96:
+    image: docker.io/voidic/route96:latest
+    container_name: route96
+    hostname: route96
+    ports:
+      - "${ROUTE96_PORT:-8080}:8080"
+    volumes:
+      - route96_data:/data
+    restart: unless-stopped
+
+volumes:
+  route96_data:
+    name: route96_data

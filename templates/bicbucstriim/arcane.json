@@ -1,0 +1,11 @@
+{
+  "id": "bicbucstriim",
+  "name": "Bicbucstriim",
+  "description": "Self-hosted Bicbucstriim deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

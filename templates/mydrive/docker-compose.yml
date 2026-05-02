@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mydrive:
+    image: docker.io/kylehoell/mydrive:latest
+    container_name: mydrive
+    hostname: mydrive
+    ports:
+      - "${MYDRIVE_PORT:-8080}:8080"
+    volumes:
+      - mydrive_data:/data
+    restart: unless-stopped
+
+volumes:
+  mydrive_data:
+    name: mydrive_data

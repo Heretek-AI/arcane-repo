@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  contentbox:
+    image: docker.io/ortussolutions/contentbox:latest
+    container_name: contentbox
+    hostname: contentbox
+    ports:
+      - "${CONTENTBOX_PORT:-8080}:8080"
+    volumes:
+      - contentbox_data:/data
+    restart: unless-stopped
+
+volumes:
+  contentbox_data:
+    name: contentbox_data

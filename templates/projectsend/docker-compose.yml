@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  projectsend:
+    image: ghcr.io/linuxserver/projectsend:latest
+    container_name: projectsend
+    hostname: projectsend
+    ports:
+      - "${PROJECTSEND_PORT:-8080}:8080"
+    volumes:
+      - projectsend_data:/data
+    restart: unless-stopped
+
+volumes:
+  projectsend_data:
+    name: projectsend_data

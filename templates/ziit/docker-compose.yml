@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ziit:
+    image: ghcr.io/0pandadev/ziit:latest
+    container_name: ziit
+    hostname: ziit
+    ports:
+      - "${ZIIT_PORT:-8080}:8080"
+    volumes:
+      - ziit_data:/data
+    restart: unless-stopped
+
+volumes:
+  ziit_data:
+    name: ziit_data

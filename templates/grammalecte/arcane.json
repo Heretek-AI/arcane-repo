@@ -1,0 +1,11 @@
+{
+  "id": "grammalecte",
+  "name": "Grammalecte",
+  "description": "Self-hosted Grammalecte deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

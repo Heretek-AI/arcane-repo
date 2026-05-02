@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  blinko:
+    image: docker.io/blinkospace/blinko:latest
+    container_name: blinko
+    hostname: blinko
+    ports:
+      - "${BLINKO_PORT:-8080}:8080"
+    volumes:
+      - blinko_data:/data
+    restart: unless-stopped
+
+volumes:
+  blinko_data:
+    name: blinko_data

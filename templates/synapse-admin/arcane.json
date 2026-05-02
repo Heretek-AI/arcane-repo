@@ -1,0 +1,11 @@
+{
+  "id": "synapse-admin",
+  "name": "Synapse Admin",
+  "description": "Self-hosted Synapse Admin deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

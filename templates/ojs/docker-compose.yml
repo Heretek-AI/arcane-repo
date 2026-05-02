@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ojs:
+    image: docker.io/pkpofficial/ojs:latest
+    container_name: ojs
+    hostname: ojs
+    ports:
+      - "${OJS_PORT:-8080}:8080"
+    volumes:
+      - ojs_data:/data
+    restart: unless-stopped
+
+volumes:
+  ojs_data:
+    name: ojs_data

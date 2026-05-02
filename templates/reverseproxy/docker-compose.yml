@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  reverseproxy:
+    image: docker.io/scheele/reverseproxy:latest
+    container_name: reverseproxy
+    hostname: reverseproxy
+    ports:
+      - "${REVERSEPROXY_PORT:-8080}:8080"
+    volumes:
+      - reverseproxy_data:/data
+    restart: unless-stopped
+
+volumes:
+  reverseproxy_data:
+    name: reverseproxy_data

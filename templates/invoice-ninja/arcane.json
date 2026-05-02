@@ -1,0 +1,11 @@
+{
+  "id": "invoice-ninja",
+  "name": "Invoice Ninja",
+  "description": "Self-hosted Invoice Ninja deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "umbrel"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dumbwhois:
+    image: docker.io/dumbwareio/dumbwhois:latest
+    container_name: dumbwhois
+    hostname: dumbwhois
+    ports:
+      - "${DUMBWHOIS_PORT:-8080}:8080"
+    volumes:
+      - dumbwhois_data:/data
+    restart: unless-stopped
+
+volumes:
+  dumbwhois_data:
+    name: dumbwhois_data

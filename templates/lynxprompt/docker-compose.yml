@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lynxprompt:
+    image: docker.io/drumsergio/lynxprompt:latest
+    container_name: lynxprompt
+    hostname: lynxprompt
+    ports:
+      - "${LYNXPROMPT_PORT:-8080}:8080"
+    volumes:
+      - lynxprompt_data:/data
+    restart: unless-stopped
+
+volumes:
+  lynxprompt_data:
+    name: lynxprompt_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tdarr:
+    image: ghcr.io/haveagitgat/tdarr:latest
+    container_name: tdarr
+    hostname: tdarr
+    ports:
+      - "${TDARR_PORT:-8080}:8080"
+    volumes:
+      - tdarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  tdarr_data:
+    name: tdarr_data

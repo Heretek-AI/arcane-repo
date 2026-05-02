@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fossflow:
+    image: docker.io/stnsmith/fossflow:latest
+    container_name: fossflow
+    hostname: fossflow
+    ports:
+      - "${FOSSFLOW_PORT:-8080}:8080"
+    volumes:
+      - fossflow_data:/data
+    restart: unless-stopped
+
+volumes:
+  fossflow_data:
+    name: fossflow_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hat:
+    image: docker.io/hubofallthings/hat:latest
+    container_name: hat
+    hostname: hat
+    ports:
+      - "${HAT_PORT:-8080}:8080"
+    volumes:
+      - hat_data:/data
+    restart: unless-stopped
+
+volumes:
+  hat_data:
+    name: hat_data

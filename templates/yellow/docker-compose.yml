@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yellow:
+    image: docker.io/davidaparicio/yellow:latest
+    container_name: yellow
+    hostname: yellow
+    ports:
+      - "${YELLOW_PORT:-8080}:8080"
+    volumes:
+      - yellow_data:/data
+    restart: unless-stopped
+
+volumes:
+  yellow_data:
+    name: yellow_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elements:
+    image: docker.io/btcpayserver/elements:latest
+    container_name: elements
+    hostname: elements
+    ports:
+      - "${ELEMENTS_PORT:-8080}:8080"
+    volumes:
+      - elements_data:/data
+    restart: unless-stopped
+
+volumes:
+  elements_data:
+    name: elements_data

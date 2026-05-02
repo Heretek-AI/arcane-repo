@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lndg:
+    image: docker.io/chevdor/lndg:latest
+    container_name: lndg
+    hostname: lndg
+    ports:
+      - "${LNDG_PORT:-8080}:8080"
+    volumes:
+      - lndg_data:/data
+    restart: unless-stopped
+
+volumes:
+  lndg_data:
+    name: lndg_data

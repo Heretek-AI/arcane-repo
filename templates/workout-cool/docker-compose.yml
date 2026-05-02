@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  workout-cool:
+    image: docker.io/xiaogblw/workout-cool:latest
+    container_name: workout-cool
+    hostname: workout-cool
+    ports:
+      - "${WORKOUT_COOL_PORT:-8080}:8080"
+    volumes:
+      - workout-cool_data:/data
+    restart: unless-stopped
+
+volumes:
+  workout-cool_data:
+    name: workout-cool_data

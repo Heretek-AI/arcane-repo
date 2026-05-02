@@ -1,0 +1,11 @@
+{
+  "id": "forte",
+  "name": "Forte",
+  "description": "Self-hosted Forte deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

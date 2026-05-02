@@ -1,0 +1,11 @@
+{
+  "id": "13ft",
+  "name": "13Ft",
+  "description": "Self-hosted 13Ft deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

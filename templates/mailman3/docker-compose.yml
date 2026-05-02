@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mailman3:
+    image: docker.io/alexbarcelo/mailman3:latest
+    container_name: mailman3
+    hostname: mailman3
+    ports:
+      - "${MAILMAN3_PORT:-8080}:8080"
+    volumes:
+      - mailman3_data:/data
+    restart: unless-stopped
+
+volumes:
+  mailman3_data:
+    name: mailman3_data

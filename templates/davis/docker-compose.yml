@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  davis:
+    image: docker.io/seandavis/davis:latest
+    container_name: davis
+    hostname: davis
+    ports:
+      - "${DAVIS_PORT:-8080}:8080"
+    volumes:
+      - davis_data:/data
+    restart: unless-stopped
+
+volumes:
+  davis_data:
+    name: davis_data

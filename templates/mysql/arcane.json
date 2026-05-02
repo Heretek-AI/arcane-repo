@@ -1,0 +1,11 @@
+{
+  "id": "mysql",
+  "name": "Mysql",
+  "description": "Self-hosted Mysql deployment via Docker, sourced from Portainer catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "portainer"
+  ]
+}

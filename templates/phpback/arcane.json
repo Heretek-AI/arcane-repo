@@ -1,0 +1,11 @@
+{
+  "id": "phpback",
+  "name": "Phpback",
+  "description": "Self-hosted Phpback deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

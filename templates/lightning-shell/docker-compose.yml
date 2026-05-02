@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lightning-shell:
+    image: docker.io/ibz0/lightning-shell:latest
+    container_name: lightning-shell
+    hostname: lightning-shell
+    ports:
+      - "${LIGHTNING_SHELL_PORT:-8080}:8080"
+    volumes:
+      - lightning-shell_data:/data
+    restart: unless-stopped
+
+volumes:
+  lightning-shell_data:
+    name: lightning-shell_data

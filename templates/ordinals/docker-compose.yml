@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ordinals:
+    image: docker.io/mrv777/ordinals:latest
+    container_name: ordinals
+    hostname: ordinals
+    ports:
+      - "${ORDINALS_PORT:-8080}:8080"
+    volumes:
+      - ordinals_data:/data
+    restart: unless-stopped
+
+volumes:
+  ordinals_data:
+    name: ordinals_data

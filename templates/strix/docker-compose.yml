@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  strix:
+    image: docker.io/eduard256/strix:latest
+    container_name: strix
+    hostname: strix
+    ports:
+      - "${STRIX_PORT:-8080}:8080"
+    volumes:
+      - strix_data:/data
+    restart: unless-stopped
+
+volumes:
+  strix_data:
+    name: strix_data

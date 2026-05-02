@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  invoice-ninja:
+    image: docker.io/moredhel/invoice-ninja:latest
+    container_name: invoice-ninja
+    hostname: invoice-ninja
+    ports:
+      - "${INVOICE_NINJA_PORT:-8080}:8080"
+    volumes:
+      - invoice-ninja_data:/data
+    restart: unless-stopped
+
+volumes:
+  invoice-ninja_data:
+    name: invoice-ninja_data

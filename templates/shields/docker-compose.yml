@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shields:
+    image: docker.io/shieldsio/shields:latest
+    container_name: shields
+    hostname: shields
+    ports:
+      - "${SHIELDS_PORT:-8080}:8080"
+    volumes:
+      - shields_data:/data
+    restart: unless-stopped
+
+volumes:
+  shields_data:
+    name: shields_data

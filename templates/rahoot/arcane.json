@@ -1,0 +1,11 @@
+{
+  "id": "rahoot",
+  "name": "Rahoot",
+  "description": "Self-hosted Rahoot deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

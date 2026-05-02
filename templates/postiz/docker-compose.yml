@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postiz:
+    image: docker.io/toykitpostiz/postiz:latest
+    container_name: postiz
+    hostname: postiz
+    ports:
+      - "${POSTIZ_PORT:-8080}:8080"
+    volumes:
+      - postiz_data:/data
+    restart: unless-stopped
+
+volumes:
+  postiz_data:
+    name: postiz_data

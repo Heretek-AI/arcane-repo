@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snapdrop:
+    image: ghcr.io/linuxserver/snapdrop:latest
+    container_name: snapdrop
+    hostname: snapdrop
+    ports:
+      - "${SNAPDROP_PORT:-8080}:8080"
+    volumes:
+      - snapdrop_data:/data
+    restart: unless-stopped
+
+volumes:
+  snapdrop_data:
+    name: snapdrop_data

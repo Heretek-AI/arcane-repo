@@ -1,0 +1,12 @@
+{
+  "id": "kimai",
+  "name": "Kimai",
+  "description": "Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "ai",
+    "umbrel"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  booklogr:
+    image: docker.io/mozzo/booklogr:latest
+    container_name: booklogr
+    hostname: booklogr
+    ports:
+      - "${BOOKLOGR_PORT:-8080}:8080"
+    volumes:
+      - booklogr_data:/data
+    restart: unless-stopped
+
+volumes:
+  booklogr_data:
+    name: booklogr_data

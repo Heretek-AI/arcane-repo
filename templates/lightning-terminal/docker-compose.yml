@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lightning-terminal:
+    image: docker.io/lightninglabs/lightning-terminal:latest
+    container_name: lightning-terminal
+    hostname: lightning-terminal
+    ports:
+      - "${LIGHTNING_TERMINAL_PORT:-8080}:8080"
+    volumes:
+      - lightning-terminal_data:/data
+    restart: unless-stopped
+
+volumes:
+  lightning-terminal_data:
+    name: lightning-terminal_data

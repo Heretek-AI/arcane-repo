@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  diacamma:
+    image: docker.io/mgodlewski/diacamma:latest
+    container_name: diacamma
+    hostname: diacamma
+    ports:
+      - "${DIACAMMA_PORT:-8080}:8080"
+    volumes:
+      - diacamma_data:/data
+    restart: unless-stopped
+
+volumes:
+  diacamma_data:
+    name: diacamma_data

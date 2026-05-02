@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lute:
+    image: docker.io/nachoalthabe/lute:latest
+    container_name: lute
+    hostname: lute
+    ports:
+      - "${LUTE_PORT:-8080}:8080"
+    volumes:
+      - lute_data:/data
+    restart: unless-stopped
+
+volumes:
+  lute_data:
+    name: lute_data

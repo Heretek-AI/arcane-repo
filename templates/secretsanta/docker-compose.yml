@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  secretsanta:
+    image: docker.io/michaelpak/secretsanta:latest
+    container_name: secretsanta
+    hostname: secretsanta
+    ports:
+      - "${SECRETSANTA_PORT:-8080}:8080"
+    volumes:
+      - secretsanta_data:/data
+    restart: unless-stopped
+
+volumes:
+  secretsanta_data:
+    name: secretsanta_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lubelogger:
+    image: ghcr.io/hargata/lubelogger:latest
+    container_name: lubelogger
+    hostname: lubelogger
+    ports:
+      - "${LUBELOGGER_PORT:-8080}:8080"
+    volumes:
+      - lubelogger_data:/data
+    restart: unless-stopped
+
+volumes:
+  lubelogger_data:
+    name: lubelogger_data

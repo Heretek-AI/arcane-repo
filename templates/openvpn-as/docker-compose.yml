@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openvpn-as:
+    image: docker.io/openvpn/openvpn-as:latest
+    container_name: openvpn-as
+    hostname: openvpn-as
+    ports:
+      - "${OPENVPN_AS_PORT:-8080}:8080"
+    volumes:
+      - openvpn-as_data:/data
+    restart: unless-stopped
+
+volumes:
+  openvpn-as_data:
+    name: openvpn-as_data

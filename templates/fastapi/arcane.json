@@ -1,0 +1,11 @@
+{
+  "id": "fastapi",
+  "name": "Fastapi",
+  "description": "Self-hosted Fastapi deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

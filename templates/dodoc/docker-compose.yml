@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dodoc:
+    image: docker.io/luceole/dodoc:latest
+    container_name: dodoc
+    hostname: dodoc
+    ports:
+      - "${DODOC_PORT:-8080}:8080"
+    volumes:
+      - dodoc_data:/data
+    restart: unless-stopped
+
+volumes:
+  dodoc_data:
+    name: dodoc_data

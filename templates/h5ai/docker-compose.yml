@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  h5ai:
+    image: docker.io/clue/h5ai:latest
+    container_name: h5ai
+    hostname: h5ai
+    ports:
+      - "${H5AI_PORT:-8080}:8080"
+    volumes:
+      - h5ai_data:/data
+    restart: unless-stopped
+
+volumes:
+  h5ai_data:
+    name: h5ai_data

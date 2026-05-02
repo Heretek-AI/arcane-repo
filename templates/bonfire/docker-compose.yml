@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bonfire:
+    image: docker.io/bonfirenetworks/bonfire:latest
+    container_name: bonfire
+    hostname: bonfire
+    ports:
+      - "${BONFIRE_PORT:-8080}:8080"
+    volumes:
+      - bonfire_data:/data
+    restart: unless-stopped
+
+volumes:
+  bonfire_data:
+    name: bonfire_data

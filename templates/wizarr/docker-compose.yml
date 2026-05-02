@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wizarr:
+    image: docker.io/gls68/wizarr:latest
+    container_name: wizarr
+    hostname: wizarr
+    ports:
+      - "${WIZARR_PORT:-8080}:8080"
+    volumes:
+      - wizarr_data:/data
+    restart: unless-stopped
+
+volumes:
+  wizarr_data:
+    name: wizarr_data

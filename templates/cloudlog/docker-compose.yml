@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  cloudlog:
+    image: docker.io/benzcash/cloudlog:latest
+    container_name: cloudlog
+    hostname: cloudlog
+    ports:
+      - "${CLOUDLOG_PORT:-8080}:8080"
+    volumes:
+      - cloudlog_data:/data
+    restart: unless-stopped
+
+volumes:
+  cloudlog_data:
+    name: cloudlog_data

@@ -1,0 +1,11 @@
+{
+  "id": "opentracker",
+  "name": "Opentracker",
+  "description": "Self-hosted Opentracker deployment via Docker, sourced from Yunohost catalog",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "yunohost"
+  ]
+}

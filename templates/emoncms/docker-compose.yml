@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  emoncms:
+    image: docker.io/openenergymonitor/emoncms:latest
+    container_name: emoncms
+    hostname: emoncms
+    ports:
+      - "${EMONCMS_PORT:-8080}:8080"
+    volumes:
+      - emoncms_data:/data
+    restart: unless-stopped
+
+volumes:
+  emoncms_data:
+    name: emoncms_data

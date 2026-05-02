@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  netbird:
+    image: ghcr.io/netbirdio/netbird:latest
+    container_name: netbird
+    hostname: netbird
+    ports:
+      - "${NETBIRD_PORT:-8080}:8080"
+    volumes:
+      - netbird_data:/data
+    restart: unless-stopped
+
+volumes:
+  netbird_data:
+    name: netbird_data

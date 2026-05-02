@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kiwix:
+    image: docker.io/offlineinternet/kiwix:latest
+    container_name: kiwix
+    hostname: kiwix
+    ports:
+      - "${KIWIX_PORT:-8080}:8080"
+    volumes:
+      - kiwix_data:/data
+    restart: unless-stopped
+
+volumes:
+  kiwix_data:
+    name: kiwix_data

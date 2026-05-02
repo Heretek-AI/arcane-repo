@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    hostname: flaresolverr
+    ports:
+      - "${FLARESOLVERR_PORT:-8080}:8080"
+    volumes:
+      - flaresolverr_data:/data
+    restart: unless-stopped
+
+volumes:
+  flaresolverr_data:
+    name: flaresolverr_data

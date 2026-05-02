@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mealie:
+    image: docker.io/hkotel/mealie:latest
+    container_name: mealie
+    hostname: mealie
+    ports:
+      - "${MEALIE_PORT:-8080}:8080"
+    volumes:
+      - mealie_data:/data
+    restart: unless-stopped
+
+volumes:
+  mealie_data:
+    name: mealie_data

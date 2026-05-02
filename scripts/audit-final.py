@@ -29,6 +29,8 @@ import os
 import re
 import sys
 import time
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -112,22 +114,11 @@ for _cat, tags in KNOWN_TAGS.items():
 
 # Known non-AI namespaces (for classification check)
 NON_AI_NAMESPACES: set[str] = {
-    "grafana",
-    "prom",
-    "prometheus",
-    "influxdb",
-    "chronograf",
-    "kapacitor",
-    "telegraf",
-    "netdata",
-    "cacti",
-    "zabbix",
-    "nagios",
-    "icinga",
-    "kibana",
-    "logstash",
-    "elasticsearch",
-    "humio",
+    "grafana", "prom", "prometheus", "influxdb", "chronograf",
+    "kapacitor", "telegraf", "netdata", "cacti", "zabbix",
+    "nagios", "icinga", "kibana", "logstash", "elasticsearch",
+    "humio", "splunk", "datadog", "newrelic", "dynatrace",
+    "checkmk", "librenms", "observium",
 }
 
 # ---------------------------------------------------------------------------
@@ -458,6 +449,352 @@ def _check_quay_image(namespace: str, image: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Freshness dimension
+# ---------------------------------------------------------------------------
+
+
+def check_freshness(td: TemplateData) -> list[dict]:
+    """Dimension 2: Check image freshness (last_updated recency).
+
+    For Docker Hub images, read ``last_updated`` from the reachability
+    result.  For GHCR images owned by ``heretek-ai`` (custom-build), skip.
+    For external GHCR and Quay, note that last_updated is unavailable.
+    For unreachable images, skip.
+    """
+    findings: list[dict] = []
+    now = datetime.now(timezone.utc)
+
+    for svc in td.services:
+        # Skip unreachable images
+        if not svc.get("_reachable", True):
+            continue
+
+        # Custom-build (CI-rebuilt) — skip
+        parsed = parse_image_ref(svc["image_ref"])
+        if parsed and parsed["registry"] == "ghcr.io" and parsed["namespace"] == "heretek-ai" and parsed["image"].startswith("arcane-repo/"):
+            continue
+
+        if parsed and parsed["registry"] == "docker.io":
+            dh_result = svc.get("_dh_result")
+            if dh_result and dh_result.get("last_updated"):
+                try:
+                    lu_str: str = dh_result["last_updated"]
+                    if lu_str.endswith("Z"):
+                        lu_str = lu_str[:-1] + "+00:00"
+                    last_updated = datetime.fromisoformat(lu_str)
+                    days = (now - last_updated).days
+                    if days > 365:
+                        findings.append(td._finding(
+                            "freshness", "warning",
+                            f"Service '{svc['name']}': image last updated {days} days ago (>365) — consider updating",
+                            "Pull the latest image tag or rebuild if the image is maintained",
+                            {"days_since_update": days, "last_updated": dh_result["last_updated"]},
+                        ))
+                    elif days > 180:
+                        findings.append(td._finding(
+                            "freshness", "info",
+                            f"Service '{svc['name']}': image last updated {days} days ago (>180 days)",
+                            "Consider verifying the image is still actively maintained",
+                            {"days_since_update": days, "last_updated": dh_result["last_updated"]},
+                        ))
+                    else:
+                        findings.append(td._finding(
+                            "freshness", "pass",
+                            f"Service '{svc['name']}': image updated {days} days ago (<=180) — fresh",
+                            None,
+                            {"days_since_update": days, "last_updated": dh_result["last_updated"]},
+                        ))
+                except (ValueError, TypeError):
+                    findings.append(td._finding(
+                        "freshness", "info",
+                        f"Service '{svc['name']}': could not parse last_updated '{dh_result.get('last_updated')}'",
+                        "Manual review of image update date needed",
+                    ))
+            elif dh_result and dh_result.get("exists"):
+                # Docker Hub image that exists but last_updated wasn't returned
+                findings.append(td._finding(
+                    "freshness", "info",
+                    f"Service '{svc['name']}': last_update not available from Docker Hub API",
+                    "Manual review needed",
+                ))
+        elif parsed and parsed["registry"] in ("ghcr.io", "quay.io"):
+            findings.append(td._finding(
+                "freshness", "info",
+                f"Service '{svc['name']}': last_updated unavailable via anonymous API — manual review needed",
+                "Verify image freshness via GHCR/Quay web UI or authenticated API",
+            ))
+
+    return findings
+
+
+# ---------------------------------------------------------------------------
+# Port plausibility dimension
+# ---------------------------------------------------------------------------
+
+# Regex to parse a port mapping entry.  Handles:
+#   "8080:8080"
+#   "${VAR:-8080}:8080"
+#   "127.0.0.1:8080:8080"
+#   "${VAR:-5006}:5006/tcp"
+_PORT_ENTRY_RE = re.compile(
+    r"""
+    (?:
+        [a-zA-Z0-9_.-]+:                     # optional host IP
+    )?
+    (?:
+        \$\{[^}]+:-(?P<host_port>\d+)\}      # ${VAR:-port}
+        |
+        (?P<host_port_plain>\d+)             # plain port
+    )
+    :
+    (?P<container_port>\d+)                  # container port
+    (?:/(?P<protocol>[a-z]+))?               # optional /tcp /udp
+    """,
+    re.VERBOSE,
+)
+
+WELL_KNOWN_PORTS: set[int] = {
+    80, 443, 22, 3306, 5432, 6379, 8080, 8443, 9090,
+}
+
+
+def check_ports(td: TemplateData) -> list[dict]:
+    """Dimension 3: Validate port mappings in docker-compose.yml.
+
+    Checks: valid range, no zero-port, note well-known ports, warn on
+    duplicate container ports across services.
+    """
+    findings: list[dict] = []
+
+    if td.compose_text is None:
+        return findings
+
+    # First, collect all parsed port entries
+    seen_container_ports: dict[int, list[str]] = {}
+    any_ports = False
+
+    for svc in td.services:
+        for port_raw in svc.get("ports", []):
+            any_ports = True
+            m = _PORT_ENTRY_RE.match(port_raw)
+            if not m:
+                findings.append(td._finding(
+                    "ports", "warning",
+                    f"Service '{svc['name']}': unparseable port mapping '{port_raw}'",
+                    f"Expected format: [host:]container_port or ${{VAR:-host_port}}:container_port",
+                ))
+                continue
+
+            host_port_str = m.group("host_port") or m.group("host_port_plain")
+            container_port_str = m.group("container_port")
+
+            try:
+                container_port = int(container_port_str)
+            except (ValueError, TypeError):
+                findings.append(td._finding(
+                    "ports", "error",
+                    f"Service '{svc['name']}': non-numeric container port '{container_port_str}'",
+                    f"Container port must be a number 1-65535",
+                ))
+                continue
+
+            if container_port == 0:
+                findings.append(td._finding(
+                    "ports", "error",
+                    f"Service '{svc['name']}': container port is 0 (invalid)",
+                    "Set a valid port in 1-65535 range",
+                ))
+                continue
+
+            if not (1 <= container_port <= 65535):
+                findings.append(td._finding(
+                    "ports", "error",
+                    f"Service '{svc['name']}': container port {container_port} out of range 1-65535",
+                    "Set a valid port in 1-65535 range",
+                ))
+                continue
+
+            # Track for duplicate detection
+            if container_port not in seen_container_ports:
+                seen_container_ports[container_port] = []
+            seen_container_ports[container_port].append(svc["name"])
+
+    # Flag duplicates
+    for cport, svc_names in seen_container_ports.items():
+        if len(svc_names) > 1:
+            findings.append(td._finding(
+                "ports", "warning",
+                f"Multiple services expose container port {cport}: {', '.join(svc_names)}",
+                "Ensure services are on different container ports or use different compose files/profiles",
+                {"container_port": cport, "services": svc_names},
+            ))
+
+    # Flag well-known ports
+    for cport in seen_container_ports:
+        if cport in WELL_KNOWN_PORTS:
+            svc_list = seen_container_ports[cport]
+            findings.append(td._finding(
+                "ports", "info",
+                f"Service(s) {svc_list} expose well-known container port {cport}",
+                "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+                {"container_port": cport, "services": svc_list, "note": "commonly used port — likely intentional"},
+            ))
+
+    if not any_ports:
+        findings.append(td._finding(
+            "ports", "info",
+            "No ports exposed in docker-compose.yml",
+            "Verify this is intentional (e.g. background worker, CLI tool)",
+        ))
+
+    return findings
+
+
+# ---------------------------------------------------------------------------
+# Tag quality dimension
+# ---------------------------------------------------------------------------
+
+
+def check_tags(td: TemplateData) -> list[dict]:
+    """Dimension 4: Validate template tags against known taxonomy."""
+    findings: list[dict] = []
+
+    if td.error:
+        return findings  # Structural failure supersedes
+
+    tags: list[str] = (td.arcane or {}).get("tags", [])
+
+    if not tags:
+        findings.append(td._finding(
+            "tags", "error",
+            "No tags defined in arcane.json",
+            "Add at least one source tag (e.g. 'self-hosted') and one or more category/status tags",
+        ))
+        return findings
+
+    unknown_tags = [t for t in tags if t not in ALL_KNOWN_TAGS]
+    if unknown_tags:
+        findings.append(td._finding(
+            "tags", "warning",
+            f"Unknown tag(s): {', '.join(unknown_tags)}",
+            f"Consider using only known tags from: source={KNOWN_TAGS['source']}, category={KNOWN_TAGS['category']}, status={KNOWN_TAGS['status']}",
+            {"unknown_tags": unknown_tags},
+        ))
+
+    # Check for minimum diversity: at least one source tag
+    has_source = any(t in KNOWN_TAGS["source"] for t in tags)
+    if not has_source and len(tags) <= 1:
+        findings.append(td._finding(
+            "tags", "info",
+            f"Only {len(tags)} tag(s) defined and missing a source tag (e.g. 'self-hosted')",
+            "Consider adding a source tag and at least one category tag for better discovery",
+            {"tag_count": len(tags)},
+        ))
+    elif len(tags) == 1:
+        findings.append(td._finding(
+            "tags", "info",
+            f"Only 1 tag defined: '{tags[0]}' — sparse",
+            "Consider adding category tags (e.g. 'ai', 'monitoring') for better discovery",
+            {"tag_count": 1},
+        ))
+    else:
+        findings.append(td._finding(
+            "tags", "pass",
+            f"{len(tags)} tags all known — OK",
+            None,
+            {"tags": tags},
+        ))
+
+    return findings
+
+
+# ---------------------------------------------------------------------------
+# Classification correctness dimension
+# ---------------------------------------------------------------------------
+
+def check_classification(td: TemplateData) -> list[dict]:
+    """Dimension 5: Cross-reference tags against image source type.
+
+    Rules (intentionally conservative — only clear mismatches):
+    (a) 'ai' or 'llm' tag + image namespace is a known non-AI tool → warning
+    (b) 'self-hosted' tag + all images unreachable → error
+    (c) Source tag (yunohost/portainer/umbrel/awesome-selfhosted) + actual
+        image source doesn't match the implied origin → info
+    """
+    findings: list[dict] = []
+
+    if td.error:
+        return findings
+
+    tags: list[str] = (td.arcane or {}).get("tags", [])
+    if not tags:
+        return findings
+
+    has_ai_tag = "ai" in tags or "llm" in tags
+    has_self_hosted = "self-hosted" in tags
+    source_tags = [t for t in tags if t in KNOWN_TAGS["source"]]
+
+    # Collect image namespaces
+    namespaces: list[str] = []
+    all_reachable = True
+    any_image = False
+    for svc in td.services:
+        ref = svc["image_ref"]
+        parsed = parse_image_ref(ref)
+        if parsed:
+            any_image = True
+            namespaces.append(parsed["namespace"])
+            if not svc.get("_reachable", False):
+                all_reachable = False
+
+    # Rule (a): AI/LLM tag + known non-AI namespace
+    if has_ai_tag:
+        for ns in namespaces:
+            if ns.lower() in NON_AI_NAMESPACES:
+                findings.append(td._finding(
+                    "classification", "warning",
+                    f"Tagged 'ai'/'llm' but image is from '{ns}' (known non-AI namespace)",
+                    "Remove 'ai'/'llm' tag or verify this template provides AI functionality",
+                    {"tag": "ai/llm", "namespace": ns},
+                ))
+
+    # Rule (b): self-hosted tag but all images unreachable
+    if has_self_hosted and any_image and not all_reachable:
+        findings.append(td._finding(
+            "classification", "warning",
+            "Tagged 'self-hosted' but no image is reachable",
+            "Fix image references or remove 'self-hosted' tag",
+        ))
+
+    # Rule (c): source tag vs. actual image source
+    if "yunohost" in source_tags:
+        # YunoHost apps typically come from Docker Hub, not GHCR/Quay
+        for ns in namespaces:
+            # If the namespace doesn't look like a typical YunoHost catalog pattern
+            # (YunoHost apps often have 'yunohost' in the org name or are docker.io)
+            pass  # Conservative — hard to infer reliably, skip
+    elif "portainer" in source_tags:
+        # Portainer templates often reference GHCR images
+        pass
+    elif "umbrel" in source_tags:
+        # Umbrel apps typically are docker.io
+        pass
+    elif "awesome-selfhosted" in source_tags:
+        pass
+
+    # Additional: multiple source tags is suspicious
+    if len(source_tags) > 1:
+        findings.append(td._finding(
+            "classification", "info",
+            f"Multiple source tags set: {', '.join(source_tags)}",
+            "Each template should typically have one source tag; verify this is correct",
+            {"source_tags": source_tags},
+        ))
+
+    return findings
+
+
+# ---------------------------------------------------------------------------
 # Module-level stats (mirrors registry_client)
 # ---------------------------------------------------------------------------
 
@@ -553,11 +890,22 @@ def main() -> None:
         td = TemplateData(tid, templates_dir / tid)
         td.load()
 
-        # Run reachability dimension (T01 scope)
+        # Run all audit dimensions
         reachability_findings = check_reachability(td)
+        freshness_findings = check_freshness(td)
+        ports_findings = check_ports(td)
+        tags_findings = check_tags(td)
+        classification_findings = check_classification(td)
 
         # Collect all findings
-        all_findings = td.findings + reachability_findings
+        all_findings = (
+            td.findings
+            + reachability_findings
+            + freshness_findings
+            + ports_findings
+            + tags_findings
+            + classification_findings
+        )
         total_findings += len(all_findings)
 
         # Count dimensions

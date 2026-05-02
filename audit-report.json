@@ -1,7 +1,7 @@
 {
   "run_metadata": {
-    "timestamp": "2026-05-02T10:52:42.641764+00:00",
-    "duration_seconds": 1.32,
+    "timestamp": "2026-05-02T11:21:18.249203+00:00",
+    "duration_seconds": 1.48,
     "total_templates_scanned": 10,
     "api_stats": {
       "requests": 12,
@@ -13,15 +13,18 @@
   },
   "summary": {
     "total_templates": 10,
-    "total_findings": 10,
+    "total_findings": 39,
     "by_severity": {
       "error": 0,
-      "warning": 0,
-      "info": 0,
-      "pass": 10
+      "warning": 4,
+      "info": 21,
+      "pass": 14
     },
     "by_dimension": {
-      "reachability": 10
+      "reachability": 10,
+      "freshness": 10,
+      "ports": 9,
+      "classification": 10
     }
   },
   "templates": [
@@ -39,6 +42,41 @@
           "message": "Service '015': image docker.io/bantul/015:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "warning",
+          "message": "Service '015': image last updated 1678 days ago (>365) — consider updating",
+          "suggested_fix": "Pull the latest image tag or rebuild if the image is maintained",
+          "details": {
+            "days_since_update": 1678,
+            "last_updated": "2021-09-27T09:36:45.810674Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['015'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "015"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, awesome-selfhosted",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "awesome-selfhosted"
+            ]
+          }
         }
       ],
       "error": null
@@ -57,6 +95,41 @@
           "message": "Service '13ft': image docker.io/wasimaster/13ft:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "warning",
+          "message": "Service '13ft': image last updated 618 days ago (>365) — consider updating",
+          "suggested_fix": "Pull the latest image tag or rebuild if the image is maintained",
+          "details": {
+            "days_since_update": 618,
+            "last_updated": "2024-08-21T16:39:35.439706Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['13ft'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "13ft"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null
@@ -75,6 +148,41 @@
           "message": "Service '2fauth': image docker.io/2fauth/2fauth:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "pass",
+          "message": "Service '2fauth': image updated 28 days ago (<=180) — fresh",
+          "suggested_fix": null,
+          "details": {
+            "days_since_update": 28,
+            "last_updated": "2026-04-03T12:34:38.53806Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['2fauth'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "2fauth"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null
@@ -93,6 +201,41 @@
           "message": "Service 'abantecart': image docker.io/abantecart/abantecart:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "warning",
+          "message": "Service 'abantecart': image last updated 1361 days ago (>365) — consider updating",
+          "suggested_fix": "Pull the latest image tag or rebuild if the image is maintained",
+          "details": {
+            "days_since_update": 1361,
+            "last_updated": "2022-08-09T14:27:28.689306Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['abantecart'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "abantecart"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null
@@ -111,6 +254,38 @@
           "message": "Service 'activepieces': image ghcr.io/activepieces/activepieces:latest is reachable on GHCR",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "info",
+          "message": "Service 'activepieces': last_updated unavailable via anonymous API — manual review needed",
+          "suggested_fix": "Verify image freshness via GHCR/Quay web UI or authenticated API",
+          "details": {}
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['activepieces'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "activepieces"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, portainer",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "portainer"
+            ]
+          }
         }
       ],
       "error": null
@@ -129,6 +304,28 @@
           "message": "Service 'actual': image docker.io/phoenixashes/actual:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "warning",
+          "message": "Service 'actual': image last updated 1234 days ago (>365) — consider updating",
+          "suggested_fix": "Pull the latest image tag or rebuild if the image is maintained",
+          "details": {
+            "days_since_update": 1234,
+            "last_updated": "2022-12-14T22:06:44.594277Z"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, portainer",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "portainer"
+            ]
+          }
         }
       ],
       "error": null
@@ -147,6 +344,41 @@
           "message": "Service 'adguardhome': image docker.io/adguard/adguardhome:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "pass",
+          "message": "Service 'adguardhome': image updated 1 days ago (<=180) — fresh",
+          "suggested_fix": null,
+          "details": {
+            "days_since_update": 1,
+            "last_updated": "2026-05-01T10:45:56.156927Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['adguardhome'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "adguardhome"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null
@@ -165,6 +397,41 @@
           "message": "Service 'admidio': image docker.io/admidio/admidio:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "pass",
+          "message": "Service 'admidio': image updated 0 days ago (<=180) — fresh",
+          "suggested_fix": null,
+          "details": {
+            "days_since_update": 0,
+            "last_updated": "2026-05-02T09:21:49.765573Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['admidio'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "admidio"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null
@@ -183,6 +450,41 @@
           "message": "Service 'adminer': image docker.io/library/adminer:latest is reachable on Docker Hub",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "pass",
+          "message": "Service 'adminer': image updated 14 days ago (<=180) — fresh",
+          "suggested_fix": null,
+          "details": {
+            "days_since_update": 14,
+            "last_updated": "2026-04-17T17:49:12.725115Z"
+          }
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['adminer'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "adminer"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null
@@ -201,6 +503,38 @@
           "message": "Service 'adminerevo': image ghcr.io/shyim/adminerevo:latest is reachable on GHCR",
           "suggested_fix": null,
           "details": {}
+        },
+        {
+          "dimension": "freshness",
+          "severity": "info",
+          "message": "Service 'adminerevo': last_updated unavailable via anonymous API — manual review needed",
+          "suggested_fix": "Verify image freshness via GHCR/Quay web UI or authenticated API",
+          "details": {}
+        },
+        {
+          "dimension": "ports",
+          "severity": "info",
+          "message": "Service(s) ['adminerevo'] expose well-known container port 8080",
+          "suggested_fix": "Verify this is intentional (e.g. web app on 8080, DB on 3306)",
+          "details": {
+            "container_port": 8080,
+            "services": [
+              "adminerevo"
+            ],
+            "note": "commonly used port — likely intentional"
+          }
+        },
+        {
+          "dimension": "classification",
+          "severity": "info",
+          "message": "Multiple source tags set: self-hosted, yunohost",
+          "suggested_fix": "Each template should typically have one source tag; verify this is correct",
+          "details": {
+            "source_tags": [
+              "self-hosted",
+              "yunohost"
+            ]
+          }
         }
       ],
       "error": null

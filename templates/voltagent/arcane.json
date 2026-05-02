@@ -8,6 +8,7 @@
     "ai",
     "agents",
     "workflow",
-    "automation"
+    "automation",
+    "non-serviceable"
   ]
 }

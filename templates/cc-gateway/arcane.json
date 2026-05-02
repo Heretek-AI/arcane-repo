@@ -4,5 +4,9 @@
   "description": "Privacy-preserving AI API reverse proxy with identity forwarding — route LLM requests through an identity-aware gateway",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "proxy", "privacy", "gateway"]
+  "tags": [
+    "ai",
+    "proxy",
+    "gateway"
+  ]
 }

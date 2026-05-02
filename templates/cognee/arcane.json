@@ -4,5 +4,10 @@
   "description": "Open-source, graph-based RAG platform — extract, store, and query knowledge graphs from documents using LLMs, with support for multiple vector stores and LLM providers",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "rag", "knowledge-graph", "llm", "data"]
+  "tags": [
+    "ai",
+    "rag",
+    "llm",
+    "non-serviceable"
+  ]
 }

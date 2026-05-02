@@ -4,5 +4,7 @@
   "description": "AI-powered image and text content generator for social media — Xiaohongshu-style content creation with LLM + image generation",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "content-generation", "social-media", "image-generation"]
+  "tags": [
+    "ai"
+  ]
 }

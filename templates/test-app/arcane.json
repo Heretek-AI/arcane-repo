@@ -4,5 +4,7 @@
   "description": "A test template for verifying the build-registry script",
   "version": "1.0.0",
   "author": "Test Author",
-  "tags": ["test", "demo"]
+  "tags": [
+    "reference"
+  ]
 }

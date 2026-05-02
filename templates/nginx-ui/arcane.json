@@ -5,10 +5,6 @@
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [
-    "nginx",
-    "web-server",
-    "reverse-proxy",
-    "lets-encrypt",
     "devops"
   ],
   "upstream": {

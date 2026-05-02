@@ -4,5 +4,7 @@
   "description": "The Modern Port Scanner — scans all 65,535 ports in ~3 seconds with built-in Nmap integration for service fingerprinting. Written in Rust for speed.",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["security", "network", "scanner", "port-scan", "nmap", "pentesting"]
+  "tags": [
+    "security"
+  ]
 }

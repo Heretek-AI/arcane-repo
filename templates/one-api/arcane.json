@@ -4,5 +4,9 @@
   "description": "LLM API management and redistribution proxy supporting 20+ providers — unified interface for OpenAI, Claude, Gemini, and more with rate limiting and cost tracking",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "llm", "proxy", "api-gateway"]
+  "tags": [
+    "ai",
+    "llm",
+    "proxy"
+  ]
 }

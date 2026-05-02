@@ -5,10 +5,7 @@
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [
-    "game-streaming",
-    "moonlight",
-    "remote-gaming",
-    "gpu",
-    "low-latency"
+    "web",
+    "tools"
   ]
 }

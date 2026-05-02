@@ -8,9 +8,6 @@
   "image": "ghcr.io/heretek-ai/arcane-repo/rowboat:latest",
   "tags": [
     "ai",
-    "knowledge-graph",
-    "productivity",
-    "nextjs",
     "multi-service"
   ],
   "upstream": "https://github.com/rowboatlabs/rowboat",

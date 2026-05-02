@@ -4,5 +4,7 @@
   "description": "Java Spring Boot distributed monitoring system — CPU, memory, disk, GPU, Docker, network, service API monitoring with web SSH and topology visualization",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["monitoring", "infrastructure"]
+  "tags": [
+    "monitoring"
+  ]
 }

@@ -272,6 +272,17 @@ _SIMPLE_REF_RE = re.compile(
     r"^(?P<namespace>[^/]+)/(?P<image>[^:@]+)(?::(?P<tag>.+))?$"
 )
 
+# Handle bare image names with no namespace (e.g. python:3.12-slim, postgres:16-alpine)
+# These are Docker Hub official library images.
+_BARE_IMAGE_RE = re.compile(
+    r"^(?P<image>[a-zA-Z][a-zA-Z0-9_-]*)(?::(?P<tag>.+))$"
+)
+
+# Handle multi-slash registry paths (e.g. ghcr.io/org/repo/image:tag, docker.elastic.co/elasticsearch/elasticsearch:tag)
+_MULTI_SLASH_REF_RE = re.compile(
+    r"^(?P<registry>[a-zA-Z0-9_.-]+\.[a-zA-Z]{2,})/(?P<namespace>[^/]+)/(?P<image>[^:@]+(?:/[^:@]+)*)(?::(?P<tag>.+))?$"
+)
+
 
 def parse_image_ref(ref: str) -> dict | None:
     """Parse an image ref into structured parts.
@@ -281,8 +292,20 @@ def parse_image_ref(ref: str) -> dict | None:
     """
     ref = ref.strip()
 
-    # ghcr.io/org/img[:tag]
+    # ghcr.io/org/img[:tag] or docker.io/ns/img[:tag] (single-slash path)
     m = _REF_RE.match(ref)
+    if m:
+        return {
+            "registry": m.group("registry"),
+            "namespace": m.group("namespace"),
+            "image": m.group("image"),
+            "tag": m.group("tag") or "latest",
+            "original_ref": ref,
+        }
+
+    # Multi-slash registry paths (e.g. ghcr.io/org/repo/img:tag,
+    # docker.elastic.co/elasticsearch/elasticsearch:tag)
+    m = _MULTI_SLASH_REF_RE.match(ref)
     if m:
         return {
             "registry": m.group("registry"),
@@ -298,6 +321,18 @@ def parse_image_ref(ref: str) -> dict | None:
         return {
             "registry": "docker.io",
             "namespace": m.group("namespace"),
+            "image": m.group("image"),
+            "tag": m.group("tag") or "latest",
+            "original_ref": ref,
+        }
+
+    # Bare image name with tag (e.g. python:3.12-slim, postgres:16-alpine)
+    # These are Docker Hub official library images.
+    m = _BARE_IMAGE_RE.match(ref)
+    if m:
+        return {
+            "registry": "docker.io",
+            "namespace": "library",
             "image": m.group("image"),
             "tag": m.group("tag") or "latest",
             "original_ref": ref,
@@ -332,18 +367,22 @@ def check_reachability(td: TemplateData) -> list[dict]:
 
     for svc in td.services:
         ref = svc["image_ref"]
+
+        # Variable substitution — can't parse statically.
+        # Must check BEFORE parse_image_ref since multi-slash refs with ${}
+        # can match the regex but produce wrong reachability results.
+        if "${" in ref:
+            findings.append(td._finding(
+                "reachability", "info",
+                f"Service '{svc['name']}': image ref uses variable substitution ({ref}) — "
+                f"skipping static reachability check",
+                "Resolve variables at runtime and verify",
+            ))
+            continue
+
         parsed = parse_image_ref(ref)
 
         if parsed is None:
-            if "${" in ref:
-                # Variable substitution — can't parse statically
-                findings.append(td._finding(
-                    "reachability", "info",
-                    f"Service '{svc['name']}': image ref uses variable substitution ({ref}) — "
-                    f"skipping static reachability check",
-                    "Resolve variables at runtime and verify",
-                ))
-                continue
             findings.append(td._finding(
                 "reachability", "error",
                 f"Service '{svc['name']}': unparseable image ref '{ref}'",
@@ -356,7 +395,11 @@ def check_reachability(td: TemplateData) -> list[dict]:
         img = parsed["image"]
 
         # Custom-build templates (built by CI) — skip reachability
-        if registry == "ghcr.io" and ns == "heretek-ai" and img.startswith("arcane-repo/"):
+        # Handles both ghcr.io/heretek-ai/arcane-repo/* and ghcr.io/arcane-repo/*
+        if registry == "ghcr.io" and (
+            (ns == "heretek-ai" and img.startswith("arcane-repo/"))
+            or ns == "arcane-repo"
+        ):
             findings.append(td._finding(
                 "reachability", "info",
                 f"Service '{svc['name']}': custom-build image (GHCR CI-built) — skipping reachability",
@@ -471,7 +514,10 @@ def check_freshness(td: TemplateData) -> list[dict]:
 
         # Custom-build (CI-rebuilt) — skip
         parsed = parse_image_ref(svc["image_ref"])
-        if parsed and parsed["registry"] == "ghcr.io" and parsed["namespace"] == "heretek-ai" and parsed["image"].startswith("arcane-repo/"):
+        if parsed and parsed["registry"] == "ghcr.io" and (
+            (parsed["namespace"] == "heretek-ai" and parsed["image"].startswith("arcane-repo/"))
+            or parsed["namespace"] == "arcane-repo"
+        ):
             continue
 
         if parsed and parsed["registry"] == "docker.io":

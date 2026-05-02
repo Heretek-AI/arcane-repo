@@ -4,5 +4,7 @@
   "description": "Hardened, OpenID Certified OAuth 2.0 and OpenID Connect provider trusted by OpenAI — self-hosted authorization server with PostgreSQL persistence",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["security", "oauth2", "oidc", "authentication", "authorization"]
+  "tags": [
+    "security"
+  ]
 }

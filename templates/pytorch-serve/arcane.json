@@ -4,5 +4,8 @@
   "description": "Serve, optimize and scale PyTorch models in production — TorchServe with REST inference API, management API, and model store",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "ml-serving", "pytorch", "inference"]
+  "tags": [
+    "ai",
+    "inference"
+  ]
 }

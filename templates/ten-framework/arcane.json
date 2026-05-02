@@ -4,5 +4,10 @@
   "description": "TEN-framework/ten-framework — open-source framework for building conversational voice AI agents. Uses a complex GN/C++ build; this Docker template provides a thin API wrapper with documentation",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "voice", "conversational-ai", "agents", "framework"]
+  "tags": [
+    "ai",
+    "agents",
+    "framework",
+    "non-serviceable"
+  ]
 }

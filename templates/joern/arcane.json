@@ -4,5 +4,7 @@
   "description": "Open-source code analysis platform — generate code property graphs from source code and query them for vulnerabilities, dependencies, control flow, and data flow across multiple languages",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["security", "code-analysis", "static-analysis", "devsecops", "scanning"]
+  "tags": [
+    "security"
+  ]
 }

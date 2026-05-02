@@ -4,5 +4,9 @@
   "description": "Elasticsearch, Logstash, and Kibana stack for centralized log aggregation, search, and visualization — production-ready with health checks on all core services",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["logging", "observability", "monitoring", "analytics"]
+  "tags": [
+    "observability",
+    "monitoring",
+    "analytics"
+  ]
 }

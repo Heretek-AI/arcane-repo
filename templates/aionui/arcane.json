@@ -4,5 +4,8 @@
   "description": "AI-native UI framework — build full-stack AI interfaces with a server-driven rendering approach for React and TypeScript applications",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "ui", "react", "typescript", "framework", "full-stack"]
+  "tags": [
+    "ai",
+    "framework"
+  ]
 }

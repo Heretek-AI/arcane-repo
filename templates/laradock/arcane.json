@@ -5,12 +5,8 @@
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [
-    "php",
-    "laravel",
-    "nginx",
-    "mysql",
-    "redis",
     "web",
-    "multi-service"
+    "multi-service",
+    "non-serviceable"
   ]
 }

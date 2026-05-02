@@ -8,6 +8,7 @@
     "ai",
     "agents",
     "orchestration",
-    "framework"
+    "framework",
+    "non-serviceable"
   ]
 }

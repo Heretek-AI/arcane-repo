@@ -5,10 +5,6 @@
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [
-    "sftp",
-    "file-transfer",
-    "storage",
-    "webdav",
-    "ftp"
+    "storage"
   ]
 }

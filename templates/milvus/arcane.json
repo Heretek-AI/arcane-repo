@@ -4,5 +4,8 @@
   "description": "Open-source vector database built for scalable similarity search — manage billion-scale vector datasets with GPU-accelerated indexing, hybrid search, and multi-language SDKs",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "vector-database", "search", "ml", "data"]
+  "tags": [
+    "ai",
+    "search"
+  ]
 }

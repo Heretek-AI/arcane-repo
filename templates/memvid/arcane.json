@@ -4,5 +4,8 @@
   "description": "Memvid — single-file memory layer for AI agents with instant retrieval, long-term memory, and built-in RAG. Serverless memory that replaces complex vector databases",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "memory", "rag", "vector-search", "embeddings", "knowledge-base"]
+  "tags": [
+    "ai",
+    "rag"
+  ]
 }

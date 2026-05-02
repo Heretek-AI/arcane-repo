@@ -4,5 +4,8 @@
   "description": "Self-hosted dashboard and startpage — organize apps, bookmarks, and widgets in a clean, customizable web panel",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["dashboard", "startpage", "bookmarks", "homepage", "web-ui"]
+  "tags": [
+    "monitoring",
+    "web"
+  ]
 }

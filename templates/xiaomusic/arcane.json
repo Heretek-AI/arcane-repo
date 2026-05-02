@@ -4,5 +4,7 @@
   "description": "Xiaomi smart speaker music player with LLM integration — control your Xiaomi speaker with natural language music requests. Custom-build from hanxi/xiaomusic source",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["music", "xiaomi", "smart-speaker", "llm", "voice", "iot"]
+  "tags": [
+    "llm"
+  ]
 }

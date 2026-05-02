@@ -4,5 +4,9 @@
   "description": "Real-time infrastructure monitoring with AI-powered insights — track server health, detect anomalies, and get intelligent alerts",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "monitoring", "observability", "infrastructure"]
+  "tags": [
+    "ai",
+    "monitoring",
+    "observability"
+  ]
 }

@@ -8,11 +8,6 @@
   "image": "ghcr.io/heretek-ai/arcane-repo/om1:latest",
   "tags": [
     "ai",
-    "robotics",
-    "multi-modal",
-    "vision",
-    "audio",
-    "agents",
-    "hardware"
+    "agents"
   ]
 }

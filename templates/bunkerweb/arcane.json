@@ -4,5 +4,8 @@
   "description": "Open-source cloud-native Web Application Firewall (WAF) — NGINX-based with seamless Docker integration, ModSecurity, automatic Let's Encrypt certificates, and real-time security monitoring",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["security", "waf", "proxy", "nginx", "ssl", "modsecurity", "firewall"]
+  "tags": [
+    "security",
+    "proxy"
+  ]
 }

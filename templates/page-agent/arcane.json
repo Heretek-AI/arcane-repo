@@ -4,5 +4,9 @@
   "description": "Alibaba Page Agent — JavaScript in-page GUI agent that controls web interfaces with natural language. Primarily a browser-based CLI tool; this Docker template provides a thin API wrapper for orchestration",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "browser-automation", "gui-agent", "web", "cli-tool"]
+  "tags": [
+    "ai",
+    "web",
+    "non-serviceable"
+  ]
 }

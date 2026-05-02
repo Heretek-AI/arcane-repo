@@ -4,5 +4,9 @@
   "description": "Open-source cloud data warehouse — run SQL analytics on object storage with MySQL-compatible wire protocol, instant elasticity, and real-time columnar performance",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["database", "analytics", "sql", "data", "cloud"]
+  "tags": [
+    "database",
+    "analytics",
+    "sql"
+  ]
 }

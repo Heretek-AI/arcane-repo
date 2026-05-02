@@ -4,5 +4,9 @@
   "description": "Cloud-native log observability engine — store, search, and analyze logs at scale with an S3-compatible backend",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["observability", "logging", "analytics", "monitoring"]
+  "tags": [
+    "observability",
+    "analytics",
+    "monitoring"
+  ]
 }

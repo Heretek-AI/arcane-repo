@@ -4,5 +4,8 @@
   "description": "Community and event platform API server — a modern Node.js backend with PostgreSQL, ready for extension",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["community", "events", "api"]
+  "tags": [
+    "api",
+    "non-serviceable"
+  ]
 }

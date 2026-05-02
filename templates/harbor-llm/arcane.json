@@ -4,5 +4,9 @@
   "description": "LLM backend orchestrator — manage Ollama, vLLM, and other LLM runtimes via Docker with a unified CLI and REST API",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "llm", "orchestration", "docker"]
+  "tags": [
+    "ai",
+    "llm",
+    "orchestration"
+  ]
 }

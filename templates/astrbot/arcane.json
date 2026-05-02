@@ -4,5 +4,8 @@
   "description": "All-in-one AI agent assistant with multi-platform IM integration, LLM backend support, and extensible plugin system",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "chatbot", "agent", "llm"]
+  "tags": [
+    "ai",
+    "llm"
+  ]
 }

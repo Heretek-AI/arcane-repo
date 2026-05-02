@@ -4,5 +4,8 @@
   "description": "Shynet web analytics — privacy-friendly, cookie-free analytics. No Docker image or upstream Dockerfile exists; this template provides an informational API stub",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["analytics", "privacy", "web-analytics", "django", "cookie-free"]
+  "tags": [
+    "analytics",
+    "non-serviceable"
+  ]
 }

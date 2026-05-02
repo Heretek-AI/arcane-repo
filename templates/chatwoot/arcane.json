@@ -4,5 +4,7 @@
   "description": "Open-source customer engagement platform — shared team inboxes, live chat, and omnichannel messaging for support and sales teams",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["customer-support", "live-chat", "messaging", "crm", "multi-service"]
+  "tags": [
+    "multi-service"
+  ]
 }

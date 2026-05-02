@@ -4,5 +4,7 @@
   "description": "ML container packaging tool — build and run reproducible ML models in containers with cog build, predict, and push",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "ml-ops", "model-packaging", "containers"]
+  "tags": [
+    "ai"
+  ]
 }

@@ -4,5 +4,8 @@
   "description": "Open-source Heroku / Netlify / Vercel alternative — deploy web apps, databases, and services on your own servers with automated SSL, Git integration, and one-click rollbacks",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["paas", "platform", "deployment", "self-hosting"]
+  "tags": [
+    "paas",
+    "platform"
+  ]
 }

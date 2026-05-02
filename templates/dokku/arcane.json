@@ -4,5 +4,9 @@
   "description": "Docker-powered PaaS for single-server deployments — Git-push workflow, plugin system, and Heroku-compatible buildpacks for hosting apps on your own infrastructure",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["paas", "platform"]
+  "tags": [
+    "paas",
+    "platform",
+    "non-serviceable"
+  ]
 }

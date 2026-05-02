@@ -4,5 +4,8 @@
   "description": "Build multimodal AI applications with cloud-native serving — deploy embeddings, rerankers, and neural search pipelines with Jina AI's gateway + executor architecture",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "search", "embeddings", "neural-search"]
+  "tags": [
+    "ai",
+    "search"
+  ]
 }

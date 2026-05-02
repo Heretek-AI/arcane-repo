@@ -4,5 +4,8 @@
   "description": "Open-source documentation Q&A platform — index your docs, code, and knowledge base, then ask natural language questions with LLM-powered answers and citations",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "rag", "documentation", "qa", "knowledge-base"]
+  "tags": [
+    "ai",
+    "rag"
+  ]
 }

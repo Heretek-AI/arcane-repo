@@ -1,8 +1,8 @@
 # Arcane Template Audit Report
 
-**Date:** 2026-05-02T12:04:06.932053+00:00
+**Date:** 2026-05-02T22:12:08.514387+00:00
 **Templates scanned:** 50
-**Duration:** 6.52s
+**Duration:** 6.55s
 **Script version:** 1.0.0
 
 ## Summary
@@ -11,20 +11,20 @@
 
 | Severity | Count |
 |----------|-------|
-| error | 5 |
-| warning | 17 |
-| info | 99 |
-| pass | 121 |
+| error | 0 |
+| warning | 12 |
+| info | 101 |
+| pass | 129 |
 
 ### By Dimension
 
 | Dimension | Findings |
 |-----------|----------|
 | classification | 43 |
-| freshness | 44 |
+| freshness | 49 |
 | ports | 50 |
 | reachability | 50 |
-| tags | 55 |
+| tags | 50 |
 
 ## Per-Dimension Findings
 
@@ -88,62 +88,67 @@
 
 ### Freshness
 
-**Total findings in this dimension: 44**
+**Total findings in this dimension: 49**
 
 #### Severity Breakdown
 
 | Severity | Count |
 |----------|-------|
 | warning | 12 |
-| info | 13 |
-| pass | 19 |
+| info | 14 |
+| pass | 23 |
 
 #### Per-Template Findings
 
 | Template ID | Name | Severity | Message | Suggested Fix |
 |-------------|------|----------|---------|---------------|
 | 015 | 015 | warning | Service '015': image last updated 1678 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| 13ft | 13Ft | warning | Service '13ft': image last updated 618 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| 2fauth | 2Fauth | pass | Service '2fauth': image updated 28 days ago (<=180) — fresh | — |
-| abantecart | Abantecart | warning | Service 'abantecart': image last updated 1361 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| 13ft | 13Ft | warning | Service '13ft': image last updated 619 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| 2fauth | 2Fauth | pass | Service '2fauth': image updated 29 days ago (<=180) — fresh | — |
+| abantecart | Abantecart | warning | Service 'abantecart': image last updated 1362 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
 | activepieces | Activepieces | info | Service 'activepieces': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
-| actual | Actual | warning | Service 'actual': image last updated 1234 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| actual | Actual | warning | Service 'actual': image last updated 1235 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
 | adguardhome | Adguardhome | pass | Service 'adguardhome': image updated 1 days ago (<=180) — fresh | — |
 | admidio | Admidio | pass | Service 'admidio': image updated 0 days ago (<=180) — fresh | — |
-| adminer | Adminer | pass | Service 'adminer': image updated 14 days ago (<=180) — fresh | — |
+| adminer | Adminer | pass | Service 'adminer': image updated 15 days ago (<=180) — fresh | — |
 | adminerevo | Adminerevo | info | Service 'adminerevo': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
-| adventurelog | Adventurelog | warning | Service 'adventurelog': image last updated 377 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| adventurelog | Adventurelog | warning | Service 'adventurelog': image last updated 378 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
 | affine | Affine | pass | Service 'affine': image updated 0 days ago (<=180) — fresh | — |
-| agent-zero | Agent Zero | pass | Service 'agent-zero': image updated 3 days ago (<=180) — fresh | — |
+| agent-zero | Agent Zero | pass | Service 'agent-zero': image updated 0 days ago (<=180) — fresh | — |
 | agenta | Agenta | pass | Service 'agenta': image updated 175 days ago (<=180) — fresh | — |
-| agora | Agora | info | Service 'agora': image last updated 290 days ago (>180 days) | Consider verifying the image is still actively maintained |
+| agentfield | AgentField | pass | Service 'agentfield': image updated 5 days ago (<=180) — fresh | — |
+| agenticrag | AgenticRAG-Survey | pass | Service 'agenticrag': image updated 5 days ago (<=180) — fresh | — |
+| agno | Agno | pass | Service 'agno': image updated 5 days ago (<=180) — fresh | — |
+| agora | Agora | info | Service 'agora': image last updated 291 days ago (>180 days) | Consider verifying the image is still actively maintained |
+| aionui | AionUi | info | Service 'aionui': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
 | airsonic | Airsonic | warning | Service 'airsonic': image last updated 2190 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| airtrail | Airtrail | pass | Service 'airtrail': image updated 12 days ago (<=180) — fresh | — |
+| airtrail | Airtrail | pass | Service 'airtrail': image updated 13 days ago (<=180) — fresh | — |
 | akaunting | Akaunting | pass | Service 'akaunting': image updated 44 days ago (<=180) — fresh | — |
 | albyhub | Albyhub | pass | Service 'albyhub': image updated 156 days ago (<=180) — fresh | — |
 | aliasvault | Aliasvault | info | Service 'aliasvault': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
 | ampache | Ampache | pass | Service 'ampache': image updated 1 days ago (<=180) — fresh | — |
-| anchor | Anchor | pass | Service 'anchor': image updated 10 days ago (<=180) — fresh | — |
+| anchor | Anchor | pass | Service 'anchor': image updated 0 days ago (<=180) — fresh | — |
 | ansible-semaphore | Ansible Semaphore | warning | Service 'ansible-semaphore': image last updated 3082 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| antigen | Antigen | warning | Service 'antigen': image last updated 2705 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| appflowy | Appflowy | warning | Service 'appflowy': image last updated 1526 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| antigen | Antigen | warning | Service 'antigen': image last updated 2706 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| appflowy | Appflowy | warning | Service 'appflowy': image last updated 1527 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
 | apprise-api | Apprise Api | info | Service 'apprise-api': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
 | appsmith | Appsmith | info | Service 'appsmith': image last updated 261 days ago (>180 days) | Consider verifying the image is still actively maintained |
 | appwrite | Appwrite | pass | Service 'appwrite': image updated 31 days ago (<=180) — fresh | — |
 | aptabase | Aptabase | info | Service 'aptabase': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
-| arcane | Arcane | pass | Service 'arcane': image updated 42 days ago (<=180) — fresh | — |
+| arcane | Arcane | pass | Service 'arcane': image updated 43 days ago (<=180) — fresh | — |
 | archisteamfarm | Archisteamfarm | pass | Service 'archisteamfarm': image updated 0 days ago (<=180) — fresh | — |
 | archivebox | Archivebox | info | Service 'archivebox': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
-| archivist | Archivist | warning | Service 'archivist': image last updated 1677 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| argos | Argos | pass | Service 'argos': image updated 20 days ago (<=180) — fresh | — |
+| archivist | Archivist | warning | Service 'archivist': image last updated 1678 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| argos | Argos | pass | Service 'argos': image updated 21 days ago (<=180) — fresh | — |
 | ariang | Ariang | pass | Service 'ariang': image updated 0 days ago (<=180) — fresh | — |
-| armadietto | Armadietto | warning | Service 'armadietto': image last updated 1391 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
-| atuin | Atuin | warning | Service 'atuin': image last updated 781 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| armadietto | Armadietto | warning | Service 'armadietto': image last updated 1392 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
+| atuin | Atuin | warning | Service 'atuin': image last updated 782 days ago (>365) — consider updating | Pull the latest image tag or rebuild if the image is maintained |
 | audiobookshelf | Audiobookshelf | info | Service 'audiobookshelf': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
-| aurral | Aurral | pass | Service 'aurral': image updated 68 days ago (<=180) — fresh | — |
+| aurral | Aurral | pass | Service 'aurral': image updated 69 days ago (<=180) — fresh | — |
 | authelia | Authelia | info | Service 'authelia': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
 | authentik | Authentik | info | Service 'authentik': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
 | autobrr | Autobrr | info | Service 'autobrr': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
+| autogen | AutoGen | pass | Service 'autogen': image updated 5 days ago (<=180) — fresh | — |
 | automad | Automad | pass | Service 'automad': image updated 2 days ago (<=180) — fresh | — |
 | automatisch | Automatisch | info | Service 'automatisch': last_updated unavailable via anonymous API — manual review needed | Verify image freshness via GHCR/Quay web UI or authenticated API |
 
@@ -221,9 +226,8 @@
 
 | Severity | Count |
 |----------|-------|
-| error | 5 |
-| info | 1 |
-| pass | 44 |
+| info | 2 |
+| pass | 48 |
 
 #### Per-Template Findings
 
@@ -243,11 +247,11 @@
 | affine | Affine | pass | Service 'affine': image docker.io/affinefoundation/affine:latest is reachable on Docker Hub | — |
 | agent-zero | Agent Zero | pass | Service 'agent-zero': image agent0ai/agent-zero:latest is reachable on Docker Hub | — |
 | agenta | Agenta | pass | Service 'agenta': image docker.io/intelligentlogistics/agenta:latest is reachable on Docker Hub | — |
-| agentfield | AgentField | error | Service 'agentfield': unparseable image ref 'python:3.12-slim' | Fix format: <registry>/<namespace>/<image>[:tag] |
-| agenticrag | AgenticRAG-Survey | error | Service 'agenticrag': unparseable image ref 'python:3.12-slim' | Fix format: <registry>/<namespace>/<image>[:tag] |
-| agno | Agno | error | Service 'agno': unparseable image ref 'python:3.12-slim' | Fix format: <registry>/<namespace>/<image>[:tag] |
+| agentfield | AgentField | pass | Service 'agentfield': image python:3.12-slim is reachable on Docker Hub | — |
+| agenticrag | AgenticRAG-Survey | pass | Service 'agenticrag': image python:3.12-slim is reachable on Docker Hub | — |
+| agno | Agno | pass | Service 'agno': image python:3.12-slim is reachable on Docker Hub | — |
 | agora | Agora | pass | Service 'agora': image docker.io/broadinstitute/agora:latest is reachable on Docker Hub | — |
-| aionui | AionUi | error | Service 'aionui': image ghcr.io/${REPO_OWNER:-heretek-ai}/${REPO_NAME:-arcane-repo}/aionui:latest is NOT reachable — not found | Check if the image exists and is public on GHCR |
+| aionui | AionUi | info | Service 'aionui': image ref uses variable substitution (ghcr.io/${REPO_OWNER:-heretek-ai}/${REPO_NAME:-arcane-repo}/aionui:latest) — skipping static reachability check | Resolve variables at runtime and verify |
 | airsonic | Airsonic | pass | Service 'airsonic': image docker.io/airsonic/airsonic:latest is reachable on Docker Hub | — |
 | airtrail | Airtrail | pass | Service 'airtrail': image docker.io/johly/airtrail:latest is reachable on Docker Hub | — |
 | akaunting | Akaunting | pass | Service 'akaunting': image docker.io/akaunting/akaunting:latest is reachable on Docker Hub | — |
@@ -276,19 +280,18 @@
 | authelia | Authelia | pass | Service 'authelia': image ghcr.io/authelia/authelia:latest is reachable on GHCR | — |
 | authentik | Authentik | pass | Service 'authentik': image ghcr.io/beryju/authentik:latest is reachable on GHCR | — |
 | autobrr | Autobrr | pass | Service 'autobrr': image ghcr.io/autobrr/autobrr:latest is reachable on GHCR | — |
-| autogen | AutoGen | error | Service 'autogen': unparseable image ref 'python:3.12-slim' | Fix format: <registry>/<namespace>/<image>[:tag] |
+| autogen | AutoGen | pass | Service 'autogen': image python:3.12-slim is reachable on Docker Hub | — |
 | automad | Automad | pass | Service 'automad': image docker.io/automad/automad:latest is reachable on Docker Hub | — |
 | automatisch | Automatisch | pass | Service 'automatisch': image ghcr.io/automatisch/automatisch:latest is reachable on GHCR | — |
 
 ### Tags
 
-**Total findings in this dimension: 55**
+**Total findings in this dimension: 50**
 
 #### Severity Breakdown
 
 | Severity | Count |
 |----------|-------|
-| warning | 5 |
 | pass | 50 |
 
 #### Per-Template Findings
@@ -307,16 +310,13 @@
 | adminerevo | Adminerevo | pass | 2 tags all known — OK | — |
 | adventurelog | Adventurelog | pass | 2 tags all known — OK | — |
 | affine | Affine | pass | 2 tags all known — OK | — |
-| agent-zero | Agent Zero | warning | Unknown tag(s): agent, autonomous | Consider using only known tags from: source=['self-hosted', 'yunohost', 'portainer', 'umbrel', 'awesome-selfhosted'], category=['ai', 'devops', 'agents', 'communication', 'llm', 'storage', 'rag', 'monitoring', 'framework', 'security', 'cms', 'automation', 'search', 'observability', 'database', 'tools', 'orchestration', 'analytics', 'workflow', 'chat', 'web', 'research', 'python', 'proxy', 'paas', 'low-code', 'inference', 'gateway', 'sql', 'platform', 'api', 'reference'], status=['multi-service', 'non-serviceable', 'priority'] |
-| agent-zero | Agent Zero | pass | 5 tags all known — OK | — |
+| agent-zero | Agent Zero | pass | 3 tags all known — OK | — |
 | agenta | Agenta | pass | 3 tags all known — OK | — |
-| agentfield | AgentField | warning | Unknown tag(s): simulation | Consider using only known tags from: source=['self-hosted', 'yunohost', 'portainer', 'umbrel', 'awesome-selfhosted'], category=['ai', 'devops', 'agents', 'communication', 'llm', 'storage', 'rag', 'monitoring', 'framework', 'security', 'cms', 'automation', 'search', 'observability', 'database', 'tools', 'orchestration', 'analytics', 'workflow', 'chat', 'web', 'research', 'python', 'proxy', 'paas', 'low-code', 'inference', 'gateway', 'sql', 'platform', 'api', 'reference'], status=['multi-service', 'non-serviceable', 'priority'] |
 | agentfield | AgentField | pass | 4 tags all known — OK | — |
-| agenticrag | AgenticRAG-Survey | pass | 4 tags all known — OK | — |
-| agno | Agno | pass | 4 tags all known — OK | — |
+| agenticrag | AgenticRAG-Survey | pass | 5 tags all known — OK | — |
+| agno | Agno | pass | 5 tags all known — OK | — |
 | agora | Agora | pass | 2 tags all known — OK | — |
-| aionui | AionUi | warning | Unknown tag(s): ui, react, typescript, full-stack | Consider using only known tags from: source=['self-hosted', 'yunohost', 'portainer', 'umbrel', 'awesome-selfhosted'], category=['ai', 'devops', 'agents', 'communication', 'llm', 'storage', 'rag', 'monitoring', 'framework', 'security', 'cms', 'automation', 'search', 'observability', 'database', 'tools', 'orchestration', 'analytics', 'workflow', 'chat', 'web', 'research', 'python', 'proxy', 'paas', 'low-code', 'inference', 'gateway', 'sql', 'platform', 'api', 'reference'], status=['multi-service', 'non-serviceable', 'priority'] |
-| aionui | AionUi | pass | 6 tags all known — OK | — |
+| aionui | AionUi | pass | 2 tags all known — OK | — |
 | airsonic | Airsonic | pass | 3 tags all known — OK | — |
 | airtrail | Airtrail | pass | 3 tags all known — OK | — |
 | akaunting | Akaunting | pass | 2 tags all known — OK | — |
@@ -338,25 +338,13 @@
 | argos | Argos | pass | 2 tags all known — OK | — |
 | ariang | Ariang | pass | 2 tags all known — OK | — |
 | armadietto | Armadietto | pass | 2 tags all known — OK | — |
-| astrbot | AstrBot | warning | Unknown tag(s): chatbot, agent | Consider using only known tags from: source=['self-hosted', 'yunohost', 'portainer', 'umbrel', 'awesome-selfhosted'], category=['ai', 'devops', 'agents', 'communication', 'llm', 'storage', 'rag', 'monitoring', 'framework', 'security', 'cms', 'automation', 'search', 'observability', 'database', 'tools', 'orchestration', 'analytics', 'workflow', 'chat', 'web', 'research', 'python', 'proxy', 'paas', 'low-code', 'inference', 'gateway', 'sql', 'platform', 'api', 'reference'], status=['multi-service', 'non-serviceable', 'priority'] |
-| astrbot | AstrBot | pass | 4 tags all known — OK | — |
+| astrbot | AstrBot | pass | 2 tags all known — OK | — |
 | atuin | Atuin | pass | 2 tags all known — OK | — |
 | audiobookshelf | Audiobookshelf | pass | 2 tags all known — OK | — |
 | aurral | Aurral | pass | 2 tags all known — OK | — |
 | authelia | Authelia | pass | 2 tags all known — OK | — |
 | authentik | Authentik | pass | 2 tags all known — OK | — |
 | autobrr | Autobrr | pass | 2 tags all known — OK | — |
-| autogen | AutoGen | warning | Unknown tag(s): multi-agent | Consider using only known tags from: source=['self-hosted', 'yunohost', 'portainer', 'umbrel', 'awesome-selfhosted'], category=['ai', 'devops', 'agents', 'communication', 'llm', 'storage', 'rag', 'monitoring', 'framework', 'security', 'cms', 'automation', 'search', 'observability', 'database', 'tools', 'orchestration', 'analytics', 'workflow', 'chat', 'web', 'research', 'python', 'proxy', 'paas', 'low-code', 'inference', 'gateway', 'sql', 'platform', 'api', 'reference'], status=['multi-service', 'non-serviceable', 'priority'] |
 | autogen | AutoGen | pass | 4 tags all known — OK | — |
 | automad | Automad | pass | 2 tags all known — OK | — |
 | automatisch | Automatisch | pass | 2 tags all known — OK | — |
-
-## Appendix: Templates with Errors
-
-| Template ID | Name |
-|-------------|------|
-| agentfield | AgentField |
-| agenticrag | AgenticRAG-Survey |
-| agno | Agno |
-| aionui | AionUi |
-| autogen | AutoGen |

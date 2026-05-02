@@ -4,5 +4,7 @@
   "description": "Lightweight Matrix homeserver powered by Conduit — a fast Rust implementation of the Matrix protocol for federated chat",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["matrix", "chat", "federation", "messaging", "rust"]
+  "tags": [
+    "chat"
+  ]
 }

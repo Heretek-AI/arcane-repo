@@ -4,5 +4,7 @@
   "description": "Personal cloud operating system for home servers — host-level daemon for managing Docker containers, file sharing, and smart home integration via an intuitive web UI",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["personal-cloud", "nas"]
+  "tags": [
+    "non-serviceable"
+  ]
 }

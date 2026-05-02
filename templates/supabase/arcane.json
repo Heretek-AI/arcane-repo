@@ -6,11 +6,7 @@
   "author": "Arcane",
   "tags": [
     "database",
-    "backend",
-    "auth",
-    "realtime",
     "storage",
-    "postgresql",
     "api",
     "multi-service"
   ]

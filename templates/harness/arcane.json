@@ -4,5 +4,9 @@
   "description": "Open-source CI/CD and DevOps platform — automate builds, tests, deployments, and infrastructure provisioning from a single dashboard",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ci-cd", "devops", "deployment", "automation", "paas"]
+  "tags": [
+    "devops",
+    "automation",
+    "paas"
+  ]
 }

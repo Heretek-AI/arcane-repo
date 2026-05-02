@@ -4,5 +4,8 @@
   "description": "Non-serviceable: Docker Flare has no published Docker image and no upstream Dockerfile. This placeholder serves as a reference to the original project.",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["non-serviceable", "reference", "dashboard", "cloudflare"]
+  "tags": [
+    "non-serviceable",
+    "reference"
+  ]
 }

@@ -4,5 +4,9 @@
   "description": "Open-source AI knowledge base powered by AsyncFuncAI — ingest, index, and search your documents and codebases with local LLMs and Retrieval-Augmented Generation",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "knowledge-base", "rag", "search", "documentation"]
+  "tags": [
+    "ai",
+    "rag",
+    "search"
+  ]
 }

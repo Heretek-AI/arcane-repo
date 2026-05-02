@@ -4,5 +4,9 @@
   "description": "Code execution sandbox environment — secure, isolated code compilation and execution for multiple programming languages with REST API",
   "version": "1.0.0",
   "author": "Arcane",
-  "tags": ["ai", "sandbox", "code-execution", "api", "education"]
+  "tags": [
+    "ai",
+    "api",
+    "non-serviceable"
+  ]
 }

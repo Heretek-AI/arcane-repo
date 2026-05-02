@@ -1,0 +1,19 @@
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+RUN git clone --depth 1 $UPSTREAM_REPO /tmp/$APP_SLUG && \
+    cp -r /tmp/$APP_SLUG/* /app/ && \
+    rm -rf /tmp/$APP_SLUG
+
+RUN uv pip install --system --no-cache-dir uvicorn fastapi $EXTRA_PACKAGES
+
+EXPOSE $EXPOSE_PORT
+
+ENV ${ENV_PREFIX}_PORT=$EXPOSE_PORT
+
+CMD python3 -m uvicorn $CMD_MODULE --host 0.0.0.0 --port $EXPOSE_PORT

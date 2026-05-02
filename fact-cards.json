@@ -1,0 +1,82 @@
+[
+  {
+    "candidate": "test-app-1",
+    "source": "yunohost",
+    "slug": "test-app-1",
+    "images_checked": [
+      {
+        "image": "nginx:alpine",
+        "reachable": true
+      }
+    ],
+    "recommend_image": "nginx:alpine",
+    "classification_hints": [
+      "web-app"
+    ],
+    "errors": []
+  },
+  {
+    "candidate": "test-app-2",
+    "source": "yunohost",
+    "slug": "test-app-2",
+    "images_checked": [
+      {
+        "image": "nginx:alpine",
+        "reachable": true
+      }
+    ],
+    "recommend_image": "nginx:alpine",
+    "classification_hints": [
+      "web-app"
+    ],
+    "errors": []
+  },
+  {
+    "candidate": "test-app-3",
+    "source": "yunohost",
+    "slug": "test-app-3",
+    "images_checked": [
+      {
+        "image": "nginx:alpine",
+        "reachable": true
+      }
+    ],
+    "recommend_image": "nginx:alpine",
+    "classification_hints": [
+      "web-app"
+    ],
+    "errors": []
+  },
+  {
+    "candidate": "test-app-4",
+    "source": "yunohost",
+    "slug": "test-app-4",
+    "images_checked": [
+      {
+        "image": "nginx:alpine",
+        "reachable": true
+      }
+    ],
+    "recommend_image": "nginx:alpine",
+    "classification_hints": [
+      "web-app"
+    ],
+    "errors": []
+  },
+  {
+    "candidate": "test-app-5",
+    "source": "yunohost",
+    "slug": "test-app-5",
+    "images_checked": [
+      {
+        "image": "nginx:alpine",
+        "reachable": true
+      }
+    ],
+    "recommend_image": "nginx:alpine",
+    "classification_hints": [
+      "web-app"
+    ],
+    "errors": []
+  }
+]

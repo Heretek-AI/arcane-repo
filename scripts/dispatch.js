@@ -188,7 +188,7 @@ Output files:
  * Expected (warn only): images_checked, recommend_image, classification_hints.
  */
 function validateFactCard(candidate, index) {
-  const required = ['source', 'name'];
+  const required = ['source', 'candidate'];
   let valid = true;
 
   for (const field of required) {
@@ -198,8 +198,8 @@ function validateFactCard(candidate, index) {
     }
   }
 
-  if (typeof candidate.name !== 'string' || candidate.name.length < 1) {
-    error(`fact-cards.json[${index}]: "name" must be a non-empty string`);
+  if (typeof candidate.candidate !== 'string' || candidate.candidate.length < 1) {
+    error(`fact-cards.json[${index}]: "candidate" must be a non-empty string`);
     valid = false;
   }
 
@@ -210,13 +210,13 @@ function validateFactCard(candidate, index) {
 
   // Warn on missing optional-but-expected MEM102 fields
   if (!candidate.images_checked) {
-    warn(`fact-cards.json[${index}] ("${candidate.name}"): missing "images_checked" field (expected per MEM102)`);
+    warn(`fact-cards.json[${index}] ("${candidate.candidate}"): missing "images_checked" field (expected per MEM102)`);
   }
   if (!candidate.recommend_image) {
-    warn(`fact-cards.json[${index}] ("${candidate.name}"): missing "recommend_image" field (expected per MEM102)`);
+    warn(`fact-cards.json[${index}] ("${candidate.candidate}"): missing "recommend_image" field (expected per MEM102)`);
   }
   if (!candidate.classification_hints) {
-    warn(`fact-cards.json[${index}] ("${candidate.name}"): missing "classification_hints" field (expected per MEM102)`);
+    warn(`fact-cards.json[${index}] ("${candidate.candidate}"): missing "classification_hints" field (expected per MEM102)`);
   }
 
   return valid;
@@ -922,7 +922,7 @@ function main() {
     for (let i = 0; i < batches.length; i++) {
       const first = batches[i][0];
       const last = batches[i][batches[i].length - 1];
-      console.error(`[prepare]   batch-${String(i + 1).padStart(3, '0')}: ${batches[i].length} candidates (${first.name} … ${last.name})`);
+      console.error(`[prepare]   batch-${String(i + 1).padStart(3, '0')}: ${batches[i].length} candidates (${first.candidate} … ${last.candidate})`);
     }
   }
 

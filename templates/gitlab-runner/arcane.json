@@ -1,7 +1,7 @@
 {
   "id": "gitlab-runner",
   "name": "Gitlab Runner",
-  "description": "Self-hosted Gitlab Runner deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Gitlab Runner deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

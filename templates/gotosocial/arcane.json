@@ -1,7 +1,7 @@
 {
   "id": "gotosocial",
   "name": "Gotosocial",
-  "description": "Self-hosted Gotosocial deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Gotosocial deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

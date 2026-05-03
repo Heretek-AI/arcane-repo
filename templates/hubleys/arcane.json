@@ -1,7 +1,7 @@
 {
   "id": "hubleys",
   "name": "Hubleys",
-  "description": "Self-hosted Hubleys deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Hubleys deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

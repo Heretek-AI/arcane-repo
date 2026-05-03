@@ -1,7 +1,7 @@
 {
   "id": "gitingest",
   "name": "Gitingest",
-  "description": "Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Gitingest deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

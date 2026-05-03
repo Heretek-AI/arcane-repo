@@ -1,7 +1,7 @@
 {
   "id": "gocron",
   "name": "Gocron",
-  "description": "Self-hosted Gocron deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Gocron deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "gameyfin",
   "name": "Gameyfin",
-  "description": "Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Gameyfin deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

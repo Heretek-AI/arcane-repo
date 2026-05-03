@@ -1,7 +1,7 @@
 {
   "id": "ghost",
   "name": "Ghost",
-  "description": "Self-hosted Ghost deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Ghost deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

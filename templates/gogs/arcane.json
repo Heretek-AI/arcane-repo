@@ -1,7 +1,7 @@
 {
   "id": "gogs",
   "name": "Gogs",
-  "description": "Self-hosted Gogs deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Gogs deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

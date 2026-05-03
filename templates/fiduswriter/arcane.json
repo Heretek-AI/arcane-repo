@@ -1,7 +1,7 @@
 {
   "id": "fiduswriter",
   "name": "Fiduswriter",
-  "description": "Self-hosted Fiduswriter deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Fiduswriter deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

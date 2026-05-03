@@ -1,7 +1,7 @@
 {
   "id": "headscale",
   "name": "Headscale",
-  "description": "Self-hosted Headscale deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Headscale deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

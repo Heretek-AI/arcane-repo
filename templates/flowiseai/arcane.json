@@ -1,7 +1,7 @@
 {
   "id": "flowiseai",
   "name": "Flowiseai",
-  "description": "Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Flowiseai deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

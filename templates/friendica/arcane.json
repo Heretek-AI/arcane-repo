@@ -1,7 +1,7 @@
 {
   "id": "friendica",
   "name": "Friendica",
-  "description": "Self-hosted Friendica deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Friendica deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

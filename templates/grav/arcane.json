@@ -1,7 +1,7 @@
 {
   "id": "grav",
   "name": "Grav",
-  "description": "Self-hosted Grav deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Grav deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

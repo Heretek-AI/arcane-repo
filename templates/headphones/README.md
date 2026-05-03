@@ -1,13 +1,16 @@
-# Headphones -- Self-Hosted Application
+# Headphones
 
-Headphones is a self-hosted application available through the Portainer catalog.
+Self-hosted Headphones deployment via Docker
+
+This template provides a containerized deployment of [Headphones](https://github.com/linuxserver/headphones) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Headphones is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `headphones` | ghcr.io/linuxserver/headphones:latest | Main application service |
+| `headphones_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `HEADPHONES_PORT` | `8080` | Host port for the service |
+| `HEADPHONES_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `headphones` | `ghcr.io/linuxserver/headphones:latest` | 8080 | Headphones application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f headphones
+docker compose logs headphones
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `HEADPHONES_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec headphones ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect headphones --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v headphones_data:/data -v $(pwd):/backup alpine tar czf /backup/headphones-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull headphones
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v headphones_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/headphones-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Headphones`
+## Links
+
+- **Project Homepage:** [Headphones](https://github.com/linuxserver/headphones)
+- **Docker Image:** `ghcr.io/linuxserver/headphones:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/headphones/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/headphones/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

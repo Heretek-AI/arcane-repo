@@ -1,7 +1,7 @@
 {
   "id": "fireshare",
   "name": "Fireshare",
-  "description": "Self-hosted Fireshare deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Fireshare deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

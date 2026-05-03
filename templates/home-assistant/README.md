@@ -1,13 +1,16 @@
-# Home Assistant -- Self-Hosted Application
+# Home Assistant
 
-Home Assistant is a self-hosted application available through the Portainer catalog.
+Self-hosted Home Assistant deployment via Docker
+
+This template provides a containerized deployment of [Home Assistant](https://github.com/home-assistant/home-assistant) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Home Assistant is a self-hosted application available through the Portainer cata
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `home-assistant` | ghcr.io/home-assistant/home-assistant:latest | Main application service |
+| `home-assistant_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `HOME_ASSISTANT_PORT` | `8080` | Host port for the service |
+| `HOME_ASSISTANT_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `home-assistant` | `ghcr.io/home-assistant/home-assistant:latest` | 8080 | Home Assistant application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f home-assistant
+docker compose logs home-assistant
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `HOME-ASSISTANT_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec home-assistant ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect home-assistant --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v home-assistant_data:/data -v $(pwd):/backup alpine tar czf /backup/home-assistant-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull home-assistant
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v home-assistant_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/home-assistant-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Home Assistant`
+## Links
+
+- **Project Homepage:** [Home Assistant](https://github.com/home-assistant/home-assistant)
+- **Docker Image:** `ghcr.io/home-assistant/home-assistant:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/home-assistant/home-assistant/wiki)
+- **Issues:** [GitHub Issues](https://github.com/home-assistant/home-assistant/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

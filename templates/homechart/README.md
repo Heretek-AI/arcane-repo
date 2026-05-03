@@ -1,13 +1,16 @@
-# Homechart -- Self-Hosted Application
+# Homechart
 
-Homechart is a self-hosted application available through the Portainer catalog.
+Self-hosted Homechart deployment via Docker
+
+This template provides a containerized deployment of [Homechart](https://github.com/candiddev/homechart) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Homechart is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `homechart` | ghcr.io/candiddev/homechart:latest | Main application service |
+| `homechart_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `HOMECHART_PORT` | `8080` | Host port for the service |
+| `HOMECHART_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `homechart` | `ghcr.io/candiddev/homechart:latest` | 8080 | Homechart application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f homechart
+docker compose logs homechart
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `HOMECHART_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec homechart ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect homechart --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v homechart_data:/data -v $(pwd):/backup alpine tar czf /backup/homechart-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull homechart
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v homechart_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/homechart-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Homechart`
+## Links
+
+- **Project Homepage:** [Homechart](https://github.com/candiddev/homechart)
+- **Docker Image:** `ghcr.io/candiddev/homechart:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/candiddev/homechart/wiki)
+- **Issues:** [GitHub Issues](https://github.com/candiddev/homechart/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "forgejo-runner",
   "name": "Forgejo Runner",
-  "description": "Self-hosted Forgejo Runner deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Forgejo Runner deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

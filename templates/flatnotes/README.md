@@ -1,13 +1,16 @@
-# flatnotes -- Self-Hosted Application
+# Flatnotes
 
-[flatnotes](https://github.com/dullage/flatnotes) is a self-hosted application available through the Awesome-Selfhosted catalog.
+Self-hosted Flatnotes deployment via Docker
+
+This template provides a containerized deployment of [Flatnotes](https://github.com/dullage/flatnotes) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,46 +19,94 @@
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `flatnotes` | docker.io/dullage/flatnotes:latest | Main application service |
+| `flatnotes_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `FLATNOTES_PORT` | `8080` | Host port for the service |
+| `FLATNOTES_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `flatnotes` | `docker.io/dullage/flatnotes:latest` | 8080 | flatnotes application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f flatnotes
+docker compose logs flatnotes
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `FLATNOTES_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec flatnotes ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect flatnotes --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v flatnotes_data:/data -v $(pwd):/backup alpine tar czf /backup/flatnotes-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull flatnotes
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v flatnotes_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/flatnotes-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Awesome-Selfhosted catalog entry: `flatnotes`
-- Upstream project: https://github.com/dullage/flatnotes
+## Links
+
+- **Project Homepage:** [Flatnotes](https://github.com/dullage/flatnotes)
+- **Docker Image:** `docker.io/dullage/flatnotes:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/dullage/flatnotes/wiki)
+- **Issues:** [GitHub Issues](https://github.com/dullage/flatnotes/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

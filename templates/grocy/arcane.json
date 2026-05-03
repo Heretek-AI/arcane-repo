@@ -1,7 +1,7 @@
 {
   "id": "grocy",
   "name": "Grocy",
-  "description": "Self-hosted Grocy deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Grocy deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

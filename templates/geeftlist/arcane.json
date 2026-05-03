@@ -1,7 +1,7 @@
 {
   "id": "geeftlist",
   "name": "Geeftlist",
-  "description": "Self-hosted Geeftlist deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Geeftlist deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "homebridge",
   "name": "Homebridge",
-  "description": "Self-hosted Homebridge deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Homebridge deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

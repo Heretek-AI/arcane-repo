@@ -1,7 +1,7 @@
 {
   "id": "guacamole",
   "name": "Guacamole",
-  "description": "Self-hosted Guacamole deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Guacamole deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

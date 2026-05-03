@@ -1,7 +1,7 @@
 {
   "id": "gitlab",
   "name": "Gitlab",
-  "description": "Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Gitlab deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

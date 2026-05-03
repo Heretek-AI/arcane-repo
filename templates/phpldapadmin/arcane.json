@@ -1,7 +1,7 @@
 {
   "id": "phpldapadmin",
   "name": "Phpldapadmin",
-  "description": "Self-hosted Phpldapadmin deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Phpldapadmin deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

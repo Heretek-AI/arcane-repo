@@ -1,7 +1,7 @@
 {
   "id": "openhabittracker",
   "name": "Openhabittracker",
-  "description": "Self-hosted Openhabittracker deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Openhabittracker deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

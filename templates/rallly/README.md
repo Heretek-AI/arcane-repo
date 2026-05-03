@@ -1,13 +1,16 @@
-# rallly -- Self-Hosted Application
+# Rallly
 
-rallly is a self-hosted application available through the Yunohost catalog.
+Self-hosted Rallly deployment via Docker
+
+This template provides a containerized deployment of [Rallly](https://github.com/lukevella/rallly) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ rallly is a self-hosted application available through the Yunohost catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `rallly` | docker.io/lukevella/rallly:latest | Main application service |
+| `rallly_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `RALLLY_PORT` | `8080` | Host port for the service |
+| `RALLLY_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `rallly` | `docker.io/lukevella/rallly:latest` | 8080 | rallly application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f rallly
+docker compose logs rallly
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `RALLLY_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec rallly ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect rallly --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v rallly_data:/data -v $(pwd):/backup alpine tar czf /backup/rallly-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull rallly
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v rallly_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/rallly-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Yunohost catalog entry: `rallly`
+## Links
+
+- **Project Homepage:** [Rallly](https://github.com/lukevella/rallly)
+- **Docker Image:** `docker.io/lukevella/rallly:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/lukevella/rallly/wiki)
+- **Issues:** [GitHub Issues](https://github.com/lukevella/rallly/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

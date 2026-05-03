@@ -1,7 +1,7 @@
 {
   "id": "pyload-ng",
   "name": "Pyload Ng",
-  "description": "Self-hosted Pyload Ng deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Pyload Ng deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "monetr",
   "name": "Monetr",
-  "description": "Self-hosted Monetr deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Monetr deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

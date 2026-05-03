@@ -1,13 +1,16 @@
-# NZBGet -- Self-Hosted Application
+# Nzbget
 
-NZBGet is a self-hosted application available through the Portainer catalog.
+Self-hosted Nzbget deployment via Docker
+
+This template provides a containerized deployment of [Nzbget](https://github.com/linuxserver/nzbget) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ NZBGet is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `nzbget` | ghcr.io/linuxserver/nzbget:latest | Main application service |
+| `nzbget_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `NZBGET_PORT` | `8080` | Host port for the service |
+| `NZBGET_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `nzbget` | `ghcr.io/linuxserver/nzbget:latest` | 8080 | NZBGet application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f nzbget
+docker compose logs nzbget
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `NZBGET_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec nzbget ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect nzbget --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v nzbget_data:/data -v $(pwd):/backup alpine tar czf /backup/nzbget-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull nzbget
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v nzbget_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/nzbget-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `NZBGet`
+## Links
+
+- **Project Homepage:** [Nzbget](https://github.com/linuxserver/nzbget)
+- **Docker Image:** `ghcr.io/linuxserver/nzbget:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/nzbget/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/nzbget/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

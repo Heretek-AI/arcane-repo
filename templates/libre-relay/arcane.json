@@ -1,7 +1,7 @@
 {
   "id": "libre-relay",
   "name": "Libre Relay",
-  "description": "Self-hosted Libre Relay deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Libre Relay deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "libreoffice",
   "name": "Libreoffice",
-  "description": "Self-hosted Libreoffice deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Libreoffice deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

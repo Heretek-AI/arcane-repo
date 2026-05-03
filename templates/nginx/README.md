@@ -1,13 +1,16 @@
-# Nginx -- Self-Hosted Application
+# Nginx
 
-Nginx is a self-hosted application available through the Portainer catalog.
+Self-hosted Nginx deployment via Docker
+
+This template provides a containerized deployment of [Nginx](nginx) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,91 @@ Nginx is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `nginx` | docker.io/library/nginx:latest | Main application service |
+| `nginx_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `NGINX_PORT` | `8080` | Host port for the service |
+| `NGINX_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `nginx` | `docker.io/library/nginx:latest` | 8080 | Nginx application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f nginx
+docker compose logs nginx
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `NGINX_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec nginx ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect nginx --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v nginx_data:/data -v $(pwd):/backup alpine tar czf /backup/nginx-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull nginx
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v nginx_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/nginx-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Nginx`
+## Links
+
+- **Docker Image:** `docker.io/library/nginx:latest`
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

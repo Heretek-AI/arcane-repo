@@ -1,13 +1,16 @@
-# opensearch -- Self-Hosted Application
+# Opensearch
 
-opensearch is a self-hosted application available through the Yunohost catalog.
+Self-hosted Opensearch deployment via Docker
+
+This template provides a containerized deployment of [Opensearch](https://github.com/opensearchproject/opensearch) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ opensearch is a self-hosted application available through the Yunohost catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `opensearch` | docker.io/opensearchproject/opensearch:latest | Main application service |
+| `opensearch_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `OPENSEARCH_PORT` | `8080` | Host port for the service |
+| `OPENSEARCH_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `opensearch` | `docker.io/opensearchproject/opensearch:latest` | 8080 | opensearch application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f opensearch
+docker compose logs opensearch
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `OPENSEARCH_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec opensearch ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect opensearch --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v opensearch_data:/data -v $(pwd):/backup alpine tar czf /backup/opensearch-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull opensearch
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v opensearch_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/opensearch-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Yunohost catalog entry: `opensearch`
+## Links
+
+- **Project Homepage:** [Opensearch](https://github.com/opensearchproject/opensearch)
+- **Docker Image:** `docker.io/opensearchproject/opensearch:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/opensearchproject/opensearch/wiki)
+- **Issues:** [GitHub Issues](https://github.com/opensearchproject/opensearch/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

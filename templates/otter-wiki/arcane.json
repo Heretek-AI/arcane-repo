@@ -1,7 +1,7 @@
 {
   "id": "otter-wiki",
   "name": "Otter Wiki",
-  "description": "Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Otter Wiki deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

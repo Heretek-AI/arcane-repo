@@ -1,7 +1,7 @@
 {
   "id": "plane",
   "name": "Plane",
-  "description": "Self-hosted Plane deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Plane deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

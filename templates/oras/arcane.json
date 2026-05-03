@@ -1,7 +1,7 @@
 {
   "id": "oras",
   "name": "Oras",
-  "description": "Self-hosted Oras deployment via Docker, sourced from Priority catalog",
+  "description": "Self-hosted Oras deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

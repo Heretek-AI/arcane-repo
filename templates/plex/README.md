@@ -1,13 +1,16 @@
-# Plex -- Self-Hosted Application
+# Plex
 
-Plex is a self-hosted application available through the Portainer catalog.
+Self-hosted Plex deployment via Docker
+
+This template provides a containerized deployment of [Plex](https://github.com/linuxserver/plex) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Plex is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:32400/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:32400](http://localhost:32400) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `plex` | ghcr.io/linuxserver/plex:latest | Main application service |
+| `plex_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `PLEX_PORT` | `32400` | Host port for the service |
+| `PLEX_PORT` | `32400` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `plex` | `ghcr.io/linuxserver/plex:latest` | 32400 | Plex application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f plex
+docker compose logs plex
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `PLEX_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec plex ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect plex --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v plex_data:/data -v $(pwd):/backup alpine tar czf /backup/plex-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull plex
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v plex_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/plex-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Plex`
+## Links
+
+- **Project Homepage:** [Plex](https://github.com/linuxserver/plex)
+- **Docker Image:** `ghcr.io/linuxserver/plex:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/plex/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/plex/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

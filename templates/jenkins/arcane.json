@@ -1,7 +1,7 @@
 {
   "id": "jenkins",
   "name": "Jenkins",
-  "description": "Self-hosted Jenkins deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Jenkins deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

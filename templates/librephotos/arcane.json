@@ -1,7 +1,7 @@
 {
   "id": "librephotos",
   "name": "Librephotos",
-  "description": "Self-hosted Librephotos deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Librephotos deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

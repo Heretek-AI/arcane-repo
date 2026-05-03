@@ -1,7 +1,7 @@
 {
   "id": "postgresql",
   "name": "Postgresql",
-  "description": "Self-hosted Postgresql deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Postgresql deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

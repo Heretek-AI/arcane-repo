@@ -1,7 +1,7 @@
 {
   "id": "open-web-calendar",
   "name": "Open Web Calendar",
-  "description": "Self-hosted Open Web Calendar deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Open Web Calendar deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

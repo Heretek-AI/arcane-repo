@@ -1,7 +1,7 @@
 {
   "id": "odoo",
   "name": "Odoo",
-  "description": "Self-hosted Odoo deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Odoo deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

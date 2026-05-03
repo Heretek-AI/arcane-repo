@@ -1,7 +1,7 @@
 {
   "id": "nutify",
   "name": "Nutify",
-  "description": "Self-hosted Nutify deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Nutify deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "netbird",
   "name": "Netbird",
-  "description": "Self-hosted Netbird deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Netbird deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "lightning",
   "name": "Lightning",
-  "description": "Self-hosted Lightning deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Lightning deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

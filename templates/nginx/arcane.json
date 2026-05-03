@@ -1,7 +1,7 @@
 {
   "id": "nginx",
   "name": "Nginx",
-  "description": "Self-hosted Nginx deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Nginx deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

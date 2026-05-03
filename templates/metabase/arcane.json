@@ -1,7 +1,7 @@
 {
   "id": "metabase",
   "name": "Metabase",
-  "description": "Self-hosted Metabase deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Metabase deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

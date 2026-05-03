@@ -1,7 +1,7 @@
 {
   "id": "pinchflat",
   "name": "Pinchflat",
-  "description": "Self-hosted Pinchflat deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Pinchflat deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

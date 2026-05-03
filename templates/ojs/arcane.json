@@ -1,7 +1,7 @@
 {
   "id": "ojs",
   "name": "Ojs",
-  "description": "Self-hosted Ojs deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Ojs deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

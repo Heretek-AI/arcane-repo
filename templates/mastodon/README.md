@@ -1,13 +1,16 @@
-# Mastodon -- Self-Hosted Application
+# Mastodon
 
-Mastodon is a self-hosted application available through the Portainer catalog.
+Self-hosted Mastodon deployment via Docker
+
+This template provides a containerized deployment of [Mastodon](https://github.com/mastodon/mastodon) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Mastodon is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:3000/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `mastodon` | ghcr.io/mastodon/mastodon:latest | Main application service |
+| `mastodon_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `MASTODON_PORT` | `3000` | Host port for the service |
+| `MASTODON_PORT` | `3000` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `mastodon` | `ghcr.io/mastodon/mastodon:latest` | 3000 | Mastodon application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f mastodon
+docker compose logs mastodon
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `MASTODON_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec mastodon ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect mastodon --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v mastodon_data:/data -v $(pwd):/backup alpine tar czf /backup/mastodon-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull mastodon
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v mastodon_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/mastodon-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Mastodon`
+## Links
+
+- **Project Homepage:** [Mastodon](https://github.com/mastodon/mastodon)
+- **Docker Image:** `ghcr.io/mastodon/mastodon:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/mastodon/mastodon/wiki)
+- **Issues:** [GitHub Issues](https://github.com/mastodon/mastodon/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "minidlna",
   "name": "Minidlna",
-  "description": "Self-hosted Minidlna deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Minidlna deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

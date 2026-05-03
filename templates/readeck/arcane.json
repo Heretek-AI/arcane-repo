@@ -1,7 +1,7 @@
 {
   "id": "readeck",
   "name": "Readeck",
-  "description": "Self-hosted Readeck deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Readeck deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "pritunl",
   "name": "Pritunl",
-  "description": "Self-hosted Pritunl deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Pritunl deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

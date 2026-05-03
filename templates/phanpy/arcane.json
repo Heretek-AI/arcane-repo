@@ -1,7 +1,7 @@
 {
   "id": "phanpy",
   "name": "Phanpy",
-  "description": "Self-hosted Phanpy deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Phanpy deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

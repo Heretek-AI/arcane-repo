@@ -1,13 +1,16 @@
-# public-pool-web -- Self-Hosted Application
+# Public Pool Web
 
-public-pool-web is a self-hosted application available through the Umbrel catalog.
+Self-hosted Public Pool Web deployment via Docker
+
+This template provides a containerized deployment of [Public Pool Web](https://github.com/martinbarilik/public-pool-web) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ public-pool-web is a self-hosted application available through the Umbrel catalo
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `public-pool-web` | docker.io/martinbarilik/public-pool-web:latest | Main application service |
+| `public-pool-web_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `PUBLIC_POOL_WEB_PORT` | `8080` | Host port for the service |
+| `PUBLIC_POOL_WEB_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `public-pool-web` | `docker.io/martinbarilik/public-pool-web:latest` | 8080 | public-pool-web application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f public-pool-web
+docker compose logs public-pool-web
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `PUBLIC-POOL-WEB_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec public-pool-web ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect public-pool-web --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v public-pool-web_data:/data -v $(pwd):/backup alpine tar czf /backup/public-pool-web-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull public-pool-web
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v public-pool-web_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/public-pool-web-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Umbrel catalog entry: `public-pool-web`
+## Links
+
+- **Project Homepage:** [Public Pool Web](https://github.com/martinbarilik/public-pool-web)
+- **Docker Image:** `docker.io/martinbarilik/public-pool-web:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/martinbarilik/public-pool-web/wiki)
+- **Issues:** [GitHub Issues](https://github.com/martinbarilik/public-pool-web/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

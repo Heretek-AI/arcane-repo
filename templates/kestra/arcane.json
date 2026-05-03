@@ -1,7 +1,7 @@
 {
   "id": "kestra",
   "name": "Kestra",
-  "description": "Self-hosted Kestra deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Kestra deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "mqttx-web",
   "name": "Mqttx Web",
-  "description": "Self-hosted Mqttx Web deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Mqttx Web deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

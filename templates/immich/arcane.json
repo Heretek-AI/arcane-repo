@@ -1,7 +1,7 @@
 {
   "id": "immich",
   "name": "Immich",
-  "description": "Self-hosted Immich deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Immich deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

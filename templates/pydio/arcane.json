@@ -1,7 +1,7 @@
 {
   "id": "pydio",
   "name": "Pydio",
-  "description": "Self-hosted Pydio deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Pydio deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "mailarchiver",
   "name": "Mailarchiver",
-  "description": "Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Mailarchiver deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

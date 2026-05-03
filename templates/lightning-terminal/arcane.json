@@ -1,7 +1,7 @@
 {
   "id": "lightning-terminal",
   "name": "Lightning Terminal",
-  "description": "Self-hosted Lightning Terminal deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Lightning Terminal deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "poste-io",
   "name": "Poste.Io",
-  "description": "Self-hosted Poste.Io deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Poste.Io deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "openvpn-as",
   "name": "Openvpn As",
-  "description": "Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Openvpn As deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

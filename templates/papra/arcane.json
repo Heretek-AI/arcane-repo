@@ -1,7 +1,7 @@
 {
   "id": "papra",
   "name": "Papra",
-  "description": "Self-hosted Papra deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Papra deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

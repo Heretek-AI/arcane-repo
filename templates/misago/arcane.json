@@ -1,7 +1,7 @@
 {
   "id": "misago",
   "name": "Misago",
-  "description": "Self-hosted Misago deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Misago deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

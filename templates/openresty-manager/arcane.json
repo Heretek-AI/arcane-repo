@@ -1,7 +1,7 @@
 {
   "id": "openresty-manager",
   "name": "Openresty Manager",
-  "description": "Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Openresty Manager deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

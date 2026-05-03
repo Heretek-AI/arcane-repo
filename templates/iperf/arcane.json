@@ -1,7 +1,7 @@
 {
   "id": "iperf",
   "name": "Iperf",
-  "description": "Self-hosted Iperf deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Iperf deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

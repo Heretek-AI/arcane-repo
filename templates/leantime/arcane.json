@@ -1,7 +1,7 @@
 {
   "id": "leantime",
   "name": "Leantime",
-  "description": "Self-hosted Leantime deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Leantime deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

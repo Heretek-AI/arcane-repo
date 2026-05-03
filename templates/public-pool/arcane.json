@@ -1,7 +1,7 @@
 {
   "id": "public-pool",
   "name": "Public Pool",
-  "description": "Self-hosted Public Pool deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Public Pool deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

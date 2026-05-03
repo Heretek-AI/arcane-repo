@@ -1,7 +1,7 @@
 {
   "id": "loomio",
   "name": "Loomio",
-  "description": "Self-hosted Loomio deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Loomio deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

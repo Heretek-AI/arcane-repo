@@ -1,7 +1,7 @@
 {
   "id": "reactive-resume",
   "name": "Reactive Resume",
-  "description": "Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Reactive Resume deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

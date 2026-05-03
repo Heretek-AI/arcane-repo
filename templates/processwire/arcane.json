@@ -1,7 +1,7 @@
 {
   "id": "processwire",
   "name": "Processwire",
-  "description": "Self-hosted Processwire deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Processwire deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

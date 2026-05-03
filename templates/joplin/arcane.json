@@ -1,7 +1,7 @@
 {
   "id": "joplin",
   "name": "Joplin",
-  "description": "Self-hosted Joplin deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Joplin deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

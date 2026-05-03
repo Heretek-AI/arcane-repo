@@ -1,7 +1,7 @@
 {
   "id": "navidrome",
   "name": "Navidrome",
-  "description": "Self-hosted Navidrome deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Navidrome deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

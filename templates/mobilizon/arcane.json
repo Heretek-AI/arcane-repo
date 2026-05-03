@@ -1,7 +1,7 @@
 {
   "id": "mobilizon",
   "name": "Mobilizon",
-  "description": "Self-hosted Mobilizon deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Mobilizon deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

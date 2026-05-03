@@ -1,7 +1,7 @@
 {
   "id": "qui",
   "name": "Qui",
-  "description": "Self-hosted Qui deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Qui deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

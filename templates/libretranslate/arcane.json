@@ -1,7 +1,7 @@
 {
   "id": "libretranslate",
   "name": "Libretranslate",
-  "description": "Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Libretranslate deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

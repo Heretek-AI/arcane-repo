@@ -1,7 +1,7 @@
 {
   "id": "paaster",
   "name": "Paaster",
-  "description": "Self-hosted Paaster deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Paaster deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

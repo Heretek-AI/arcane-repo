@@ -1,7 +1,7 @@
 {
   "id": "obsidian",
   "name": "Obsidian",
-  "description": "Self-hosted Obsidian deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Obsidian deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

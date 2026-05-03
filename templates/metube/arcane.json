@@ -1,7 +1,7 @@
 {
   "id": "metube",
   "name": "Metube",
-  "description": "Self-hosted Metube deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Metube deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

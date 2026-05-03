@@ -1,7 +1,7 @@
 {
   "id": "pingvin-share",
   "name": "Pingvin Share",
-  "description": "Self-hosted Pingvin Share deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Pingvin Share deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

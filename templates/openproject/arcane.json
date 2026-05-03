@@ -1,7 +1,7 @@
 {
   "id": "openproject",
   "name": "Openproject",
-  "description": "Self-hosted Openproject deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Openproject deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

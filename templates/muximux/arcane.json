@@ -1,7 +1,7 @@
 {
   "id": "muximux",
   "name": "Muximux",
-  "description": "Self-hosted Muximux deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Muximux deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

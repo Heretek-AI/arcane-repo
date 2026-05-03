@@ -1,7 +1,7 @@
 {
   "id": "invoiceshelf",
   "name": "Invoiceshelf",
-  "description": "Self-hosted Invoiceshelf deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Invoiceshelf deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "mealie",
   "name": "Mealie",
-  "description": "Self-hosted Mealie deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Mealie deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

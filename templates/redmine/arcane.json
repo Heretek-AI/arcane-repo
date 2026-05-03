@@ -1,7 +1,7 @@
 {
   "id": "redmine",
   "name": "Redmine",
-  "description": "Self-hosted Redmine deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Redmine deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

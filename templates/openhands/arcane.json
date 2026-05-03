@@ -1,7 +1,7 @@
 {
   "id": "openhands",
   "name": "Openhands",
-  "description": "Self-hosted Openhands deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Openhands deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

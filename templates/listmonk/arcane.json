@@ -1,7 +1,7 @@
 {
   "id": "listmonk",
   "name": "Listmonk",
-  "description": "Self-hosted Listmonk deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Listmonk deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

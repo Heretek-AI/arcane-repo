@@ -1,7 +1,7 @@
 {
   "id": "miniflux",
   "name": "Miniflux",
-  "description": "Self-hosted Miniflux deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Miniflux deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

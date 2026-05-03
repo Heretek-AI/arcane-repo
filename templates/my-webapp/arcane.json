@@ -1,7 +1,7 @@
 {
   "id": "my-webapp",
   "name": "My Webapp",
-  "description": "Self-hosted My Webapp deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted My Webapp deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

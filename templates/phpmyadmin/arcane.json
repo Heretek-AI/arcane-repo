@@ -1,7 +1,7 @@
 {
   "id": "phpmyadmin",
   "name": "Phpmyadmin",
-  "description": "Self-hosted Phpmyadmin deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Phpmyadmin deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

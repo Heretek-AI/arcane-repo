@@ -1,7 +1,7 @@
 {
   "id": "pollaris",
   "name": "Pollaris",
-  "description": "Self-hosted Pollaris deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Pollaris deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "kitchenowl",
   "name": "Kitchenowl",
-  "description": "Self-hosted Kitchenowl deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Kitchenowl deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

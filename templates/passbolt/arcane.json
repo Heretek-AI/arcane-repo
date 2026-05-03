@@ -1,7 +1,7 @@
 {
   "id": "passbolt",
   "name": "Passbolt",
-  "description": "Self-hosted Passbolt deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Passbolt deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

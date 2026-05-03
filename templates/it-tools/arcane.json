@@ -1,7 +1,7 @@
 {
   "id": "it-tools",
   "name": "It Tools",
-  "description": "Self-hosted It Tools deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted It Tools deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

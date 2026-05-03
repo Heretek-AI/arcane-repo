@@ -1,13 +1,16 @@
-# redlib -- Self-Hosted Application
+# Redlib
 
-redlib is a self-hosted application available through the Yunohost catalog.
+Self-hosted Redlib deployment via Docker
+
+This template provides a containerized deployment of [Redlib](https://github.com/manwichmakesameal/redlib) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ redlib is a self-hosted application available through the Yunohost catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `redlib` | docker.io/manwichmakesameal/redlib:latest | Main application service |
+| `redlib_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `REDLIB_PORT` | `8080` | Host port for the service |
+| `REDLIB_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `redlib` | `docker.io/manwichmakesameal/redlib:latest` | 8080 | redlib application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f redlib
+docker compose logs redlib
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `REDLIB_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec redlib ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect redlib --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v redlib_data:/data -v $(pwd):/backup alpine tar czf /backup/redlib-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull redlib
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v redlib_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/redlib-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Yunohost catalog entry: `redlib`
+## Links
+
+- **Project Homepage:** [Redlib](https://github.com/manwichmakesameal/redlib)
+- **Docker Image:** `docker.io/manwichmakesameal/redlib:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/manwichmakesameal/redlib/wiki)
+- **Issues:** [GitHub Issues](https://github.com/manwichmakesameal/redlib/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "pgweb",
   "name": "Pgweb",
-  "description": "Self-hosted Pgweb deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Pgweb deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,13 +1,16 @@
-# phpldapadmin -- Self-Hosted Application
+# Phpldapadmin
 
-phpldapadmin is a self-hosted application available through the YunoHost catalog.
+Self-hosted Phpldapadmin deployment via Docker
+
+This template provides a containerized deployment of [Phpldapadmin](https://github.com/phpldapadmin/phpldapadmin) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ phpldapadmin is a self-hosted application available through the YunoHost catalog
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `phpldapadmin` | docker.io/phpldapadmin/phpldapadmin:latest | Main application service |
+| `phpldapadmin_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `PHPLDAPADMIN_PORT` | `8080` | Host port for the service |
+| `PHPLDAPADMIN_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `phpldapadmin` | `docker.io/phpldapadmin/phpldapadmin:latest` | 8080 | phpldapadmin application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f phpldapadmin
+docker compose logs phpldapadmin
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `PHPLDAPADMIN_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec phpldapadmin ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect phpldapadmin --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v phpldapadmin_data:/data -v $(pwd):/backup alpine tar czf /backup/phpldapadmin-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull phpldapadmin
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v phpldapadmin_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/phpldapadmin-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- YunoHost catalog entry: `phpldapadmin`
+## Links
+
+- **Project Homepage:** [Phpldapadmin](https://github.com/phpldapadmin/phpldapadmin)
+- **Docker Image:** `docker.io/phpldapadmin/phpldapadmin:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/phpldapadmin/phpldapadmin/wiki)
+- **Issues:** [GitHub Issues](https://github.com/phpldapadmin/phpldapadmin/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "mollysocket",
   "name": "Mollysocket",
-  "description": "Self-hosted Mollysocket deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Mollysocket deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

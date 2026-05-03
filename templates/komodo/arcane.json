@@ -1,7 +1,7 @@
 {
   "id": "komodo",
   "name": "Komodo",
-  "description": "Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Komodo deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

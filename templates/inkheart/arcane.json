@@ -1,7 +1,7 @@
 {
   "id": "inkheart",
   "name": "Inkheart",
-  "description": "Self-hosted Inkheart deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Inkheart deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

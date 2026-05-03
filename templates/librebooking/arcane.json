@@ -1,7 +1,7 @@
 {
   "id": "librebooking",
   "name": "Librebooking",
-  "description": "Self-hosted Librebooking deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Librebooking deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

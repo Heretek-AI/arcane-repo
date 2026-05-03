@@ -1,7 +1,7 @@
 {
   "id": "its-mytabs",
   "name": "Its Mytabs",
-  "description": "Self-hosted Its Mytabs deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Its Mytabs deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "psitransfer",
   "name": "Psitransfer",
-  "description": "Self-hosted Psitransfer deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Psitransfer deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

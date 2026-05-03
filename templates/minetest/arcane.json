@@ -1,7 +1,7 @@
 {
   "id": "minetest",
   "name": "Minetest",
-  "description": "Self-hosted Minetest deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Minetest deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

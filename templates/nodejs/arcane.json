@@ -1,7 +1,7 @@
 {
   "id": "nodejs",
   "name": "Nodejs",
-  "description": "Self-hosted Nodejs deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Nodejs deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

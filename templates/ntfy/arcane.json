@@ -1,7 +1,7 @@
 {
   "id": "ntfy",
   "name": "Ntfy",
-  "description": "Self-hosted Ntfy deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Ntfy deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

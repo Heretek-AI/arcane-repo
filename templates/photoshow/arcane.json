@@ -1,7 +1,7 @@
 {
   "id": "photoshow",
   "name": "Photoshow",
-  "description": "Self-hosted Photoshow deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Photoshow deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

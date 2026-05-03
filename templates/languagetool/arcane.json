@@ -1,7 +1,7 @@
 {
   "id": "languagetool",
   "name": "Languagetool",
-  "description": "Self-hosted Languagetool deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Languagetool deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

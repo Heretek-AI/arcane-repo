@@ -1,7 +1,7 @@
 {
   "id": "opencode",
   "name": "Opencode",
-  "description": "Self-hosted Opencode deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Opencode deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

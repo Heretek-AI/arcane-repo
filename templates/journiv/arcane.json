@@ -1,7 +1,7 @@
 {
   "id": "journiv",
   "name": "Journiv",
-  "description": "Self-hosted Journiv deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Journiv deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

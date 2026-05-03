@@ -1,7 +1,7 @@
 {
   "id": "nostr-relay",
   "name": "Nostr Relay",
-  "description": "Self-hosted Nostr Relay deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Nostr Relay deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

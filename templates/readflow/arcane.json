@@ -1,7 +1,7 @@
 {
   "id": "readflow",
   "name": "Readflow",
-  "description": "Self-hosted Readflow deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Readflow deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

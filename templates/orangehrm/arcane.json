@@ -1,7 +1,7 @@
 {
   "id": "orangehrm",
   "name": "Orangehrm",
-  "description": "Self-hosted Orangehrm deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Orangehrm deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

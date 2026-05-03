@@ -1,7 +1,7 @@
 {
   "id": "reveal-js",
   "name": "Reveal.Js",
-  "description": "Self-hosted Reveal.Js deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Reveal.Js deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

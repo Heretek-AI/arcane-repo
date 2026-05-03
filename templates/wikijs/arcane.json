@@ -1,7 +1,7 @@
 {
   "id": "wikijs",
   "name": "Wikijs",
-  "description": "Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Wikijs deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

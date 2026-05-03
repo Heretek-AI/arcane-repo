@@ -1,13 +1,16 @@
-# Rybbit -- Self-Hosted Application
+# Rybbit
 
-Rybbit is a self-hosted application available through the Awesome-Selfhosted catalog.
+Self-hosted Rybbit deployment via Docker
+
+This template provides a containerized deployment of [Rybbit](https://github.com/allocateengineering/rybbit) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Rybbit is a self-hosted application available through the Awesome-Selfhosted cat
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `rybbit` | docker.io/allocateengineering/rybbit:latest | Main application service |
+| `rybbit_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `RYBBIT_PORT` | `8080` | Host port for the service |
+| `RYBBIT_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `rybbit` | `docker.io/allocateengineering/rybbit:latest` | 8080 | Rybbit application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f rybbit
+docker compose logs rybbit
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `RYBBIT_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec rybbit ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect rybbit --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v rybbit_data:/data -v $(pwd):/backup alpine tar czf /backup/rybbit-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull rybbit
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v rybbit_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/rybbit-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Awesome-Selfhosted catalog entry: `Rybbit`
+## Links
+
+- **Project Homepage:** [Rybbit](https://github.com/allocateengineering/rybbit)
+- **Docker Image:** `docker.io/allocateengineering/rybbit:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/allocateengineering/rybbit/wiki)
+- **Issues:** [GitHub Issues](https://github.com/allocateengineering/rybbit/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

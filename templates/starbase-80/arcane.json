@@ -1,7 +1,7 @@
 {
   "id": "starbase-80",
   "name": "Starbase 80",
-  "description": "Self-hosted Starbase 80 deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Starbase 80 deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "ztnet",
   "name": "Ztnet",
-  "description": "Self-hosted Ztnet deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Ztnet deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

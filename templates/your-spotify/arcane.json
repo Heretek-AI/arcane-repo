@@ -1,7 +1,7 @@
 {
   "id": "your-spotify",
   "name": "Your Spotify",
-  "description": "Self-hosted Your Spotify deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Your Spotify deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

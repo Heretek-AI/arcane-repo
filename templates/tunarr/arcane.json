@@ -1,7 +1,7 @@
 {
   "id": "tunarr",
   "name": "Tunarr",
-  "description": "Self-hosted Tunarr deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Tunarr deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

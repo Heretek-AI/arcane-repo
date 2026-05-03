@@ -1,7 +1,7 @@
 {
   "id": "yourls",
   "name": "Yourls",
-  "description": "Self-hosted Yourls deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Yourls deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

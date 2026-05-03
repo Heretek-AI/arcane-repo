@@ -1,7 +1,7 @@
 {
   "id": "znc",
   "name": "Znc",
-  "description": "Self-hosted Znc deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Znc deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

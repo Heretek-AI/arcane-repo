@@ -1,13 +1,16 @@
-# syncserver-rs -- Self-Hosted Application
+# Syncserver Rs
 
-syncserver-rs is a self-hosted application available through the Yunohost catalog.
+Self-hosted Syncserver Rs deployment via Docker
+
+This template provides a containerized deployment of [Syncserver Rs](https://github.com/kannasama/syncserver-rs) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ syncserver-rs is a self-hosted application available through the Yunohost catalo
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `syncserver-rs` | docker.io/kannasama/syncserver-rs:latest | Main application service |
+| `syncserver-rs_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SYNCSERVER_RS_PORT` | `8080` | Host port for the service |
+| `SYNCSERVER_RS_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `syncserver-rs` | `docker.io/kannasama/syncserver-rs:latest` | 8080 | syncserver-rs application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f syncserver-rs
+docker compose logs syncserver-rs
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `SYNCSERVER-RS_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec syncserver-rs ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect syncserver-rs --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v syncserver-rs_data:/data -v $(pwd):/backup alpine tar czf /backup/syncserver-rs-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull syncserver-rs
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v syncserver-rs_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/syncserver-rs-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Yunohost catalog entry: `syncserver-rs`
+## Links
+
+- **Project Homepage:** [Syncserver Rs](https://github.com/kannasama/syncserver-rs)
+- **Docker Image:** `docker.io/kannasama/syncserver-rs:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/kannasama/syncserver-rs/wiki)
+- **Issues:** [GitHub Issues](https://github.com/kannasama/syncserver-rs/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

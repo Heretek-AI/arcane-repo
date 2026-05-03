@@ -1,7 +1,7 @@
 {
   "id": "webtor",
   "name": "Webtor",
-  "description": "Self-hosted Webtor deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Webtor deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

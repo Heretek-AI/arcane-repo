@@ -1,7 +1,7 @@
 {
   "id": "thunderhub",
   "name": "Thunderhub",
-  "description": "Self-hosted Thunderhub deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Thunderhub deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

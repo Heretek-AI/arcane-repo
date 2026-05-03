@@ -1,7 +1,7 @@
 {
   "id": "rustdesk-server",
   "name": "Rustdesk Server",
-  "description": "Self-hosted Rustdesk Server deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Rustdesk Server deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

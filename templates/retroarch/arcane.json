@@ -1,7 +1,7 @@
 {
   "id": "retroarch",
   "name": "Retroarch",
-  "description": "Self-hosted Retroarch deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Retroarch deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

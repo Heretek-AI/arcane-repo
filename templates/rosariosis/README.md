@@ -1,13 +1,16 @@
-# rosariosis -- Self-Hosted Application
+# Rosariosis
 
-rosariosis is a self-hosted application available through the YunoHost catalog.
+Self-hosted Rosariosis deployment via Docker
+
+This template provides a containerized deployment of [Rosariosis](https://github.com/rosariosis/rosariosis) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ rosariosis is a self-hosted application available through the YunoHost catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `rosariosis` | docker.io/rosariosis/rosariosis:latest | Main application service |
+| `rosariosis_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `ROSARIOSIS_PORT` | `8080` | Host port for the service |
+| `ROSARIOSIS_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `rosariosis` | `docker.io/rosariosis/rosariosis:latest` | 8080 | rosariosis application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f rosariosis
+docker compose logs rosariosis
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `ROSARIOSIS_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec rosariosis ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect rosariosis --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v rosariosis_data:/data -v $(pwd):/backup alpine tar czf /backup/rosariosis-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull rosariosis
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v rosariosis_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/rosariosis-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- YunoHost catalog entry: `rosariosis`
+## Links
+
+- **Project Homepage:** [Rosariosis](https://github.com/rosariosis/rosariosis)
+- **Docker Image:** `docker.io/rosariosis/rosariosis:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/rosariosis/rosariosis/wiki)
+- **Issues:** [GitHub Issues](https://github.com/rosariosis/rosariosis/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

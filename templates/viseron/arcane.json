@@ -1,7 +1,7 @@
 {
   "id": "viseron",
   "name": "Viseron",
-  "description": "Self-hosted Viseron deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Viseron deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

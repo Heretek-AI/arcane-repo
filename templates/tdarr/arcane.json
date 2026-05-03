@@ -1,7 +1,7 @@
 {
   "id": "tdarr",
   "name": "Tdarr",
-  "description": "Self-hosted Tdarr deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Tdarr deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

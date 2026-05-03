@@ -1,7 +1,7 @@
 {
   "id": "sqlitebrowser",
   "name": "Sqlitebrowser",
-  "description": "Self-hosted Sqlitebrowser deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Sqlitebrowser deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "whoogle-search",
   "name": "Whoogle Search",
-  "description": "Self-hosted Whoogle Search deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Whoogle Search deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

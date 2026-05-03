@@ -1,7 +1,7 @@
 {
   "id": "what-to-cook",
   "name": "What To Cook?",
-  "description": "Self-hosted What To Cook? deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted What To Cook? deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "umap",
   "name": "Umap",
-  "description": "Self-hosted Umap deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Umap deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

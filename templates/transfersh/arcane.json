@@ -1,7 +1,7 @@
 {
   "id": "transfersh",
   "name": "Transfersh",
-  "description": "Self-hosted Transfersh deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Transfersh deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

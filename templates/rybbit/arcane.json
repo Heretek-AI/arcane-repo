@@ -1,7 +1,7 @@
 {
   "id": "rybbit",
   "name": "Rybbit",
-  "description": "Self-hosted Rybbit deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Rybbit deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

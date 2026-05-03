@@ -1,13 +1,16 @@
-# wikidocs -- Self-Hosted Application
+# Wikidocs
 
-wikidocs is a self-hosted application available through the Yunohost catalog.
+Self-hosted Wikidocs deployment via Docker
+
+This template provides a containerized deployment of [Wikidocs](https://github.com/zavy86/wikidocs) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ wikidocs is a self-hosted application available through the Yunohost catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:80/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:80](http://localhost:80) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `wikidocs` | docker.io/zavy86/wikidocs:latest | Main application service |
+| `wikidocs_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `WIKIDOCS_PORT` | `80` | Host port for the service |
+| `WIKIDOCS_PORT` | `80` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `wikidocs` | `docker.io/zavy86/wikidocs:latest` | 80 | wikidocs application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f wikidocs
+docker compose logs wikidocs
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `WIKIDOCS_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec wikidocs ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect wikidocs --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v wikidocs_data:/data -v $(pwd):/backup alpine tar czf /backup/wikidocs-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull wikidocs
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v wikidocs_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/wikidocs-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Yunohost catalog entry: `wikidocs`
+## Links
+
+- **Project Homepage:** [Wikidocs](https://github.com/zavy86/wikidocs)
+- **Docker Image:** `docker.io/zavy86/wikidocs:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/zavy86/wikidocs/wiki)
+- **Issues:** [GitHub Issues](https://github.com/zavy86/wikidocs/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

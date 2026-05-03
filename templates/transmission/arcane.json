@@ -1,7 +1,7 @@
 {
   "id": "transmission",
   "name": "Transmission",
-  "description": "Self-hosted Transmission deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Transmission deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

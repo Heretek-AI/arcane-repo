@@ -1,7 +1,7 @@
 {
   "id": "rss-bridge",
   "name": "Rss Bridge",
-  "description": "Self-hosted Rss Bridge deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Rss Bridge deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

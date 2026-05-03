@@ -1,7 +1,7 @@
 {
   "id": "route96",
   "name": "Route96",
-  "description": "Self-hosted Route96 deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Route96 deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

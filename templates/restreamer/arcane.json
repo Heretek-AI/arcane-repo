@@ -1,7 +1,7 @@
 {
   "id": "restreamer",
   "name": "Restreamer",
-  "description": "Self-hosted Restreamer deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Restreamer deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

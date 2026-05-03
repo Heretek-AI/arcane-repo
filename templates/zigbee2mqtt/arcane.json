@@ -1,7 +1,7 @@
 {
   "id": "zigbee2mqtt",
   "name": "Zigbee2Mqtt",
-  "description": "Self-hosted Zigbee2Mqtt deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Zigbee2Mqtt deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

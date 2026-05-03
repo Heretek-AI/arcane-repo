@@ -1,7 +1,7 @@
 {
   "id": "zoraxy",
   "name": "Zoraxy",
-  "description": "Self-hosted Zoraxy deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Zoraxy deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

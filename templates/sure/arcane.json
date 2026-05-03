@@ -1,7 +1,7 @@
 {
   "id": "sure",
   "name": "Sure",
-  "description": "Self-hosted Sure deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Sure deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

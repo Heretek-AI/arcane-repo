@@ -1,7 +1,7 @@
 {
   "id": "sogo",
   "name": "Sogo",
-  "description": "Self-hosted Sogo deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Sogo deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

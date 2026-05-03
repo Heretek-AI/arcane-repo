@@ -1,7 +1,7 @@
 {
   "id": "yacht",
   "name": "Yacht",
-  "description": "Self-hosted Yacht deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Yacht deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

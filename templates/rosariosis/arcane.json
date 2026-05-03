@@ -1,7 +1,7 @@
 {
   "id": "rosariosis",
   "name": "Rosariosis",
-  "description": "Self-hosted Rosariosis deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Rosariosis deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

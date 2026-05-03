@@ -1,13 +1,16 @@
-# Solr -- Self-Hosted Application
+# Solr
 
-Solr is a self-hosted application available through the Portainer catalog.
+Self-hosted Solr deployment via Docker
+
+This template provides a containerized deployment of [Solr](https://github.com/bitnamicharts/solr) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Solr is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `solr` | docker.io/bitnamicharts/solr:latest | Main application service |
+| `solr_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SOLR_PORT` | `8080` | Host port for the service |
+| `SOLR_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `solr` | `docker.io/bitnamicharts/solr:latest` | 8080 | Solr application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f solr
+docker compose logs solr
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `SOLR_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec solr ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect solr --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v solr_data:/data -v $(pwd):/backup alpine tar czf /backup/solr-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull solr
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v solr_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/solr-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Solr`
+## Links
+
+- **Project Homepage:** [Solr](https://github.com/bitnamicharts/solr)
+- **Docker Image:** `docker.io/bitnamicharts/solr:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/bitnamicharts/solr/wiki)
+- **Issues:** [GitHub Issues](https://github.com/bitnamicharts/solr/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "wavelog",
   "name": "Wavelog",
-  "description": "Self-hosted Wavelog deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Wavelog deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

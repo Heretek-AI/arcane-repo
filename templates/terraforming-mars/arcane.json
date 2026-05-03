@@ -1,7 +1,7 @@
 {
   "id": "terraforming-mars",
   "name": "Terraforming Mars",
-  "description": "Self-hosted Terraforming Mars deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Terraforming Mars deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

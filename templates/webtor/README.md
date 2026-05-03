@@ -1,13 +1,16 @@
-# Webtor -- Self-Hosted Application
+# Webtor
 
-[Webtor](https://github.com/webtor-io/self-hosted) is a self-hosted application available through the Awesome-Selfhosted catalog.
+Self-hosted Webtor deployment via Docker
+
+This template provides a containerized deployment of [Webtor](https://github.com/webtor-io/self-hosted) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,46 +19,94 @@
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `webtor` | ghcr.io/webtor-io/self-hosted:latest | Main application service |
+| `webtor_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `WEBTOR_PORT` | `8080` | Host port for the service |
+| `WEBTOR_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `webtor` | `ghcr.io/webtor-io/self-hosted:latest` | 8080 | Webtor application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f webtor
+docker compose logs webtor
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `WEBTOR_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec webtor ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect webtor --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v webtor_data:/data -v $(pwd):/backup alpine tar czf /backup/webtor-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull webtor
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v webtor_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/webtor-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Awesome-Selfhosted catalog entry: `Webtor`
-- Upstream project: https://github.com/webtor-io/self-hosted
+## Links
+
+- **Project Homepage:** [Webtor](https://github.com/webtor-io/self-hosted)
+- **Docker Image:** `ghcr.io/webtor-io/self-hosted:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/webtor-io/self-hosted/wiki)
+- **Issues:** [GitHub Issues](https://github.com/webtor-io/self-hosted/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "tinymediamanager",
   "name": "Tinymediamanager",
-  "description": "Self-hosted Tinymediamanager deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Tinymediamanager deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

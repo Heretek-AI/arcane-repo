@@ -1,7 +1,7 @@
 {
   "id": "superset",
   "name": "Superset",
-  "description": "Self-hosted Superset deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Superset deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

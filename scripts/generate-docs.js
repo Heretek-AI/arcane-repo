@@ -284,46 +284,20 @@ ${sortedTags.length} categories covering ${templates.length} templates.
   fs.writeFileSync(path.join(CATEGORIES_DIR, 'index.md'), categoriesIndex, 'utf-8');
   console.log(`Wrote categories/index.md (${sortedTags.length} categories)`);
 
-  // 6. Generate docs/categories/{tag}.md for each populated tag
+  // 6. Generate docs/categories/{tag}.md for each populated tag — frontmatter-only (dynamic CategoryView)
   for (const [tag, tagTemplates] of sortedTags) {
     const slug = tagSlug(tag);
-    const sorted = [...tagTemplates].sort((a, b) =>
-      (a.name || a.id).localeCompare(b.name || b.id)
-    );
 
     let page = `---
+layout: category
+category: ${tag}
 title: "${tag}"
-description: ${sorted.length} templates tagged with "${tag}"
+description: "${tagTemplates.length} templates tagged with \\"${tag}\\""
 ---
-
-# ${tag}
-
-${sorted.length} templates.
-
-<div class="template-grid">
 `;
-
-    for (const t of sorted) {
-      const name = escapeHtml(t.name || t.id);
-      const desc = escapeHtml(t.description || '');
-      const badges = (t.tags || []).map(badgeHtml).join(' ');
-      page += `
-<div class="template-card">
-
-### [${name}](/templates/${t.id})
-
-${desc}
-
-${badges}
-
-</div>
-`;
-    }
-
-    page += `</div>\n`;
     fs.writeFileSync(path.join(CATEGORIES_DIR, `${slug}.md`), page, 'utf-8');
   }
-  console.log(`Wrote ${sortedTags.length} category pages`);
+  console.log(`Wrote ${sortedTags.length} category pages (frontmatter-only)`);
 
   // 8. Generate docs/templates/{id}.md for each template — custom layout detail page
   for (const t of templates) {

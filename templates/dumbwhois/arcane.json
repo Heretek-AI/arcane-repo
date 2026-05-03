@@ -1,7 +1,7 @@
 {
   "id": "dumbwhois",
   "name": "Dumbwhois",
-  "description": "Self-hosted Dumbwhois deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Dumbwhois deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

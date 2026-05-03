@@ -1,7 +1,7 @@
 {
   "id": "cloudreve",
   "name": "Cloudreve",
-  "description": "Self-hosted Cloudreve deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Cloudreve deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "docmost",
   "name": "Docmost",
-  "description": "Self-hosted Docmost deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Docmost deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

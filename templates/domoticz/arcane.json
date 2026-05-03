@@ -1,7 +1,7 @@
 {
   "id": "domoticz",
   "name": "Domoticz",
-  "description": "Self-hosted Domoticz deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Domoticz deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

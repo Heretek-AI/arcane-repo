@@ -1,7 +1,7 @@
 {
   "id": "cops",
   "name": "Cops",
-  "description": "Self-hosted Cops deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Cops deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

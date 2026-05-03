@@ -1,7 +1,7 @@
 {
   "id": "dittofeed",
   "name": "Dittofeed",
-  "description": "Self-hosted Dittofeed deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Dittofeed deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

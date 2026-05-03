@@ -1,7 +1,7 @@
 {
   "id": "cypht",
   "name": "Cypht",
-  "description": "Self-hosted Cypht deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Cypht deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

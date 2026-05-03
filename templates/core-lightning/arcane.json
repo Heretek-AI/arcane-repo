@@ -1,7 +1,7 @@
 {
   "id": "core-lightning",
   "name": "Core Lightning",
-  "description": "Self-hosted Core Lightning deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Core Lightning deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

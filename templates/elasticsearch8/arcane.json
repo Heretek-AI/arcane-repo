@@ -1,7 +1,7 @@
 {
   "id": "elasticsearch8",
   "name": "Elasticsearch8",
-  "description": "Self-hosted Elasticsearch8 deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Elasticsearch8 deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

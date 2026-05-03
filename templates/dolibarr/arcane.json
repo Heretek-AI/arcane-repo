@@ -1,7 +1,7 @@
 {
   "id": "dolibarr",
   "name": "Dolibarr",
-  "description": "Self-hosted Dolibarr deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Dolibarr deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

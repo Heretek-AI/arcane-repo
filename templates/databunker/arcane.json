@@ -1,7 +1,7 @@
 {
   "id": "databunker",
   "name": "Databunker",
-  "description": "Self-hosted Databunker deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Databunker deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

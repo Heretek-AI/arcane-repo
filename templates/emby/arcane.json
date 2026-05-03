@@ -1,7 +1,7 @@
 {
   "id": "emby",
   "name": "Emby",
-  "description": "Self-hosted Emby deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Emby deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "fedimintd",
   "name": "Fedimintd",
-  "description": "Self-hosted Fedimintd deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Fedimintd deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "copyparty",
   "name": "Copyparty",
-  "description": "Self-hosted Copyparty deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Copyparty deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

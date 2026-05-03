@@ -1,7 +1,7 @@
 {
   "id": "electrumx",
   "name": "Electrumx",
-  "description": "Self-hosted Electrumx deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Electrumx deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

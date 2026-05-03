@@ -1,7 +1,7 @@
 {
   "id": "commandbox",
   "name": "Commandbox",
-  "description": "Self-hosted Commandbox deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Commandbox deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

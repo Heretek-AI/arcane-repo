@@ -1,13 +1,16 @@
-# commafeed -- Self-Hosted Application
+# Commafeed
 
-commafeed is a self-hosted application available through the Yunohost catalog.
+Self-hosted Commafeed deployment via Docker
+
+This template provides a containerized deployment of [Commafeed](https://github.com/athou/commafeed) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ commafeed is a self-hosted application available through the Yunohost catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `commafeed` | ghcr.io/athou/commafeed:latest | Main application service |
+| `commafeed_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `COMMAFEED_PORT` | `8080` | Host port for the service |
+| `COMMAFEED_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `commafeed` | `ghcr.io/athou/commafeed:latest` | 8080 | commafeed application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f commafeed
+docker compose logs commafeed
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `COMMAFEED_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec commafeed ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect commafeed --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v commafeed_data:/data -v $(pwd):/backup alpine tar czf /backup/commafeed-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull commafeed
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v commafeed_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/commafeed-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Yunohost catalog entry: `commafeed`
+## Links
+
+- **Project Homepage:** [Commafeed](https://github.com/athou/commafeed)
+- **Docker Image:** `ghcr.io/athou/commafeed:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/athou/commafeed/wiki)
+- **Issues:** [GitHub Issues](https://github.com/athou/commafeed/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

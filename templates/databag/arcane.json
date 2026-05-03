@@ -1,7 +1,7 @@
 {
   "id": "databag",
   "name": "Databag",
-  "description": "Self-hosted Databag deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Databag deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

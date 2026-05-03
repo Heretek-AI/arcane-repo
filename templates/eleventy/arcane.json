@@ -1,7 +1,7 @@
 {
   "id": "eleventy",
   "name": "Eleventy",
-  "description": "Self-hosted Eleventy deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Eleventy deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "docker-mailserver",
   "name": "Docker Mailserver",
-  "description": "Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Docker Mailserver deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

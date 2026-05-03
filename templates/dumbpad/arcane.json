@@ -1,7 +1,7 @@
 {
   "id": "dumbpad",
   "name": "Dumbpad",
-  "description": "Self-hosted Dumbpad deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Dumbpad deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

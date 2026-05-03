@@ -1,13 +1,16 @@
-# directorylister -- Self-Hosted Application
+# Directorylister
 
-directorylister is a self-hosted application available through the YunoHost catalog.
+Self-hosted Directorylister deployment via Docker
+
+This template provides a containerized deployment of [Directorylister](https://github.com/directorylister/directorylister) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ directorylister is a self-hosted application available through the YunoHost cata
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `directorylister` | docker.io/directorylister/directorylister:latest | Main application service |
+| `directorylister_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `DIRECTORYLISTER_PORT` | `8080` | Host port for the service |
+| `DIRECTORYLISTER_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `directorylister` | `docker.io/directorylister/directorylister:latest` | 8080 | directorylister application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f directorylister
+docker compose logs directorylister
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `DIRECTORYLISTER_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec directorylister ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect directorylister --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v directorylister_data:/data -v $(pwd):/backup alpine tar czf /backup/directorylister-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull directorylister
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v directorylister_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/directorylister-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- YunoHost catalog entry: `directorylister`
+## Links
+
+- **Project Homepage:** [Directorylister](https://github.com/directorylister/directorylister)
+- **Docker Image:** `docker.io/directorylister/directorylister:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/directorylister/directorylister/wiki)
+- **Issues:** [GitHub Issues](https://github.com/directorylister/directorylister/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

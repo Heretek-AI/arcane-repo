@@ -1,7 +1,7 @@
 {
   "id": "dumbkan",
   "name": "Dumbkan",
-  "description": "Self-hosted Dumbkan deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Dumbkan deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

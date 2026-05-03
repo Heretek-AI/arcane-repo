@@ -1,7 +1,7 @@
 {
   "id": "clamav",
   "name": "Clamav",
-  "description": "Self-hosted Clamav deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Clamav deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

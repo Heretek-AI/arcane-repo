@@ -67,11 +67,11 @@ HEALTHCHECK_PATTERNS: dict[str, dict[str, Any]] = {
 
 # Patterns for "sourced from" descriptions
 SOURCED_FROM_PATTERNS = [
-    r"\s*[—–-]\s*sourced from\s+\w+\s+catalog",
-    r",?\s*sourced from\s+\w+\s+catalog",
-    r"\s*via Docker\s*[—–-]?\s*sourced from\s+\w+\s+catalog",
-    r"Self-hosted\s+\w+\s+deployment via Docker,?\s*sourced from\s+\w+\s+catalog",
-    r"Self-hosted\s+\w+\s+deployment via Docker\s*[—–-]\s*sourced from\s+\w+\s+catalog",
+    r"\s*[—–-]\s*sourced from\s+[\w-]+\s+catalog",
+    r",?\s*sourced from\s+[\w-]+\s+catalog",
+    r"\s*via Docker\s*[—–-]?\s*sourced from\s+[\w-]+\s+catalog",
+    r"Self-hosted\s+[\w-]+\s+deployment via Docker,?\s*sourced from\s+[\w-]+\s+catalog",
+    r"Self-hosted\s+[\w-]+\s+deployment via Docker\s*[—–-]\s*sourced from\s+[\w-]+\s+catalog",
 ]
 
 

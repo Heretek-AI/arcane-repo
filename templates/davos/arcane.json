@@ -1,7 +1,7 @@
 {
   "id": "davos",
   "name": "Davos",
-  "description": "Self-hosted Davos deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Davos deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

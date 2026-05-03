@@ -1,7 +1,7 @@
 {
   "id": "espocrm",
   "name": "Espocrm",
-  "description": "Self-hosted Espocrm deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Espocrm deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

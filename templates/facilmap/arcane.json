@@ -1,7 +1,7 @@
 {
   "id": "facilmap",
   "name": "Facilmap",
-  "description": "Self-hosted Facilmap deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Facilmap deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

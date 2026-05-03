@@ -1,7 +1,7 @@
 {
   "id": "enclosed",
   "name": "Enclosed",
-  "description": "Self-hosted Enclosed deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Enclosed deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

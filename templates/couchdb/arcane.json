@@ -1,7 +1,7 @@
 {
   "id": "couchdb",
   "name": "Couchdb",
-  "description": "Self-hosted Couchdb deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Couchdb deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

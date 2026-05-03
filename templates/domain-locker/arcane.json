@@ -1,7 +1,7 @@
 {
   "id": "domain-locker",
   "name": "Domain Locker",
-  "description": "Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Domain Locker deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

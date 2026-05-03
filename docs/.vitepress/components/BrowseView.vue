@@ -31,16 +31,19 @@ function toggleCompare(id: string) {
     next.add(id)
   }
   selectedForCompare.value = next
+  pushFiltersToURL()
 }
 
 function removeCompare(id: string) {
   const next = new Set(selectedForCompare.value)
   next.delete(id)
   selectedForCompare.value = next
+  pushFiltersToURL()
 }
 
 function clearCompare() {
   selectedForCompare.value = new Set()
+  pushFiltersToURL()
 }
 
 // ── Filter state ──────────────────────────────────────
@@ -110,6 +113,15 @@ function readFiltersFromURL() {
     : []
   sortBy.value = (q.sort as string) || 'name-asc'
   currentPage.value = q.page ? parseInt(q.page as string, 10) || 1 : 1
+
+  // Read compare param — validate IDs against known templates, enforce max 3
+  const compareParam = q.compare as string | undefined
+  if (compareParam) {
+    const ids = compareParam.split(',').filter(id => templateMap.has(id))
+    selectedForCompare.value = new Set(ids.slice(0, 3))
+  } else {
+    selectedForCompare.value = new Set()
+  }
 }
 
 function pushFiltersToURL(pageOverride?: number) {
@@ -117,6 +129,7 @@ function pushFiltersToURL(pageOverride?: number) {
   if (searchQuery.value.trim()) query.q = searchQuery.value.trim()
   if (selectedTags.value.length > 0) query.tags = selectedTags.value.join(',')
   if (sortBy.value !== 'name-asc') query.sort = sortBy.value
+  if (selectedForCompare.value.size > 0) query.compare = [...selectedForCompare.value].join(',')
   const p = pageOverride ?? currentPage.value
   if (p > 1) query.page = String(p)
 

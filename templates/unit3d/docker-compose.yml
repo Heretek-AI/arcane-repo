@@ -1,0 +1,130 @@
+version: "3.8"
+
+# UNIT3D — self-hosted private torrent tracker
+# Core services (4): unit3d (app), mysql, redis, meilisearch
+# Built from custom Dockerfile; image hosted on GHCR
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  # ── MySQL ────────────────────────────────────────────────────────────
+  mysql:
+    image: mysql:8
+    container_name: unit3d-mysql
+    hostname: mysql
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:?err}
+      - MYSQL_DATABASE=${DB_DATABASE:-unit3d}
+      - MYSQL_USER=${DB_USERNAME:-unit3d}
+      - MYSQL_PASSWORD=${DB_PASSWORD:?err}
+    volumes:
+      - unit3d_mysql_data:/var/lib/mysql
+    networks:
+      - unit3d-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:?err}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── Redis ────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: unit3d-redis
+    hostname: redis
+    restart: unless-stopped
+    logging: *default-logging
+    command: redis-server --save 60 1 --loglevel warning
+    volumes:
+      - unit3d_redis_data:/data
+    networks:
+      - unit3d-net
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli PING | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  # ── Meilisearch ──────────────────────────────────────────────────────
+  meilisearch:
+    image: getmeili/meilisearch:v1.12
+    container_name: unit3d-meilisearch
+    hostname: meilisearch
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      - MEILI_MASTER_KEY=${MEILISEARCH_KEY:-unit3d-meili-master-key}
+      - MEILI_ENV=production
+    volumes:
+      - unit3d_meilisearch_data:/meili_data
+    networks:
+      - unit3d-net
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:7700/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  # ── UNIT3D (app) ─────────────────────────────────────────────────────
+  unit3d:
+    image: ghcr.io/heretek-ai/arcane-repo/unit3d:latest
+    container_name: unit3d-app
+    hostname: unit3d
+    restart: unless-stopped
+    logging: *default-logging
+    ports:
+      - "${UNIT3D_PORT:-80}:8000"
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - APP_KEY=${APP_KEY:?APP_KEY is required}
+      - APP_URL=${APP_URL:-http://localhost}
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=${DB_DATABASE:-unit3d}
+      - DB_USERNAME=${DB_USERNAME:-unit3d}
+      - DB_PASSWORD=${DB_PASSWORD:?err}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CACHE_STORE=redis
+      - SESSION_DRIVER=redis
+      - QUEUE_CONNECTION=redis
+      - MEILISEARCH_HOST=http://meilisearch:7700
+      - MEILISEARCH_KEY=${MEILISEARCH_KEY:-unit3d-meili-master-key}
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      meilisearch:
+        condition: service_healthy
+    networks:
+      - unit3d-net
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8000/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+networks:
+  unit3d-net:
+    driver: bridge
+
+volumes:
+  unit3d_mysql_data:
+    driver: local
+  unit3d_redis_data:
+    driver: local
+  unit3d_meilisearch_data:
+    driver: local

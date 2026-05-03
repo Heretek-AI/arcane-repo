@@ -1,0 +1,12 @@
+{
+  "id": "unit3d",
+  "name": "UNIT3D",
+  "description": "Self-hosted private torrent tracker built with Laravel, Livewire, and AlpineJS",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "multi-service",
+    "custom-build",
+    "media"
+  ]
+}

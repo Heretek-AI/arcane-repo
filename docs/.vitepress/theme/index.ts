@@ -7,6 +7,7 @@ import TemplateGrid from '../components/TemplateGrid.vue'
 import BrowseView from '../components/BrowseView.vue'
 import CategoryView from '../components/CategoryView.vue'
 import CompareBar from '../components/CompareBar.vue'
+import CompareView from '../components/CompareView.vue'
 import './custom.css'
 
 export default {
@@ -32,6 +33,10 @@ export default {
 
     if (frontmatter.value.layout === 'category') {
       return h(CategoryView, { category: frontmatter.value.category })
+    }
+
+    if (frontmatter.value.layout === 'compare') {
+      return h(CompareView)
     }
 
     return h(DefaultTheme.Layout)

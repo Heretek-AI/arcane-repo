@@ -12,6 +12,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Browse', link: '/browse' },
+      { text: 'Compare', link: '/compare' },
       { text: 'All Templates', link: '/templates/' },
       { text: 'GitHub', link: 'https://github.com/Heretek-AI/arcane-repo' }
     ],

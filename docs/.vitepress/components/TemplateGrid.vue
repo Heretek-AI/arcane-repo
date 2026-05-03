@@ -6,17 +6,28 @@ const props = withDefaults(
   defineProps<{
     templates: TemplateData[]
     pageSize?: number
+    initialPage?: number
   }>(),
-  { pageSize: 24 }
+  { pageSize: 24, initialPage: 1 }
 )
 
-const currentPage = ref(1)
+const emit = defineEmits<{
+  'update:currentPage': [page: number]
+}>()
 
-// Reset to page 1 when the filtered list changes
+const currentPage = ref(props.initialPage)
+
+// Reset to page 1 when the filtered list changes (but not on first mount)
+const isFirstWatch = ref(true)
 watch(
   () => props.templates,
   () => {
+    if (isFirstWatch.value) {
+      isFirstWatch.value = false
+      return
+    }
     currentPage.value = 1
+    emit('update:currentPage', 1)
   }
 )
 
@@ -59,6 +70,7 @@ const visiblePages = computed(() => {
 function goToPage(page: number) {
   if (page >= 1 && page <= totalPages.value) {
     currentPage.value = page
+    emit('update:currentPage', page)
   }
 }
 </script>

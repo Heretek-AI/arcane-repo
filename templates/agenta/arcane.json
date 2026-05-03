@@ -1,7 +1,7 @@
 {
   "id": "agenta",
   "name": "Agenta",
-  "description": "Self-hosted Agenta deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Agenta deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "baserow",
   "name": "Baserow",
-  "description": "Self-hosted Baserow deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted Baserow deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

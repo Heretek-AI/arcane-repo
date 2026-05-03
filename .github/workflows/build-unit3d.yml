@@ -1,0 +1,22 @@
+name: Build UNIT3D
+
+on:
+  push:
+    paths:
+      - 'scripts/dockerfiles/unit3d/**'
+      - 'templates/unit3d/**'
+      - '.github/workflows/build-unit3d.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-custom.yml
+    with:
+      template-name: unit3d
+    secrets: inherit

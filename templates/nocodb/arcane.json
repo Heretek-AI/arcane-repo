@@ -1,7 +1,7 @@
 {
   "id": "nocodb",
   "name": "Nocodb",
-  "description": "Self-hosted Nocodb deployment via Docker, sourced from Portainer catalog",
+  "description": "Open-source Airtable alternative — create spreadsheets, forms, kanban boards, and galleries with a no-code interface",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

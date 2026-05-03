@@ -35,6 +35,12 @@ services:
       # DB_POSTGRESDB_PORT=5432
       # DB_POSTGRESDB_USER=n8n
       # DB_POSTGRESDB_PASSWORD=your-password
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:5678/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
 
 volumes:
   n8n_data:

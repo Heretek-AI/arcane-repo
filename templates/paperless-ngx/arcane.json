@@ -1,7 +1,7 @@
 {
   "id": "paperless-ngx",
   "name": "Paperless Ngx",
-  "description": "Self-hosted Paperless Ngx deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted document management system that scans, indexes, and archives paper documents with full-text search",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

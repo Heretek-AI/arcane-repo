@@ -1,7 +1,7 @@
 {
   "id": "adguardhome",
   "name": "Adguardhome",
-  "description": "Self-hosted Adguardhome deployment via Docker, sourced from Yunohost catalog",
+  "description": "Network-wide DNS ad blocker with parental control, safe browsing, and detailed query logging",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

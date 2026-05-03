@@ -1,175 +1,195 @@
-# n8n — Fair-Code Workflow Automation
+# n8n
 
-[n8n](https://n8n.io) is a fair-code workflow automation platform that lets you connect apps, APIs, and services with a drag-and-drop visual editor. With over 400 integrations, built-in AI agent capabilities, and full code mode for custom logic, it serves as a powerful automation backbone for everything from simple data pipelines to complex multi-step workflows.
+Fair-code workflow automation platform — connect apps, APIs, and services with drag-and-drop logic, 400+ integrations, and customizable AI agents.
+
+## Project Overview
+
+[n8n](https://github.com/n8n-io/n8n) is a self-hostable workflow automation tool that lets you build complex integrations between apps, APIs, and services using a visual node-based editor. It ships with 400+ pre-built integrations (Slack, GitHub, Google Sheets, Postgres, OpenAI, and many more) and supports custom code nodes when you need to go beyond the built-in options.
+
+**Who it's for:**
+
+- Developers and teams who want to automate repetitive tasks without writing glue code
+- Organizations that need self-hosted automation for data residency or compliance reasons
+- Anyone building AI agent workflows — n8n has first-class support for LLM chains, tool calling, and memory
+
+**Key capabilities:**
+
+- Visual drag-and-drop workflow editor with 400+ integrations
+- Webhook triggers for real-time event-driven automation
+- Cron-based scheduling for periodic tasks
+- AI agent nodes for LLM-powered workflows with tool use
+- Custom JavaScript/Python code nodes for edge cases
+- Execution history with full debugging and retry
+
+## Architecture
+
+### Services
+
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `n8n` | `n8nio/n8n:latest` | Workflow automation engine — web UI, API, webhook listener, and execution runtime |
+
+### Volumes
+
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `n8n_data` | `/home/node/.n8n` | Persists workflows, credentials, execution history, and configuration across container restarts |
+
+### Health Check
+
+The container runs a health check against `/healthz` every 30 seconds (3 retries, 30s start period). Docker will report the container as unhealthy if the endpoint fails consistently.
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect n8n to other services (databases, Redis, internal APIs), attach it to a shared Docker network.
 
 ## Quick Start
 
-1. **Set the encryption key (mandatory — see warning below):**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env and set N8N_ENCRYPTION_KEY to a strong random value
-   ```
-
-2. **Start n8n:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-3. **Open the editor:**
-
-   Visit [http://localhost:5678](http://localhost:5678) in your browser.
-
-## ⚠️  Encryption Key — Critical
-
-n8n encrypts all stored credentials using `N8N_ENCRYPTION_KEY`. This includes database connections, API keys, OAuth tokens, and any other secrets saved through the n8n editor.
-
-**If `N8N_ENCRYPTION_KEY` changes after credentials have been saved, they become permanently unrecoverable.** There is no recovery mechanism.
+### 1. Generate an encryption key
 
 ```bash
-# Generate a strong key before first run:
 openssl rand -hex 32
 ```
 
-Set `N8N_ENCRYPTION_KEY` to a fixed, strong value in your `.env` file and **never change it** for the same n8n instance.
+This key encrypts all credentials stored inside n8n. **You must set it before the first run and never change it afterward** — changing it makes all saved credentials permanently unrecoverable.
 
-## Configuration
-
-### Environment Variables
-
-| Variable                      | Default                     | Description                                            |
-|-------------------------------|-----------------------------|--------------------------------------------------------|
-| `N8N_ENCRYPTION_KEY`          | *(required, no default)*    | Key for credential encryption — set to a strong value  |
-| `N8N_PORT`                    | `5678`                      | Host port for the n8n web UI and API                   |
-| `N8N_PROTOCOL`                | `http`                      | Protocol for webhook URLs (`http` or `https`)          |
-| `N8N_HOST`                    | `localhost`                 | Public hostname where n8n is reachable                 |
-| `N8N_WEBHOOK_URL`             | *(empty)*                   | Full webhook URL override (overrides protocol + host)  |
-| `N8N_BASIC_AUTH_ACTIVE`       | `false`                     | Enable basic auth for the editor                       |
-| `N8N_BASIC_AUTH_USER`         | *(empty)*                   | Basic auth username                                    |
-| `N8N_BASIC_AUTH_PASSWORD`     | *(empty)*                   | Basic auth password                                    |
-
-### Webhook Configuration
-
-For n8n to receive incoming webhooks from external services (GitHub, Stripe, Slack, etc.), n8n must be reachable from the internet.
-
-**With a public domain and reverse proxy (recommended):**
+### 2. Configure environment
 
 ```bash
-N8N_PROTOCOL=https
-N8N_HOST=n8n.example.com
-N8N_WEBHOOK_URL=https://n8n.example.com/
+cp .env.example .env
 ```
 
-**Behind ngrok for testing:**
+Edit `.env` and paste your generated encryption key:
+
+```
+N8N_ENCRYPTION_KEY=<your-generated-key>
+```
+
+### 3. Start the service
 
 ```bash
-N8N_WEBHOOK_URL=https://your-ngrok-subdomain.ngrok.io/
-```
-
-**Local-only development:**
-
-Webhooks work on `localhost` for testing but external services cannot reach them. Use a tool like [ngrok](https://ngrok.com) or [bore](https://github.com/ekzhang/bore) to expose localhost during development.
-
-### External Database (Optional)
-
-By default, n8n stores data in a SQLite database inside the container volume (`n8n_data`). For production, you can switch to PostgreSQL for better performance, reliability, and external backups.
-
-Uncomment the `DB_TYPE` and `DB_POSTGRESDB_*` variables in `docker-compose.yml` and add a PostgreSQL service:
-
-```yaml
-services:
-  n8n:
-    # ... existing config ...
-    environment:
-      - DB_TYPE=postgresdb
-      - DB_POSTGRESDB_DATABASE=n8n
-      - DB_POSTGRESDB_HOST=postgres
-      - DB_POSTGRESDB_PORT=5432
-      - DB_POSTGRESDB_USER=n8n
-      - DB_POSTGRESDB_PASSWORD=your-password
-
-  postgres:
-    image: postgres:16-alpine
-    container_name: n8n-postgres
-    restart: unless-stopped
-    environment:
-      - POSTGRES_USER=n8n
-      - POSTGRES_PASSWORD=your-password
-      - POSTGRES_DB=n8n
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  n8n_data:
-  postgres_data:
-```
-
-## Basic Authentication
-
-To protect the n8n editor with a username and password:
-
-```bash
-N8N_BASIC_AUTH_ACTIVE=true
-N8N_BASIC_AUTH_USER=admin
-N8N_BASIC_AUTH_PASSWORD=your-secure-password
-```
-
-After enabling, restart the container:
-
-```bash
-docker compose restart n8n
-```
-
-## Managing n8n
-
-**View logs:**
-
-```bash
-docker compose logs -f n8n
-```
-
-**Restart after configuration changes:**
-
-```bash
-docker compose restart n8n
-```
-
-**Upgrade to the latest version:**
-
-```bash
-docker compose pull n8n
 docker compose up -d
 ```
 
-**Export all workflows (JSON backup):**
+### 4. Access n8n
 
-```bash
-# Install n8n CLI inside the container
-docker compose exec n8n npx n8n export:workflow --all --output=/home/node/.n8n/backups
+Open [http://localhost:5678](http://localhost:5678) in your browser. On first visit you'll be prompted to create an owner account.
+
+## Configuration Reference
+
+### Environment Variables
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `N8N_ENCRYPTION_KEY` | **Yes** | — | Hex string used to encrypt stored credentials. Generate with `openssl rand -hex 32`. **Never change after first run.** |
+| `N8N_PORT` | No | `5678` | Port the web UI and API are exposed on from the host |
+| `N8N_PROTOCOL` | No | `http` | Protocol for webhook URLs. Set to `https` if behind a reverse proxy with TLS. |
+| `N8N_HOST` | No | `localhost` | Public hostname or IP where n8n is reachable. Critical for incoming webhooks — external services need a routable URL. |
+| `N8N_WEBHOOK_URL` | No | — | Full webhook URL override (e.g. `https://n8n.example.com/`). Takes precedence over `N8N_PROTOCOL` + `N8N_HOST` when set. |
+| `N8N_BASIC_AUTH_ACTIVE` | No | `false` | Set to `true` to enable basic auth on the n8n editor |
+| `N8N_BASIC_AUTH_USER` | No | — | Username for basic auth (only used when `N8N_BASIC_AUTH_ACTIVE=true`) |
+| `N8N_BASIC_AUTH_PASSWORD` | No | — | Password for basic auth (only used when `N8N_BASIC_AUTH_ACTIVE=true`) |
+
+### External PostgreSQL Database (Optional)
+
+By default, n8n uses an internal SQLite database stored in the `n8n_data` volume. For production workloads or higher reliability, you can switch to PostgreSQL by uncommenting these variables in `docker-compose.yml`:
+
+```
+DB_TYPE=postgresdb
+DB_POSTGRESDB_DATABASE=n8n
+DB_POSTGRESDB_HOST=postgres
+DB_POSTGRESDB_PORT=5432
+DB_POSTGRESDB_USER=n8n
+DB_POSTGRESDB_PASSWORD=your-password
 ```
 
-## API Endpoints
+When using an external database, make sure the database exists and the user has full access before starting n8n.
 
-n8n exposes a comprehensive REST API on port 5678:
+## Troubleshooting
 
-| Endpoint                     | Method | Description                      |
-|------------------------------|--------|----------------------------------|
-| `/webhook/:id`               | ANY    | Incoming webhook endpoint        |
-| `/webhook-test/:id`          | ANY    | Webhook test endpoint            |
-| `/webhook-waiting/:id`       | ANY    | Manual webhook trigger           |
-| `/rest/workflows`            | GET    | List all workflows               |
-| `/rest/workflows/:id`        | GET    | Get a specific workflow          |
-| `/rest/executions`           | GET    | List execution history           |
-| `/rest/credentials`          | GET    | List stored credentials          |
-| `/health`                    | GET    | Health check                     |
+### n8n starts but webhooks don't trigger
 
-Full API reference: [docs.n8n.io/api](https://docs.n8n.io/api/)
+**Cause:** External services can't reach n8n because `N8N_HOST` is set to `localhost`.
 
-## Health Check
+**Fix:** Set `N8N_HOST` to the public IP or domain name where n8n is reachable. If behind a reverse proxy, also set `N8N_PROTOCOL=https` and optionally `N8N_WEBHOOK_URL` to the full public URL.
+
+### Credentials lost after container restart
+
+**Cause:** The `n8n_data` volume wasn't persisted or was accidentally removed.
+
+**Fix:** Ensure the `n8n_data` named volume exists (`docker volume ls | grep n8n_data`). Don't run `docker compose down -v` unless you intend to wipe all data.
+
+### "Encryption key" error on startup
+
+**Cause:** `N8N_ENCRYPTION_KEY` is missing or empty.
+
+**Fix:** Set a valid 64-character hex string in `.env`. Generate one with `openssl rand -hex 32`.
+
+### Credentials become unreadable after changing the encryption key
+
+**Cause:** `N8N_ENCRYPTION_KEY` was changed after credentials were saved. This is **not recoverable**.
+
+**Fix:** There is no fix — you must re-create all credentials in n8n. This is why you should set the key once and never change it.
+
+### Health check shows unhealthy
+
+**Cause:** n8n is slow to start (especially on first run or low-resource hosts).
+
+**Fix:** The health check has a 30-second start period. If n8n needs more time, increase `start_period` in `docker-compose.yml`. Check logs with `docker logs n8n` for startup errors.
+
+### Port already in use
+
+**Cause:** Another service is bound to port 5678.
+
+**Fix:** Change `N8N_PORT` in `.env` to an available port (e.g. `5679`), then `docker compose up -d`.
+
+## Backup & Recovery
+
+### Backup
+
+n8n stores all data (workflows, credentials, execution history) in the `n8n_data` volume at `/home/node/.n8n`.
+
+**Stop n8n first** to ensure data consistency, then back up the volume:
 
 ```bash
-curl http://localhost:5678/health
+docker compose down
+
+# Option A: Copy the volume contents
+docker run --rm -v n8n_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/n8n-backup-$(date +%Y%m%d).tar.gz -C /data .
+
+docker compose up -d
 ```
 
-A healthy n8n instance returns `{"status":"ok","startedAt":"..."}`.
+**For zero-downtime backups**, use `docker volume` with a snapshot-capable storage driver, or back up the external PostgreSQL database if you've configured one.
+
+### Recovery
+
+```bash
+docker compose down
+
+# Restore from backup
+docker run --rm -v n8n_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/n8n-backup-YYYYMMDD.tar.gz -C /data
+
+docker compose up -d
+```
+
+**Important:** The backup and restore must use the same `N8N_ENCRYPTION_KEY`. If you lose the key, the restored credentials will be unreadable.
+
+### Automated Backups
+
+For scheduled backups, add a cron job:
+
+```bash
+# Back up n8n data every night at 2 AM
+0 2 * * * docker stop n8n && docker run --rm -v n8n_data:/data -v /backups:/backup alpine tar czf /backup/n8n-$(date +\%Y\%m\%d).tar.gz -C /data . && docker start n8n
+```
+
+## Links
+
+- **Original Project:** [https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n)
+- **Documentation:** [https://docs.n8n.io](https://docs.n8n.io)
+- **Community Forum:** [https://community.n8n.io](https://community.n8n.io)
+- **Docker Hub:** [https://hub.docker.com/r/n8nio/n8n](https://hub.docker.com/r/n8nio/n8n)
+- **Integration List:** [https://n8n.io/integrations](https://n8n.io/integrations)

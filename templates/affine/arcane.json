@@ -1,7 +1,7 @@
 {
   "id": "affine",
   "name": "Affine",
-  "description": "Self-hosted Affine deployment via Docker, sourced from Umbrel catalog",
+  "description": "Open-source knowledge base and document workspace with real-time collaboration, whiteboards, and markdown support",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

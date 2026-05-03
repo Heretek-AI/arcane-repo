@@ -1,7 +1,7 @@
 {
   "id": "stirling-pdf",
   "name": "Stirling Pdf",
-  "description": "Self-hosted Stirling Pdf deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted PDF manipulation toolkit for merging, splitting, converting, OCR, and watermarking documents",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

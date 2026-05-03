@@ -1,7 +1,7 @@
 {
   "id": "uptime-kuma",
   "name": "Uptime Kuma",
-  "description": "Self-hosted Uptime Kuma deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted monitoring tool for tracking uptime of websites, APIs, databases, and services with alerting",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

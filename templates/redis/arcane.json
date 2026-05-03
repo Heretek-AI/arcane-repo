@@ -1,7 +1,7 @@
 {
   "id": "redis",
   "name": "Redis",
-  "description": "Self-hosted Redis deployment via Docker, sourced from Portainer catalog",
+  "description": "In-memory data store used as a database, cache, message broker, and streaming engine for high-performance applications",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

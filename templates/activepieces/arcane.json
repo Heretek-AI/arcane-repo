@@ -1,7 +1,7 @@
 {
   "id": "activepieces",
   "name": "Activepieces",
-  "description": "Self-hosted Activepieces deployment via Docker, sourced from Portainer catalog",
+  "description": "Open-source workflow automation platform with 400+ app integrations, visual drag-and-drop editor, and AI agent capabilities",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

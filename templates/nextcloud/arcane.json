@@ -1,7 +1,7 @@
 {
   "id": "nextcloud",
   "name": "Nextcloud",
-  "description": "Self-hosted Nextcloud deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted content collaboration platform with file sync, calendar, contacts, and extensive app ecosystem",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

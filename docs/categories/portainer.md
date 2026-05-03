@@ -13,7 +13,7 @@ description: 227 templates tagged with "portainer"
 
 ### [Activepieces](/templates/activepieces)
 
-Self-hosted Activepieces deployment via Docker, sourced from Portainer catalog
+Open-source workflow automation platform with 400+ app integrations, visual drag-and-drop editor, and AI agent capabilities
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -23,7 +23,7 @@ Self-hosted Activepieces deployment via Docker, sourced from Portainer catalog
 
 ### [Anchor](/templates/anchor)
 
-Self-hosted Anchor deployment via Docker, sourced from Portainer catalog
+Self-hosted Anchor deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -33,7 +33,7 @@ Self-hosted Anchor deployment via Docker, sourced from Portainer catalog
 
 ### [Apprise Api](/templates/apprise-api)
 
-Self-hosted Apprise Api deployment via Docker, sourced from Portainer catalog
+Self-hosted Apprise Api deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -43,7 +43,7 @@ Self-hosted Apprise Api deployment via Docker, sourced from Portainer catalog
 
 ### [Appsmith](/templates/appsmith)
 
-Self-hosted Appsmith deployment via Docker, sourced from Portainer catalog
+Self-hosted Appsmith deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -53,7 +53,7 @@ Self-hosted Appsmith deployment via Docker, sourced from Portainer catalog
 
 ### [Appwrite](/templates/appwrite)
 
-Self-hosted Appwrite deployment via Docker, sourced from Portainer catalog
+Self-hosted Appwrite deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -63,7 +63,7 @@ Self-hosted Appwrite deployment via Docker, sourced from Portainer catalog
 
 ### [Arcane](/templates/arcane)
 
-Self-hosted Arcane deployment via Docker, sourced from Portainer catalog
+Self-hosted Arcane deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -73,7 +73,7 @@ Self-hosted Arcane deployment via Docker, sourced from Portainer catalog
 
 ### [Archisteamfarm](/templates/archisteamfarm)
 
-Self-hosted Archisteamfarm deployment via Docker, sourced from Portainer catalog
+Self-hosted Archisteamfarm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -83,7 +83,7 @@ Self-hosted Archisteamfarm deployment via Docker, sourced from Portainer catalog
 
 ### [Archivebox](/templates/archivebox)
 
-Self-hosted Archivebox deployment via Docker, sourced from Portainer catalog
+Self-hosted Archivebox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -93,7 +93,7 @@ Self-hosted Archivebox deployment via Docker, sourced from Portainer catalog
 
 ### [Ariang](/templates/ariang)
 
-Self-hosted Ariang deployment via Docker, sourced from Portainer catalog
+Self-hosted Ariang deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -103,7 +103,7 @@ Self-hosted Ariang deployment via Docker, sourced from Portainer catalog
 
 ### [Audiobookshelf](/templates/audiobookshelf)
 
-Self-hosted Audiobookshelf deployment via Docker, sourced from Portainer catalog
+Self-hosted Audiobookshelf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -113,7 +113,7 @@ Self-hosted Audiobookshelf deployment via Docker, sourced from Portainer catalog
 
 ### [Aurral](/templates/aurral)
 
-Self-hosted Aurral deployment via Docker, sourced from Portainer catalog
+Self-hosted Aurral deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -123,7 +123,7 @@ Self-hosted Aurral deployment via Docker, sourced from Portainer catalog
 
 ### [Authelia](/templates/authelia)
 
-Self-hosted Authelia deployment via Docker, sourced from Portainer catalog
+Self-hosted Authelia deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -133,7 +133,7 @@ Self-hosted Authelia deployment via Docker, sourced from Portainer catalog
 
 ### [Authentik](/templates/authentik)
 
-Self-hosted Authentik deployment via Docker, sourced from Portainer catalog
+Self-hosted Authentik deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -143,7 +143,7 @@ Self-hosted Authentik deployment via Docker, sourced from Portainer catalog
 
 ### [Autobrr](/templates/autobrr)
 
-Self-hosted Autobrr deployment via Docker, sourced from Portainer catalog
+Self-hosted Autobrr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -153,7 +153,7 @@ Self-hosted Autobrr deployment via Docker, sourced from Portainer catalog
 
 ### [Baikal](/templates/baikal)
 
-Self-hosted Baikal deployment via Docker, sourced from Portainer catalog
+Self-hosted Baikal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -163,7 +163,7 @@ Self-hosted Baikal deployment via Docker, sourced from Portainer catalog
 
 ### [Beets](/templates/beets)
 
-Self-hosted Beets deployment via Docker, sourced from Portainer catalog
+Self-hosted Beets deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -173,7 +173,7 @@ Self-hosted Beets deployment via Docker, sourced from Portainer catalog
 
 ### [Beszel](/templates/beszel)
 
-Self-hosted Beszel deployment via Docker, sourced from Portainer catalog
+Self-hosted Beszel deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -183,7 +183,7 @@ Self-hosted Beszel deployment via Docker, sourced from Portainer catalog
 
 ### [Blinko](/templates/blinko)
 
-Self-hosted Blinko deployment via Docker, sourced from Portainer catalog
+Self-hosted Blinko deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -193,7 +193,7 @@ Self-hosted Blinko deployment via Docker, sourced from Portainer catalog
 
 ### [Booksonic](/templates/booksonic)
 
-Self-hosted Booksonic deployment via Docker, sourced from Portainer catalog
+Self-hosted Booksonic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -203,7 +203,7 @@ Self-hosted Booksonic deployment via Docker, sourced from Portainer catalog
 
 ### [Budibase](/templates/budibase)
 
-Self-hosted Budibase deployment via Docker, sourced from Portainer catalog
+Self-hosted Budibase deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -213,7 +213,7 @@ Self-hosted Budibase deployment via Docker, sourced from Portainer catalog
 
 ### [Caddy](/templates/caddy)
 
-Self-hosted Caddy deployment via Docker, sourced from Portainer catalog
+Self-hosted Caddy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -223,7 +223,7 @@ Self-hosted Caddy deployment via Docker, sourced from Portainer catalog
 
 ### [Cashpilot](/templates/cashpilot)
 
-Self-hosted Cashpilot deployment via Docker, sourced from Portainer catalog
+Self-hosted Cashpilot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -233,7 +233,7 @@ Self-hosted Cashpilot deployment via Docker, sourced from Portainer catalog
 
 ### [Castopod](/templates/castopod)
 
-Self-hosted Castopod deployment via Docker, sourced from Portainer catalog
+Self-hosted Castopod deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -243,7 +243,7 @@ Self-hosted Castopod deployment via Docker, sourced from Portainer catalog
 
 ### [Changedetection](/templates/changedetection)
 
-Self-hosted Changedetection deployment via Docker, sourced from Portainer catalog
+Self-hosted Changedetection deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -253,7 +253,7 @@ Self-hosted Changedetection deployment via Docker, sourced from Portainer catalo
 
 ### [Checkcle](/templates/checkcle)
 
-Self-hosted Checkcle deployment via Docker, sourced from Portainer catalog
+Self-hosted Checkcle deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -263,7 +263,7 @@ Self-hosted Checkcle deployment via Docker, sourced from Portainer catalog
 
 ### [Checkmate](/templates/checkmate)
 
-Self-hosted Checkmate deployment via Docker, sourced from Portainer catalog
+Self-hosted Checkmate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -273,7 +273,7 @@ Self-hosted Checkmate deployment via Docker, sourced from Portainer catalog
 
 ### [Chevereto](/templates/chevereto)
 
-Self-hosted Chevereto deployment via Docker, sourced from Portainer catalog
+Self-hosted Chevereto deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -283,7 +283,7 @@ Self-hosted Chevereto deployment via Docker, sourced from Portainer catalog
 
 ### [Chibisafe](/templates/chibisafe)
 
-Self-hosted Chibisafe deployment via Docker, sourced from Portainer catalog
+Self-hosted Chibisafe deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -293,7 +293,7 @@ Self-hosted Chibisafe deployment via Docker, sourced from Portainer catalog
 
 ### [Chiefonboarding](/templates/chiefonboarding)
 
-Self-hosted Chiefonboarding deployment via Docker, sourced from Portainer catalog
+Self-hosted Chiefonboarding deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -303,7 +303,7 @@ Self-hosted Chiefonboarding deployment via Docker, sourced from Portainer catalo
 
 ### [Clamav](/templates/clamav)
 
-Self-hosted Clamav deployment via Docker, sourced from Portainer catalog
+Self-hosted Clamav deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -313,7 +313,7 @@ Self-hosted Clamav deployment via Docker, sourced from Portainer catalog
 
 ### [Cloudbeaver](/templates/cloudbeaver)
 
-Self-hosted Cloudbeaver deployment via Docker, sourced from Portainer catalog
+Self-hosted Cloudbeaver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -323,7 +323,7 @@ Self-hosted Cloudbeaver deployment via Docker, sourced from Portainer catalog
 
 ### [Codex](/templates/codex)
 
-Self-hosted Codex deployment via Docker, sourced from Portainer catalog
+Self-hosted Codex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -333,7 +333,7 @@ Self-hosted Codex deployment via Docker, sourced from Portainer catalog
 
 ### [Commandbox](/templates/commandbox)
 
-Self-hosted Commandbox deployment via Docker, sourced from Portainer catalog
+Self-hosted Commandbox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -343,7 +343,7 @@ Self-hosted Commandbox deployment via Docker, sourced from Portainer catalog
 
 ### [Cops](/templates/cops)
 
-Self-hosted Cops deployment via Docker, sourced from Portainer catalog
+Self-hosted Cops deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -353,7 +353,7 @@ Self-hosted Cops deployment via Docker, sourced from Portainer catalog
 
 ### [Cryptpad](/templates/cryptpad)
 
-Self-hosted Cryptpad deployment via Docker, sourced from Portainer catalog
+Self-hosted Cryptpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -363,7 +363,7 @@ Self-hosted Cryptpad deployment via Docker, sourced from Portainer catalog
 
 ### [Daapd](/templates/daapd)
 
-Self-hosted Daapd deployment via Docker, sourced from Portainer catalog
+Self-hosted Daapd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -373,7 +373,7 @@ Self-hosted Daapd deployment via Docker, sourced from Portainer catalog
 
 ### [Dagu](/templates/dagu)
 
-Self-hosted Dagu deployment via Docker, sourced from Portainer catalog
+Self-hosted Dagu deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -383,7 +383,7 @@ Self-hosted Dagu deployment via Docker, sourced from Portainer catalog
 
 ### [Dashdot](/templates/dashdot)
 
-Self-hosted Dashdot deployment via Docker, sourced from Portainer catalog
+Self-hosted Dashdot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -393,7 +393,7 @@ Self-hosted Dashdot deployment via Docker, sourced from Portainer catalog
 
 ### [Databag](/templates/databag)
 
-Self-hosted Databag deployment via Docker, sourced from Portainer catalog
+Self-hosted Databag deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -403,7 +403,7 @@ Self-hosted Databag deployment via Docker, sourced from Portainer catalog
 
 ### [Davos](/templates/davos)
 
-Self-hosted Davos deployment via Docker, sourced from Portainer catalog
+Self-hosted Davos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -413,7 +413,7 @@ Self-hosted Davos deployment via Docker, sourced from Portainer catalog
 
 ### [Dawarich](/templates/dawarich)
 
-Self-hosted Dawarich deployment via Docker, sourced from Portainer catalog
+Self-hosted Dawarich deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -423,7 +423,7 @@ Self-hosted Dawarich deployment via Docker, sourced from Portainer catalog
 
 ### [Deluge](/templates/deluge)
 
-Self-hosted Deluge deployment via Docker, sourced from Portainer catalog
+Self-hosted Deluge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -433,7 +433,7 @@ Self-hosted Deluge deployment via Docker, sourced from Portainer catalog
 
 ### [Diskover](/templates/diskover)
 
-Self-hosted Diskover deployment via Docker, sourced from Portainer catalog
+Self-hosted Diskover deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -443,7 +443,7 @@ Self-hosted Diskover deployment via Docker, sourced from Portainer catalog
 
 ### [Dockge](/templates/dockge)
 
-Self-hosted Dockge deployment via Docker, sourced from Portainer catalog
+Self-hosted Dockge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -453,7 +453,7 @@ Self-hosted Dockge deployment via Docker, sourced from Portainer catalog
 
 ### [Docmost](/templates/docmost)
 
-Self-hosted Docmost deployment via Docker, sourced from Portainer catalog
+Self-hosted Docmost deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -463,7 +463,7 @@ Self-hosted Docmost deployment via Docker, sourced from Portainer catalog
 
 ### [Docuseal](/templates/docuseal)
 
-Self-hosted Docuseal deployment via Docker, sourced from Portainer catalog
+Self-hosted Docuseal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -473,7 +473,7 @@ Self-hosted Docuseal deployment via Docker, sourced from Portainer catalog
 
 ### [Domoticz](/templates/domoticz)
 
-Self-hosted Domoticz deployment via Docker, sourced from Portainer catalog
+Self-hosted Domoticz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -483,7 +483,7 @@ Self-hosted Domoticz deployment via Docker, sourced from Portainer catalog
 
 ### [Dozzle](/templates/dozzle)
 
-Self-hosted Dozzle deployment via Docker, sourced from Portainer catalog
+Self-hosted Dozzle deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -493,7 +493,7 @@ Self-hosted Dozzle deployment via Docker, sourced from Portainer catalog
 
 ### [Drupal](/templates/drupal)
 
-Self-hosted Drupal deployment via Docker, sourced from Portainer catalog
+Self-hosted Drupal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -503,7 +503,7 @@ Self-hosted Drupal deployment via Docker, sourced from Portainer catalog
 
 ### [Duplicacy](/templates/duplicacy)
 
-Self-hosted Duplicacy deployment via Docker, sourced from Portainer catalog
+Self-hosted Duplicacy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -513,7 +513,7 @@ Self-hosted Duplicacy deployment via Docker, sourced from Portainer catalog
 
 ### [Duplicati](/templates/duplicati)
 
-Self-hosted Duplicati deployment via Docker, sourced from Portainer catalog
+Self-hosted Duplicati deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -523,7 +523,7 @@ Self-hosted Duplicati deployment via Docker, sourced from Portainer catalog
 
 ### [Elasticsearch](/templates/elasticsearch)
 
-Self-hosted Elasticsearch deployment via Docker, sourced from Portainer catalog
+Self-hosted Elasticsearch deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -533,7 +533,7 @@ Self-hosted Elasticsearch deployment via Docker, sourced from Portainer catalog
 
 ### [Emby](/templates/emby)
 
-Self-hosted Emby deployment via Docker, sourced from Portainer catalog
+Self-hosted Emby deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -543,7 +543,7 @@ Self-hosted Emby deployment via Docker, sourced from Portainer catalog
 
 ### [Embystat](/templates/embystat)
 
-Self-hosted Embystat deployment via Docker, sourced from Portainer catalog
+Self-hosted Embystat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -553,7 +553,7 @@ Self-hosted Embystat deployment via Docker, sourced from Portainer catalog
 
 ### [Excalidraw](/templates/excalidraw)
 
-Self-hosted Excalidraw deployment via Docker, sourced from Portainer catalog
+Self-hosted Excalidraw deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -563,7 +563,7 @@ Self-hosted Excalidraw deployment via Docker, sourced from Portainer catalog
 
 ### [Feedcord](/templates/feedcord)
 
-Self-hosted Feedcord deployment via Docker, sourced from Portainer catalog
+Self-hosted Feedcord deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -573,7 +573,7 @@ Self-hosted Feedcord deployment via Docker, sourced from Portainer catalog
 
 ### [Ferdium](/templates/ferdium)
 
-Self-hosted Ferdium deployment via Docker, sourced from Portainer catalog
+Self-hosted Ferdium deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -583,7 +583,7 @@ Self-hosted Ferdium deployment via Docker, sourced from Portainer catalog
 
 ### [Filebrowser](/templates/filebrowser)
 
-Self-hosted Filebrowser deployment via Docker, sourced from Portainer catalog
+Self-hosted Filebrowser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -593,7 +593,7 @@ Self-hosted Filebrowser deployment via Docker, sourced from Portainer catalog
 
 ### [Filegator](/templates/filegator)
 
-Self-hosted Filegator deployment via Docker, sourced from Portainer catalog
+Self-hosted Filegator deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -603,7 +603,7 @@ Self-hosted Filegator deployment via Docker, sourced from Portainer catalog
 
 ### [Filepizza](/templates/filepizza)
 
-Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
+Self-hosted Filepizza deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -613,7 +613,7 @@ Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
 
 ### [Filerun](/templates/filerun)
 
-Self-hosted Filerun deployment via Docker, sourced from Portainer catalog
+Self-hosted Filerun deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -623,7 +623,7 @@ Self-hosted Filerun deployment via Docker, sourced from Portainer catalog
 
 ### [Filestash](/templates/filestash)
 
-Self-hosted Filestash deployment via Docker, sourced from Portainer catalog
+Self-hosted Filestash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -633,7 +633,7 @@ Self-hosted Filestash deployment via Docker, sourced from Portainer catalog
 
 ### [Firefox](/templates/firefox)
 
-Self-hosted Firefox deployment via Docker, sourced from Portainer catalog
+Self-hosted Firefox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -643,7 +643,7 @@ Self-hosted Firefox deployment via Docker, sourced from Portainer catalog
 
 ### [Fireshare](/templates/fireshare)
 
-Self-hosted Fireshare deployment via Docker, sourced from Portainer catalog
+Self-hosted Fireshare deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -653,7 +653,7 @@ Self-hosted Fireshare deployment via Docker, sourced from Portainer catalog
 
 ### [Flame](/templates/flame)
 
-Self-hosted Flame deployment via Docker, sourced from Portainer catalog
+Self-hosted Flame deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -663,7 +663,7 @@ Self-hosted Flame deployment via Docker, sourced from Portainer catalog
 
 ### [Flaresolverr](/templates/flaresolverr)
 
-Self-hosted Flaresolverr deployment via Docker, sourced from Portainer catalog
+Self-hosted Flaresolverr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -673,7 +673,7 @@ Self-hosted Flaresolverr deployment via Docker, sourced from Portainer catalog
 
 ### [Flood](/templates/flood)
 
-Self-hosted Flood deployment via Docker, sourced from Portainer catalog
+Self-hosted Flood deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -683,7 +683,7 @@ Self-hosted Flood deployment via Docker, sourced from Portainer catalog
 
 ### [Flowiseai](/templates/flowiseai)
 
-Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog
+Self-hosted Flowiseai deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -693,7 +693,7 @@ Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog
 
 ### [Freshrss](/templates/freshrss)
 
-Self-hosted Freshrss deployment via Docker, sourced from Portainer catalog
+Self-hosted Freshrss deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -703,7 +703,7 @@ Self-hosted Freshrss deployment via Docker, sourced from Portainer catalog
 
 ### [Fusion](/templates/fusion)
 
-Self-hosted Fusion deployment via Docker, sourced from Portainer catalog
+Self-hosted Fusion deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -713,7 +713,7 @@ Self-hosted Fusion deployment via Docker, sourced from Portainer catalog
 
 ### [Gathio](/templates/gathio)
 
-Self-hosted Gathio deployment via Docker, sourced from Portainer catalog
+Self-hosted Gathio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -723,7 +723,7 @@ Self-hosted Gathio deployment via Docker, sourced from Portainer catalog
 
 ### [Gatus](/templates/gatus)
 
-Self-hosted Gatus deployment via Docker, sourced from Portainer catalog
+Self-hosted Gatus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -733,7 +733,7 @@ Self-hosted Gatus deployment via Docker, sourced from Portainer catalog
 
 ### [Ghostfolio](/templates/ghostfolio)
 
-Self-hosted Ghostfolio deployment via Docker, sourced from Portainer catalog
+Self-hosted Ghostfolio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -743,7 +743,7 @@ Self-hosted Ghostfolio deployment via Docker, sourced from Portainer catalog
 
 ### [Gitea](/templates/gitea)
 
-Self-hosted Gitea deployment via Docker, sourced from Portainer catalog
+Self-hosted Gitea deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -753,7 +753,7 @@ Self-hosted Gitea deployment via Docker, sourced from Portainer catalog
 
 ### [Glance](/templates/glance)
 
-Self-hosted Glance deployment via Docker, sourced from Portainer catalog
+Self-hosted Glance deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -763,7 +763,7 @@ Self-hosted Glance deployment via Docker, sourced from Portainer catalog
 
 ### [Glances](/templates/glances)
 
-Self-hosted Glances deployment via Docker, sourced from Portainer catalog
+Self-hosted Glances deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -773,7 +773,7 @@ Self-hosted Glances deployment via Docker, sourced from Portainer catalog
 
 ### [Go Socks5 Proxy](/templates/go-socks5-proxy)
 
-Self-hosted Go Socks5 Proxy deployment via Docker, sourced from Portainer catalog
+Self-hosted Go Socks5 Proxy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -783,7 +783,7 @@ Self-hosted Go Socks5 Proxy deployment via Docker, sourced from Portainer catalo
 
 ### [Gokapi](/templates/gokapi)
 
-Self-hosted Gokapi deployment via Docker, sourced from Portainer catalog
+Self-hosted Gokapi deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -793,7 +793,7 @@ Self-hosted Gokapi deployment via Docker, sourced from Portainer catalog
 
 ### [Gotenberg](/templates/gotenberg)
 
-Self-hosted Gotenberg deployment via Docker, sourced from Portainer catalog
+Self-hosted Gotenberg deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -803,7 +803,7 @@ Self-hosted Gotenberg deployment via Docker, sourced from Portainer catalog
 
 ### [Gotosocial](/templates/gotosocial)
 
-Self-hosted Gotosocial deployment via Docker, sourced from Portainer catalog
+Self-hosted Gotosocial deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -813,7 +813,7 @@ Self-hosted Gotosocial deployment via Docker, sourced from Portainer catalog
 
 ### [Grafana](/templates/grafana)
 
-Self-hosted Grafana deployment via Docker, sourced from Portainer catalog
+Self-hosted Grafana deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -823,7 +823,7 @@ Self-hosted Grafana deployment via Docker, sourced from Portainer catalog
 
 ### [Guacamole](/templates/guacamole)
 
-Self-hosted Guacamole deployment via Docker, sourced from Portainer catalog
+Self-hosted Guacamole deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -833,7 +833,7 @@ Self-hosted Guacamole deployment via Docker, sourced from Portainer catalog
 
 ### [Headphones](/templates/headphones)
 
-Self-hosted Headphones deployment via Docker, sourced from Portainer catalog
+Self-hosted Headphones deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -843,7 +843,7 @@ Self-hosted Headphones deployment via Docker, sourced from Portainer catalog
 
 ### [Healthchecks](/templates/healthchecks)
 
-Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog
+Self-hosted Healthchecks deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -853,7 +853,7 @@ Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog
 
 ### [Heimdall](/templates/heimdall)
 
-Self-hosted Heimdall deployment via Docker, sourced from Portainer catalog
+Self-hosted Heimdall deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -863,7 +863,7 @@ Self-hosted Heimdall deployment via Docker, sourced from Portainer catalog
 
 ### [Home Assistant](/templates/home-assistant)
 
-Self-hosted Home Assistant deployment via Docker, sourced from Portainer catalog
+Self-hosted Home Assistant deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -873,7 +873,7 @@ Self-hosted Home Assistant deployment via Docker, sourced from Portainer catalog
 
 ### [Homebox](/templates/homebox)
 
-Self-hosted Homebox deployment via Docker, sourced from Portainer catalog
+Self-hosted Homebox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -883,7 +883,7 @@ Self-hosted Homebox deployment via Docker, sourced from Portainer catalog
 
 ### [Homechart](/templates/homechart)
 
-Self-hosted Homechart deployment via Docker, sourced from Portainer catalog
+Self-hosted Homechart deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -893,7 +893,7 @@ Self-hosted Homechart deployment via Docker, sourced from Portainer catalog
 
 ### [Homer](/templates/homer)
 
-Self-hosted Homer deployment via Docker, sourced from Portainer catalog
+Self-hosted Homer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -903,7 +903,7 @@ Self-hosted Homer deployment via Docker, sourced from Portainer catalog
 
 ### [Huginn](/templates/huginn)
 
-Self-hosted Huginn deployment via Docker, sourced from Portainer catalog
+Self-hosted Huginn deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -913,7 +913,7 @@ Self-hosted Huginn deployment via Docker, sourced from Portainer catalog
 
 ### [Immich](/templates/immich)
 
-Self-hosted Immich deployment via Docker, sourced from Portainer catalog
+Self-hosted Immich deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -923,7 +923,7 @@ Self-hosted Immich deployment via Docker, sourced from Portainer catalog
 
 ### [Iobroker](/templates/iobroker)
 
-Self-hosted Iobroker deployment via Docker, sourced from Portainer catalog
+Self-hosted Iobroker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -933,7 +933,7 @@ Self-hosted Iobroker deployment via Docker, sourced from Portainer catalog
 
 ### [Iperf](/templates/iperf)
 
-Self-hosted Iperf deployment via Docker, sourced from Portainer catalog
+Self-hosted Iperf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -943,7 +943,7 @@ Self-hosted Iperf deployment via Docker, sourced from Portainer catalog
 
 ### [It Tools](/templates/it-tools)
 
-Self-hosted It Tools deployment via Docker, sourced from Portainer catalog
+Self-hosted It Tools deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -953,7 +953,7 @@ Self-hosted It Tools deployment via Docker, sourced from Portainer catalog
 
 ### [Jackett](/templates/jackett)
 
-Self-hosted Jackett deployment via Docker, sourced from Portainer catalog
+Self-hosted Jackett deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -963,7 +963,7 @@ Self-hosted Jackett deployment via Docker, sourced from Portainer catalog
 
 ### [Jdownloader](/templates/jdownloader)
 
-Self-hosted Jdownloader deployment via Docker, sourced from Portainer catalog
+Self-hosted Jdownloader deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -973,7 +973,7 @@ Self-hosted Jdownloader deployment via Docker, sourced from Portainer catalog
 
 ### [Jellyfin](/templates/jellyfin)
 
-Self-hosted Jellyfin deployment via Docker, sourced from Portainer catalog
+Self-hosted Jellyfin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -983,7 +983,7 @@ Self-hosted Jellyfin deployment via Docker, sourced from Portainer catalog
 
 ### [Jellyseerr](/templates/jellyseerr)
 
-Self-hosted Jellyseerr deployment via Docker, sourced from Portainer catalog
+Self-hosted Jellyseerr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -993,7 +993,7 @@ Self-hosted Jellyseerr deployment via Docker, sourced from Portainer catalog
 
 ### [Jenkins](/templates/jenkins)
 
-Self-hosted Jenkins deployment via Docker, sourced from Portainer catalog
+Self-hosted Jenkins deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1003,7 +1003,7 @@ Self-hosted Jenkins deployment via Docker, sourced from Portainer catalog
 
 ### [Joomla](/templates/joomla)
 
-Self-hosted Joomla deployment via Docker, sourced from Portainer catalog
+Self-hosted Joomla deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1013,7 +1013,7 @@ Self-hosted Joomla deployment via Docker, sourced from Portainer catalog
 
 ### [Kapowarr](/templates/kapowarr)
 
-Self-hosted Kapowarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Kapowarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1023,7 +1023,7 @@ Self-hosted Kapowarr deployment via Docker, sourced from Portainer catalog
 
 ### [Kavita](/templates/kavita)
 
-Self-hosted Kavita deployment via Docker, sourced from Portainer catalog
+Self-hosted Kavita deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1033,7 +1033,7 @@ Self-hosted Kavita deployment via Docker, sourced from Portainer catalog
 
 ### [Kestra](/templates/kestra)
 
-Self-hosted Kestra deployment via Docker, sourced from Portainer catalog
+Self-hosted Kestra deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1043,7 +1043,7 @@ Self-hosted Kestra deployment via Docker, sourced from Portainer catalog
 
 ### [Koillection](/templates/koillection)
 
-Self-hosted Koillection deployment via Docker, sourced from Portainer catalog
+Self-hosted Koillection deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1053,7 +1053,7 @@ Self-hosted Koillection deployment via Docker, sourced from Portainer catalog
 
 ### [Komga](/templates/komga)
 
-Self-hosted Komga deployment via Docker, sourced from Portainer catalog
+Self-hosted Komga deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1063,7 +1063,7 @@ Self-hosted Komga deployment via Docker, sourced from Portainer catalog
 
 ### [Lazylibrarian](/templates/lazylibrarian)
 
-Self-hosted Lazylibrarian deployment via Docker, sourced from Portainer catalog
+Self-hosted Lazylibrarian deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1073,7 +1073,7 @@ Self-hosted Lazylibrarian deployment via Docker, sourced from Portainer catalog
 
 ### [Leantime](/templates/leantime)
 
-Self-hosted Leantime deployment via Docker, sourced from Portainer catalog
+Self-hosted Leantime deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1083,7 +1083,7 @@ Self-hosted Leantime deployment via Docker, sourced from Portainer catalog
 
 ### [Librespeed](/templates/librespeed)
 
-Self-hosted Librespeed deployment via Docker, sourced from Portainer catalog
+Self-hosted Librespeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1093,7 +1093,7 @@ Self-hosted Librespeed deployment via Docker, sourced from Portainer catalog
 
 ### [Lidarr](/templates/lidarr)
 
-Self-hosted Lidarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Lidarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1103,7 +1103,7 @@ Self-hosted Lidarr deployment via Docker, sourced from Portainer catalog
 
 ### [Lidify](/templates/lidify)
 
-Self-hosted Lidify deployment via Docker, sourced from Portainer catalog
+Self-hosted Lidify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1113,7 +1113,7 @@ Self-hosted Lidify deployment via Docker, sourced from Portainer catalog
 
 ### [Linkding](/templates/linkding)
 
-Self-hosted Linkding deployment via Docker, sourced from Portainer catalog
+Self-hosted Linkding deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1123,7 +1123,7 @@ Self-hosted Linkding deployment via Docker, sourced from Portainer catalog
 
 ### [Linkstack](/templates/linkstack)
 
-Self-hosted Linkstack deployment via Docker, sourced from Portainer catalog
+Self-hosted Linkstack deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1133,7 +1133,7 @@ Self-hosted Linkstack deployment via Docker, sourced from Portainer catalog
 
 ### [Listmonk](/templates/listmonk)
 
-Self-hosted Listmonk deployment via Docker, sourced from Portainer catalog
+Self-hosted Listmonk deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1143,7 +1143,7 @@ Self-hosted Listmonk deployment via Docker, sourced from Portainer catalog
 
 ### [Lldap](/templates/lldap)
 
-Self-hosted Lldap deployment via Docker, sourced from Portainer catalog
+Self-hosted Lldap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1153,7 +1153,7 @@ Self-hosted Lldap deployment via Docker, sourced from Portainer catalog
 
 ### [Lunalytics](/templates/lunalytics)
 
-Self-hosted Lunalytics deployment via Docker, sourced from Portainer catalog
+Self-hosted Lunalytics deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1163,7 +1163,7 @@ Self-hosted Lunalytics deployment via Docker, sourced from Portainer catalog
 
 ### [Lychee](/templates/lychee)
 
-Self-hosted Lychee deployment via Docker, sourced from Portainer catalog
+Self-hosted Lychee deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1173,7 +1173,7 @@ Self-hosted Lychee deployment via Docker, sourced from Portainer catalog
 
 ### [Lynxprompt](/templates/lynxprompt)
 
-Self-hosted Lynxprompt deployment via Docker, sourced from Portainer catalog
+Self-hosted Lynxprompt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1183,7 +1183,7 @@ Self-hosted Lynxprompt deployment via Docker, sourced from Portainer catalog
 
 ### [Marreta](/templates/marreta)
 
-Self-hosted Marreta deployment via Docker, sourced from Portainer catalog
+Self-hosted Marreta deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1193,7 +1193,7 @@ Self-hosted Marreta deployment via Docker, sourced from Portainer catalog
 
 ### [Mastodon](/templates/mastodon)
 
-Self-hosted Mastodon deployment via Docker, sourced from Portainer catalog
+Self-hosted Mastodon deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1203,7 +1203,7 @@ Self-hosted Mastodon deployment via Docker, sourced from Portainer catalog
 
 ### [Matomo](/templates/matomo)
 
-Self-hosted Matomo deployment via Docker, sourced from Portainer catalog
+Self-hosted Matomo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1213,7 +1213,7 @@ Self-hosted Matomo deployment via Docker, sourced from Portainer catalog
 
 ### [Mealie](/templates/mealie)
 
-Self-hosted Mealie deployment via Docker, sourced from Portainer catalog
+Self-hosted Mealie deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1223,7 +1223,7 @@ Self-hosted Mealie deployment via Docker, sourced from Portainer catalog
 
 ### [Meshcentral](/templates/meshcentral)
 
-Self-hosted Meshcentral deployment via Docker, sourced from Portainer catalog
+Self-hosted Meshcentral deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1233,7 +1233,7 @@ Self-hosted Meshcentral deployment via Docker, sourced from Portainer catalog
 
 ### [Metube](/templates/metube)
 
-Self-hosted Metube deployment via Docker, sourced from Portainer catalog
+Self-hosted Metube deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1243,7 +1243,7 @@ Self-hosted Metube deployment via Docker, sourced from Portainer catalog
 
 ### [Minetest](/templates/minetest)
 
-Self-hosted Minetest deployment via Docker, sourced from Portainer catalog
+Self-hosted Minetest deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1253,7 +1253,7 @@ Self-hosted Minetest deployment via Docker, sourced from Portainer catalog
 
 ### [Miniflux](/templates/miniflux)
 
-Self-hosted Miniflux deployment via Docker, sourced from Portainer catalog
+Self-hosted Miniflux deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1263,7 +1263,7 @@ Self-hosted Miniflux deployment via Docker, sourced from Portainer catalog
 
 ### [Minio](/templates/minio)
 
-Self-hosted Minio deployment via Docker, sourced from Portainer catalog
+Self-hosted Minio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1273,7 +1273,7 @@ Self-hosted Minio deployment via Docker, sourced from Portainer catalog
 
 ### [Minisatip](/templates/minisatip)
 
-Self-hosted Minisatip deployment via Docker, sourced from Portainer catalog
+Self-hosted Minisatip deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1283,7 +1283,7 @@ Self-hosted Minisatip deployment via Docker, sourced from Portainer catalog
 
 ### [Monica](/templates/monica)
 
-Self-hosted Monica deployment via Docker, sourced from Portainer catalog
+Self-hosted Monica deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1293,7 +1293,7 @@ Self-hosted Monica deployment via Docker, sourced from Portainer catalog
 
 ### [Moodle](/templates/moodle)
 
-Self-hosted Moodle deployment via Docker, sourced from Portainer catalog
+Self-hosted Moodle deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1303,7 +1303,7 @@ Self-hosted Moodle deployment via Docker, sourced from Portainer catalog
 
 ### [Mstream](/templates/mstream)
 
-Self-hosted Mstream deployment via Docker, sourced from Portainer catalog
+Self-hosted Mstream deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1313,7 +1313,7 @@ Self-hosted Mstream deployment via Docker, sourced from Portainer catalog
 
 ### [Musicbrainz](/templates/musicbrainz)
 
-Self-hosted Musicbrainz deployment via Docker, sourced from Portainer catalog
+Self-hosted Musicbrainz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1323,7 +1323,7 @@ Self-hosted Musicbrainz deployment via Docker, sourced from Portainer catalog
 
 ### [Muximux](/templates/muximux)
 
-Self-hosted Muximux deployment via Docker, sourced from Portainer catalog
+Self-hosted Muximux deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1333,7 +1333,7 @@ Self-hosted Muximux deployment via Docker, sourced from Portainer catalog
 
 ### [Mylar](/templates/mylar)
 
-Self-hosted Mylar deployment via Docker, sourced from Portainer catalog
+Self-hosted Mylar deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1343,7 +1343,7 @@ Self-hosted Mylar deployment via Docker, sourced from Portainer catalog
 
 ### [Navidrome](/templates/navidrome)
 
-Self-hosted Navidrome deployment via Docker, sourced from Portainer catalog
+Self-hosted Navidrome deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1353,7 +1353,7 @@ Self-hosted Navidrome deployment via Docker, sourced from Portainer catalog
 
 ### [Neko](/templates/neko)
 
-Self-hosted Neko deployment via Docker, sourced from Portainer catalog
+Self-hosted Neko deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1363,7 +1363,7 @@ Self-hosted Neko deployment via Docker, sourced from Portainer catalog
 
 ### [Netalertx](/templates/netalertx)
 
-Self-hosted Netalertx deployment via Docker, sourced from Portainer catalog
+Self-hosted Netalertx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1373,7 +1373,7 @@ Self-hosted Netalertx deployment via Docker, sourced from Portainer catalog
 
 ### [Netbox](/templates/netbox)
 
-Self-hosted Netbox deployment via Docker, sourced from Portainer catalog
+Self-hosted Netbox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1383,7 +1383,7 @@ Self-hosted Netbox deployment via Docker, sourced from Portainer catalog
 
 ### [Nexterm](/templates/nexterm)
 
-Self-hosted Nexterm deployment via Docker, sourced from Portainer catalog
+Self-hosted Nexterm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1393,7 +1393,7 @@ Self-hosted Nexterm deployment via Docker, sourced from Portainer catalog
 
 ### [Nginx](/templates/nginx)
 
-Self-hosted Nginx deployment via Docker, sourced from Portainer catalog
+Self-hosted Nginx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1403,7 +1403,7 @@ Self-hosted Nginx deployment via Docker, sourced from Portainer catalog
 
 ### [Nitter](/templates/nitter)
 
-Self-hosted Nitter deployment via Docker, sourced from Portainer catalog
+Self-hosted Nitter deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1413,7 +1413,7 @@ Self-hosted Nitter deployment via Docker, sourced from Portainer catalog
 
 ### [Nocodb](/templates/nocodb)
 
-Self-hosted Nocodb deployment via Docker, sourced from Portainer catalog
+Open-source Airtable alternative — create spreadsheets, forms, kanban boards, and galleries with a no-code interface
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1423,7 +1423,7 @@ Self-hosted Nocodb deployment via Docker, sourced from Portainer catalog
 
 ### [Node Red](/templates/node-red)
 
-Self-hosted Node Red deployment via Docker, sourced from Portainer catalog
+Self-hosted Node Red deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1433,7 +1433,7 @@ Self-hosted Node Red deployment via Docker, sourced from Portainer catalog
 
 ### [Nodejs](/templates/nodejs)
 
-Self-hosted Nodejs deployment via Docker, sourced from Portainer catalog
+Self-hosted Nodejs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1443,7 +1443,7 @@ Self-hosted Nodejs deployment via Docker, sourced from Portainer catalog
 
 ### [Ntfy](/templates/ntfy)
 
-Self-hosted Ntfy deployment via Docker, sourced from Portainer catalog
+Self-hosted Ntfy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1453,7 +1453,7 @@ Self-hosted Ntfy deployment via Docker, sourced from Portainer catalog
 
 ### [Nutify](/templates/nutify)
 
-Self-hosted Nutify deployment via Docker, sourced from Portainer catalog
+Self-hosted Nutify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1463,7 +1463,7 @@ Self-hosted Nutify deployment via Docker, sourced from Portainer catalog
 
 ### [Nzbget](/templates/nzbget)
 
-Self-hosted Nzbget deployment via Docker, sourced from Portainer catalog
+Self-hosted Nzbget deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1473,7 +1473,7 @@ Self-hosted Nzbget deployment via Docker, sourced from Portainer catalog
 
 ### [Octoprint](/templates/octoprint)
 
-Self-hosted Octoprint deployment via Docker, sourced from Portainer catalog
+Self-hosted Octoprint deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1483,7 +1483,7 @@ Self-hosted Octoprint deployment via Docker, sourced from Portainer catalog
 
 ### [Odoo](/templates/odoo)
 
-Self-hosted Odoo deployment via Docker, sourced from Portainer catalog
+Self-hosted Odoo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1493,7 +1493,7 @@ Self-hosted Odoo deployment via Docker, sourced from Portainer catalog
 
 ### [Openbudgeteer](/templates/openbudgeteer)
 
-Self-hosted Openbudgeteer deployment via Docker, sourced from Portainer catalog
+Self-hosted Openbudgeteer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1503,7 +1503,7 @@ Self-hosted Openbudgeteer deployment via Docker, sourced from Portainer catalog
 
 ### [Openvpn As](/templates/openvpn-as)
 
-Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog
+Self-hosted Openvpn As deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1513,7 +1513,7 @@ Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog
 
 ### [Oscam](/templates/oscam)
 
-Self-hosted Oscam deployment via Docker, sourced from Portainer catalog
+Self-hosted Oscam deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1523,7 +1523,7 @@ Self-hosted Oscam deployment via Docker, sourced from Portainer catalog
 
 ### [Outline](/templates/outline)
 
-Self-hosted Outline deployment via Docker, sourced from Portainer catalog
+Self-hosted Outline deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1533,7 +1533,7 @@ Self-hosted Outline deployment via Docker, sourced from Portainer catalog
 
 ### [Pairdrop](/templates/pairdrop)
 
-Self-hosted Pairdrop deployment via Docker, sourced from Portainer catalog
+Self-hosted Pairdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1543,7 +1543,7 @@ Self-hosted Pairdrop deployment via Docker, sourced from Portainer catalog
 
 ### [Paperless Ngx](/templates/paperless-ngx)
 
-Self-hosted Paperless Ngx deployment via Docker, sourced from Portainer catalog
+Self-hosted document management system that scans, indexes, and archives paper documents with full-text search
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1553,7 +1553,7 @@ Self-hosted Paperless Ngx deployment via Docker, sourced from Portainer catalog
 
 ### [Passbolt](/templates/passbolt)
 
-Self-hosted Passbolt deployment via Docker, sourced from Portainer catalog
+Self-hosted Passbolt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1563,7 +1563,7 @@ Self-hosted Passbolt deployment via Docker, sourced from Portainer catalog
 
 ### [Pgadmin](/templates/pgadmin)
 
-Self-hosted Pgadmin deployment via Docker, sourced from Portainer catalog
+Self-hosted Pgadmin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1573,7 +1573,7 @@ Self-hosted Pgadmin deployment via Docker, sourced from Portainer catalog
 
 ### [Photoshow](/templates/photoshow)
 
-Self-hosted Photoshow deployment via Docker, sourced from Portainer catalog
+Self-hosted Photoshow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1583,7 +1583,7 @@ Self-hosted Photoshow deployment via Docker, sourced from Portainer catalog
 
 ### [Pinchflat](/templates/pinchflat)
 
-Self-hosted Pinchflat deployment via Docker, sourced from Portainer catalog
+Self-hosted Pinchflat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1593,7 +1593,7 @@ Self-hosted Pinchflat deployment via Docker, sourced from Portainer catalog
 
 ### [Pingvin](/templates/pingvin)
 
-Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog
+Self-hosted Pingvin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1603,7 +1603,7 @@ Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog
 
 ### [Piwigo](/templates/piwigo)
 
-Self-hosted Piwigo deployment via Docker, sourced from Portainer catalog
+Self-hosted Piwigo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1613,7 +1613,7 @@ Self-hosted Piwigo deployment via Docker, sourced from Portainer catalog
 
 ### [Pixel Server](/templates/pixel-server)
 
-Self-hosted Pixel Server deployment via Docker, sourced from Portainer catalog
+Self-hosted Pixel Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1623,7 +1623,7 @@ Self-hosted Pixel Server deployment via Docker, sourced from Portainer catalog
 
 ### [Plane](/templates/plane)
 
-Self-hosted Plane deployment via Docker, sourced from Portainer catalog
+Self-hosted Plane deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1633,7 +1633,7 @@ Self-hosted Plane deployment via Docker, sourced from Portainer catalog
 
 ### [Plesk](/templates/plesk)
 
-Self-hosted Plesk deployment via Docker, sourced from Portainer catalog
+Self-hosted Plesk deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1643,7 +1643,7 @@ Self-hosted Plesk deployment via Docker, sourced from Portainer catalog
 
 ### [Plex](/templates/plex)
 
-Self-hosted Plex deployment via Docker, sourced from Portainer catalog
+Self-hosted Plex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1653,7 +1653,7 @@ Self-hosted Plex deployment via Docker, sourced from Portainer catalog
 
 ### [Poste.Io](/templates/poste-io)
 
-Self-hosted Poste.Io deployment via Docker, sourced from Portainer catalog
+Self-hosted Poste.Io deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1663,7 +1663,7 @@ Self-hosted Poste.Io deployment via Docker, sourced from Portainer catalog
 
 ### [Postgresql](/templates/postgresql)
 
-Self-hosted Postgresql deployment via Docker, sourced from Portainer catalog
+Self-hosted Postgresql deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1673,7 +1673,7 @@ Self-hosted Postgresql deployment via Docker, sourced from Portainer catalog
 
 ### [Postiz](/templates/postiz)
 
-Self-hosted Postiz deployment via Docker, sourced from Portainer catalog
+Self-hosted Postiz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1683,7 +1683,7 @@ Self-hosted Postiz deployment via Docker, sourced from Portainer catalog
 
 ### [Pritunl](/templates/pritunl)
 
-Self-hosted Pritunl deployment via Docker, sourced from Portainer catalog
+Self-hosted Pritunl deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1693,7 +1693,7 @@ Self-hosted Pritunl deployment via Docker, sourced from Portainer catalog
 
 ### [Projectsend](/templates/projectsend)
 
-Self-hosted Projectsend deployment via Docker, sourced from Portainer catalog
+Self-hosted Projectsend deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1703,7 +1703,7 @@ Self-hosted Projectsend deployment via Docker, sourced from Portainer catalog
 
 ### [Prowlarr](/templates/prowlarr)
 
-Self-hosted Prowlarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Prowlarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1713,7 +1713,7 @@ Self-hosted Prowlarr deployment via Docker, sourced from Portainer catalog
 
 ### [Proxitok](/templates/proxitok)
 
-Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog
+Self-hosted Proxitok deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1723,7 +1723,7 @@ Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog
 
 ### [Pumperly](/templates/pumperly)
 
-Self-hosted Pumperly deployment via Docker, sourced from Portainer catalog
+Self-hosted Pumperly deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1733,7 +1733,7 @@ Self-hosted Pumperly deployment via Docker, sourced from Portainer catalog
 
 ### [Pydio](/templates/pydio)
 
-Self-hosted Pydio deployment via Docker, sourced from Portainer catalog
+Self-hosted Pydio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1743,7 +1743,7 @@ Self-hosted Pydio deployment via Docker, sourced from Portainer catalog
 
 ### [Qbittorrent](/templates/qbittorrent)
 
-Self-hosted Qbittorrent deployment via Docker, sourced from Portainer catalog
+Self-hosted Qbittorrent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1753,7 +1753,7 @@ Self-hosted Qbittorrent deployment via Docker, sourced from Portainer catalog
 
 ### [Qdirstat](/templates/qdirstat)
 
-Self-hosted Qdirstat deployment via Docker, sourced from Portainer catalog
+Self-hosted Qdirstat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1763,7 +1763,7 @@ Self-hosted Qdirstat deployment via Docker, sourced from Portainer catalog
 
 ### [Qflood](/templates/qflood)
 
-Self-hosted Qflood deployment via Docker, sourced from Portainer catalog
+Self-hosted Qflood deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1773,7 +1773,7 @@ Self-hosted Qflood deployment via Docker, sourced from Portainer catalog
 
 ### [Quassel Core](/templates/quassel-core)
 
-Self-hosted Quassel Core deployment via Docker, sourced from Portainer catalog
+Self-hosted Quassel Core deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1783,7 +1783,7 @@ Self-hosted Quassel Core deployment via Docker, sourced from Portainer catalog
 
 ### [Rabbitmq](/templates/rabbitmq)
 
-Self-hosted Rabbitmq deployment via Docker, sourced from Portainer catalog
+Self-hosted Rabbitmq deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1793,7 +1793,7 @@ Self-hosted Rabbitmq deployment via Docker, sourced from Portainer catalog
 
 ### [Radarr](/templates/radarr)
 
-Self-hosted Radarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Radarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1803,7 +1803,7 @@ Self-hosted Radarr deployment via Docker, sourced from Portainer catalog
 
 ### [Reactive Resume](/templates/reactive-resume)
 
-Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalog
+Self-hosted Reactive Resume deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1813,7 +1813,7 @@ Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalo
 
 ### [Redis](/templates/redis)
 
-Self-hosted Redis deployment via Docker, sourced from Portainer catalog
+In-memory data store used as a database, cache, message broker, and streaming engine for high-performance applications
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1823,7 +1823,7 @@ Self-hosted Redis deployment via Docker, sourced from Portainer catalog
 
 ### [Redmine](/templates/redmine)
 
-Self-hosted Redmine deployment via Docker, sourced from Portainer catalog
+Self-hosted Redmine deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1833,7 +1833,7 @@ Self-hosted Redmine deployment via Docker, sourced from Portainer catalog
 
 ### [Reveal.Js](/templates/reveal-js)
 
-Self-hosted Reveal.Js deployment via Docker, sourced from Portainer catalog
+Self-hosted Reveal.Js deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1843,7 +1843,7 @@ Self-hosted Reveal.Js deployment via Docker, sourced from Portainer catalog
 
 ### [Romm](/templates/romm)
 
-Self-hosted Romm deployment via Docker, sourced from Portainer catalog
+Self-hosted Romm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1853,7 +1853,7 @@ Self-hosted Romm deployment via Docker, sourced from Portainer catalog
 
 ### [Rutorrent](/templates/rutorrent)
 
-Self-hosted Rutorrent deployment via Docker, sourced from Portainer catalog
+Self-hosted Rutorrent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1863,7 +1863,7 @@ Self-hosted Rutorrent deployment via Docker, sourced from Portainer catalog
 
 ### [Sabnzbd](/templates/sabnzbd)
 
-Self-hosted Sabnzbd deployment via Docker, sourced from Portainer catalog
+Self-hosted Sabnzbd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1873,7 +1873,7 @@ Self-hosted Sabnzbd deployment via Docker, sourced from Portainer catalog
 
 ### [Scrutiny](/templates/scrutiny)
 
-Self-hosted Scrutiny deployment via Docker, sourced from Portainer catalog
+Self-hosted Scrutiny deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1883,7 +1883,7 @@ Self-hosted Scrutiny deployment via Docker, sourced from Portainer catalog
 
 ### [Searxng](/templates/searxng)
 
-Self-hosted Searxng deployment via Docker, sourced from Portainer catalog
+Self-hosted Searxng deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1893,7 +1893,7 @@ Self-hosted Searxng deployment via Docker, sourced from Portainer catalog
 
 ### [Servas](/templates/servas)
 
-Self-hosted Servas deployment via Docker, sourced from Portainer catalog
+Self-hosted Servas deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1903,7 +1903,7 @@ Self-hosted Servas deployment via Docker, sourced from Portainer catalog
 
 ### [Shaarli](/templates/shaarli)
 
-Self-hosted Shaarli deployment via Docker, sourced from Portainer catalog
+Self-hosted Shaarli deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1913,7 +1913,7 @@ Self-hosted Shaarli deployment via Docker, sourced from Portainer catalog
 
 ### [Sickchill](/templates/sickchill)
 
-Self-hosted Sickchill deployment via Docker, sourced from Portainer catalog
+Self-hosted Sickchill deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1923,7 +1923,7 @@ Self-hosted Sickchill deployment via Docker, sourced from Portainer catalog
 
 ### [Smokeping](/templates/smokeping)
 
-Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog
+Self-hosted Smokeping deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1933,7 +1933,7 @@ Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog
 
 ### [Solidtime](/templates/solidtime)
 
-Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog
+Self-hosted Solidtime deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1943,7 +1943,7 @@ Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog
 
 ### [Solr](/templates/solr)
 
-Self-hosted Solr deployment via Docker, sourced from Portainer catalog
+Self-hosted Solr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1953,7 +1953,7 @@ Self-hosted Solr deployment via Docker, sourced from Portainer catalog
 
 ### [Sonarr](/templates/sonarr)
 
-Self-hosted Sonarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Sonarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1963,7 +1963,7 @@ Self-hosted Sonarr deployment via Docker, sourced from Portainer catalog
 
 ### [Sshwifty](/templates/sshwifty)
 
-Self-hosted Sshwifty deployment via Docker, sourced from Portainer catalog
+Self-hosted Sshwifty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1973,7 +1973,7 @@ Self-hosted Sshwifty deployment via Docker, sourced from Portainer catalog
 
 ### [Stirling Pdf](/templates/stirling-pdf)
 
-Self-hosted Stirling Pdf deployment via Docker, sourced from Portainer catalog
+Self-hosted PDF manipulation toolkit for merging, splitting, converting, OCR, and watermarking documents
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1983,7 +1983,7 @@ Self-hosted Stirling Pdf deployment via Docker, sourced from Portainer catalog
 
 ### [Stump](/templates/stump)
 
-Self-hosted Stump deployment via Docker, sourced from Portainer catalog
+Self-hosted Stump deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1993,7 +1993,7 @@ Self-hosted Stump deployment via Docker, sourced from Portainer catalog
 
 ### [Surrealdb](/templates/surrealdb)
 
-Self-hosted Surrealdb deployment via Docker, sourced from Portainer catalog
+Self-hosted Surrealdb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2003,7 +2003,7 @@ Self-hosted Surrealdb deployment via Docker, sourced from Portainer catalog
 
 ### [Tabby](/templates/tabby)
 
-Self-hosted Tabby deployment via Docker, sourced from Portainer catalog
+Self-hosted Tabby deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2013,7 +2013,7 @@ Self-hosted Tabby deployment via Docker, sourced from Portainer catalog
 
 ### [Tautulli](/templates/tautulli)
 
-Self-hosted Tautulli deployment via Docker, sourced from Portainer catalog
+Self-hosted Tautulli deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2023,7 +2023,7 @@ Self-hosted Tautulli deployment via Docker, sourced from Portainer catalog
 
 ### [Tdarr](/templates/tdarr)
 
-Self-hosted Tdarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Tdarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2033,7 +2033,7 @@ Self-hosted Tdarr deployment via Docker, sourced from Portainer catalog
 
 ### [Thelounge](/templates/thelounge)
 
-Self-hosted Thelounge deployment via Docker, sourced from Portainer catalog
+Self-hosted Thelounge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2043,7 +2043,7 @@ Self-hosted Thelounge deployment via Docker, sourced from Portainer catalog
 
 ### [Tinymediamanager](/templates/tinymediamanager)
 
-Self-hosted Tinymediamanager deployment via Docker, sourced from Portainer catalog
+Self-hosted Tinymediamanager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2053,7 +2053,7 @@ Self-hosted Tinymediamanager deployment via Docker, sourced from Portainer catal
 
 ### [Tooljet](/templates/tooljet)
 
-Self-hosted Tooljet deployment via Docker, sourced from Portainer catalog
+Self-hosted Tooljet deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2063,7 +2063,7 @@ Self-hosted Tooljet deployment via Docker, sourced from Portainer catalog
 
 ### [Transmission](/templates/transmission)
 
-Self-hosted Transmission deployment via Docker, sourced from Portainer catalog
+Self-hosted Transmission deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2073,7 +2073,7 @@ Self-hosted Transmission deployment via Docker, sourced from Portainer catalog
 
 ### [Transmission Openvpn](/templates/transmission-openvpn)
 
-Self-hosted Transmission Openvpn deployment via Docker, sourced from Portainer catalog
+Self-hosted Transmission Openvpn deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2083,7 +2083,7 @@ Self-hosted Transmission Openvpn deployment via Docker, sourced from Portainer c
 
 ### [Trilium](/templates/trilium)
 
-Self-hosted Trilium deployment via Docker, sourced from Portainer catalog
+Self-hosted Trilium deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2093,7 +2093,7 @@ Self-hosted Trilium deployment via Docker, sourced from Portainer catalog
 
 ### [Tubearchivist](/templates/tubearchivist)
 
-Self-hosted Tubearchivist deployment via Docker, sourced from Portainer catalog
+Self-hosted Tubearchivist deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2103,7 +2103,7 @@ Self-hosted Tubearchivist deployment via Docker, sourced from Portainer catalog
 
 ### [Tvheadend](/templates/tvheadend)
 
-Self-hosted Tvheadend deployment via Docker, sourced from Portainer catalog
+Self-hosted Tvheadend deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2113,7 +2113,7 @@ Self-hosted Tvheadend deployment via Docker, sourced from Portainer catalog
 
 ### [Ubooquity](/templates/ubooquity)
 
-Self-hosted Ubooquity deployment via Docker, sourced from Portainer catalog
+Self-hosted Ubooquity deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2123,7 +2123,7 @@ Self-hosted Ubooquity deployment via Docker, sourced from Portainer catalog
 
 ### [Ubuntu](/templates/ubuntu)
 
-Self-hosted Ubuntu deployment via Docker, sourced from Portainer catalog
+Self-hosted Ubuntu deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2133,7 +2133,7 @@ Self-hosted Ubuntu deployment via Docker, sourced from Portainer catalog
 
 ### [Unmanic](/templates/unmanic)
 
-Self-hosted Unmanic deployment via Docker, sourced from Portainer catalog
+Self-hosted Unmanic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2143,7 +2143,7 @@ Self-hosted Unmanic deployment via Docker, sourced from Portainer catalog
 
 ### [Upsnap](/templates/upsnap)
 
-Self-hosted Upsnap deployment via Docker, sourced from Portainer catalog
+Self-hosted Upsnap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2153,7 +2153,7 @@ Self-hosted Upsnap deployment via Docker, sourced from Portainer catalog
 
 ### [Vikunja](/templates/vikunja)
 
-Self-hosted Vikunja deployment via Docker, sourced from Portainer catalog
+Self-hosted Vikunja deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2163,7 +2163,7 @@ Self-hosted Vikunja deployment via Docker, sourced from Portainer catalog
 
 ### [Wallabag](/templates/wallabag)
 
-Self-hosted Wallabag deployment via Docker, sourced from Portainer catalog
+Self-hosted Wallabag deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2173,7 +2173,7 @@ Self-hosted Wallabag deployment via Docker, sourced from Portainer catalog
 
 ### [Watchtower](/templates/watchtower)
 
-Self-hosted Watchtower deployment via Docker, sourced from Portainer catalog
+Self-hosted Watchtower deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2183,7 +2183,7 @@ Self-hosted Watchtower deployment via Docker, sourced from Portainer catalog
 
 ### [Webtop](/templates/webtop)
 
-Self-hosted Webtop deployment via Docker, sourced from Portainer catalog
+Self-hosted Webtop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2193,7 +2193,7 @@ Self-hosted Webtop deployment via Docker, sourced from Portainer catalog
 
 ### [Webtrees](/templates/webtrees)
 
-Self-hosted Webtrees deployment via Docker, sourced from Portainer catalog
+Self-hosted Webtrees deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2203,7 +2203,7 @@ Self-hosted Webtrees deployment via Docker, sourced from Portainer catalog
 
 ### [Whisparr](/templates/whisparr)
 
-Self-hosted Whisparr deployment via Docker, sourced from Portainer catalog
+Self-hosted Whisparr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2213,7 +2213,7 @@ Self-hosted Whisparr deployment via Docker, sourced from Portainer catalog
 
 ### [Wikijs](/templates/wikijs)
 
-Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog
+Self-hosted Wikijs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2223,7 +2223,7 @@ Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog
 
 ### [Xwiki](/templates/xwiki)
 
-Self-hosted Xwiki deployment via Docker, sourced from Portainer catalog
+Self-hosted Xwiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2233,7 +2233,7 @@ Self-hosted Xwiki deployment via Docker, sourced from Portainer catalog
 
 ### [Yacht](/templates/yacht)
 
-Self-hosted Yacht deployment via Docker, sourced from Portainer catalog
+Self-hosted Yacht deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2243,7 +2243,7 @@ Self-hosted Yacht deployment via Docker, sourced from Portainer catalog
 
 ### [Your Spotify](/templates/your-spotify)
 
-Self-hosted Your Spotify deployment via Docker, sourced from Portainer catalog
+Self-hosted Your Spotify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2253,7 +2253,7 @@ Self-hosted Your Spotify deployment via Docker, sourced from Portainer catalog
 
 ### [Youtubedl Material](/templates/youtubedl-material)
 
-Self-hosted Youtubedl Material deployment via Docker, sourced from Portainer catalog
+Self-hosted Youtubedl Material deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2263,7 +2263,7 @@ Self-hosted Youtubedl Material deployment via Docker, sourced from Portainer cat
 
 ### [Znc](/templates/znc)
 
-Self-hosted Znc deployment via Docker, sourced from Portainer catalog
+Self-hosted Znc deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2273,7 +2273,7 @@ Self-hosted Znc deployment via Docker, sourced from Portainer catalog
 
 ### [Ztnet](/templates/ztnet)
 
-Self-hosted Ztnet deployment via Docker, sourced from Portainer catalog
+Self-hosted Ztnet deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 

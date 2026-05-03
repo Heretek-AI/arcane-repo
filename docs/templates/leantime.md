@@ -1,11 +1,11 @@
 ---
 title: "Leantime"
-description: "Self-hosted Leantime deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Leantime deployment via Docker"
 ---
 
 # Leantime
 
-Self-hosted Leantime deployment via Docker, sourced from Portainer catalog
+Self-hosted Leantime deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Leantime deployment via Docker, sourced from Portainer catalog
 | ID | `leantime` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `83acbfa5b11e1c6997be5037db508fde67c33f94f3a2123e9d154af1dbb2091a` |
+| Content Hash | `85871b2c7d041c06c68d96d4a18b62f5b388963c924b1d02cadcf0249eeb629e` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `leantime` | docker.io/leantime/leantime:latest | Main application service |
+| `leantime_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `LEANTIME_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs leantime
+```
+
+**Port conflict:**
+Edit `.env` and change `LEANTIME_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec leantime ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect leantime --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v leantime_data:/data -v $(pwd):/backup alpine tar czf /backup/leantime-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v leantime_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/leantime-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Leantime](https://github.com/leantime/leantime)
+- **Docker Image:** `docker.io/leantime/leantime:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/leantime/leantime/wiki)
+- **Issues:** [GitHub Issues](https://github.com/leantime/leantime/issues)
+

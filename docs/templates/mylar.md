@@ -1,11 +1,11 @@
 ---
 title: "Mylar"
-description: "Self-hosted Mylar deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Mylar deployment via Docker"
 ---
 
 # Mylar
 
-Self-hosted Mylar deployment via Docker, sourced from Portainer catalog
+Self-hosted Mylar deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Mylar deployment via Docker, sourced from Portainer catalog
 | ID | `mylar` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `6bf6ee4e9777ec48dd88ec6648249664f2af0d004bc41d8900dfaa71cb7f8311` |
+| Content Hash | `235531a72e590173942a1755f2716d1dda8d0ca2cccc7b3152a8ac308b72c6f4` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `mylar` | ghcr.io/linuxserver/mylar:latest | Main application service |
+| `mylar_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `MYLAR_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs mylar
+```
+
+**Port conflict:**
+Edit `.env` and change `MYLAR_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec mylar ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect mylar --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v mylar_data:/data -v $(pwd):/backup alpine tar czf /backup/mylar-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v mylar_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/mylar-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Mylar](https://github.com/linuxserver/mylar)
+- **Docker Image:** `ghcr.io/linuxserver/mylar:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/mylar/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/mylar/issues)
+

@@ -1,11 +1,11 @@
 ---
 title: "Spacedeck"
-description: "Self-hosted Spacedeck deployment via Docker, sourced from Yunohost catalog"
+description: "Self-hosted Spacedeck deployment via Docker"
 ---
 
 # Spacedeck
 
-Self-hosted Spacedeck deployment via Docker, sourced from Yunohost catalog
+Self-hosted Spacedeck deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Spacedeck deployment via Docker, sourced from Yunohost catalog
 | ID | `spacedeck` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `e3fc7e92fc2d7d7dc50cd4bc92863d6c90fa4600c71cc1d698c5e734b2c00589` |
+| Content Hash | `0a8715b79c2b347f7667cc109c0e6bf48ad3162fdf6b3390ff250d0208880050` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `spacedeck` | docker.io/gigaspaces/spacedeck:latest | Main application service |
+| `spacedeck_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SPACEDECK_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs spacedeck
+```
+
+**Port conflict:**
+Edit `.env` and change `SPACEDECK_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec spacedeck ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect spacedeck --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v spacedeck_data:/data -v $(pwd):/backup alpine tar czf /backup/spacedeck-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v spacedeck_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/spacedeck-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Spacedeck](https://github.com/gigaspaces/spacedeck)
+- **Docker Image:** `docker.io/gigaspaces/spacedeck:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/gigaspaces/spacedeck/wiki)
+- **Issues:** [GitHub Issues](https://github.com/gigaspaces/spacedeck/issues)
+

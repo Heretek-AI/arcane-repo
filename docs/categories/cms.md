@@ -13,7 +13,7 @@ description: 11 templates tagged with "cms"
 
 ### [Breezewiki](/templates/breezewiki)
 
-Self-hosted Breezewiki deployment via Docker, sourced from Yunohost catalog
+Self-hosted Breezewiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -23,7 +23,7 @@ Self-hosted Breezewiki deployment via Docker, sourced from Yunohost catalog
 
 ### [Docsify](/templates/docsify)
 
-Self-hosted Docsify deployment via Docker, sourced from Yunohost catalog
+Self-hosted Docsify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -33,7 +33,7 @@ Self-hosted Docsify deployment via Docker, sourced from Yunohost catalog
 
 ### [Dokuwiki](/templates/dokuwiki)
 
-Self-hosted Dokuwiki deployment via Docker, sourced from YunoHost catalog
+Self-hosted Dokuwiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -43,7 +43,7 @@ Self-hosted Dokuwiki deployment via Docker, sourced from YunoHost catalog
 
 ### [Mediawiki](/templates/mediawiki)
 
-Self-hosted Mediawiki deployment via Docker, sourced from YunoHost catalog
+Self-hosted Mediawiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -53,7 +53,7 @@ Self-hosted Mediawiki deployment via Docker, sourced from YunoHost catalog
 
 ### [Otter Wiki](/templates/otter-wiki)
 
-Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Otter Wiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -63,7 +63,7 @@ Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Wiki Go](/templates/wiki-go)
 
-Self-hosted Wiki Go deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wiki Go deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -73,7 +73,7 @@ Self-hosted Wiki Go deployment via Docker, sourced from Yunohost catalog
 
 ### [Wikidocs](/templates/wikidocs)
 
-Self-hosted Wikidocs deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wikidocs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -83,7 +83,7 @@ Self-hosted Wikidocs deployment via Docker, sourced from Yunohost catalog
 
 ### [Wikijs](/templates/wikijs)
 
-Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog
+Self-hosted Wikijs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -93,7 +93,7 @@ Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog
 
 ### [Wikimore](/templates/wikimore)
 
-Self-hosted Wikimore deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wikimore deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -103,7 +103,7 @@ Self-hosted Wikimore deployment via Docker, sourced from Yunohost catalog
 
 ### [Wondercms](/templates/wondercms)
 
-Self-hosted Wondercms deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wondercms deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -113,7 +113,7 @@ Self-hosted Wondercms deployment via Docker, sourced from Yunohost catalog
 
 ### [Xwiki](/templates/xwiki)
 
-Self-hosted Xwiki deployment via Docker, sourced from Portainer catalog
+Self-hosted Xwiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 

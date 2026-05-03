@@ -1,11 +1,11 @@
 ---
 title: "Filepizza"
-description: "Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Filepizza deployment via Docker"
 ---
 
 # Filepizza
 
-Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
+Self-hosted Filepizza deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
 | ID | `filepizza` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `4e1a4a99c87cd0fa11553c7115d468fcd5b19647f67a523e6ff5dd211bcbac4b` |
+| Content Hash | `9fc12b555e8ffadcb2079646c93092e976ccaf988986b5739b4f23a399c26974` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `filepizza` | docker.io/kern/filepizza:latest | Main application service |
+| `filepizza_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `FILEPIZZA_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs filepizza
+```
+
+**Port conflict:**
+Edit `.env` and change `FILEPIZZA_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec filepizza ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect filepizza --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v filepizza_data:/data -v $(pwd):/backup alpine tar czf /backup/filepizza-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v filepizza_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/filepizza-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Filepizza](https://github.com/kern/filepizza)
+- **Docker Image:** `docker.io/kern/filepizza:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/kern/filepizza/wiki)
+- **Issues:** [GitHub Issues](https://github.com/kern/filepizza/issues)
+

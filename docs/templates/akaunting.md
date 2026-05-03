@@ -1,11 +1,11 @@
 ---
 title: "Akaunting"
-description: "Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Akaunting deployment via Docker"
 ---
 
 # Akaunting
 
-Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog
+Self-hosted Akaunting deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog
 | ID | `akaunting` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `dec4aacc07ada246220e49eb628fef7c151d02166c5a1452104aa6f8eefae031` |
+| Content Hash | `36cdcd54e0e37462ae807eb2a3cec1a75564bde51da660c99dc138cf37264bdf` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `akaunting` | docker.io/akaunting/akaunting:latest | Main application service |
+| `akaunting_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `AKAUNTING_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs akaunting
+```
+
+**Port conflict:**
+Edit `.env` and change `AKAUNTING_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec akaunting ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect akaunting --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v akaunting_data:/data -v $(pwd):/backup alpine tar czf /backup/akaunting-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v akaunting_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/akaunting-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Akaunting](https://github.com/akaunting/akaunting)
+- **Docker Image:** `docker.io/akaunting/akaunting:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/akaunting/akaunting/wiki)
+- **Issues:** [GitHub Issues](https://github.com/akaunting/akaunting/issues)
+

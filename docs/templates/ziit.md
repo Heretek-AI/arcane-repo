@@ -1,11 +1,11 @@
 ---
 title: "Ziit"
-description: "Self-hosted Ziit deployment via Docker, sourced from Awesome-Selfhosted catalog"
+description: "Self-hosted Ziit deployment via Docker"
 ---
 
 # Ziit
 
-Self-hosted Ziit deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ziit deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Ziit deployment via Docker, sourced from Awesome-Selfhosted catalog
 | ID | `ziit` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `0d9195f6784e544b96c38b5fd1582925f6edf16daf955dd8a4d9f555c39a2bad` |
+| Content Hash | `43ec1b532b6ff88122f9df78f72a4959a259770a7b4061d083df66e30170b48a` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `ziit` | ghcr.io/0pandadev/ziit:latest | Main application service |
+| `ziit_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ZIIT_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs ziit
+```
+
+**Port conflict:**
+Edit `.env` and change `ZIIT_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec ziit ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect ziit --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v ziit_data:/data -v $(pwd):/backup alpine tar czf /backup/ziit-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v ziit_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/ziit-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Ziit](https://github.com/0pandadev/ziit)
+- **Docker Image:** `ghcr.io/0pandadev/ziit:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/0pandadev/ziit/wiki)
+- **Issues:** [GitHub Issues](https://github.com/0pandadev/ziit/issues)
+

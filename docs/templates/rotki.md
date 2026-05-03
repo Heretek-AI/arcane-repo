@@ -1,11 +1,11 @@
 ---
 title: "Rotki"
-description: "Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Rotki deployment via Docker"
 ---
 
 # Rotki
 
-Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rotki deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog
 | ID | `rotki` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `54d5268692b3fc1923372ce181d1d2917ca03d34281fbdeb7efb76199fdf2885` |
+| Content Hash | `f59d54d8fe4c87f1b7e77ea3dad2a6b8d6775d37a13d5584842f836b9ec0f2dc` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `rotki` | docker.io/rotki/rotki:latest | Main application service |
+| `rotki_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ROTKI_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs rotki
+```
+
+**Port conflict:**
+Edit `.env` and change `ROTKI_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec rotki ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect rotki --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v rotki_data:/data -v $(pwd):/backup alpine tar czf /backup/rotki-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v rotki_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/rotki-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Rotki](https://github.com/rotki/rotki)
+- **Docker Image:** `docker.io/rotki/rotki:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/rotki/rotki/wiki)
+- **Issues:** [GitHub Issues](https://github.com/rotki/rotki/issues)
+

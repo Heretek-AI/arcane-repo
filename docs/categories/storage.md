@@ -13,7 +13,7 @@ description: 12 templates tagged with "storage"
 
 ### [File Browser](/templates/file-browser)
 
-Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog
+Self-hosted File Browser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -23,7 +23,7 @@ Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog
 
 ### [Filebrowser](/templates/filebrowser)
 
-Self-hosted Filebrowser deployment via Docker, sourced from Portainer catalog
+Self-hosted Filebrowser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -33,7 +33,7 @@ Self-hosted Filebrowser deployment via Docker, sourced from Portainer catalog
 
 ### [Filegator](/templates/filegator)
 
-Self-hosted Filegator deployment via Docker, sourced from Portainer catalog
+Self-hosted Filegator deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -43,7 +43,7 @@ Self-hosted Filegator deployment via Docker, sourced from Portainer catalog
 
 ### [Filepizza](/templates/filepizza)
 
-Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
+Self-hosted Filepizza deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -53,7 +53,7 @@ Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
 
 ### [Filerun](/templates/filerun)
 
-Self-hosted Filerun deployment via Docker, sourced from Portainer catalog
+Self-hosted Filerun deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -63,7 +63,7 @@ Self-hosted Filerun deployment via Docker, sourced from Portainer catalog
 
 ### [Filestash](/templates/filestash)
 
-Self-hosted Filestash deployment via Docker, sourced from Portainer catalog
+Self-hosted Filestash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -93,7 +93,7 @@ Open-source Firebase alternative — PostgreSQL database, auth, realtime subscri
 
 ### [Syncserver Rs](/templates/syncserver-rs)
 
-Self-hosted Syncserver Rs deployment via Docker, sourced from Yunohost catalog
+Self-hosted Syncserver Rs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -103,7 +103,7 @@ Self-hosted Syncserver Rs deployment via Docker, sourced from Yunohost catalog
 
 ### [Syncthing](/templates/syncthing)
 
-Self-hosted Syncthing deployment via Docker, sourced from Umbrel catalog
+Self-hosted Syncthing deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -113,7 +113,7 @@ Self-hosted Syncthing deployment via Docker, sourced from Umbrel catalog
 
 ### [Tinyfilemanager](/templates/tinyfilemanager)
 
-Self-hosted Tinyfilemanager deployment via Docker, sourced from YunoHost catalog
+Self-hosted Tinyfilemanager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -123,7 +123,7 @@ Self-hosted Tinyfilemanager deployment via Docker, sourced from YunoHost catalog
 
 ### [Yeetfile](/templates/yeetfile)
 
-Self-hosted Yeetfile deployment via Docker, sourced from Yunohost catalog
+Self-hosted Yeetfile deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 

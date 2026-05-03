@@ -13,7 +13,7 @@ description: 654 templates tagged with "self-hosted"
 
 ### [2Fauth](/templates/2fauth)
 
-Self-hosted 2fauth deployment via Docker — sourced from YunoHost catalog
+Self-hosted 2fauth deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -23,7 +23,7 @@ Self-hosted 2fauth deployment via Docker — sourced from YunoHost catalog
 
 ### [Activepieces](/templates/activepieces)
 
-Self-hosted Activepieces deployment via Docker, sourced from Portainer catalog
+Open-source workflow automation platform with 400+ app integrations, visual drag-and-drop editor, and AI agent capabilities
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -33,7 +33,7 @@ Self-hosted Activepieces deployment via Docker, sourced from Portainer catalog
 
 ### [Adguardhome](/templates/adguardhome)
 
-Self-hosted Adguardhome deployment via Docker, sourced from Yunohost catalog
+Network-wide DNS ad blocker with parental control, safe browsing, and detailed query logging
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -43,7 +43,7 @@ Self-hosted Adguardhome deployment via Docker, sourced from Yunohost catalog
 
 ### [Admidio](/templates/admidio)
 
-Self-hosted Admidio deployment via Docker, sourced from YunoHost catalog
+Self-hosted Admidio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -53,7 +53,7 @@ Self-hosted Admidio deployment via Docker, sourced from YunoHost catalog
 
 ### [Adminer](/templates/adminer)
 
-Self-hosted Adminer deployment via Docker, sourced from YunoHost catalog
+Self-hosted Adminer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -63,7 +63,7 @@ Self-hosted Adminer deployment via Docker, sourced from YunoHost catalog
 
 ### [Adminerevo](/templates/adminerevo)
 
-Self-hosted Adminerevo deployment via Docker, sourced from Yunohost catalog
+Self-hosted Adminerevo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -73,7 +73,7 @@ Self-hosted Adminerevo deployment via Docker, sourced from Yunohost catalog
 
 ### [Affine](/templates/affine)
 
-Self-hosted Affine deployment via Docker, sourced from Umbrel catalog
+Open-source knowledge base and document workspace with real-time collaboration, whiteboards, and markdown support
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -83,7 +83,7 @@ Self-hosted Affine deployment via Docker, sourced from Umbrel catalog
 
 ### [Agenta](/templates/agenta)
 
-Self-hosted Agenta deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Agenta deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -93,7 +93,7 @@ Self-hosted Agenta deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Agora](/templates/agora)
 
-Self-hosted Agora deployment via Docker, sourced from Umbrel catalog
+Self-hosted Agora deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -103,7 +103,7 @@ Self-hosted Agora deployment via Docker, sourced from Umbrel catalog
 
 ### [Airtrail](/templates/airtrail)
 
-Self-hosted Airtrail deployment via Docker, sourced from Umbrel catalog
+Self-hosted Airtrail deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -113,7 +113,7 @@ Self-hosted Airtrail deployment via Docker, sourced from Umbrel catalog
 
 ### [Akaunting](/templates/akaunting)
 
-Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog
+Self-hosted Akaunting deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -123,7 +123,7 @@ Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog
 
 ### [Albyhub](/templates/albyhub)
 
-Self-hosted Albyhub deployment via Docker, sourced from Umbrel catalog
+Self-hosted Albyhub deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -133,7 +133,7 @@ Self-hosted Albyhub deployment via Docker, sourced from Umbrel catalog
 
 ### [Aliasvault](/templates/aliasvault)
 
-Self-hosted Aliasvault deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted email alias and password manager that generates unique email addresses and strong passwords for every service you use.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -143,7 +143,7 @@ Self-hosted Aliasvault deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Ampache](/templates/ampache)
 
-Self-hosted Ampache deployment via Docker, sourced from YunoHost catalog
+Self-hosted Ampache deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -153,7 +153,7 @@ Self-hosted Ampache deployment via Docker, sourced from YunoHost catalog
 
 ### [Anchor](/templates/anchor)
 
-Self-hosted Anchor deployment via Docker, sourced from Portainer catalog
+Self-hosted Anchor deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -163,7 +163,7 @@ Self-hosted Anchor deployment via Docker, sourced from Portainer catalog
 
 ### [Apprise Api](/templates/apprise-api)
 
-Self-hosted Apprise Api deployment via Docker, sourced from Portainer catalog
+Self-hosted Apprise Api deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -173,7 +173,7 @@ Self-hosted Apprise Api deployment via Docker, sourced from Portainer catalog
 
 ### [Appsmith](/templates/appsmith)
 
-Self-hosted Appsmith deployment via Docker, sourced from Portainer catalog
+Self-hosted Appsmith deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -183,7 +183,7 @@ Self-hosted Appsmith deployment via Docker, sourced from Portainer catalog
 
 ### [Appwrite](/templates/appwrite)
 
-Self-hosted Appwrite deployment via Docker, sourced from Portainer catalog
+Self-hosted Appwrite deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -193,7 +193,7 @@ Self-hosted Appwrite deployment via Docker, sourced from Portainer catalog
 
 ### [Aptabase](/templates/aptabase)
 
-Self-hosted Aptabase deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted, privacy-friendly analytics platform for mobile and desktop applications with a simple SDK integration.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -203,7 +203,7 @@ Self-hosted Aptabase deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Arcane](/templates/arcane)
 
-Self-hosted Arcane deployment via Docker, sourced from Portainer catalog
+Self-hosted Arcane deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -213,7 +213,7 @@ Self-hosted Arcane deployment via Docker, sourced from Portainer catalog
 
 ### [Archisteamfarm](/templates/archisteamfarm)
 
-Self-hosted Archisteamfarm deployment via Docker, sourced from Portainer catalog
+Self-hosted Archisteamfarm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -223,7 +223,7 @@ Self-hosted Archisteamfarm deployment via Docker, sourced from Portainer catalog
 
 ### [Archivebox](/templates/archivebox)
 
-Self-hosted Archivebox deployment via Docker, sourced from Portainer catalog
+Self-hosted Archivebox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -233,7 +233,7 @@ Self-hosted Archivebox deployment via Docker, sourced from Portainer catalog
 
 ### [Argos](/templates/argos)
 
-Self-hosted Argos deployment via Docker, sourced from Yunohost catalog
+Self-hosted Argos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -243,7 +243,7 @@ Self-hosted Argos deployment via Docker, sourced from Yunohost catalog
 
 ### [Ariang](/templates/ariang)
 
-Self-hosted Ariang deployment via Docker, sourced from Portainer catalog
+Self-hosted Ariang deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -253,7 +253,7 @@ Self-hosted Ariang deployment via Docker, sourced from Portainer catalog
 
 ### [Audiobookshelf](/templates/audiobookshelf)
 
-Self-hosted Audiobookshelf deployment via Docker, sourced from Portainer catalog
+Self-hosted Audiobookshelf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -263,7 +263,7 @@ Self-hosted Audiobookshelf deployment via Docker, sourced from Portainer catalog
 
 ### [Aurral](/templates/aurral)
 
-Self-hosted Aurral deployment via Docker, sourced from Portainer catalog
+Self-hosted Aurral deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -273,7 +273,7 @@ Self-hosted Aurral deployment via Docker, sourced from Portainer catalog
 
 ### [Authelia](/templates/authelia)
 
-Self-hosted Authelia deployment via Docker, sourced from Portainer catalog
+Self-hosted Authelia deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -283,7 +283,7 @@ Self-hosted Authelia deployment via Docker, sourced from Portainer catalog
 
 ### [Authentik](/templates/authentik)
 
-Self-hosted Authentik deployment via Docker, sourced from Portainer catalog
+Self-hosted Authentik deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -293,7 +293,7 @@ Self-hosted Authentik deployment via Docker, sourced from Portainer catalog
 
 ### [Autobrr](/templates/autobrr)
 
-Self-hosted Autobrr deployment via Docker, sourced from Portainer catalog
+Self-hosted Autobrr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -303,7 +303,7 @@ Self-hosted Autobrr deployment via Docker, sourced from Portainer catalog
 
 ### [Automad](/templates/automad)
 
-Self-hosted Automad deployment via Docker, sourced from YunoHost catalog
+Self-hosted Automad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -313,7 +313,7 @@ Self-hosted Automad deployment via Docker, sourced from YunoHost catalog
 
 ### [Automatisch](/templates/automatisch)
 
-Self-hosted Automatisch deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted business automation tool that connects your apps and automates workflows without coding, similar to Zapier.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -323,7 +323,7 @@ Self-hosted Automatisch deployment via Docker, sourced from Awesome-Selfhosted c
 
 ### [Azuracast](/templates/azuracast)
 
-Self-hosted Azuracast deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted web radio management suite with live broadcasting, media library management, and listener analytics.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -333,7 +333,7 @@ Self-hosted Azuracast deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Backdrop](/templates/backdrop)
 
-Self-hosted Backdrop deployment via Docker, sourced from YunoHost catalog
+Self-hosted Backdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -343,7 +343,7 @@ Self-hosted Backdrop deployment via Docker, sourced from YunoHost catalog
 
 ### [Backrest](/templates/backrest)
 
-Self-hosted Backrest deployment via Docker, sourced from Yunohost catalog
+Self-hosted Backrest deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -353,7 +353,7 @@ Self-hosted Backrest deployment via Docker, sourced from Yunohost catalog
 
 ### [Baikal](/templates/baikal)
 
-Self-hosted Baikal deployment via Docker, sourced from Portainer catalog
+Self-hosted Baikal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -363,7 +363,7 @@ Self-hosted Baikal deployment via Docker, sourced from Portainer catalog
 
 ### [Baserow](/templates/baserow)
 
-Self-hosted Baserow deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Baserow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -373,7 +373,7 @@ Self-hosted Baserow deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Bazarr](/templates/bazarr)
 
-Self-hosted Bazarr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bazarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -383,7 +383,7 @@ Self-hosted Bazarr deployment via Docker, sourced from Umbrel catalog
 
 ### [Beaver Habit Tracker](/templates/beaver-habit-tracker)
 
-Self-hosted Beaver Habit Tracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted habit tracking application that helps you build and maintain daily habits with a clean, minimal interface.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -393,7 +393,7 @@ Self-hosted Beaver Habit Tracker deployment via Docker, sourced from Awesome-Sel
 
 ### [Beets](/templates/beets)
 
-Self-hosted Beets deployment via Docker, sourced from Portainer catalog
+Self-hosted Beets deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -403,7 +403,7 @@ Self-hosted Beets deployment via Docker, sourced from Portainer catalog
 
 ### [Bentopdf](/templates/bentopdf)
 
-Self-hosted Bentopdf deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bentopdf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -413,7 +413,7 @@ Self-hosted Bentopdf deployment via Docker, sourced from Umbrel catalog
 
 ### [Beszel](/templates/beszel)
 
-Self-hosted Beszel deployment via Docker, sourced from Portainer catalog
+Self-hosted Beszel deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -423,7 +423,7 @@ Self-hosted Beszel deployment via Docker, sourced from Portainer catalog
 
 ### [Bewcloud](/templates/bewcloud)
 
-Self-hosted Bewcloud deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted personal cloud platform for file storage, sharing, and collaboration with a modern web interface.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -433,7 +433,7 @@ Self-hosted Bewcloud deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Bitaxe Sentry](/templates/bitaxe-sentry)
 
-Self-hosted Bitaxe Sentry deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitaxe Sentry deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -443,7 +443,7 @@ Self-hosted Bitaxe Sentry deployment via Docker, sourced from Umbrel catalog
 
 ### [Bitcoin](/templates/bitcoin)
 
-Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitcoin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -453,7 +453,7 @@ Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog
 
 ### [Bitcoin Knots](/templates/bitcoin-knots)
 
-Self-hosted Bitcoin Knots deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitcoin Knots deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -463,7 +463,7 @@ Self-hosted Bitcoin Knots deployment via Docker, sourced from Umbrel catalog
 
 ### [Blinko](/templates/blinko)
 
-Self-hosted Blinko deployment via Docker, sourced from Portainer catalog
+Self-hosted Blinko deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -473,7 +473,7 @@ Self-hosted Blinko deployment via Docker, sourced from Portainer catalog
 
 ### [Bludit](/templates/bludit)
 
-Self-hosted Bludit deployment via Docker, sourced from Yunohost catalog
+Self-hosted Bludit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -483,7 +483,7 @@ Self-hosted Bludit deployment via Docker, sourced from Yunohost catalog
 
 ### [Bonfire](/templates/bonfire)
 
-Self-hosted Bonfire deployment via Docker, sourced from Yunohost catalog
+Self-hosted Bonfire deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -493,7 +493,7 @@ Self-hosted Bonfire deployment via Docker, sourced from Yunohost catalog
 
 ### [Booklogr](/templates/booklogr)
 
-Self-hosted Booklogr deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted book tracking and reading log application to catalog your library and monitor reading progress.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -503,7 +503,7 @@ Self-hosted Booklogr deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Booklore](/templates/booklore)
 
-Self-hosted Booklore deployment via Docker, sourced from Umbrel catalog
+Self-hosted Booklore deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -513,7 +513,7 @@ Self-hosted Booklore deployment via Docker, sourced from Umbrel catalog
 
 ### [Booksonic](/templates/booksonic)
 
-Self-hosted Booksonic deployment via Docker, sourced from Portainer catalog
+Self-hosted Booksonic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -523,7 +523,7 @@ Self-hosted Booksonic deployment via Docker, sourced from Portainer catalog
 
 ### [Bookstack](/templates/bookstack)
 
-Self-hosted Bookstack deployment via Docker, sourced from Yunohost catalog
+Self-hosted Bookstack deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -533,7 +533,7 @@ Self-hosted Bookstack deployment via Docker, sourced from Yunohost catalog
 
 ### [Bookwyrm](/templates/bookwyrm)
 
-Self-hosted Bookwyrm deployment via Docker, sourced from Yunohost catalog
+Self-hosted Bookwyrm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -543,7 +543,7 @@ Self-hosted Bookwyrm deployment via Docker, sourced from Yunohost catalog
 
 ### [Borg](/templates/borg)
 
-Self-hosted Borg deployment via Docker, sourced from Yunohost catalog
+Self-hosted Borg deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -553,7 +553,7 @@ Self-hosted Borg deployment via Docker, sourced from Yunohost catalog
 
 ### [Borgserver](/templates/borgserver)
 
-Self-hosted Borgserver deployment via Docker, sourced from Yunohost catalog
+Self-hosted Borgserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -563,7 +563,7 @@ Self-hosted Borgserver deployment via Docker, sourced from Yunohost catalog
 
 ### [Borgwarehouse](/templates/borgwarehouse)
 
-Self-hosted Borgwarehouse deployment via Docker, sourced from YunoHost catalog
+Self-hosted Borgwarehouse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -573,7 +573,7 @@ Self-hosted Borgwarehouse deployment via Docker, sourced from YunoHost catalog
 
 ### [Breezewiki](/templates/breezewiki)
 
-Self-hosted Breezewiki deployment via Docker, sourced from Yunohost catalog
+Self-hosted Breezewiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -583,7 +583,7 @@ Self-hosted Breezewiki deployment via Docker, sourced from Yunohost catalog
 
 ### [Btc Rpc Explorer](/templates/btc-rpc-explorer)
 
-Self-hosted Btc Rpc Explorer deployment via Docker, sourced from Umbrel catalog
+Self-hosted Btc Rpc Explorer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -593,7 +593,7 @@ Self-hosted Btc Rpc Explorer deployment via Docker, sourced from Umbrel catalog
 
 ### [Budibase](/templates/budibase)
 
-Self-hosted Budibase deployment via Docker, sourced from Portainer catalog
+Self-hosted Budibase deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -603,7 +603,7 @@ Self-hosted Budibase deployment via Docker, sourced from Portainer catalog
 
 ### [Bytestash](/templates/bytestash)
 
-Self-hosted Bytestash deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted code snippet manager for storing, organizing, and sharing code snippets with syntax highlighting.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -613,7 +613,7 @@ Self-hosted Bytestash deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Caddy](/templates/caddy)
 
-Self-hosted Caddy deployment via Docker, sourced from Portainer catalog
+Self-hosted Caddy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -623,7 +623,7 @@ Self-hosted Caddy deployment via Docker, sourced from Portainer catalog
 
 ### [Calcom](/templates/calcom)
 
-Self-hosted Calcom deployment via Docker, sourced from Yunohost catalog
+Self-hosted Calcom deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -633,7 +633,7 @@ Self-hosted Calcom deployment via Docker, sourced from Yunohost catalog
 
 ### [Calibre Web Automated](/templates/calibre-web-automated)
 
-Self-hosted Calibre Web Automated deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Calibre Web Automated deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -643,7 +643,7 @@ Self-hosted Calibre Web Automated deployment via Docker, sourced from Awesome-Se
 
 ### [Calibreweb](/templates/calibreweb)
 
-Self-hosted Calibreweb deployment via Docker, sourced from Yunohost catalog
+Self-hosted Calibreweb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -653,7 +653,7 @@ Self-hosted Calibreweb deployment via Docker, sourced from Yunohost catalog
 
 ### [Campfire](/templates/campfire)
 
-Self-hosted Campfire deployment via Docker, sourced from Umbrel catalog
+Self-hosted Campfire deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -663,7 +663,7 @@ Self-hosted Campfire deployment via Docker, sourced from Umbrel catalog
 
 ### [Cannery](/templates/cannery)
 
-Self-hosted Cannery deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted pantry and food inventory tracker that helps manage stored food, expiration dates, and stock levels.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -673,7 +673,7 @@ Self-hosted Cannery deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Cashpilot](/templates/cashpilot)
 
-Self-hosted Cashpilot deployment via Docker, sourced from Portainer catalog
+Self-hosted Cashpilot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -683,7 +683,7 @@ Self-hosted Cashpilot deployment via Docker, sourced from Portainer catalog
 
 ### [Cashu Me](/templates/cashu-me)
 
-Self-hosted Cashu Me deployment via Docker, sourced from Umbrel catalog
+Self-hosted Cashu Me deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -693,7 +693,7 @@ Self-hosted Cashu Me deployment via Docker, sourced from Umbrel catalog
 
 ### [Castopod](/templates/castopod)
 
-Self-hosted Castopod deployment via Docker, sourced from Portainer catalog
+Self-hosted Castopod deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -703,7 +703,7 @@ Self-hosted Castopod deployment via Docker, sourced from Portainer catalog
 
 ### [Changedetection](/templates/changedetection)
 
-Self-hosted Changedetection deployment via Docker, sourced from Portainer catalog
+Self-hosted Changedetection deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -713,7 +713,7 @@ Self-hosted Changedetection deployment via Docker, sourced from Portainer catalo
 
 ### [Chantools](/templates/chantools)
 
-Self-hosted Chantools deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chantools deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -723,7 +723,7 @@ Self-hosted Chantools deployment via Docker, sourced from Umbrel catalog
 
 ### [Chatbot Ui](/templates/chatbot-ui)
 
-Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chatbot Ui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -733,7 +733,7 @@ Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog
 
 ### [Checkcle](/templates/checkcle)
 
-Self-hosted Checkcle deployment via Docker, sourced from Portainer catalog
+Self-hosted Checkcle deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -743,7 +743,7 @@ Self-hosted Checkcle deployment via Docker, sourced from Portainer catalog
 
 ### [Checkmate](/templates/checkmate)
 
-Self-hosted Checkmate deployment via Docker, sourced from Portainer catalog
+Self-hosted Checkmate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -753,7 +753,7 @@ Self-hosted Checkmate deployment via Docker, sourced from Portainer catalog
 
 ### [Chevereto](/templates/chevereto)
 
-Self-hosted Chevereto deployment via Docker, sourced from Portainer catalog
+Self-hosted Chevereto deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -763,7 +763,7 @@ Self-hosted Chevereto deployment via Docker, sourced from Portainer catalog
 
 ### [Chibisafe](/templates/chibisafe)
 
-Self-hosted Chibisafe deployment via Docker, sourced from Portainer catalog
+Self-hosted Chibisafe deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -773,7 +773,7 @@ Self-hosted Chibisafe deployment via Docker, sourced from Portainer catalog
 
 ### [Chiefonboarding](/templates/chiefonboarding)
 
-Self-hosted Chiefonboarding deployment via Docker, sourced from Portainer catalog
+Self-hosted Chiefonboarding deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -783,7 +783,7 @@ Self-hosted Chiefonboarding deployment via Docker, sourced from Portainer catalo
 
 ### [Chiyogami](/templates/chiyogami)
 
-Self-hosted Chiyogami deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted wallpaper management and rotation tool for organizing and cycling through desktop wallpapers.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -793,7 +793,7 @@ Self-hosted Chiyogami deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Chromium](/templates/chromium)
 
-Self-hosted Chromium deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chromium deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -803,7 +803,7 @@ Self-hosted Chromium deployment via Docker, sourced from Umbrel catalog
 
 ### [Cinny](/templates/cinny)
 
-Self-hosted Cinny deployment via Docker, sourced from Yunohost catalog
+Self-hosted Cinny deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -813,7 +813,7 @@ Self-hosted Cinny deployment via Docker, sourced from Yunohost catalog
 
 ### [Clamav](/templates/clamav)
 
-Self-hosted Clamav deployment via Docker, sourced from Portainer catalog
+Self-hosted Clamav deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -823,7 +823,7 @@ Self-hosted Clamav deployment via Docker, sourced from Portainer catalog
 
 ### [Cloudbeaver](/templates/cloudbeaver)
 
-Self-hosted Cloudbeaver deployment via Docker, sourced from Portainer catalog
+Self-hosted Cloudbeaver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -833,7 +833,7 @@ Self-hosted Cloudbeaver deployment via Docker, sourced from Portainer catalog
 
 ### [Cloudflared](/templates/cloudflared)
 
-Self-hosted Cloudflared deployment via Docker, sourced from Umbrel catalog
+Self-hosted Cloudflared deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -843,7 +843,7 @@ Self-hosted Cloudflared deployment via Docker, sourced from Umbrel catalog
 
 ### [Cloudreve](/templates/cloudreve)
 
-Self-hosted Cloudreve deployment via Docker, sourced from YunoHost catalog
+Self-hosted Cloudreve deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -853,7 +853,7 @@ Self-hosted Cloudreve deployment via Docker, sourced from YunoHost catalog
 
 ### [Codex](/templates/codex)
 
-Self-hosted Codex deployment via Docker, sourced from Portainer catalog
+Self-hosted Codex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -863,7 +863,7 @@ Self-hosted Codex deployment via Docker, sourced from Portainer catalog
 
 ### [Codimd](/templates/codimd)
 
-Self-hosted Codimd deployment via Docker, sourced from Yunohost catalog
+Self-hosted Codimd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -873,7 +873,7 @@ Self-hosted Codimd deployment via Docker, sourced from Yunohost catalog
 
 ### [Commafeed](/templates/commafeed)
 
-Self-hosted Commafeed deployment via Docker, sourced from Yunohost catalog
+Self-hosted Commafeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -883,7 +883,7 @@ Self-hosted Commafeed deployment via Docker, sourced from Yunohost catalog
 
 ### [Commandbox](/templates/commandbox)
 
-Self-hosted Commandbox deployment via Docker, sourced from Portainer catalog
+Self-hosted Commandbox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -893,7 +893,7 @@ Self-hosted Commandbox deployment via Docker, sourced from Portainer catalog
 
 ### [Conduit](/templates/conduit)
 
-Self-hosted Conduit deployment via Docker, sourced from Yunohost catalog
+Self-hosted Conduit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -903,7 +903,7 @@ Self-hosted Conduit deployment via Docker, sourced from Yunohost catalog
 
 ### [Convertx](/templates/convertx)
 
-Self-hosted Convertx deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Convertx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -913,7 +913,7 @@ Self-hosted Convertx deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Cops](/templates/cops)
 
-Self-hosted Cops deployment via Docker, sourced from Portainer catalog
+Self-hosted Cops deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -923,7 +923,7 @@ Self-hosted Cops deployment via Docker, sourced from Portainer catalog
 
 ### [Copyparty](/templates/copyparty)
 
-Self-hosted Copyparty deployment via Docker, sourced from Umbrel catalog
+Self-hosted Copyparty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -933,7 +933,7 @@ Self-hosted Copyparty deployment via Docker, sourced from Umbrel catalog
 
 ### [Core Lightning](/templates/core-lightning)
 
-Self-hosted Core Lightning deployment via Docker, sourced from Umbrel catalog
+Self-hosted Core Lightning deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -943,7 +943,7 @@ Self-hosted Core Lightning deployment via Docker, sourced from Umbrel catalog
 
 ### [Coturn](/templates/coturn)
 
-Self-hosted Coturn deployment via Docker, sourced from YunoHost catalog
+Self-hosted Coturn deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -953,7 +953,7 @@ Self-hosted Coturn deployment via Docker, sourced from YunoHost catalog
 
 ### [Couchdb](/templates/couchdb)
 
-Self-hosted Couchdb deployment via Docker, sourced from YunoHost catalog
+Self-hosted Couchdb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -963,7 +963,7 @@ Self-hosted Couchdb deployment via Docker, sourced from YunoHost catalog
 
 ### [Cronmaster](/templates/cronmaster)
 
-Self-hosted Cronmaster deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Cronmaster deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -973,7 +973,7 @@ Self-hosted Cronmaster deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Cryptpad](/templates/cryptpad)
 
-Self-hosted Cryptpad deployment via Docker, sourced from Portainer catalog
+Self-hosted Cryptpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -983,7 +983,7 @@ Self-hosted Cryptpad deployment via Docker, sourced from Portainer catalog
 
 ### [Cyberchef](/templates/cyberchef)
 
-Self-hosted Cyberchef deployment via Docker, sourced from Yunohost catalog
+Self-hosted Cyberchef deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -993,7 +993,7 @@ Self-hosted Cyberchef deployment via Docker, sourced from Yunohost catalog
 
 ### [Cypht](/templates/cypht)
 
-Self-hosted Cypht deployment via Docker, sourced from YunoHost catalog
+Self-hosted Cypht deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1003,7 +1003,7 @@ Self-hosted Cypht deployment via Docker, sourced from YunoHost catalog
 
 ### [Daapd](/templates/daapd)
 
-Self-hosted Daapd deployment via Docker, sourced from Portainer catalog
+Self-hosted Daapd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1013,7 +1013,7 @@ Self-hosted Daapd deployment via Docker, sourced from Portainer catalog
 
 ### [Dagu](/templates/dagu)
 
-Self-hosted Dagu deployment via Docker, sourced from Portainer catalog
+Self-hosted Dagu deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1023,7 +1023,7 @@ Self-hosted Dagu deployment via Docker, sourced from Portainer catalog
 
 ### [Dailytxt](/templates/dailytxt)
 
-Self-hosted Dailytxt deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Dailytxt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1033,7 +1033,7 @@ Self-hosted Dailytxt deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Dashdot](/templates/dashdot)
 
-Self-hosted Dashdot deployment via Docker, sourced from Portainer catalog
+Self-hosted Dashdot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1043,7 +1043,7 @@ Self-hosted Dashdot deployment via Docker, sourced from Portainer catalog
 
 ### [Databag](/templates/databag)
 
-Self-hosted Databag deployment via Docker, sourced from Portainer catalog
+Self-hosted Databag deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1053,7 +1053,7 @@ Self-hosted Databag deployment via Docker, sourced from Portainer catalog
 
 ### [Databunker](/templates/databunker)
 
-Self-hosted Databunker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Databunker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1063,7 +1063,7 @@ Self-hosted Databunker deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Davos](/templates/davos)
 
-Self-hosted Davos deployment via Docker, sourced from Portainer catalog
+Self-hosted Davos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1073,7 +1073,7 @@ Self-hosted Davos deployment via Docker, sourced from Portainer catalog
 
 ### [Dawarich](/templates/dawarich)
 
-Self-hosted Dawarich deployment via Docker, sourced from Portainer catalog
+Self-hosted Dawarich deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1083,7 +1083,7 @@ Self-hosted Dawarich deployment via Docker, sourced from Portainer catalog
 
 ### [Deleterr](/templates/deleterr)
 
-Self-hosted Deleterr deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Deleterr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1093,7 +1093,7 @@ Self-hosted Deleterr deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Deluge](/templates/deluge)
 
-Self-hosted Deluge deployment via Docker, sourced from Portainer catalog
+Self-hosted Deluge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1103,7 +1103,7 @@ Self-hosted Deluge deployment via Docker, sourced from Portainer catalog
 
 ### [Dex](/templates/dex)
 
-Self-hosted Dex deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1113,7 +1113,7 @@ Self-hosted Dex deployment via Docker, sourced from Yunohost catalog
 
 ### [Diaspora](/templates/diaspora)
 
-Self-hosted Diaspora deployment via Docker, sourced from Yunohost catalog
+Self-hosted Diaspora deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1123,7 +1123,7 @@ Self-hosted Diaspora deployment via Docker, sourced from Yunohost catalog
 
 ### [Directorylister](/templates/directorylister)
 
-Self-hosted Directorylister deployment via Docker, sourced from YunoHost catalog
+Self-hosted Directorylister deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1133,7 +1133,7 @@ Self-hosted Directorylister deployment via Docker, sourced from YunoHost catalog
 
 ### [Discourse](/templates/discourse)
 
-Self-hosted Discourse deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Discourse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1143,7 +1143,7 @@ Self-hosted Discourse deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Diskover](/templates/diskover)
 
-Self-hosted Diskover deployment via Docker, sourced from Portainer catalog
+Self-hosted Diskover deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1153,7 +1153,7 @@ Self-hosted Diskover deployment via Docker, sourced from Portainer catalog
 
 ### [Dittofeed](/templates/dittofeed)
 
-Self-hosted Dittofeed deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Dittofeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1163,7 +1163,7 @@ Self-hosted Dittofeed deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Docker Mailserver](/templates/docker-mailserver)
 
-Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Docker Mailserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1173,7 +1173,7 @@ Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfho
 
 ### [Dockge](/templates/dockge)
 
-Self-hosted Dockge deployment via Docker, sourced from Portainer catalog
+Self-hosted Dockge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1183,7 +1183,7 @@ Self-hosted Dockge deployment via Docker, sourced from Portainer catalog
 
 ### [Docmost](/templates/docmost)
 
-Self-hosted Docmost deployment via Docker, sourced from Portainer catalog
+Self-hosted Docmost deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1193,7 +1193,7 @@ Self-hosted Docmost deployment via Docker, sourced from Portainer catalog
 
 ### [Docsify](/templates/docsify)
 
-Self-hosted Docsify deployment via Docker, sourced from Yunohost catalog
+Self-hosted Docsify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1203,7 +1203,7 @@ Self-hosted Docsify deployment via Docker, sourced from Yunohost catalog
 
 ### [Docuseal](/templates/docuseal)
 
-Self-hosted Docuseal deployment via Docker, sourced from Portainer catalog
+Self-hosted Docuseal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1213,7 +1213,7 @@ Self-hosted Docuseal deployment via Docker, sourced from Portainer catalog
 
 ### [Dokos](/templates/dokos)
 
-Self-hosted Dokos deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dokos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1223,7 +1223,7 @@ Self-hosted Dokos deployment via Docker, sourced from Yunohost catalog
 
 ### [Dokuwiki](/templates/dokuwiki)
 
-Self-hosted Dokuwiki deployment via Docker, sourced from YunoHost catalog
+Self-hosted Dokuwiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1233,7 +1233,7 @@ Self-hosted Dokuwiki deployment via Docker, sourced from YunoHost catalog
 
 ### [Dolibarr](/templates/dolibarr)
 
-Self-hosted Dolibarr deployment via Docker, sourced from YunoHost catalog
+Self-hosted Dolibarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1243,7 +1243,7 @@ Self-hosted Dolibarr deployment via Docker, sourced from YunoHost catalog
 
 ### [Domain Locker](/templates/domain-locker)
 
-Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog
+Self-hosted Domain Locker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1253,7 +1253,7 @@ Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog
 
 ### [Domoticz](/templates/domoticz)
 
-Self-hosted Domoticz deployment via Docker, sourced from Portainer catalog
+Self-hosted Domoticz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1263,7 +1263,7 @@ Self-hosted Domoticz deployment via Docker, sourced from Portainer catalog
 
 ### [Donetick](/templates/donetick)
 
-Self-hosted Donetick deployment via Docker, sourced from Umbrel catalog
+Self-hosted Donetick deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1273,7 +1273,7 @@ Self-hosted Donetick deployment via Docker, sourced from Umbrel catalog
 
 ### [Downtify](/templates/downtify)
 
-Self-hosted Downtify deployment via Docker, sourced from Umbrel catalog
+Self-hosted Downtify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1283,7 +1283,7 @@ Self-hosted Downtify deployment via Docker, sourced from Umbrel catalog
 
 ### [Dozzle](/templates/dozzle)
 
-Self-hosted Dozzle deployment via Docker, sourced from Portainer catalog
+Self-hosted Dozzle deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1293,7 +1293,7 @@ Self-hosted Dozzle deployment via Docker, sourced from Portainer catalog
 
 ### [Drop](/templates/drop)
 
-Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Drop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1303,7 +1303,7 @@ Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Drupal](/templates/drupal)
 
-Self-hosted Drupal deployment via Docker, sourced from Portainer catalog
+Self-hosted Drupal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1313,7 +1313,7 @@ Self-hosted Drupal deployment via Docker, sourced from Portainer catalog
 
 ### [Dumbbudget](/templates/dumbbudget)
 
-Self-hosted Dumbbudget deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dumbbudget deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1323,7 +1323,7 @@ Self-hosted Dumbbudget deployment via Docker, sourced from Yunohost catalog
 
 ### [Dumbdo](/templates/dumbdo)
 
-Self-hosted Dumbdo deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dumbdo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1333,7 +1333,7 @@ Self-hosted Dumbdo deployment via Docker, sourced from Yunohost catalog
 
 ### [Dumbdrop](/templates/dumbdrop)
 
-Self-hosted Dumbdrop deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dumbdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1343,7 +1343,7 @@ Self-hosted Dumbdrop deployment via Docker, sourced from Yunohost catalog
 
 ### [Dumbkan](/templates/dumbkan)
 
-Self-hosted Dumbkan deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dumbkan deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1353,7 +1353,7 @@ Self-hosted Dumbkan deployment via Docker, sourced from Yunohost catalog
 
 ### [Dumbpad](/templates/dumbpad)
 
-Self-hosted Dumbpad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Dumbpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1363,7 +1363,7 @@ Self-hosted Dumbpad deployment via Docker, sourced from Umbrel catalog
 
 ### [Dumbwhois](/templates/dumbwhois)
 
-Self-hosted Dumbwhois deployment via Docker, sourced from Yunohost catalog
+Self-hosted Dumbwhois deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1373,7 +1373,7 @@ Self-hosted Dumbwhois deployment via Docker, sourced from Yunohost catalog
 
 ### [Duplicacy](/templates/duplicacy)
 
-Self-hosted Duplicacy deployment via Docker, sourced from Portainer catalog
+Self-hosted Duplicacy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1383,7 +1383,7 @@ Self-hosted Duplicacy deployment via Docker, sourced from Portainer catalog
 
 ### [Duplicati](/templates/duplicati)
 
-Self-hosted Duplicati deployment via Docker, sourced from Portainer catalog
+Self-hosted Duplicati deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1393,7 +1393,7 @@ Self-hosted Duplicati deployment via Docker, sourced from Portainer catalog
 
 ### [Elasticsearch](/templates/elasticsearch)
 
-Self-hosted Elasticsearch deployment via Docker, sourced from Portainer catalog
+Self-hosted Elasticsearch deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1403,7 +1403,7 @@ Self-hosted Elasticsearch deployment via Docker, sourced from Portainer catalog
 
 ### [Elasticsearch8](/templates/elasticsearch8)
 
-Self-hosted Elasticsearch8 deployment via Docker, sourced from Yunohost catalog
+Self-hosted Elasticsearch8 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1413,7 +1413,7 @@ Self-hosted Elasticsearch8 deployment via Docker, sourced from Yunohost catalog
 
 ### [Electrs](/templates/electrs)
 
-Self-hosted Electrs deployment via Docker, sourced from Umbrel catalog
+Self-hosted Electrs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1423,7 +1423,7 @@ Self-hosted Electrs deployment via Docker, sourced from Umbrel catalog
 
 ### [Electrumx](/templates/electrumx)
 
-Self-hosted Electrumx deployment via Docker, sourced from Umbrel catalog
+Self-hosted Electrumx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1433,7 +1433,7 @@ Self-hosted Electrumx deployment via Docker, sourced from Umbrel catalog
 
 ### [Eleventy](/templates/eleventy)
 
-Self-hosted Eleventy deployment via Docker, sourced from Yunohost catalog
+Self-hosted Eleventy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1443,7 +1443,7 @@ Self-hosted Eleventy deployment via Docker, sourced from Yunohost catalog
 
 ### [Elk](/templates/elk)
 
-Self-hosted Elk deployment via Docker, sourced from Yunohost catalog
+Self-hosted Elk deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1453,7 +1453,7 @@ Self-hosted Elk deployment via Docker, sourced from Yunohost catalog
 
 ### [Emby](/templates/emby)
 
-Self-hosted Emby deployment via Docker, sourced from Portainer catalog
+Self-hosted Emby deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1463,7 +1463,7 @@ Self-hosted Emby deployment via Docker, sourced from Portainer catalog
 
 ### [Embystat](/templates/embystat)
 
-Self-hosted Embystat deployment via Docker, sourced from Portainer catalog
+Self-hosted Embystat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1473,7 +1473,7 @@ Self-hosted Embystat deployment via Docker, sourced from Portainer catalog
 
 ### [Enclosed](/templates/enclosed)
 
-Self-hosted Enclosed deployment via Docker, sourced from Umbrel catalog
+Self-hosted Enclosed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1483,7 +1483,7 @@ Self-hosted Enclosed deployment via Docker, sourced from Umbrel catalog
 
 ### [Endurain](/templates/endurain)
 
-Self-hosted Endurain deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Endurain deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1493,7 +1493,7 @@ Self-hosted Endurain deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Ergo](/templates/ergo)
 
-Self-hosted Ergo deployment via Docker, sourced from Yunohost catalog
+Self-hosted Ergo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1503,7 +1503,7 @@ Self-hosted Ergo deployment via Docker, sourced from Yunohost catalog
 
 ### [Esphome](/templates/esphome)
 
-Self-hosted Esphome deployment via Docker, sourced from Umbrel catalog
+Self-hosted Esphome deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1513,7 +1513,7 @@ Self-hosted Esphome deployment via Docker, sourced from Umbrel catalog
 
 ### [Espocrm](/templates/espocrm)
 
-Self-hosted Espocrm deployment via Docker, sourced from YunoHost catalog
+Self-hosted Espocrm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1523,7 +1523,7 @@ Self-hosted Espocrm deployment via Docker, sourced from YunoHost catalog
 
 ### [Etherpad](/templates/etherpad)
 
-Self-hosted Etherpad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Etherpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1533,7 +1533,7 @@ Self-hosted Etherpad deployment via Docker, sourced from Umbrel catalog
 
 ### [Excalidraw](/templates/excalidraw)
 
-Self-hosted Excalidraw deployment via Docker, sourced from Portainer catalog
+Self-hosted Excalidraw deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1543,7 +1543,7 @@ Self-hosted Excalidraw deployment via Docker, sourced from Portainer catalog
 
 ### [Fab Manager](/templates/fab-manager)
 
-Self-hosted Fab Manager deployment via Docker, sourced from Yunohost catalog
+Self-hosted Fab Manager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1553,7 +1553,7 @@ Self-hosted Fab Manager deployment via Docker, sourced from Yunohost catalog
 
 ### [Facilmap](/templates/facilmap)
 
-Self-hosted Facilmap deployment via Docker, sourced from YunoHost catalog
+Self-hosted Facilmap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1563,7 +1563,7 @@ Self-hosted Facilmap deployment via Docker, sourced from YunoHost catalog
 
 ### [Faircamp](/templates/faircamp)
 
-Self-hosted Faircamp deployment via Docker, sourced from Yunohost catalog
+Self-hosted Faircamp deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1573,7 +1573,7 @@ Self-hosted Faircamp deployment via Docker, sourced from Yunohost catalog
 
 ### [Fastapi](/templates/fastapi)
 
-Self-hosted Fastapi deployment via Docker, sourced from Yunohost catalog
+Self-hosted Fastapi deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1583,7 +1583,7 @@ Self-hosted Fastapi deployment via Docker, sourced from Yunohost catalog
 
 ### [Fedimintd](/templates/fedimintd)
 
-Self-hosted Fedimintd deployment via Docker, sourced from Umbrel catalog
+Self-hosted Fedimintd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1593,7 +1593,7 @@ Self-hosted Fedimintd deployment via Docker, sourced from Umbrel catalog
 
 ### [Feedcord](/templates/feedcord)
 
-Self-hosted Feedcord deployment via Docker, sourced from Portainer catalog
+Self-hosted Feedcord deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1603,7 +1603,7 @@ Self-hosted Feedcord deployment via Docker, sourced from Portainer catalog
 
 ### [Ferdium](/templates/ferdium)
 
-Self-hosted Ferdium deployment via Docker, sourced from Portainer catalog
+Self-hosted Ferdium deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1613,7 +1613,7 @@ Self-hosted Ferdium deployment via Docker, sourced from Portainer catalog
 
 ### [Fider](/templates/fider)
 
-Self-hosted Fider deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Fider deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1623,7 +1623,7 @@ Self-hosted Fider deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Fiduswriter](/templates/fiduswriter)
 
-Self-hosted Fiduswriter deployment via Docker, sourced from YunoHost catalog
+Self-hosted Fiduswriter deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1633,7 +1633,7 @@ Self-hosted Fiduswriter deployment via Docker, sourced from YunoHost catalog
 
 ### [File Browser](/templates/file-browser)
 
-Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog
+Self-hosted File Browser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1643,7 +1643,7 @@ Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog
 
 ### [Filebrowser](/templates/filebrowser)
 
-Self-hosted Filebrowser deployment via Docker, sourced from Portainer catalog
+Self-hosted Filebrowser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1653,7 +1653,7 @@ Self-hosted Filebrowser deployment via Docker, sourced from Portainer catalog
 
 ### [Filegator](/templates/filegator)
 
-Self-hosted Filegator deployment via Docker, sourced from Portainer catalog
+Self-hosted Filegator deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1663,7 +1663,7 @@ Self-hosted Filegator deployment via Docker, sourced from Portainer catalog
 
 ### [Filepizza](/templates/filepizza)
 
-Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
+Self-hosted Filepizza deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1673,7 +1673,7 @@ Self-hosted Filepizza deployment via Docker, sourced from Portainer catalog
 
 ### [Filerun](/templates/filerun)
 
-Self-hosted Filerun deployment via Docker, sourced from Portainer catalog
+Self-hosted Filerun deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1683,7 +1683,7 @@ Self-hosted Filerun deployment via Docker, sourced from Portainer catalog
 
 ### [Filestash](/templates/filestash)
 
-Self-hosted Filestash deployment via Docker, sourced from Portainer catalog
+Self-hosted Filestash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1693,7 +1693,7 @@ Self-hosted Filestash deployment via Docker, sourced from Portainer catalog
 
 ### [Firefly Iii](/templates/firefly-iii)
 
-Self-hosted Firefly Iii deployment via Docker, sourced from Umbrel catalog
+Self-hosted Firefly Iii deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1703,7 +1703,7 @@ Self-hosted Firefly Iii deployment via Docker, sourced from Umbrel catalog
 
 ### [Firefox](/templates/firefox)
 
-Self-hosted Firefox deployment via Docker, sourced from Portainer catalog
+Self-hosted Firefox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1713,7 +1713,7 @@ Self-hosted Firefox deployment via Docker, sourced from Portainer catalog
 
 ### [Fireshare](/templates/fireshare)
 
-Self-hosted Fireshare deployment via Docker, sourced from Portainer catalog
+Self-hosted Fireshare deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1723,7 +1723,7 @@ Self-hosted Fireshare deployment via Docker, sourced from Portainer catalog
 
 ### [Fittrackee](/templates/fittrackee)
 
-Self-hosted Fittrackee deployment via Docker, sourced from YunoHost catalog
+Self-hosted Fittrackee deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1733,7 +1733,7 @@ Self-hosted Fittrackee deployment via Docker, sourced from YunoHost catalog
 
 ### [Fizzy](/templates/fizzy)
 
-Self-hosted Fizzy deployment via Docker, sourced from Umbrel catalog
+Self-hosted Fizzy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1743,7 +1743,7 @@ Self-hosted Fizzy deployment via Docker, sourced from Umbrel catalog
 
 ### [Flame](/templates/flame)
 
-Self-hosted Flame deployment via Docker, sourced from Portainer catalog
+Self-hosted Flame deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1753,7 +1753,7 @@ Self-hosted Flame deployment via Docker, sourced from Portainer catalog
 
 ### [Flaresolverr](/templates/flaresolverr)
 
-Self-hosted Flaresolverr deployment via Docker, sourced from Portainer catalog
+Self-hosted Flaresolverr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1763,7 +1763,7 @@ Self-hosted Flaresolverr deployment via Docker, sourced from Portainer catalog
 
 ### [Flarum](/templates/flarum)
 
-Self-hosted Flarum deployment via Docker, sourced from Yunohost catalog
+Self-hosted Flarum deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1773,7 +1773,7 @@ Self-hosted Flarum deployment via Docker, sourced from Yunohost catalog
 
 ### [Flatnotes](/templates/flatnotes)
 
-Self-hosted Flatnotes deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Flatnotes deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1783,7 +1783,7 @@ Self-hosted Flatnotes deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Flink](/templates/flink)
 
-Self-hosted Flink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Flink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1793,7 +1793,7 @@ Self-hosted Flink deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Flohmarkt](/templates/flohmarkt)
 
-Self-hosted Flohmarkt deployment via Docker, sourced from Yunohost catalog
+Self-hosted Flohmarkt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1803,7 +1803,7 @@ Self-hosted Flohmarkt deployment via Docker, sourced from Yunohost catalog
 
 ### [Flood](/templates/flood)
 
-Self-hosted Flood deployment via Docker, sourced from Portainer catalog
+Self-hosted Flood deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1813,7 +1813,7 @@ Self-hosted Flood deployment via Docker, sourced from Portainer catalog
 
 ### [Flowiseai](/templates/flowiseai)
 
-Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog
+Self-hosted Flowiseai deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1823,7 +1823,7 @@ Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog
 
 ### [Fluffychat](/templates/fluffychat)
 
-Self-hosted Fluffychat deployment via Docker, sourced from Yunohost catalog
+Self-hosted Fluffychat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1833,7 +1833,7 @@ Self-hosted Fluffychat deployment via Docker, sourced from Yunohost catalog
 
 ### [Flyimg](/templates/flyimg)
 
-Self-hosted Flyimg deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Flyimg deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1843,7 +1843,7 @@ Self-hosted Flyimg deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Forgejo Runner](/templates/forgejo-runner)
 
-Self-hosted Forgejo Runner deployment via Docker, sourced from Yunohost catalog
+Self-hosted Forgejo Runner deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1853,7 +1853,7 @@ Self-hosted Forgejo Runner deployment via Docker, sourced from Yunohost catalog
 
 ### [Formicaio](/templates/formicaio)
 
-Self-hosted Formicaio deployment via Docker, sourced from Umbrel catalog
+Self-hosted Formicaio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1863,7 +1863,7 @@ Self-hosted Formicaio deployment via Docker, sourced from Umbrel catalog
 
 ### [Fossbilling](/templates/fossbilling)
 
-Self-hosted Fossbilling deployment via Docker, sourced from YunoHost catalog
+Self-hosted Fossbilling deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1873,7 +1873,7 @@ Self-hosted Fossbilling deployment via Docker, sourced from YunoHost catalog
 
 ### [Fossflow](/templates/fossflow)
 
-Self-hosted Fossflow deployment via Docker, sourced from Umbrel catalog
+Self-hosted Fossflow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1883,7 +1883,7 @@ Self-hosted Fossflow deployment via Docker, sourced from Umbrel catalog
 
 ### [Freshrss](/templates/freshrss)
 
-Self-hosted Freshrss deployment via Docker, sourced from Portainer catalog
+Self-hosted Freshrss deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1893,7 +1893,7 @@ Self-hosted Freshrss deployment via Docker, sourced from Portainer catalog
 
 ### [Friendica](/templates/friendica)
 
-Self-hosted Friendica deployment via Docker, sourced from YunoHost catalog
+Self-hosted Friendica deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1903,7 +1903,7 @@ Self-hosted Friendica deployment via Docker, sourced from YunoHost catalog
 
 ### [Frigate](/templates/frigate)
 
-Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog
+Self-hosted Frigate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1913,7 +1913,7 @@ Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog
 
 ### [Fusion](/templates/fusion)
 
-Self-hosted Fusion deployment via Docker, sourced from Portainer catalog
+Self-hosted Fusion deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1923,7 +1923,7 @@ Self-hosted Fusion deployment via Docker, sourced from Portainer catalog
 
 ### [Fx](/templates/fx)
 
-Self-hosted Fx deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Fx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1933,7 +1933,7 @@ Self-hosted Fx deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Galette](/templates/galette)
 
-Self-hosted Galette deployment via Docker, sourced from YunoHost catalog
+Self-hosted Galette deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1943,7 +1943,7 @@ Self-hosted Galette deployment via Docker, sourced from YunoHost catalog
 
 ### [Gameyfin](/templates/gameyfin)
 
-Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Gameyfin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -1953,7 +1953,7 @@ Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Gancio](/templates/gancio)
 
-Self-hosted Gancio deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gancio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1963,7 +1963,7 @@ Self-hosted Gancio deployment via Docker, sourced from Yunohost catalog
 
 ### [Garage](/templates/garage)
 
-Self-hosted Garage deployment via Docker, sourced from Yunohost catalog
+Self-hosted Garage deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -1973,7 +1973,7 @@ Self-hosted Garage deployment via Docker, sourced from Yunohost catalog
 
 ### [Gathio](/templates/gathio)
 
-Self-hosted Gathio deployment via Docker, sourced from Portainer catalog
+Self-hosted Gathio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1983,7 +1983,7 @@ Self-hosted Gathio deployment via Docker, sourced from Portainer catalog
 
 ### [Gatus](/templates/gatus)
 
-Self-hosted Gatus deployment via Docker, sourced from Portainer catalog
+Self-hosted Gatus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -1993,7 +1993,7 @@ Self-hosted Gatus deployment via Docker, sourced from Portainer catalog
 
 ### [Geeftlist](/templates/geeftlist)
 
-Self-hosted Geeftlist deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Geeftlist deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2003,7 +2003,7 @@ Self-hosted Geeftlist deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Ghost](/templates/ghost)
 
-Self-hosted Ghost deployment via Docker, sourced from Umbrel catalog
+Self-hosted Ghost deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2013,7 +2013,7 @@ Self-hosted Ghost deployment via Docker, sourced from Umbrel catalog
 
 ### [Ghostfolio](/templates/ghostfolio)
 
-Self-hosted Ghostfolio deployment via Docker, sourced from Portainer catalog
+Self-hosted Ghostfolio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2023,7 +2023,7 @@ Self-hosted Ghostfolio deployment via Docker, sourced from Portainer catalog
 
 ### [Gitea](/templates/gitea)
 
-Self-hosted Gitea deployment via Docker, sourced from Portainer catalog
+Self-hosted Gitea deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2033,7 +2033,7 @@ Self-hosted Gitea deployment via Docker, sourced from Portainer catalog
 
 ### [Gitingest](/templates/gitingest)
 
-Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog
+Self-hosted Gitingest deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2043,7 +2043,7 @@ Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog
 
 ### [Gitlab](/templates/gitlab)
 
-Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog
+Self-hosted Gitlab deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2053,7 +2053,7 @@ Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog
 
 ### [Gitlab Runner](/templates/gitlab-runner)
 
-Self-hosted Gitlab Runner deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gitlab Runner deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2063,7 +2063,7 @@ Self-hosted Gitlab Runner deployment via Docker, sourced from Yunohost catalog
 
 ### [Glance](/templates/glance)
 
-Self-hosted Glance deployment via Docker, sourced from Portainer catalog
+Self-hosted Glance deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2073,7 +2073,7 @@ Self-hosted Glance deployment via Docker, sourced from Portainer catalog
 
 ### [Glances](/templates/glances)
 
-Self-hosted Glances deployment via Docker, sourced from Portainer catalog
+Self-hosted Glances deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2083,7 +2083,7 @@ Self-hosted Glances deployment via Docker, sourced from Portainer catalog
 
 ### [Glpi](/templates/glpi)
 
-Self-hosted Glpi deployment via Docker, sourced from YunoHost catalog
+Self-hosted Glpi deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2093,7 +2093,7 @@ Self-hosted Glpi deployment via Docker, sourced from YunoHost catalog
 
 ### [Go Socks5 Proxy](/templates/go-socks5-proxy)
 
-Self-hosted Go Socks5 Proxy deployment via Docker, sourced from Portainer catalog
+Self-hosted Go Socks5 Proxy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2103,7 +2103,7 @@ Self-hosted Go Socks5 Proxy deployment via Docker, sourced from Portainer catalo
 
 ### [Gocron](/templates/gocron)
 
-Self-hosted Gocron deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Gocron deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2113,7 +2113,7 @@ Self-hosted Gocron deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Gogs](/templates/gogs)
 
-Self-hosted Gogs deployment via Docker, sourced from YunoHost catalog
+Self-hosted Gogs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2123,7 +2123,7 @@ Self-hosted Gogs deployment via Docker, sourced from YunoHost catalog
 
 ### [Gokapi](/templates/gokapi)
 
-Self-hosted Gokapi deployment via Docker, sourced from Portainer catalog
+Self-hosted Gokapi deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2133,7 +2133,7 @@ Self-hosted Gokapi deployment via Docker, sourced from Portainer catalog
 
 ### [Gomft](/templates/gomft)
 
-Self-hosted Gomft deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gomft deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2143,7 +2143,7 @@ Self-hosted Gomft deployment via Docker, sourced from Yunohost catalog
 
 ### [Gonic](/templates/gonic)
 
-Self-hosted Gonic deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gonic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2153,7 +2153,7 @@ Self-hosted Gonic deployment via Docker, sourced from Yunohost catalog
 
 ### [Gotenberg](/templates/gotenberg)
 
-Self-hosted Gotenberg deployment via Docker, sourced from Portainer catalog
+Self-hosted Gotenberg deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2163,7 +2163,7 @@ Self-hosted Gotenberg deployment via Docker, sourced from Portainer catalog
 
 ### [Gotosocial](/templates/gotosocial)
 
-Self-hosted Gotosocial deployment via Docker, sourced from Portainer catalog
+Self-hosted Gotosocial deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2173,7 +2173,7 @@ Self-hosted Gotosocial deployment via Docker, sourced from Portainer catalog
 
 ### [Grafana](/templates/grafana)
 
-Self-hosted Grafana deployment via Docker, sourced from Portainer catalog
+Self-hosted Grafana deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2183,7 +2183,7 @@ Self-hosted Grafana deployment via Docker, sourced from Portainer catalog
 
 ### [Grav](/templates/grav)
 
-Self-hosted Grav deployment via Docker, sourced from Yunohost catalog
+Self-hosted Grav deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2193,7 +2193,7 @@ Self-hosted Grav deployment via Docker, sourced from Yunohost catalog
 
 ### [Grist](/templates/grist)
 
-Self-hosted Grist deployment via Docker, sourced from Yunohost catalog
+Self-hosted Grist deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2203,7 +2203,7 @@ Self-hosted Grist deployment via Docker, sourced from Yunohost catalog
 
 ### [Grocy](/templates/grocy)
 
-Self-hosted Grocy deployment via Docker, sourced from Yunohost catalog
+Self-hosted Grocy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2213,7 +2213,7 @@ Self-hosted Grocy deployment via Docker, sourced from Yunohost catalog
 
 ### [Guacamole](/templates/guacamole)
 
-Self-hosted Guacamole deployment via Docker, sourced from Portainer catalog
+Self-hosted Guacamole deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2223,7 +2223,7 @@ Self-hosted Guacamole deployment via Docker, sourced from Portainer catalog
 
 ### [Gull](/templates/gull)
 
-Self-hosted Gull deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gull deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2233,7 +2233,7 @@ Self-hosted Gull deployment via Docker, sourced from Yunohost catalog
 
 ### [Headphones](/templates/headphones)
 
-Self-hosted Headphones deployment via Docker, sourced from Portainer catalog
+Self-hosted Headphones deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2243,7 +2243,7 @@ Self-hosted Headphones deployment via Docker, sourced from Portainer catalog
 
 ### [Headscale](/templates/headscale)
 
-Self-hosted Headscale deployment via Docker, sourced from YunoHost catalog
+Self-hosted Headscale deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2253,7 +2253,7 @@ Self-hosted Headscale deployment via Docker, sourced from YunoHost catalog
 
 ### [Healthchecks](/templates/healthchecks)
 
-Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog
+Self-hosted Healthchecks deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2263,7 +2263,7 @@ Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog
 
 ### [Hedgedoc](/templates/hedgedoc)
 
-Self-hosted Hedgedoc deployment via Docker, sourced from Yunohost catalog
+Self-hosted Hedgedoc deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2273,7 +2273,7 @@ Self-hosted Hedgedoc deployment via Docker, sourced from Yunohost catalog
 
 ### [Heimdall](/templates/heimdall)
 
-Self-hosted Heimdall deployment via Docker, sourced from Portainer catalog
+Self-hosted Heimdall deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2283,7 +2283,7 @@ Self-hosted Heimdall deployment via Docker, sourced from Portainer catalog
 
 ### [Helipad](/templates/helipad)
 
-Self-hosted Helipad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Helipad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2293,7 +2293,7 @@ Self-hosted Helipad deployment via Docker, sourced from Umbrel catalog
 
 ### [Hermes Agent](/templates/hermes-agent)
 
-Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
+Self-hosted Hermes Agent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2303,7 +2303,7 @@ Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
 
 ### [Heyform](/templates/heyform)
 
-Self-hosted Heyform deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Heyform deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2313,7 +2313,7 @@ Self-hosted Heyform deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Hi.Events](/templates/hi-events)
 
-Self-hosted Hi.Events deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Hi.Events deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2323,7 +2323,7 @@ Self-hosted Hi.Events deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Holesail Switchboard](/templates/holesail-switchboard)
 
-Self-hosted Holesail Switchboard deployment via Docker, sourced from Umbrel catalog
+Self-hosted Holesail Switchboard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2333,7 +2333,7 @@ Self-hosted Holesail Switchboard deployment via Docker, sourced from Umbrel cata
 
 ### [Home Assistant](/templates/home-assistant)
 
-Self-hosted Home Assistant deployment via Docker, sourced from Portainer catalog
+Self-hosted Home Assistant deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2343,7 +2343,7 @@ Self-hosted Home Assistant deployment via Docker, sourced from Portainer catalog
 
 ### [Homeassistant](/templates/homeassistant)
 
-Self-hosted Homeassistant deployment via Docker, sourced from Yunohost catalog
+Self-hosted Homeassistant deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2353,7 +2353,7 @@ Self-hosted Homeassistant deployment via Docker, sourced from Yunohost catalog
 
 ### [Homebox](/templates/homebox)
 
-Self-hosted Homebox deployment via Docker, sourced from Portainer catalog
+Self-hosted Homebox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2363,7 +2363,7 @@ Self-hosted Homebox deployment via Docker, sourced from Portainer catalog
 
 ### [Homebridge](/templates/homebridge)
 
-Self-hosted Homebridge deployment via Docker, sourced from Umbrel catalog
+Self-hosted Homebridge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2373,7 +2373,7 @@ Self-hosted Homebridge deployment via Docker, sourced from Umbrel catalog
 
 ### [Homechart](/templates/homechart)
 
-Self-hosted Homechart deployment via Docker, sourced from Portainer catalog
+Self-hosted Homechart deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2383,7 +2383,7 @@ Self-hosted Homechart deployment via Docker, sourced from Portainer catalog
 
 ### [Homer](/templates/homer)
 
-Self-hosted Homer deployment via Docker, sourced from Portainer catalog
+Self-hosted Homer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2393,7 +2393,7 @@ Self-hosted Homer deployment via Docker, sourced from Portainer catalog
 
 ### [Hotspot](/templates/hotspot)
 
-Self-hosted Hotspot deployment via Docker, sourced from Yunohost catalog
+Self-hosted Hotspot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2403,7 +2403,7 @@ Self-hosted Hotspot deployment via Docker, sourced from Yunohost catalog
 
 ### [Hubleys](/templates/hubleys)
 
-Self-hosted Hubleys deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Hubleys deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2413,7 +2413,7 @@ Self-hosted Hubleys deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Hubzilla](/templates/hubzilla)
 
-Self-hosted Hubzilla deployment via Docker, sourced from Yunohost catalog
+Self-hosted Hubzilla deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2423,7 +2423,7 @@ Self-hosted Hubzilla deployment via Docker, sourced from Yunohost catalog
 
 ### [Huginn](/templates/huginn)
 
-Self-hosted Huginn deployment via Docker, sourced from Portainer catalog
+Self-hosted Huginn deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2433,7 +2433,7 @@ Self-hosted Huginn deployment via Docker, sourced from Portainer catalog
 
 ### [Humhub](/templates/humhub)
 
-Self-hosted Humhub deployment via Docker, sourced from YunoHost catalog
+Self-hosted Humhub deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2443,7 +2443,7 @@ Self-hosted Humhub deployment via Docker, sourced from YunoHost catalog
 
 ### [Icecast2](/templates/icecast2)
 
-Self-hosted Icecast2 deployment via Docker, sourced from Yunohost catalog
+Self-hosted Icecast2 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2453,7 +2453,7 @@ Self-hosted Icecast2 deployment via Docker, sourced from Yunohost catalog
 
 ### [Ihatemoney](/templates/ihatemoney)
 
-Self-hosted Ihatemoney deployment via Docker, sourced from YunoHost catalog
+Self-hosted Ihatemoney deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2463,7 +2463,7 @@ Self-hosted Ihatemoney deployment via Docker, sourced from YunoHost catalog
 
 ### [Immich](/templates/immich)
 
-Self-hosted Immich deployment via Docker, sourced from Portainer catalog
+Self-hosted Immich deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2473,7 +2473,7 @@ Self-hosted Immich deployment via Docker, sourced from Portainer catalog
 
 ### [Indico](/templates/indico)
 
-Self-hosted Indico deployment via Docker, sourced from YunoHost catalog
+Self-hosted Indico deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2483,7 +2483,7 @@ Self-hosted Indico deployment via Docker, sourced from YunoHost catalog
 
 ### [Inkheart](/templates/inkheart)
 
-Self-hosted Inkheart deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Inkheart deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2493,7 +2493,7 @@ Self-hosted Inkheart deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Invoiceshelf](/templates/invoiceshelf)
 
-Self-hosted Invoiceshelf deployment via Docker, sourced from YunoHost catalog
+Self-hosted Invoiceshelf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2503,7 +2503,7 @@ Self-hosted Invoiceshelf deployment via Docker, sourced from YunoHost catalog
 
 ### [Iobroker](/templates/iobroker)
 
-Self-hosted Iobroker deployment via Docker, sourced from Portainer catalog
+Self-hosted Iobroker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2513,7 +2513,7 @@ Self-hosted Iobroker deployment via Docker, sourced from Portainer catalog
 
 ### [Iperf](/templates/iperf)
 
-Self-hosted Iperf deployment via Docker, sourced from Portainer catalog
+Self-hosted Iperf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2523,7 +2523,7 @@ Self-hosted Iperf deployment via Docker, sourced from Portainer catalog
 
 ### [It Tools](/templates/it-tools)
 
-Self-hosted It Tools deployment via Docker, sourced from Portainer catalog
+Self-hosted It Tools deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2533,7 +2533,7 @@ Self-hosted It Tools deployment via Docker, sourced from Portainer catalog
 
 ### [Its Mytabs](/templates/its-mytabs)
 
-Self-hosted Its Mytabs deployment via Docker, sourced from Yunohost catalog
+Self-hosted Its Mytabs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2543,7 +2543,7 @@ Self-hosted Its Mytabs deployment via Docker, sourced from Yunohost catalog
 
 ### [Ittools](/templates/ittools)
 
-Self-hosted Ittools deployment via Docker, sourced from Umbrel catalog
+Self-hosted Ittools deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2553,7 +2553,7 @@ Self-hosted Ittools deployment via Docker, sourced from Umbrel catalog
 
 ### [Jackett](/templates/jackett)
 
-Self-hosted Jackett deployment via Docker, sourced from Portainer catalog
+Self-hosted Jackett deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2563,7 +2563,7 @@ Self-hosted Jackett deployment via Docker, sourced from Portainer catalog
 
 ### [Jam](/templates/jam)
 
-Self-hosted Jam deployment via Docker, sourced from Umbrel catalog
+Self-hosted Jam deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2573,7 +2573,7 @@ Self-hosted Jam deployment via Docker, sourced from Umbrel catalog
 
 ### [Jdownloader](/templates/jdownloader)
 
-Self-hosted Jdownloader deployment via Docker, sourced from Portainer catalog
+Self-hosted Jdownloader deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2583,7 +2583,7 @@ Self-hosted Jdownloader deployment via Docker, sourced from Portainer catalog
 
 ### [Jeedom](/templates/jeedom)
 
-Self-hosted Jeedom deployment via Docker, sourced from YunoHost catalog
+Self-hosted Jeedom deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2593,7 +2593,7 @@ Self-hosted Jeedom deployment via Docker, sourced from YunoHost catalog
 
 ### [Jellyfin](/templates/jellyfin)
 
-Self-hosted Jellyfin deployment via Docker, sourced from Portainer catalog
+Self-hosted Jellyfin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2603,7 +2603,7 @@ Self-hosted Jellyfin deployment via Docker, sourced from Portainer catalog
 
 ### [Jellyfin Vue](/templates/jellyfin-vue)
 
-Self-hosted Jellyfin Vue deployment via Docker, sourced from Yunohost catalog
+Self-hosted Jellyfin Vue deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2613,7 +2613,7 @@ Self-hosted Jellyfin Vue deployment via Docker, sourced from Yunohost catalog
 
 ### [Jellyseerr](/templates/jellyseerr)
 
-Self-hosted Jellyseerr deployment via Docker, sourced from Portainer catalog
+Self-hosted Jellyseerr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2623,7 +2623,7 @@ Self-hosted Jellyseerr deployment via Docker, sourced from Portainer catalog
 
 ### [Jenkins](/templates/jenkins)
 
-Self-hosted Jenkins deployment via Docker, sourced from Portainer catalog
+Self-hosted Jenkins deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2633,7 +2633,7 @@ Self-hosted Jenkins deployment via Docker, sourced from Portainer catalog
 
 ### [Jetlog](/templates/jetlog)
 
-Self-hosted Jetlog deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Jetlog deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2643,7 +2643,7 @@ Self-hosted Jetlog deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Joomla](/templates/joomla)
 
-Self-hosted Joomla deployment via Docker, sourced from Portainer catalog
+Self-hosted Joomla deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2653,7 +2653,7 @@ Self-hosted Joomla deployment via Docker, sourced from Portainer catalog
 
 ### [Joplin](/templates/joplin)
 
-Self-hosted Joplin deployment via Docker, sourced from Yunohost catalog
+Self-hosted Joplin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2663,7 +2663,7 @@ Self-hosted Joplin deployment via Docker, sourced from Yunohost catalog
 
 ### [Jotty](/templates/jotty)
 
-Self-hosted Jotty deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Jotty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2673,7 +2673,7 @@ Self-hosted Jotty deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Journiv](/templates/journiv)
 
-Self-hosted Journiv deployment via Docker, sourced from Yunohost catalog
+Self-hosted Journiv deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2683,7 +2683,7 @@ Self-hosted Journiv deployment via Docker, sourced from Yunohost catalog
 
 ### [Jsoncrack](/templates/jsoncrack)
 
-Self-hosted Jsoncrack deployment via Docker, sourced from Yunohost catalog
+Self-hosted Jsoncrack deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2693,7 +2693,7 @@ Self-hosted Jsoncrack deployment via Docker, sourced from Yunohost catalog
 
 ### [Kanboard](/templates/kanboard)
 
-Self-hosted Kanboard deployment via Docker, sourced from YunoHost catalog
+Self-hosted Kanboard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2703,7 +2703,7 @@ Self-hosted Kanboard deployment via Docker, sourced from YunoHost catalog
 
 ### [Kapowarr](/templates/kapowarr)
 
-Self-hosted Kapowarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Kapowarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2713,7 +2713,7 @@ Self-hosted Kapowarr deployment via Docker, sourced from Portainer catalog
 
 ### [Karakeep](/templates/karakeep)
 
-Self-hosted Karakeep deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Karakeep deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2723,7 +2723,7 @@ Self-hosted Karakeep deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Kavita](/templates/kavita)
 
-Self-hosted Kavita deployment via Docker, sourced from Portainer catalog
+Self-hosted Kavita deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2733,7 +2733,7 @@ Self-hosted Kavita deployment via Docker, sourced from Portainer catalog
 
 ### [Keeweb](/templates/keeweb)
 
-Self-hosted Keeweb deployment via Docker, sourced from YunoHost catalog
+Self-hosted Keeweb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2743,7 +2743,7 @@ Self-hosted Keeweb deployment via Docker, sourced from YunoHost catalog
 
 ### [Keila](/templates/keila)
 
-Self-hosted Keila deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Keila deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2753,7 +2753,7 @@ Self-hosted Keila deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Kestra](/templates/kestra)
 
-Self-hosted Kestra deployment via Docker, sourced from Portainer catalog
+Self-hosted Kestra deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2763,7 +2763,7 @@ Self-hosted Kestra deployment via Docker, sourced from Portainer catalog
 
 ### [Ketesa](/templates/ketesa)
 
-Self-hosted Ketesa deployment via Docker, sourced from Yunohost catalog
+Self-hosted Ketesa deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2773,7 +2773,7 @@ Self-hosted Ketesa deployment via Docker, sourced from Yunohost catalog
 
 ### [Kimai](/templates/kimai)
 
-Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog
+Self-hosted Kimai deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2783,7 +2783,7 @@ Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog
 
 ### [Kimai2](/templates/kimai2)
 
-Self-hosted Kimai2 deployment via Docker, sourced from Yunohost catalog
+Self-hosted Kimai2 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2793,7 +2793,7 @@ Self-hosted Kimai2 deployment via Docker, sourced from Yunohost catalog
 
 ### [Kitchenowl](/templates/kitchenowl)
 
-Self-hosted Kitchenowl deployment via Docker, sourced from Umbrel catalog
+Self-hosted Kitchenowl deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2803,7 +2803,7 @@ Self-hosted Kitchenowl deployment via Docker, sourced from Umbrel catalog
 
 ### [Koillection](/templates/koillection)
 
-Self-hosted Koillection deployment via Docker, sourced from Portainer catalog
+Self-hosted Koillection deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2813,7 +2813,7 @@ Self-hosted Koillection deployment via Docker, sourced from Portainer catalog
 
 ### [Komga](/templates/komga)
 
-Self-hosted Komga deployment via Docker, sourced from Portainer catalog
+Self-hosted Komga deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2823,7 +2823,7 @@ Self-hosted Komga deployment via Docker, sourced from Portainer catalog
 
 ### [Komodo](/templates/komodo)
 
-Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog
+Self-hosted Komodo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2833,7 +2833,7 @@ Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog
 
 ### [Kresus](/templates/kresus)
 
-Self-hosted Kresus deployment via Docker, sourced from Yunohost catalog
+Self-hosted Kresus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2843,7 +2843,7 @@ Self-hosted Kresus deployment via Docker, sourced from Yunohost catalog
 
 ### [Lago](/templates/lago)
 
-Self-hosted Lago deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Lago deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2853,7 +2853,7 @@ Self-hosted Lago deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Langfuse](/templates/langfuse)
 
-Self-hosted Langfuse deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Langfuse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -2863,7 +2863,7 @@ Self-hosted Langfuse deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Languagetool](/templates/languagetool)
 
-Self-hosted Languagetool deployment via Docker, sourced from Yunohost catalog
+Self-hosted Languagetool deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2873,7 +2873,7 @@ Self-hosted Languagetool deployment via Docker, sourced from Yunohost catalog
 
 ### [Lazylibrarian](/templates/lazylibrarian)
 
-Self-hosted Lazylibrarian deployment via Docker, sourced from Portainer catalog
+Self-hosted Lazylibrarian deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2883,7 +2883,7 @@ Self-hosted Lazylibrarian deployment via Docker, sourced from Portainer catalog
 
 ### [Leantime](/templates/leantime)
 
-Self-hosted Leantime deployment via Docker, sourced from Portainer catalog
+Self-hosted Leantime deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2893,7 +2893,7 @@ Self-hosted Leantime deployment via Docker, sourced from Portainer catalog
 
 ### [Lemmy](/templates/lemmy)
 
-Self-hosted Lemmy deployment via Docker, sourced from Yunohost catalog
+Self-hosted Lemmy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2903,7 +2903,7 @@ Self-hosted Lemmy deployment via Docker, sourced from Yunohost catalog
 
 ### [Lesma](/templates/lesma)
 
-Self-hosted Lesma deployment via Docker, sourced from Yunohost catalog
+Self-hosted Lesma deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2913,7 +2913,7 @@ Self-hosted Lesma deployment via Docker, sourced from Yunohost catalog
 
 ### [Libre Relay](/templates/libre-relay)
 
-Self-hosted Libre Relay deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libre Relay deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2923,7 +2923,7 @@ Self-hosted Libre Relay deployment via Docker, sourced from Umbrel catalog
 
 ### [Librebooking](/templates/librebooking)
 
-Self-hosted Librebooking deployment via Docker, sourced from YunoHost catalog
+Self-hosted Librebooking deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -2933,7 +2933,7 @@ Self-hosted Librebooking deployment via Docker, sourced from YunoHost catalog
 
 ### [Librechat](/templates/librechat)
 
-Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog
+Self-hosted Librechat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2943,7 +2943,7 @@ Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog
 
 ### [Libreoffice](/templates/libreoffice)
 
-Self-hosted Libreoffice deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libreoffice deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2953,7 +2953,7 @@ Self-hosted Libreoffice deployment via Docker, sourced from Umbrel catalog
 
 ### [Librephotos](/templates/librephotos)
 
-Self-hosted Librephotos deployment via Docker, sourced from Umbrel catalog
+Self-hosted Librephotos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2963,7 +2963,7 @@ Self-hosted Librephotos deployment via Docker, sourced from Umbrel catalog
 
 ### [Librespeed](/templates/librespeed)
 
-Self-hosted Librespeed deployment via Docker, sourced from Portainer catalog
+Self-hosted Librespeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2973,7 +2973,7 @@ Self-hosted Librespeed deployment via Docker, sourced from Portainer catalog
 
 ### [Libretranslate](/templates/libretranslate)
 
-Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libretranslate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -2983,7 +2983,7 @@ Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog
 
 ### [Lidarr](/templates/lidarr)
 
-Self-hosted Lidarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Lidarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -2993,7 +2993,7 @@ Self-hosted Lidarr deployment via Docker, sourced from Portainer catalog
 
 ### [Lidify](/templates/lidify)
 
-Self-hosted Lidify deployment via Docker, sourced from Portainer catalog
+Self-hosted Lidify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3003,7 +3003,7 @@ Self-hosted Lidify deployment via Docker, sourced from Portainer catalog
 
 ### [Lightning](/templates/lightning)
 
-Self-hosted Lightning deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lightning deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3013,7 +3013,7 @@ Self-hosted Lightning deployment via Docker, sourced from Umbrel catalog
 
 ### [Lightning Terminal](/templates/lightning-terminal)
 
-Self-hosted Lightning Terminal deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lightning Terminal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3023,7 +3023,7 @@ Self-hosted Lightning Terminal deployment via Docker, sourced from Umbrel catalo
 
 ### [Limesurvey](/templates/limesurvey)
 
-Self-hosted Limesurvey deployment via Docker, sourced from Yunohost catalog
+Self-hosted Limesurvey deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3033,7 +3033,7 @@ Self-hosted Limesurvey deployment via Docker, sourced from Yunohost catalog
 
 ### [Linkace](/templates/linkace)
 
-Self-hosted Linkace deployment via Docker, sourced from YunoHost catalog
+Self-hosted Linkace deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3043,7 +3043,7 @@ Self-hosted Linkace deployment via Docker, sourced from YunoHost catalog
 
 ### [Linkding](/templates/linkding)
 
-Self-hosted Linkding deployment via Docker, sourced from Portainer catalog
+Self-hosted Linkding deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3053,7 +3053,7 @@ Self-hosted Linkding deployment via Docker, sourced from Portainer catalog
 
 ### [Linkstack](/templates/linkstack)
 
-Self-hosted Linkstack deployment via Docker, sourced from Portainer catalog
+Self-hosted Linkstack deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3063,7 +3063,7 @@ Self-hosted Linkstack deployment via Docker, sourced from Portainer catalog
 
 ### [Linkwarden](/templates/linkwarden)
 
-Self-hosted Linkwarden deployment via Docker, sourced from Umbrel catalog
+Self-hosted Linkwarden deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3073,7 +3073,7 @@ Self-hosted Linkwarden deployment via Docker, sourced from Umbrel catalog
 
 ### [Listaway](/templates/listaway)
 
-Self-hosted Listaway deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Listaway deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3083,7 +3083,7 @@ Self-hosted Listaway deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Listmonk](/templates/listmonk)
 
-Self-hosted Listmonk deployment via Docker, sourced from Portainer catalog
+Self-hosted Listmonk deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3093,7 +3093,7 @@ Self-hosted Listmonk deployment via Docker, sourced from Portainer catalog
 
 ### [Litechat](/templates/litechat)
 
-Self-hosted Litechat deployment via Docker, sourced from Yunohost catalog
+Self-hosted Litechat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3103,7 +3103,7 @@ Self-hosted Litechat deployment via Docker, sourced from Yunohost catalog
 
 ### [Lldap](/templates/lldap)
 
-Self-hosted Lldap deployment via Docker, sourced from Portainer catalog
+Self-hosted Lldap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3113,7 +3113,7 @@ Self-hosted Lldap deployment via Docker, sourced from Portainer catalog
 
 ### [Lnbits](/templates/lnbits)
 
-Self-hosted Lnbits deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lnbits deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3123,7 +3123,7 @@ Self-hosted Lnbits deployment via Docker, sourced from Umbrel catalog
 
 ### [Lobe Chat](/templates/lobe-chat)
 
-Self-hosted Lobe Chat deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lobe Chat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3143,7 +3143,7 @@ Self-hosted OpenAI-compatible API for LLMs and embeddings
 
 ### [Logdy](/templates/logdy)
 
-Self-hosted Logdy deployment via Docker, sourced from Yunohost catalog
+Self-hosted Logdy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3153,7 +3153,7 @@ Self-hosted Logdy deployment via Docker, sourced from Yunohost catalog
 
 ### [Loki](/templates/loki)
 
-Self-hosted Loki deployment via Docker, sourced from Yunohost catalog
+Self-hosted Loki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3163,7 +3163,7 @@ Self-hosted Loki deployment via Docker, sourced from Yunohost catalog
 
 ### [Loomio](/templates/loomio)
 
-Self-hosted Loomio deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Loomio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3173,7 +3173,7 @@ Self-hosted Loomio deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Lubelogger](/templates/lubelogger)
 
-Self-hosted Lubelogger deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lubelogger deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3183,7 +3183,7 @@ Self-hosted Lubelogger deployment via Docker, sourced from Umbrel catalog
 
 ### [Lunalytics](/templates/lunalytics)
 
-Self-hosted Lunalytics deployment via Docker, sourced from Portainer catalog
+Self-hosted Lunalytics deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3193,7 +3193,7 @@ Self-hosted Lunalytics deployment via Docker, sourced from Portainer catalog
 
 ### [Lute](/templates/lute)
 
-Self-hosted Lute deployment via Docker, sourced from Yunohost catalog
+Self-hosted Lute deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3203,7 +3203,7 @@ Self-hosted Lute deployment via Docker, sourced from Yunohost catalog
 
 ### [Lxd Dashboard](/templates/lxd-dashboard)
 
-Self-hosted Lxd Dashboard deployment via Docker, sourced from Yunohost catalog
+Self-hosted Lxd Dashboard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3213,7 +3213,7 @@ Self-hosted Lxd Dashboard deployment via Docker, sourced from Yunohost catalog
 
 ### [Lychee](/templates/lychee)
 
-Self-hosted Lychee deployment via Docker, sourced from Portainer catalog
+Self-hosted Lychee deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3223,7 +3223,7 @@ Self-hosted Lychee deployment via Docker, sourced from Portainer catalog
 
 ### [Lynxprompt](/templates/lynxprompt)
 
-Self-hosted Lynxprompt deployment via Docker, sourced from Portainer catalog
+Self-hosted Lynxprompt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3233,7 +3233,7 @@ Self-hosted Lynxprompt deployment via Docker, sourced from Portainer catalog
 
 ### [Mailarchiver](/templates/mailarchiver)
 
-Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mailarchiver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3243,7 +3243,7 @@ Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
 
 ### [Mainsail](/templates/mainsail)
 
-Self-hosted Mainsail deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mainsail deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3253,7 +3253,7 @@ Self-hosted Mainsail deployment via Docker, sourced from Umbrel catalog
 
 ### [Mantis](/templates/mantis)
 
-Self-hosted Mantis deployment via Docker, sourced from Yunohost catalog
+Self-hosted Mantis deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3263,7 +3263,7 @@ Self-hosted Mantis deployment via Docker, sourced from Yunohost catalog
 
 ### [Many Notes](/templates/many-notes)
 
-Self-hosted Many Notes deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Many Notes deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3273,7 +3273,7 @@ Self-hosted Many Notes deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Manyfold](/templates/manyfold)
 
-Self-hosted Manyfold deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Manyfold deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3283,7 +3283,7 @@ Self-hosted Manyfold deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Marreta](/templates/marreta)
 
-Self-hosted Marreta deployment via Docker, sourced from Portainer catalog
+Self-hosted Marreta deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3293,7 +3293,7 @@ Self-hosted Marreta deployment via Docker, sourced from Portainer catalog
 
 ### [Mastodon](/templates/mastodon)
 
-Self-hosted Mastodon deployment via Docker, sourced from Portainer catalog
+Self-hosted Mastodon deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3303,7 +3303,7 @@ Self-hosted Mastodon deployment via Docker, sourced from Portainer catalog
 
 ### [Matomo](/templates/matomo)
 
-Self-hosted Matomo deployment via Docker, sourced from Portainer catalog
+Self-hosted Matomo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3313,7 +3313,7 @@ Self-hosted Matomo deployment via Docker, sourced from Portainer catalog
 
 ### [Matrix Appservice Irc](/templates/matrix-appservice-irc)
 
-Self-hosted Matrix Appservice Irc deployment via Docker, sourced from Yunohost catalog
+Self-hosted Matrix Appservice Irc deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3323,7 +3323,7 @@ Self-hosted Matrix Appservice Irc deployment via Docker, sourced from Yunohost c
 
 ### [Matterbridge](/templates/matterbridge)
 
-Self-hosted Matterbridge deployment via Docker, sourced from Yunohost catalog
+Self-hosted Matterbridge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3333,7 +3333,7 @@ Self-hosted Matterbridge deployment via Docker, sourced from Yunohost catalog
 
 ### [Mautic](/templates/mautic)
 
-Self-hosted Mautic deployment via Docker, sourced from YunoHost catalog
+Self-hosted Mautic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3343,7 +3343,7 @@ Self-hosted Mautic deployment via Docker, sourced from YunoHost catalog
 
 ### [Mealie](/templates/mealie)
 
-Self-hosted Mealie deployment via Docker, sourced from Portainer catalog
+Self-hosted Mealie deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3353,7 +3353,7 @@ Self-hosted Mealie deployment via Docker, sourced from Portainer catalog
 
 ### [Mediawiki](/templates/mediawiki)
 
-Self-hosted Mediawiki deployment via Docker, sourced from YunoHost catalog
+Self-hosted Mediawiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3363,7 +3363,7 @@ Self-hosted Mediawiki deployment via Docker, sourced from YunoHost catalog
 
 ### [Meme Search](/templates/meme-search)
 
-Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Meme Search deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3373,7 +3373,7 @@ Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted c
 
 ### [Memex](/templates/memex)
 
-Self-hosted Memex deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Memex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3383,7 +3383,7 @@ Self-hosted Memex deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Memos](/templates/memos)
 
-Self-hosted Memos deployment via Docker, sourced from Umbrel catalog
+Self-hosted Memos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3393,7 +3393,7 @@ Self-hosted Memos deployment via Docker, sourced from Umbrel catalog
 
 ### [Meshcentral](/templates/meshcentral)
 
-Self-hosted Meshcentral deployment via Docker, sourced from Portainer catalog
+Self-hosted Meshcentral deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3403,7 +3403,7 @@ Self-hosted Meshcentral deployment via Docker, sourced from Portainer catalog
 
 ### [Metabase](/templates/metabase)
 
-Self-hosted Metabase deployment via Docker, sourced from YunoHost catalog
+Self-hosted Metabase deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3413,7 +3413,7 @@ Self-hosted Metabase deployment via Docker, sourced from YunoHost catalog
 
 ### [Metube](/templates/metube)
 
-Self-hosted Metube deployment via Docker, sourced from Portainer catalog
+Self-hosted Metube deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3423,7 +3423,7 @@ Self-hosted Metube deployment via Docker, sourced from Portainer catalog
 
 ### [Microbin](/templates/microbin)
 
-Self-hosted Microbin deployment via Docker, sourced from Yunohost catalog
+Self-hosted Microbin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3433,7 +3433,7 @@ Self-hosted Microbin deployment via Docker, sourced from Yunohost catalog
 
 ### [Minetest](/templates/minetest)
 
-Self-hosted Minetest deployment via Docker, sourced from Portainer catalog
+Self-hosted Minetest deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3443,7 +3443,7 @@ Self-hosted Minetest deployment via Docker, sourced from Portainer catalog
 
 ### [Minidlna](/templates/minidlna)
 
-Self-hosted Minidlna deployment via Docker, sourced from Yunohost catalog
+Self-hosted Minidlna deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3453,7 +3453,7 @@ Self-hosted Minidlna deployment via Docker, sourced from Yunohost catalog
 
 ### [Miniflux](/templates/miniflux)
 
-Self-hosted Miniflux deployment via Docker, sourced from Portainer catalog
+Self-hosted Miniflux deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3463,7 +3463,7 @@ Self-hosted Miniflux deployment via Docker, sourced from Portainer catalog
 
 ### [Minimal Git Server](/templates/minimal-git-server)
 
-Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Minimal Git Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3473,7 +3473,7 @@ Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfh
 
 ### [Minio](/templates/minio)
 
-Self-hosted Minio deployment via Docker, sourced from Portainer catalog
+Self-hosted Minio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3483,7 +3483,7 @@ Self-hosted Minio deployment via Docker, sourced from Portainer catalog
 
 ### [Minisatip](/templates/minisatip)
 
-Self-hosted Minisatip deployment via Docker, sourced from Portainer catalog
+Self-hosted Minisatip deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3493,7 +3493,7 @@ Self-hosted Minisatip deployment via Docker, sourced from Portainer catalog
 
 ### [Misago](/templates/misago)
 
-Self-hosted Misago deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Misago deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3503,7 +3503,7 @@ Self-hosted Misago deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Misskey](/templates/misskey)
 
-Self-hosted Misskey deployment via Docker, sourced from YunoHost catalog
+Self-hosted Misskey deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3513,7 +3513,7 @@ Self-hosted Misskey deployment via Docker, sourced from YunoHost catalog
 
 ### [Mitra](/templates/mitra)
 
-Self-hosted Mitra deployment via Docker, sourced from Yunohost catalog
+Self-hosted Mitra deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3523,7 +3523,7 @@ Self-hosted Mitra deployment via Docker, sourced from Yunohost catalog
 
 ### [Mobilizon](/templates/mobilizon)
 
-Self-hosted Mobilizon deployment via Docker, sourced from YunoHost catalog
+Self-hosted Mobilizon deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3533,7 +3533,7 @@ Self-hosted Mobilizon deployment via Docker, sourced from YunoHost catalog
 
 ### [Mollysocket](/templates/mollysocket)
 
-Self-hosted Mollysocket deployment via Docker, sourced from YunoHost catalog
+Self-hosted Mollysocket deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3543,7 +3543,7 @@ Self-hosted Mollysocket deployment via Docker, sourced from YunoHost catalog
 
 ### [Monetr](/templates/monetr)
 
-Self-hosted Monetr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Monetr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3553,7 +3553,7 @@ Self-hosted Monetr deployment via Docker, sourced from Umbrel catalog
 
 ### [Monica](/templates/monica)
 
-Self-hosted Monica deployment via Docker, sourced from Portainer catalog
+Self-hosted Monica deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3563,7 +3563,7 @@ Self-hosted Monica deployment via Docker, sourced from Portainer catalog
 
 ### [Moodle](/templates/moodle)
 
-Self-hosted Moodle deployment via Docker, sourced from Portainer catalog
+Self-hosted Moodle deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3573,7 +3573,7 @@ Self-hosted Moodle deployment via Docker, sourced from Portainer catalog
 
 ### [Morphos](/templates/morphos)
 
-Self-hosted Morphos deployment via Docker, sourced from Umbrel catalog
+Self-hosted Morphos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3583,7 +3583,7 @@ Self-hosted Morphos deployment via Docker, sourced from Umbrel catalog
 
 ### [Movim](/templates/movim)
 
-Self-hosted Movim deployment via Docker, sourced from YunoHost catalog
+Self-hosted Movim deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3593,7 +3593,7 @@ Self-hosted Movim deployment via Docker, sourced from YunoHost catalog
 
 ### [Mqttx Web](/templates/mqttx-web)
 
-Self-hosted Mqttx Web deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mqttx Web deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3603,7 +3603,7 @@ Self-hosted Mqttx Web deployment via Docker, sourced from Umbrel catalog
 
 ### [Mstream](/templates/mstream)
 
-Self-hosted Mstream deployment via Docker, sourced from Portainer catalog
+Self-hosted Mstream deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3613,7 +3613,7 @@ Self-hosted Mstream deployment via Docker, sourced from Portainer catalog
 
 ### [Mtg](/templates/mtg)
 
-Self-hosted Mtg deployment via Docker, sourced from Yunohost catalog
+Self-hosted Mtg deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3623,7 +3623,7 @@ Self-hosted Mtg deployment via Docker, sourced from Yunohost catalog
 
 ### [Musicbrainz](/templates/musicbrainz)
 
-Self-hosted Musicbrainz deployment via Docker, sourced from Portainer catalog
+Self-hosted Musicbrainz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3633,7 +3633,7 @@ Self-hosted Musicbrainz deployment via Docker, sourced from Portainer catalog
 
 ### [Muximux](/templates/muximux)
 
-Self-hosted Muximux deployment via Docker, sourced from Portainer catalog
+Self-hosted Muximux deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3643,7 +3643,7 @@ Self-hosted Muximux deployment via Docker, sourced from Portainer catalog
 
 ### [My Webapp](/templates/my-webapp)
 
-Self-hosted My Webapp deployment via Docker, sourced from Yunohost catalog
+Self-hosted My Webapp deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3653,7 +3653,7 @@ Self-hosted My Webapp deployment via Docker, sourced from Yunohost catalog
 
 ### [Mylar](/templates/mylar)
 
-Self-hosted Mylar deployment via Docker, sourced from Portainer catalog
+Self-hosted Mylar deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3663,7 +3663,7 @@ Self-hosted Mylar deployment via Docker, sourced from Portainer catalog
 
 ### [Myspeed](/templates/myspeed)
 
-Self-hosted Myspeed deployment via Docker, sourced from Umbrel catalog
+Self-hosted Myspeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3673,7 +3673,7 @@ Self-hosted Myspeed deployment via Docker, sourced from Umbrel catalog
 
 ### [Navidrome](/templates/navidrome)
 
-Self-hosted Navidrome deployment via Docker, sourced from Portainer catalog
+Self-hosted Navidrome deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3683,7 +3683,7 @@ Self-hosted Navidrome deployment via Docker, sourced from Portainer catalog
 
 ### [Neko](/templates/neko)
 
-Self-hosted Neko deployment via Docker, sourced from Portainer catalog
+Self-hosted Neko deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3693,7 +3693,7 @@ Self-hosted Neko deployment via Docker, sourced from Portainer catalog
 
 ### [Neonlink](/templates/neonlink)
 
-Self-hosted Neonlink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Neonlink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3703,7 +3703,7 @@ Self-hosted Neonlink deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Netalertx](/templates/netalertx)
 
-Self-hosted Netalertx deployment via Docker, sourced from Portainer catalog
+Self-hosted Netalertx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3713,7 +3713,7 @@ Self-hosted Netalertx deployment via Docker, sourced from Portainer catalog
 
 ### [Netbird](/templates/netbird)
 
-Self-hosted Netbird deployment via Docker, sourced from Umbrel catalog
+Self-hosted Netbird deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3723,7 +3723,7 @@ Self-hosted Netbird deployment via Docker, sourced from Umbrel catalog
 
 ### [Netbox](/templates/netbox)
 
-Self-hosted Netbox deployment via Docker, sourced from Portainer catalog
+Self-hosted Netbox deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3733,7 +3733,7 @@ Self-hosted Netbox deployment via Docker, sourced from Portainer catalog
 
 ### [Nextcloud](/templates/nextcloud)
 
-Self-hosted Nextcloud deployment via Docker, sourced from Umbrel catalog
+Self-hosted content collaboration platform with file sync, calendar, contacts, and extensive app ecosystem
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3743,7 +3743,7 @@ Self-hosted Nextcloud deployment via Docker, sourced from Umbrel catalog
 
 ### [Nexterm](/templates/nexterm)
 
-Self-hosted Nexterm deployment via Docker, sourced from Portainer catalog
+Self-hosted Nexterm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3753,7 +3753,7 @@ Self-hosted Nexterm deployment via Docker, sourced from Portainer catalog
 
 ### [Nginx](/templates/nginx)
 
-Self-hosted Nginx deployment via Docker, sourced from Portainer catalog
+Self-hosted Nginx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3763,7 +3763,7 @@ Self-hosted Nginx deployment via Docker, sourced from Portainer catalog
 
 ### [Nitter](/templates/nitter)
 
-Self-hosted Nitter deployment via Docker, sourced from Portainer catalog
+Self-hosted Nitter deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3773,7 +3773,7 @@ Self-hosted Nitter deployment via Docker, sourced from Portainer catalog
 
 ### [Nocodb](/templates/nocodb)
 
-Self-hosted Nocodb deployment via Docker, sourced from Portainer catalog
+Open-source Airtable alternative — create spreadsheets, forms, kanban boards, and galleries with a no-code interface
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3783,7 +3783,7 @@ Self-hosted Nocodb deployment via Docker, sourced from Portainer catalog
 
 ### [Node Red](/templates/node-red)
 
-Self-hosted Node Red deployment via Docker, sourced from Portainer catalog
+Self-hosted Node Red deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3793,7 +3793,7 @@ Self-hosted Node Red deployment via Docker, sourced from Portainer catalog
 
 ### [Nodebb](/templates/nodebb)
 
-Self-hosted Nodebb deployment via Docker, sourced from YunoHost catalog
+Self-hosted Nodebb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3803,7 +3803,7 @@ Self-hosted Nodebb deployment via Docker, sourced from YunoHost catalog
 
 ### [Nodejs](/templates/nodejs)
 
-Self-hosted Nodejs deployment via Docker, sourced from Portainer catalog
+Self-hosted Nodejs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3813,7 +3813,7 @@ Self-hosted Nodejs deployment via Docker, sourced from Portainer catalog
 
 ### [Nostr Relay](/templates/nostr-relay)
 
-Self-hosted Nostr Relay deployment via Docker, sourced from Umbrel catalog
+Self-hosted Nostr Relay deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3823,7 +3823,7 @@ Self-hosted Nostr Relay deployment via Docker, sourced from Umbrel catalog
 
 ### [Ntfy](/templates/ntfy)
 
-Self-hosted Ntfy deployment via Docker, sourced from Portainer catalog
+Self-hosted Ntfy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3833,7 +3833,7 @@ Self-hosted Ntfy deployment via Docker, sourced from Portainer catalog
 
 ### [Nutify](/templates/nutify)
 
-Self-hosted Nutify deployment via Docker, sourced from Portainer catalog
+Self-hosted Nutify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3843,7 +3843,7 @@ Self-hosted Nutify deployment via Docker, sourced from Portainer catalog
 
 ### [Nzbget](/templates/nzbget)
 
-Self-hosted Nzbget deployment via Docker, sourced from Portainer catalog
+Self-hosted Nzbget deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3853,7 +3853,7 @@ Self-hosted Nzbget deployment via Docker, sourced from Portainer catalog
 
 ### [Obsidian](/templates/obsidian)
 
-Self-hosted Obsidian deployment via Docker, sourced from Umbrel catalog
+Self-hosted Obsidian deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3863,7 +3863,7 @@ Self-hosted Obsidian deployment via Docker, sourced from Umbrel catalog
 
 ### [Octoprint](/templates/octoprint)
 
-Self-hosted Octoprint deployment via Docker, sourced from Portainer catalog
+Self-hosted Octoprint deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3873,7 +3873,7 @@ Self-hosted Octoprint deployment via Docker, sourced from Portainer catalog
 
 ### [Ocular](/templates/ocular)
 
-Self-hosted Ocular deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ocular deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3883,7 +3883,7 @@ Self-hosted Ocular deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Odoo](/templates/odoo)
 
-Self-hosted Odoo deployment via Docker, sourced from Portainer catalog
+Self-hosted Odoo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3893,7 +3893,7 @@ Self-hosted Odoo deployment via Docker, sourced from Portainer catalog
 
 ### [Ojs](/templates/ojs)
 
-Self-hosted Ojs deployment via Docker, sourced from Yunohost catalog
+Self-hosted Ojs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3903,7 +3903,7 @@ Self-hosted Ojs deployment via Docker, sourced from Yunohost catalog
 
 ### [Olivetin](/templates/olivetin)
 
-Self-hosted Olivetin deployment via Docker, sourced from YunoHost catalog
+Self-hosted Olivetin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3913,7 +3913,7 @@ Self-hosted Olivetin deployment via Docker, sourced from YunoHost catalog
 
 ### [Ombi](/templates/ombi)
 
-Self-hosted Ombi deployment via Docker, sourced from Yunohost catalog
+Self-hosted Ombi deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3923,7 +3923,7 @@ Self-hosted Ombi deployment via Docker, sourced from Yunohost catalog
 
 ### [Open Meteo](/templates/open-meteo)
 
-Self-hosted Open Meteo deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Open Meteo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -3933,7 +3933,7 @@ Self-hosted Open Meteo deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Open Web Calendar](/templates/open-web-calendar)
 
-Self-hosted Open Web Calendar deployment via Docker, sourced from Yunohost catalog
+Self-hosted Open Web Calendar deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3943,7 +3943,7 @@ Self-hosted Open Web Calendar deployment via Docker, sourced from Yunohost catal
 
 ### [Open Webui](/templates/open-webui)
 
-Self-hosted Open Webui deployment via Docker, sourced from Umbrel catalog
+Self-hosted Open Webui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3963,7 +3963,7 @@ Self-hosted ChatGPT-like interface with RAG and multi-user
 
 ### [Openbudgeteer](/templates/openbudgeteer)
 
-Self-hosted Openbudgeteer deployment via Docker, sourced from Portainer catalog
+Self-hosted Openbudgeteer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -3973,7 +3973,7 @@ Self-hosted Openbudgeteer deployment via Docker, sourced from Portainer catalog
 
 ### [Opencloud](/templates/opencloud)
 
-Self-hosted Opencloud deployment via Docker, sourced from Yunohost catalog
+Self-hosted Opencloud deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -3983,7 +3983,7 @@ Self-hosted Opencloud deployment via Docker, sourced from Yunohost catalog
 
 ### [Opencode](/templates/opencode)
 
-Self-hosted Opencode deployment via Docker, sourced from Umbrel catalog
+Self-hosted Opencode deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -3993,7 +3993,7 @@ Self-hosted Opencode deployment via Docker, sourced from Umbrel catalog
 
 ### [Openemr](/templates/openemr)
 
-Self-hosted Openemr deployment via Docker, sourced from YunoHost catalog
+Self-hosted Openemr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4003,7 +4003,7 @@ Self-hosted Openemr deployment via Docker, sourced from YunoHost catalog
 
 ### [Openhabittracker](/templates/openhabittracker)
 
-Self-hosted Openhabittracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Openhabittracker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4013,7 +4013,7 @@ Self-hosted Openhabittracker deployment via Docker, sourced from Awesome-Selfhos
 
 ### [Openhands](/templates/openhands)
 
-Self-hosted Openhands deployment via Docker, sourced from Umbrel catalog
+Self-hosted Openhands deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4023,7 +4023,7 @@ Self-hosted Openhands deployment via Docker, sourced from Umbrel catalog
 
 ### [Openobserve](/templates/openobserve)
 
-Self-hosted Openobserve deployment via Docker, sourced from YunoHost catalog
+Self-hosted Openobserve deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4033,7 +4033,7 @@ Self-hosted Openobserve deployment via Docker, sourced from YunoHost catalog
 
 ### [Openproject](/templates/openproject)
 
-Self-hosted Openproject deployment via Docker, sourced from YunoHost catalog
+Self-hosted Openproject deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4043,7 +4043,7 @@ Self-hosted Openproject deployment via Docker, sourced from YunoHost catalog
 
 ### [Openresty Manager](/templates/openresty-manager)
 
-Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog
+Self-hosted Openresty Manager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4053,7 +4053,7 @@ Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog
 
 ### [Opensearch](/templates/opensearch)
 
-Self-hosted Opensearch deployment via Docker, sourced from Yunohost catalog
+Self-hosted Opensearch deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4063,7 +4063,7 @@ Self-hosted Opensearch deployment via Docker, sourced from Yunohost catalog
 
 ### [Openvpn As](/templates/openvpn-as)
 
-Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog
+Self-hosted Openvpn As deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4073,7 +4073,7 @@ Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog
 
 ### [Orangehrm](/templates/orangehrm)
 
-Self-hosted Orangehrm deployment via Docker, sourced from YunoHost catalog
+Self-hosted Orangehrm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4083,7 +4083,7 @@ Self-hosted Orangehrm deployment via Docker, sourced from YunoHost catalog
 
 ### [Oras](/templates/oras)
 
-Self-hosted Oras deployment via Docker, sourced from Priority catalog
+Self-hosted Oras deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/priority" class="tag-badge">priority</a>
 
@@ -4093,7 +4093,7 @@ Self-hosted Oras deployment via Docker, sourced from Priority catalog
 
 ### [Oscam](/templates/oscam)
 
-Self-hosted Oscam deployment via Docker, sourced from Portainer catalog
+Self-hosted Oscam deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4103,7 +4103,7 @@ Self-hosted Oscam deployment via Docker, sourced from Portainer catalog
 
 ### [Otter Wiki](/templates/otter-wiki)
 
-Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Otter Wiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4113,7 +4113,7 @@ Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Outline](/templates/outline)
 
-Self-hosted Outline deployment via Docker, sourced from Portainer catalog
+Self-hosted Outline deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4123,7 +4123,7 @@ Self-hosted Outline deployment via Docker, sourced from Portainer catalog
 
 ### [Overseerr](/templates/overseerr)
 
-Self-hosted Overseerr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Overseerr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4133,7 +4133,7 @@ Self-hosted Overseerr deployment via Docker, sourced from Umbrel catalog
 
 ### [Owncast](/templates/owncast)
 
-Self-hosted Owncast deployment via Docker, sourced from YunoHost catalog
+Self-hosted Owncast deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4143,7 +4143,7 @@ Self-hosted Owncast deployment via Docker, sourced from YunoHost catalog
 
 ### [Paaster](/templates/paaster)
 
-Self-hosted Paaster deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Paaster deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4153,7 +4153,7 @@ Self-hosted Paaster deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Paheko](/templates/paheko)
 
-Self-hosted Paheko deployment via Docker, sourced from YunoHost catalog
+Self-hosted Paheko deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4163,7 +4163,7 @@ Self-hosted Paheko deployment via Docker, sourced from YunoHost catalog
 
 ### [Pairdrop](/templates/pairdrop)
 
-Self-hosted Pairdrop deployment via Docker, sourced from Portainer catalog
+Self-hosted Pairdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4173,7 +4173,7 @@ Self-hosted Pairdrop deployment via Docker, sourced from Portainer catalog
 
 ### [Palmr](/templates/palmr)
 
-Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Palmr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4183,7 +4183,7 @@ Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog
 
 ### [Pangolin](/templates/pangolin)
 
-Self-hosted Pangolin deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Pangolin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4193,7 +4193,7 @@ Self-hosted Pangolin deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Paperless Ngx](/templates/paperless-ngx)
 
-Self-hosted Paperless Ngx deployment via Docker, sourced from Portainer catalog
+Self-hosted document management system that scans, indexes, and archives paper documents with full-text search
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4203,7 +4203,7 @@ Self-hosted Paperless Ngx deployment via Docker, sourced from Portainer catalog
 
 ### [Papra](/templates/papra)
 
-Self-hosted Papra deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Papra deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4213,7 +4213,7 @@ Self-hosted Papra deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Passbolt](/templates/passbolt)
 
-Self-hosted Passbolt deployment via Docker, sourced from Portainer catalog
+Self-hosted Passbolt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4223,7 +4223,7 @@ Self-hosted Passbolt deployment via Docker, sourced from Portainer catalog
 
 ### [Passed](/templates/passed)
 
-Self-hosted Passed deployment via Docker, sourced from Yunohost catalog
+Self-hosted Passed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4233,7 +4233,7 @@ Self-hosted Passed deployment via Docker, sourced from Yunohost catalog
 
 ### [Pastefy](/templates/pastefy)
 
-Self-hosted Pastefy deployment via Docker, sourced from Umbrel catalog
+Self-hosted Pastefy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4243,7 +4243,7 @@ Self-hosted Pastefy deployment via Docker, sourced from Umbrel catalog
 
 ### [Paymenter](/templates/paymenter)
 
-Self-hosted Paymenter deployment via Docker, sourced from YunoHost catalog
+Self-hosted Paymenter deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4253,7 +4253,7 @@ Self-hosted Paymenter deployment via Docker, sourced from YunoHost catalog
 
 ### [Peer Calls](/templates/peer-calls)
 
-Self-hosted Peer Calls deployment via Docker, sourced from YunoHost catalog
+Self-hosted Peer Calls deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4263,7 +4263,7 @@ Self-hosted Peer Calls deployment via Docker, sourced from YunoHost catalog
 
 ### [Peertube](/templates/peertube)
 
-Self-hosted Peertube deployment via Docker, sourced from Yunohost catalog
+Self-hosted Peertube deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4273,7 +4273,7 @@ Self-hosted Peertube deployment via Docker, sourced from Yunohost catalog
 
 ### [Pelican](/templates/pelican)
 
-Self-hosted Pelican deployment via Docker, sourced from Yunohost catalog
+Self-hosted Pelican deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4283,7 +4283,7 @@ Self-hosted Pelican deployment via Docker, sourced from Yunohost catalog
 
 ### [Perplexica](/templates/perplexica)
 
-Self-hosted Perplexica deployment via Docker, sourced from Umbrel catalog
+Self-hosted Perplexica deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4293,7 +4293,7 @@ Self-hosted Perplexica deployment via Docker, sourced from Umbrel catalog
 
 ### [Pgadmin](/templates/pgadmin)
 
-Self-hosted Pgadmin deployment via Docker, sourced from Portainer catalog
+Self-hosted Pgadmin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4303,7 +4303,7 @@ Self-hosted Pgadmin deployment via Docker, sourced from Portainer catalog
 
 ### [Pgweb](/templates/pgweb)
 
-Self-hosted Pgweb deployment via Docker, sourced from Yunohost catalog
+Self-hosted Pgweb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4313,7 +4313,7 @@ Self-hosted Pgweb deployment via Docker, sourced from Yunohost catalog
 
 ### [Phanpy](/templates/phanpy)
 
-Self-hosted Phanpy deployment via Docker, sourced from Yunohost catalog
+Self-hosted Phanpy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4333,7 +4333,7 @@ AI-powered photo management with automatic tagging and face recognition
 
 ### [Photoshow](/templates/photoshow)
 
-Self-hosted Photoshow deployment via Docker, sourced from Portainer catalog
+Self-hosted Photoshow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4343,7 +4343,7 @@ Self-hosted Photoshow deployment via Docker, sourced from Portainer catalog
 
 ### [Photoview](/templates/photoview)
 
-Self-hosted Photoview deployment via Docker, sourced from YunoHost catalog
+Self-hosted Photoview deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4353,7 +4353,7 @@ Self-hosted Photoview deployment via Docker, sourced from YunoHost catalog
 
 ### [Phpldapadmin](/templates/phpldapadmin)
 
-Self-hosted Phpldapadmin deployment via Docker, sourced from YunoHost catalog
+Self-hosted Phpldapadmin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4363,7 +4363,7 @@ Self-hosted Phpldapadmin deployment via Docker, sourced from YunoHost catalog
 
 ### [Phpmyadmin](/templates/phpmyadmin)
 
-Self-hosted Phpmyadmin deployment via Docker, sourced from YunoHost catalog
+Self-hosted Phpmyadmin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4373,7 +4373,7 @@ Self-hosted Phpmyadmin deployment via Docker, sourced from YunoHost catalog
 
 ### [Picsur](/templates/picsur)
 
-Self-hosted Picsur deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Picsur deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4383,7 +4383,7 @@ Self-hosted Picsur deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Piefed](/templates/piefed)
 
-Self-hosted Piefed deployment via Docker, sourced from Yunohost catalog
+Self-hosted Piefed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4393,7 +4393,7 @@ Self-hosted Piefed deployment via Docker, sourced from Yunohost catalog
 
 ### [Pihole](/templates/pihole)
 
-Self-hosted Pihole deployment via Docker, sourced from YunoHost catalog
+Self-hosted Pihole deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4403,7 +4403,7 @@ Self-hosted Pihole deployment via Docker, sourced from YunoHost catalog
 
 ### [Pinchflat](/templates/pinchflat)
 
-Self-hosted Pinchflat deployment via Docker, sourced from Portainer catalog
+Self-hosted Pinchflat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4413,7 +4413,7 @@ Self-hosted Pinchflat deployment via Docker, sourced from Portainer catalog
 
 ### [Pinepods](/templates/pinepods)
 
-Self-hosted Pinepods deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Pinepods deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4423,7 +4423,7 @@ Self-hosted Pinepods deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Pingvin](/templates/pingvin)
 
-Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog
+Self-hosted Pingvin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4433,7 +4433,7 @@ Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog
 
 ### [Pingvin Share](/templates/pingvin-share)
 
-Self-hosted Pingvin Share deployment via Docker, sourced from Umbrel catalog
+Self-hosted Pingvin Share deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4443,7 +4443,7 @@ Self-hosted Pingvin Share deployment via Docker, sourced from Umbrel catalog
 
 ### [Piped](/templates/piped)
 
-Self-hosted Piped deployment via Docker, sourced from Yunohost catalog
+Self-hosted Piped deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4453,7 +4453,7 @@ Self-hosted Piped deployment via Docker, sourced from Yunohost catalog
 
 ### [Piwigo](/templates/piwigo)
 
-Self-hosted Piwigo deployment via Docker, sourced from Portainer catalog
+Self-hosted Piwigo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4463,7 +4463,7 @@ Self-hosted Piwigo deployment via Docker, sourced from Portainer catalog
 
 ### [Pixel Server](/templates/pixel-server)
 
-Self-hosted Pixel Server deployment via Docker, sourced from Portainer catalog
+Self-hosted Pixel Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4473,7 +4473,7 @@ Self-hosted Pixel Server deployment via Docker, sourced from Portainer catalog
 
 ### [Plainpad](/templates/plainpad)
 
-Self-hosted Plainpad deployment via Docker, sourced from Yunohost catalog
+Self-hosted Plainpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4483,7 +4483,7 @@ Self-hosted Plainpad deployment via Docker, sourced from Yunohost catalog
 
 ### [Plane](/templates/plane)
 
-Self-hosted Plane deployment via Docker, sourced from Portainer catalog
+Self-hosted Plane deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4493,7 +4493,7 @@ Self-hosted Plane deployment via Docker, sourced from Portainer catalog
 
 ### [Plateau](/templates/plateau)
 
-Self-hosted Plateau deployment via Docker, sourced from Yunohost catalog
+Self-hosted Plateau deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4503,7 +4503,7 @@ Self-hosted Plateau deployment via Docker, sourced from Yunohost catalog
 
 ### [Plesk](/templates/plesk)
 
-Self-hosted Plesk deployment via Docker, sourced from Portainer catalog
+Self-hosted Plesk deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4513,7 +4513,7 @@ Self-hosted Plesk deployment via Docker, sourced from Portainer catalog
 
 ### [Plex](/templates/plex)
 
-Self-hosted Plex deployment via Docker, sourced from Portainer catalog
+Self-hosted Plex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4523,7 +4523,7 @@ Self-hosted Plex deployment via Docker, sourced from Portainer catalog
 
 ### [Plik](/templates/plik)
 
-Self-hosted Plik deployment via Docker, sourced from Yunohost catalog
+Self-hosted Plik deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4533,7 +4533,7 @@ Self-hosted Plik deployment via Docker, sourced from Yunohost catalog
 
 ### [Pocket Id](/templates/pocket-id)
 
-Self-hosted Pocket Id deployment via Docker, sourced from YunoHost catalog
+Self-hosted Pocket Id deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4543,7 +4543,7 @@ Self-hosted Pocket Id deployment via Docker, sourced from YunoHost catalog
 
 ### [Pollaris](/templates/pollaris)
 
-Self-hosted Pollaris deployment via Docker, sourced from Yunohost catalog
+Self-hosted Pollaris deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4553,7 +4553,7 @@ Self-hosted Pollaris deployment via Docker, sourced from Yunohost catalog
 
 ### [Poste.Io](/templates/poste-io)
 
-Self-hosted Poste.Io deployment via Docker, sourced from Portainer catalog
+Self-hosted Poste.Io deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4563,7 +4563,7 @@ Self-hosted Poste.Io deployment via Docker, sourced from Portainer catalog
 
 ### [Postgresql](/templates/postgresql)
 
-Self-hosted Postgresql deployment via Docker, sourced from Portainer catalog
+Self-hosted Postgresql deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4573,7 +4573,7 @@ Self-hosted Postgresql deployment via Docker, sourced from Portainer catalog
 
 ### [Postiz](/templates/postiz)
 
-Self-hosted Postiz deployment via Docker, sourced from Portainer catalog
+Self-hosted Postiz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4583,7 +4583,7 @@ Self-hosted Postiz deployment via Docker, sourced from Portainer catalog
 
 ### [Prestashop](/templates/prestashop)
 
-Self-hosted Prestashop deployment via Docker, sourced from YunoHost catalog
+Self-hosted Prestashop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4593,7 +4593,7 @@ Self-hosted Prestashop deployment via Docker, sourced from YunoHost catalog
 
 ### [Pritunl](/templates/pritunl)
 
-Self-hosted Pritunl deployment via Docker, sourced from Portainer catalog
+Self-hosted Pritunl deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4603,7 +4603,7 @@ Self-hosted Pritunl deployment via Docker, sourced from Portainer catalog
 
 ### [Processwire](/templates/processwire)
 
-Self-hosted Processwire deployment via Docker, sourced from Yunohost catalog
+Self-hosted Processwire deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4613,7 +4613,7 @@ Self-hosted Processwire deployment via Docker, sourced from Yunohost catalog
 
 ### [Profilarr](/templates/profilarr)
 
-Self-hosted Profilarr deployment via Docker, sourced from Yunohost catalog
+Self-hosted Profilarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4623,7 +4623,7 @@ Self-hosted Profilarr deployment via Docker, sourced from Yunohost catalog
 
 ### [Projectsend](/templates/projectsend)
 
-Self-hosted Projectsend deployment via Docker, sourced from Portainer catalog
+Self-hosted Projectsend deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4633,7 +4633,7 @@ Self-hosted Projectsend deployment via Docker, sourced from Portainer catalog
 
 ### [Prometheus](/templates/prometheus)
 
-Self-hosted Prometheus deployment via Docker, sourced from Yunohost catalog
+Self-hosted Prometheus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4643,7 +4643,7 @@ Self-hosted Prometheus deployment via Docker, sourced from Yunohost catalog
 
 ### [Prowlarr](/templates/prowlarr)
 
-Self-hosted Prowlarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Prowlarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4653,7 +4653,7 @@ Self-hosted Prowlarr deployment via Docker, sourced from Portainer catalog
 
 ### [Proxitok](/templates/proxitok)
 
-Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog
+Self-hosted Proxitok deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4663,7 +4663,7 @@ Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog
 
 ### [Psitransfer](/templates/psitransfer)
 
-Self-hosted Psitransfer deployment via Docker, sourced from Yunohost catalog
+Self-hosted Psitransfer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4673,7 +4673,7 @@ Self-hosted Psitransfer deployment via Docker, sourced from Yunohost catalog
 
 ### [Public Pool](/templates/public-pool)
 
-Self-hosted Public Pool deployment via Docker, sourced from Umbrel catalog
+Self-hosted Public Pool deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4683,7 +4683,7 @@ Self-hosted Public Pool deployment via Docker, sourced from Umbrel catalog
 
 ### [Public Pool Web](/templates/public-pool-web)
 
-Self-hosted Public Pool Web deployment via Docker, sourced from Umbrel catalog
+Self-hosted Public Pool Web deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4693,7 +4693,7 @@ Self-hosted Public Pool Web deployment via Docker, sourced from Umbrel catalog
 
 ### [Pufferpanel](/templates/pufferpanel)
 
-Self-hosted Pufferpanel deployment via Docker, sourced from YunoHost catalog
+Self-hosted Pufferpanel deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4703,7 +4703,7 @@ Self-hosted Pufferpanel deployment via Docker, sourced from YunoHost catalog
 
 ### [Pumperly](/templates/pumperly)
 
-Self-hosted Pumperly deployment via Docker, sourced from Portainer catalog
+Self-hosted Pumperly deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4713,7 +4713,7 @@ Self-hosted Pumperly deployment via Docker, sourced from Portainer catalog
 
 ### [Pydio](/templates/pydio)
 
-Self-hosted Pydio deployment via Docker, sourced from Portainer catalog
+Self-hosted Pydio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4723,7 +4723,7 @@ Self-hosted Pydio deployment via Docker, sourced from Portainer catalog
 
 ### [Pyinventory](/templates/pyinventory)
 
-Self-hosted Pyinventory deployment via Docker, sourced from Yunohost catalog
+Self-hosted Pyinventory deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4733,7 +4733,7 @@ Self-hosted Pyinventory deployment via Docker, sourced from Yunohost catalog
 
 ### [Pyload Ng](/templates/pyload-ng)
 
-Self-hosted Pyload Ng deployment via Docker, sourced from Umbrel catalog
+Self-hosted Pyload Ng deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4743,7 +4743,7 @@ Self-hosted Pyload Ng deployment via Docker, sourced from Umbrel catalog
 
 ### [Qbittorrent](/templates/qbittorrent)
 
-Self-hosted Qbittorrent deployment via Docker, sourced from Portainer catalog
+Self-hosted Qbittorrent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4753,7 +4753,7 @@ Self-hosted Qbittorrent deployment via Docker, sourced from Portainer catalog
 
 ### [Qdirstat](/templates/qdirstat)
 
-Self-hosted Qdirstat deployment via Docker, sourced from Portainer catalog
+Self-hosted Qdirstat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4763,7 +4763,7 @@ Self-hosted Qdirstat deployment via Docker, sourced from Portainer catalog
 
 ### [Qflood](/templates/qflood)
 
-Self-hosted Qflood deployment via Docker, sourced from Portainer catalog
+Self-hosted Qflood deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4773,7 +4773,7 @@ Self-hosted Qflood deployment via Docker, sourced from Portainer catalog
 
 ### [Quassel Core](/templates/quassel-core)
 
-Self-hosted Quassel Core deployment via Docker, sourced from Portainer catalog
+Self-hosted Quassel Core deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4783,7 +4783,7 @@ Self-hosted Quassel Core deployment via Docker, sourced from Portainer catalog
 
 ### [Qui](/templates/qui)
 
-Self-hosted Qui deployment via Docker, sourced from Yunohost catalog
+Self-hosted Qui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4793,7 +4793,7 @@ Self-hosted Qui deployment via Docker, sourced from Yunohost catalog
 
 ### [Rabbitmq](/templates/rabbitmq)
 
-Self-hosted Rabbitmq deployment via Docker, sourced from Portainer catalog
+Self-hosted Rabbitmq deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4803,7 +4803,7 @@ Self-hosted Rabbitmq deployment via Docker, sourced from Portainer catalog
 
 ### [Radarr](/templates/radarr)
 
-Self-hosted Radarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Radarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4813,7 +4813,7 @@ Self-hosted Radarr deployment via Docker, sourced from Portainer catalog
 
 ### [Rahoot](/templates/rahoot)
 
-Self-hosted Rahoot deployment via Docker, sourced from Yunohost catalog
+Self-hosted Rahoot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4823,7 +4823,7 @@ Self-hosted Rahoot deployment via Docker, sourced from Yunohost catalog
 
 ### [Rallly](/templates/rallly)
 
-Self-hosted Rallly deployment via Docker, sourced from Yunohost catalog
+Self-hosted Rallly deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4833,7 +4833,7 @@ Self-hosted Rallly deployment via Docker, sourced from Yunohost catalog
 
 ### [Rclone](/templates/rclone)
 
-Self-hosted Rclone deployment via Docker, sourced from YunoHost catalog
+Self-hosted Rclone deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4843,7 +4843,7 @@ Self-hosted Rclone deployment via Docker, sourced from YunoHost catalog
 
 ### [Reactive Resume](/templates/reactive-resume)
 
-Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalog
+Self-hosted Reactive Resume deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4853,7 +4853,7 @@ Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalo
 
 ### [Readarr](/templates/readarr)
 
-Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Readarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4863,7 +4863,7 @@ Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog
 
 ### [Readeck](/templates/readeck)
 
-Self-hosted Readeck deployment via Docker, sourced from Yunohost catalog
+Self-hosted Readeck deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4873,7 +4873,7 @@ Self-hosted Readeck deployment via Docker, sourced from Yunohost catalog
 
 ### [Readflow](/templates/readflow)
 
-Self-hosted Readflow deployment via Docker, sourced from Yunohost catalog
+Self-hosted Readflow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4883,7 +4883,7 @@ Self-hosted Readflow deployment via Docker, sourced from Yunohost catalog
 
 ### [Readur](/templates/readur)
 
-Self-hosted Readur deployment via Docker, sourced from Umbrel catalog
+Self-hosted Readur deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4893,7 +4893,7 @@ Self-hosted Readur deployment via Docker, sourced from Umbrel catalog
 
 ### [Redash](/templates/redash)
 
-Self-hosted Redash deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Redash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -4903,7 +4903,7 @@ Self-hosted Redash deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Redis](/templates/redis)
 
-Self-hosted Redis deployment via Docker, sourced from Portainer catalog
+In-memory data store used as a database, cache, message broker, and streaming engine for high-performance applications
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4913,7 +4913,7 @@ Self-hosted Redis deployment via Docker, sourced from Portainer catalog
 
 ### [Redlib](/templates/redlib)
 
-Self-hosted Redlib deployment via Docker, sourced from Yunohost catalog
+Self-hosted Redlib deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4923,7 +4923,7 @@ Self-hosted Redlib deployment via Docker, sourced from Yunohost catalog
 
 ### [Redmine](/templates/redmine)
 
-Self-hosted Redmine deployment via Docker, sourced from Portainer catalog
+Self-hosted Redmine deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4933,7 +4933,7 @@ Self-hosted Redmine deployment via Docker, sourced from Portainer catalog
 
 ### [Reiverr](/templates/reiverr)
 
-Self-hosted Reiverr deployment via Docker, sourced from Yunohost catalog
+Self-hosted Reiverr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4943,7 +4943,7 @@ Self-hosted Reiverr deployment via Docker, sourced from Yunohost catalog
 
 ### [Remmina](/templates/remmina)
 
-Self-hosted Remmina deployment via Docker, sourced from Umbrel catalog
+Self-hosted Remmina deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4953,7 +4953,7 @@ Self-hosted Remmina deployment via Docker, sourced from Umbrel catalog
 
 ### [Restic](/templates/restic)
 
-Self-hosted Restic deployment via Docker, sourced from YunoHost catalog
+Self-hosted Restic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4963,7 +4963,7 @@ Self-hosted Restic deployment via Docker, sourced from YunoHost catalog
 
 ### [Restreamer](/templates/restreamer)
 
-Self-hosted Restreamer deployment via Docker, sourced from Umbrel catalog
+Self-hosted Restreamer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -4973,7 +4973,7 @@ Self-hosted Restreamer deployment via Docker, sourced from Umbrel catalog
 
 ### [Retroarch](/templates/retroarch)
 
-Self-hosted Retroarch deployment via Docker, sourced from Yunohost catalog
+Self-hosted Retroarch deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -4983,7 +4983,7 @@ Self-hosted Retroarch deployment via Docker, sourced from Yunohost catalog
 
 ### [Reveal.Js](/templates/reveal-js)
 
-Self-hosted Reveal.Js deployment via Docker, sourced from Portainer catalog
+Self-hosted Reveal.Js deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -4993,7 +4993,7 @@ Self-hosted Reveal.Js deployment via Docker, sourced from Portainer catalog
 
 ### [Robosats](/templates/robosats)
 
-Self-hosted Robosats deployment via Docker, sourced from Umbrel catalog
+Self-hosted Robosats deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5003,7 +5003,7 @@ Self-hosted Robosats deployment via Docker, sourced from Umbrel catalog
 
 ### [Romm](/templates/romm)
 
-Self-hosted Romm deployment via Docker, sourced from Portainer catalog
+Self-hosted Romm deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5013,7 +5013,7 @@ Self-hosted Romm deployment via Docker, sourced from Portainer catalog
 
 ### [Rosariosis](/templates/rosariosis)
 
-Self-hosted Rosariosis deployment via Docker, sourced from YunoHost catalog
+Self-hosted Rosariosis deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5023,7 +5023,7 @@ Self-hosted Rosariosis deployment via Docker, sourced from YunoHost catalog
 
 ### [Rotki](/templates/rotki)
 
-Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rotki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5033,7 +5033,7 @@ Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog
 
 ### [Route96](/templates/route96)
 
-Self-hosted Route96 deployment via Docker, sourced from Umbrel catalog
+Self-hosted Route96 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5043,7 +5043,7 @@ Self-hosted Route96 deployment via Docker, sourced from Umbrel catalog
 
 ### [Rspamd](/templates/rspamd)
 
-Self-hosted Rspamd deployment via Docker, sourced from YunoHost catalog
+Self-hosted Rspamd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5053,7 +5053,7 @@ Self-hosted Rspamd deployment via Docker, sourced from YunoHost catalog
 
 ### [Rss Bridge](/templates/rss-bridge)
 
-Self-hosted Rss Bridge deployment via Docker, sourced from YunoHost catalog
+Self-hosted Rss Bridge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5063,7 +5063,7 @@ Self-hosted Rss Bridge deployment via Docker, sourced from YunoHost catalog
 
 ### [Rsshub](/templates/rsshub)
 
-Self-hosted Rsshub deployment via Docker, sourced from Yunohost catalog
+Self-hosted Rsshub deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5073,7 +5073,7 @@ Self-hosted Rsshub deployment via Docker, sourced from Yunohost catalog
 
 ### [Rustdesk Server](/templates/rustdesk-server)
 
-Self-hosted Rustdesk Server deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rustdesk Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5083,7 +5083,7 @@ Self-hosted Rustdesk Server deployment via Docker, sourced from Umbrel catalog
 
 ### [Rusty Kaspad](/templates/rusty-kaspad)
 
-Self-hosted Rusty Kaspad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rusty Kaspad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5093,7 +5093,7 @@ Self-hosted Rusty Kaspad deployment via Docker, sourced from Umbrel catalog
 
 ### [Rutorrent](/templates/rutorrent)
 
-Self-hosted Rutorrent deployment via Docker, sourced from Portainer catalog
+Self-hosted Rutorrent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5103,7 +5103,7 @@ Self-hosted Rutorrent deployment via Docker, sourced from Portainer catalog
 
 ### [Rybbit](/templates/rybbit)
 
-Self-hosted Rybbit deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Rybbit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5113,7 +5113,7 @@ Self-hosted Rybbit deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Ryot](/templates/ryot)
 
-Self-hosted Ryot deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ryot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5123,7 +5123,7 @@ Self-hosted Ryot deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Sabnzbd](/templates/sabnzbd)
 
-Self-hosted Sabnzbd deployment via Docker, sourced from Portainer catalog
+Self-hosted Sabnzbd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5133,7 +5133,7 @@ Self-hosted Sabnzbd deployment via Docker, sourced from Portainer catalog
 
 ### [Scanservjs](/templates/scanservjs)
 
-Self-hosted Scanservjs deployment via Docker, sourced from Umbrel catalog
+Self-hosted Scanservjs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5143,7 +5143,7 @@ Self-hosted Scanservjs deployment via Docker, sourced from Umbrel catalog
 
 ### [Scrutiny](/templates/scrutiny)
 
-Self-hosted Scrutiny deployment via Docker, sourced from Portainer catalog
+Self-hosted Scrutiny deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5153,7 +5153,7 @@ Self-hosted Scrutiny deployment via Docker, sourced from Portainer catalog
 
 ### [Searxng](/templates/searxng)
 
-Self-hosted Searxng deployment via Docker, sourced from Portainer catalog
+Self-hosted Searxng deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5163,7 +5163,7 @@ Self-hosted Searxng deployment via Docker, sourced from Portainer catalog
 
 ### [Seaweedfs](/templates/seaweedfs)
 
-Self-hosted Seaweedfs deployment via Docker, sourced from YunoHost catalog
+Self-hosted Seaweedfs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5173,7 +5173,7 @@ Self-hosted Seaweedfs deployment via Docker, sourced from YunoHost catalog
 
 ### [Servas](/templates/servas)
 
-Self-hosted Servas deployment via Docker, sourced from Portainer catalog
+Self-hosted Servas deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5183,7 +5183,7 @@ Self-hosted Servas deployment via Docker, sourced from Portainer catalog
 
 ### [Shaarli](/templates/shaarli)
 
-Self-hosted Shaarli deployment via Docker, sourced from Portainer catalog
+Self-hosted Shaarli deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5193,7 +5193,7 @@ Self-hosted Shaarli deployment via Docker, sourced from Portainer catalog
 
 ### [Sheetable](/templates/sheetable)
 
-Self-hosted Sheetable deployment via Docker, sourced from YunoHost catalog
+Self-hosted Sheetable deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5203,7 +5203,7 @@ Self-hosted Sheetable deployment via Docker, sourced from YunoHost catalog
 
 ### [Shields](/templates/shields)
 
-Self-hosted Shields deployment via Docker, sourced from Yunohost catalog
+Self-hosted Shields deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5213,7 +5213,7 @@ Self-hosted Shields deployment via Docker, sourced from Yunohost catalog
 
 ### [Shifter](/templates/shifter)
 
-Self-hosted Shifter deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Shifter deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5223,7 +5223,7 @@ Self-hosted Shifter deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Shipshipship](/templates/shipshipship)
 
-Self-hosted Shipshipship deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Shipshipship deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5233,7 +5233,7 @@ Self-hosted Shipshipship deployment via Docker, sourced from Awesome-Selfhosted 
 
 ### [Shlink](/templates/shlink)
 
-Self-hosted Shlink deployment via Docker, sourced from Yunohost catalog
+Self-hosted Shlink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5243,7 +5243,7 @@ Self-hosted Shlink deployment via Docker, sourced from Yunohost catalog
 
 ### [Shopstr](/templates/shopstr)
 
-Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Shopstr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5253,7 +5253,7 @@ Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog
 
 ### [Sickchill](/templates/sickchill)
 
-Self-hosted Sickchill deployment via Docker, sourced from Portainer catalog
+Self-hosted Sickchill deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5263,7 +5263,7 @@ Self-hosted Sickchill deployment via Docker, sourced from Portainer catalog
 
 ### [Signaturepdf](/templates/signaturepdf)
 
-Self-hosted Signaturepdf deployment via Docker, sourced from Yunohost catalog
+Self-hosted Signaturepdf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5273,7 +5273,7 @@ Self-hosted Signaturepdf deployment via Docker, sourced from Yunohost catalog
 
 ### [Silverbullet](/templates/silverbullet)
 
-Self-hosted Silverbullet deployment via Docker, sourced from Yunohost catalog
+Self-hosted Silverbullet deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5283,7 +5283,7 @@ Self-hosted Silverbullet deployment via Docker, sourced from Yunohost catalog
 
 ### [Slash](/templates/slash)
 
-Self-hosted Slash deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Slash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5293,7 +5293,7 @@ Self-hosted Slash deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Slink](/templates/slink)
 
-Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Slink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5303,7 +5303,7 @@ Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Smokeping](/templates/smokeping)
 
-Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog
+Self-hosted Smokeping deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5313,7 +5313,7 @@ Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog
 
 ### [Snapdrop](/templates/snapdrop)
 
-Self-hosted Snapdrop deployment via Docker, sourced from Umbrel catalog
+Self-hosted Snapdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5323,7 +5323,7 @@ Self-hosted Snapdrop deployment via Docker, sourced from Umbrel catalog
 
 ### [Snowflake](/templates/snowflake)
 
-Self-hosted Snowflake deployment via Docker, sourced from Umbrel catalog
+Self-hosted Snowflake deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5333,7 +5333,7 @@ Self-hosted Snowflake deployment via Docker, sourced from Umbrel catalog
 
 ### [Snserver](/templates/snserver)
 
-Self-hosted Snserver deployment via Docker, sourced from Yunohost catalog
+Self-hosted Snserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5343,7 +5343,7 @@ Self-hosted Snserver deployment via Docker, sourced from Yunohost catalog
 
 ### [Sogo](/templates/sogo)
 
-Self-hosted Sogo deployment via Docker, sourced from Yunohost catalog
+Self-hosted Sogo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5353,7 +5353,7 @@ Self-hosted Sogo deployment via Docker, sourced from Yunohost catalog
 
 ### [Solectrus](/templates/solectrus)
 
-Self-hosted Solectrus deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Solectrus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5363,7 +5363,7 @@ Self-hosted Solectrus deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Solidtime](/templates/solidtime)
 
-Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog
+Self-hosted Solidtime deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5373,7 +5373,7 @@ Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog
 
 ### [Solr](/templates/solr)
 
-Self-hosted Solr deployment via Docker, sourced from Portainer catalog
+Self-hosted Solr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5383,7 +5383,7 @@ Self-hosted Solr deployment via Docker, sourced from Portainer catalog
 
 ### [Sonarr](/templates/sonarr)
 
-Self-hosted Sonarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Sonarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5393,7 +5393,7 @@ Self-hosted Sonarr deployment via Docker, sourced from Portainer catalog
 
 ### [Spacedeck](/templates/spacedeck)
 
-Self-hosted Spacedeck deployment via Docker, sourced from Yunohost catalog
+Self-hosted Spacedeck deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5403,7 +5403,7 @@ Self-hosted Spacedeck deployment via Docker, sourced from Yunohost catalog
 
 ### [Sparkyfitness](/templates/sparkyfitness)
 
-Self-hosted Sparkyfitness deployment via Docker, sourced from Yunohost catalog
+Self-hosted Sparkyfitness deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5413,7 +5413,7 @@ Self-hosted Sparkyfitness deployment via Docker, sourced from Yunohost catalog
 
 ### [Spip](/templates/spip)
 
-Self-hosted Spip deployment via Docker, sourced from Yunohost catalog
+Self-hosted Spip deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5423,7 +5423,7 @@ Self-hosted Spip deployment via Docker, sourced from Yunohost catalog
 
 ### [Sqlitebrowser](/templates/sqlitebrowser)
 
-Self-hosted Sqlitebrowser deployment via Docker, sourced from Umbrel catalog
+Self-hosted Sqlitebrowser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5433,7 +5433,7 @@ Self-hosted Sqlitebrowser deployment via Docker, sourced from Umbrel catalog
 
 ### [Squeaknode](/templates/squeaknode)
 
-Self-hosted Squeaknode deployment via Docker, sourced from Umbrel catalog
+Self-hosted Squeaknode deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5443,7 +5443,7 @@ Self-hosted Squeaknode deployment via Docker, sourced from Umbrel catalog
 
 ### [Sshwifty](/templates/sshwifty)
 
-Self-hosted Sshwifty deployment via Docker, sourced from Portainer catalog
+Self-hosted Sshwifty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5453,7 +5453,7 @@ Self-hosted Sshwifty deployment via Docker, sourced from Portainer catalog
 
 ### [Stalwart](/templates/stalwart)
 
-Self-hosted Stalwart deployment via Docker, sourced from Umbrel catalog
+Self-hosted Stalwart deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5463,7 +5463,7 @@ Self-hosted Stalwart deployment via Docker, sourced from Umbrel catalog
 
 ### [Starbase 80](/templates/starbase-80)
 
-Self-hosted Starbase 80 deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Starbase 80 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5473,7 +5473,7 @@ Self-hosted Starbase 80 deployment via Docker, sourced from Awesome-Selfhosted c
 
 ### [Stirling Pdf](/templates/stirling-pdf)
 
-Self-hosted Stirling Pdf deployment via Docker, sourced from Portainer catalog
+Self-hosted PDF manipulation toolkit for merging, splitting, converting, OCR, and watermarking documents
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5483,7 +5483,7 @@ Self-hosted Stirling Pdf deployment via Docker, sourced from Portainer catalog
 
 ### [Strix](/templates/strix)
 
-Self-hosted Strix deployment via Docker, sourced from Umbrel catalog
+Self-hosted Strix deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5493,7 +5493,7 @@ Self-hosted Strix deployment via Docker, sourced from Umbrel catalog
 
 ### [Stump](/templates/stump)
 
-Self-hosted Stump deployment via Docker, sourced from Portainer catalog
+Self-hosted Stump deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5503,7 +5503,7 @@ Self-hosted Stump deployment via Docker, sourced from Portainer catalog
 
 ### [Superset](/templates/superset)
 
-Self-hosted Superset deployment via Docker, sourced from Yunohost catalog
+Self-hosted Superset deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5513,7 +5513,7 @@ Self-hosted Superset deployment via Docker, sourced from Yunohost catalog
 
 ### [Sure](/templates/sure)
 
-Self-hosted Sure deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Sure deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5523,7 +5523,7 @@ Self-hosted Sure deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Surrealdb](/templates/surrealdb)
 
-Self-hosted Surrealdb deployment via Docker, sourced from Portainer catalog
+Self-hosted Surrealdb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5533,7 +5533,7 @@ Self-hosted Surrealdb deployment via Docker, sourced from Portainer catalog
 
 ### [Synapse](/templates/synapse)
 
-Self-hosted Synapse deployment via Docker, sourced from Umbrel catalog
+Self-hosted Synapse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5543,7 +5543,7 @@ Self-hosted Synapse deployment via Docker, sourced from Umbrel catalog
 
 ### [Synapse Admin](/templates/synapse-admin)
 
-Self-hosted Synapse Admin deployment via Docker, sourced from Yunohost catalog
+Self-hosted Synapse Admin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5553,7 +5553,7 @@ Self-hosted Synapse Admin deployment via Docker, sourced from Yunohost catalog
 
 ### [Syncserver Rs](/templates/syncserver-rs)
 
-Self-hosted Syncserver Rs deployment via Docker, sourced from Yunohost catalog
+Self-hosted Syncserver Rs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5563,7 +5563,7 @@ Self-hosted Syncserver Rs deployment via Docker, sourced from Yunohost catalog
 
 ### [Syncthing](/templates/syncthing)
 
-Self-hosted Syncthing deployment via Docker, sourced from Umbrel catalog
+Self-hosted Syncthing deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5573,7 +5573,7 @@ Self-hosted Syncthing deployment via Docker, sourced from Umbrel catalog
 
 ### [Tabby](/templates/tabby)
 
-Self-hosted Tabby deployment via Docker, sourced from Portainer catalog
+Self-hosted Tabby deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5583,7 +5583,7 @@ Self-hosted Tabby deployment via Docker, sourced from Portainer catalog
 
 ### [Tailscale](/templates/tailscale)
 
-Self-hosted Tailscale deployment via Docker, sourced from Umbrel catalog
+Self-hosted Tailscale deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5593,7 +5593,7 @@ Self-hosted Tailscale deployment via Docker, sourced from Umbrel catalog
 
 ### [Tasks.Md](/templates/tasks-md)
 
-Self-hosted Tasks.Md deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Tasks.Md deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5603,7 +5603,7 @@ Self-hosted Tasks.Md deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Tautulli](/templates/tautulli)
 
-Self-hosted Tautulli deployment via Docker, sourced from Portainer catalog
+Self-hosted Tautulli deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5613,7 +5613,7 @@ Self-hosted Tautulli deployment via Docker, sourced from Portainer catalog
 
 ### [Tdarr](/templates/tdarr)
 
-Self-hosted Tdarr deployment via Docker, sourced from Portainer catalog
+Self-hosted Tdarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5623,7 +5623,7 @@ Self-hosted Tdarr deployment via Docker, sourced from Portainer catalog
 
 ### [Teampass](/templates/teampass)
 
-Self-hosted Teampass deployment via Docker, sourced from YunoHost catalog
+Self-hosted Teampass deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5633,7 +5633,7 @@ Self-hosted Teampass deployment via Docker, sourced from YunoHost catalog
 
 ### [Teamspeak](/templates/teamspeak)
 
-Self-hosted Teamspeak deployment via Docker, sourced from Umbrel catalog
+Self-hosted Teamspeak deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5643,7 +5643,7 @@ Self-hosted Teamspeak deployment via Docker, sourced from Umbrel catalog
 
 ### [Telepresence](/templates/telepresence)
 
-Self-hosted Telepresence deployment via Docker, sourced from Priority catalog
+Self-hosted Telepresence deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/priority" class="tag-badge">priority</a>
 
@@ -5653,7 +5653,7 @@ Self-hosted Telepresence deployment via Docker, sourced from Priority catalog
 
 ### [Termix](/templates/termix)
 
-Self-hosted Termix deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Termix deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5663,7 +5663,7 @@ Self-hosted Termix deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Terraforming Mars](/templates/terraforming-mars)
 
-Self-hosted Terraforming Mars deployment via Docker, sourced from Yunohost catalog
+Self-hosted Terraforming Mars deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5673,7 +5673,7 @@ Self-hosted Terraforming Mars deployment via Docker, sourced from Yunohost catal
 
 ### [Textarea](/templates/textarea)
 
-Self-hosted Textarea deployment via Docker, sourced from Yunohost catalog
+Self-hosted Textarea deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5683,7 +5683,7 @@ Self-hosted Textarea deployment via Docker, sourced from Yunohost catalog
 
 ### [Thelounge](/templates/thelounge)
 
-Self-hosted Thelounge deployment via Docker, sourced from Portainer catalog
+Self-hosted Thelounge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5693,7 +5693,7 @@ Self-hosted Thelounge deployment via Docker, sourced from Portainer catalog
 
 ### [Thunderhub](/templates/thunderhub)
 
-Self-hosted Thunderhub deployment via Docker, sourced from Umbrel catalog
+Self-hosted Thunderhub deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5703,7 +5703,7 @@ Self-hosted Thunderhub deployment via Docker, sourced from Umbrel catalog
 
 ### [Tine](/templates/tine)
 
-Self-hosted Tine deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Tine deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5713,7 +5713,7 @@ Self-hosted Tine deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Tinyfeed](/templates/tinyfeed)
 
-Self-hosted Tinyfeed deployment via Docker, sourced from Yunohost catalog
+Self-hosted Tinyfeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5723,7 +5723,7 @@ Self-hosted Tinyfeed deployment via Docker, sourced from Yunohost catalog
 
 ### [Tinyfilemanager](/templates/tinyfilemanager)
 
-Self-hosted Tinyfilemanager deployment via Docker, sourced from YunoHost catalog
+Self-hosted Tinyfilemanager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5733,7 +5733,7 @@ Self-hosted Tinyfilemanager deployment via Docker, sourced from YunoHost catalog
 
 ### [Tinymediamanager](/templates/tinymediamanager)
 
-Self-hosted Tinymediamanager deployment via Docker, sourced from Portainer catalog
+Self-hosted Tinymediamanager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5743,7 +5743,7 @@ Self-hosted Tinymediamanager deployment via Docker, sourced from Portainer catal
 
 ### [Tooljet](/templates/tooljet)
 
-Self-hosted Tooljet deployment via Docker, sourced from Portainer catalog
+Self-hosted Tooljet deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5753,7 +5753,7 @@ Self-hosted Tooljet deployment via Docker, sourced from Portainer catalog
 
 ### [Torq](/templates/torq)
 
-Self-hosted Torq deployment via Docker, sourced from Umbrel catalog
+Self-hosted Torq deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5763,7 +5763,7 @@ Self-hosted Torq deployment via Docker, sourced from Umbrel catalog
 
 ### [Toshi Moto](/templates/toshi-moto)
 
-Self-hosted Toshi Moto deployment via Docker, sourced from Umbrel catalog
+Self-hosted Toshi Moto deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5773,7 +5773,7 @@ Self-hosted Toshi Moto deployment via Docker, sourced from Umbrel catalog
 
 ### [Traccar](/templates/traccar)
 
-Self-hosted Traccar deployment via Docker, sourced from YunoHost catalog
+Self-hosted Traccar deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5783,7 +5783,7 @@ Self-hosted Traccar deployment via Docker, sourced from YunoHost catalog
 
 ### [Transfersh](/templates/transfersh)
 
-Self-hosted Transfersh deployment via Docker, sourced from Yunohost catalog
+Self-hosted Transfersh deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5793,7 +5793,7 @@ Self-hosted Transfersh deployment via Docker, sourced from Yunohost catalog
 
 ### [Transmission](/templates/transmission)
 
-Self-hosted Transmission deployment via Docker, sourced from Portainer catalog
+Self-hosted Transmission deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5803,7 +5803,7 @@ Self-hosted Transmission deployment via Docker, sourced from Portainer catalog
 
 ### [Transmission Openvpn](/templates/transmission-openvpn)
 
-Self-hosted Transmission Openvpn deployment via Docker, sourced from Portainer catalog
+Self-hosted Transmission Openvpn deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5813,7 +5813,7 @@ Self-hosted Transmission Openvpn deployment via Docker, sourced from Portainer c
 
 ### [Trilium](/templates/trilium)
 
-Self-hosted Trilium deployment via Docker, sourced from Portainer catalog
+Self-hosted Trilium deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5823,7 +5823,7 @@ Self-hosted Trilium deployment via Docker, sourced from Portainer catalog
 
 ### [Ttrss](/templates/ttrss)
 
-Self-hosted Ttrss deployment via Docker, sourced from Yunohost catalog
+Self-hosted Ttrss deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5833,7 +5833,7 @@ Self-hosted Ttrss deployment via Docker, sourced from Yunohost catalog
 
 ### [Tubearchivist](/templates/tubearchivist)
 
-Self-hosted Tubearchivist deployment via Docker, sourced from Portainer catalog
+Self-hosted Tubearchivist deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5843,7 +5843,7 @@ Self-hosted Tubearchivist deployment via Docker, sourced from Portainer catalog
 
 ### [Tunarr](/templates/tunarr)
 
-Self-hosted Tunarr deployment via Docker, sourced from Yunohost catalog
+Self-hosted Tunarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5853,7 +5853,7 @@ Self-hosted Tunarr deployment via Docker, sourced from Yunohost catalog
 
 ### [Tuwunel](/templates/tuwunel)
 
-Self-hosted Tuwunel deployment via Docker, sourced from Yunohost catalog
+Self-hosted Tuwunel deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5863,7 +5863,7 @@ Self-hosted Tuwunel deployment via Docker, sourced from Yunohost catalog
 
 ### [Tvheadend](/templates/tvheadend)
 
-Self-hosted Tvheadend deployment via Docker, sourced from Portainer catalog
+Self-hosted Tvheadend deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5873,7 +5873,7 @@ Self-hosted Tvheadend deployment via Docker, sourced from Portainer catalog
 
 ### [Twenty](/templates/twenty)
 
-Self-hosted Twenty deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Twenty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5883,7 +5883,7 @@ Self-hosted Twenty deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Typebot](/templates/typebot)
 
-Self-hosted Typebot deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Typebot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5893,7 +5893,7 @@ Self-hosted Typebot deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Ubooquity](/templates/ubooquity)
 
-Self-hosted Ubooquity deployment via Docker, sourced from Portainer catalog
+Self-hosted Ubooquity deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5903,7 +5903,7 @@ Self-hosted Ubooquity deployment via Docker, sourced from Portainer catalog
 
 ### [Ubuntu](/templates/ubuntu)
 
-Self-hosted Ubuntu deployment via Docker, sourced from Portainer catalog
+Self-hosted Ubuntu deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5913,7 +5913,7 @@ Self-hosted Ubuntu deployment via Docker, sourced from Portainer catalog
 
 ### [Umap](/templates/umap)
 
-Self-hosted Umap deployment via Docker, sourced from YunoHost catalog
+Self-hosted Umap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5923,7 +5923,7 @@ Self-hosted Umap deployment via Docker, sourced from YunoHost catalog
 
 ### [Ums](/templates/ums)
 
-Self-hosted Ums deployment via Docker, sourced from Yunohost catalog
+Self-hosted Ums deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5933,7 +5933,7 @@ Self-hosted Ums deployment via Docker, sourced from Yunohost catalog
 
 ### [Unmanic](/templates/unmanic)
 
-Self-hosted Unmanic deployment via Docker, sourced from Portainer catalog
+Self-hosted Unmanic deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5943,7 +5943,7 @@ Self-hosted Unmanic deployment via Docker, sourced from Portainer catalog
 
 ### [Upsnap](/templates/upsnap)
 
-Self-hosted Upsnap deployment via Docker, sourced from Portainer catalog
+Self-hosted Upsnap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -5953,7 +5953,7 @@ Self-hosted Upsnap deployment via Docker, sourced from Portainer catalog
 
 ### [Uptime Kuma](/templates/uptime-kuma)
 
-Self-hosted Uptime Kuma deployment via Docker, sourced from Umbrel catalog
+Self-hosted monitoring tool for tracking uptime of websites, APIs, databases, and services with alerting
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5963,7 +5963,7 @@ Self-hosted Uptime Kuma deployment via Docker, sourced from Umbrel catalog
 
 ### [Usertour](/templates/usertour)
 
-Self-hosted Usertour deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Usertour deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -5973,7 +5973,7 @@ Self-hosted Usertour deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Versitygw](/templates/versitygw)
 
-Self-hosted Versitygw deployment via Docker, sourced from Yunohost catalog
+Self-hosted Versitygw deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -5983,7 +5983,7 @@ Self-hosted Versitygw deployment via Docker, sourced from Yunohost catalog
 
 ### [Vert](/templates/vert)
 
-Self-hosted Vert deployment via Docker, sourced from Umbrel catalog
+Self-hosted Vert deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -5993,7 +5993,7 @@ Self-hosted Vert deployment via Docker, sourced from Umbrel catalog
 
 ### [Vikunja](/templates/vikunja)
 
-Self-hosted Vikunja deployment via Docker, sourced from Portainer catalog
+Self-hosted Vikunja deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6003,7 +6003,7 @@ Self-hosted Vikunja deployment via Docker, sourced from Portainer catalog
 
 ### [Virtualtabletop](/templates/virtualtabletop)
 
-Self-hosted Virtualtabletop deployment via Docker, sourced from Yunohost catalog
+Self-hosted Virtualtabletop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6013,7 +6013,7 @@ Self-hosted Virtualtabletop deployment via Docker, sourced from Yunohost catalog
 
 ### [Viseron](/templates/viseron)
 
-Self-hosted Viseron deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Viseron deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6023,7 +6023,7 @@ Self-hosted Viseron deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Vouchervault](/templates/vouchervault)
 
-Self-hosted Vouchervault deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Vouchervault deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6033,7 +6033,7 @@ Self-hosted Vouchervault deployment via Docker, sourced from Awesome-Selfhosted 
 
 ### [Vpnclient](/templates/vpnclient)
 
-Self-hosted Vpnclient deployment via Docker, sourced from Yunohost catalog
+Self-hosted Vpnclient deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6043,7 +6043,7 @@ Self-hosted Vpnclient deployment via Docker, sourced from Yunohost catalog
 
 ### [Vvveb](/templates/vvveb)
 
-Self-hosted Vvveb deployment via Docker, sourced from Yunohost catalog
+Self-hosted Vvveb deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6053,7 +6053,7 @@ Self-hosted Vvveb deployment via Docker, sourced from Yunohost catalog
 
 ### [Wallabag](/templates/wallabag)
 
-Self-hosted Wallabag deployment via Docker, sourced from Portainer catalog
+Self-hosted Wallabag deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6063,7 +6063,7 @@ Self-hosted Wallabag deployment via Docker, sourced from Portainer catalog
 
 ### [Wallos](/templates/wallos)
 
-Self-hosted Wallos deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wallos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6073,7 +6073,7 @@ Self-hosted Wallos deployment via Docker, sourced from Yunohost catalog
 
 ### [Warpgate](/templates/warpgate)
 
-Self-hosted Warpgate deployment via Docker, sourced from Yunohost catalog
+Self-hosted Warpgate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6083,7 +6083,7 @@ Self-hosted Warpgate deployment via Docker, sourced from Yunohost catalog
 
 ### [Warracker](/templates/warracker)
 
-Self-hosted Warracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Warracker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6093,7 +6093,7 @@ Self-hosted Warracker deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Watcharr](/templates/watcharr)
 
-Self-hosted Watcharr deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Watcharr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6103,7 +6103,7 @@ Self-hosted Watcharr deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Watchdog](/templates/watchdog)
 
-Self-hosted Watchdog deployment via Docker, sourced from Yunohost catalog
+Self-hosted Watchdog deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6113,7 +6113,7 @@ Self-hosted Watchdog deployment via Docker, sourced from Yunohost catalog
 
 ### [Watchtower](/templates/watchtower)
 
-Self-hosted Watchtower deployment via Docker, sourced from Portainer catalog
+Self-hosted Watchtower deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6123,7 +6123,7 @@ Self-hosted Watchtower deployment via Docker, sourced from Portainer catalog
 
 ### [Watchyourlan](/templates/watchyourlan)
 
-Self-hosted Watchyourlan deployment via Docker, sourced from Yunohost catalog
+Self-hosted Watchyourlan deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6133,7 +6133,7 @@ Self-hosted Watchyourlan deployment via Docker, sourced from Yunohost catalog
 
 ### [Wavelog](/templates/wavelog)
 
-Self-hosted Wavelog deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wavelog deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6143,7 +6143,7 @@ Self-hosted Wavelog deployment via Docker, sourced from Umbrel catalog
 
 ### [Webcheck](/templates/webcheck)
 
-Self-hosted Webcheck deployment via Docker, sourced from Umbrel catalog
+Self-hosted Webcheck deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6153,7 +6153,7 @@ Self-hosted Webcheck deployment via Docker, sourced from Umbrel catalog
 
 ### [Weblate](/templates/weblate)
 
-Self-hosted Weblate deployment via Docker, sourced from YunoHost catalog
+Self-hosted Weblate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6163,7 +6163,7 @@ Self-hosted Weblate deployment via Docker, sourced from YunoHost catalog
 
 ### [Webtop](/templates/webtop)
 
-Self-hosted Webtop deployment via Docker, sourced from Portainer catalog
+Self-hosted Webtop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6173,7 +6173,7 @@ Self-hosted Webtop deployment via Docker, sourced from Portainer catalog
 
 ### [Webtor](/templates/webtor)
 
-Self-hosted Webtor deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Webtor deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6183,7 +6183,7 @@ Self-hosted Webtor deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Webtrees](/templates/webtrees)
 
-Self-hosted Webtrees deployment via Docker, sourced from Portainer catalog
+Self-hosted Webtrees deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6193,7 +6193,7 @@ Self-hosted Webtrees deployment via Docker, sourced from Portainer catalog
 
 ### [Wekan](/templates/wekan)
 
-Self-hosted Wekan deployment via Docker, sourced from YunoHost catalog
+Self-hosted Wekan deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6203,7 +6203,7 @@ Self-hosted Wekan deployment via Docker, sourced from YunoHost catalog
 
 ### [Wetty](/templates/wetty)
 
-Self-hosted Wetty deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wetty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6213,7 +6213,7 @@ Self-hosted Wetty deployment via Docker, sourced from Yunohost catalog
 
 ### [What To Cook?](/templates/what-to-cook)
 
-Self-hosted What To Cook? deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted What To Cook? deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6223,7 +6223,7 @@ Self-hosted What To Cook? deployment via Docker, sourced from Awesome-Selfhosted
 
 ### [Whisparr](/templates/whisparr)
 
-Self-hosted Whisparr deployment via Docker, sourced from Portainer catalog
+Self-hosted Whisparr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6233,7 +6233,7 @@ Self-hosted Whisparr deployment via Docker, sourced from Portainer catalog
 
 ### [Whoogle Search](/templates/whoogle-search)
 
-Self-hosted Whoogle Search deployment via Docker, sourced from Umbrel catalog
+Self-hosted Whoogle Search deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6243,7 +6243,7 @@ Self-hosted Whoogle Search deployment via Docker, sourced from Umbrel catalog
 
 ### [Wiki Go](/templates/wiki-go)
 
-Self-hosted Wiki Go deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wiki Go deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6253,7 +6253,7 @@ Self-hosted Wiki Go deployment via Docker, sourced from Yunohost catalog
 
 ### [Wikidocs](/templates/wikidocs)
 
-Self-hosted Wikidocs deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wikidocs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6263,7 +6263,7 @@ Self-hosted Wikidocs deployment via Docker, sourced from Yunohost catalog
 
 ### [Wikijs](/templates/wikijs)
 
-Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog
+Self-hosted Wikijs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6273,7 +6273,7 @@ Self-hosted Wikijs deployment via Docker, sourced from Portainer catalog
 
 ### [Wikimore](/templates/wikimore)
 
-Self-hosted Wikimore deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wikimore deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6283,7 +6283,7 @@ Self-hosted Wikimore deployment via Docker, sourced from Yunohost catalog
 
 ### [Wingfit](/templates/wingfit)
 
-Self-hosted Wingfit deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wingfit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6293,7 +6293,7 @@ Self-hosted Wingfit deployment via Docker, sourced from Umbrel catalog
 
 ### [Wireguard](/templates/wireguard)
 
-Self-hosted Wireguard deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wireguard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6303,7 +6303,7 @@ Self-hosted Wireguard deployment via Docker, sourced from Umbrel catalog
 
 ### [Wondercms](/templates/wondercms)
 
-Self-hosted Wondercms deployment via Docker, sourced from Yunohost catalog
+Self-hosted Wondercms deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6313,7 +6313,7 @@ Self-hosted Wondercms deployment via Docker, sourced from Yunohost catalog
 
 ### [Woodpecker](/templates/woodpecker)
 
-Self-hosted Woodpecker deployment via Docker, sourced from Yunohost catalog
+Self-hosted Woodpecker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6323,7 +6323,7 @@ Self-hosted Woodpecker deployment via Docker, sourced from Yunohost catalog
 
 ### [Wordpress](/templates/wordpress)
 
-Self-hosted Wordpress deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wordpress deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6333,7 +6333,7 @@ Self-hosted Wordpress deployment via Docker, sourced from Umbrel catalog
 
 ### [Workout Cool](/templates/workout-cool)
 
-Self-hosted Workout Cool deployment via Docker, sourced from Yunohost catalog
+Self-hosted Workout Cool deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6343,7 +6343,7 @@ Self-hosted Workout Cool deployment via Docker, sourced from Yunohost catalog
 
 ### [Workout Tracker](/templates/workout-tracker)
 
-Self-hosted Workout Tracker deployment via Docker, sourced from Yunohost catalog
+Self-hosted Workout Tracker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6353,7 +6353,7 @@ Self-hosted Workout Tracker deployment via Docker, sourced from Yunohost catalog
 
 ### [Writefreely](/templates/writefreely)
 
-Self-hosted Writefreely deployment via Docker, sourced from YunoHost catalog
+Self-hosted Writefreely deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6363,7 +6363,7 @@ Self-hosted Writefreely deployment via Docker, sourced from YunoHost catalog
 
 ### [Xbackbone](/templates/xbackbone)
 
-Self-hosted Xbackbone deployment via Docker, sourced from Yunohost catalog
+Self-hosted Xbackbone deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6373,7 +6373,7 @@ Self-hosted Xbackbone deployment via Docker, sourced from Yunohost catalog
 
 ### [Xwiki](/templates/xwiki)
 
-Self-hosted Xwiki deployment via Docker, sourced from Portainer catalog
+Self-hosted Xwiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6383,7 +6383,7 @@ Self-hosted Xwiki deployment via Docker, sourced from Portainer catalog
 
 ### [Yacht](/templates/yacht)
 
-Self-hosted Yacht deployment via Docker, sourced from Portainer catalog
+Self-hosted Yacht deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6393,7 +6393,7 @@ Self-hosted Yacht deployment via Docker, sourced from Portainer catalog
 
 ### [Yamtrack](/templates/yamtrack)
 
-Self-hosted Yamtrack deployment via Docker, sourced from Umbrel catalog
+Self-hosted Yamtrack deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6403,7 +6403,7 @@ Self-hosted Yamtrack deployment via Docker, sourced from Umbrel catalog
 
 ### [Yarr](/templates/yarr)
 
-Self-hosted Yarr deployment via Docker, sourced from Yunohost catalog
+Self-hosted Yarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6413,7 +6413,7 @@ Self-hosted Yarr deployment via Docker, sourced from Yunohost catalog
 
 ### [Yeetfile](/templates/yeetfile)
 
-Self-hosted Yeetfile deployment via Docker, sourced from Yunohost catalog
+Self-hosted Yeetfile deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6423,7 +6423,7 @@ Self-hosted Yeetfile deployment via Docker, sourced from Yunohost catalog
 
 ### [Yellow](/templates/yellow)
 
-Self-hosted Yellow deployment via Docker, sourced from Yunohost catalog
+Self-hosted Yellow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6433,7 +6433,7 @@ Self-hosted Yellow deployment via Docker, sourced from Yunohost catalog
 
 ### [Your Spotify](/templates/your-spotify)
 
-Self-hosted Your Spotify deployment via Docker, sourced from Portainer catalog
+Self-hosted Your Spotify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6443,7 +6443,7 @@ Self-hosted Your Spotify deployment via Docker, sourced from Portainer catalog
 
 ### [Yourls](/templates/yourls)
 
-Self-hosted Yourls deployment via Docker, sourced from YunoHost catalog
+Self-hosted Yourls deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6453,7 +6453,7 @@ Self-hosted Yourls deployment via Docker, sourced from YunoHost catalog
 
 ### [Youtubedl Material](/templates/youtubedl-material)
 
-Self-hosted Youtubedl Material deployment via Docker, sourced from Portainer catalog
+Self-hosted Youtubedl Material deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6463,7 +6463,7 @@ Self-hosted Youtubedl Material deployment via Docker, sourced from Portainer cat
 
 ### [Yucca](/templates/yucca)
 
-Self-hosted Yucca deployment via Docker, sourced from Umbrel catalog
+Self-hosted Yucca deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6473,7 +6473,7 @@ Self-hosted Yucca deployment via Docker, sourced from Umbrel catalog
 
 ### [Zen](/templates/zen)
 
-Self-hosted Zen deployment via Docker, sourced from Umbrel catalog
+Self-hosted Zen deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6483,7 +6483,7 @@ Self-hosted Zen deployment via Docker, sourced from Umbrel catalog
 
 ### [Zigbee2Mqtt](/templates/zigbee2mqtt)
 
-Self-hosted Zigbee2Mqtt deployment via Docker, sourced from Umbrel catalog
+Self-hosted Zigbee2Mqtt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6493,7 +6493,7 @@ Self-hosted Zigbee2Mqtt deployment via Docker, sourced from Umbrel catalog
 
 ### [Ziit](/templates/ziit)
 
-Self-hosted Ziit deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ziit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -6503,7 +6503,7 @@ Self-hosted Ziit deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Znc](/templates/znc)
 
-Self-hosted Znc deployment via Docker, sourced from Portainer catalog
+Self-hosted Znc deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6513,7 +6513,7 @@ Self-hosted Znc deployment via Docker, sourced from Portainer catalog
 
 ### [Zoraxy](/templates/zoraxy)
 
-Self-hosted Zoraxy deployment via Docker, sourced from Umbrel catalog
+Self-hosted Zoraxy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -6523,7 +6523,7 @@ Self-hosted Zoraxy deployment via Docker, sourced from Umbrel catalog
 
 ### [Ztnet](/templates/ztnet)
 
-Self-hosted Ztnet deployment via Docker, sourced from Portainer catalog
+Self-hosted Ztnet deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -6533,7 +6533,7 @@ Self-hosted Ztnet deployment via Docker, sourced from Portainer catalog
 
 ### [Zusam](/templates/zusam)
 
-Self-hosted Zusam deployment via Docker, sourced from YunoHost catalog
+Self-hosted Zusam deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -6543,7 +6543,7 @@ Self-hosted Zusam deployment via Docker, sourced from YunoHost catalog
 
 ### [Zwave Js Ui](/templates/zwave-js-ui)
 
-Self-hosted Zwave Js Ui deployment via Docker, sourced from Yunohost catalog
+Self-hosted Zwave Js Ui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 

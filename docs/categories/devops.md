@@ -13,7 +13,7 @@ description: 16 templates tagged with "devops"
 
 ### [Cinny](/templates/cinny)
 
-Self-hosted Cinny deployment via Docker, sourced from Yunohost catalog
+Self-hosted Cinny deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -33,7 +33,7 @@ Open-source development environment manager
 
 ### [Docker Mailserver](/templates/docker-mailserver)
 
-Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Docker Mailserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -53,7 +53,7 @@ Open-source Platform as a Service — deploy and manage applications, databases,
 
 ### [Facilmap](/templates/facilmap)
 
-Self-hosted Facilmap deployment via Docker, sourced from YunoHost catalog
+Self-hosted Facilmap deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -73,7 +73,7 @@ Open-source feature flag and remote config platform — release features, run A/
 
 ### [Gancio](/templates/gancio)
 
-Self-hosted Gancio deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gancio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -83,7 +83,7 @@ Self-hosted Gancio deployment via Docker, sourced from Yunohost catalog
 
 ### [Gitea](/templates/gitea)
 
-Self-hosted Gitea deployment via Docker, sourced from Portainer catalog
+Self-hosted Gitea deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -93,7 +93,7 @@ Self-hosted Gitea deployment via Docker, sourced from Portainer catalog
 
 ### [Gitingest](/templates/gitingest)
 
-Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog
+Self-hosted Gitingest deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -103,7 +103,7 @@ Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog
 
 ### [Gitlab](/templates/gitlab)
 
-Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog
+Self-hosted Gitlab deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -113,7 +113,7 @@ Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog
 
 ### [Gitlab Runner](/templates/gitlab-runner)
 
-Self-hosted Gitlab Runner deployment via Docker, sourced from Yunohost catalog
+Self-hosted Gitlab Runner deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -123,7 +123,7 @@ Self-hosted Gitlab Runner deployment via Docker, sourced from Yunohost catalog
 
 ### [Gotosocial](/templates/gotosocial)
 
-Self-hosted Gotosocial deployment via Docker, sourced from Portainer catalog
+Self-hosted Gotosocial deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -143,7 +143,7 @@ Open-source CI/CD and DevOps platform — automate builds, tests, deployments, a
 
 ### [Minimal Git Server](/templates/minimal-git-server)
 
-Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Minimal Git Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 

@@ -1,11 +1,11 @@
 ---
 title: "Openvpn As"
-description: "Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Openvpn As deployment via Docker"
 ---
 
 # Openvpn As
 
-Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog
+Self-hosted Openvpn As deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Openvpn As deployment via Docker, sourced from Portainer catalog
 | ID | `openvpn-as` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `8654f6c00ef033e638c07ffaa6d8221c1a144d734ce003e1ccc25303d0c01795` |
+| Content Hash | `802f9a1d7c420fe0195fec159dc76c2d150a7b4ea19a91f6020b56040c2d8336` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `openvpn-as` | docker.io/openvpn/openvpn-as:latest | Main application service |
+| `openvpn-as_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `OPENVPN_AS_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs openvpn-as
+```
+
+**Port conflict:**
+Edit `.env` and change `OPENVPN-AS_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec openvpn-as ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect openvpn-as --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v openvpn-as_data:/data -v $(pwd):/backup alpine tar czf /backup/openvpn-as-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v openvpn-as_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/openvpn-as-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Openvpn As](https://github.com/openvpn/openvpn-as)
+- **Docker Image:** `docker.io/openvpn/openvpn-as:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/openvpn/openvpn-as/wiki)
+- **Issues:** [GitHub Issues](https://github.com/openvpn/openvpn-as/issues)
+

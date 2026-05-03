@@ -13,7 +13,7 @@ description: 2 templates tagged with "priority"
 
 ### [Oras](/templates/oras)
 
-Self-hosted Oras deployment via Docker, sourced from Priority catalog
+Self-hosted Oras deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/priority" class="tag-badge">priority</a>
 
@@ -23,7 +23,7 @@ Self-hosted Oras deployment via Docker, sourced from Priority catalog
 
 ### [Telepresence](/templates/telepresence)
 
-Self-hosted Telepresence deployment via Docker, sourced from Priority catalog
+Self-hosted Telepresence deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/priority" class="tag-badge">priority</a>
 

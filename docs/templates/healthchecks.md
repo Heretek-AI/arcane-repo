@@ -1,11 +1,11 @@
 ---
 title: "Healthchecks"
-description: "Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Healthchecks deployment via Docker"
 ---
 
 # Healthchecks
 
-Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog
+Self-hosted Healthchecks deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Healthchecks deployment via Docker, sourced from Portainer catalog
 | ID | `healthchecks` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `c225ec99cb40182553d7c7bc23258fbb8f2e8157baf7d97a576671e831ecbe9d` |
+| Content Hash | `e4b8c1c759024de9de2aaedb769023a2226a57ee47d8511515476278331243ff` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `healthchecks` | docker.io/healthchecks/healthchecks:latest | Main application service |
+| `healthchecks_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `HEALTHCHECKS_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs healthchecks
+```
+
+**Port conflict:**
+Edit `.env` and change `HEALTHCHECKS_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec healthchecks ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect healthchecks --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v healthchecks_data:/data -v $(pwd):/backup alpine tar czf /backup/healthchecks-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v healthchecks_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/healthchecks-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Healthchecks](https://github.com/healthchecks/healthchecks)
+- **Docker Image:** `docker.io/healthchecks/healthchecks:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/healthchecks/healthchecks/wiki)
+- **Issues:** [GitHub Issues](https://github.com/healthchecks/healthchecks/issues)
+

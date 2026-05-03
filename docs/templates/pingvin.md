@@ -1,11 +1,11 @@
 ---
 title: "Pingvin"
-description: "Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Pingvin deployment via Docker"
 ---
 
 # Pingvin
 
-Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog
+Self-hosted Pingvin deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Pingvin deployment via Docker, sourced from Portainer catalog
 | ID | `pingvin` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `7a6daaa69ff2eb6ac892d64c04b3767a1e1e95afe1e82610cdafbb6c1f2cdd51` |
+| Content Hash | `fd049850800e0af95a91e7920b8246b3d33e884c2c60392012ad9c8fa2185a39` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `pingvin` | docker.io/jasonyangee/pingvin:latest | Main application service |
+| `pingvin_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PINGVIN_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs pingvin
+```
+
+**Port conflict:**
+Edit `.env` and change `PINGVIN_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec pingvin ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect pingvin --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v pingvin_data:/data -v $(pwd):/backup alpine tar czf /backup/pingvin-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v pingvin_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/pingvin-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Pingvin](https://github.com/jasonyangee/pingvin)
+- **Docker Image:** `docker.io/jasonyangee/pingvin:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/jasonyangee/pingvin/wiki)
+- **Issues:** [GitHub Issues](https://github.com/jasonyangee/pingvin/issues)
+

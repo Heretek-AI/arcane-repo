@@ -26,3 +26,40 @@ TEN-framework/ten-framework — open-source framework for building conversationa
 | Version | 1.0.0 |
 | Author | Arcane |
 | Content Hash | `1cc54226aca474e71b80a0de54bef1e1bdedab9493acc257e52e131463074c70` |
+
+## Quick Start
+
+1. **Start the informational API wrapper:**
+
+   ```bash
+   cp .env.example .env
+   docker compose up -d
+   ```
+
+2. **Verify it's running:**
+
+   ```bash
+   curl http://localhost:8000/health
+   ```
+
+## Configuration
+
+| Variable             | Default  | Description                                           |
+|----------------------|----------|-------------------------------------------------------|
+| `TEN_FRAMEWORK_PORT` | `8000`   | Host port for the informational API stub              |
+
+## Troubleshooting
+
+| Symptom                                     | Likely Cause              | Fix                                                                    |
+|---------------------------------------------|---------------------------|------------------------------------------------------------------------|
+| No voice AI agent features available        | This is a Docker stub     | Set up the devcontainer for full development                          |
+| Container exits immediately                 | pip install failure       | Run `docker compose logs ten-framework` for details                   |
+| Need to build custom agents                 | Using wrong deployment    | Clone the repo and use VS Code Dev Containers with the build image    |
+
+## API Endpoints
+
+| Endpoint   | Method | Description                                                    |
+|------------|--------|----------------------------------------------------------------|
+| `/health`  | GET    | Health check + info about the framework                        |
+| `/guide`   | GET    | Development setup guide and port information                   |
+

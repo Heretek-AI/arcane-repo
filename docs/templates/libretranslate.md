@@ -1,11 +1,11 @@
 ---
 title: "Libretranslate"
-description: "Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Libretranslate deployment via Docker"
 ---
 
 # Libretranslate
 
-Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libretranslate deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog
 | ID | `libretranslate` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `93d2966629d716ecd6af73bb25d75e2d647a2b1f1a491411f7d58005a5eca1e2` |
+| Content Hash | `465954102a899e3ab2457b92ceaf9234c2ab76a0bb482425b06b371924522577` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `libretranslate` | docker.io/libretranslate/libretranslate:latest | Main application service |
+| `libretranslate_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `LIBRETRANSLATE_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs libretranslate
+```
+
+**Port conflict:**
+Edit `.env` and change `LIBRETRANSLATE_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec libretranslate ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect libretranslate --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v libretranslate_data:/data -v $(pwd):/backup alpine tar czf /backup/libretranslate-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v libretranslate_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/libretranslate-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Libretranslate](https://github.com/libretranslate/libretranslate)
+- **Docker Image:** `docker.io/libretranslate/libretranslate:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/libretranslate/libretranslate/wiki)
+- **Issues:** [GitHub Issues](https://github.com/libretranslate/libretranslate/issues)
+

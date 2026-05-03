@@ -26,3 +26,20 @@ Non-serviceable: The ezbookkeeping project is no longer available (upstream repo
 | Version | 1.0.0 |
 | Author | Arcane |
 | Content Hash | `da80565d200a0ba5ab6cfe747cec73c93a3999f65669f76249eca29b6d0462f8` |
+
+## Quick Start
+
+```bash
+cp .env.example .env
+docker compose up -d
+curl http://localhost:8000/health
+```
+
+## Health Check
+
+```bash
+curl http://localhost:8000/health
+```
+
+Expected: `{"status":"ok","note":"placeholder — upstream repository removed"}`
+

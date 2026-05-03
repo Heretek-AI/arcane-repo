@@ -1,11 +1,11 @@
 ---
 title: "Writefreely"
-description: "Self-hosted Writefreely deployment via Docker, sourced from YunoHost catalog"
+description: "Self-hosted Writefreely deployment via Docker"
 ---
 
 # Writefreely
 
-Self-hosted Writefreely deployment via Docker, sourced from YunoHost catalog
+Self-hosted Writefreely deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Writefreely deployment via Docker, sourced from YunoHost catalog
 | ID | `writefreely` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `30a73a07525c865bbdb56f3f5e8cbc714fe8e9f7f887620eed858defabdf7107` |
+| Content Hash | `5914ffaa676469786df1d6875dc5cb3c215c3cff21a295bce2629ffd1a8d5525` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `writefreely` | ghcr.io/writefreely/writefreely:latest | Main application service |
+| `writefreely_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `WRITEFREELY_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs writefreely
+```
+
+**Port conflict:**
+Edit `.env` and change `WRITEFREELY_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec writefreely ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect writefreely --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v writefreely_data:/data -v $(pwd):/backup alpine tar czf /backup/writefreely-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v writefreely_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/writefreely-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Writefreely](https://github.com/writefreely/writefreely)
+- **Docker Image:** `ghcr.io/writefreely/writefreely:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/writefreely/writefreely/wiki)
+- **Issues:** [GitHub Issues](https://github.com/writefreely/writefreely/issues)
+

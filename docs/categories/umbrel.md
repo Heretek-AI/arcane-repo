@@ -13,7 +13,7 @@ description: 119 templates tagged with "umbrel"
 
 ### [Affine](/templates/affine)
 
-Self-hosted Affine deployment via Docker, sourced from Umbrel catalog
+Open-source knowledge base and document workspace with real-time collaboration, whiteboards, and markdown support
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -23,7 +23,7 @@ Self-hosted Affine deployment via Docker, sourced from Umbrel catalog
 
 ### [Agora](/templates/agora)
 
-Self-hosted Agora deployment via Docker, sourced from Umbrel catalog
+Self-hosted Agora deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -33,7 +33,7 @@ Self-hosted Agora deployment via Docker, sourced from Umbrel catalog
 
 ### [Airtrail](/templates/airtrail)
 
-Self-hosted Airtrail deployment via Docker, sourced from Umbrel catalog
+Self-hosted Airtrail deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -43,7 +43,7 @@ Self-hosted Airtrail deployment via Docker, sourced from Umbrel catalog
 
 ### [Akaunting](/templates/akaunting)
 
-Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog
+Self-hosted Akaunting deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -53,7 +53,7 @@ Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog
 
 ### [Albyhub](/templates/albyhub)
 
-Self-hosted Albyhub deployment via Docker, sourced from Umbrel catalog
+Self-hosted Albyhub deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -63,7 +63,7 @@ Self-hosted Albyhub deployment via Docker, sourced from Umbrel catalog
 
 ### [Bazarr](/templates/bazarr)
 
-Self-hosted Bazarr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bazarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -73,7 +73,7 @@ Self-hosted Bazarr deployment via Docker, sourced from Umbrel catalog
 
 ### [Bentopdf](/templates/bentopdf)
 
-Self-hosted Bentopdf deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bentopdf deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -83,7 +83,7 @@ Self-hosted Bentopdf deployment via Docker, sourced from Umbrel catalog
 
 ### [Bitaxe Sentry](/templates/bitaxe-sentry)
 
-Self-hosted Bitaxe Sentry deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitaxe Sentry deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -93,7 +93,7 @@ Self-hosted Bitaxe Sentry deployment via Docker, sourced from Umbrel catalog
 
 ### [Bitcoin](/templates/bitcoin)
 
-Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitcoin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -103,7 +103,7 @@ Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog
 
 ### [Bitcoin Knots](/templates/bitcoin-knots)
 
-Self-hosted Bitcoin Knots deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitcoin Knots deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -113,7 +113,7 @@ Self-hosted Bitcoin Knots deployment via Docker, sourced from Umbrel catalog
 
 ### [Booklore](/templates/booklore)
 
-Self-hosted Booklore deployment via Docker, sourced from Umbrel catalog
+Self-hosted Booklore deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -123,7 +123,7 @@ Self-hosted Booklore deployment via Docker, sourced from Umbrel catalog
 
 ### [Btc Rpc Explorer](/templates/btc-rpc-explorer)
 
-Self-hosted Btc Rpc Explorer deployment via Docker, sourced from Umbrel catalog
+Self-hosted Btc Rpc Explorer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -133,7 +133,7 @@ Self-hosted Btc Rpc Explorer deployment via Docker, sourced from Umbrel catalog
 
 ### [Campfire](/templates/campfire)
 
-Self-hosted Campfire deployment via Docker, sourced from Umbrel catalog
+Self-hosted Campfire deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -143,7 +143,7 @@ Self-hosted Campfire deployment via Docker, sourced from Umbrel catalog
 
 ### [Cashu Me](/templates/cashu-me)
 
-Self-hosted Cashu Me deployment via Docker, sourced from Umbrel catalog
+Self-hosted Cashu Me deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -153,7 +153,7 @@ Self-hosted Cashu Me deployment via Docker, sourced from Umbrel catalog
 
 ### [Chantools](/templates/chantools)
 
-Self-hosted Chantools deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chantools deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -163,7 +163,7 @@ Self-hosted Chantools deployment via Docker, sourced from Umbrel catalog
 
 ### [Chatbot Ui](/templates/chatbot-ui)
 
-Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chatbot Ui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -173,7 +173,7 @@ Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog
 
 ### [Chromium](/templates/chromium)
 
-Self-hosted Chromium deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chromium deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -183,7 +183,7 @@ Self-hosted Chromium deployment via Docker, sourced from Umbrel catalog
 
 ### [Cloudflared](/templates/cloudflared)
 
-Self-hosted Cloudflared deployment via Docker, sourced from Umbrel catalog
+Self-hosted Cloudflared deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -193,7 +193,7 @@ Self-hosted Cloudflared deployment via Docker, sourced from Umbrel catalog
 
 ### [Copyparty](/templates/copyparty)
 
-Self-hosted Copyparty deployment via Docker, sourced from Umbrel catalog
+Self-hosted Copyparty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -203,7 +203,7 @@ Self-hosted Copyparty deployment via Docker, sourced from Umbrel catalog
 
 ### [Core Lightning](/templates/core-lightning)
 
-Self-hosted Core Lightning deployment via Docker, sourced from Umbrel catalog
+Self-hosted Core Lightning deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -213,7 +213,7 @@ Self-hosted Core Lightning deployment via Docker, sourced from Umbrel catalog
 
 ### [Domain Locker](/templates/domain-locker)
 
-Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog
+Self-hosted Domain Locker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -223,7 +223,7 @@ Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog
 
 ### [Donetick](/templates/donetick)
 
-Self-hosted Donetick deployment via Docker, sourced from Umbrel catalog
+Self-hosted Donetick deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -233,7 +233,7 @@ Self-hosted Donetick deployment via Docker, sourced from Umbrel catalog
 
 ### [Downtify](/templates/downtify)
 
-Self-hosted Downtify deployment via Docker, sourced from Umbrel catalog
+Self-hosted Downtify deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -243,7 +243,7 @@ Self-hosted Downtify deployment via Docker, sourced from Umbrel catalog
 
 ### [Dumbpad](/templates/dumbpad)
 
-Self-hosted Dumbpad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Dumbpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -253,7 +253,7 @@ Self-hosted Dumbpad deployment via Docker, sourced from Umbrel catalog
 
 ### [Electrs](/templates/electrs)
 
-Self-hosted Electrs deployment via Docker, sourced from Umbrel catalog
+Self-hosted Electrs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -263,7 +263,7 @@ Self-hosted Electrs deployment via Docker, sourced from Umbrel catalog
 
 ### [Electrumx](/templates/electrumx)
 
-Self-hosted Electrumx deployment via Docker, sourced from Umbrel catalog
+Self-hosted Electrumx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -273,7 +273,7 @@ Self-hosted Electrumx deployment via Docker, sourced from Umbrel catalog
 
 ### [Enclosed](/templates/enclosed)
 
-Self-hosted Enclosed deployment via Docker, sourced from Umbrel catalog
+Self-hosted Enclosed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -283,7 +283,7 @@ Self-hosted Enclosed deployment via Docker, sourced from Umbrel catalog
 
 ### [Esphome](/templates/esphome)
 
-Self-hosted Esphome deployment via Docker, sourced from Umbrel catalog
+Self-hosted Esphome deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -293,7 +293,7 @@ Self-hosted Esphome deployment via Docker, sourced from Umbrel catalog
 
 ### [Etherpad](/templates/etherpad)
 
-Self-hosted Etherpad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Etherpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -303,7 +303,7 @@ Self-hosted Etherpad deployment via Docker, sourced from Umbrel catalog
 
 ### [Fedimintd](/templates/fedimintd)
 
-Self-hosted Fedimintd deployment via Docker, sourced from Umbrel catalog
+Self-hosted Fedimintd deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -313,7 +313,7 @@ Self-hosted Fedimintd deployment via Docker, sourced from Umbrel catalog
 
 ### [File Browser](/templates/file-browser)
 
-Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog
+Self-hosted File Browser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -323,7 +323,7 @@ Self-hosted File Browser deployment via Docker, sourced from Umbrel catalog
 
 ### [Firefly Iii](/templates/firefly-iii)
 
-Self-hosted Firefly Iii deployment via Docker, sourced from Umbrel catalog
+Self-hosted Firefly Iii deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -333,7 +333,7 @@ Self-hosted Firefly Iii deployment via Docker, sourced from Umbrel catalog
 
 ### [Fizzy](/templates/fizzy)
 
-Self-hosted Fizzy deployment via Docker, sourced from Umbrel catalog
+Self-hosted Fizzy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -343,7 +343,7 @@ Self-hosted Fizzy deployment via Docker, sourced from Umbrel catalog
 
 ### [Formicaio](/templates/formicaio)
 
-Self-hosted Formicaio deployment via Docker, sourced from Umbrel catalog
+Self-hosted Formicaio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -353,7 +353,7 @@ Self-hosted Formicaio deployment via Docker, sourced from Umbrel catalog
 
 ### [Fossflow](/templates/fossflow)
 
-Self-hosted Fossflow deployment via Docker, sourced from Umbrel catalog
+Self-hosted Fossflow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -363,7 +363,7 @@ Self-hosted Fossflow deployment via Docker, sourced from Umbrel catalog
 
 ### [Frigate](/templates/frigate)
 
-Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog
+Self-hosted Frigate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -373,7 +373,7 @@ Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog
 
 ### [Ghost](/templates/ghost)
 
-Self-hosted Ghost deployment via Docker, sourced from Umbrel catalog
+Self-hosted Ghost deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -383,7 +383,7 @@ Self-hosted Ghost deployment via Docker, sourced from Umbrel catalog
 
 ### [Gitingest](/templates/gitingest)
 
-Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog
+Self-hosted Gitingest deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -393,7 +393,7 @@ Self-hosted Gitingest deployment via Docker, sourced from Umbrel catalog
 
 ### [Gitlab](/templates/gitlab)
 
-Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog
+Self-hosted Gitlab deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -403,7 +403,7 @@ Self-hosted Gitlab deployment via Docker, sourced from Umbrel catalog
 
 ### [Helipad](/templates/helipad)
 
-Self-hosted Helipad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Helipad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -413,7 +413,7 @@ Self-hosted Helipad deployment via Docker, sourced from Umbrel catalog
 
 ### [Hermes Agent](/templates/hermes-agent)
 
-Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
+Self-hosted Hermes Agent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -423,7 +423,7 @@ Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
 
 ### [Holesail Switchboard](/templates/holesail-switchboard)
 
-Self-hosted Holesail Switchboard deployment via Docker, sourced from Umbrel catalog
+Self-hosted Holesail Switchboard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -433,7 +433,7 @@ Self-hosted Holesail Switchboard deployment via Docker, sourced from Umbrel cata
 
 ### [Homebridge](/templates/homebridge)
 
-Self-hosted Homebridge deployment via Docker, sourced from Umbrel catalog
+Self-hosted Homebridge deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -443,7 +443,7 @@ Self-hosted Homebridge deployment via Docker, sourced from Umbrel catalog
 
 ### [Ittools](/templates/ittools)
 
-Self-hosted Ittools deployment via Docker, sourced from Umbrel catalog
+Self-hosted Ittools deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -453,7 +453,7 @@ Self-hosted Ittools deployment via Docker, sourced from Umbrel catalog
 
 ### [Jam](/templates/jam)
 
-Self-hosted Jam deployment via Docker, sourced from Umbrel catalog
+Self-hosted Jam deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -463,7 +463,7 @@ Self-hosted Jam deployment via Docker, sourced from Umbrel catalog
 
 ### [Kimai](/templates/kimai)
 
-Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog
+Self-hosted Kimai deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -473,7 +473,7 @@ Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog
 
 ### [Kitchenowl](/templates/kitchenowl)
 
-Self-hosted Kitchenowl deployment via Docker, sourced from Umbrel catalog
+Self-hosted Kitchenowl deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -483,7 +483,7 @@ Self-hosted Kitchenowl deployment via Docker, sourced from Umbrel catalog
 
 ### [Komodo](/templates/komodo)
 
-Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog
+Self-hosted Komodo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -493,7 +493,7 @@ Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog
 
 ### [Libre Relay](/templates/libre-relay)
 
-Self-hosted Libre Relay deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libre Relay deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -503,7 +503,7 @@ Self-hosted Libre Relay deployment via Docker, sourced from Umbrel catalog
 
 ### [Librechat](/templates/librechat)
 
-Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog
+Self-hosted Librechat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -513,7 +513,7 @@ Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog
 
 ### [Libreoffice](/templates/libreoffice)
 
-Self-hosted Libreoffice deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libreoffice deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -523,7 +523,7 @@ Self-hosted Libreoffice deployment via Docker, sourced from Umbrel catalog
 
 ### [Librephotos](/templates/librephotos)
 
-Self-hosted Librephotos deployment via Docker, sourced from Umbrel catalog
+Self-hosted Librephotos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -533,7 +533,7 @@ Self-hosted Librephotos deployment via Docker, sourced from Umbrel catalog
 
 ### [Libretranslate](/templates/libretranslate)
 
-Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog
+Self-hosted Libretranslate deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -543,7 +543,7 @@ Self-hosted Libretranslate deployment via Docker, sourced from Umbrel catalog
 
 ### [Lightning](/templates/lightning)
 
-Self-hosted Lightning deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lightning deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -553,7 +553,7 @@ Self-hosted Lightning deployment via Docker, sourced from Umbrel catalog
 
 ### [Lightning Terminal](/templates/lightning-terminal)
 
-Self-hosted Lightning Terminal deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lightning Terminal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -563,7 +563,7 @@ Self-hosted Lightning Terminal deployment via Docker, sourced from Umbrel catalo
 
 ### [Linkwarden](/templates/linkwarden)
 
-Self-hosted Linkwarden deployment via Docker, sourced from Umbrel catalog
+Self-hosted Linkwarden deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -573,7 +573,7 @@ Self-hosted Linkwarden deployment via Docker, sourced from Umbrel catalog
 
 ### [Lnbits](/templates/lnbits)
 
-Self-hosted Lnbits deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lnbits deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -583,7 +583,7 @@ Self-hosted Lnbits deployment via Docker, sourced from Umbrel catalog
 
 ### [Lobe Chat](/templates/lobe-chat)
 
-Self-hosted Lobe Chat deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lobe Chat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -593,7 +593,7 @@ Self-hosted Lobe Chat deployment via Docker, sourced from Umbrel catalog
 
 ### [Lubelogger](/templates/lubelogger)
 
-Self-hosted Lubelogger deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lubelogger deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -603,7 +603,7 @@ Self-hosted Lubelogger deployment via Docker, sourced from Umbrel catalog
 
 ### [Mailarchiver](/templates/mailarchiver)
 
-Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mailarchiver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -613,7 +613,7 @@ Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
 
 ### [Mainsail](/templates/mainsail)
 
-Self-hosted Mainsail deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mainsail deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -623,7 +623,7 @@ Self-hosted Mainsail deployment via Docker, sourced from Umbrel catalog
 
 ### [Memos](/templates/memos)
 
-Self-hosted Memos deployment via Docker, sourced from Umbrel catalog
+Self-hosted Memos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -633,7 +633,7 @@ Self-hosted Memos deployment via Docker, sourced from Umbrel catalog
 
 ### [Monetr](/templates/monetr)
 
-Self-hosted Monetr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Monetr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -643,7 +643,7 @@ Self-hosted Monetr deployment via Docker, sourced from Umbrel catalog
 
 ### [Morphos](/templates/morphos)
 
-Self-hosted Morphos deployment via Docker, sourced from Umbrel catalog
+Self-hosted Morphos deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -653,7 +653,7 @@ Self-hosted Morphos deployment via Docker, sourced from Umbrel catalog
 
 ### [Mqttx Web](/templates/mqttx-web)
 
-Self-hosted Mqttx Web deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mqttx Web deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -663,7 +663,7 @@ Self-hosted Mqttx Web deployment via Docker, sourced from Umbrel catalog
 
 ### [Myspeed](/templates/myspeed)
 
-Self-hosted Myspeed deployment via Docker, sourced from Umbrel catalog
+Self-hosted Myspeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -673,7 +673,7 @@ Self-hosted Myspeed deployment via Docker, sourced from Umbrel catalog
 
 ### [Netbird](/templates/netbird)
 
-Self-hosted Netbird deployment via Docker, sourced from Umbrel catalog
+Self-hosted Netbird deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -683,7 +683,7 @@ Self-hosted Netbird deployment via Docker, sourced from Umbrel catalog
 
 ### [Nextcloud](/templates/nextcloud)
 
-Self-hosted Nextcloud deployment via Docker, sourced from Umbrel catalog
+Self-hosted content collaboration platform with file sync, calendar, contacts, and extensive app ecosystem
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -693,7 +693,7 @@ Self-hosted Nextcloud deployment via Docker, sourced from Umbrel catalog
 
 ### [Nostr Relay](/templates/nostr-relay)
 
-Self-hosted Nostr Relay deployment via Docker, sourced from Umbrel catalog
+Self-hosted Nostr Relay deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -703,7 +703,7 @@ Self-hosted Nostr Relay deployment via Docker, sourced from Umbrel catalog
 
 ### [Obsidian](/templates/obsidian)
 
-Self-hosted Obsidian deployment via Docker, sourced from Umbrel catalog
+Self-hosted Obsidian deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -713,7 +713,7 @@ Self-hosted Obsidian deployment via Docker, sourced from Umbrel catalog
 
 ### [Open Webui](/templates/open-webui)
 
-Self-hosted Open Webui deployment via Docker, sourced from Umbrel catalog
+Self-hosted Open Webui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -723,7 +723,7 @@ Self-hosted Open Webui deployment via Docker, sourced from Umbrel catalog
 
 ### [Opencode](/templates/opencode)
 
-Self-hosted Opencode deployment via Docker, sourced from Umbrel catalog
+Self-hosted Opencode deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -733,7 +733,7 @@ Self-hosted Opencode deployment via Docker, sourced from Umbrel catalog
 
 ### [Openhands](/templates/openhands)
 
-Self-hosted Openhands deployment via Docker, sourced from Umbrel catalog
+Self-hosted Openhands deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -743,7 +743,7 @@ Self-hosted Openhands deployment via Docker, sourced from Umbrel catalog
 
 ### [Openresty Manager](/templates/openresty-manager)
 
-Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog
+Self-hosted Openresty Manager deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -753,7 +753,7 @@ Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog
 
 ### [Overseerr](/templates/overseerr)
 
-Self-hosted Overseerr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Overseerr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -763,7 +763,7 @@ Self-hosted Overseerr deployment via Docker, sourced from Umbrel catalog
 
 ### [Palmr](/templates/palmr)
 
-Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Palmr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -773,7 +773,7 @@ Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog
 
 ### [Pastefy](/templates/pastefy)
 
-Self-hosted Pastefy deployment via Docker, sourced from Umbrel catalog
+Self-hosted Pastefy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -783,7 +783,7 @@ Self-hosted Pastefy deployment via Docker, sourced from Umbrel catalog
 
 ### [Perplexica](/templates/perplexica)
 
-Self-hosted Perplexica deployment via Docker, sourced from Umbrel catalog
+Self-hosted Perplexica deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -793,7 +793,7 @@ Self-hosted Perplexica deployment via Docker, sourced from Umbrel catalog
 
 ### [Pingvin Share](/templates/pingvin-share)
 
-Self-hosted Pingvin Share deployment via Docker, sourced from Umbrel catalog
+Self-hosted Pingvin Share deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -803,7 +803,7 @@ Self-hosted Pingvin Share deployment via Docker, sourced from Umbrel catalog
 
 ### [Public Pool](/templates/public-pool)
 
-Self-hosted Public Pool deployment via Docker, sourced from Umbrel catalog
+Self-hosted Public Pool deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -813,7 +813,7 @@ Self-hosted Public Pool deployment via Docker, sourced from Umbrel catalog
 
 ### [Public Pool Web](/templates/public-pool-web)
 
-Self-hosted Public Pool Web deployment via Docker, sourced from Umbrel catalog
+Self-hosted Public Pool Web deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -823,7 +823,7 @@ Self-hosted Public Pool Web deployment via Docker, sourced from Umbrel catalog
 
 ### [Pyload Ng](/templates/pyload-ng)
 
-Self-hosted Pyload Ng deployment via Docker, sourced from Umbrel catalog
+Self-hosted Pyload Ng deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -833,7 +833,7 @@ Self-hosted Pyload Ng deployment via Docker, sourced from Umbrel catalog
 
 ### [Readarr](/templates/readarr)
 
-Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Readarr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -843,7 +843,7 @@ Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog
 
 ### [Readur](/templates/readur)
 
-Self-hosted Readur deployment via Docker, sourced from Umbrel catalog
+Self-hosted Readur deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -853,7 +853,7 @@ Self-hosted Readur deployment via Docker, sourced from Umbrel catalog
 
 ### [Remmina](/templates/remmina)
 
-Self-hosted Remmina deployment via Docker, sourced from Umbrel catalog
+Self-hosted Remmina deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -863,7 +863,7 @@ Self-hosted Remmina deployment via Docker, sourced from Umbrel catalog
 
 ### [Restreamer](/templates/restreamer)
 
-Self-hosted Restreamer deployment via Docker, sourced from Umbrel catalog
+Self-hosted Restreamer deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -873,7 +873,7 @@ Self-hosted Restreamer deployment via Docker, sourced from Umbrel catalog
 
 ### [Robosats](/templates/robosats)
 
-Self-hosted Robosats deployment via Docker, sourced from Umbrel catalog
+Self-hosted Robosats deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -883,7 +883,7 @@ Self-hosted Robosats deployment via Docker, sourced from Umbrel catalog
 
 ### [Rotki](/templates/rotki)
 
-Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rotki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -893,7 +893,7 @@ Self-hosted Rotki deployment via Docker, sourced from Umbrel catalog
 
 ### [Route96](/templates/route96)
 
-Self-hosted Route96 deployment via Docker, sourced from Umbrel catalog
+Self-hosted Route96 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -903,7 +903,7 @@ Self-hosted Route96 deployment via Docker, sourced from Umbrel catalog
 
 ### [Rustdesk Server](/templates/rustdesk-server)
 
-Self-hosted Rustdesk Server deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rustdesk Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -913,7 +913,7 @@ Self-hosted Rustdesk Server deployment via Docker, sourced from Umbrel catalog
 
 ### [Rusty Kaspad](/templates/rusty-kaspad)
 
-Self-hosted Rusty Kaspad deployment via Docker, sourced from Umbrel catalog
+Self-hosted Rusty Kaspad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -923,7 +923,7 @@ Self-hosted Rusty Kaspad deployment via Docker, sourced from Umbrel catalog
 
 ### [Scanservjs](/templates/scanservjs)
 
-Self-hosted Scanservjs deployment via Docker, sourced from Umbrel catalog
+Self-hosted Scanservjs deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -933,7 +933,7 @@ Self-hosted Scanservjs deployment via Docker, sourced from Umbrel catalog
 
 ### [Shopstr](/templates/shopstr)
 
-Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Shopstr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -943,7 +943,7 @@ Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog
 
 ### [Snapdrop](/templates/snapdrop)
 
-Self-hosted Snapdrop deployment via Docker, sourced from Umbrel catalog
+Self-hosted Snapdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -953,7 +953,7 @@ Self-hosted Snapdrop deployment via Docker, sourced from Umbrel catalog
 
 ### [Snowflake](/templates/snowflake)
 
-Self-hosted Snowflake deployment via Docker, sourced from Umbrel catalog
+Self-hosted Snowflake deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -963,7 +963,7 @@ Self-hosted Snowflake deployment via Docker, sourced from Umbrel catalog
 
 ### [Sqlitebrowser](/templates/sqlitebrowser)
 
-Self-hosted Sqlitebrowser deployment via Docker, sourced from Umbrel catalog
+Self-hosted Sqlitebrowser deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -973,7 +973,7 @@ Self-hosted Sqlitebrowser deployment via Docker, sourced from Umbrel catalog
 
 ### [Squeaknode](/templates/squeaknode)
 
-Self-hosted Squeaknode deployment via Docker, sourced from Umbrel catalog
+Self-hosted Squeaknode deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -983,7 +983,7 @@ Self-hosted Squeaknode deployment via Docker, sourced from Umbrel catalog
 
 ### [Stalwart](/templates/stalwart)
 
-Self-hosted Stalwart deployment via Docker, sourced from Umbrel catalog
+Self-hosted Stalwart deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -993,7 +993,7 @@ Self-hosted Stalwart deployment via Docker, sourced from Umbrel catalog
 
 ### [Strix](/templates/strix)
 
-Self-hosted Strix deployment via Docker, sourced from Umbrel catalog
+Self-hosted Strix deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1003,7 +1003,7 @@ Self-hosted Strix deployment via Docker, sourced from Umbrel catalog
 
 ### [Synapse](/templates/synapse)
 
-Self-hosted Synapse deployment via Docker, sourced from Umbrel catalog
+Self-hosted Synapse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1013,7 +1013,7 @@ Self-hosted Synapse deployment via Docker, sourced from Umbrel catalog
 
 ### [Syncthing](/templates/syncthing)
 
-Self-hosted Syncthing deployment via Docker, sourced from Umbrel catalog
+Self-hosted Syncthing deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1023,7 +1023,7 @@ Self-hosted Syncthing deployment via Docker, sourced from Umbrel catalog
 
 ### [Tailscale](/templates/tailscale)
 
-Self-hosted Tailscale deployment via Docker, sourced from Umbrel catalog
+Self-hosted Tailscale deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1033,7 +1033,7 @@ Self-hosted Tailscale deployment via Docker, sourced from Umbrel catalog
 
 ### [Teamspeak](/templates/teamspeak)
 
-Self-hosted Teamspeak deployment via Docker, sourced from Umbrel catalog
+Self-hosted Teamspeak deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1043,7 +1043,7 @@ Self-hosted Teamspeak deployment via Docker, sourced from Umbrel catalog
 
 ### [Thunderhub](/templates/thunderhub)
 
-Self-hosted Thunderhub deployment via Docker, sourced from Umbrel catalog
+Self-hosted Thunderhub deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1053,7 +1053,7 @@ Self-hosted Thunderhub deployment via Docker, sourced from Umbrel catalog
 
 ### [Torq](/templates/torq)
 
-Self-hosted Torq deployment via Docker, sourced from Umbrel catalog
+Self-hosted Torq deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1063,7 +1063,7 @@ Self-hosted Torq deployment via Docker, sourced from Umbrel catalog
 
 ### [Toshi Moto](/templates/toshi-moto)
 
-Self-hosted Toshi Moto deployment via Docker, sourced from Umbrel catalog
+Self-hosted Toshi Moto deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1073,7 +1073,7 @@ Self-hosted Toshi Moto deployment via Docker, sourced from Umbrel catalog
 
 ### [Uptime Kuma](/templates/uptime-kuma)
 
-Self-hosted Uptime Kuma deployment via Docker, sourced from Umbrel catalog
+Self-hosted monitoring tool for tracking uptime of websites, APIs, databases, and services with alerting
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1083,7 +1083,7 @@ Self-hosted Uptime Kuma deployment via Docker, sourced from Umbrel catalog
 
 ### [Vert](/templates/vert)
 
-Self-hosted Vert deployment via Docker, sourced from Umbrel catalog
+Self-hosted Vert deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1093,7 +1093,7 @@ Self-hosted Vert deployment via Docker, sourced from Umbrel catalog
 
 ### [Wavelog](/templates/wavelog)
 
-Self-hosted Wavelog deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wavelog deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1103,7 +1103,7 @@ Self-hosted Wavelog deployment via Docker, sourced from Umbrel catalog
 
 ### [Webcheck](/templates/webcheck)
 
-Self-hosted Webcheck deployment via Docker, sourced from Umbrel catalog
+Self-hosted Webcheck deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1113,7 +1113,7 @@ Self-hosted Webcheck deployment via Docker, sourced from Umbrel catalog
 
 ### [Whoogle Search](/templates/whoogle-search)
 
-Self-hosted Whoogle Search deployment via Docker, sourced from Umbrel catalog
+Self-hosted Whoogle Search deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1123,7 +1123,7 @@ Self-hosted Whoogle Search deployment via Docker, sourced from Umbrel catalog
 
 ### [Wingfit](/templates/wingfit)
 
-Self-hosted Wingfit deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wingfit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1133,7 +1133,7 @@ Self-hosted Wingfit deployment via Docker, sourced from Umbrel catalog
 
 ### [Wireguard](/templates/wireguard)
 
-Self-hosted Wireguard deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wireguard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1143,7 +1143,7 @@ Self-hosted Wireguard deployment via Docker, sourced from Umbrel catalog
 
 ### [Wordpress](/templates/wordpress)
 
-Self-hosted Wordpress deployment via Docker, sourced from Umbrel catalog
+Self-hosted Wordpress deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1153,7 +1153,7 @@ Self-hosted Wordpress deployment via Docker, sourced from Umbrel catalog
 
 ### [Yamtrack](/templates/yamtrack)
 
-Self-hosted Yamtrack deployment via Docker, sourced from Umbrel catalog
+Self-hosted Yamtrack deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1163,7 +1163,7 @@ Self-hosted Yamtrack deployment via Docker, sourced from Umbrel catalog
 
 ### [Yucca](/templates/yucca)
 
-Self-hosted Yucca deployment via Docker, sourced from Umbrel catalog
+Self-hosted Yucca deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1173,7 +1173,7 @@ Self-hosted Yucca deployment via Docker, sourced from Umbrel catalog
 
 ### [Zen](/templates/zen)
 
-Self-hosted Zen deployment via Docker, sourced from Umbrel catalog
+Self-hosted Zen deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1183,7 +1183,7 @@ Self-hosted Zen deployment via Docker, sourced from Umbrel catalog
 
 ### [Zigbee2Mqtt](/templates/zigbee2mqtt)
 
-Self-hosted Zigbee2Mqtt deployment via Docker, sourced from Umbrel catalog
+Self-hosted Zigbee2Mqtt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -1193,7 +1193,7 @@ Self-hosted Zigbee2Mqtt deployment via Docker, sourced from Umbrel catalog
 
 ### [Zoraxy](/templates/zoraxy)
 
-Self-hosted Zoraxy deployment via Docker, sourced from Umbrel catalog
+Self-hosted Zoraxy deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 

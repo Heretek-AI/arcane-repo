@@ -13,7 +13,7 @@ description: 82 templates tagged with "awesome-selfhosted"
 
 ### [Agenta](/templates/agenta)
 
-Self-hosted Agenta deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Agenta deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -23,7 +23,7 @@ Self-hosted Agenta deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Aliasvault](/templates/aliasvault)
 
-Self-hosted Aliasvault deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted email alias and password manager that generates unique email addresses and strong passwords for every service you use.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -33,7 +33,7 @@ Self-hosted Aliasvault deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Aptabase](/templates/aptabase)
 
-Self-hosted Aptabase deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted, privacy-friendly analytics platform for mobile and desktop applications with a simple SDK integration.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -43,7 +43,7 @@ Self-hosted Aptabase deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Automatisch](/templates/automatisch)
 
-Self-hosted Automatisch deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted business automation tool that connects your apps and automates workflows without coding, similar to Zapier.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -53,7 +53,7 @@ Self-hosted Automatisch deployment via Docker, sourced from Awesome-Selfhosted c
 
 ### [Azuracast](/templates/azuracast)
 
-Self-hosted Azuracast deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted web radio management suite with live broadcasting, media library management, and listener analytics.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -63,7 +63,7 @@ Self-hosted Azuracast deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Baserow](/templates/baserow)
 
-Self-hosted Baserow deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Baserow deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -73,7 +73,7 @@ Self-hosted Baserow deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Beaver Habit Tracker](/templates/beaver-habit-tracker)
 
-Self-hosted Beaver Habit Tracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted habit tracking application that helps you build and maintain daily habits with a clean, minimal interface.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -83,7 +83,7 @@ Self-hosted Beaver Habit Tracker deployment via Docker, sourced from Awesome-Sel
 
 ### [Bewcloud](/templates/bewcloud)
 
-Self-hosted Bewcloud deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted personal cloud platform for file storage, sharing, and collaboration with a modern web interface.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -93,7 +93,7 @@ Self-hosted Bewcloud deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Booklogr](/templates/booklogr)
 
-Self-hosted Booklogr deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted book tracking and reading log application to catalog your library and monitor reading progress.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -103,7 +103,7 @@ Self-hosted Booklogr deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Bytestash](/templates/bytestash)
 
-Self-hosted Bytestash deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted code snippet manager for storing, organizing, and sharing code snippets with syntax highlighting.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -113,7 +113,7 @@ Self-hosted Bytestash deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Calibre Web Automated](/templates/calibre-web-automated)
 
-Self-hosted Calibre Web Automated deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Calibre Web Automated deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -123,7 +123,7 @@ Self-hosted Calibre Web Automated deployment via Docker, sourced from Awesome-Se
 
 ### [Cannery](/templates/cannery)
 
-Self-hosted Cannery deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted pantry and food inventory tracker that helps manage stored food, expiration dates, and stock levels.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -133,7 +133,7 @@ Self-hosted Cannery deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Chiyogami](/templates/chiyogami)
 
-Self-hosted Chiyogami deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted wallpaper management and rotation tool for organizing and cycling through desktop wallpapers.
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -143,7 +143,7 @@ Self-hosted Chiyogami deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Convertx](/templates/convertx)
 
-Self-hosted Convertx deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Convertx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -153,7 +153,7 @@ Self-hosted Convertx deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Cronmaster](/templates/cronmaster)
 
-Self-hosted Cronmaster deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Cronmaster deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -163,7 +163,7 @@ Self-hosted Cronmaster deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Dailytxt](/templates/dailytxt)
 
-Self-hosted Dailytxt deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Dailytxt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -173,7 +173,7 @@ Self-hosted Dailytxt deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Databunker](/templates/databunker)
 
-Self-hosted Databunker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Databunker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -183,7 +183,7 @@ Self-hosted Databunker deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Deleterr](/templates/deleterr)
 
-Self-hosted Deleterr deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Deleterr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -193,7 +193,7 @@ Self-hosted Deleterr deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Discourse](/templates/discourse)
 
-Self-hosted Discourse deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Discourse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -203,7 +203,7 @@ Self-hosted Discourse deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Dittofeed](/templates/dittofeed)
 
-Self-hosted Dittofeed deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Dittofeed deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -213,7 +213,7 @@ Self-hosted Dittofeed deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Docker Mailserver](/templates/docker-mailserver)
 
-Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Docker Mailserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -223,7 +223,7 @@ Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfho
 
 ### [Drop](/templates/drop)
 
-Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Drop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -233,7 +233,7 @@ Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Endurain](/templates/endurain)
 
-Self-hosted Endurain deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Endurain deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -243,7 +243,7 @@ Self-hosted Endurain deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Fider](/templates/fider)
 
-Self-hosted Fider deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Fider deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -253,7 +253,7 @@ Self-hosted Fider deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Flatnotes](/templates/flatnotes)
 
-Self-hosted Flatnotes deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Flatnotes deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -263,7 +263,7 @@ Self-hosted Flatnotes deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Flink](/templates/flink)
 
-Self-hosted Flink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Flink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -273,7 +273,7 @@ Self-hosted Flink deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Flyimg](/templates/flyimg)
 
-Self-hosted Flyimg deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Flyimg deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -283,7 +283,7 @@ Self-hosted Flyimg deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Fx](/templates/fx)
 
-Self-hosted Fx deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Fx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -293,7 +293,7 @@ Self-hosted Fx deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Gameyfin](/templates/gameyfin)
 
-Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Gameyfin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -303,7 +303,7 @@ Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Geeftlist](/templates/geeftlist)
 
-Self-hosted Geeftlist deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Geeftlist deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -313,7 +313,7 @@ Self-hosted Geeftlist deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Gocron](/templates/gocron)
 
-Self-hosted Gocron deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Gocron deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -323,7 +323,7 @@ Self-hosted Gocron deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Heyform](/templates/heyform)
 
-Self-hosted Heyform deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Heyform deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -333,7 +333,7 @@ Self-hosted Heyform deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Hi.Events](/templates/hi-events)
 
-Self-hosted Hi.Events deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Hi.Events deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -343,7 +343,7 @@ Self-hosted Hi.Events deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Hubleys](/templates/hubleys)
 
-Self-hosted Hubleys deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Hubleys deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -353,7 +353,7 @@ Self-hosted Hubleys deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Inkheart](/templates/inkheart)
 
-Self-hosted Inkheart deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Inkheart deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -363,7 +363,7 @@ Self-hosted Inkheart deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Jetlog](/templates/jetlog)
 
-Self-hosted Jetlog deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Jetlog deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -373,7 +373,7 @@ Self-hosted Jetlog deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Jotty](/templates/jotty)
 
-Self-hosted Jotty deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Jotty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -383,7 +383,7 @@ Self-hosted Jotty deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Karakeep](/templates/karakeep)
 
-Self-hosted Karakeep deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Karakeep deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -393,7 +393,7 @@ Self-hosted Karakeep deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Keila](/templates/keila)
 
-Self-hosted Keila deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Keila deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -403,7 +403,7 @@ Self-hosted Keila deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Lago](/templates/lago)
 
-Self-hosted Lago deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Lago deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -413,7 +413,7 @@ Self-hosted Lago deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Langfuse](/templates/langfuse)
 
-Self-hosted Langfuse deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Langfuse deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -423,7 +423,7 @@ Self-hosted Langfuse deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Listaway](/templates/listaway)
 
-Self-hosted Listaway deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Listaway deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -433,7 +433,7 @@ Self-hosted Listaway deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Loomio](/templates/loomio)
 
-Self-hosted Loomio deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Loomio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -443,7 +443,7 @@ Self-hosted Loomio deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Many Notes](/templates/many-notes)
 
-Self-hosted Many Notes deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Many Notes deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -453,7 +453,7 @@ Self-hosted Many Notes deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Manyfold](/templates/manyfold)
 
-Self-hosted Manyfold deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Manyfold deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -463,7 +463,7 @@ Self-hosted Manyfold deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Meme Search](/templates/meme-search)
 
-Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Meme Search deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -473,7 +473,7 @@ Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted c
 
 ### [Memex](/templates/memex)
 
-Self-hosted Memex deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Memex deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -483,7 +483,7 @@ Self-hosted Memex deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Minimal Git Server](/templates/minimal-git-server)
 
-Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Minimal Git Server deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -493,7 +493,7 @@ Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfh
 
 ### [Misago](/templates/misago)
 
-Self-hosted Misago deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Misago deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -503,7 +503,7 @@ Self-hosted Misago deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Neonlink](/templates/neonlink)
 
-Self-hosted Neonlink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Neonlink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -513,7 +513,7 @@ Self-hosted Neonlink deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Ocular](/templates/ocular)
 
-Self-hosted Ocular deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ocular deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -523,7 +523,7 @@ Self-hosted Ocular deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Open Meteo](/templates/open-meteo)
 
-Self-hosted Open Meteo deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Open Meteo deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -533,7 +533,7 @@ Self-hosted Open Meteo deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Openhabittracker](/templates/openhabittracker)
 
-Self-hosted Openhabittracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Openhabittracker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -543,7 +543,7 @@ Self-hosted Openhabittracker deployment via Docker, sourced from Awesome-Selfhos
 
 ### [Otter Wiki](/templates/otter-wiki)
 
-Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Otter Wiki deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -553,7 +553,7 @@ Self-hosted Otter Wiki deployment via Docker, sourced from Awesome-Selfhosted ca
 
 ### [Paaster](/templates/paaster)
 
-Self-hosted Paaster deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Paaster deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -563,7 +563,7 @@ Self-hosted Paaster deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Pangolin](/templates/pangolin)
 
-Self-hosted Pangolin deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Pangolin deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -573,7 +573,7 @@ Self-hosted Pangolin deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Papra](/templates/papra)
 
-Self-hosted Papra deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Papra deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -583,7 +583,7 @@ Self-hosted Papra deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Picsur](/templates/picsur)
 
-Self-hosted Picsur deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Picsur deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -593,7 +593,7 @@ Self-hosted Picsur deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Pinepods](/templates/pinepods)
 
-Self-hosted Pinepods deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Pinepods deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -603,7 +603,7 @@ Self-hosted Pinepods deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Redash](/templates/redash)
 
-Self-hosted Redash deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Redash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -613,7 +613,7 @@ Self-hosted Redash deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Rybbit](/templates/rybbit)
 
-Self-hosted Rybbit deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Rybbit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -623,7 +623,7 @@ Self-hosted Rybbit deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Ryot](/templates/ryot)
 
-Self-hosted Ryot deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ryot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -633,7 +633,7 @@ Self-hosted Ryot deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Shifter](/templates/shifter)
 
-Self-hosted Shifter deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Shifter deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -643,7 +643,7 @@ Self-hosted Shifter deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Shipshipship](/templates/shipshipship)
 
-Self-hosted Shipshipship deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Shipshipship deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -653,7 +653,7 @@ Self-hosted Shipshipship deployment via Docker, sourced from Awesome-Selfhosted 
 
 ### [Slash](/templates/slash)
 
-Self-hosted Slash deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Slash deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -663,7 +663,7 @@ Self-hosted Slash deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Slink](/templates/slink)
 
-Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Slink deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -673,7 +673,7 @@ Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Solectrus](/templates/solectrus)
 
-Self-hosted Solectrus deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Solectrus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -683,7 +683,7 @@ Self-hosted Solectrus deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Starbase 80](/templates/starbase-80)
 
-Self-hosted Starbase 80 deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Starbase 80 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -693,7 +693,7 @@ Self-hosted Starbase 80 deployment via Docker, sourced from Awesome-Selfhosted c
 
 ### [Sure](/templates/sure)
 
-Self-hosted Sure deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Sure deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -703,7 +703,7 @@ Self-hosted Sure deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Tasks.Md](/templates/tasks-md)
 
-Self-hosted Tasks.Md deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Tasks.Md deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -713,7 +713,7 @@ Self-hosted Tasks.Md deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Termix](/templates/termix)
 
-Self-hosted Termix deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Termix deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -723,7 +723,7 @@ Self-hosted Termix deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Tine](/templates/tine)
 
-Self-hosted Tine deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Tine deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -733,7 +733,7 @@ Self-hosted Tine deployment via Docker, sourced from Awesome-Selfhosted catalog
 
 ### [Twenty](/templates/twenty)
 
-Self-hosted Twenty deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Twenty deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -743,7 +743,7 @@ Self-hosted Twenty deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [Typebot](/templates/typebot)
 
-Self-hosted Typebot deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Typebot deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -753,7 +753,7 @@ Self-hosted Typebot deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Usertour](/templates/usertour)
 
-Self-hosted Usertour deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Usertour deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -763,7 +763,7 @@ Self-hosted Usertour deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Viseron](/templates/viseron)
 
-Self-hosted Viseron deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Viseron deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -773,7 +773,7 @@ Self-hosted Viseron deployment via Docker, sourced from Awesome-Selfhosted catal
 
 ### [Vouchervault](/templates/vouchervault)
 
-Self-hosted Vouchervault deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Vouchervault deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -783,7 +783,7 @@ Self-hosted Vouchervault deployment via Docker, sourced from Awesome-Selfhosted 
 
 ### [Warracker](/templates/warracker)
 
-Self-hosted Warracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Warracker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -793,7 +793,7 @@ Self-hosted Warracker deployment via Docker, sourced from Awesome-Selfhosted cat
 
 ### [Watcharr](/templates/watcharr)
 
-Self-hosted Watcharr deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Watcharr deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -803,7 +803,7 @@ Self-hosted Watcharr deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Webtor](/templates/webtor)
 
-Self-hosted Webtor deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Webtor deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -813,7 +813,7 @@ Self-hosted Webtor deployment via Docker, sourced from Awesome-Selfhosted catalo
 
 ### [What To Cook?](/templates/what-to-cook)
 
-Self-hosted What To Cook? deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted What To Cook? deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -823,7 +823,7 @@ Self-hosted What To Cook? deployment via Docker, sourced from Awesome-Selfhosted
 
 ### [Ziit](/templates/ziit)
 
-Self-hosted Ziit deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Ziit deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 

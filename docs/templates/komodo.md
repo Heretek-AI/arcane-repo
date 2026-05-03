@@ -1,11 +1,11 @@
 ---
 title: "Komodo"
-description: "Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Komodo deployment via Docker"
 ---
 
 # Komodo
 
-Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog
+Self-hosted Komodo deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Komodo deployment via Docker, sourced from Umbrel catalog
 | ID | `komodo` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `837076b6f8546f573f5972cd793b1d0b2189fffc826837a2b40ea0b8ce3a020b` |
+| Content Hash | `555b83c8d4bbc866a77c00f4862a8b4c186a1a7b427a5314c78218db095dc5ce` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `komodo` | docker.io/komodoofficial/komodo:latest | Main application service |
+| `komodo_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `KOMODO_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs komodo
+```
+
+**Port conflict:**
+Edit `.env` and change `KOMODO_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec komodo ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect komodo --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v komodo_data:/data -v $(pwd):/backup alpine tar czf /backup/komodo-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v komodo_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/komodo-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Komodo](https://github.com/komodoofficial/komodo)
+- **Docker Image:** `docker.io/komodoofficial/komodo:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/komodoofficial/komodo/wiki)
+- **Issues:** [GitHub Issues](https://github.com/komodoofficial/komodo/issues)
+

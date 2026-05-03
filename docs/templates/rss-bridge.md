@@ -1,11 +1,11 @@
 ---
 title: "Rss Bridge"
-description: "Self-hosted Rss Bridge deployment via Docker, sourced from YunoHost catalog"
+description: "Self-hosted Rss Bridge deployment via Docker"
 ---
 
 # Rss Bridge
 
-Self-hosted Rss Bridge deployment via Docker, sourced from YunoHost catalog
+Self-hosted Rss Bridge deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Rss Bridge deployment via Docker, sourced from YunoHost catalog
 | ID | `rss-bridge` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `b7a26016d2a76bc4c1f6a53a8616227d9281c51d394e6738f40f45d54f168a2e` |
+| Content Hash | `9f35e0c63597eda5a648e1e2ee99e936c0ebf498c7b5c78cafb83218426261c9` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `rss-bridge` | ghcr.io/rss-bridge/rss-bridge:latest | Main application service |
+| `rss-bridge_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `RSS_BRIDGE_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs rss-bridge
+```
+
+**Port conflict:**
+Edit `.env` and change `RSS-BRIDGE_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec rss-bridge ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect rss-bridge --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v rss-bridge_data:/data -v $(pwd):/backup alpine tar czf /backup/rss-bridge-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v rss-bridge_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/rss-bridge-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Rss Bridge](https://github.com/rss-bridge/rss-bridge)
+- **Docker Image:** `ghcr.io/rss-bridge/rss-bridge:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/rss-bridge/rss-bridge/wiki)
+- **Issues:** [GitHub Issues](https://github.com/rss-bridge/rss-bridge/issues)
+

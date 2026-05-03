@@ -1,11 +1,11 @@
 ---
 title: "Nginx"
-description: "Self-hosted Nginx deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Nginx deployment via Docker"
 ---
 
 # Nginx
 
-Self-hosted Nginx deployment via Docker, sourced from Portainer catalog
+Self-hosted Nginx deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,105 @@ Self-hosted Nginx deployment via Docker, sourced from Portainer catalog
 | ID | `nginx` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `2e5902731279d495e5836949f9bff63c0f7f29d88758778068fc8f6dac5c54b1` |
+| Content Hash | `e385ce7e018d9aa58a84f5de236acf90d857cbcf5a5de2821a513bc0691d7c79` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `nginx` | docker.io/library/nginx:latest | Main application service |
+| `nginx_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `NGINX_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs nginx
+```
+
+**Port conflict:**
+Edit `.env` and change `NGINX_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec nginx ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect nginx --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v nginx_data:/data -v $(pwd):/backup alpine tar czf /backup/nginx-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v nginx_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/nginx-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Docker Image:** `docker.io/library/nginx:latest`
+

@@ -26,3 +26,40 @@ Fix Docker and UFW security flaw — automatically manages UFW firewall rules fo
 | Version | 1.0.0 |
 | Author | Arcane |
 | Content Hash | `59085081d6017289dbcdc7fbfa2cb2c76abbb077c71345680bac327976fbc332` |
+
+## Quick Start
+
+1. **Ensure UFW is enabled on the host:**
+
+   ```bash
+   sudo ufw enable
+   sudo ufw default deny incoming
+   sudo ufw allow ssh
+   ```
+
+2. **Start ufw-docker:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Apply UFW rules to a running container:**
+
+   ```bash
+   docker compose exec ufw-docker ufw-docker allow my-web-app
+   ```
+
+4. **List managed rules:**
+
+   ```bash
+   docker compose exec ufw-docker ufw-docker list
+   ```
+
+## Configuration
+
+Copy `.env.example` to `.env` and edit:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `UFW_MODE` | `managed` | `managed` to apply rules, `check` for dry-run validation |
+

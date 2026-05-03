@@ -1,11 +1,11 @@
 ---
 title: "Proxitok"
-description: "Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Proxitok deployment via Docker"
 ---
 
 # Proxitok
 
-Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog
+Self-hosted Proxitok deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Proxitok deployment via Docker, sourced from Portainer catalog
 | ID | `proxitok` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `a23e2810354b07f38260ce8623a41e6819a3b69b83ebd7cc5e4c04aa569e8327` |
+| Content Hash | `61d4063d3f800ff124370214f2a479547f6e7a2c1a93778cd27b5b32fea564f3` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `proxitok` | docker.io/idocker1688/proxitok:latest | Main application service |
+| `proxitok_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PROXITOK_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs proxitok
+```
+
+**Port conflict:**
+Edit `.env` and change `PROXITOK_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec proxitok ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect proxitok --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v proxitok_data:/data -v $(pwd):/backup alpine tar czf /backup/proxitok-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v proxitok_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/proxitok-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Proxitok](https://github.com/idocker1688/proxitok)
+- **Docker Image:** `docker.io/idocker1688/proxitok:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/idocker1688/proxitok/wiki)
+- **Issues:** [GitHub Issues](https://github.com/idocker1688/proxitok/issues)
+

@@ -1,11 +1,11 @@
 ---
 title: "Owncast"
-description: "Self-hosted Owncast deployment via Docker, sourced from YunoHost catalog"
+description: "Self-hosted Owncast deployment via Docker"
 ---
 
 # Owncast
 
-Self-hosted Owncast deployment via Docker, sourced from YunoHost catalog
+Self-hosted Owncast deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Owncast deployment via Docker, sourced from YunoHost catalog
 | ID | `owncast` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `bd6f6ab22e832d271d431d985f2b756dd73d754efc03565433eaf32e42a02b5f` |
+| Content Hash | `022234cc741feb539dcb9174dd0367a6435a075634a6aa1cfb64e580aac5de0e` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `owncast` | ghcr.io/owncast/owncast:latest | Main application service |
+| `owncast_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `OWNCAST_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs owncast
+```
+
+**Port conflict:**
+Edit `.env` and change `OWNCAST_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec owncast ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect owncast --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v owncast_data:/data -v $(pwd):/backup alpine tar czf /backup/owncast-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v owncast_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/owncast-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Owncast](https://github.com/owncast/owncast)
+- **Docker Image:** `ghcr.io/owncast/owncast:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/owncast/owncast/wiki)
+- **Issues:** [GitHub Issues](https://github.com/owncast/owncast/issues)
+

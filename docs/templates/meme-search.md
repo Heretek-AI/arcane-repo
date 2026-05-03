@@ -1,11 +1,11 @@
 ---
 title: "Meme Search"
-description: "Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted catalog"
+description: "Self-hosted Meme Search deployment via Docker"
 ---
 
 # Meme Search
 
-Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Meme Search deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Meme Search deployment via Docker, sourced from Awesome-Selfhosted c
 | ID | `meme-search` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `b2f8135024b08e4539e8cc27a1dd623a803f428eca090efb29d5f33f2721c7bb` |
+| Content Hash | `fa178249feb2f64030b8780e656c53bd2ad9f0eb5fe8db1ad2eab390c3485674` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `meme-search` | ghcr.io/neonwatty/meme-search:latest | Main application service |
+| `meme-search_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `MEME_SEARCH_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs meme-search
+```
+
+**Port conflict:**
+Edit `.env` and change `MEME-SEARCH_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec meme-search ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect meme-search --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v meme-search_data:/data -v $(pwd):/backup alpine tar czf /backup/meme-search-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v meme-search_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/meme-search-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Meme Search](https://github.com/neonwatty/meme-search)
+- **Docker Image:** `ghcr.io/neonwatty/meme-search:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/neonwatty/meme-search/wiki)
+- **Issues:** [GitHub Issues](https://github.com/neonwatty/meme-search/issues)
+

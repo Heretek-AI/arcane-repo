@@ -1,11 +1,11 @@
 ---
 title: "multi-service"
-description: 6 templates tagged with "multi-service"
+description: 7 templates tagged with "multi-service"
 ---
 
 # multi-service
 
-6 templates.
+7 templates.
 
 <div class="template-grid">
 
@@ -66,6 +66,16 @@ Open-source AI coworker with knowledge graph — turns work into a knowledge gra
 Open-source Firebase alternative — PostgreSQL database, auth, realtime subscriptions, storage, and edge functions
 
 <a href="/categories/database" class="tag-badge">database</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/api" class="tag-badge">api</a> <a href="/categories/multi-service" class="tag-badge">multi-service</a>
+
+</div>
+
+<div class="template-card">
+
+### [UNIT3D](/templates/unit3d)
+
+Self-hosted private torrent tracker built with Laravel, Livewire, and AlpineJS
+
+<a href="/categories/multi-service" class="tag-badge">multi-service</a> <a href="/categories/custom-build" class="tag-badge">custom-build</a> <a href="/categories/media" class="tag-badge">media</a>
 
 </div>
 </div>

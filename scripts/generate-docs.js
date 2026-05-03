@@ -16,9 +16,11 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const REGISTRY_PATH = path.join(ROOT, 'registry.json');
+const TEMPLATES_SRC = path.join(ROOT, 'templates');
 const DOCS_DIR = path.join(ROOT, 'docs');
 const TEMPLATES_DIR = path.join(DOCS_DIR, 'templates');
 const CATEGORIES_DIR = path.join(DOCS_DIR, 'categories');
+const DATA_DIR = path.join(DOCS_DIR, '.vitepress', 'data');
 
 // --- Helpers ---
 
@@ -39,6 +41,106 @@ function badgeHtml(tag) {
   return `<a href="/categories/${slug}" class="tag-badge">${escapeHtml(tag)}</a>`;
 }
 
+// Section name → camelCase key mapping (exact match and prefix match for variants)
+const SECTION_MAP = {
+  'Project Overview': 'projectOverview',
+  'Architecture': 'architecture',
+  'Quick Start': 'quickStart',
+  'Configuration': 'configuration',
+  'Troubleshooting': 'troubleshooting',
+  'Links': 'links',
+  'Backup & Recovery': 'backup',
+  'Prerequisites': 'prerequisites',
+  'API Endpoints': 'apiEndpoints',
+  'Service Details': 'serviceDetails',
+  'Health Check': 'healthCheck',
+  'Upstream': 'upstream',
+};
+
+/**
+ * Resolve a section header to its camelCase key.
+ * Tries exact match first, then prefix match for variants like "Quick Start (Headless)".
+ */
+function resolveSectionKey(sectionName) {
+  if (SECTION_MAP[sectionName]) return SECTION_MAP[sectionName];
+  // Prefix match: find the longest matching key
+  for (const [name, key] of Object.entries(SECTION_MAP)) {
+    if (sectionName.startsWith(name + ' ') || sectionName.startsWith(name + '(')) {
+      return key;
+    }
+  }
+  return null;
+}
+
+/**
+ * Parse a README.md into structured sections.
+ * Returns { title, intro, sections: { key: markdownString, ... } }
+ * Missing sections are omitted (not empty strings).
+ */
+function parseReadme(readmePath) {
+  if (!fs.existsSync(readmePath)) return null;
+  const content = fs.readFileSync(readmePath, 'utf-8');
+  const lines = content.split('\n');
+
+  let title = '';
+  let introLines = [];
+  const sections = {};
+  let currentKey = null;
+  let currentLines = [];
+  let inCodeBlock = false;
+  let firstHeadingSeen = false;
+
+  for (const line of lines) {
+    // Track code fences so we don't split inside them
+    if (line.trimStart().startsWith('```')) {
+      inCodeBlock = !inCodeBlock;
+    }
+
+    // Detect ## headers (but not inside code blocks)
+    if (!inCodeBlock && line.startsWith('## ')) {
+      // Flush previous section
+      if (currentKey !== null) {
+        const text = currentLines.join('\n').trim();
+        if (text) sections[currentKey] = text;
+      } else if (!firstHeadingSeen) {
+        // We were collecting intro before the first ## header
+        // (title is the # heading, intro is everything between title and first ##)
+      }
+
+      const sectionName = line.slice(3).trim();
+      currentKey = resolveSectionKey(sectionName); // null = skip unknown sections
+      currentLines = [];
+      firstHeadingSeen = true;
+      continue;
+    }
+
+    // Detect # title (only the first one)
+    if (!firstHeadingSeen && line.startsWith('# ') && !line.startsWith('## ')) {
+      title = line.slice(2).trim();
+      continue;
+    }
+
+    // Accumulate lines into current section or intro
+    if (currentKey !== null) {
+      currentLines.push(line);
+    } else if (firstHeadingSeen) {
+      // Between first # and first ## — ignore (usually empty)
+    } else {
+      introLines.push(line);
+    }
+  }
+
+  // Flush last section
+  if (currentKey !== null) {
+    const text = currentLines.join('\n').trim();
+    if (text) sections[currentKey] = text;
+  }
+
+  const intro = introLines.join('\n').trim();
+
+  return { title, intro, sections };
+}
+
 // --- Main ---
 
 function main() {
@@ -53,7 +155,50 @@ function main() {
 
   console.log(`Loaded ${templates.length} templates from registry.json`);
 
-  // 2. Build tag index: tag -> [{ id, name, description, tags }]
+  // 2. Parse all READMEs and build enriched data
+  const templatesData = [];
+  let parsedCount = 0;
+  let sectionStats = {};
+
+  for (const t of templates) {
+    const readmePath = path.join(TEMPLATES_SRC, t.id, 'README.md');
+    const parsed = parseReadme(readmePath);
+
+    const entry = {
+      id: t.id,
+      name: t.name || t.id,
+      description: t.description || '',
+      version: t.version || '',
+      author: t.author || '',
+      compose_url: t.compose_url || '',
+      env_url: t.env_url || '',
+      documentation_url: t.documentation_url || '',
+      content_hash: t.content_hash || '',
+      tags: t.tags || [],
+      sections: parsed ? parsed.sections : {},
+      intro: parsed ? parsed.intro : '',
+    };
+
+    templatesData.push(entry);
+
+    if (parsed) {
+      parsedCount++;
+      for (const key of Object.keys(parsed.sections)) {
+        sectionStats[key] = (sectionStats[key] || 0) + 1;
+      }
+    }
+  }
+
+  console.log(`Parsed ${parsedCount} READMEs`);
+  console.log('Section counts:', JSON.stringify(sectionStats, null, 2));
+
+  // 3. Write templates.data.json
+  ensureDir(DATA_DIR);
+  const dataPath = path.join(DATA_DIR, 'templates.data.json');
+  fs.writeFileSync(dataPath, JSON.stringify(templatesData, null, 2), 'utf-8');
+  console.log(`Wrote ${dataPath} (${templatesData.length} templates)`);
+
+  // 4. Build tag index: tag -> [{ id, name, description, tags }]
   const tagMap = new Map();
   for (const t of templates) {
     for (const tag of (t.tags || [])) {
@@ -180,11 +325,13 @@ ${badges}
   }
   console.log(`Wrote ${sortedTags.length} category pages`);
 
-  // 7. Generate docs/templates/{id}.md for each template — detail page
+  // 8. Generate docs/templates/{id}.md for each template — detail page
   for (const t of templates) {
     const name = escapeHtml(t.name || t.id);
     const desc = escapeHtml(t.description || '');
     const badges = (t.tags || []).map(badgeHtml).join(' ');
+    const dataEntry = templatesData.find(d => d.id === t.id);
+    const sections = dataEntry ? dataEntry.sections : {};
 
     let links = '';
     if (t.compose_url) {
@@ -195,6 +342,29 @@ ${badges}
     }
     if (t.documentation_url) {
       links += `- [Documentation](${t.documentation_url})\n`;
+    }
+
+    // Build inline README sections
+    let readmeContent = '';
+    const sectionOrder = [
+      ['projectOverview', 'Project Overview'],
+      ['architecture', 'Architecture'],
+      ['quickStart', 'Quick Start'],
+      ['configuration', 'Configuration'],
+      ['troubleshooting', 'Troubleshooting'],
+      ['backup', 'Backup & Recovery'],
+      ['prerequisites', 'Prerequisites'],
+      ['links', 'Links'],
+      ['apiEndpoints', 'API Endpoints'],
+      ['serviceDetails', 'Service Details'],
+      ['healthCheck', 'Health Check'],
+      ['upstream', 'Upstream'],
+    ];
+
+    for (const [key, label] of sectionOrder) {
+      if (sections[key]) {
+        readmeContent += `\n## ${label}\n\n${sections[key]}\n`;
+      }
     }
 
     const page = `---
@@ -222,13 +392,14 @@ ${links || 'No links available'}
 | Version | ${t.version || 'N/A'} |
 | Author | ${t.author || 'N/A'} |
 | Content Hash | \`${t.content_hash || 'N/A'}\` |
+${readmeContent}
 `;
 
     fs.writeFileSync(path.join(TEMPLATES_DIR, `${t.id}.md`), page, 'utf-8');
   }
   console.log(`Wrote ${templates.length} template detail pages`);
 
-  // 8. Update VitePress sidebar config dynamically
+  // 9. Update VitePress sidebar config dynamically
   //    Build sidebar items for categories
   const categorySidebarItems = sortedTags.map(([tag]) => ({
     text: `${tag} (${tagMap.get(tag).length})`,

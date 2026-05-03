@@ -5,7 +5,7 @@ description: Browse templates by category
 
 # Categories
 
-40 categories covering 785 templates.
+42 categories covering 786 templates.
 
 <div class="category-grid">
 
@@ -197,6 +197,14 @@ description: Browse templates by category
 
 <div class="count">7</div>
 
+<div class="label">[multi-service](/categories/multi-service)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">7</div>
+
 <div class="label">[orchestration](/categories/orchestration)</div>
 
 </div>
@@ -214,14 +222,6 @@ description: Browse templates by category
 <div class="count">6</div>
 
 <div class="label">[low-code](/categories/low-code)</div>
-
-</div>
-
-<div class="category-card">
-
-<div class="count">6</div>
-
-<div class="label">[multi-service](/categories/multi-service)</div>
 
 </div>
 
@@ -326,6 +326,22 @@ description: Browse templates by category
 <div class="count">2</div>
 
 <div class="label">[priority](/categories/priority)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">1</div>
+
+<div class="label">[custom-build](/categories/custom-build)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">1</div>
+
+<div class="label">[media](/categories/media)</div>
 
 </div>
 </div>

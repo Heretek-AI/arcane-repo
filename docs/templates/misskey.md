@@ -1,11 +1,11 @@
 ---
 title: "Misskey"
-description: "Self-hosted Misskey deployment via Docker, sourced from YunoHost catalog"
+description: "Self-hosted Misskey deployment via Docker"
 ---
 
 # Misskey
 
-Self-hosted Misskey deployment via Docker, sourced from YunoHost catalog
+Self-hosted Misskey deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Misskey deployment via Docker, sourced from YunoHost catalog
 | ID | `misskey` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `b65d5a4da0305380a7889c74586e718ed2c9d06763e2e1fd63ee90186369e841` |
+| Content Hash | `7b3dc5ca518fcc9a9680ee9c64e9d39c2db2ce6e83d9b45e2a06a870605edcac` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `misskey` | docker.io/misskey/misskey:latest | Main application service |
+| `misskey_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `MISSKEY_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs misskey
+```
+
+**Port conflict:**
+Edit `.env` and change `MISSKEY_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec misskey ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect misskey --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v misskey_data:/data -v $(pwd):/backup alpine tar czf /backup/misskey-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v misskey_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/misskey-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Misskey](https://github.com/misskey/misskey)
+- **Docker Image:** `docker.io/misskey/misskey:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/misskey/misskey/wiki)
+- **Issues:** [GitHub Issues](https://github.com/misskey/misskey/issues)
+

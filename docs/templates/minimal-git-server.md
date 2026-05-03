@@ -1,11 +1,11 @@
 ---
 title: "Minimal Git Server"
-description: "Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfhosted catalog"
+description: "Self-hosted Minimal Git Server deployment via Docker"
 ---
 
 # Minimal Git Server
 
-Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Minimal Git Server deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Minimal Git Server deployment via Docker, sourced from Awesome-Selfh
 | ID | `minimal-git-server` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `c37acbc7afb6f7e651b99c84b8a090571726788872e602aaf8f412deafcc616a` |
+| Content Hash | `89e63f1c2cb36a4676d55ff0ba1cbd1172b5116233fa6347e98dcd2a4751a955` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `minimal-git-server` | ghcr.io/mcarbonne/minimal-git-server:latest | Main application service |
+| `minimal-git-server_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `MINIMAL_GIT_SERVER_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs minimal-git-server
+```
+
+**Port conflict:**
+Edit `.env` and change `MINIMAL-GIT-SERVER_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec minimal-git-server ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect minimal-git-server --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v minimal-git-server_data:/data -v $(pwd):/backup alpine tar czf /backup/minimal-git-server-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v minimal-git-server_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/minimal-git-server-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Minimal Git Server](https://github.com/mcarbonne/minimal-git-server)
+- **Docker Image:** `ghcr.io/mcarbonne/minimal-git-server:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/mcarbonne/minimal-git-server/wiki)
+- **Issues:** [GitHub Issues](https://github.com/mcarbonne/minimal-git-server/issues)
+

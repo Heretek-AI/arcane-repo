@@ -1,11 +1,11 @@
 ---
 title: "Davos"
-description: "Self-hosted Davos deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Davos deployment via Docker"
 ---
 
 # Davos
 
-Self-hosted Davos deployment via Docker, sourced from Portainer catalog
+Self-hosted Davos deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Davos deployment via Docker, sourced from Portainer catalog
 | ID | `davos` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `b129c9709947fe726c60a38e71a1bd8b595afc8805c5768f71026a35208963a7` |
+| Content Hash | `be96bed4cf192d29dc5e1bdaa165ed225b2e7e7238f397b0a3137444891659d5` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `davos` | ghcr.io/linuxserver/davos:latest | Main application service |
+| `davos_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DAVOS_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs davos
+```
+
+**Port conflict:**
+Edit `.env` and change `DAVOS_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec davos ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect davos --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v davos_data:/data -v $(pwd):/backup alpine tar czf /backup/davos-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v davos_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/davos-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Davos](https://github.com/linuxserver/davos)
+- **Docker Image:** `ghcr.io/linuxserver/davos:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/davos/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/davos/issues)
+

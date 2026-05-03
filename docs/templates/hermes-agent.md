@@ -1,11 +1,11 @@
 ---
 title: "Hermes Agent"
-description: "Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Hermes Agent deployment via Docker"
 ---
 
 # Hermes Agent
 
-Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
+Self-hosted Hermes Agent deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
 | ID | `hermes-agent` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `aa31873298cd0943ee5c750d2198b2fc3bec159d4e03fa3677996d5ae5c53763` |
+| Content Hash | `9247ebf4ae75fb3764a8504b2467de0ba1f7d07b4373666bb108829ce5f4890f` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `hermes-agent` | docker.io/nousresearch/hermes-agent:latest | Main application service |
+| `hermes-agent_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `HERMES_AGENT_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs hermes-agent
+```
+
+**Port conflict:**
+Edit `.env` and change `HERMES-AGENT_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec hermes-agent ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect hermes-agent --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v hermes-agent_data:/data -v $(pwd):/backup alpine tar czf /backup/hermes-agent-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v hermes-agent_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/hermes-agent-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Hermes Agent](https://github.com/nousresearch/hermes-agent)
+- **Docker Image:** `docker.io/nousresearch/hermes-agent:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/nousresearch/hermes-agent/wiki)
+- **Issues:** [GitHub Issues](https://github.com/nousresearch/hermes-agent/issues)
+

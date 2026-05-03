@@ -1,11 +1,11 @@
 ---
 title: "Openresty Manager"
-description: "Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Openresty Manager deployment via Docker"
 ---
 
 # Openresty Manager
 
-Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog
+Self-hosted Openresty Manager deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Openresty Manager deployment via Docker, sourced from Umbrel catalog
 | ID | `openresty-manager` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `e74637ab5668ac92b9dccdd2dda80d5a9590e8b8b04e3c8b603b39f573387efd` |
+| Content Hash | `33f12cb4065a4348c925d67348c5b8856a211af807326186c92a80295dff4885` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `openresty-manager` | docker.io/uusec/openresty-manager:latest | Main application service |
+| `openresty-manager_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `OPENRESTY_MANAGER_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs openresty-manager
+```
+
+**Port conflict:**
+Edit `.env` and change `OPENRESTY-MANAGER_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec openresty-manager ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect openresty-manager --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v openresty-manager_data:/data -v $(pwd):/backup alpine tar czf /backup/openresty-manager-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v openresty-manager_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/openresty-manager-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Openresty Manager](https://github.com/uusec/openresty-manager)
+- **Docker Image:** `docker.io/uusec/openresty-manager:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/uusec/openresty-manager/wiki)
+- **Issues:** [GitHub Issues](https://github.com/uusec/openresty-manager/issues)
+

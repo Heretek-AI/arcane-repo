@@ -1,11 +1,11 @@
 ---
 title: "Yellow"
-description: "Self-hosted Yellow deployment via Docker, sourced from Yunohost catalog"
+description: "Self-hosted Yellow deployment via Docker"
 ---
 
 # Yellow
 
-Self-hosted Yellow deployment via Docker, sourced from Yunohost catalog
+Self-hosted Yellow deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Yellow deployment via Docker, sourced from Yunohost catalog
 | ID | `yellow` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `63d26959f39b7decf3d272992a5364eb9a5a53c1a0a382870f4d326da2f7e5b4` |
+| Content Hash | `7a6b9a11c56578ab12dc101d69a7bbe14ea6b5c5fb68afb10b560210bb2944fb` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `yellow` | docker.io/davidaparicio/yellow:latest | Main application service |
+| `yellow_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `YELLOW_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs yellow
+```
+
+**Port conflict:**
+Edit `.env` and change `YELLOW_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec yellow ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect yellow --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v yellow_data:/data -v $(pwd):/backup alpine tar czf /backup/yellow-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v yellow_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/yellow-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Yellow](https://github.com/davidaparicio/yellow)
+- **Docker Image:** `docker.io/davidaparicio/yellow:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/davidaparicio/yellow/wiki)
+- **Issues:** [GitHub Issues](https://github.com/davidaparicio/yellow/issues)
+

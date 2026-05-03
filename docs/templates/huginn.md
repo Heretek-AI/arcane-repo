@@ -1,11 +1,11 @@
 ---
 title: "Huginn"
-description: "Self-hosted Huginn deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Huginn deployment via Docker"
 ---
 
 # Huginn
 
-Self-hosted Huginn deployment via Docker, sourced from Portainer catalog
+Self-hosted Huginn deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Huginn deployment via Docker, sourced from Portainer catalog
 | ID | `huginn` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `8ba7048c88765d12703bf3601bbc6d31ff12d2a275648ecef37f11f09024fbdd` |
+| Content Hash | `37f9f5c6cc383e7338de5032c9614493b65c9fe34ed8ebe56b3f8c9649589462` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `huginn` | ghcr.io/huginn/huginn:latest | Main application service |
+| `huginn_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `HUGINN_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs huginn
+```
+
+**Port conflict:**
+Edit `.env` and change `HUGINN_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec huginn ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect huginn --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v huginn_data:/data -v $(pwd):/backup alpine tar czf /backup/huginn-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v huginn_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/huginn-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Huginn](https://github.com/huginn/huginn)
+- **Docker Image:** `ghcr.io/huginn/huginn:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/huginn/huginn/wiki)
+- **Issues:** [GitHub Issues](https://github.com/huginn/huginn/issues)
+

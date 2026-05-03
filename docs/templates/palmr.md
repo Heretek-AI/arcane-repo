@@ -1,11 +1,11 @@
 ---
 title: "Palmr"
-description: "Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Palmr deployment via Docker"
 ---
 
 # Palmr
 
-Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Palmr deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Palmr deployment via Docker, sourced from Umbrel catalog
 | ID | `palmr` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `1c6eeeebd2b6965f487597d4a2fe75cd2254f62295b49f2c2cbe3e6583f29241` |
+| Content Hash | `5273c8ed940c239b782e9407973df4701cca902f5051dff20161ae5709a26e95` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `palmr` | docker.io/kyantech/palmr:latest | Main application service |
+| `palmr_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PALMR_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs palmr
+```
+
+**Port conflict:**
+Edit `.env` and change `PALMR_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec palmr ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect palmr --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v palmr_data:/data -v $(pwd):/backup alpine tar czf /backup/palmr-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v palmr_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/palmr-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Palmr](https://github.com/kyantech/palmr)
+- **Docker Image:** `docker.io/kyantech/palmr:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/kyantech/palmr/wiki)
+- **Issues:** [GitHub Issues](https://github.com/kyantech/palmr/issues)
+

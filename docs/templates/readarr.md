@@ -1,11 +1,11 @@
 ---
 title: "Readarr"
-description: "Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Readarr deployment via Docker"
 ---
 
 # Readarr
 
-Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Readarr deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Readarr deployment via Docker, sourced from Umbrel catalog
 | ID | `readarr` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `7e227437b2663679813d6468fde2a6d0b6edb771daac5c6fc2b49263833446e5` |
+| Content Hash | `b280bded80c5e52cb6d273f683890e1623a0e2f7bc488b072b832f1a41de4eb8` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `readarr` | ghcr.io/linuxserver/readarr:latest | Main application service |
+| `readarr_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `READARR_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs readarr
+```
+
+**Port conflict:**
+Edit `.env` and change `READARR_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec readarr ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect readarr --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v readarr_data:/data -v $(pwd):/backup alpine tar czf /backup/readarr-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v readarr_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/readarr-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Readarr](https://github.com/linuxserver/readarr)
+- **Docker Image:** `ghcr.io/linuxserver/readarr:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/readarr/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/readarr/issues)
+

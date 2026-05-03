@@ -1,11 +1,11 @@
 ---
 title: "Elk"
-description: "Self-hosted Elk deployment via Docker, sourced from Yunohost catalog"
+description: "Self-hosted Elk deployment via Docker"
 ---
 
 # Elk
 
-Self-hosted Elk deployment via Docker, sourced from Yunohost catalog
+Self-hosted Elk deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Elk deployment via Docker, sourced from Yunohost catalog
 | ID | `elk` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `31e5945585e4c3cf42eeda21a88aee1c86e70cb7466819ff9e6591cbe762a22b` |
+| Content Hash | `f3d062e953acc8b7e04fcbabf30a098c8d8ed753bac4dd061c6e43197afac970` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `elk` | docker.io/sebp/elk:latest | Main application service |
+| `elk_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ELK_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs elk
+```
+
+**Port conflict:**
+Edit `.env` and change `ELK_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec elk ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect elk --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v elk_data:/data -v $(pwd):/backup alpine tar czf /backup/elk-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v elk_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/elk-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Elk](https://github.com/sebp/elk)
+- **Docker Image:** `docker.io/sebp/elk:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/sebp/elk/wiki)
+- **Issues:** [GitHub Issues](https://github.com/sebp/elk/issues)
+

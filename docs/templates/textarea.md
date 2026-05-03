@@ -1,11 +1,11 @@
 ---
 title: "Textarea"
-description: "Self-hosted Textarea deployment via Docker, sourced from Yunohost catalog"
+description: "Self-hosted Textarea deployment via Docker"
 ---
 
 # Textarea
 
-Self-hosted Textarea deployment via Docker, sourced from Yunohost catalog
+Self-hosted Textarea deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Textarea deployment via Docker, sourced from Yunohost catalog
 | ID | `textarea` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `61cb6b1c5a04fdd00c028591501b481fae760c6429085a340f7f9b07209e02c7` |
+| Content Hash | `79f001fa2221e408b2e1f11c80dc773df15c97df727306348c44644b21bb6aa0` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `textarea` | docker.io/dnlweijers/textarea:latest | Main application service |
+| `textarea_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `TEXTAREA_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs textarea
+```
+
+**Port conflict:**
+Edit `.env` and change `TEXTAREA_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec textarea ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect textarea --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v textarea_data:/data -v $(pwd):/backup alpine tar czf /backup/textarea-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v textarea_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/textarea-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Textarea](https://github.com/dnlweijers/textarea)
+- **Docker Image:** `docker.io/dnlweijers/textarea:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/dnlweijers/textarea/wiki)
+- **Issues:** [GitHub Issues](https://github.com/dnlweijers/textarea/issues)
+

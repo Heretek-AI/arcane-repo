@@ -33,7 +33,7 @@ Complete monitoring stack — Prometheus metrics, Grafana dashboards, AlertManag
 
 ### [Grafana](/templates/grafana)
 
-Self-hosted Grafana deployment via Docker, sourced from Portainer catalog
+Self-hosted Grafana deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -43,7 +43,7 @@ Self-hosted Grafana deployment via Docker, sourced from Portainer catalog
 
 ### [Lxd Dashboard](/templates/lxd-dashboard)
 
-Self-hosted Lxd Dashboard deployment via Docker, sourced from Yunohost catalog
+Self-hosted Lxd Dashboard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -53,7 +53,7 @@ Self-hosted Lxd Dashboard deployment via Docker, sourced from Yunohost catalog
 
 ### [Netalertx](/templates/netalertx)
 
-Self-hosted Netalertx deployment via Docker, sourced from Portainer catalog
+Self-hosted Netalertx deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -73,7 +73,7 @@ Real-time monitoring with metrics, dashboards, and alerts
 
 ### [Openobserve](/templates/openobserve)
 
-Self-hosted Openobserve deployment via Docker, sourced from YunoHost catalog
+Self-hosted Openobserve deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -93,7 +93,7 @@ Cloud-native log observability engine — store, search, and analyze logs at sca
 
 ### [Prometheus](/templates/prometheus)
 
-Self-hosted Prometheus deployment via Docker, sourced from Yunohost catalog
+Self-hosted Prometheus deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 

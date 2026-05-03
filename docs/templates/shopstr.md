@@ -1,11 +1,11 @@
 ---
 title: "Shopstr"
-description: "Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Shopstr deployment via Docker"
 ---
 
 # Shopstr
 
-Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog
+Self-hosted Shopstr deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Shopstr deployment via Docker, sourced from Umbrel catalog
 | ID | `shopstr` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `b897341d1e05f6ae16e91ba0f5d70d2c20eac4d378b4c874e889850ecf908548` |
+| Content Hash | `78dc5ceca25b2a1f911081c3f4816aee4d8e69ba0896cd4cf262ffb85514a377` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `shopstr` | docker.io/calvadev/shopstr:latest | Main application service |
+| `shopstr_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SHOPSTR_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs shopstr
+```
+
+**Port conflict:**
+Edit `.env` and change `SHOPSTR_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec shopstr ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect shopstr --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v shopstr_data:/data -v $(pwd):/backup alpine tar czf /backup/shopstr-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v shopstr_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/shopstr-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Shopstr](https://github.com/calvadev/shopstr)
+- **Docker Image:** `docker.io/calvadev/shopstr:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/calvadev/shopstr/wiki)
+- **Issues:** [GitHub Issues](https://github.com/calvadev/shopstr/issues)
+

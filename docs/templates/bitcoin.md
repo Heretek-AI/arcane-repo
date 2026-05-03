@@ -1,11 +1,11 @@
 ---
 title: "Bitcoin"
-description: "Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Bitcoin deployment via Docker"
 ---
 
 # Bitcoin
 
-Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog
+Self-hosted Bitcoin deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Bitcoin deployment via Docker, sourced from Umbrel catalog
 | ID | `bitcoin` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `5a63d544868e9e37b984245c75f8735f860e3f53f1a2131035dffe16747fed55` |
+| Content Hash | `1639832850fd375f1f4ac26fa59e6ce4ed6c5078f94863699b250598f6c2be8d` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `bitcoin` | docker.io/bitcoin/bitcoin:latest | Main application service |
+| `bitcoin_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `BITCOIN_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs bitcoin
+```
+
+**Port conflict:**
+Edit `.env` and change `BITCOIN_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec bitcoin ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect bitcoin --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v bitcoin_data:/data -v $(pwd):/backup alpine tar czf /backup/bitcoin-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v bitcoin_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/bitcoin-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Bitcoin](https://github.com/bitcoin/bitcoin)
+- **Docker Image:** `docker.io/bitcoin/bitcoin:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/bitcoin/bitcoin/wiki)
+- **Issues:** [GitHub Issues](https://github.com/bitcoin/bitcoin/issues)
+

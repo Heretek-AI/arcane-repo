@@ -1,11 +1,11 @@
 ---
 title: "Smokeping"
-description: "Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Smokeping deployment via Docker"
 ---
 
 # Smokeping
 
-Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog
+Self-hosted Smokeping deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Smokeping deployment via Docker, sourced from Portainer catalog
 | ID | `smokeping` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `6ae8a61b78f4cef3eb3b2562b63d0395b35a3a27dfef62402bc6683b8e6a10ab` |
+| Content Hash | `b4822865310b74b3abcfdc276b5e9a9e4c6ea16d2ff5dd55c5e88ec8c0ebe0de` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `smokeping` | ghcr.io/linuxserver/smokeping:latest | Main application service |
+| `smokeping_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SMOKEPING_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs smokeping
+```
+
+**Port conflict:**
+Edit `.env` and change `SMOKEPING_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec smokeping ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect smokeping --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v smokeping_data:/data -v $(pwd):/backup alpine tar czf /backup/smokeping-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v smokeping_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/smokeping-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Smokeping](https://github.com/linuxserver/smokeping)
+- **Docker Image:** `ghcr.io/linuxserver/smokeping:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/linuxserver/smokeping/wiki)
+- **Issues:** [GitHub Issues](https://github.com/linuxserver/smokeping/issues)
+

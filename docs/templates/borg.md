@@ -1,11 +1,11 @@
 ---
 title: "Borg"
-description: "Self-hosted Borg deployment via Docker, sourced from Yunohost catalog"
+description: "Self-hosted Borg deployment via Docker"
 ---
 
 # Borg
 
-Self-hosted Borg deployment via Docker, sourced from Yunohost catalog
+Self-hosted Borg deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Borg deployment via Docker, sourced from Yunohost catalog
 | ID | `borg` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `8cb6aae0ef253d6eda953c3cd8a24237cdd244b0688481e7e962e733dfc00bc4` |
+| Content Hash | `07ac288c74d4236f025a760943b651471e09ee5680b669f366a728a4773d3b1a` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `borg` | docker.io/pschiffe/borg:latest | Main application service |
+| `borg_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `BORG_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs borg
+```
+
+**Port conflict:**
+Edit `.env` and change `BORG_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec borg ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect borg --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v borg_data:/data -v $(pwd):/backup alpine tar czf /backup/borg-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v borg_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/borg-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Borg](https://github.com/pschiffe/borg)
+- **Docker Image:** `docker.io/pschiffe/borg:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/pschiffe/borg/wiki)
+- **Issues:** [GitHub Issues](https://github.com/pschiffe/borg/issues)
+

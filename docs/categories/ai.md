@@ -23,7 +23,7 @@ Open-source AI agent framework — autonomous agents with tool use, memory, mult
 
 ### [Agenta](/templates/agenta)
 
-Self-hosted Agenta deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Agenta deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -73,7 +73,7 @@ AI-native UI framework — build full-stack AI interfaces with a server-driven r
 
 ### [Airtrail](/templates/airtrail)
 
-Self-hosted Airtrail deployment via Docker, sourced from Umbrel catalog
+Self-hosted Airtrail deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -103,7 +103,7 @@ Multi-agent conversation framework by Microsoft
 
 ### [Baikal](/templates/baikal)
 
-Self-hosted Baikal deployment via Docker, sourced from Portainer catalog
+Self-hosted Baikal deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -193,7 +193,7 @@ Multi-agent orchestration framework for AI agent teams
 
 ### [Dailytxt](/templates/dailytxt)
 
-Self-hosted Dailytxt deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Dailytxt deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -223,7 +223,7 @@ Open-source LLM application development platform — build AI apps with visual w
 
 ### [Docker Mailserver](/templates/docker-mailserver)
 
-Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Docker Mailserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -243,7 +243,7 @@ Open-source documentation Q&amp;A platform — index your docs, code, and knowle
 
 ### [Domain Locker](/templates/domain-locker)
 
-Self-hosted Domain Locker deployment via Docker, sourced from Umbrel catalog
+Self-hosted Domain Locker deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -263,7 +263,7 @@ Open-source AI agent framework — create, deploy, and manage autonomous AI agen
 
 ### [Endurain](/templates/endurain)
 
-Self-hosted Endurain deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Endurain deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -273,7 +273,7 @@ Self-hosted Endurain deployment via Docker, sourced from Awesome-Selfhosted cata
 
 ### [Faircamp](/templates/faircamp)
 
-Self-hosted Faircamp deployment via Docker, sourced from Yunohost catalog
+Self-hosted Faircamp deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -293,7 +293,7 @@ AI-powered web scraping with JavaScript rendering
 
 ### [Flowiseai](/templates/flowiseai)
 
-Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog
+Self-hosted Flowiseai deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -303,7 +303,7 @@ Self-hosted Flowiseai deployment via Docker, sourced from Portainer catalog
 
 ### [Formicaio](/templates/formicaio)
 
-Self-hosted Formicaio deployment via Docker, sourced from Umbrel catalog
+Self-hosted Formicaio deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -323,7 +323,7 @@ LLM backend orchestrator — manage Ollama, vLLM, and other LLM runtimes via Doc
 
 ### [Hermes Agent](/templates/hermes-agent)
 
-Self-hosted Hermes Agent deployment via Docker, sourced from Umbrel catalog
+Self-hosted Hermes Agent deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -343,7 +343,7 @@ Nous Research autonomous AI agent framework
 
 ### [Holesail Switchboard](/templates/holesail-switchboard)
 
-Self-hosted Holesail Switchboard deployment via Docker, sourced from Umbrel catalog
+Self-hosted Holesail Switchboard deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -363,7 +363,7 @@ Open-source agentic backend — postgres + postgREST for building full-stack AI 
 
 ### [Joomla](/templates/joomla)
 
-Self-hosted Joomla deployment via Docker, sourced from Portainer catalog
+Self-hosted Joomla deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -393,7 +393,7 @@ Open-source, AI-powered personal search assistant — index your documents, note
 
 ### [Kimai](/templates/kimai)
 
-Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog
+Self-hosted Kimai deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -403,7 +403,7 @@ Self-hosted Kimai deployment via Docker, sourced from Umbrel catalog
 
 ### [Kimai2](/templates/kimai2)
 
-Self-hosted Kimai2 deployment via Docker, sourced from Yunohost catalog
+Self-hosted Kimai2 deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -483,7 +483,7 @@ Self-hosted OpenAI-compatible API for LLMs and embeddings
 
 ### [Mailarchiver](/templates/mailarchiver)
 
-Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mailarchiver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -493,7 +493,7 @@ Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
 
 ### [Mainsail](/templates/mainsail)
 
-Self-hosted Mainsail deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mainsail deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -583,7 +583,7 @@ Open-source MLflow tracking server — experiment tracking, model registry, and 
 
 ### [Musicbrainz](/templates/musicbrainz)
 
-Self-hosted Musicbrainz deployment via Docker, sourced from Portainer catalog
+Self-hosted Musicbrainz deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -693,7 +693,7 @@ Alibaba Page Agent — JavaScript in-page GUI agent that controls web interfaces
 
 ### [Pairdrop](/templates/pairdrop)
 
-Self-hosted Pairdrop deployment via Docker, sourced from Portainer catalog
+Self-hosted Pairdrop deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
 
@@ -733,7 +733,7 @@ AI-powered photo management with automatic tagging and face recognition
 
 ### [Plainpad](/templates/plainpad)
 
-Self-hosted Plainpad deployment via Docker, sourced from Yunohost catalog
+Self-hosted Plainpad deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -863,7 +863,7 @@ AI-powered content generation with customizable brand voice
 
 ### [Tailscale](/templates/tailscale)
 
-Self-hosted Tailscale deployment via Docker, sourced from Umbrel catalog
+Self-hosted Tailscale deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 

@@ -1,11 +1,11 @@
 ---
 title: "Gameyfin"
-description: "Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted catalog"
+description: "Self-hosted Gameyfin deployment via Docker"
 ---
 
 # Gameyfin
 
-Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Gameyfin deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Gameyfin deployment via Docker, sourced from Awesome-Selfhosted cata
 | ID | `gameyfin` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `93a8c59c95539dc4ae789d2f6522fcb87b2b5bbcf7172338faeb4bde6af3e606` |
+| Content Hash | `e6af4f7ff7178b868424bae4b7ed39e154358cae3be2d3c741de39a388e28522` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `gameyfin` | ghcr.io/gameyfin/gameyfin:latest | Main application service |
+| `gameyfin_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `GAMEYFIN_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs gameyfin
+```
+
+**Port conflict:**
+Edit `.env` and change `GAMEYFIN_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec gameyfin ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect gameyfin --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v gameyfin_data:/data -v $(pwd):/backup alpine tar czf /backup/gameyfin-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v gameyfin_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/gameyfin-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Gameyfin](https://github.com/gameyfin/gameyfin)
+- **Docker Image:** `ghcr.io/gameyfin/gameyfin:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/gameyfin/gameyfin/wiki)
+- **Issues:** [GitHub Issues](https://github.com/gameyfin/gameyfin/issues)
+

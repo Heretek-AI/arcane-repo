@@ -45,10 +45,10 @@ export default defineConfig({
             { text: 'tools (8)', link: '/categories/tools' },
             { text: 'search (8)', link: '/categories/search' },
             { text: 'web (7)', link: '/categories/web' },
+            { text: 'multi-service (7)', link: '/categories/multi-service' },
             { text: 'orchestration (7)', link: '/categories/orchestration' },
             { text: 'analytics (7)', link: '/categories/analytics' },
             { text: 'low-code (6)', link: '/categories/low-code' },
-            { text: 'multi-service (6)', link: '/categories/multi-service' },
             { text: 'workflow (6)', link: '/categories/workflow' },
             { text: 'api (6)', link: '/categories/api' },
             { text: 'platform (5)', link: '/categories/platform' },
@@ -61,7 +61,9 @@ export default defineConfig({
             { text: 'gateway (4)', link: '/categories/gateway' },
             { text: 'proxy (3)', link: '/categories/proxy' },
             { text: 'inference (3)', link: '/categories/inference' },
-            { text: 'priority (2)', link: '/categories/priority' }
+            { text: 'priority (2)', link: '/categories/priority' },
+            { text: 'custom-build (1)', link: '/categories/custom-build' },
+            { text: 'media (1)', link: '/categories/media' }
           ]
         }
       // CATEGORIES_SIDEBAR_END

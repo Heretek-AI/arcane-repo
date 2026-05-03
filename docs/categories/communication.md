@@ -13,7 +13,7 @@ description: 9 templates tagged with "communication"
 
 ### [Chatbot Ui](/templates/chatbot-ui)
 
-Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog
+Self-hosted Chatbot Ui deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -23,7 +23,7 @@ Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog
 
 ### [Docker Mailserver](/templates/docker-mailserver)
 
-Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Docker Mailserver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
 
@@ -33,7 +33,7 @@ Self-hosted Docker Mailserver deployment via Docker, sourced from Awesome-Selfho
 
 ### [Faircamp](/templates/faircamp)
 
-Self-hosted Faircamp deployment via Docker, sourced from Yunohost catalog
+Self-hosted Faircamp deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -43,7 +43,7 @@ Self-hosted Faircamp deployment via Docker, sourced from Yunohost catalog
 
 ### [Fluffychat](/templates/fluffychat)
 
-Self-hosted Fluffychat deployment via Docker, sourced from Yunohost catalog
+Self-hosted Fluffychat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -53,7 +53,7 @@ Self-hosted Fluffychat deployment via Docker, sourced from Yunohost catalog
 
 ### [Librechat](/templates/librechat)
 
-Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog
+Self-hosted Librechat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -63,7 +63,7 @@ Self-hosted Librechat deployment via Docker, sourced from Umbrel catalog
 
 ### [Litechat](/templates/litechat)
 
-Self-hosted Litechat deployment via Docker, sourced from Yunohost catalog
+Self-hosted Litechat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 
@@ -73,7 +73,7 @@ Self-hosted Litechat deployment via Docker, sourced from Yunohost catalog
 
 ### [Lobe Chat](/templates/lobe-chat)
 
-Self-hosted Lobe Chat deployment via Docker, sourced from Umbrel catalog
+Self-hosted Lobe Chat deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -83,7 +83,7 @@ Self-hosted Lobe Chat deployment via Docker, sourced from Umbrel catalog
 
 ### [Mailarchiver](/templates/mailarchiver)
 
-Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
+Self-hosted Mailarchiver deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
 
@@ -93,7 +93,7 @@ Self-hosted Mailarchiver deployment via Docker, sourced from Umbrel catalog
 
 ### [Matrix Appservice Irc](/templates/matrix-appservice-irc)
 
-Self-hosted Matrix Appservice Irc deployment via Docker, sourced from Yunohost catalog
+Self-hosted Matrix Appservice Irc deployment via Docker
 
 <a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
 

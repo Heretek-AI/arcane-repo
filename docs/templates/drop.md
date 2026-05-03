@@ -1,11 +1,11 @@
 ---
 title: "Drop"
-description: "Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog"
+description: "Self-hosted Drop deployment via Docker"
 ---
 
 # Drop
 
-Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Drop deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Drop deployment via Docker, sourced from Awesome-Selfhosted catalog
 | ID | `drop` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `f058cd3c7b51c174d09e3a30a8d97cf4b6ef67f44a7b2e504383d5b856ab5b9d` |
+| Content Hash | `5929c155b43a3b71e9219d7fef8617a2605d8eea6e5da17c96e028c8bb471393` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `drop` | docker.io/clinicalgenomics/drop:latest | Main application service |
+| `drop_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DROP_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs drop
+```
+
+**Port conflict:**
+Edit `.env` and change `DROP_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec drop ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect drop --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v drop_data:/data -v $(pwd):/backup alpine tar czf /backup/drop-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v drop_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/drop-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Drop](https://github.com/clinicalgenomics/drop)
+- **Docker Image:** `docker.io/clinicalgenomics/drop:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/clinicalgenomics/drop/wiki)
+- **Issues:** [GitHub Issues](https://github.com/clinicalgenomics/drop/issues)
+

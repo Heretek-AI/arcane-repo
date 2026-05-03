@@ -25,4 +25,105 @@ A test template for verifying the build-registry script
 | ID | `test-app` |
 | Version | 1.0.0 |
 | Author | Test Author |
-| Content Hash | `e47c61f8a8aa5682095505ae95545627140c5e647d323c1735bd5f29c151a23e` |
+| Content Hash | `4969a45ec17094a201eb1b3599919e5d8bc6f0927a370c18371d1b601c142112` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `app` | nginx:latest | Main application service |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:80/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:80](http://localhost:80) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PORT` | `80` | Configuration variable |
+| `HOST` | `0.0.0.0` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs app
+```
+
+**Port conflict:**
+Edit `.env` and change `TEST-APP_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec app ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect test-app --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v test-app_data:/data -v $(pwd):/backup alpine tar czf /backup/test-app-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v test-app_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/test-app-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Docker Image:** `nginx:latest`
+

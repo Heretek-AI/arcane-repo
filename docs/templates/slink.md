@@ -1,11 +1,11 @@
 ---
 title: "Slink"
-description: "Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog"
+description: "Self-hosted Slink deployment via Docker"
 ---
 
 # Slink
 
-Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog
+Self-hosted Slink deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Slink deployment via Docker, sourced from Awesome-Selfhosted catalog
 | ID | `slink` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `de9d3302d60b854a9db5f0ee824416532b68520be3e004a8357233caa36acfa8` |
+| Content Hash | `a434f67c83ede3c0a33032b0169d5e26058957b1ceb7d27131de7e6d867664af` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `slink` | docker.io/anirdev/slink:latest | Main application service |
+| `slink_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SLINK_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs slink
+```
+
+**Port conflict:**
+Edit `.env` and change `SLINK_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec slink ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect slink --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v slink_data:/data -v $(pwd):/backup alpine tar czf /backup/slink-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v slink_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/slink-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Slink](https://github.com/anirdev/slink)
+- **Docker Image:** `docker.io/anirdev/slink:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/anirdev/slink/wiki)
+- **Issues:** [GitHub Issues](https://github.com/anirdev/slink/issues)
+

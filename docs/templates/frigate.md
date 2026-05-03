@@ -1,11 +1,11 @@
 ---
 title: "Frigate"
-description: "Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog"
+description: "Self-hosted Frigate deployment via Docker"
 ---
 
 # Frigate
 
-Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog
+Self-hosted Frigate deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Frigate deployment via Docker, sourced from Umbrel catalog
 | ID | `frigate` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `601b05ac2f30331590e38eb94369a153978a890baabcb5e9a09ac7d5d44b27ec` |
+| Content Hash | `fbafd6aa69c2d940b24242ab19c040484e0bd6325e8803428c95e928459c81e1` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `frigate` | ghcr.io/blakeblackshear/frigate:latest | Main application service |
+| `frigate_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `FRIGATE_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs frigate
+```
+
+**Port conflict:**
+Edit `.env` and change `FRIGATE_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec frigate ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect frigate --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v frigate_data:/data -v $(pwd):/backup alpine tar czf /backup/frigate-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v frigate_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/frigate-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Frigate](https://github.com/blakeblackshear/frigate)
+- **Docker Image:** `ghcr.io/blakeblackshear/frigate:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/blakeblackshear/frigate/wiki)
+- **Issues:** [GitHub Issues](https://github.com/blakeblackshear/frigate/issues)
+

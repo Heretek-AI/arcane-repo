@@ -1,11 +1,11 @@
 ---
 title: "Solidtime"
-description: "Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Solidtime deployment via Docker"
 ---
 
 # Solidtime
 
-Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog
+Self-hosted Solidtime deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Solidtime deployment via Docker, sourced from Portainer catalog
 | ID | `solidtime` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `410e7569471513dad55b107facb2c33f6ffe4e27c34b56cfa94acbb099640bb6` |
+| Content Hash | `bb28a84b97131c45ce33665277de83a84e57c4db5f9c05638ee8a4cd88542a28` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `solidtime` | docker.io/solidtime/solidtime:latest | Main application service |
+| `solidtime_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SOLIDTIME_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs solidtime
+```
+
+**Port conflict:**
+Edit `.env` and change `SOLIDTIME_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec solidtime ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect solidtime --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v solidtime_data:/data -v $(pwd):/backup alpine tar czf /backup/solidtime-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v solidtime_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/solidtime-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Solidtime](https://github.com/solidtime/solidtime)
+- **Docker Image:** `docker.io/solidtime/solidtime:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/solidtime/solidtime/wiki)
+- **Issues:** [GitHub Issues](https://github.com/solidtime/solidtime/issues)
+

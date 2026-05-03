@@ -26,3 +26,40 @@ Browser automation agent with natural language — controls web browsers via AI.
 | Version | 1.0.0 |
 | Author | Arcane |
 | Content Hash | `479292eb84d38b0bb45bf985fb3b3b73adec63538b03031ab119b3151b5bd8af` |
+
+## Quick Start
+
+1. **Start the informational API wrapper:**
+
+   ```bash
+   cp .env.example .env
+   docker compose up -d
+   ```
+
+2. **Verify it's running:**
+
+   ```bash
+   curl http://localhost:8000/health
+   ```
+
+## Configuration
+
+| Variable         | Default  | Description                       |
+|------------------|----------|-----------------------------------|
+| `BYTEBOT_PORT`   | `8000`   | Host port for the informational API stub |
+
+## Troubleshooting
+
+| Symptom                                  | Likely Cause              | Fix                                                            |
+|------------------------------------------|---------------------------|----------------------------------------------------------------|
+| No browser automation features available | This is a Docker stub     | Install `bytebot` via pip on your host machine                 |
+| Container exits immediately              | pip install failure       | Run `docker compose logs bytebot` for details                  |
+| Need headless browser interaction        | Using wrong deployment    | Bytebot runs natively — install Python and use pip             |
+
+## API Endpoints
+
+| Endpoint  | Method | Description                                          |
+|-----------|--------|------------------------------------------------------|
+| `/health` | GET    | Health check + tool info                             |
+| `/guide`  | GET    | Python library usage examples and pip instructions   |
+

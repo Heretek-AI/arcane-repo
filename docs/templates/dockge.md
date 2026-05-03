@@ -1,11 +1,11 @@
 ---
 title: "Dockge"
-description: "Self-hosted Dockge deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Dockge deployment via Docker"
 ---
 
 # Dockge
 
-Self-hosted Dockge deployment via Docker, sourced from Portainer catalog
+Self-hosted Dockge deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Dockge deployment via Docker, sourced from Portainer catalog
 | ID | `dockge` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `48a93a3124a4e65056705832c6147ea98ce0bf3b721c35144d1927ad2262a4f3` |
+| Content Hash | `a3f59aaa28b331ebb10fe2442472ef74f9cc6ca0c9fdb23b69662bb22a490cb5` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `dockge` | ghcr.io/louislam/dockge:latest | Main application service |
+| `dockge_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DOCKGE_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs dockge
+```
+
+**Port conflict:**
+Edit `.env` and change `DOCKGE_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec dockge ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect dockge --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v dockge_data:/data -v $(pwd):/backup alpine tar czf /backup/dockge-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v dockge_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/dockge-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Dockge](https://github.com/louislam/dockge)
+- **Docker Image:** `ghcr.io/louislam/dockge:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/louislam/dockge/wiki)
+- **Issues:** [GitHub Issues](https://github.com/louislam/dockge/issues)
+

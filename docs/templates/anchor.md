@@ -1,11 +1,11 @@
 ---
 title: "Anchor"
-description: "Self-hosted Anchor deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Anchor deployment via Docker"
 ---
 
 # Anchor
 
-Self-hosted Anchor deployment via Docker, sourced from Portainer catalog
+Self-hosted Anchor deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Anchor deployment via Docker, sourced from Portainer catalog
 | ID | `anchor` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `3879f79392389f751bcab980d25a7d9f051c8d57ccdb1b2d6b8e63af7ba32956` |
+| Content Hash | `c86e656cfde4af5d7bba0e972b5fc9b4ec03b6b7a869f68d9c8a7cee8f2a4154` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `anchor` | docker.io/solanafoundation/anchor:latest | Main application service |
+| `anchor_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ANCHOR_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs anchor
+```
+
+**Port conflict:**
+Edit `.env` and change `ANCHOR_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec anchor ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect anchor --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v anchor_data:/data -v $(pwd):/backup alpine tar czf /backup/anchor-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v anchor_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/anchor-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Anchor](https://github.com/solanafoundation/anchor)
+- **Docker Image:** `docker.io/solanafoundation/anchor:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/solanafoundation/anchor/wiki)
+- **Issues:** [GitHub Issues](https://github.com/solanafoundation/anchor/issues)
+

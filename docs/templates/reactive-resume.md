@@ -1,11 +1,11 @@
 ---
 title: "Reactive Resume"
-description: "Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalog"
+description: "Self-hosted Reactive Resume deployment via Docker"
 ---
 
 # Reactive Resume
 
-Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalog
+Self-hosted Reactive Resume deployment via Docker
 
 ## Tags
 
@@ -25,4 +25,108 @@ Self-hosted Reactive Resume deployment via Docker, sourced from Portainer catalo
 | ID | `reactive-resume` |
 | Version | 1.0.0 |
 | Author | Arcane |
-| Content Hash | `71e8ee7efc5ca3472ab6a78663b4b697fa5df4c832c0cecd77a3096f49754c26` |
+| Content Hash | `abae8a68035b51bd70020f57245d5a09d6ed93f36b4e232c31e9db80bbec6e1b` |
+
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `reactive-resume` | ghcr.io/amruthpillai/reactive-resume:latest | Main application service |
+| `reactive-resume_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
+## Quick Start
+
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration
+
+Environment variables (set in `.env`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `REACTIVE_RESUME_PORT` | `8080` | Configuration variable |
+
+## Troubleshooting
+
+**Container won't start:**
+```bash
+docker compose logs reactive-resume
+```
+
+**Port conflict:**
+Edit `.env` and change `REACTIVE-RESUME_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec reactive-resume ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect reactive-resume --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
+docker compose down
+
+# Backup the data volume
+docker run --rm -v reactive-resume_data:/data -v $(pwd):/backup alpine tar czf /backup/reactive-resume-backup-$(date +%Y%m%d).tar.gz /data
+
+# Restart
+docker compose up -d
+```
+
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v reactive-resume_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/reactive-resume-backup.tar.gz -C /"
+docker compose up -d
+```
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage
+
+## Links
+
+- **Project Homepage:** [Reactive Resume](https://github.com/amruthpillai/reactive-resume)
+- **Docker Image:** `ghcr.io/amruthpillai/reactive-resume:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/amruthpillai/reactive-resume/wiki)
+- **Issues:** [GitHub Issues](https://github.com/amruthpillai/reactive-resume/issues)
+

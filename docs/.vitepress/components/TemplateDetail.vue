@@ -142,7 +142,9 @@ function tagUrl(tag: string): string {
                   <a :href="template.compose_url" target="_blank" rel="noopener">
                     docker-compose.yml
                   </a>
-                  <DeployButton :url="template.compose_url" label="Compose" />
+                  <ClientOnly>
+                    <DeployButton :url="template.compose_url" label="Compose" />
+                  </ClientOnly>
                 </td>
               </tr>
               <tr v-if="template.env_url">
@@ -151,7 +153,9 @@ function tagUrl(tag: string): string {
                   <a :href="template.env_url" target="_blank" rel="noopener">
                     .env.example
                   </a>
-                  <DeployButton :url="template.env_url" label=".env" />
+                  <ClientOnly>
+                    <DeployButton :url="template.env_url" label=".env" />
+                  </ClientOnly>
                 </td>
               </tr>
               <tr v-if="template.documentation_url">

@@ -7,6 +7,7 @@ import {
   SECTION_ORDER,
   type TemplateData,
 } from '../data/templates'
+import DeployButton from './DeployButton.vue'
 
 const props = defineProps<{
   templateId: string
@@ -137,18 +138,20 @@ function tagUrl(tag: string): string {
               </tr>
               <tr v-if="template.compose_url">
                 <th>Compose File</th>
-                <td>
+                <td class="td-deploy-cell">
                   <a :href="template.compose_url" target="_blank" rel="noopener">
                     docker-compose.yml
                   </a>
+                  <DeployButton :url="template.compose_url" label="Compose" />
                 </td>
               </tr>
               <tr v-if="template.env_url">
                 <th>Env Template</th>
-                <td>
+                <td class="td-deploy-cell">
                   <a :href="template.env_url" target="_blank" rel="noopener">
                     .env.example
                   </a>
+                  <DeployButton :url="template.env_url" label=".env" />
                 </td>
               </tr>
               <tr v-if="template.documentation_url">
@@ -338,6 +341,12 @@ function tagUrl(tag: string): string {
 
 .td-metadata a:hover {
   text-decoration: underline;
+}
+
+.td-deploy-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Sections */

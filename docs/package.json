@@ -9,6 +9,7 @@
     "docs:generate": "node ../scripts/generate-docs.js"
   },
   "devDependencies": {
+    "marked": "^18.0.3",
     "vitepress": "^1.6.3"
   }
 }

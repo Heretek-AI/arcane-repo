@@ -92,3 +92,25 @@
   font-size: 0.9em;
   color: var(--vp-c-text-2);
 }
+
+/* Template detail page layout overrides */
+.template-detail .VPDoc {
+  max-width: 1200px;
+}
+
+/* Ensure v-html markdown content renders well */
+.td-section-body img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.td-section-body hr {
+  border: none;
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 16px 0;
+}
+
+/* Smooth scroll offset for sticky sidebar */
+html {
+  scroll-padding-top: 80px;
+}

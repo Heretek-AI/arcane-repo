@@ -1,7 +1,7 @@
 {
   "id": "azuracast",
   "name": "Azuracast",
-  "description": "Self-hosted Azuracast deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted web radio management suite with live broadcasting, media library management, and listener analytics.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

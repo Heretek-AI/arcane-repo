@@ -1,7 +1,7 @@
 {
   "id": "aliasvault",
   "name": "Aliasvault",
-  "description": "Self-hosted Aliasvault deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted email alias and password manager that generates unique email addresses and strong passwords for every service you use.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

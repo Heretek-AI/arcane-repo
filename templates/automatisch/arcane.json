@@ -1,7 +1,7 @@
 {
   "id": "automatisch",
   "name": "Automatisch",
-  "description": "Self-hosted Automatisch deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted business automation tool that connects your apps and automates workflows without coding, similar to Zapier.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

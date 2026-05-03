@@ -1,7 +1,7 @@
 {
   "id": "cannery",
   "name": "Cannery",
-  "description": "Self-hosted Cannery deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted pantry and food inventory tracker that helps manage stored food, expiration dates, and stock levels.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

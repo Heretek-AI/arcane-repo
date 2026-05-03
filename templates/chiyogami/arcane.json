@@ -1,7 +1,7 @@
 {
   "id": "chiyogami",
   "name": "Chiyogami",
-  "description": "Self-hosted Chiyogami deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted wallpaper management and rotation tool for organizing and cycling through desktop wallpapers.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

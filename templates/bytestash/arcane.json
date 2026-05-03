@@ -1,7 +1,7 @@
 {
   "id": "bytestash",
   "name": "Bytestash",
-  "description": "Self-hosted Bytestash deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted code snippet manager for storing, organizing, and sharing code snippets with syntax highlighting.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

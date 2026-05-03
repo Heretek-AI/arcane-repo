@@ -1,7 +1,7 @@
 {
   "id": "aptabase",
   "name": "Aptabase",
-  "description": "Self-hosted Aptabase deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted, privacy-friendly analytics platform for mobile and desktop applications with a simple SDK integration.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

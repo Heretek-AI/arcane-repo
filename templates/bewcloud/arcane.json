@@ -1,7 +1,7 @@
 {
   "id": "bewcloud",
   "name": "Bewcloud",
-  "description": "Self-hosted Bewcloud deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted personal cloud platform for file storage, sharing, and collaboration with a modern web interface.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

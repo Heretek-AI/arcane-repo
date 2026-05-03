@@ -1,7 +1,7 @@
 {
   "id": "booklogr",
   "name": "Booklogr",
-  "description": "Self-hosted Booklogr deployment via Docker, sourced from Awesome-Selfhosted catalog",
+  "description": "Self-hosted book tracking and reading log application to catalog your library and monitor reading progress.",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,8 +1,8 @@
 # Arcane Template Candidates
 
-**Total: 1390 candidates** across YunoHost (522), Portainer (452), Umbrel (223), awesome-selfhosted (126), GitHub (67).
+**Total: 1430 candidates** across YunoHost (522), Portainer (452), Umbrel (223), awesome-selfhosted (126), GitHub (67), M012 AI/LLM/DevOps/Identity (40).
 
-Cross-referenced against **88 existing templates** — duplicates and already-existing templates are excluded.
+Cross-referenced against **786 existing templates** — duplicates and already-existing templates are excluded.
 
 <details>
 <summary>Source breakdown</summary>
@@ -3754,4 +3754,177 @@ where Transmission is running
 
 1. **YunoHost** — Server OS aiming to make self-hosting accessible to everyone
    https://github.com/YunoHost/yunohost
+
+
+---
+
+### M012 — AI/LLM, DevOps, Identity (40 candidates)
+
+Curated from high-value self-hosted projects. Cross-referenced against 786 existing templates and 333 review-queue entries — duplicates excluded.
+
+#### AI/LLM (18)
+
+1. **AutoGPT** — 183,959★ — Accessible AI agent platform for building autonomous agents
+   *https://github.com/Significant-Gravitas/AutoGPT*
+   Source: `m012` | Image: `ghcr.io/autogptplatform/autogpt`
+
+2. **ComfyUI** — 75,416★ — Powerful and modular Stable Diffusion GUI and backend
+   *https://github.com/comfyanonymous/ComfyUI*
+   Source: `m012` | Image: `ghcr.io/comfyanonymous/comfyui`
+
+3. **screenshot-to-code** — 72,430★ — Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
+   *https://github.com/abi/screenshot-to-code*
+   Source: `m012` | Image: `ghcr.io/abi/screenshot-to-code`
+
+4. **Open Interpreter** — 63,374★ — Natural language interface for computers — run code via AI
+   *https://github.com/OpenInterpreter/open-interpreter*
+   Source: `m012` | Image: `ghcr.io/open-interpreter/open-interpreter`
+
+5. **Qdrant** — 30,982★ — High-performance vector database and search engine for next-gen AI
+   *https://github.com/qdrant/qdrant*
+   Source: `m012` | Image: `qdrant/qdrant`
+
+6. **CrewAI** — 50,535★ — Framework for orchestrating role-playing autonomous AI agents
+   *https://github.com/crewAIInc/crewAI*
+   Source: `m012` | Image: `ghcr.io/crewai/crewai`
+
+7. **LlamaIndex** — 49,114★ — Leading document agent and OCR platform for RAG applications
+   *https://github.com/run-llama/llama_index*
+   Source: `m012` | Image: `ghcr.io/runllama/llama-index`
+
+8. **Aider** — 44,294★ — AI pair programming in your terminal
+   *https://github.com/Aider-AI/aider*
+   Source: `m012` | Image: `ghcr.io/aider-ai/aider`
+
+9. **Promptfoo** — 15,875★ — LLM eval and red-teaming — test prompts, agents, and RAG pipelines
+   *https://github.com/promptfoo/promptfoo*
+   Source: `m012` | Image: `ghcr.io/promptfoo/promptfoo`
+
+10. **Continue** — 32,943★ — Open-source AI code assistant (VS Code / JetBrains)
+    *https://github.com/continuedev/continue*
+    Source: `m012` | Image: `ghcr.io/continuedev/continue`
+
+11. **Composio** — 28,025★ — Toolset for AI agents with 1000+ integrations and sandboxed execution
+    *https://github.com/ComposioHQ/composio*
+    Source: `m012` | Image: `ghcr.io/composio/composio`
+
+12. **STORM** — 28,156★ — LLM-powered knowledge curation system that generates full-length reports with citations
+    *https://github.com/stanford-oval/storm*
+    Source: `m012` | Image: `ghcr.io/stanford-oval/storm`
+
+13. **Haystack** — 25,065★ — Open-source AI orchestration framework for production LLM applications
+    *https://github.com/deepset-ai/haystack*
+    Source: `m012` | Image: `deepset/haystack`
+
+14. **Letta** — 22,417★ — Platform for building stateful AI agents with advanced memory
+    *https://github.com/letta-ai/letta*
+    Source: `m012` | Image: `ghcr.io/letta-ai/letta`
+
+15. **SWE-agent** — 19,122★ — AI agent that takes a GitHub issue and automatically fixes it
+    *https://github.com/SWE-agent/SWE-agent*
+    Source: `m012` | Image: `ghcr.io/swe-agent/swe-agent`
+
+16. **TensorRT-LLM** — 13,541★ — NVIDIA TensorRT LLM for high-performance inference
+    *https://github.com/NVIDIA/TensorRT-LLM*
+    Source: `m012` | Image: `nvcr.io/nvidia/tritonserver`
+
+17. **Text Generation Inference** — 10,849★ — Hugging Face's high-performance LLM serving container
+    *https://github.com/huggingface/text-generation-inference*
+    Source: `m012` | Image: `ghcr.io/huggingface/text-generation-inference`
+
+18. **DiffSynth Studio** — 12,356★ — Enjoy the magic of Diffusion models — video/image synthesis toolkit
+    *https://github.com/modelscope/DiffSynth-Studio*
+    Source: `m012` | Image: `ghcr.io/modelscope/diffsynth-studio`
+
+#### DevOps (13)
+
+19. **Traefik** — 62,968★ — Cloud-native application proxy with automatic service discovery
+    *https://github.com/traefik/traefik*
+    Source: `m012` | Image: `traefik`
+
+20. **Vault** — 35,561★ — Secrets management, encryption as a service, privileged access
+    *https://github.com/hashicorp/vault*
+    Source: `m012` | Image: `hashicorp/vault`
+
+21. **Sysdig** — 7,832★ — Container runtime security and monitoring with Falco
+    *https://github.com/draios/sysdig*
+    Source: `m012` | Image: `sysdig/sysdig`
+
+22. **Nginx Proxy Manager** — 32,695★ — Docker container for managing Nginx proxy hosts with simple UI
+    *https://github.com/NginxProxyManager/nginx-proxy-manager*
+    Source: `m012` | Image: `jc21/nginx-proxy-manager`
+
+23. **Consul** — 29,877★ — Distributed service mesh for connecting and configuring services
+    *https://github.com/hashicorp/consul*
+    Source: `m012` | Image: `hashicorp/consul`
+
+24. **Pulumi** — 25,136★ — Infrastructure as Code in any programming language
+    *https://github.com/pulumi/pulumi*
+    Source: `m012` | Image: `pulumi/pulumi`
+
+25. **Nebula** — 15,209★ — Mesh VPN by Slack — scalable, encrypted overlay network
+    *https://github.com/slackhq/nebula*
+    Source: `m012` | Image: `nebulacomm/nebula`
+
+26. **Skaffold** — 15,822★ — Easy and repeatable Kubernetes development workflow
+    *https://github.com/GoogleContainerTools/skaffold*
+    Source: `m012` | Image: `gcr.io/k8s-skaffold/skaffold`
+
+27. **frp** — 92,152★ — Fast reverse proxy for exposing local servers behind NAT/firewall
+    *https://github.com/fatedier/frp*
+    Source: `m012` | Image: `fatedier/frp`
+
+28. **Ansible Semaphore** — 13,558★ — Modern UI for Ansible, Terraform, OpenTofu and other DevOps tools
+    *https://github.com/semaphoreui/semaphore*
+    Source: `m012` | Image: `semaphoreui/semaphore`
+
+29. **Netmaker** — 11,560★ — Automates fast, secure WireGuard virtual networks
+    *https://github.com/gravitl/netmaker*
+    Source: `m012` | Image: `gravitl/netmaker`
+
+30. **Firezone** — 8,592★ — Enterprise-ready zero-trust access platform built on WireGuard
+    *https://github.com/firezone/firezone*
+    Source: `m012` | Image: `firezone/firezone`
+
+31. **ctop** — 17,716★ — Top-like interface for container metrics in the terminal
+    *https://github.com/bcicen/ctop*
+    Source: `m012` | Image: `quay.io/vektorlab/ctop`
+
+#### Identity (9)
+
+32. **Keycloak** — 34,179★ — Open source Identity and Access Management for modern applications
+    *https://github.com/keycloak/keycloak*
+    Source: `m012` | Image: `keycloak/keycloak`
+
+33. **SuperTokens** — 15,027★ — Open source alternative to Auth0 / Firebase Auth / AWS Cognito
+    *https://github.com/supertokens/supertokens-core*
+    Source: `m012` | Image: `supertokens/supertokens`
+
+34. **Zitadel** — 13,686★ — Identity infrastructure simplified — cloud-native IAM
+    *https://github.com/zitadel/zitadel*
+    Source: `m012` | Image: `ghcr.io/zitadel/zitadel`
+
+35. **Logto** — 11,968★ — Auth infrastructure for SaaS and AI apps, built on OIDC
+    *https://github.com/logto-io/logto*
+    Source: `m012` | Image: `svhd/logto`
+
+36. **Ory Kratos** — 11,577★ — Cloud-native identity and user management system
+    *https://github.com/ory/kratos*
+    Source: `m012` | Image: `oryd/kratos`
+
+37. **Hanko** — 8,012★ — Open source authentication and user management with passkeys
+    *https://github.com/teamhanko/hanko*
+    Source: `m012` | Image: `ghcr.io/teamhanko/hanko`
+
+38. **Casdoor** — 11,874★ — UI-first centralized authentication / SSO platform
+    *https://github.com/casdoor/casdoor*
+    Source: `m012` | Image: `casbin/casdoor`
+
+39. **Ory Oathkeeper** — 3,429★ — Identity and access proxy for zero-trust API authorization
+    *https://github.com/ory/oathkeeper*
+    Source: `m012` | Image: `oryd/oathkeeper`
+
+40. **LemonLDAP::NG** — 2,502★ — Web SSO and access management with OpenID Connect and SAML
+    *https://github.com/LemonLDAPNG/lemonldap-ng*
+    Source: `m012` | Image: `lemonldapng/lemonldap-ng`
 

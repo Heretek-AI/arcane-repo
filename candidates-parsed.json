@@ -16295,5 +16295,445 @@
       "ghcr.io/yunohost/yunohost:latest",
       "docker.io/yunohost/yunohost:latest"
     ]
+  },
+  {
+    "name": "AutoGPT",
+    "source": "priority",
+    "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "yunohost_app": null,
+    "stars": 183959,
+    "probable_images": [
+      "ghcr.io/significant-gravitas/autogpt:latest",
+      "docker.io/significant-gravitas/autogpt:latest"
+    ]
+  },
+  {
+    "name": "ComfyUI",
+    "source": "priority",
+    "github_url": "https://github.com/comfyanonymous/ComfyUI",
+    "yunohost_app": null,
+    "stars": 75416,
+    "probable_images": [
+      "ghcr.io/comfyanonymous/comfyui:latest",
+      "docker.io/comfyanonymous/comfyui:latest"
+    ]
+  },
+  {
+    "name": "screenshot-to-code",
+    "source": "priority",
+    "github_url": "https://github.com/abi/screenshot-to-code",
+    "yunohost_app": null,
+    "stars": 72430,
+    "probable_images": [
+      "ghcr.io/abi/screenshot-to-code:latest",
+      "docker.io/abi/screenshot-to-code:latest"
+    ]
+  },
+  {
+    "name": "Open Interpreter",
+    "source": "priority",
+    "github_url": "https://github.com/OpenInterpreter/open-interpreter",
+    "yunohost_app": null,
+    "stars": 63374,
+    "probable_images": [
+      "ghcr.io/openinterpreter/open-interpreter:latest",
+      "docker.io/openinterpreter/open-interpreter:latest"
+    ]
+  },
+  {
+    "name": "Qdrant",
+    "source": "priority",
+    "github_url": "https://github.com/qdrant/qdrant",
+    "yunohost_app": null,
+    "stars": 30982,
+    "probable_images": [
+      "ghcr.io/qdrant/qdrant:latest",
+      "docker.io/qdrant/qdrant:latest"
+    ]
+  },
+  {
+    "name": "CrewAI",
+    "source": "priority",
+    "github_url": "https://github.com/crewAIInc/crewAI",
+    "yunohost_app": null,
+    "stars": 50535,
+    "probable_images": [
+      "ghcr.io/crewaiinc/crewai:latest",
+      "docker.io/crewaiinc/crewai:latest"
+    ]
+  },
+  {
+    "name": "LlamaIndex",
+    "source": "priority",
+    "github_url": "https://github.com/run-llama/llama_index",
+    "yunohost_app": null,
+    "stars": 49114,
+    "probable_images": [
+      "ghcr.io/run-llama/llama_index:latest",
+      "docker.io/run-llama/llama_index:latest"
+    ]
+  },
+  {
+    "name": "Aider",
+    "source": "priority",
+    "github_url": "https://github.com/Aider-AI/aider",
+    "yunohost_app": null,
+    "stars": 44294,
+    "probable_images": [
+      "ghcr.io/aider-ai/aider:latest",
+      "docker.io/aider-ai/aider:latest"
+    ]
+  },
+  {
+    "name": "Promptfoo",
+    "source": "priority",
+    "github_url": "https://github.com/promptfoo/promptfoo",
+    "yunohost_app": null,
+    "stars": 15875,
+    "probable_images": [
+      "ghcr.io/promptfoo/promptfoo:latest",
+      "docker.io/promptfoo/promptfoo:latest"
+    ]
+  },
+  {
+    "name": "Continue",
+    "source": "priority",
+    "github_url": "https://github.com/continuedev/continue",
+    "yunohost_app": null,
+    "stars": 32943,
+    "probable_images": [
+      "ghcr.io/continuedev/continue:latest",
+      "docker.io/continuedev/continue:latest"
+    ]
+  },
+  {
+    "name": "Composio",
+    "source": "priority",
+    "github_url": "https://github.com/ComposioHQ/composio",
+    "yunohost_app": null,
+    "stars": 28025,
+    "probable_images": [
+      "ghcr.io/composiohq/composio:latest",
+      "docker.io/composiohq/composio:latest"
+    ]
+  },
+  {
+    "name": "STORM",
+    "source": "priority",
+    "github_url": "https://github.com/stanford-oval/storm",
+    "yunohost_app": null,
+    "stars": 28156,
+    "probable_images": [
+      "ghcr.io/stanford-oval/storm:latest",
+      "docker.io/stanford-oval/storm:latest"
+    ]
+  },
+  {
+    "name": "Haystack",
+    "source": "priority",
+    "github_url": "https://github.com/deepset-ai/haystack",
+    "yunohost_app": null,
+    "stars": 25065,
+    "probable_images": [
+      "ghcr.io/deepset-ai/haystack:latest",
+      "docker.io/deepset-ai/haystack:latest"
+    ]
+  },
+  {
+    "name": "Letta",
+    "source": "priority",
+    "github_url": "https://github.com/letta-ai/letta",
+    "yunohost_app": null,
+    "stars": 22417,
+    "probable_images": [
+      "ghcr.io/letta-ai/letta:latest",
+      "docker.io/letta-ai/letta:latest"
+    ]
+  },
+  {
+    "name": "SWE-agent",
+    "source": "priority",
+    "github_url": "https://github.com/SWE-agent/SWE-agent",
+    "yunohost_app": null,
+    "stars": 19122,
+    "probable_images": [
+      "ghcr.io/swe-agent/swe-agent:latest",
+      "docker.io/swe-agent/swe-agent:latest"
+    ]
+  },
+  {
+    "name": "TensorRT-LLM",
+    "source": "priority",
+    "github_url": "https://github.com/NVIDIA/TensorRT-LLM",
+    "yunohost_app": null,
+    "stars": 13541,
+    "probable_images": [
+      "ghcr.io/nvidia/tensorrt-llm:latest",
+      "docker.io/nvidia/tensorrt-llm:latest"
+    ]
+  },
+  {
+    "name": "Text Generation Inference",
+    "source": "priority",
+    "github_url": "https://github.com/huggingface/text-generation-inference",
+    "yunohost_app": null,
+    "stars": 10849,
+    "probable_images": [
+      "ghcr.io/huggingface/text-generation-inference:latest",
+      "docker.io/huggingface/text-generation-inference:latest"
+    ]
+  },
+  {
+    "name": "DiffSynth Studio",
+    "source": "priority",
+    "github_url": "https://github.com/modelscope/DiffSynth-Studio",
+    "yunohost_app": null,
+    "stars": 12356,
+    "probable_images": [
+      "ghcr.io/modelscope/diffsynth-studio:latest",
+      "docker.io/modelscope/diffsynth-studio:latest"
+    ]
+  },
+  {
+    "name": "Traefik",
+    "source": "priority",
+    "github_url": "https://github.com/traefik/traefik",
+    "yunohost_app": null,
+    "stars": 62968,
+    "probable_images": [
+      "ghcr.io/traefik/traefik:latest",
+      "docker.io/traefik/traefik:latest"
+    ]
+  },
+  {
+    "name": "Vault",
+    "source": "priority",
+    "github_url": "https://github.com/hashicorp/vault",
+    "yunohost_app": null,
+    "stars": 35561,
+    "probable_images": [
+      "ghcr.io/hashicorp/vault:latest",
+      "docker.io/hashicorp/vault:latest"
+    ]
+  },
+  {
+    "name": "Sysdig",
+    "source": "priority",
+    "github_url": "https://github.com/draios/sysdig",
+    "yunohost_app": null,
+    "stars": 7832,
+    "probable_images": [
+      "ghcr.io/draios/sysdig:latest",
+      "docker.io/draios/sysdig:latest"
+    ]
+  },
+  {
+    "name": "Nginx Proxy Manager",
+    "source": "priority",
+    "github_url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+    "yunohost_app": null,
+    "stars": 32695,
+    "probable_images": [
+      "ghcr.io/nginxproxymanager/nginx-proxy-manager:latest",
+      "docker.io/nginxproxymanager/nginx-proxy-manager:latest"
+    ]
+  },
+  {
+    "name": "Consul",
+    "source": "priority",
+    "github_url": "https://github.com/hashicorp/consul",
+    "yunohost_app": null,
+    "stars": 29877,
+    "probable_images": [
+      "ghcr.io/hashicorp/consul:latest",
+      "docker.io/hashicorp/consul:latest"
+    ]
+  },
+  {
+    "name": "Pulumi",
+    "source": "priority",
+    "github_url": "https://github.com/pulumi/pulumi",
+    "yunohost_app": null,
+    "stars": 25136,
+    "probable_images": [
+      "ghcr.io/pulumi/pulumi:latest",
+      "docker.io/pulumi/pulumi:latest"
+    ]
+  },
+  {
+    "name": "Nebula",
+    "source": "priority",
+    "github_url": "https://github.com/slackhq/nebula",
+    "yunohost_app": null,
+    "stars": 15209,
+    "probable_images": [
+      "ghcr.io/slackhq/nebula:latest",
+      "docker.io/slackhq/nebula:latest"
+    ]
+  },
+  {
+    "name": "Skaffold",
+    "source": "priority",
+    "github_url": "https://github.com/GoogleContainerTools/skaffold",
+    "yunohost_app": null,
+    "stars": 15822,
+    "probable_images": [
+      "ghcr.io/googlecontainertools/skaffold:latest",
+      "docker.io/googlecontainertools/skaffold:latest"
+    ]
+  },
+  {
+    "name": "frp",
+    "source": "priority",
+    "github_url": "https://github.com/fatedier/frp",
+    "yunohost_app": null,
+    "stars": 92152,
+    "probable_images": [
+      "ghcr.io/fatedier/frp:latest",
+      "docker.io/fatedier/frp:latest"
+    ]
+  },
+  {
+    "name": "Ansible Semaphore",
+    "source": "priority",
+    "github_url": "https://github.com/semaphoreui/semaphore",
+    "yunohost_app": null,
+    "stars": 13558,
+    "probable_images": [
+      "ghcr.io/semaphoreui/semaphore:latest",
+      "docker.io/semaphoreui/semaphore:latest"
+    ]
+  },
+  {
+    "name": "Netmaker",
+    "source": "priority",
+    "github_url": "https://github.com/gravitl/netmaker",
+    "yunohost_app": null,
+    "stars": 11560,
+    "probable_images": [
+      "ghcr.io/gravitl/netmaker:latest",
+      "docker.io/gravitl/netmaker:latest"
+    ]
+  },
+  {
+    "name": "Firezone",
+    "source": "priority",
+    "github_url": "https://github.com/firezone/firezone",
+    "yunohost_app": null,
+    "stars": 8592,
+    "probable_images": [
+      "ghcr.io/firezone/firezone:latest",
+      "docker.io/firezone/firezone:latest"
+    ]
+  },
+  {
+    "name": "ctop",
+    "source": "priority",
+    "github_url": "https://github.com/bcicen/ctop",
+    "yunohost_app": null,
+    "stars": 17716,
+    "probable_images": [
+      "ghcr.io/bcicen/ctop:latest",
+      "docker.io/bcicen/ctop:latest"
+    ]
+  },
+  {
+    "name": "Keycloak",
+    "source": "priority",
+    "github_url": "https://github.com/keycloak/keycloak",
+    "yunohost_app": null,
+    "stars": 34179,
+    "probable_images": [
+      "ghcr.io/keycloak/keycloak:latest",
+      "docker.io/keycloak/keycloak:latest"
+    ]
+  },
+  {
+    "name": "SuperTokens",
+    "source": "priority",
+    "github_url": "https://github.com/supertokens/supertokens-core",
+    "yunohost_app": null,
+    "stars": 15027,
+    "probable_images": [
+      "ghcr.io/supertokens/supertokens-core:latest",
+      "docker.io/supertokens/supertokens-core:latest"
+    ]
+  },
+  {
+    "name": "Zitadel",
+    "source": "priority",
+    "github_url": "https://github.com/zitadel/zitadel",
+    "yunohost_app": null,
+    "stars": 13686,
+    "probable_images": [
+      "ghcr.io/zitadel/zitadel:latest",
+      "docker.io/zitadel/zitadel:latest"
+    ]
+  },
+  {
+    "name": "Logto",
+    "source": "priority",
+    "github_url": "https://github.com/logto-io/logto",
+    "yunohost_app": null,
+    "stars": 11968,
+    "probable_images": [
+      "ghcr.io/logto-io/logto:latest",
+      "docker.io/logto-io/logto:latest"
+    ]
+  },
+  {
+    "name": "Ory Kratos",
+    "source": "priority",
+    "github_url": "https://github.com/ory/kratos",
+    "yunohost_app": null,
+    "stars": 11577,
+    "probable_images": [
+      "ghcr.io/ory/kratos:latest",
+      "docker.io/ory/kratos:latest"
+    ]
+  },
+  {
+    "name": "Hanko",
+    "source": "priority",
+    "github_url": "https://github.com/teamhanko/hanko",
+    "yunohost_app": null,
+    "stars": 8012,
+    "probable_images": [
+      "ghcr.io/teamhanko/hanko:latest",
+      "docker.io/teamhanko/hanko:latest"
+    ]
+  },
+  {
+    "name": "Casdoor",
+    "source": "priority",
+    "github_url": "https://github.com/casdoor/casdoor",
+    "yunohost_app": null,
+    "stars": 11874,
+    "probable_images": [
+      "ghcr.io/casdoor/casdoor:latest",
+      "docker.io/casdoor/casdoor:latest"
+    ]
+  },
+  {
+    "name": "Ory Oathkeeper",
+    "source": "priority",
+    "github_url": "https://github.com/ory/oathkeeper",
+    "yunohost_app": null,
+    "stars": 3429,
+    "probable_images": [
+      "ghcr.io/ory/oathkeeper:latest",
+      "docker.io/ory/oathkeeper:latest"
+    ]
+  },
+  {
+    "name": "LemonLDAP::NG",
+    "source": "priority",
+    "github_url": "https://github.com/LemonLDAPNG/lemonldap-ng",
+    "yunohost_app": null,
+    "stars": 2502,
+    "probable_images": [
+      "ghcr.io/lemonldapng/lemonldap-ng:latest",
+      "docker.io/lemonldapng/lemonldap-ng:latest"
+    ]
   }
 ]

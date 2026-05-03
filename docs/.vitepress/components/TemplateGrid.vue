@@ -7,12 +7,14 @@ const props = withDefaults(
     templates: TemplateData[]
     pageSize?: number
     initialPage?: number
+    selectedForCompare?: Set<string>
   }>(),
-  { pageSize: 24, initialPage: 1 }
+  { pageSize: 24, initialPage: 1, selectedForCompare: () => new Set() }
 )
 
 const emit = defineEmits<{
   'update:currentPage': [page: number]
+  'toggleCompare': [id: string]
 }>()
 
 const currentPage = ref(props.initialPage)
@@ -96,7 +98,18 @@ function goToPage(page: number) {
         :key="t.id"
         :href="`/templates/${t.id}`"
         class="template-card"
+        :class="{ 'template-card--selected': selectedForCompare.has(t.id) }"
       >
+        <button
+          class="compare-toggle"
+          :class="{ 'compare-toggle--active': selectedForCompare.has(t.id) }"
+          :aria-label="selectedForCompare.has(t.id) ? `Remove ${t.name} from comparison` : `Add ${t.name} to comparison`"
+          :aria-pressed="selectedForCompare.has(t.id)"
+          @click.prevent.stop="emit('toggleCompare', t.id)"
+        >
+          <svg v-if="selectedForCompare.has(t.id)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8Zm6-3.25a.75.75 0 0 0-1.5 0V8H3.25a.75.75 0 0 0 0 1.5H6.5v3.25a.75.75 0 0 0 1.5 0V9.5h3.25a.75.75 0 0 0 0-1.5H8Z"/></svg>
+        </button>
         <h3>{{ t.name }}</h3>
         <p class="template-card__desc">{{ t.description }}</p>
         <div class="template-card__tags">

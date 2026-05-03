@@ -6,6 +6,7 @@ import FilterBar from '../components/FilterBar.vue'
 import TemplateGrid from '../components/TemplateGrid.vue'
 import BrowseView from '../components/BrowseView.vue'
 import CategoryView from '../components/CategoryView.vue'
+import CompareBar from '../components/CompareBar.vue'
 import './custom.css'
 
 export default {
@@ -16,6 +17,7 @@ export default {
     app.component('TemplateGrid', TemplateGrid)
     app.component('BrowseView', BrowseView)
     app.component('CategoryView', CategoryView)
+    app.component('CompareBar', CompareBar)
   },
   Layout() {
     const { frontmatter } = useData()

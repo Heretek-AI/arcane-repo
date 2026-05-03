@@ -5,6 +5,7 @@ import { getAllTemplates } from '../data/templates'
 import type { TemplateData } from '../data/templates'
 import FilterBar from './FilterBar.vue'
 import TemplateGrid from './TemplateGrid.vue'
+import CompareBar from './CompareBar.vue'
 
 defineOptions({ name: 'CategoryView' })
 
@@ -17,6 +18,34 @@ const route = useRoute()
 
 // ── Data ──────────────────────────────────────────────
 const allTemplates = getAllTemplates()
+
+// ── Template lookup map (shared with CompareBar) ──────
+const templateMap = new Map<string, TemplateData>(
+  allTemplates.map(t => [t.id, t])
+)
+
+// ── Compare state ─────────────────────────────────────
+const selectedForCompare = ref<Set<string>>(new Set())
+
+function toggleCompare(id: string) {
+  const next = new Set(selectedForCompare.value)
+  if (next.has(id)) {
+    next.delete(id)
+  } else if (next.size < 3) {
+    next.add(id)
+  }
+  selectedForCompare.value = next
+}
+
+function removeCompare(id: string) {
+  const next = new Set(selectedForCompare.value)
+  next.delete(id)
+  selectedForCompare.value = next
+}
+
+function clearCompare() {
+  selectedForCompare.value = new Set()
+}
 
 // ── Filter state ──────────────────────────────────────
 const searchQuery = ref('')
@@ -138,7 +167,7 @@ function onPageChange(page: number) {
 </script>
 
 <template>
-  <div class="category-view">
+  <div class="category-view" :class="{ 'category-view--has-compare': selectedForCompare.size > 0 }">
     <a class="category-view__back" href="/browse">← Back to Browse</a>
     <h1 class="category-view__title">{{ category }}</h1>
     <p class="category-view__subtitle">
@@ -159,7 +188,16 @@ function onPageChange(page: number) {
     <TemplateGrid
       :templates="filteredTemplates"
       :initialPage="currentPage"
+      :selectedForCompare="selectedForCompare"
       @update:currentPage="onPageChange"
+      @toggleCompare="toggleCompare"
+    />
+
+    <CompareBar
+      :selectedIds="[...selectedForCompare]"
+      :templateMap="templateMap"
+      @remove="removeCompare"
+      @clear="clearCompare"
     />
   </div>
 </template>
@@ -193,5 +231,9 @@ function onPageChange(page: number) {
   color: var(--vp-c-text-2);
   margin: 0 0 24px;
   font-size: 0.95em;
+}
+
+.category-view--has-compare {
+  padding-bottom: 96px;
 }
 </style>

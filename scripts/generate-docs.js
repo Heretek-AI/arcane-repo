@@ -325,79 +325,22 @@ ${badges}
   }
   console.log(`Wrote ${sortedTags.length} category pages`);
 
-  // 8. Generate docs/templates/{id}.md for each template — detail page
+  // 8. Generate docs/templates/{id}.md for each template — custom layout detail page
   for (const t of templates) {
     const name = escapeHtml(t.name || t.id);
     const desc = escapeHtml(t.description || '');
-    const badges = (t.tags || []).map(badgeHtml).join(' ');
-    const dataEntry = templatesData.find(d => d.id === t.id);
-    const sections = dataEntry ? dataEntry.sections : {};
-
-    let links = '';
-    if (t.compose_url) {
-      links += `- [docker-compose.yml](${t.compose_url})\n`;
-    }
-    if (t.env_url) {
-      links += `- [.env.example](${t.env_url})\n`;
-    }
-    if (t.documentation_url) {
-      links += `- [Documentation](${t.documentation_url})\n`;
-    }
-
-    // Build inline README sections
-    let readmeContent = '';
-    const sectionOrder = [
-      ['projectOverview', 'Project Overview'],
-      ['architecture', 'Architecture'],
-      ['quickStart', 'Quick Start'],
-      ['configuration', 'Configuration'],
-      ['troubleshooting', 'Troubleshooting'],
-      ['backup', 'Backup & Recovery'],
-      ['prerequisites', 'Prerequisites'],
-      ['links', 'Links'],
-      ['apiEndpoints', 'API Endpoints'],
-      ['serviceDetails', 'Service Details'],
-      ['healthCheck', 'Health Check'],
-      ['upstream', 'Upstream'],
-    ];
-
-    for (const [key, label] of sectionOrder) {
-      if (sections[key]) {
-        readmeContent += `\n## ${label}\n\n${sections[key]}\n`;
-      }
-    }
 
     const page = `---
 title: "${name}"
 description: "${desc}"
+layout: template-detail
+templateId: "${t.id}"
 ---
-
-# ${name}
-
-${desc}
-
-## Tags
-
-${badges || 'No tags'}
-
-## Links
-
-${links || 'No links available'}
-
-## Metadata
-
-| Field | Value |
-|-------|-------|
-| ID | \`${t.id}\` |
-| Version | ${t.version || 'N/A'} |
-| Author | ${t.author || 'N/A'} |
-| Content Hash | \`${t.content_hash || 'N/A'}\` |
-${readmeContent}
 `;
 
     fs.writeFileSync(path.join(TEMPLATES_DIR, `${t.id}.md`), page, 'utf-8');
   }
-  console.log(`Wrote ${templates.length} template detail pages`);
+  console.log(`Wrote ${templates.length} template detail pages (custom layout)`);
 
   // 9. Update VitePress sidebar config dynamically
   //    Build sidebar items for categories

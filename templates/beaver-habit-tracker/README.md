@@ -1,13 +1,16 @@
-# Beaver Habit Tracker -- Self-Hosted Application
+# Beaver Habit Tracker
 
-[Beaver Habit Tracker](https://github.com/daya0576/beaverhabits) is a self-hosted application available through the Awesome-Selfhosted catalog.
+Self-hosted Beaver Habit Tracker deployment via Docker, sourced from Awesome-Selfhosted catalog
+
+This template provides a containerized deployment of [Beaver Habit Tracker](https://github.com/daya0576/beaverhabits) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,46 +19,94 @@
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `beaver-habit-tracker` | docker.io/daya0576/beaverhabits:latest | Main application service |
+| `beaver-habit-tracker_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `BEAVER_HABIT_TRACKER_PORT` | `8080` | Host port for the service |
+| `BEAVER_HABIT_TRACKER_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `beaver-habit-tracker` | `docker.io/daya0576/beaverhabits:latest` | 8080 | Beaver Habit Tracker application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f beaver-habit-tracker
+docker compose logs beaver-habit-tracker
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `BEAVER-HABIT-TRACKER_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec beaver-habit-tracker ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect beaver-habit-tracker --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v beaver-habit-tracker_data:/data -v $(pwd):/backup alpine tar czf /backup/beaver-habit-tracker-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull beaver-habit-tracker
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v beaver-habit-tracker_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/beaver-habit-tracker-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Awesome-Selfhosted catalog entry: `Beaver Habit Tracker`
-- Upstream project: https://github.com/daya0576/beaverhabits
+## Links
+
+- **Project Homepage:** [Beaver Habit Tracker](https://github.com/daya0576/beaverhabits)
+- **Docker Image:** `docker.io/daya0576/beaverhabits:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/daya0576/beaverhabits/wiki)
+- **Issues:** [GitHub Issues](https://github.com/daya0576/beaverhabits/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

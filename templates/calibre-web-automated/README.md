@@ -1,13 +1,16 @@
-# Calibre Web Automated -- Self-Hosted Application
+# Calibre Web Automated
 
-[Calibre Web Automated](https://github.com/crocodilestick/Calibre-Web-Automated) is a self-hosted application available through the Awesome-Selfhosted catalog.
+Self-hosted Calibre Web Automated deployment via Docker, sourced from Awesome-Selfhosted catalog
+
+This template provides a containerized deployment of [Calibre Web Automated](https://github.com/crocodilestick/calibre-web-automated) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,46 +19,94 @@
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8083/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8083](http://localhost:8083) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `calibre-web-automated` | ghcr.io/crocodilestick/calibre-web-automated:latest | Main application service |
+| `calibre-web-automated_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `CALIBRE_WEB_AUTOMATED_PORT` | `8083` | Host port for the service |
+| `CALIBRE_WEB_AUTOMATED_PORT` | `8083` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `calibre-web-automated` | `ghcr.io/crocodilestick/calibre-web-automated:latest` | 8083 | Calibre Web Automated application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f calibre-web-automated
+docker compose logs calibre-web-automated
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `CALIBRE-WEB-AUTOMATED_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec calibre-web-automated ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect calibre-web-automated --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v calibre-web-automated_data:/data -v $(pwd):/backup alpine tar czf /backup/calibre-web-automated-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull calibre-web-automated
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v calibre-web-automated_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/calibre-web-automated-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Awesome-Selfhosted catalog entry: `Calibre Web Automated`
-- Upstream project: https://github.com/crocodilestick/Calibre-Web-Automated
+## Links
+
+- **Project Homepage:** [Calibre Web Automated](https://github.com/crocodilestick/calibre-web-automated)
+- **Docker Image:** `ghcr.io/crocodilestick/calibre-web-automated:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/crocodilestick/calibre-web-automated/wiki)
+- **Issues:** [GitHub Issues](https://github.com/crocodilestick/calibre-web-automated/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

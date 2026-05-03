@@ -1,7 +1,7 @@
 {
   "id": "bookwyrm",
   "name": "Bookwyrm",
-  "description": "Self-hosted Bookwyrm deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Bookwyrm deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

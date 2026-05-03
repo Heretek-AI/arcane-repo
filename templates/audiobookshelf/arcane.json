@@ -1,7 +1,7 @@
 {
   "id": "audiobookshelf",
   "name": "Audiobookshelf",
-  "description": "Self-hosted Audiobookshelf deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Audiobookshelf deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

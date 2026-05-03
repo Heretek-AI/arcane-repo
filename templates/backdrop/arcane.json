@@ -1,7 +1,7 @@
 {
   "id": "backdrop",
   "name": "Backdrop",
-  "description": "Self-hosted Backdrop deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Backdrop deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "backrest",
   "name": "Backrest",
-  "description": "Self-hosted Backrest deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Backrest deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

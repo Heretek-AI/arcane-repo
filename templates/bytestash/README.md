@@ -1,13 +1,16 @@
-# ByteStash -- Self-Hosted Application
+# Bytestash
 
-[ByteStash](https://github.com/jordan-dalby/ByteStash) is a self-hosted application available through the Awesome-Selfhosted catalog.
+Self-hosted Bytestash deployment via Docker, sourced from Awesome-Selfhosted catalog
+
+This template provides a containerized deployment of [Bytestash](https://github.com/jordan-dalby/bytestash) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,46 +19,94 @@
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `bytestash` | ghcr.io/jordan-dalby/bytestash:latest | Main application service |
+| `bytestash_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `BYTESTASH_PORT` | `8080` | Host port for the service |
+| `BYTESTASH_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `bytestash` | `ghcr.io/jordan-dalby/bytestash:latest` | 8080 | ByteStash application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f bytestash
+docker compose logs bytestash
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `BYTESTASH_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec bytestash ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect bytestash --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v bytestash_data:/data -v $(pwd):/backup alpine tar czf /backup/bytestash-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull bytestash
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v bytestash_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/bytestash-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Awesome-Selfhosted catalog entry: `ByteStash`
-- Upstream project: https://github.com/jordan-dalby/ByteStash
+## Links
+
+- **Project Homepage:** [Bytestash](https://github.com/jordan-dalby/bytestash)
+- **Docker Image:** `ghcr.io/jordan-dalby/bytestash:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/jordan-dalby/bytestash/wiki)
+- **Issues:** [GitHub Issues](https://github.com/jordan-dalby/bytestash/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

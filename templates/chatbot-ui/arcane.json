@@ -1,7 +1,7 @@
 {
   "id": "chatbot-ui",
   "name": "Chatbot Ui",
-  "description": "Self-hosted Chatbot Ui deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Chatbot Ui deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

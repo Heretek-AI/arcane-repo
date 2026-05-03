@@ -1,7 +1,7 @@
 {
   "id": "authelia",
   "name": "Authelia",
-  "description": "Self-hosted Authelia deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Authelia deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

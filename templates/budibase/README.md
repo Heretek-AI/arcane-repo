@@ -1,13 +1,16 @@
-# Budibase -- Self-Hosted Application
+# Budibase
 
-Budibase is a self-hosted application available through the Portainer catalog.
+Self-hosted Budibase deployment via Docker
+
+This template provides a containerized deployment of [Budibase](https://github.com/budibase/budibase) using Docker Compose.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
+1. **Clone and configure:**
 
    ```bash
    cp .env.example .env
+   # Edit .env with your configuration
    ```
 
 2. **Start the service:**
@@ -16,45 +19,94 @@ Budibase is a self-hosted application available through the Portainer catalog.
    docker compose up -d
    ```
 
-3. **Access the application:**
+3. **Verify it's running:**
+
+   ```bash
+   docker compose ps
+   curl -s http://localhost:8080/ | head -c 200
+   ```
+
+4. **Access the application:**
 
    Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## Architecture
+
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `budibase` | docker.io/budibase/budibase:latest | Main application service |
+| `budibase_data` | (volume) | Persistent data storage |
+
+Services communicate over a shared Docker network. Data is persisted in named volumes.
+
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
+
+Environment variables (set in `.env`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `BUDIBASE_PORT` | `8080` | Host port for the service |
+| `BUDIBASE_PORT` | `8080` | Configuration variable |
 
-## Services
 
-| Service | Image | Port | Description |
-|---------|-------|------|-------------|
-| `budibase` | `docker.io/budibase/budibase:latest` | 8080 | Budibase application |
+## Troubleshooting
 
-## Managing the Service
-
-**View logs:**
-
+**Container won't start:**
 ```bash
-docker compose logs -f budibase
+docker compose logs budibase
 ```
 
-**Stop the service:**
-
+**Port conflict:**
+Edit `.env` and change `BUDIBASE_PORT` to an available port, then restart:
 ```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec budibase ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect budibase --format='{{json .State.Health}}'
+```
+
+## Backup & Recovery
+
+**Backup:**
+```bash
+# Stop the service
 docker compose down
-```
 
-**Update to the latest version:**
+# Backup the data volume
+docker run --rm -v budibase_data:/data -v $(pwd):/backup alpine tar czf /backup/budibase-backup-$(date +%Y%m%d).tar.gz /data
 
-```bash
-docker compose pull budibase
+# Restart
 docker compose up -d
 ```
 
-## Source
+**Restore:**
+```bash
+docker compose down
+docker run --rm -v budibase_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/budibase-backup.tar.gz -C /"
+docker compose up -d
+```
 
-- Portainer catalog entry: `Budibase`
+## Links
+
+- **Project Homepage:** [Budibase](https://github.com/budibase/budibase)
+- **Docker Image:** `docker.io/budibase/budibase:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/budibase/budibase/wiki)
+- **Issues:** [GitHub Issues](https://github.com/budibase/budibase/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

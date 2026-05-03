@@ -1,7 +1,7 @@
 {
   "id": "adminerevo",
   "name": "Adminerevo",
-  "description": "Self-hosted Adminerevo deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Adminerevo deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

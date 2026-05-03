@@ -1,7 +1,7 @@
 {
   "id": "changedetection",
   "name": "Changedetection",
-  "description": "Self-hosted Changedetection deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Changedetection deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "bitcoin-knots",
   "name": "Bitcoin Knots",
-  "description": "Self-hosted Bitcoin Knots deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Bitcoin Knots deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

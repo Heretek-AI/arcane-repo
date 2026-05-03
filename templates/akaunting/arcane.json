@@ -1,7 +1,7 @@
 {
   "id": "akaunting",
   "name": "Akaunting",
-  "description": "Self-hosted Akaunting deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Akaunting deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

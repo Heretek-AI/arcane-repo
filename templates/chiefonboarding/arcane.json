@@ -1,7 +1,7 @@
 {
   "id": "chiefonboarding",
   "name": "Chiefonboarding",
-  "description": "Self-hosted Chiefonboarding deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Chiefonboarding deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

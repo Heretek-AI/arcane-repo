@@ -1,176 +1,112 @@
-# Activepieces — Open-Source Workflow Automation
+# Activepieces
 
-[Activepieces](https://www.activepieces.com) is an open-source workflow automation platform with 400+ app integrations, a visual drag-and-drop editor, and built-in AI agent capabilities. It's a self-hosted alternative to Zapier, Make, and n8n — designed for teams that want full control over their automation infrastructure and data.
+Open-source workflow automation platform with 400+ app integrations, visual drag-and-drop editor, and AI agent capabilities
 
-This template runs Activepieces as a single container with embedded SQLite storage — no external database required.
+This template provides a containerized deployment of [Activepieces](https://github.com/activepieces/activepieces) using Docker Compose.
 
 ## Quick Start
 
-1. **Start Activepieces:**
+1. **Clone and configure:**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Start the service:**
 
    ```bash
    docker compose up -d
    ```
 
-2. **Access the UI:**
-
-   Open [http://localhost:8080](http://localhost:8080) in your browser.
-
-3. **Create your account:**
-
-   On first launch you'll be prompted to create an admin account. This account owns the workspace and all flows.
-
-4. **Verify the service:**
+3. **Verify it's running:**
 
    ```bash
+   docker compose ps
    curl -s http://localhost:8080/ | head -c 200
    ```
 
-   A successful response returns HTML for the Activepieces frontend.
+4. **Access the application:**
+
+   Open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## Architecture
 
-| Component         | Description                                                      |
-|-------------------|------------------------------------------------------------------|
-| `activepieces`    | The Activepieces application server — serves the UI, API, flow engine, and webhook receiver all in one container. |
-| `activepieces_data` | Named Docker volume mounted at `/data` — stores the SQLite database, flow state, and uploaded files. |
+| Component | Image | Purpose |
+|-----------|-------|---------|
+| `activepieces` | ghcr.io/activepieces/activepieces:latest | Main application service |
+| `activepieces_data` | (volume) | Persistent data storage |
 
-The stack is a single service with no external dependencies. Activepieces uses an embedded SQLite database stored in the `activepieces_data` volume, so there's no PostgreSQL or Redis to manage.
+Services communicate over a shared Docker network. Data is persisted in named volumes.
 
 ## Configuration
 
-Copy `.env.example` to `.env` and edit:
+## Configuration
 
-```bash
-cp .env.example .env
-```
+Environment variables (set in `.env`):
 
-### Environment Variables
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ACTIVEPIECES_PORT` | `8080` | Configuration variable |
 
-| Variable            | Default  | Description                              |
-|---------------------|----------|------------------------------------------|
-| `ACTIVEPIECES_PORT` | `8080`   | Host port for the Activepieces web UI and API. |
-
-## Adding Environment Variables
-
-Activepieces supports additional environment variables for production deployments. You can add these to your `.env` file and reference them in `docker-compose.yml`:
-
-| Variable                  | Description                                                       |
-|---------------------------|-------------------------------------------------------------------|
-| `AP_ENGINE_EXECUTABLE_PATH` | Custom path to the flow engine executable (rarely needed)       |
-| `AP_ENCRYPTION_KEY`       | Encryption key for sensitive data (credentials, connections). **Set this before first run in production** — changing it later makes existing encrypted data unreadable. Generate with `openssl rand -hex 32`. |
-| `AP_JWT_SECRET`           | JWT signing secret. **Set this before first run in production** — changing it invalidates all active sessions. Generate with `openssl rand -hex 32`. |
-| `AP_WEBHOOK_URL`          | Public URL for webhook callbacks (e.g., `https://activepieces.example.com`). Required if you're behind a reverse proxy. |
-| `AP_POSTGRES_DATABASE`    | PostgreSQL database name (for external DB migration — see below). |
-| `AP_POSTGRES_HOST`        | PostgreSQL host (for external DB migration — see below).          |
-| `AP_POSTGRES_PORT`        | PostgreSQL port (default: `5432`).                                |
-| `AP_POSTGRES_USERNAME`    | PostgreSQL username.                                              |
-| `AP_POSTGRES_PASSWORD`    | PostgreSQL password.                                              |
-| `AP_REDIS_URL`            | Redis URL (e.g., `redis://redis:6379`). For queue management in high-traffic deployments. |
-
-To pass these through, add them to your `.env` and add an `environment:` block to `docker-compose.yml`:
-
-```yaml
-services:
-  activepieces:
-    environment:
-      - AP_ENCRYPTION_KEY=${AP_ENCRYPTION_KEY}
-      - AP_JWT_SECRET=${AP_JWT_SECRET}
-      - AP_WEBHOOK_URL=${AP_WEBHOOK_URL}
-```
-
-## Health Check
-
-The container includes a built-in health check that pings `http://localhost:8080/` every 30 seconds. Check status with:
-
-```bash
-docker compose ps
-```
-
-A healthy container shows `(healthy)` in the status column. You can also verify manually:
-
-```bash
-curl -sf http://localhost:8080/ > /dev/null && echo "healthy" || echo "unhealthy"
-```
-
-## Webhooks
-
-Activepieces flows can be triggered via incoming webhooks. Each flow with a webhook trigger gets a unique URL like:
-
-```
-http://localhost:8080/api/v1/webhooks/<flow-id>
-```
-
-If you're running behind a reverse proxy or need public webhook access, set `AP_WEBHOOK_URL` to your public domain (e.g., `https://activepieces.example.com`) so generated webhook URLs point to the correct external address.
-
-## Upgrading
-
-```bash
-# Pull the latest image
-docker compose pull
-
-# Recreate the container
-docker compose up -d
-```
-
-Activepieces runs automatic database migrations on startup. Check the [Activepieces changelog](https://github.com/activepieces/activepieces/releases) for breaking changes between major versions before upgrading.
 
 ## Troubleshooting
 
-| Symptom                                  | Likely Cause                                  | Fix                                                       |
-|------------------------------------------|-----------------------------------------------|-----------------------------------------------------------|
-| Port 8080 already in use                 | Another service occupies the port             | Change `ACTIVEPIECES_PORT` in `.env` to a free port        |
-| Container shows `unhealthy` immediately  | Still starting up — health check has 30s grace| Wait 30–60 seconds, then re-check with `docker compose ps` |
-| Flows fail after encryption key change   | `AP_ENCRYPTION_KEY` changed between runs      | Restore the original key — encrypted credentials are lost otherwise |
-| Session invalidation after restart       | `AP_JWT_SECRET` not set or changed            | Set a fixed `AP_JWT_SECRET` in `.env` before first run     |
-| Webhooks return 404                      | Flow not published or webhook URL mismatch    | Publish the flow and verify `AP_WEBHOOK_URL` matches your public address |
-| Slow flow execution                      | SQLite under heavy load                       | Migrate to PostgreSQL for production traffic (see Activepieces docs) |
+**Container won't start:**
+```bash
+docker compose logs activepieces
+```
+
+**Port conflict:**
+Edit `.env` and change `ACTIVEPIECES_PORT` to an available port, then restart:
+```bash
+docker compose down && docker compose up -d
+```
+
+**Permission errors:**
+Ensure the Docker user has write access to the data volume:
+```bash
+docker compose exec activepieces ls -la /data
+```
+
+**Health check failing:**
+```bash
+docker compose ps  # Check STATUS column
+docker inspect activepieces --format='{{json .State.Health}}'
+```
 
 ## Backup & Recovery
 
-### Backup
-
-All persistent data lives in the `activepieces_data` volume. Back it up with:
-
+**Backup:**
 ```bash
-# Stop the container to ensure consistent state
-docker compose stop activepieces
+# Stop the service
+docker compose down
 
-# Create a backup archive
-docker run --rm \
-  -v activepieces_data:/source:ro \
-  -v $(pwd):/backup \
-  alpine tar czf /backup/activepieces-backup-$(date +%Y%m%d).tar.gz -C /source .
+# Backup the data volume
+docker run --rm -v activepieces_data:/data -v $(pwd):/backup alpine tar czf /backup/activepieces-backup-$(date +%Y%m%d).tar.gz /data
 
-# Restart the container
-docker compose start activepieces
+# Restart
+docker compose up -d
 ```
 
-### Restore
-
+**Restore:**
 ```bash
-# Stop the container
-docker compose stop activepieces
-
-# Restore from backup
-docker run --rm \
-  -v activepieces_data:/target \
-  -v $(pwd):/backup \
-  alpine sh -c "rm -rf /target/* && tar xzf /backup/activepieces-backup-YYYYMMDD.tar.gz -C /target"
-
-# Restart the container
-docker compose start activepieces
+docker compose down
+docker run --rm -v activepieces_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/activepieces-backup.tar.gz -C /"
+docker compose up -d
 ```
-
-Replace `YYYYMMDD` with the actual backup date.
-
-### Production Recommendation
-
-For production workflows with meaningful automation volume, consider migrating to an external PostgreSQL database. This gives you point-in-time recovery, replication, and better concurrency. See the [Activepieces documentation](https://www.activepieces.com/docs) for migration instructions.
 
 ## Links
 
-- **Original project:** [github.com/activepieces/activepieces](https://github.com/activepieces/activepieces)
-- **Documentation:** [activepieces.com/docs](https://www.activepieces.com/docs)
-- **Community:** [community.activepieces.com](https://community.activepieces.com)
-- **Docker image:** [ghcr.io/activepieces/activepieces](https://ghcr.io/activepieces/activepieces)
+- **Project Homepage:** [Activepieces](https://github.com/activepieces/activepieces)
+- **Docker Image:** `ghcr.io/activepieces/activepieces:latest`
+- **Documentation:** [GitHub Wiki](https://github.com/activepieces/activepieces/wiki)
+- **Issues:** [GitHub Issues](https://github.com/activepieces/activepieces/issues)
+
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "ampache",
   "name": "Ampache",
-  "description": "Self-hosted Ampache deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Ampache deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

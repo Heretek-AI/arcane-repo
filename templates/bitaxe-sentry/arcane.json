@@ -1,7 +1,7 @@
 {
   "id": "bitaxe-sentry",
   "name": "Bitaxe Sentry",
-  "description": "Self-hosted Bitaxe Sentry deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Bitaxe Sentry deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

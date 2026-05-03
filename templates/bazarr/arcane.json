@@ -1,7 +1,7 @@
 {
   "id": "bazarr",
   "name": "Bazarr",
-  "description": "Self-hosted Bazarr deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Bazarr deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "cinny",
   "name": "Cinny",
-  "description": "Self-hosted Cinny deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Cinny deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

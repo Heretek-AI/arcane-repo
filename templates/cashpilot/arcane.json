@@ -1,7 +1,7 @@
 {
   "id": "cashpilot",
   "name": "Cashpilot",
-  "description": "Self-hosted Cashpilot deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Cashpilot deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "btc-rpc-explorer",
   "name": "Btc Rpc Explorer",
-  "description": "Self-hosted Btc Rpc Explorer deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Btc Rpc Explorer deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

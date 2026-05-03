@@ -1,7 +1,7 @@
 {
   "id": "chantools",
   "name": "Chantools",
-  "description": "Self-hosted Chantools deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Chantools deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

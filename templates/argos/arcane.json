@@ -1,7 +1,7 @@
 {
   "id": "argos",
   "name": "Argos",
-  "description": "Self-hosted Argos deployment via Docker, sourced from Yunohost catalog",
+  "description": "Self-hosted Argos deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

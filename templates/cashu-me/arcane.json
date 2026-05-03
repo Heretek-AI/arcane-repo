@@ -1,7 +1,7 @@
 {
   "id": "cashu-me",
   "name": "Cashu Me",
-  "description": "Self-hosted Cashu Me deployment via Docker, sourced from Umbrel catalog",
+  "description": "Self-hosted Cashu Me deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

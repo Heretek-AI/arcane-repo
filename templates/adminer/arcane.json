@@ -1,7 +1,7 @@
 {
   "id": "adminer",
   "name": "Adminer",
-  "description": "Self-hosted Adminer deployment via Docker, sourced from YunoHost catalog",
+  "description": "Self-hosted Adminer deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

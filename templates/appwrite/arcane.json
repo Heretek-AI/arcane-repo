@@ -1,7 +1,7 @@
 {
   "id": "appwrite",
   "name": "Appwrite",
-  "description": "Self-hosted Appwrite deployment via Docker, sourced from Portainer catalog",
+  "description": "Self-hosted Appwrite deployment via Docker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

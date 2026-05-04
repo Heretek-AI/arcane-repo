@@ -18,9 +18,7 @@
     "yunohost_app": "invoice-ninja",
     "stars": null,
     "probable_images": [
-      "docker.io/invoice-ninja/invoice-ninja:latest",
-      "docker.io/library/invoice-ninja:latest",
-      "ghcr.io/invoice-ninja/invoice-ninja:latest"
+      "docker.io/invoiceninja/invoiceninja:latest"
     ]
   },
   {
@@ -65,9 +63,7 @@
     "yunohost_app": "snipeit",
     "stars": null,
     "probable_images": [
-      "docker.io/library/snipeit:latest",
-      "docker.io/snipeit/snipeit:latest",
-      "ghcr.io/snipeit/snipeit:latest"
+      "docker.io/snipe/snipe-it:latest"
     ]
   },
   {
@@ -161,9 +157,7 @@
     "yunohost_app": "nodered",
     "stars": null,
     "probable_images": [
-      "docker.io/library/nodered:latest",
-      "docker.io/nodered/nodered:latest",
-      "ghcr.io/nodered/nodered:latest"
+      "docker.io/nodered/node-red:latest"
     ]
   },
   {
@@ -209,9 +203,7 @@
     "yunohost_app": "motioneye",
     "stars": null,
     "probable_images": [
-      "docker.io/library/motioneye:latest",
-      "docker.io/motioneye/motioneye:latest",
-      "ghcr.io/motioneye/motioneye:latest"
+      "docker.io/ccrisan/motioneye:latest"
     ]
   },
   {
@@ -233,9 +225,7 @@
     "yunohost_app": "focalboard",
     "stars": null,
     "probable_images": [
-      "docker.io/library/focalboard:latest",
-      "docker.io/focalboard/focalboard:latest",
-      "ghcr.io/focalboard/focalboard:latest"
+      "docker.io/mattermost/focalboard:latest"
     ]
   },
   {
@@ -245,9 +235,7 @@
     "yunohost_app": "overleaf",
     "stars": null,
     "probable_images": [
-      "docker.io/library/overleaf:latest",
-      "docker.io/overleaf/overleaf:latest",
-      "ghcr.io/overleaf/overleaf:latest"
+      "docker.io/sharelatex/sharelatex:latest"
     ]
   },
   {
@@ -281,9 +269,7 @@
     "yunohost_app": "easyappointments",
     "stars": null,
     "probable_images": [
-      "docker.io/library/easyappointments:latest",
-      "docker.io/easyappointments/easyappointments:latest",
-      "ghcr.io/easyappointments/easyappointments:latest"
+      "docker.io/alextselegidis/easyappointments:latest"
     ]
   },
   {
@@ -293,9 +279,8 @@
     "yunohost_app": "koel",
     "stars": null,
     "probable_images": [
-      "docker.io/library/koel:latest",
       "docker.io/koel/koel:latest",
-      "ghcr.io/koel/koel:latest"
+      "docker.io/phanan/koel:latest"
     ]
   },
   {
@@ -317,9 +302,7 @@
     "yunohost_app": "stremio",
     "stars": null,
     "probable_images": [
-      "docker.io/library/stremio:latest",
-      "docker.io/stremio/stremio:latest",
-      "ghcr.io/stremio/stremio:latest"
+      "docker.io/stremio/server:latest"
     ]
   },
   {
@@ -341,9 +324,7 @@
     "yunohost_app": "node_exporter",
     "stars": null,
     "probable_images": [
-      "docker.io/library/node_exporter:latest",
-      "docker.io/node_exporter/node_exporter:latest",
-      "ghcr.io/node_exporter/node_exporter:latest"
+      "docker.io/prom/node-exporter:latest"
     ]
   },
   {
@@ -353,9 +334,7 @@
     "yunohost_app": "influxdb_v2",
     "stars": null,
     "probable_images": [
-      "docker.io/library/influxdb_v2:latest",
-      "docker.io/influxdb_v2/influxdb_v2:latest",
-      "ghcr.io/influxdb_v2/influxdb_v2:latest"
+      "docker.io/library/influxdb:latest"
     ]
   },
   {
@@ -377,9 +356,7 @@
     "yunohost_app": "elasticsearch7",
     "stars": null,
     "probable_images": [
-      "docker.io/library/elasticsearch7:latest",
-      "docker.io/elasticsearch7/elasticsearch7:latest",
-      "ghcr.io/elasticsearch7/elasticsearch7:latest"
+      "docker.io/library/elasticsearch:latest"
     ]
   },
   {
@@ -389,9 +366,7 @@
     "yunohost_app": "rocketchat",
     "stars": null,
     "probable_images": [
-      "docker.io/library/rocketchat:latest",
-      "docker.io/rocketchat/rocketchat:latest",
-      "ghcr.io/rocketchat/rocketchat:latest"
+      "docker.io/rocketchat/rocket.chat:latest"
     ]
   },
   {
@@ -413,9 +388,7 @@
     "yunohost_app": "dendrite",
     "stars": null,
     "probable_images": [
-      "docker.io/library/dendrite:latest",
-      "docker.io/dendrite/dendrite:latest",
-      "ghcr.io/dendrite/dendrite:latest"
+      "docker.io/matrixdotorg/dendrite-monolith:latest"
     ]
   },
   {
@@ -437,9 +410,7 @@
     "yunohost_app": "cockpit",
     "stars": null,
     "probable_images": [
-      "docker.io/library/cockpit:latest",
-      "docker.io/cockpit/cockpit:latest",
-      "ghcr.io/cockpit/cockpit:latest"
+      "docker.io/agentejo/cockpit:latest"
     ]
   },
   {
@@ -473,9 +444,7 @@
     "yunohost_app": null,
     "stars": null,
     "probable_images": [
-      "docker.io/funkwhale/funkwhale:latest",
-      "docker.io/library/funkwhale:latest",
-      "ghcr.io/funkwhale/funkwhale:latest"
+      "docker.io/funkwhale/all-in-one:latest"
     ]
   }
 ]

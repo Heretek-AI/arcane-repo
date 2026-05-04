@@ -27,6 +27,7 @@ SECTION_PATTERNS = [
     (re.compile(r"^### Portainer"), "portainer"),
     (re.compile(r"^### Umbrel"), "umbrel"),
     (re.compile(r"^### awesome-selfhosted"), "awesome-selfhosted"),
+    (re.compile(r"^### M012"), "m012"),
     (re.compile(r"^### GitHub"), "priority"),  # treat GitHub section same as priority
 ]
 
@@ -45,8 +46,10 @@ YUNOHOST_APP_RE = re.compile(r"apps\.yunohost\.org/app/([^/\s]+)")
 # Matches Umbrel app URL
 UMBREL_APP_RE = re.compile(r"github\.com/getumbrel/umbrel-apps/tree/master/([^/\s]+)")
 
-# Matches explicit image reference: | image: xxx or `image: xxx`
+# Matches explicit image reference: | image: xxx (used by portainer)
 EXPLICIT_IMAGE_RE = re.compile(r"\|\s*image:\s*(\S+)")
+# Matches M012 explicit image reference: Image: `ref`
+M012_IMAGE_RE = re.compile(r"[Ii]mage:\s*`([^`]+)`")
 
 # Matches Source Code markdown link: [Source Code](https://github.com/...)
 SOURCE_CODE_RE = re.compile(r"\[Source Code\]\((https?://[^)]+)\)")
@@ -155,6 +158,27 @@ def _priority_images(github_url: Optional[str]) -> list[str]:
     if not github_url:
         return []
     return _github_images(github_url)
+
+
+def _m012_images(name: str, raw_description: str, github_url: Optional[str]) -> list[str]:
+    """Generate probable Docker image names for M012 candidates.
+
+    M012 entries have explicit Image: `ref` metadata, which is the primary source.
+    Fallback to GitHub-derived images.
+    """
+    # Check for explicit image ref first (Image: `ref`)
+    explicit = M012_IMAGE_RE.search(raw_description)
+    if explicit:
+        image_ref = explicit.group(1)
+        if ":" in image_ref:
+            return [image_ref]
+        return [f"{image_ref}:latest"]
+
+    # Fallback: derive from GitHub URL
+    if github_url:
+        return _github_images(github_url)
+
+    return []
 
 
 def _github_images(github_url: str) -> list[str]:
@@ -290,6 +314,16 @@ def parse_candidates(filepath: str) -> list[dict]:
             if not github_url:
                 github_url = _extract_any_github_url(all_text)
 
+        elif source == "m012":
+            # M012 entries have *https://github.com/...* on the next line
+            for el in entry_continuation:
+                url_match = ITALIC_URL_RE.search(el)
+                if url_match and GITHUB_REPO_RE.search(url_match.group(1)):
+                    github_url = url_match.group(1).rstrip("*").rstrip(")")
+                    break
+            if not github_url:
+                github_url = _extract_any_github_url(all_text)
+
         # --- Extract YunoHost app name ---
         yunohost_app: Optional[str] = None
         if source == "yunohost":
@@ -326,6 +360,8 @@ def parse_candidates(filepath: str) -> list[dict]:
             images = _umbrel_images(name, umbrel_app, github_url)
         elif source == "awesome-selfhosted":
             images = _awesome_selfhosted_images(name, github_url)
+        elif source == "m012":
+            images = _m012_images(name, all_text, github_url)
         else:
             images = []
 

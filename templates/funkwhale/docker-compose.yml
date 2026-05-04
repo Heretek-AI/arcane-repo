@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  funkwhale:
+    image: docker.io/funkwhale/all-in-one:latest
+    container_name: funkwhale
+    hostname: funkwhale
+    ports:
+      - "${FUNKWHALE_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - funkwhale_data:/data
+
+volumes:
+  funkwhale_data:
+    name: funkwhale_data

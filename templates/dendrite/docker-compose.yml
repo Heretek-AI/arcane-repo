@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dendrite:
+    image: docker.io/matrixdotorg/dendrite-monolith:latest
+    container_name: dendrite
+    hostname: dendrite
+    ports:
+      - "${DENDRITE_PORT:-8008}:8008"
+    restart: unless-stopped
+    volumes:
+      - dendrite_data:/data
+
+volumes:
+  dendrite_data:
+    name: dendrite_data

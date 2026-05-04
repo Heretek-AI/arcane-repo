@@ -1,0 +1,12 @@
+{
+  "id": "our-shopping-list",
+  "name": "Our Shopping List",
+  "description": "Our Shopping List — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "business",
+    "e-commerce",
+    "self-hosted"
+  ]
+}

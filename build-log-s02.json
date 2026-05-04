@@ -1,6 +1,6 @@
 [
   {
-    "slug": "abantecart-yunohost",
+    "slug": "abantecart",
     "status": "created",
     "image": "docker.io/abantecart/abantecart:latest",
     "port": 80,
@@ -9,7 +9,7 @@
     "error_message": ""
   },
   {
-    "slug": "invoice-ninja-umbrel",
+    "slug": "invoice-ninja",
     "status": "created",
     "image": "docker.io/invoiceninja/invoiceninja:latest",
     "port": 80,
@@ -18,7 +18,7 @@
     "error_message": ""
   },
   {
-    "slug": "satsale-umbrel",
+    "slug": "satsale",
     "status": "created",
     "image": "docker.io/satsale/satsale:latest",
     "port": 5000,
@@ -27,7 +27,7 @@
     "error_message": ""
   },
   {
-    "slug": "our-shopping-list-awesome",
+    "slug": "our-shopping-list",
     "status": "created",
     "image": "docker.io/nanawel/our-shopping-list:latest",
     "port": 80,
@@ -36,7 +36,7 @@
     "error_message": ""
   },
   {
-    "slug": "snipeit-yunohost",
+    "slug": "snipeit",
     "status": "created",
     "image": "docker.io/snipe/snipe-it:latest",
     "port": 80,
@@ -45,7 +45,7 @@
     "error_message": ""
   },
   {
-    "slug": "nodered-yunohost",
+    "slug": "nodered",
     "status": "created",
     "image": "docker.io/nodered/node-red:latest",
     "port": 1880,
@@ -54,7 +54,7 @@
     "error_message": ""
   },
   {
-    "slug": "motioneye-yunohost",
+    "slug": "motioneye",
     "status": "created",
     "image": "docker.io/ccrisan/motioneye:latest",
     "port": 8765,
@@ -63,7 +63,7 @@
     "error_message": ""
   },
   {
-    "slug": "focalboard-yunohost",
+    "slug": "focalboard",
     "status": "created",
     "image": "docker.io/mattermost/focalboard:latest",
     "port": 8000,
@@ -72,7 +72,7 @@
     "error_message": ""
   },
   {
-    "slug": "overleaf-yunohost",
+    "slug": "overleaf",
     "status": "created",
     "image": "docker.io/sharelatex/sharelatex:latest",
     "port": 80,
@@ -81,7 +81,7 @@
     "error_message": ""
   },
   {
-    "slug": "itflow-yunohost",
+    "slug": "itflow",
     "status": "created",
     "image": "docker.io/itflow/itflow:latest",
     "port": 80,
@@ -90,7 +90,7 @@
     "error_message": ""
   },
   {
-    "slug": "easyappointments-yunohost",
+    "slug": "easyappointments",
     "status": "created",
     "image": "docker.io/alextselegidis/easyappointments:latest",
     "port": 80,
@@ -99,7 +99,7 @@
     "error_message": ""
   },
   {
-    "slug": "koel-yunohost",
+    "slug": "koel",
     "status": "created",
     "image": "docker.io/phanan/koel:latest",
     "port": 80,
@@ -108,7 +108,7 @@
     "error_message": ""
   },
   {
-    "slug": "stremio-yunohost",
+    "slug": "stremio",
     "status": "created",
     "image": "docker.io/stremio/server:latest",
     "port": 11470,
@@ -117,7 +117,7 @@
     "error_message": ""
   },
   {
-    "slug": "node-exporter-yunohost",
+    "slug": "node-exporter",
     "status": "created",
     "image": "docker.io/prom/node-exporter:latest",
     "port": 9100,
@@ -126,7 +126,7 @@
     "error_message": ""
   },
   {
-    "slug": "influxdb-v2-yunohost",
+    "slug": "influxdb-v2",
     "status": "created",
     "image": "docker.io/library/influxdb:latest",
     "port": 8086,
@@ -135,7 +135,7 @@
     "error_message": ""
   },
   {
-    "slug": "mongo-express-yunohost",
+    "slug": "mongo-express",
     "status": "created",
     "image": "docker.io/library/mongo-express:latest",
     "port": 8081,
@@ -144,7 +144,7 @@
     "error_message": ""
   },
   {
-    "slug": "elasticsearch7-yunohost",
+    "slug": "elasticsearch7",
     "status": "created",
     "image": "docker.io/library/elasticsearch:latest",
     "port": 9200,
@@ -153,7 +153,7 @@
     "error_message": ""
   },
   {
-    "slug": "rocketchat-yunohost",
+    "slug": "rocketchat",
     "status": "created",
     "image": "docker.io/rocketchat/rocket.chat:latest",
     "port": 3000,
@@ -162,7 +162,7 @@
     "error_message": ""
   },
   {
-    "slug": "dendrite-yunohost",
+    "slug": "dendrite",
     "status": "created",
     "image": "docker.io/matrixdotorg/dendrite-monolith:latest",
     "port": 8008,
@@ -171,7 +171,7 @@
     "error_message": ""
   },
   {
-    "slug": "cockpit-yunohost",
+    "slug": "cockpit",
     "status": "created",
     "image": "docker.io/agentejo/cockpit:latest",
     "port": 80,
@@ -180,7 +180,7 @@
     "error_message": ""
   },
   {
-    "slug": "funkwhale-portainer",
+    "slug": "funkwhale",
     "status": "created",
     "image": "docker.io/funkwhale/all-in-one:latest",
     "port": 80,

@@ -1,0 +1,12 @@
+{
+  "id": "mongo-express",
+  "name": "mongo-express",
+  "description": "mongo-express — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "monitoring",
+    "database",
+    "self-hosted"
+  ]
+}

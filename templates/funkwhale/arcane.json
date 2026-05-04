@@ -1,0 +1,12 @@
+{
+  "id": "funkwhale",
+  "name": "Funkwhale",
+  "description": "Funkwhale — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "media",
+    "entertainment",
+    "self-hosted"
+  ]
+}

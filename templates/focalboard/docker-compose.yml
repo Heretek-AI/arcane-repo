@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  focalboard:
+    image: docker.io/mattermost/focalboard:latest
+    container_name: focalboard
+    hostname: focalboard
+    ports:
+      - "${FOCALBOARD_PORT:-8000}:8000"
+    restart: unless-stopped
+    volumes:
+      - focalboard_data:/data
+
+volumes:
+  focalboard_data:
+    name: focalboard_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  stremio:
+    image: docker.io/stremio/server:latest
+    container_name: stremio
+    hostname: stremio
+    ports:
+      - "${STREMIO_PORT:-11470}:11470"
+    restart: unless-stopped
+    volumes:
+      - stremio_data:/data
+
+volumes:
+  stremio_data:
+    name: stremio_data

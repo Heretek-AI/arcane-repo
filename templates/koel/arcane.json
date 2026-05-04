@@ -1,0 +1,12 @@
+{
+  "id": "koel",
+  "name": "koel",
+  "description": "koel — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "media",
+    "entertainment",
+    "self-hosted"
+  ]
+}

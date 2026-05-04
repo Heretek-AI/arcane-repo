@@ -1,0 +1,12 @@
+{
+  "id": "nodered",
+  "name": "nodered",
+  "description": "nodered — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "automation",
+    "iot",
+    "self-hosted"
+  ]
+}

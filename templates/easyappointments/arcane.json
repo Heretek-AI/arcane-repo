@@ -1,0 +1,12 @@
+{
+  "id": "easyappointments",
+  "name": "easyappointments",
+  "description": "easyappointments — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "business",
+    "e-commerce",
+    "self-hosted"
+  ]
+}

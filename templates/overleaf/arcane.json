@@ -1,0 +1,12 @@
+{
+  "id": "overleaf",
+  "name": "overleaf",
+  "description": "overleaf — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "productivity",
+    "collaboration",
+    "self-hosted"
+  ]
+}

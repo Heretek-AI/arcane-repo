@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  easyappointments:
+    image: docker.io/alextselegidis/easyappointments:latest
+    container_name: easyappointments
+    hostname: easyappointments
+    ports:
+      - "${EASYAPPOINTMENTS_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - easyappointments_data:/data
+
+volumes:
+  easyappointments_data:
+    name: easyappointments_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  motioneye:
+    image: docker.io/ccrisan/motioneye:latest
+    container_name: motioneye
+    hostname: motioneye
+    ports:
+      - "${MOTIONEYE_PORT:-8765}:8765"
+    restart: unless-stopped
+    volumes:
+      - motioneye_data:/data
+
+volumes:
+  motioneye_data:
+    name: motioneye_data

@@ -1,0 +1,12 @@
+{
+  "id": "elasticsearch7",
+  "name": "elasticsearch7",
+  "description": "elasticsearch7 — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "monitoring",
+    "database",
+    "self-hosted"
+  ]
+}

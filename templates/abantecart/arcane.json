@@ -1,0 +1,12 @@
+{
+  "id": "abantecart",
+  "name": "abantecart",
+  "description": "abantecart — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "business",
+    "e-commerce",
+    "self-hosted"
+  ]
+}

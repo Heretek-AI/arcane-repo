@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  itflow:
+    image: docker.io/itflow/itflow:latest
+    container_name: itflow
+    hostname: itflow
+    ports:
+      - "${ITFLOW_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - itflow_data:/data
+
+volumes:
+  itflow_data:
+    name: itflow_data

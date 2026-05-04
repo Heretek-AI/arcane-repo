@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  snipeit:
+    image: docker.io/snipe/snipe-it:latest
+    container_name: snipeit
+    hostname: snipeit
+    ports:
+      - "${SNIPEIT_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - snipeit_data:/data
+
+volumes:
+  snipeit_data:
+    name: snipeit_data

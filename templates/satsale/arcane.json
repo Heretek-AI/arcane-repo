@@ -1,0 +1,13 @@
+{
+  "id": "satsale",
+  "name": "satsale",
+  "description": "satsale — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "business",
+    "e-commerce",
+    "self-hosted",
+    "bitcoin"
+  ]
+}

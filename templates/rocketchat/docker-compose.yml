@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rocketchat:
+    image: docker.io/rocketchat/rocket.chat:latest
+    container_name: rocketchat
+    hostname: rocketchat
+    ports:
+      - "${ROCKETCHAT_PORT:-3000}:3000"
+    restart: unless-stopped
+    volumes:
+      - rocketchat_data:/data
+
+volumes:
+  rocketchat_data:
+    name: rocketchat_data

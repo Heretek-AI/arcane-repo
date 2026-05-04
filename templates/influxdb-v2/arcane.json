@@ -1,0 +1,12 @@
+{
+  "id": "influxdb-v2",
+  "name": "influxdb_v2",
+  "description": "influxdb_v2 — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "monitoring",
+    "database",
+    "self-hosted"
+  ]
+}

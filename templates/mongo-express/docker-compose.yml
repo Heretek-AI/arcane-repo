@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongo-express:
+    image: docker.io/library/mongo-express:latest
+    container_name: mongo-express
+    hostname: mongo-express
+    ports:
+      - "${MONGO_EXPRESS_PORT:-8081}:8081"
+    restart: unless-stopped
+    volumes:
+      - mongo-express_data:/data
+
+volumes:
+  mongo-express_data:
+    name: mongo-express_data

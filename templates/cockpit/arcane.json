@@ -1,0 +1,12 @@
+{
+  "id": "cockpit",
+  "name": "cockpit",
+  "description": "cockpit — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "communication",
+    "productivity",
+    "self-hosted"
+  ]
+}

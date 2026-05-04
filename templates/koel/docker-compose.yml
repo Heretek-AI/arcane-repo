@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  koel:
+    image: docker.io/phanan/koel:latest
+    container_name: koel
+    hostname: koel
+    ports:
+      - "${KOEL_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - koel_data:/data
+
+volumes:
+  koel_data:
+    name: koel_data

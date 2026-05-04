@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  abantecart:
+    image: docker.io/abantecart/abantecart:latest
+    container_name: abantecart
+    hostname: abantecart
+    ports:
+      - "${ABANTECART_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - abantecart_data:/data
+
+volumes:
+  abantecart_data:
+    name: abantecart_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  overleaf:
+    image: docker.io/sharelatex/sharelatex:latest
+    container_name: overleaf
+    hostname: overleaf
+    ports:
+      - "${OVERLEAF_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - overleaf_data:/data
+
+volumes:
+  overleaf_data:
+    name: overleaf_data

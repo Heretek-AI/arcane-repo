@@ -38,7 +38,8 @@ const KNOWN_SOURCES = [
   'portainer',
   'umbrel',
   'awesome-selfhosted',
-  'priority'
+  'priority',
+  'm012'
 ];
 
 // ── CLI flag parsing ───────────────────────────────────────────────────

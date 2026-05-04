@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lemonldap-ng:
+    image: docker.io/lemonldapng/lemonldap-ng:latest
+    container_name: lemonldap-ng
+    hostname: lemonldap-ng
+    ports:
+      - "${LEMONLDAP_NG_PORT:-80}:80"
+    restart: unless-stopped
+    volumes:
+      - lemonldap-ng_data:/data
+
+volumes:
+  lemonldap-ng_data:
+    name: lemonldap-ng_data

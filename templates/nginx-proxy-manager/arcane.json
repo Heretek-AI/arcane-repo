@@ -1,0 +1,11 @@
+{
+  "id": "nginx-proxy-manager",
+  "name": "Nginx Proxy Manager",
+  "description": "Nginx Proxy Manager — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "devops",
+    "infrastructure"
+  ]
+}

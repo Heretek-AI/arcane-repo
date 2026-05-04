@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  supertokens:
+    image: docker.io/supertokens/supertokens-postgresql:latest
+    container_name: supertokens
+    hostname: supertokens
+    ports:
+      - "${SUPERTOKENS_PORT:-3567}:3567"
+    restart: unless-stopped
+    volumes:
+      - supertokens_data:/data
+
+volumes:
+  supertokens_data:
+    name: supertokens_data

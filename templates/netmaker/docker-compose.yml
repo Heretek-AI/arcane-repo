@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  netmaker:
+    image: docker.io/gravitl/netmaker:latest
+    container_name: netmaker
+    hostname: netmaker
+    ports:
+      - "${NETMAKER_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - netmaker_data:/data
+
+volumes:
+  netmaker_data:
+    name: netmaker_data

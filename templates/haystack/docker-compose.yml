@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  haystack:
+    image: docker.io/deepset/haystack:latest
+    container_name: haystack
+    hostname: haystack
+    ports:
+      - "${HAYSTACK_PORT:-8000}:8000"
+    restart: unless-stopped
+    volumes:
+      - haystack_data:/data
+
+volumes:
+  haystack_data:
+    name: haystack_data

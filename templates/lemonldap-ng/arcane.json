@@ -1,0 +1,11 @@
+{
+  "id": "lemonldap-ng",
+  "name": "LemonLDAP::NG",
+  "description": "LemonLDAP::NG — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "identity",
+    "authentication"
+  ]
+}

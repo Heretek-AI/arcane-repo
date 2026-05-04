@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  keycloak:
+    image: docker.io/keycloak/keycloak:latest
+    container_name: keycloak
+    hostname: keycloak
+    ports:
+      - "${KEYCLOAK_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - keycloak_data:/data
+
+volumes:
+  keycloak_data:
+    name: keycloak_data

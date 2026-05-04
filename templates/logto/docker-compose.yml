@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  logto:
+    image: docker.io/svhd/logto:latest
+    container_name: logto
+    hostname: logto
+    ports:
+      - "${LOGTO_PORT:-3001}:3001"
+    restart: unless-stopped
+    volumes:
+      - logto_data:/data
+
+volumes:
+  logto_data:
+    name: logto_data

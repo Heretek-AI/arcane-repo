@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  llamaindex:
+    image: docker.io/dustynv/llama-index:latest
+    container_name: llamaindex
+    hostname: llamaindex
+    ports:
+      - "${LLAMAINDEX_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - llamaindex_data:/data
+
+volumes:
+  llamaindex_data:
+    name: llamaindex_data

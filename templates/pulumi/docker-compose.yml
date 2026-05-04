@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pulumi:
+    image: docker.io/pulumi/pulumi:latest
+    container_name: pulumi
+    hostname: pulumi
+    ports:
+      - "${PULUMI_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - pulumi_data:/data
+
+volumes:
+  pulumi_data:
+    name: pulumi_data

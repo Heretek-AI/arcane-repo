@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  letta:
+    image: docker.io/letta/letta:latest
+    container_name: letta
+    hostname: letta
+    ports:
+      - "${LETTA_PORT:-8283}:8283"
+    restart: unless-stopped
+    volumes:
+      - letta_data:/data
+
+volumes:
+  letta_data:
+    name: letta_data

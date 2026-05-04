@@ -1,0 +1,11 @@
+{
+  "id": "aider",
+  "name": "Aider",
+  "description": "Aider — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "llm"
+  ]
+}

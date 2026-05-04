@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  open-interpreter:
+    image: docker.io/weize/open-interpreter:latest
+    container_name: open-interpreter
+    hostname: open-interpreter
+    ports:
+      - "${OPEN_INTERPRETER_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - open-interpreter_data:/data
+
+volumes:
+  open-interpreter_data:
+    name: open-interpreter_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  diffsynth-studio:
+    image: docker.io/developer9999/diffsynth-studio:latest
+    container_name: diffsynth-studio
+    hostname: diffsynth-studio
+    ports:
+      - "${DIFFSYNTH_STUDIO_PORT:-7860}:7860"
+    restart: unless-stopped
+    volumes:
+      - diffsynth-studio_data:/data
+
+volumes:
+  diffsynth-studio_data:
+    name: diffsynth-studio_data

@@ -1,0 +1,11 @@
+{
+  "id": "haystack",
+  "name": "Haystack",
+  "description": "Haystack — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "llm"
+  ]
+}

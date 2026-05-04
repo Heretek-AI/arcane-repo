@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ory-kratos:
+    image: docker.io/oryd/kratos:latest
+    container_name: ory-kratos
+    hostname: ory-kratos
+    ports:
+      - "${ORY_KRATOS_PORT:-4433}:4433"
+    restart: unless-stopped
+    volumes:
+      - ory-kratos_data:/data
+
+volumes:
+  ory-kratos_data:
+    name: ory-kratos_data

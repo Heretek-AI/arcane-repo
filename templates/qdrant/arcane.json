@@ -1,0 +1,11 @@
+{
+  "id": "qdrant",
+  "name": "Qdrant",
+  "description": "Qdrant — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "tools"
+  ]
+}

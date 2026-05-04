@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  casdoor:
+    image: docker.io/casbin/casdoor:latest
+    container_name: casdoor
+    hostname: casdoor
+    ports:
+      - "${CASDOOR_PORT:-8000}:8000"
+    restart: unless-stopped
+    volumes:
+      - casdoor_data:/data
+
+volumes:
+  casdoor_data:
+    name: casdoor_data

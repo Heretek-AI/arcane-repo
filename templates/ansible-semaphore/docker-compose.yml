@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ansible-semaphore:
+    image: docker.io/semaphoreui/semaphore:latest
+    container_name: ansible-semaphore
+    hostname: ansible-semaphore
+    ports:
+      - "${ANSIBLE_SEMAPHORE_PORT:-3000}:3000"
+    restart: unless-stopped
+    volumes:
+      - ansible-semaphore_data:/data
+
+volumes:
+  ansible-semaphore_data:
+    name: ansible-semaphore_data

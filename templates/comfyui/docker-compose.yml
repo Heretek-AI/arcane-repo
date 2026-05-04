@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  comfyui:
+    image: docker.io/comfyui/base:latest
+    container_name: comfyui
+    hostname: comfyui
+    ports:
+      - "${COMFYUI_PORT:-8188}:8188"
+    restart: unless-stopped
+    volumes:
+      - comfyui_data:/data
+
+volumes:
+  comfyui_data:
+    name: comfyui_data

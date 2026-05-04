@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  swe-agent:
+    image: docker.io/sweagent/swe-agent:latest
+    container_name: swe-agent
+    hostname: swe-agent
+    ports:
+      - "${SWE_AGENT_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - swe-agent_data:/data
+
+volumes:
+  swe-agent_data:
+    name: swe-agent_data

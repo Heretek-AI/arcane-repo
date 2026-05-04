@@ -1,0 +1,11 @@
+{
+  "id": "ory-oathkeeper",
+  "name": "Ory Oathkeeper",
+  "description": "Ory Oathkeeper — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "identity",
+    "authentication"
+  ]
+}

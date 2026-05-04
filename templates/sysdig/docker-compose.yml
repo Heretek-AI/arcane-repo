@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sysdig:
+    image: docker.io/sysdig/sysdig:latest
+    container_name: sysdig
+    hostname: sysdig
+    ports:
+      - "${SYSDIG_PORT:-8080}:8080"
+    restart: unless-stopped
+
+volumes:
+  sysdig_data:
+    name: sysdig_data

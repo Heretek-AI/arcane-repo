@@ -1,0 +1,11 @@
+{
+  "id": "screenshot-to-code",
+  "name": "screenshot-to-code",
+  "description": "screenshot-to-code — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "tools"
+  ]
+}

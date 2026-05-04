@@ -1,0 +1,11 @@
+{
+  "id": "frp",
+  "name": "frp",
+  "description": "frp — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "devops",
+    "infrastructure"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  continue:
+    image: docker.io/jasonhao123/continue:latest
+    container_name: continue
+    hostname: continue
+    ports:
+      - "${CONTINUE_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - continue_data:/data
+
+volumes:
+  continue_data:
+    name: continue_data

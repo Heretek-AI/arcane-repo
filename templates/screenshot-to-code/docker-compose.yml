@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  screenshot-to-code:
+    image: docker.io/wearzdk/screenshot-to-code:latest
+    container_name: screenshot-to-code
+    hostname: screenshot-to-code
+    ports:
+      - "${SCREENSHOT_TO_CODE_PORT:-3000}:3000"
+    restart: unless-stopped
+    volumes:
+      - screenshot-to-code_data:/data
+
+volumes:
+  screenshot-to-code_data:
+    name: screenshot-to-code_data

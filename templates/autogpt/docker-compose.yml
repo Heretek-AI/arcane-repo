@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  autogpt:
+    image: docker.io/significantgravitas/auto-gpt:latest
+    container_name: autogpt
+    hostname: autogpt
+    ports:
+      - "${AUTOGPT_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - autogpt_data:/data
+
+volumes:
+  autogpt_data:
+    name: autogpt_data

@@ -1,0 +1,11 @@
+{
+  "id": "continue",
+  "name": "Continue",
+  "description": "Continue — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "self-hosted",
+    "tools"
+  ]
+}

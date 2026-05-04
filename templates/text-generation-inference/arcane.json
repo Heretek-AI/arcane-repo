@@ -1,0 +1,11 @@
+{
+  "id": "text-generation-inference",
+  "name": "Text Generation Inference",
+  "description": "Text Generation Inference — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "ai",
+    "llm"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "ansible-semaphore",
+  "name": "Ansible Semaphore",
+  "description": "Ansible Semaphore — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "devops",
+    "infrastructure"
+  ]
+}

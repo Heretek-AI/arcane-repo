@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  aider:
+    image: docker.io/paulgauthier/aider:latest
+    container_name: aider
+    hostname: aider
+    ports:
+      - "${AIDER_PORT:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - aider_data:/data
+
+volumes:
+  aider_data:
+    name: aider_data

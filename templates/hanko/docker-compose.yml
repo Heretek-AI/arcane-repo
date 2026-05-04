@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hanko:
+    image: ghcr.io/teamhanko/hanko:latest
+    container_name: hanko
+    hostname: hanko
+    ports:
+      - "${HANKO_PORT:-8000}:8000"
+    restart: unless-stopped
+    volumes:
+      - hanko_data:/data
+
+volumes:
+  hanko_data:
+    name: hanko_data

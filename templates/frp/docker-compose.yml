@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frp:
+    image: docker.io/fatedier/frp:latest
+    container_name: frp
+    hostname: frp
+    ports:
+      - "${FRP_PORT:-7000}:7000"
+    restart: unless-stopped
+
+volumes:
+  frp_data:
+    name: frp_data

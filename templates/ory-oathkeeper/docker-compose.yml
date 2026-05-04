@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ory-oathkeeper:
+    image: docker.io/oryd/oathkeeper:latest
+    container_name: ory-oathkeeper
+    hostname: ory-oathkeeper
+    ports:
+      - "${ORY_OATHKEEPER_PORT:-4456}:4456"
+    restart: unless-stopped
+    volumes:
+      - ory-oathkeeper_data:/data
+
+volumes:
+  ory-oathkeeper_data:
+    name: ory-oathkeeper_data

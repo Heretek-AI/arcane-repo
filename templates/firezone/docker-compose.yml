@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  firezone:
+    image: docker.io/firezone/firezone:latest
+    container_name: firezone
+    hostname: firezone
+    ports:
+      - "${FIREZONE_PORT:-9443}:9443"
+    restart: unless-stopped
+    volumes:
+      - firezone_data:/data
+
+volumes:
+  firezone_data:
+    name: firezone_data

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  promptfoo:
+    image: ghcr.io/promptfoo/promptfoo:latest
+    container_name: promptfoo
+    hostname: promptfoo
+    ports:
+      - "${PROMPTFOO_PORT:-15500}:15500"
+    restart: unless-stopped
+    volumes:
+      - promptfoo_data:/data
+
+volumes:
+  promptfoo_data:
+    name: promptfoo_data

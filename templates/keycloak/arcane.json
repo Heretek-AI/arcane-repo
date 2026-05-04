@@ -1,0 +1,11 @@
+{
+  "id": "keycloak",
+  "name": "Keycloak",
+  "description": "Keycloak — self-hosted via Docker Compose",
+  "version": "1.0.0",
+  "author": "Arcane",
+  "tags": [
+    "identity",
+    "authentication"
+  ]
+}

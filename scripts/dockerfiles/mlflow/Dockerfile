@@ -4,6 +4,9 @@
 
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
+# Upgrade uv to a version compatible with mlflow[extras]
+RUN pip install --upgrade uv>=0.11.7
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     && rm -rf /var/lib/apt/lists/*

@@ -26,7 +26,7 @@ WORKDIR /build/sunshine
 RUN git clone --depth 1 --branch v2025.923.33222 https://github.com/LizardByte/Sunshine.git . \
     && chmod +x scripts/linux_build.sh
 
-# Install gcc-12 toolchain (gcc-13 PPA has availability issues; gcc-12 satisfies C++17 builds)
+# Install gcc-12 toolchain (Sunshine build dependencies)
 RUN apt-get update && apt-get install -y --no-install-recommends gcc-12 g++-12 &&     rm -rf /var/lib/apt/lists/*
 
 # Build deps, cmake, build, and package (v2025.923 interface: --step= removed, runs full build by default)

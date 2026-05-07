@@ -22,7 +22,7 @@ RUN cd /build/wgcloud-server && \
     cp target/wgcloud-server-*.jar /build/wgcloud-server-release.jar
 
 # ── Stage 2: Production image ────────────────────────────────────
-FROM eclipse-temurin:11-jre
+FROM eclipse-temurin:11
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \

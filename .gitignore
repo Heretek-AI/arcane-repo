@@ -36,3 +36,5 @@ tmp/
 
 # Dispatch batch output files
 scripts/batches/batch-*.json
+.gsd.migrating/
+.gsd/

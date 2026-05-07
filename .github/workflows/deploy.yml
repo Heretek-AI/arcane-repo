@@ -9,6 +9,7 @@ on:
       - 'scripts/build-registry.js'
       - 'scripts/generate-docs.js'
       - 'docs/**'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -40,6 +41,9 @@ jobs:
 
       - name: Build VitePress site
         run: cd docs && npm run docs:build
+
+      - name: Include registry.json in Pages artifact
+        run: cp registry.json docs/.vitepress/dist/registry.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

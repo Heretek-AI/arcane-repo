@@ -37,6 +37,11 @@ const DEFAULT_OUTPUT_DIR = path.join(__dirname, 'audit-output');
 
 // Generic description patterns to flag
 const GENERIC_DESC_PATTERNS = [
+  // "Self-hosted X deployment via Docker" (most common pattern)
+  /self-hosted\s+\S+?\s+deployment\s+via\s+docker/i,
+  // "Self-hosted X via Docker"
+  /self-hosted\s+\S+?\s+via\s+docker/i,
+  // "X — self-hosted via Docker Compose"
   /self-hosted\s+\S+?\s+via\s+docker\s+compose/i,
   /self-hosted\s+deployment\s+via\s+docker/i,
   /self-hosted\s+(via|through|using)\s+docker/i,
@@ -168,8 +173,10 @@ function checkUpstreamLinks(templateId, readmeContent) {
   // Look for GitHub project links (github.com/owner/repo)
   const githubLinks = readmeContent.match(/https?:\/\/github\.com\/[\w.-]+\/[\w.-]+/gi) || [];
 
-  // Look for links in Project Homepage section
-  const hasProjectHomepage = /project\s+(homepage|home|website|url)|upstream|source\s+code/i.test(readmeContent);
+  // Look for links in Project Homepage section (must be a heading or link, not just word occurrence)
+  const hasProjectHomepage = /##\s*(project\s+(homepage|home|website|url)|upstream|source\s+code)/i.test(readmeContent) ||
+    /\[(project\s+(homepage|home|website|url)|upstream)\]/i.test(readmeContent) ||
+    /homepage\s*:\s*https?:\/\//i.test(readmeContent);
 
   // Look for external URLs (http/https)
   const allUrls = readmeContent.match(/https?:\/\/[^\s"')\]}>]+/gi) || [];
@@ -194,11 +201,16 @@ function checkUpstreamLinks(templateId, readmeContent) {
   const hasExternalUrl = nonGithubUrls.length >= 2;  // at least 2 non-localhost URLs
 
   if (!hasGithubLink && !hasHomepageSection) {
-    // Check if we can derive from image
+    // Check if we can derive from image (must be org/repo style, not docker.io/library/official)
     const deriveableFromImage = imageRefs.some(ref => {
       const parts = ref.split('/');
-      // docker.io/org/repo or ghcr.io/org/repo patterns
-      return parts.length >= 3 && !GENERIC_IMAGES.has(parts[parts.length - 1].split(':')[0]);
+      // ghcr.io/org/repo or docker.io/org/repo or quay.io/org/repo patterns
+      if (parts.length < 3) return false;
+      // Skip official Docker images (docker.io/library/*)
+      if (parts[0] === 'docker.io' && parts[1] === 'library') return false;
+      if (parts[0] === 'docker.io' && parts[1] === '') return false;
+      const imageName = parts[parts.length - 1].split(':')[0];
+      return !GENERIC_IMAGES.has(imageName);
     });
 
     if (!deriveableFromImage) {
@@ -300,6 +312,17 @@ function checkDeployConfig(templateId) {
           similarVar = key;
           break;
         }
+        // Fuzzy match: shared character sequence of at least 4 chars
+        // Catches cases like 2FAUTH vs TWOFAUTH
+        const minShared = 4;
+        for (let i = 0; i <= composePort.length - minShared; i++) {
+          const sub = composePort.slice(i, i + minShared);
+          if (keyPort.includes(sub)) {
+            similarVar = key;
+            break;
+          }
+        }
+        if (similarVar) break;
       }
 
       if (similarVar) {

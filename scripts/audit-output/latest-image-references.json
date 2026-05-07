@@ -1,11 +1,51 @@
 {
   "meta": {
-    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "auditedAt": "2026-05-07T21:44:16.687Z",
     "totalTemplates": 842,
-    "processed": 10,
-    "skipped": 0
+    "processed": 804,
+    "skipped": 38
   },
   "data": [
+    {
+      "templateId": "tpotce",
+      "name": "T-Pot — All-in-One Multi Honeypot Platform",
+      "latestCount": 6
+    },
+    {
+      "templateId": "sentry-selfhosted",
+      "name": "Sentry (Self-Hosted)",
+      "latestCount": 4
+    },
+    {
+      "templateId": "bisheng",
+      "name": "Bishêng",
+      "latestCount": 2
+    },
+    {
+      "templateId": "chatwoot",
+      "name": "Chatwoot",
+      "latestCount": 2
+    },
+    {
+      "templateId": "dify",
+      "name": "Dify",
+      "latestCount": 2
+    },
+    {
+      "templateId": "milvus",
+      "name": "Milvus",
+      "latestCount": 2
+    },
+    {
+      "templateId": "rowboat",
+      "name": "Rowboat",
+      "latestCount": 2
+    },
+    {
+      "templateId": "weknora",
+      "name": "WeKnora (Tencent AI Assistant)",
+      "latestCount": 2
+    },
     {
       "templateId": "2fauth",
       "name": "2Fauth",
@@ -54,6 +94,3876 @@
     {
       "templateId": "agenta",
       "name": "Agenta",
+      "latestCount": 1
+    },
+    {
+      "templateId": "agora",
+      "name": "Agora",
+      "latestCount": 1
+    },
+    {
+      "templateId": "aider",
+      "name": "Aider",
+      "latestCount": 1
+    },
+    {
+      "templateId": "airtrail",
+      "name": "Airtrail",
+      "latestCount": 1
+    },
+    {
+      "templateId": "akaunting",
+      "name": "Akaunting",
+      "latestCount": 1
+    },
+    {
+      "templateId": "albyhub",
+      "name": "Albyhub",
+      "latestCount": 1
+    },
+    {
+      "templateId": "aliasvault",
+      "name": "Aliasvault",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ampache",
+      "name": "Ampache",
+      "latestCount": 1
+    },
+    {
+      "templateId": "anchor",
+      "name": "Anchor",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ansible-semaphore",
+      "name": "Ansible Semaphore",
+      "latestCount": 1
+    },
+    {
+      "templateId": "apprise-api",
+      "name": "Apprise Api",
+      "latestCount": 1
+    },
+    {
+      "templateId": "appsmith",
+      "name": "Appsmith",
+      "latestCount": 1
+    },
+    {
+      "templateId": "appwrite",
+      "name": "Appwrite",
+      "latestCount": 1
+    },
+    {
+      "templateId": "aptabase",
+      "name": "Aptabase",
+      "latestCount": 1
+    },
+    {
+      "templateId": "arcane",
+      "name": "Arcane",
+      "latestCount": 1
+    },
+    {
+      "templateId": "archisteamfarm",
+      "name": "Archisteamfarm",
+      "latestCount": 1
+    },
+    {
+      "templateId": "archivebox",
+      "name": "Archivebox",
+      "latestCount": 1
+    },
+    {
+      "templateId": "argos",
+      "name": "Argos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ariang",
+      "name": "Ariang",
+      "latestCount": 1
+    },
+    {
+      "templateId": "astrbot",
+      "name": "AstrBot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "audiobookshelf",
+      "name": "Audiobookshelf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "aurral",
+      "name": "Aurral",
+      "latestCount": 1
+    },
+    {
+      "templateId": "authelia",
+      "name": "Authelia",
+      "latestCount": 1
+    },
+    {
+      "templateId": "authentik",
+      "name": "Authentik",
+      "latestCount": 1
+    },
+    {
+      "templateId": "autobrr",
+      "name": "Autobrr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "autogpt",
+      "name": "AutoGPT",
+      "latestCount": 1
+    },
+    {
+      "templateId": "automad",
+      "name": "Automad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "automatisch",
+      "name": "Automatisch",
+      "latestCount": 1
+    },
+    {
+      "templateId": "azuracast",
+      "name": "Azuracast",
+      "latestCount": 1
+    },
+    {
+      "templateId": "backdrop",
+      "name": "Backdrop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "backrest",
+      "name": "Backrest",
+      "latestCount": 1
+    },
+    {
+      "templateId": "baikal",
+      "name": "Baikal",
+      "latestCount": 1
+    },
+    {
+      "templateId": "baserow",
+      "name": "Baserow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bazarr",
+      "name": "Bazarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "beaver-habit-tracker",
+      "name": "Beaver Habit Tracker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "beets",
+      "name": "Beets",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bentopdf",
+      "name": "Bentopdf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "beszel",
+      "name": "Beszel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bewcloud",
+      "name": "Bewcloud",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bitaxe-sentry",
+      "name": "Bitaxe Sentry",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bitcoin",
+      "name": "Bitcoin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bitcoin-knots",
+      "name": "Bitcoin Knots",
+      "latestCount": 1
+    },
+    {
+      "templateId": "blinko",
+      "name": "Blinko",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bludit",
+      "name": "Bludit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bonfire",
+      "name": "Bonfire",
+      "latestCount": 1
+    },
+    {
+      "templateId": "booklogr",
+      "name": "Booklogr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "booklore",
+      "name": "Booklore",
+      "latestCount": 1
+    },
+    {
+      "templateId": "booksonic",
+      "name": "Booksonic",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bookstack",
+      "name": "Bookstack",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bookwyrm",
+      "name": "Bookwyrm",
+      "latestCount": 1
+    },
+    {
+      "templateId": "borg",
+      "name": "Borg",
+      "latestCount": 1
+    },
+    {
+      "templateId": "borgserver",
+      "name": "Borgserver",
+      "latestCount": 1
+    },
+    {
+      "templateId": "borgwarehouse",
+      "name": "Borgwarehouse",
+      "latestCount": 1
+    },
+    {
+      "templateId": "breezewiki",
+      "name": "Breezewiki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "btc-rpc-explorer",
+      "name": "Btc Rpc Explorer",
+      "latestCount": 1
+    },
+    {
+      "templateId": "budibase",
+      "name": "Budibase",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bunkerweb",
+      "name": "BunkerWeb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "bytestash",
+      "name": "Bytestash",
+      "latestCount": 1
+    },
+    {
+      "templateId": "caddy",
+      "name": "Caddy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "calcom",
+      "name": "Calcom",
+      "latestCount": 1
+    },
+    {
+      "templateId": "calibre-web-automated",
+      "name": "Calibre Web Automated",
+      "latestCount": 1
+    },
+    {
+      "templateId": "calibreweb",
+      "name": "Calibreweb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "campfire",
+      "name": "Campfire",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cannery",
+      "name": "Cannery",
+      "latestCount": 1
+    },
+    {
+      "templateId": "casdoor",
+      "name": "Casdoor",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cashpilot",
+      "name": "Cashpilot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cashu-me",
+      "name": "Cashu Me",
+      "latestCount": 1
+    },
+    {
+      "templateId": "castopod",
+      "name": "Castopod",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cc-gateway",
+      "name": "CC Gateway",
+      "latestCount": 1
+    },
+    {
+      "templateId": "changedetection",
+      "name": "Changedetection",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chantools",
+      "name": "Chantools",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chatbot-ui",
+      "name": "Chatbot Ui",
+      "latestCount": 1
+    },
+    {
+      "templateId": "checkcle",
+      "name": "Checkcle",
+      "latestCount": 1
+    },
+    {
+      "templateId": "checkmate",
+      "name": "Checkmate",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chevereto",
+      "name": "Chevereto",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chibisafe",
+      "name": "Chibisafe",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chiefonboarding",
+      "name": "Chiefonboarding",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chiyogami",
+      "name": "Chiyogami",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chroma",
+      "name": "Chroma",
+      "latestCount": 1
+    },
+    {
+      "templateId": "chromium",
+      "name": "Chromium",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cinny",
+      "name": "Cinny",
+      "latestCount": 1
+    },
+    {
+      "templateId": "clamav",
+      "name": "Clamav",
+      "latestCount": 1
+    },
+    {
+      "templateId": "clawith",
+      "name": "Clawith",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cloudbeaver",
+      "name": "Cloudbeaver",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cloudflared",
+      "name": "Cloudflared",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cloudreve",
+      "name": "Cloudreve",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cockpit",
+      "name": "cockpit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "codex",
+      "name": "Codex",
+      "latestCount": 1
+    },
+    {
+      "templateId": "codimd",
+      "name": "Codimd",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cog",
+      "name": "Cog",
+      "latestCount": 1
+    },
+    {
+      "templateId": "comfyui",
+      "name": "ComfyUI",
+      "latestCount": 1
+    },
+    {
+      "templateId": "commafeed",
+      "name": "Commafeed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "commandbox",
+      "name": "Commandbox",
+      "latestCount": 1
+    },
+    {
+      "templateId": "composio",
+      "name": "Composio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "conduit",
+      "name": "Conduit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "consul",
+      "name": "Consul",
+      "latestCount": 1
+    },
+    {
+      "templateId": "continue",
+      "name": "Continue",
+      "latestCount": 1
+    },
+    {
+      "templateId": "convertx",
+      "name": "Convertx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "coolify",
+      "name": "Coolify",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cops",
+      "name": "Cops",
+      "latestCount": 1
+    },
+    {
+      "templateId": "copyparty",
+      "name": "Copyparty",
+      "latestCount": 1
+    },
+    {
+      "templateId": "core-lightning",
+      "name": "Core Lightning",
+      "latestCount": 1
+    },
+    {
+      "templateId": "coturn",
+      "name": "Coturn",
+      "latestCount": 1
+    },
+    {
+      "templateId": "couchdb",
+      "name": "Couchdb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "crewai",
+      "name": "CrewAI",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cronmaster",
+      "name": "Cronmaster",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cryptpad",
+      "name": "Cryptpad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cyberchef",
+      "name": "Cyberchef",
+      "latestCount": 1
+    },
+    {
+      "templateId": "cypht",
+      "name": "Cypht",
+      "latestCount": 1
+    },
+    {
+      "templateId": "daapd",
+      "name": "Daapd",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dagu",
+      "name": "Dagu",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dailytxt",
+      "name": "Dailytxt",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dashdot",
+      "name": "Dashdot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "databag",
+      "name": "Databag",
+      "latestCount": 1
+    },
+    {
+      "templateId": "databasus",
+      "name": "Databasus",
+      "latestCount": 1
+    },
+    {
+      "templateId": "databend",
+      "name": "Databend",
+      "latestCount": 1
+    },
+    {
+      "templateId": "databunker",
+      "name": "Databunker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "davos",
+      "name": "Davos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dawarich",
+      "name": "Dawarich",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dbeaver",
+      "name": "DBeaver",
+      "latestCount": 1
+    },
+    {
+      "templateId": "deepwiki",
+      "name": "DeepWiki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "deleterr",
+      "name": "Deleterr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "deluge",
+      "name": "Deluge",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dendrite",
+      "name": "dendrite",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dex",
+      "name": "Dex",
+      "latestCount": 1
+    },
+    {
+      "templateId": "diaspora",
+      "name": "Diaspora",
+      "latestCount": 1
+    },
+    {
+      "templateId": "diffsynth-studio",
+      "name": "DiffSynth Studio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "directorylister",
+      "name": "Directorylister",
+      "latestCount": 1
+    },
+    {
+      "templateId": "discourse",
+      "name": "Discourse",
+      "latestCount": 1
+    },
+    {
+      "templateId": "diskover",
+      "name": "Diskover",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dittofeed",
+      "name": "Dittofeed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "docker-ipsec-vpn",
+      "name": "Docker IPSec VPN Server",
+      "latestCount": 1
+    },
+    {
+      "templateId": "docker-mailserver",
+      "name": "Docker Mailserver",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dockge",
+      "name": "Dockge",
+      "latestCount": 1
+    },
+    {
+      "templateId": "docmost",
+      "name": "Docmost",
+      "latestCount": 1
+    },
+    {
+      "templateId": "docsgpt",
+      "name": "DocsGPT",
+      "latestCount": 1
+    },
+    {
+      "templateId": "docsify",
+      "name": "Docsify",
+      "latestCount": 1
+    },
+    {
+      "templateId": "docuseal",
+      "name": "Docuseal",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dokos",
+      "name": "Dokos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dokploy",
+      "name": "Dokploy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dokuwiki",
+      "name": "Dokuwiki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dolibarr",
+      "name": "Dolibarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "domain-locker",
+      "name": "Domain Locker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "domoticz",
+      "name": "Domoticz",
+      "latestCount": 1
+    },
+    {
+      "templateId": "donetick",
+      "name": "Donetick",
+      "latestCount": 1
+    },
+    {
+      "templateId": "downtify",
+      "name": "Downtify",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dozzle",
+      "name": "Dozzle",
+      "latestCount": 1
+    },
+    {
+      "templateId": "drop",
+      "name": "Drop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "drupal",
+      "name": "Drupal",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dumbbudget",
+      "name": "Dumbbudget",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dumbdo",
+      "name": "Dumbdo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dumbdrop",
+      "name": "Dumbdrop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dumbkan",
+      "name": "Dumbkan",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dumbpad",
+      "name": "Dumbpad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "dumbwhois",
+      "name": "Dumbwhois",
+      "latestCount": 1
+    },
+    {
+      "templateId": "duplicacy",
+      "name": "Duplicacy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "duplicati",
+      "name": "Duplicati",
+      "latestCount": 1
+    },
+    {
+      "templateId": "easyappointments",
+      "name": "easyappointments",
+      "latestCount": 1
+    },
+    {
+      "templateId": "elasticsearch",
+      "name": "Elasticsearch",
+      "latestCount": 1
+    },
+    {
+      "templateId": "elasticsearch7",
+      "name": "elasticsearch7",
+      "latestCount": 1
+    },
+    {
+      "templateId": "elasticsearch8",
+      "name": "Elasticsearch8",
+      "latestCount": 1
+    },
+    {
+      "templateId": "electrs",
+      "name": "Electrs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "electrumx",
+      "name": "Electrumx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "eleventy",
+      "name": "Eleventy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "elizaos",
+      "name": "ElizaOS",
+      "latestCount": 1
+    },
+    {
+      "templateId": "elk",
+      "name": "Elk",
+      "latestCount": 1
+    },
+    {
+      "templateId": "emby",
+      "name": "Emby",
+      "latestCount": 1
+    },
+    {
+      "templateId": "embystat",
+      "name": "Embystat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "enclosed",
+      "name": "Enclosed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "endurain",
+      "name": "Endurain",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ergo",
+      "name": "Ergo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "esphome",
+      "name": "Esphome",
+      "latestCount": 1
+    },
+    {
+      "templateId": "espocrm",
+      "name": "Espocrm",
+      "latestCount": 1
+    },
+    {
+      "templateId": "etherpad",
+      "name": "Etherpad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "excalidraw",
+      "name": "Excalidraw",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fab-manager",
+      "name": "Fab Manager",
+      "latestCount": 1
+    },
+    {
+      "templateId": "facilmap",
+      "name": "Facilmap",
+      "latestCount": 1
+    },
+    {
+      "templateId": "faircamp",
+      "name": "Faircamp",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fastapi",
+      "name": "Fastapi",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fedimintd",
+      "name": "Fedimintd",
+      "latestCount": 1
+    },
+    {
+      "templateId": "feedcord",
+      "name": "Feedcord",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ferdium",
+      "name": "Ferdium",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fider",
+      "name": "Fider",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fiduswriter",
+      "name": "Fiduswriter",
+      "latestCount": 1
+    },
+    {
+      "templateId": "file-browser",
+      "name": "File Browser",
+      "latestCount": 1
+    },
+    {
+      "templateId": "filebrowser",
+      "name": "Filebrowser",
+      "latestCount": 1
+    },
+    {
+      "templateId": "filegator",
+      "name": "Filegator",
+      "latestCount": 1
+    },
+    {
+      "templateId": "filepizza",
+      "name": "Filepizza",
+      "latestCount": 1
+    },
+    {
+      "templateId": "filerun",
+      "name": "Filerun",
+      "latestCount": 1
+    },
+    {
+      "templateId": "filestash",
+      "name": "Filestash",
+      "latestCount": 1
+    },
+    {
+      "templateId": "firecrawl",
+      "name": "Firecrawl",
+      "latestCount": 1
+    },
+    {
+      "templateId": "firefly-iii",
+      "name": "Firefly Iii",
+      "latestCount": 1
+    },
+    {
+      "templateId": "firefox",
+      "name": "Firefox",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fireshare",
+      "name": "Fireshare",
+      "latestCount": 1
+    },
+    {
+      "templateId": "firezone",
+      "name": "Firezone",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fittrackee",
+      "name": "Fittrackee",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fizzy",
+      "name": "Fizzy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flagsmith",
+      "name": "Flagsmith",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flame",
+      "name": "Flame",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flaresolverr",
+      "name": "Flaresolverr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flarum",
+      "name": "Flarum",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flatnotes",
+      "name": "Flatnotes",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flink",
+      "name": "Flink",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flohmarkt",
+      "name": "Flohmarkt",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flood",
+      "name": "Flood",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flowiseai",
+      "name": "Flowiseai",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fluffychat",
+      "name": "Fluffychat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "flyimg",
+      "name": "Flyimg",
+      "latestCount": 1
+    },
+    {
+      "templateId": "focalboard",
+      "name": "focalboard",
+      "latestCount": 1
+    },
+    {
+      "templateId": "forgejo-runner",
+      "name": "Forgejo Runner",
+      "latestCount": 1
+    },
+    {
+      "templateId": "formicaio",
+      "name": "Formicaio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fossbilling",
+      "name": "Fossbilling",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fossflow",
+      "name": "Fossflow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "freshrss",
+      "name": "Freshrss",
+      "latestCount": 1
+    },
+    {
+      "templateId": "friendica",
+      "name": "Friendica",
+      "latestCount": 1
+    },
+    {
+      "templateId": "frigate",
+      "name": "Frigate",
+      "latestCount": 1
+    },
+    {
+      "templateId": "frp",
+      "name": "frp",
+      "latestCount": 1
+    },
+    {
+      "templateId": "funkwhale",
+      "name": "Funkwhale",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fusion",
+      "name": "Fusion",
+      "latestCount": 1
+    },
+    {
+      "templateId": "fx",
+      "name": "Fx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "galette",
+      "name": "Galette",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gameyfin",
+      "name": "Gameyfin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gancio",
+      "name": "Gancio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "garage",
+      "name": "Garage",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gathio",
+      "name": "Gathio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gatus",
+      "name": "Gatus",
+      "latestCount": 1
+    },
+    {
+      "templateId": "geeftlist",
+      "name": "Geeftlist",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ghost",
+      "name": "Ghost",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ghostfolio",
+      "name": "Ghostfolio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gitea",
+      "name": "Gitea",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gitingest",
+      "name": "Gitingest",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gitlab",
+      "name": "Gitlab",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gitlab-runner",
+      "name": "Gitlab Runner",
+      "latestCount": 1
+    },
+    {
+      "templateId": "glance",
+      "name": "Glance",
+      "latestCount": 1
+    },
+    {
+      "templateId": "glances",
+      "name": "Glances",
+      "latestCount": 1
+    },
+    {
+      "templateId": "glpi",
+      "name": "Glpi",
+      "latestCount": 1
+    },
+    {
+      "templateId": "go-socks5-proxy",
+      "name": "Go Socks5 Proxy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gocron",
+      "name": "Gocron",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gogs",
+      "name": "Gogs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gokapi",
+      "name": "Gokapi",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gomft",
+      "name": "Gomft",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gonic",
+      "name": "Gonic",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gotenberg",
+      "name": "Gotenberg",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gotosocial",
+      "name": "Gotosocial",
+      "latestCount": 1
+    },
+    {
+      "templateId": "grafana",
+      "name": "Grafana",
+      "latestCount": 1
+    },
+    {
+      "templateId": "grav",
+      "name": "Grav",
+      "latestCount": 1
+    },
+    {
+      "templateId": "grist",
+      "name": "Grist",
+      "latestCount": 1
+    },
+    {
+      "templateId": "grocy",
+      "name": "Grocy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "grype",
+      "name": "Grype",
+      "latestCount": 1
+    },
+    {
+      "templateId": "guacamole",
+      "name": "Guacamole",
+      "latestCount": 1
+    },
+    {
+      "templateId": "gull",
+      "name": "Gull",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hanko",
+      "name": "Hanko",
+      "latestCount": 1
+    },
+    {
+      "templateId": "harbor-llm",
+      "name": "Harbor LLM",
+      "latestCount": 1
+    },
+    {
+      "templateId": "harness",
+      "name": "Harness",
+      "latestCount": 1
+    },
+    {
+      "templateId": "haystack",
+      "name": "Haystack",
+      "latestCount": 1
+    },
+    {
+      "templateId": "headphones",
+      "name": "Headphones",
+      "latestCount": 1
+    },
+    {
+      "templateId": "headscale",
+      "name": "Headscale",
+      "latestCount": 1
+    },
+    {
+      "templateId": "healthchecks",
+      "name": "Healthchecks",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hedgedoc",
+      "name": "Hedgedoc",
+      "latestCount": 1
+    },
+    {
+      "templateId": "heimdall",
+      "name": "Heimdall",
+      "latestCount": 1
+    },
+    {
+      "templateId": "helipad",
+      "name": "Helipad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hermes-agent",
+      "name": "Hermes Agent",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hermesagent",
+      "name": "Hermes-Agent",
+      "latestCount": 1
+    },
+    {
+      "templateId": "heyform",
+      "name": "Heyform",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hi-events",
+      "name": "Hi.Events",
+      "latestCount": 1
+    },
+    {
+      "templateId": "holesail-switchboard",
+      "name": "Holesail Switchboard",
+      "latestCount": 1
+    },
+    {
+      "templateId": "home-assistant",
+      "name": "Home Assistant",
+      "latestCount": 1
+    },
+    {
+      "templateId": "homeassistant",
+      "name": "Homeassistant",
+      "latestCount": 1
+    },
+    {
+      "templateId": "homebridge",
+      "name": "Homebridge",
+      "latestCount": 1
+    },
+    {
+      "templateId": "homechart",
+      "name": "Homechart",
+      "latestCount": 1
+    },
+    {
+      "templateId": "homer",
+      "name": "Homer",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hotspot",
+      "name": "Hotspot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hubleys",
+      "name": "Hubleys",
+      "latestCount": 1
+    },
+    {
+      "templateId": "hubzilla",
+      "name": "Hubzilla",
+      "latestCount": 1
+    },
+    {
+      "templateId": "huginn",
+      "name": "Huginn",
+      "latestCount": 1
+    },
+    {
+      "templateId": "humhub",
+      "name": "Humhub",
+      "latestCount": 1
+    },
+    {
+      "templateId": "icecast2",
+      "name": "Icecast2",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ihatemoney",
+      "name": "Ihatemoney",
+      "latestCount": 1
+    },
+    {
+      "templateId": "immich",
+      "name": "Immich",
+      "latestCount": 1
+    },
+    {
+      "templateId": "indico",
+      "name": "Indico",
+      "latestCount": 1
+    },
+    {
+      "templateId": "influxdb-v2",
+      "name": "influxdb_v2",
+      "latestCount": 1
+    },
+    {
+      "templateId": "inkheart",
+      "name": "Inkheart",
+      "latestCount": 1
+    },
+    {
+      "templateId": "invoice-ninja",
+      "name": "invoice-ninja",
+      "latestCount": 1
+    },
+    {
+      "templateId": "invoiceshelf",
+      "name": "Invoiceshelf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "iobroker",
+      "name": "Iobroker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "iperf",
+      "name": "Iperf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "it-tools",
+      "name": "It Tools",
+      "latestCount": 1
+    },
+    {
+      "templateId": "itflow",
+      "name": "itflow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "its-mytabs",
+      "name": "Its Mytabs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ittools",
+      "name": "Ittools",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jackett",
+      "name": "Jackett",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jam",
+      "name": "Jam",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jdownloader",
+      "name": "Jdownloader",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jeedom",
+      "name": "Jeedom",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jellyfin",
+      "name": "Jellyfin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jellyfin-vue",
+      "name": "Jellyfin Vue",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jellyseerr",
+      "name": "Jellyseerr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jenkins",
+      "name": "Jenkins",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jetlog",
+      "name": "Jetlog",
+      "latestCount": 1
+    },
+    {
+      "templateId": "joomla",
+      "name": "Joomla",
+      "latestCount": 1
+    },
+    {
+      "templateId": "joplin",
+      "name": "Joplin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jotty",
+      "name": "Jotty",
+      "latestCount": 1
+    },
+    {
+      "templateId": "journiv",
+      "name": "Journiv",
+      "latestCount": 1
+    },
+    {
+      "templateId": "jsoncrack",
+      "name": "Jsoncrack",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kag",
+      "name": "KAG",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kanboard",
+      "name": "Kanboard",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kapowarr",
+      "name": "Kapowarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "karakeep",
+      "name": "Karakeep",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kavita",
+      "name": "Kavita",
+      "latestCount": 1
+    },
+    {
+      "templateId": "keeweb",
+      "name": "Keeweb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "keila",
+      "name": "Keila",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kestra",
+      "name": "Kestra",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ketesa",
+      "name": "Ketesa",
+      "latestCount": 1
+    },
+    {
+      "templateId": "keycloak",
+      "name": "Keycloak",
+      "latestCount": 1
+    },
+    {
+      "templateId": "khoj",
+      "name": "Khoj",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kimai",
+      "name": "Kimai",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kimai2",
+      "name": "Kimai2",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kitchenowl",
+      "name": "Kitchenowl",
+      "latestCount": 1
+    },
+    {
+      "templateId": "koel",
+      "name": "koel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "koillection",
+      "name": "Koillection",
+      "latestCount": 1
+    },
+    {
+      "templateId": "komga",
+      "name": "Komga",
+      "latestCount": 1
+    },
+    {
+      "templateId": "komodo",
+      "name": "Komodo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kong",
+      "name": "Kong",
+      "latestCount": 1
+    },
+    {
+      "templateId": "kresus",
+      "name": "Kresus",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lago",
+      "name": "Lago",
+      "latestCount": 1
+    },
+    {
+      "templateId": "langflow",
+      "name": "LangFlow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "langfuse",
+      "name": "Langfuse",
+      "latestCount": 1
+    },
+    {
+      "templateId": "languagetool",
+      "name": "Languagetool",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lazylibrarian",
+      "name": "Lazylibrarian",
+      "latestCount": 1
+    },
+    {
+      "templateId": "leantime",
+      "name": "Leantime",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lemmy",
+      "name": "Lemmy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lemonldap-ng",
+      "name": "LemonLDAP::NG",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lesma",
+      "name": "Lesma",
+      "latestCount": 1
+    },
+    {
+      "templateId": "letta",
+      "name": "Letta",
+      "latestCount": 1
+    },
+    {
+      "templateId": "libre-relay",
+      "name": "Libre Relay",
+      "latestCount": 1
+    },
+    {
+      "templateId": "librebooking",
+      "name": "Librebooking",
+      "latestCount": 1
+    },
+    {
+      "templateId": "librechat",
+      "name": "Librechat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "libreoffice",
+      "name": "Libreoffice",
+      "latestCount": 1
+    },
+    {
+      "templateId": "librephotos",
+      "name": "Librephotos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "librespeed",
+      "name": "Librespeed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "libretranslate",
+      "name": "Libretranslate",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lidarr",
+      "name": "Lidarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lidify",
+      "name": "Lidify",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lightning",
+      "name": "Lightning",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lightning-terminal",
+      "name": "Lightning Terminal",
+      "latestCount": 1
+    },
+    {
+      "templateId": "limesurvey",
+      "name": "Limesurvey",
+      "latestCount": 1
+    },
+    {
+      "templateId": "linkace",
+      "name": "Linkace",
+      "latestCount": 1
+    },
+    {
+      "templateId": "linkding",
+      "name": "Linkding",
+      "latestCount": 1
+    },
+    {
+      "templateId": "linkstack",
+      "name": "Linkstack",
+      "latestCount": 1
+    },
+    {
+      "templateId": "linkwarden",
+      "name": "Linkwarden",
+      "latestCount": 1
+    },
+    {
+      "templateId": "listaway",
+      "name": "Listaway",
+      "latestCount": 1
+    },
+    {
+      "templateId": "listmonk",
+      "name": "Listmonk",
+      "latestCount": 1
+    },
+    {
+      "templateId": "litechat",
+      "name": "Litechat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "llamaindex",
+      "name": "LlamaIndex",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lldap",
+      "name": "Lldap",
+      "latestCount": 1
+    },
+    {
+      "templateId": "llm-app-pathway",
+      "name": "Pathway LLM App",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lnbits",
+      "name": "Lnbits",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lobe-chat",
+      "name": "Lobe Chat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lobehub",
+      "name": "LobeHub",
+      "latestCount": 1
+    },
+    {
+      "templateId": "localai",
+      "name": "LocalAI",
+      "latestCount": 1
+    },
+    {
+      "templateId": "logdy",
+      "name": "Logdy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "logto",
+      "name": "Logto",
+      "latestCount": 1
+    },
+    {
+      "templateId": "loki",
+      "name": "Loki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "loomio",
+      "name": "Loomio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lubelogger",
+      "name": "Lubelogger",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lunalytics",
+      "name": "Lunalytics",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lute",
+      "name": "Lute",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lxd-dashboard",
+      "name": "Lxd Dashboard",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lychee",
+      "name": "Lychee",
+      "latestCount": 1
+    },
+    {
+      "templateId": "lynxprompt",
+      "name": "Lynxprompt",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mailarchiver",
+      "name": "Mailarchiver",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mainsail",
+      "name": "Mainsail",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mantis",
+      "name": "Mantis",
+      "latestCount": 1
+    },
+    {
+      "templateId": "many-notes",
+      "name": "Many Notes",
+      "latestCount": 1
+    },
+    {
+      "templateId": "manyfold",
+      "name": "Manyfold",
+      "latestCount": 1
+    },
+    {
+      "templateId": "marreta",
+      "name": "Marreta",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mastodon",
+      "name": "Mastodon",
+      "latestCount": 1
+    },
+    {
+      "templateId": "matomo",
+      "name": "Matomo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "matrix-appservice-irc",
+      "name": "Matrix Appservice Irc",
+      "latestCount": 1
+    },
+    {
+      "templateId": "matrix-server",
+      "name": "Matrix Server",
+      "latestCount": 1
+    },
+    {
+      "templateId": "matterbridge",
+      "name": "Matterbridge",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mautic",
+      "name": "Mautic",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mealie",
+      "name": "Mealie",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mediawiki",
+      "name": "Mediawiki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "meilisearch",
+      "name": "Meilisearch",
+      "latestCount": 1
+    },
+    {
+      "templateId": "meme-search",
+      "name": "Meme Search",
+      "latestCount": 1
+    },
+    {
+      "templateId": "memex",
+      "name": "Memex",
+      "latestCount": 1
+    },
+    {
+      "templateId": "memos",
+      "name": "Memos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "memvid",
+      "name": "Memvid",
+      "latestCount": 1
+    },
+    {
+      "templateId": "meshcentral",
+      "name": "Meshcentral",
+      "latestCount": 1
+    },
+    {
+      "templateId": "metabase",
+      "name": "Metabase",
+      "latestCount": 1
+    },
+    {
+      "templateId": "metube",
+      "name": "Metube",
+      "latestCount": 1
+    },
+    {
+      "templateId": "microbin",
+      "name": "Microbin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "microsandbox",
+      "name": "Microsandbox",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mindsdb",
+      "name": "MindsDB",
+      "latestCount": 1
+    },
+    {
+      "templateId": "minetest",
+      "name": "Minetest",
+      "latestCount": 1
+    },
+    {
+      "templateId": "minidlna",
+      "name": "Minidlna",
+      "latestCount": 1
+    },
+    {
+      "templateId": "miniflux",
+      "name": "Miniflux",
+      "latestCount": 1
+    },
+    {
+      "templateId": "minimal-git-server",
+      "name": "Minimal Git Server",
+      "latestCount": 1
+    },
+    {
+      "templateId": "minio",
+      "name": "Minio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "minisatip",
+      "name": "Minisatip",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mirotalksfu",
+      "name": "MiroTalk SFU",
+      "latestCount": 1
+    },
+    {
+      "templateId": "misago",
+      "name": "Misago",
+      "latestCount": 1
+    },
+    {
+      "templateId": "misskey",
+      "name": "Misskey",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mitra",
+      "name": "Mitra",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mlflow",
+      "name": "MLflow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mobilizon",
+      "name": "Mobilizon",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mollysocket",
+      "name": "Mollysocket",
+      "latestCount": 1
+    },
+    {
+      "templateId": "monetr",
+      "name": "Monetr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mongo-express",
+      "name": "mongo-express",
+      "latestCount": 1
+    },
+    {
+      "templateId": "monica",
+      "name": "Monica",
+      "latestCount": 1
+    },
+    {
+      "templateId": "moodle",
+      "name": "Moodle",
+      "latestCount": 1
+    },
+    {
+      "templateId": "morphos",
+      "name": "Morphos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "motioneye",
+      "name": "motioneye",
+      "latestCount": 1
+    },
+    {
+      "templateId": "movim",
+      "name": "Movim",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mqttx-web",
+      "name": "Mqttx Web",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mstream",
+      "name": "Mstream",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mtg",
+      "name": "Mtg",
+      "latestCount": 1
+    },
+    {
+      "templateId": "musicbrainz",
+      "name": "Musicbrainz",
+      "latestCount": 1
+    },
+    {
+      "templateId": "muximux",
+      "name": "Muximux",
+      "latestCount": 1
+    },
+    {
+      "templateId": "my-webapp",
+      "name": "My Webapp",
+      "latestCount": 1
+    },
+    {
+      "templateId": "mylar",
+      "name": "Mylar",
+      "latestCount": 1
+    },
+    {
+      "templateId": "myspeed",
+      "name": "Myspeed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "n8n",
+      "name": "n8n",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nanobot",
+      "name": "NanoBot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "navidrome",
+      "name": "Navidrome",
+      "latestCount": 1
+    },
+    {
+      "templateId": "neko",
+      "name": "Neko",
+      "latestCount": 1
+    },
+    {
+      "templateId": "neonlink",
+      "name": "Neonlink",
+      "latestCount": 1
+    },
+    {
+      "templateId": "netalertx",
+      "name": "Netalertx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "netbird",
+      "name": "Netbird",
+      "latestCount": 1
+    },
+    {
+      "templateId": "netbox",
+      "name": "Netbox",
+      "latestCount": 1
+    },
+    {
+      "templateId": "netdata",
+      "name": "Netdata",
+      "latestCount": 1
+    },
+    {
+      "templateId": "netmaker",
+      "name": "Netmaker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nextcloud",
+      "name": "Nextcloud",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nexterm",
+      "name": "Nexterm",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nginx",
+      "name": "Nginx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nginx-proxy-manager",
+      "name": "Nginx Proxy Manager",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nginx-ui",
+      "name": "Nginx UI",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nitter",
+      "name": "Nitter",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nocodb",
+      "name": "Nocodb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "node-exporter",
+      "name": "node_exporter",
+      "latestCount": 1
+    },
+    {
+      "templateId": "node-red",
+      "name": "Node Red",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nodebb",
+      "name": "Nodebb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nodejs",
+      "name": "Nodejs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nodered",
+      "name": "nodered",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nostr-relay",
+      "name": "Nostr Relay",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ntfy",
+      "name": "Ntfy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nutify",
+      "name": "Nutify",
+      "latestCount": 1
+    },
+    {
+      "templateId": "nzbget",
+      "name": "Nzbget",
+      "latestCount": 1
+    },
+    {
+      "templateId": "obsidian",
+      "name": "Obsidian",
+      "latestCount": 1
+    },
+    {
+      "templateId": "octoprint",
+      "name": "Octoprint",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ocular",
+      "name": "Ocular",
+      "latestCount": 1
+    },
+    {
+      "templateId": "odoo",
+      "name": "Odoo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ojs",
+      "name": "Ojs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "olivetin",
+      "name": "Olivetin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ollama",
+      "name": "Ollama",
+      "latestCount": 1
+    },
+    {
+      "templateId": "om1",
+      "name": "OM1",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ombi",
+      "name": "Ombi",
+      "latestCount": 1
+    },
+    {
+      "templateId": "onyx",
+      "name": "Onyx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "open-interpreter",
+      "name": "Open Interpreter",
+      "latestCount": 1
+    },
+    {
+      "templateId": "open-meteo",
+      "name": "Open Meteo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "open-web-calendar",
+      "name": "Open Web Calendar",
+      "latestCount": 1
+    },
+    {
+      "templateId": "open-webui",
+      "name": "Open Webui",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openbudgeteer",
+      "name": "Openbudgeteer",
+      "latestCount": 1
+    },
+    {
+      "templateId": "opencloud",
+      "name": "Opencloud",
+      "latestCount": 1
+    },
+    {
+      "templateId": "opencode",
+      "name": "Opencode",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openemr",
+      "name": "Openemr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openfang",
+      "name": "OpenFang",
+      "latestCount": 1
+    },
+    {
+      "templateId": "opengist",
+      "name": "OpenGist",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openhabittracker",
+      "name": "Openhabittracker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openhands",
+      "name": "Openhands",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openobserve",
+      "name": "Openobserve",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openproject",
+      "name": "Openproject",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openresty-manager",
+      "name": "Openresty Manager",
+      "latestCount": 1
+    },
+    {
+      "templateId": "opensearch",
+      "name": "Opensearch",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openspiel",
+      "name": "OpenSpiel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "openvpn-as",
+      "name": "Openvpn As",
+      "latestCount": 1
+    },
+    {
+      "templateId": "orangehrm",
+      "name": "Orangehrm",
+      "latestCount": 1
+    },
+    {
+      "templateId": "oras",
+      "name": "Oras",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ory-kratos",
+      "name": "Ory Kratos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ory-oathkeeper",
+      "name": "Ory Oathkeeper",
+      "latestCount": 1
+    },
+    {
+      "templateId": "oscam",
+      "name": "Oscam",
+      "latestCount": 1
+    },
+    {
+      "templateId": "otter-wiki",
+      "name": "Otter Wiki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "our-shopping-list",
+      "name": "Our Shopping List",
+      "latestCount": 1
+    },
+    {
+      "templateId": "outline",
+      "name": "Outline",
+      "latestCount": 1
+    },
+    {
+      "templateId": "overleaf",
+      "name": "overleaf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "overseerr",
+      "name": "Overseerr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "owncast",
+      "name": "Owncast",
+      "latestCount": 1
+    },
+    {
+      "templateId": "paaster",
+      "name": "Paaster",
+      "latestCount": 1
+    },
+    {
+      "templateId": "paheko",
+      "name": "Paheko",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pairdrop",
+      "name": "Pairdrop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "palmr",
+      "name": "Palmr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pangolin",
+      "name": "Pangolin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "paperless-ngx",
+      "name": "Paperless Ngx",
+      "latestCount": 1
+    },
+    {
+      "templateId": "papra",
+      "name": "Papra",
+      "latestCount": 1
+    },
+    {
+      "templateId": "parseable",
+      "name": "Parseable",
+      "latestCount": 1
+    },
+    {
+      "templateId": "passbolt",
+      "name": "Passbolt",
+      "latestCount": 1
+    },
+    {
+      "templateId": "passed",
+      "name": "Passed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pastefy",
+      "name": "Pastefy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "paymenter",
+      "name": "Paymenter",
+      "latestCount": 1
+    },
+    {
+      "templateId": "peer-calls",
+      "name": "Peer Calls",
+      "latestCount": 1
+    },
+    {
+      "templateId": "peertube",
+      "name": "Peertube",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pelican",
+      "name": "Pelican",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pentagi",
+      "name": "PentaGI",
+      "latestCount": 1
+    },
+    {
+      "templateId": "perplexica",
+      "name": "Perplexica",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pgadmin",
+      "name": "Pgadmin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pgweb",
+      "name": "Pgweb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "phanpy",
+      "name": "Phanpy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "photoprism",
+      "name": "PhotoPrism",
+      "latestCount": 1
+    },
+    {
+      "templateId": "photoshow",
+      "name": "Photoshow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "photoview",
+      "name": "Photoview",
+      "latestCount": 1
+    },
+    {
+      "templateId": "phpldapadmin",
+      "name": "Phpldapadmin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "phpmyadmin",
+      "name": "Phpmyadmin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "picsur",
+      "name": "Picsur",
+      "latestCount": 1
+    },
+    {
+      "templateId": "piefed",
+      "name": "Piefed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pihole",
+      "name": "Pihole",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pinchflat",
+      "name": "Pinchflat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pinepods",
+      "name": "Pinepods",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pingvin",
+      "name": "Pingvin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pingvin-share",
+      "name": "Pingvin Share",
+      "latestCount": 1
+    },
+    {
+      "templateId": "piped",
+      "name": "Piped",
+      "latestCount": 1
+    },
+    {
+      "templateId": "piwigo",
+      "name": "Piwigo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pixel-server",
+      "name": "Pixel Server",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plainpad",
+      "name": "Plainpad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plane",
+      "name": "Plane",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plateau",
+      "name": "Plateau",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plesk",
+      "name": "Plesk",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plex",
+      "name": "Plex",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plexe",
+      "name": "Plexe",
+      "latestCount": 1
+    },
+    {
+      "templateId": "plik",
+      "name": "Plik",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pocket-id",
+      "name": "Pocket Id",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pollaris",
+      "name": "Pollaris",
+      "latestCount": 1
+    },
+    {
+      "templateId": "poste-io",
+      "name": "Poste.Io",
+      "latestCount": 1
+    },
+    {
+      "templateId": "postgresql",
+      "name": "Postgresql",
+      "latestCount": 1
+    },
+    {
+      "templateId": "postiz",
+      "name": "Postiz",
+      "latestCount": 1
+    },
+    {
+      "templateId": "prestashop",
+      "name": "Prestashop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pritunl",
+      "name": "Pritunl",
+      "latestCount": 1
+    },
+    {
+      "templateId": "processwire",
+      "name": "Processwire",
+      "latestCount": 1
+    },
+    {
+      "templateId": "profilarr",
+      "name": "Profilarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "projectsend",
+      "name": "Projectsend",
+      "latestCount": 1
+    },
+    {
+      "templateId": "prometheus",
+      "name": "Prometheus",
+      "latestCount": 1
+    },
+    {
+      "templateId": "promptfoo",
+      "name": "Promptfoo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "prowlarr",
+      "name": "Prowlarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "proxitok",
+      "name": "Proxitok",
+      "latestCount": 1
+    },
+    {
+      "templateId": "psitransfer",
+      "name": "Psitransfer",
+      "latestCount": 1
+    },
+    {
+      "templateId": "public-pool",
+      "name": "Public Pool",
+      "latestCount": 1
+    },
+    {
+      "templateId": "public-pool-web",
+      "name": "Public Pool Web",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pufferpanel",
+      "name": "Pufferpanel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pulse",
+      "name": "Pulse",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pulumi",
+      "name": "Pulumi",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pumperly",
+      "name": "Pumperly",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pydio",
+      "name": "Pydio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pyinventory",
+      "name": "Pyinventory",
+      "latestCount": 1
+    },
+    {
+      "templateId": "pyload-ng",
+      "name": "Pyload Ng",
+      "latestCount": 1
+    },
+    {
+      "templateId": "qbittorrent",
+      "name": "Qbittorrent",
+      "latestCount": 1
+    },
+    {
+      "templateId": "qdirstat",
+      "name": "Qdirstat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "qdrant",
+      "name": "Qdrant",
+      "latestCount": 1
+    },
+    {
+      "templateId": "qflood",
+      "name": "Qflood",
+      "latestCount": 1
+    },
+    {
+      "templateId": "quassel-core",
+      "name": "Quassel Core",
+      "latestCount": 1
+    },
+    {
+      "templateId": "qui",
+      "name": "Qui",
+      "latestCount": 1
+    },
+    {
+      "templateId": "quivr",
+      "name": "Quivr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rabbitmq",
+      "name": "Rabbitmq",
+      "latestCount": 1
+    },
+    {
+      "templateId": "radarr",
+      "name": "Radarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rahoot",
+      "name": "Rahoot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rallly",
+      "name": "Rallly",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rclone",
+      "name": "Rclone",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rd-agent",
+      "name": "RD-Agent",
+      "latestCount": 1
+    },
+    {
+      "templateId": "reactive-resume",
+      "name": "Reactive Resume",
+      "latestCount": 1
+    },
+    {
+      "templateId": "readarr",
+      "name": "Readarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "readeck",
+      "name": "Readeck",
+      "latestCount": 1
+    },
+    {
+      "templateId": "readflow",
+      "name": "Readflow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "readur",
+      "name": "Readur",
+      "latestCount": 1
+    },
+    {
+      "templateId": "redash",
+      "name": "Redash",
+      "latestCount": 1
+    },
+    {
+      "templateId": "redink",
+      "name": "RedInk",
+      "latestCount": 1
+    },
+    {
+      "templateId": "redis",
+      "name": "Redis",
+      "latestCount": 1
+    },
+    {
+      "templateId": "redlib",
+      "name": "Redlib",
+      "latestCount": 1
+    },
+    {
+      "templateId": "redmine",
+      "name": "Redmine",
+      "latestCount": 1
+    },
+    {
+      "templateId": "reiverr",
+      "name": "Reiverr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "remmina",
+      "name": "Remmina",
+      "latestCount": 1
+    },
+    {
+      "templateId": "restic",
+      "name": "Restic",
+      "latestCount": 1
+    },
+    {
+      "templateId": "restreamer",
+      "name": "Restreamer",
+      "latestCount": 1
+    },
+    {
+      "templateId": "retroarch",
+      "name": "Retroarch",
+      "latestCount": 1
+    },
+    {
+      "templateId": "reveal-js",
+      "name": "Reveal.Js",
+      "latestCount": 1
+    },
+    {
+      "templateId": "robosats",
+      "name": "Robosats",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rocketchat",
+      "name": "rocketchat",
+      "latestCount": 1
+    },
+    {
+      "templateId": "romm",
+      "name": "Romm",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rosariosis",
+      "name": "Rosariosis",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rotki",
+      "name": "Rotki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "route96",
+      "name": "Route96",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rspamd",
+      "name": "Rspamd",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rss-bridge",
+      "name": "Rss Bridge",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rsshub",
+      "name": "Rsshub",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rustdesk-server",
+      "name": "Rustdesk Server",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rusty-kaspad",
+      "name": "Rusty Kaspad",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rutorrent",
+      "name": "Rutorrent",
+      "latestCount": 1
+    },
+    {
+      "templateId": "rybbit",
+      "name": "Rybbit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ryot",
+      "name": "Ryot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sabnzbd",
+      "name": "Sabnzbd",
+      "latestCount": 1
+    },
+    {
+      "templateId": "satsale",
+      "name": "satsale",
+      "latestCount": 1
+    },
+    {
+      "templateId": "scanservjs",
+      "name": "Scanservjs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "screenshot-to-code",
+      "name": "screenshot-to-code",
+      "latestCount": 1
+    },
+    {
+      "templateId": "scrutiny",
+      "name": "Scrutiny",
+      "latestCount": 1
+    },
+    {
+      "templateId": "searxng",
+      "name": "Searxng",
+      "latestCount": 1
+    },
+    {
+      "templateId": "seaweedfs",
+      "name": "Seaweedfs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "servas",
+      "name": "Servas",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sftpgo",
+      "name": "SFTPGo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "shaarli",
+      "name": "Shaarli",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sheetable",
+      "name": "Sheetable",
+      "latestCount": 1
+    },
+    {
+      "templateId": "shields",
+      "name": "Shields",
+      "latestCount": 1
+    },
+    {
+      "templateId": "shifter",
+      "name": "Shifter",
+      "latestCount": 1
+    },
+    {
+      "templateId": "shipshipship",
+      "name": "Shipshipship",
+      "latestCount": 1
+    },
+    {
+      "templateId": "shlink",
+      "name": "Shlink",
+      "latestCount": 1
+    },
+    {
+      "templateId": "shopstr",
+      "name": "Shopstr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sickchill",
+      "name": "Sickchill",
+      "latestCount": 1
+    },
+    {
+      "templateId": "signaturepdf",
+      "name": "Signaturepdf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sillytavern",
+      "name": "SillyTavern",
+      "latestCount": 1
+    },
+    {
+      "templateId": "silverbullet",
+      "name": "Silverbullet",
+      "latestCount": 1
+    },
+    {
+      "templateId": "slash",
+      "name": "Slash",
+      "latestCount": 1
+    },
+    {
+      "templateId": "slink",
+      "name": "Slink",
+      "latestCount": 1
+    },
+    {
+      "templateId": "smokeping",
+      "name": "Smokeping",
+      "latestCount": 1
+    },
+    {
+      "templateId": "snapdrop",
+      "name": "Snapdrop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "snipeit",
+      "name": "snipeit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "snowflake",
+      "name": "Snowflake",
+      "latestCount": 1
+    },
+    {
+      "templateId": "snserver",
+      "name": "Snserver",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sogo",
+      "name": "Sogo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "solectrus",
+      "name": "Solectrus",
+      "latestCount": 1
+    },
+    {
+      "templateId": "solidtime",
+      "name": "Solidtime",
+      "latestCount": 1
+    },
+    {
+      "templateId": "solr",
+      "name": "Solr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sonarr",
+      "name": "Sonarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "spacedeck",
+      "name": "Spacedeck",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sparkyfitness",
+      "name": "Sparkyfitness",
+      "latestCount": 1
+    },
+    {
+      "templateId": "spip",
+      "name": "Spip",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sqlitebrowser",
+      "name": "Sqlitebrowser",
+      "latestCount": 1
+    },
+    {
+      "templateId": "squeaknode",
+      "name": "Squeaknode",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sshwifty",
+      "name": "Sshwifty",
+      "latestCount": 1
+    },
+    {
+      "templateId": "stalwart",
+      "name": "Stalwart",
+      "latestCount": 1
+    },
+    {
+      "templateId": "starbase-80",
+      "name": "Starbase 80",
+      "latestCount": 1
+    },
+    {
+      "templateId": "stirling-pdf",
+      "name": "Stirling Pdf",
+      "latestCount": 1
+    },
+    {
+      "templateId": "streamer-sales",
+      "name": "Streamer Sales",
+      "latestCount": 1
+    },
+    {
+      "templateId": "stremio",
+      "name": "stremio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "strix",
+      "name": "Strix",
+      "latestCount": 1
+    },
+    {
+      "templateId": "stump",
+      "name": "Stump",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sun-panel",
+      "name": "Sun Panel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "suna",
+      "name": "Suna",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sunshine",
+      "name": "Sunshine",
+      "latestCount": 1
+    },
+    {
+      "templateId": "superset",
+      "name": "Superset",
+      "latestCount": 1
+    },
+    {
+      "templateId": "supertokens",
+      "name": "SuperTokens",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sure",
+      "name": "Sure",
+      "latestCount": 1
+    },
+    {
+      "templateId": "surrealdb",
+      "name": "Surrealdb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "swe-agent",
+      "name": "SWE-agent",
+      "latestCount": 1
+    },
+    {
+      "templateId": "synapse",
+      "name": "Synapse",
+      "latestCount": 1
+    },
+    {
+      "templateId": "synapse-admin",
+      "name": "Synapse Admin",
+      "latestCount": 1
+    },
+    {
+      "templateId": "syncserver-rs",
+      "name": "Syncserver Rs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "syncthing",
+      "name": "Syncthing",
+      "latestCount": 1
+    },
+    {
+      "templateId": "sysdig",
+      "name": "Sysdig",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tabby",
+      "name": "Tabby",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tailscale",
+      "name": "Tailscale",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tasks-md",
+      "name": "Tasks.Md",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tautulli",
+      "name": "Tautulli",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tdarr",
+      "name": "Tdarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "teampass",
+      "name": "Teampass",
+      "latestCount": 1
+    },
+    {
+      "templateId": "teamspeak",
+      "name": "Teamspeak",
+      "latestCount": 1
+    },
+    {
+      "templateId": "telepresence",
+      "name": "Telepresence",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tensorzero",
+      "name": "TensorZero",
+      "latestCount": 1
+    },
+    {
+      "templateId": "termix",
+      "name": "Termix",
+      "latestCount": 1
+    },
+    {
+      "templateId": "terraforming-mars",
+      "name": "Terraforming Mars",
+      "latestCount": 1
+    },
+    {
+      "templateId": "test-app",
+      "name": "Test Application",
+      "latestCount": 1
+    },
+    {
+      "templateId": "text-generation-inference",
+      "name": "Text Generation Inference",
+      "latestCount": 1
+    },
+    {
+      "templateId": "textarea",
+      "name": "Textarea",
+      "latestCount": 1
+    },
+    {
+      "templateId": "thelounge",
+      "name": "Thelounge",
+      "latestCount": 1
+    },
+    {
+      "templateId": "thunderhub",
+      "name": "Thunderhub",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tianji",
+      "name": "Tianji",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tidb",
+      "name": "TiDB",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tine",
+      "name": "Tine",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tinyfeed",
+      "name": "Tinyfeed",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tinyfilemanager",
+      "name": "Tinyfilemanager",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tinymediamanager",
+      "name": "Tinymediamanager",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tooljet",
+      "name": "Tooljet",
+      "latestCount": 1
+    },
+    {
+      "templateId": "torq",
+      "name": "Torq",
+      "latestCount": 1
+    },
+    {
+      "templateId": "toshi-moto",
+      "name": "Toshi Moto",
+      "latestCount": 1
+    },
+    {
+      "templateId": "traccar",
+      "name": "Traccar",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tradingagents",
+      "name": "TradingAgents",
+      "latestCount": 1
+    },
+    {
+      "templateId": "traefik",
+      "name": "Traefik",
+      "latestCount": 1
+    },
+    {
+      "templateId": "transfersh",
+      "name": "Transfersh",
+      "latestCount": 1
+    },
+    {
+      "templateId": "transmission",
+      "name": "Transmission",
+      "latestCount": 1
+    },
+    {
+      "templateId": "transmission-openvpn",
+      "name": "Transmission Openvpn",
+      "latestCount": 1
+    },
+    {
+      "templateId": "trendradar",
+      "name": "TrendRadar",
+      "latestCount": 1
+    },
+    {
+      "templateId": "triggerdev",
+      "name": "Trigger.dev",
+      "latestCount": 1
+    },
+    {
+      "templateId": "trilium",
+      "name": "Trilium",
+      "latestCount": 1
+    },
+    {
+      "templateId": "trivy",
+      "name": "Trivy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ttrss",
+      "name": "Ttrss",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tubearchivist",
+      "name": "Tubearchivist",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tunarr",
+      "name": "Tunarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tuwunel",
+      "name": "Tuwunel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "tvheadend",
+      "name": "Tvheadend",
+      "latestCount": 1
+    },
+    {
+      "templateId": "twenty",
+      "name": "Twenty",
+      "latestCount": 1
+    },
+    {
+      "templateId": "typebot",
+      "name": "Typebot",
+      "latestCount": 1
+    },
+    {
+      "templateId": "typesense",
+      "name": "TypeSense",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ubooquity",
+      "name": "Ubooquity",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ubuntu",
+      "name": "Ubuntu",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ufw-docker",
+      "name": "UFW Docker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "umap",
+      "name": "Umap",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ums",
+      "name": "Ums",
+      "latestCount": 1
+    },
+    {
+      "templateId": "uncloud",
+      "name": "Uncloud",
+      "latestCount": 1
+    },
+    {
+      "templateId": "unit3d",
+      "name": "UNIT3D",
+      "latestCount": 1
+    },
+    {
+      "templateId": "unmanic",
+      "name": "Unmanic",
+      "latestCount": 1
+    },
+    {
+      "templateId": "upsnap",
+      "name": "Upsnap",
+      "latestCount": 1
+    },
+    {
+      "templateId": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "latestCount": 1
+    },
+    {
+      "templateId": "usertour",
+      "name": "Usertour",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vane",
+      "name": "Vane",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vault",
+      "name": "Vault",
+      "latestCount": 1
+    },
+    {
+      "templateId": "versitygw",
+      "name": "Versitygw",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vert",
+      "name": "Vert",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vikunja",
+      "name": "Vikunja",
+      "latestCount": 1
+    },
+    {
+      "templateId": "virtualtabletop",
+      "name": "Virtualtabletop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "viseron",
+      "name": "Viseron",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vouchervault",
+      "name": "Vouchervault",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vpnclient",
+      "name": "Vpnclient",
+      "latestCount": 1
+    },
+    {
+      "templateId": "vvveb",
+      "name": "Vvveb",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wallabag",
+      "name": "Wallabag",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wallos",
+      "name": "Wallos",
+      "latestCount": 1
+    },
+    {
+      "templateId": "warpgate",
+      "name": "Warpgate",
+      "latestCount": 1
+    },
+    {
+      "templateId": "warracker",
+      "name": "Warracker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "watcharr",
+      "name": "Watcharr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "watchdog",
+      "name": "Watchdog",
+      "latestCount": 1
+    },
+    {
+      "templateId": "watchtower",
+      "name": "Watchtower",
+      "latestCount": 1
+    },
+    {
+      "templateId": "watchyourlan",
+      "name": "Watchyourlan",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wavelog",
+      "name": "Wavelog",
+      "latestCount": 1
+    },
+    {
+      "templateId": "weaviate",
+      "name": "Weaviate",
+      "latestCount": 1
+    },
+    {
+      "templateId": "webcheck",
+      "name": "Webcheck",
+      "latestCount": 1
+    },
+    {
+      "templateId": "weblate",
+      "name": "Weblate",
+      "latestCount": 1
+    },
+    {
+      "templateId": "webtop",
+      "name": "Webtop",
+      "latestCount": 1
+    },
+    {
+      "templateId": "webtor",
+      "name": "Webtor",
+      "latestCount": 1
+    },
+    {
+      "templateId": "webtrees",
+      "name": "Webtrees",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wekan",
+      "name": "Wekan",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wetty",
+      "name": "Wetty",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wgcloud",
+      "name": "WGCloud",
+      "latestCount": 1
+    },
+    {
+      "templateId": "what-to-cook",
+      "name": "What To Cook?",
+      "latestCount": 1
+    },
+    {
+      "templateId": "whisparr",
+      "name": "Whisparr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "whoogle-search",
+      "name": "Whoogle Search",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wiki-go",
+      "name": "Wiki Go",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wikidocs",
+      "name": "Wikidocs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wikijs",
+      "name": "Wikijs",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wikimore",
+      "name": "Wikimore",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wingfit",
+      "name": "Wingfit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wireguard",
+      "name": "Wireguard",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wondercms",
+      "name": "Wondercms",
+      "latestCount": 1
+    },
+    {
+      "templateId": "woodpecker",
+      "name": "Woodpecker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "wordpress",
+      "name": "Wordpress",
+      "latestCount": 1
+    },
+    {
+      "templateId": "workout-cool",
+      "name": "Workout Cool",
+      "latestCount": 1
+    },
+    {
+      "templateId": "workout-tracker",
+      "name": "Workout Tracker",
+      "latestCount": 1
+    },
+    {
+      "templateId": "worldmonitor",
+      "name": "WorldMonitor",
+      "latestCount": 1
+    },
+    {
+      "templateId": "writefreely",
+      "name": "Writefreely",
+      "latestCount": 1
+    },
+    {
+      "templateId": "xbackbone",
+      "name": "Xbackbone",
+      "latestCount": 1
+    },
+    {
+      "templateId": "xiaomusic",
+      "name": "Xiaomusic",
+      "latestCount": 1
+    },
+    {
+      "templateId": "xwiki",
+      "name": "Xwiki",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yacht",
+      "name": "Yacht",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yamtrack",
+      "name": "Yamtrack",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yarr",
+      "name": "Yarr",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yeetfile",
+      "name": "Yeetfile",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yellow",
+      "name": "Yellow",
+      "latestCount": 1
+    },
+    {
+      "templateId": "your-spotify",
+      "name": "Your Spotify",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yourls",
+      "name": "Yourls",
+      "latestCount": 1
+    },
+    {
+      "templateId": "youtubedl-material",
+      "name": "Youtubedl Material",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yucca",
+      "name": "Yucca",
+      "latestCount": 1
+    },
+    {
+      "templateId": "yuxi",
+      "name": "Yuxi",
+      "latestCount": 1
+    },
+    {
+      "templateId": "zen",
+      "name": "Zen",
+      "latestCount": 1
+    },
+    {
+      "templateId": "zigbee2mqtt",
+      "name": "Zigbee2Mqtt",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ziit",
+      "name": "Ziit",
+      "latestCount": 1
+    },
+    {
+      "templateId": "zitadel",
+      "name": "Zitadel",
+      "latestCount": 1
+    },
+    {
+      "templateId": "znc",
+      "name": "Znc",
+      "latestCount": 1
+    },
+    {
+      "templateId": "zoraxy",
+      "name": "Zoraxy",
+      "latestCount": 1
+    },
+    {
+      "templateId": "ztnet",
+      "name": "Ztnet",
+      "latestCount": 1
+    },
+    {
+      "templateId": "zusam",
+      "name": "Zusam",
+      "latestCount": 1
+    },
+    {
+      "templateId": "zwave-js-ui",
+      "name": "Zwave Js Ui",
       "latestCount": 1
     }
   ]

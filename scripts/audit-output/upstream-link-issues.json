@@ -1,9 +1,9 @@
 {
   "meta": {
-    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "auditedAt": "2026-05-07T21:44:16.687Z",
     "totalTemplates": 842,
-    "processed": 10,
-    "skipped": 0
+    "processed": 804,
+    "skipped": 38
   },
   "data": [
     {
@@ -41,6 +41,1355 @@
           "category": "few-links",
           "severity": "low",
           "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "aionui",
+      "name": "AionUi",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "astrbot",
+      "name": "AstrBot",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "backdrop",
+      "name": "Backdrop",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "bisheng",
+      "name": "Bishêng",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "caddy",
+      "name": "Caddy",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "cc-gateway",
+      "name": "CC Gateway",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "chroma",
+      "name": "Chroma",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "clawith",
+      "name": "Clawith",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "cockpit",
+      "name": "cockpit",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "cog",
+      "name": "Cog",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "couchdb",
+      "name": "Couchdb",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "databend",
+      "name": "Databend",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "dbeaver",
+      "name": "DBeaver",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "deepwiki",
+      "name": "DeepWiki",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "deerflow",
+      "name": "Deer-Flow",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "dendrite",
+      "name": "dendrite",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "docsgpt",
+      "name": "DocsGPT",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "drupal",
+      "name": "Drupal",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "easyappointments",
+      "name": "easyappointments",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "elasticsearch",
+      "name": "Elasticsearch",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "elasticsearch7",
+      "name": "elasticsearch7",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "elizaos",
+      "name": "ElizaOS",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "firecrawl",
+      "name": "Firecrawl",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "focalboard",
+      "name": "focalboard",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "friendica",
+      "name": "Friendica",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "funkwhale",
+      "name": "Funkwhale",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "ghost",
+      "name": "Ghost",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "grafana",
+      "name": "Grafana",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "grype",
+      "name": "Grype",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "harbor-llm",
+      "name": "Harbor LLM",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "hermesagent",
+      "name": "Hermes-Agent",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "influxdb-v2",
+      "name": "influxdb_v2",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "insforge",
+      "name": "InsForge",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "invoice-ninja",
+      "name": "invoice-ninja",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "itflow",
+      "name": "itflow",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "joern",
+      "name": "Joern",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "joomla",
+      "name": "Joomla",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "kag",
+      "name": "KAG",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "khoj",
+      "name": "Khoj",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "koel",
+      "name": "koel",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "kong",
+      "name": "Kong",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "langflow",
+      "name": "LangFlow",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "litellm",
+      "name": "LiteLLM",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "lobehub",
+      "name": "LobeHub",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "localai",
+      "name": "LocalAI",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "matomo",
+      "name": "Matomo",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "mediawiki",
+      "name": "Mediawiki",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "meilisearch",
+      "name": "Meilisearch",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "memvid",
+      "name": "Memvid",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "microsandbox",
+      "name": "Microsandbox",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "mindsdb",
+      "name": "MindsDB",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "minio",
+      "name": "Minio",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "mlflow",
+      "name": "MLflow",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "mongo-express",
+      "name": "mongo-express",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "monica",
+      "name": "Monica",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "motioneye",
+      "name": "motioneye",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "nanobot",
+      "name": "NanoBot",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "netdata",
+      "name": "Netdata",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "nextcloud",
+      "name": "Nextcloud",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "nginx",
+      "name": "Nginx",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "node-exporter",
+      "name": "node_exporter",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "nodered",
+      "name": "nodered",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "om1",
+      "name": "OM1",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "onyx",
+      "name": "Onyx",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "openfang",
+      "name": "OpenFang",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "openspiel",
+      "name": "OpenSpiel",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "openwebui",
+      "name": "Open WebUI",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "overleaf",
+      "name": "overleaf",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "pentagi",
+      "name": "PentaGI",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "photoprism",
+      "name": "PhotoPrism",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "phpmyadmin",
+      "name": "Phpmyadmin",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "plexe",
+      "name": "Plexe",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "prometheus",
+      "name": "Prometheus",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "quivr",
+      "name": "Quivr",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "rabbitmq",
+      "name": "Rabbitmq",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "rd-agent",
+      "name": "RD-Agent",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "redis",
+      "name": "Redis",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "rocketchat",
+      "name": "rocketchat",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "rowboat",
+      "name": "Rowboat",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "satsale",
+      "name": "satsale",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "sentry-selfhosted",
+      "name": "Sentry (Self-Hosted)",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "sillytavern",
+      "name": "SillyTavern",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "snipeit",
+      "name": "snipeit",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "solacemesh",
+      "name": "Solace Agent Mesh",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "stremio",
+      "name": "stremio",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "suna",
+      "name": "Suna",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "teamspeak",
+      "name": "Teamspeak",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "tensorzero",
+      "name": "TensorZero",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "test-app",
+      "name": "Test Application",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "tidb",
+      "name": "TiDB",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "tradingagents",
+      "name": "TradingAgents",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "trendradar",
+      "name": "TrendRadar",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "triggerdev",
+      "name": "Trigger.dev",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "trivy",
+      "name": "Trivy",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "typesense",
+      "name": "TypeSense",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "ubuntu",
+      "name": "Ubuntu",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "ufw-docker",
+      "name": "UFW Docker",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "uncloud",
+      "name": "Uncloud",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "vane",
+      "name": "Vane",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "weaviate",
+      "name": "Weaviate",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "wgcloud",
+      "name": "WGCloud",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "wordpress",
+      "name": "Wordpress",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "worldmonitor",
+      "name": "WorldMonitor",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "xiaomusic",
+      "name": "Xiaomusic",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "xwiki",
+      "name": "Xwiki",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "znc",
+      "name": "Znc",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "dokploy",
+      "name": "Dokploy",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "harness",
+      "name": "Harness",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "parseable",
+      "name": "Parseable",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
         }
       ]
     }

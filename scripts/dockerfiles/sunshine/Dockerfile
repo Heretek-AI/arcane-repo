@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /build/sunshine
 
-RUN git clone --depth 1 --branch v2025.924.154138 https://github.com/LizardByte/Sunshine.git . \
+RUN git clone --depth 1 --recurse-submodules --branch v2025.924.154138 https://github.com/LizardByte/Sunshine.git . \
     && chmod +x scripts/linux_build.sh
 
 # Install gcc-13 toolchain via ubuntu-toolchain-r/test PPA (Sunshine build dependencies)

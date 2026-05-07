@@ -6,6 +6,7 @@ FROM python:3.12-alpine
 
 RUN apk add --no-cache \
     build-base \
+    git \
     nodejs \
     npm \
     ffmpeg \

@@ -13,7 +13,7 @@ RUN git clone --depth 1 https://github.com/ItzCrazyKns/Vane.git /tmp/vane && \
     cp -r /tmp/vane/* /app/ && \
     rm -rf /tmp/vane
 
-RUN npm install --legacy-peer-deps --network-timeout 600000
+RUN npm install --legacy-peer-deps --network-timeout=600000
 
 RUN mkdir -p /app/data
 

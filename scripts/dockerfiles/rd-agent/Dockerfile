@@ -15,10 +15,8 @@ RUN git clone --depth 1 https://github.com/microsoft/RD-Agent.git /tmp/rd-agent 
     cp -r /tmp/rd-agent/* /app/ && \
     rm -rf /tmp/rd-agent
 
-# Install Python dependencies (library, not the frontend)
-RUN uv pip install --system --no-cache-dir \
-    . \
-    fastapi uvicorn
+# Install FastAPI stack only (server.py wraps the upstream CLI, no full source needed)
+RUN uv pip install --system --no-cache-dir fastapi uvicorn
 
 EXPOSE 8000
 

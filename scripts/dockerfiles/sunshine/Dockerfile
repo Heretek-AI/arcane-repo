@@ -23,19 +23,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /build/sunshine
 
-RUN git clone --depth 1 --branch v2025.924.154138 https://github.com/LizardByte/Sunshine.git . \
+RUN git clone --depth 1 --branch v2025.923.33222 https://github.com/LizardByte/Sunshine.git . \
     && chmod +x scripts/linux_build.sh
 
-# Build deps, cmake, build, and package
-RUN ./scripts/linux_build.sh --step=deps --sudo-off \
-    && ./scripts/linux_build.sh \
-        --step=cmake \
+# Build deps, cmake, build, and package (v2025.923.33222 interface: --step= removed, runs full build by default)
+RUN ./scripts/linux_build.sh \
+        --sudo-off \
         --publisher-name='LizardByte' \
         --publisher-website='https://app.lizardbyte.dev' \
-        --publisher-issue-url='https://app.lizardbyte.dev/support' \
-        --sudo-off \
-    && ./scripts/linux_build.sh --step=build --sudo-off \
-    && ./scripts/linux_build.sh --step=package --sudo-off
+        --publisher-issue-url='https://app.lizardbyte.dev/support'
 
 # ── Stage 2: Runtime with FastAPI wrapper ──────────────────────────
 

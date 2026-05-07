@@ -10,7 +10,7 @@
 
 ## Slices
 
-- [ ] **S01: Fix and verify all failing Docker builds** `risk:high` `depends:[]`
+- [x] **S01: S01** `risk:high` `depends:[]`
   > After this: All Docker image build workflows show green/pass status on GitHub Actions — including the previously broken builds and the runner-starved batch.
 
 ## Boundary Map

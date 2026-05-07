@@ -1,12 +1,13 @@
 # GSD State
 
-**Active Milestone:** M001: Fix All Failing Docker Builds
-**Active Slice:** S01: Fix and verify all failing Docker builds
+**Active Milestone:** M002: Template Quality & Documentation Audit
+**Active Slice:** S01: Build audit tooling and run baseline
 **Phase:** planning
-**Requirements Status:** 0 active · 0 validated · 0 deferred · 0 out of scope
+**Requirements Status:** 0 active · 11 validated · 0 deferred · 0 out of scope
 
 ## Milestone Registry
-- 🔄 **M001:** Fix All Failing Docker Builds
+- ✅ **M001:** Fix All Failing Docker Builds
+- 🔄 **M002:** Template Quality & Documentation Audit
 
 ## Recent Decisions
 - None recorded

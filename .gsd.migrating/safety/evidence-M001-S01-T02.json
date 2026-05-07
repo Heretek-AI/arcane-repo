@@ -1,0 +1,236 @@
+[
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_cy81ml4xqnvx_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh workflow run build-sunshine.yml --ref main 2>&1 || echo \"CLI fallback needed\"",
+    "exitCode": 1,
+    "outputSnippet": "Skipped due to queued user message.",
+    "timestamp": 1778155568365
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_e5kxi91naza6_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh api repos/Heretek-AI/arcane-repo/actions/workflows -q '.workflows[] | select(.name == \"Build Sunshine\") | {id, name, path}' 2>&1",
+    "exitCode": 0,
+    "outputSnippet": "{\"id\":269445347,\"name\":\"Build Sunshine\",\"path\":\".github/workflows/build-sunshine.yml\"}\n",
+    "timestamp": 1778155571372
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_j9y1g1wstbtx_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/scripts/dockerfiles/sunshine/Dockerfile",
+    "timestamp": 1778155581176
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_gkkxp0y3flo0_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh api -X POST repos/Heretek-AI/arcane-repo/actions/workflows/269445347/dispatches -f ref=main 2>&1 && echo \"Dispatched successfully\"",
+    "exitCode": 0,
+    "outputSnippet": "Dispatched successfully\n",
+    "timestamp": 1778155589908
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_qqa7kz96sowb_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run list --workflow=build-sunshine.yml --limit 1 2>&1",
+    "exitCode": 0,
+    "outputSnippet": "queued\t\tBuild Sunshine\tBuild Sunshine\tmain\tworkflow_dispatch\t25494743219\t6s\t2026-05-07T12:06:31Z\n",
+    "timestamp": 1778155596820
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_q4zol7otabw9_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && sleep 20 && gh run list --workflow=build-sunshine.yml --limit 1 2>&1",
+    "exitCode": 0,
+    "outputSnippet": "in_progress\t\tBuild Sunshine\tBuild Sunshine\tmain\tworkflow_dispatch\t25494743219\t32s\t2026-05-07T12:06:31Z\n",
+    "timestamp": 1778155602554
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_budrve92moze_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && sleep 120 && gh run list --workflow=build-sunshine.yml --limit 1 2>&1",
+    "exitCode": 0,
+    "outputSnippet": "completed\tfailure\tBuild Sunshine\tBuild Sunshine\tmain\tworkflow_dispatch\t25494743219\t1m3s\t2026-05-07T12:06:31Z\n",
+    "timestamp": 1778155626743
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_agck1n51hgr8_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494743219 --log 2>&1 | tail -80",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:07:28.0838179Z #12 0.116 Detected Architecture: x86_64\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:07:28.0838793Z #12 0.118 Script Directory: /build/sunshine/scripts\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:07:28.0839521Z #12 0.118 Build Directory: /build/sunshine/scripts/../build\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:07:28.0840366Z #12 0.237 Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:07:28.188",
+    "timestamp": 1778155766131
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_m5ozxlgr62j8_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/scripts/dockerfiles/sunshine/Dockerfile",
+    "timestamp": 1778155790564
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_h3la4wyjvh2v_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/scripts/dockerfiles/sunshine/Dockerfile",
+    "timestamp": 1778155805035
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_33fjda8u9wgv_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh api -X POST repos/Heretek-AI/arcane-repo/actions/workflows/269445347/dispatches -f ref=main 2>&1 && echo \"Dispatched\"",
+    "exitCode": 0,
+    "outputSnippet": "Dispatched\n",
+    "timestamp": 1778155810489
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_5dkrs4tawrwl_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && sleep 150 && gh run list --workflow=build-sunshine.yml --limit 1 2>&1",
+    "exitCode": 0,
+    "outputSnippet": "completed\tfailure\tBuild Sunshine\tBuild Sunshine\tmain\tworkflow_dispatch\t25494909551\t1m5s\t2026-05-07T12:10:12Z\n",
+    "timestamp": 1778155818316
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_6pu6dwb725x7_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log-failed 2>&1 | tail -40",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8959390Z ------\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8959765Z \nbuild / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8960308Z  ^[[33m1 warning found (use docker --debug to expand):\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8961404Z ^[[0m - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 83)\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8968057Z Dockerfile:33\nbuild / build\tUN",
+    "timestamp": 1778155975658
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_o1p7g1pt01g9_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -i -E \"cmake error|error:|Could not find|configure|exit code\" | head -30",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:10:25.6703004Z hint: will change to \"main\" in Git 3.0. To configure the initial branch name\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8809766Z #12 ERROR: process \"/bin/bash -o pipefail -c ./scripts/linux_build.sh         --sudo-off         --publisher-name='LizardByte'         --publisher-website='https://app.lizardbyte.dev'         --publisher-issue-url='https://app.lizardbyte.dev/support'\" did not complete successfully: exit code: 100\nbuild / build",
+    "timestamp": 1778155985402
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_bovlv7l0d2fo_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -B5 -A5 \"gcc\\|compiler\\|CMake Error\\|Could not find\" | head -60",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1215652Z #8 4.305 Building dependency tree...\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1216090Z #8 4.534 Reading state information...\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1216655Z #8 4.738 The following additional packages will be installed:\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1217771Z #8 4.738   binutils binutils-common binutils-x86-64-linux-gnu cmake-data cpp cpp-11\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1218761Z",
+    "timestamp": 1778155992644
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_53py5tgi8udl_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -E \"CMake Error|cmake error|configure error|FAILED|failed to\" | head -20",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:11:13.8977822Z ERROR: failed to build: failed to solve: process \"/bin/bash -o pipefail -c ./scripts/linux_build.sh         --sudo-off         --publisher-name='LizardByte'         --publisher-website='https://app.lizardbyte.dev'         --publisher-issue-url='https://app.lizardbyte.dev/support'\" did not complete successfully: exit code: 100\n",
+    "timestamp": 1778156006633
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_876g9qfd8fxc_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -i \"CMake Error\\|Could not find\\|cmake error\\|configure.*error\" | head -20",
+    "exitCode": 0,
+    "outputSnippet": "(no output)",
+    "timestamp": 1778156013993
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_4fcbeo3ft7hs_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -i -E \"error|failed\" | head -30",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1235381Z #8 4.739   libdrm2 libedit2 libegl-dev libegl-mesa0 libegl1 libelf1 liberror-perl\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1324208Z #8 5.359   libegl-dev libegl-mesa0 libegl1 libelf1 liberror-perl libevdev-dev libevdev2\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1460955Z #8 6.967 Get:104 http://archive.ubuntu.com/ubuntu jammy/main amd64 liberror-perl all 0.17029-1 [26.5 kB]\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:45.5175277Z #",
+    "timestamp": 1778156021903
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_xp855lauoazp_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -i \"CMake\\|ninja\\|sunshine\\|make\\|ldconfig\\|GL\\|lib\\.\\|step\\|warning\" | head -30",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t﻿2026-05-07T12:10:24.2760088Z Current runner version: '2.334.0'\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:24.2786425Z ##[group]Runner Image Provisioner\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:24.2787665Z Hosted Compute Agent\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:24.2788251Z Version: 20260213.493\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:24.2788861Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:24.2789625Z Bui",
+    "timestamp": 1778156032766
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_2h1j2yh8dgzv_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -E \"CMake|cmake|ninja|Configure|Building|g\\+\\+|compiler\" | head -20",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:10:27.3817663Z ^[[36;1mecho \"Building $IMAGE from scripts/dockerfiles/sunshine/Dockerfile...\"^[[0m\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:27.3911474Z Building ghcr.io/heretek-ai/arcane-repo/sunshine:latest from scripts/dockerfiles/sunshine/Dockerfile...\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:34.1719920Z #7 4.162 Building dependency tree...\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1191678Z #8 [builder 2/6] RUN apt-get update && apt-get inst",
+    "timestamp": 1778156047120
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_cetl3aykwj3k_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25494909551 --log 2>&1 | grep -i \"CMake Error\\|Could not find\\|No cmake\\|CMake step\\|Configuring CMake\\|cmake ..\\|Sunshine/build\\|Error:\" | head -20",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:10:38.1191678Z #8 [builder 2/6] RUN apt-get update && apt-get install -y --no-install-recommends     git cmake g++     libavdevice-dev libboost-thread-dev libboost-filesystem-dev     libboost-log-dev libpulse-dev libopus-dev libevdev-dev     libxtst-dev libx11-dev libxfixes-dev libxrandr-dev     libdrm-dev libva-dev libvdpau-dev libssl-dev     libcurl4-openssl-dev libgl1-mesa-dev     ca-certificates     && rm -rf /var/lib/apt/lists/*\nbuild / build\tUNKNOWN",
+    "timestamp": 1778156058690
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_fwhbbbzakrhy_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/scripts/dockerfiles/sunshine/Dockerfile",
+    "timestamp": 1778156094799
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_ok3zw8jk16ls_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/scripts/dockerfiles/sunshine/Dockerfile",
+    "timestamp": 1778156101158
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_3a3kgonbj99p_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/scripts/dockerfiles/sunshine/Dockerfile",
+    "timestamp": 1778156109345
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_0g87w4c6x3mt_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh api -X POST repos/Heretek-AI/arcane-repo/actions/workflows/269445347/dispatches -f ref=main 2>&1 && echo \"Dispatched v2024.1.1\"",
+    "exitCode": 0,
+    "outputSnippet": "Dispatched v2024.1.1\n",
+    "timestamp": 1778156115353
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_30jnk3jdojqq_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && sleep 180 && gh run list --workflow=build-sunshine.yml --limit 1 2>&1",
+    "exitCode": 0,
+    "outputSnippet": "completed\tfailure\tBuild Sunshine\tBuild Sunshine\tmain\tworkflow_dispatch\t25495145682\t58s\t2026-05-07T12:15:17Z\n",
+    "timestamp": 1778156123300
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_g0d6m6zb7frm_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25495145682 --log 2>&1 | grep -i \"CMake Error\\|Could not find\\|configure\\|FAILED\\|Error:.*cmake\\|error.*cmake\" | head -10",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:15:24.0136260Z hint: will change to \"main\" in Git 3.0. To configure the initial branch name\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:16:13.2048132Z ERROR: failed to build: failed to solve: process \"/bin/bash -o pipefail -c ./scripts/linux_build.sh         --sudo-off         --publisher-name='LizardByte'         --publisher-website='https://app.lizardbyte.dev'         --publisher-issue-url='https://app.lizardbyte.dev/support'\" did not complete successfully",
+    "timestamp": 1778156311625
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_764lw4hyukts_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25495145682 --log 2>&1 | grep -E \"^build.*#12\" | head -40",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:16:09.0170442Z #12 [builder 6/6] RUN ./scripts/linux_build.sh         --sudo-off         --publisher-name='LizardByte'         --publisher-website='https://app.lizardbyte.dev'         --publisher-issue-url='https://app.lizardbyte.dev/support'\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:16:09.0171926Z #12 0.118 PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:16:09.0172441Z #12 0.118 NAME=\"Ubuntu\"\nbuild / build\tUNKNOWN STEP\t2026-05-07",
+    "timestamp": 1778156319192
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_ook7pquafeyo_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25495145682 --log 2>&1 | grep -i -E \"CMake Error|cmake error|Configure CMake|could not find|couldn't find\" | head -10",
+    "exitCode": 0,
+    "outputSnippet": "(no output)",
+    "timestamp": 1778156329280
+  },
+  {
+    "kind": "bash",
+    "toolCallId": "call_function_dfhhiysewn9e_1",
+    "command": "cd /c/Users/Derek/Desktop/arcane-repo && gh run view 25495145682 --log 2>&1 | grep -E \"^[0-9]+\\.[0-9]+\\s+Downloading|Downloaded|Configuring|CMake|Building|ninja|Building|Cannot|Error:|warning:.*error\" | head -20",
+    "exitCode": 0,
+    "outputSnippet": "build / build\tUNKNOWN STEP\t2026-05-07T12:15:25.7789738Z ^[[36;1mecho \"Building $IMAGE from scripts/dockerfiles/sunshine/Dockerfile...\"^[[0m\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:15:25.7886152Z Building ghcr.io/heretek-ai/arcane-repo/sunshine:latest from scripts/dockerfiles/sunshine/Dockerfile...\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:15:33.1532014Z #7 4.410 Building dependency tree...\nbuild / build\tUNKNOWN STEP\t2026-05-07T12:15:37.1209665Z #8 4.326 Building dependency tree...\nbuild / build\t",
+    "timestamp": 1778156338545
+  },
+  {
+    "kind": "edit",
+    "toolCallId": "call_function_3egx0d5qcras_1",
+    "path": "C:/Users/Derek/Desktop/arcane-repo/.gsd/milestones/M001/slices/S01/run-log.md",
+    "timestamp": 1778156371497
+  }
+]

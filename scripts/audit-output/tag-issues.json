@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "totalTemplates": 842,
+    "processed": 10,
+    "skipped": 0
+  },
+  "data": [
+    {
+      "templateId": "agent-zero",
+      "name": "Agent Zero",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
+      "templateId": "agenta",
+      "name": "Agenta",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    }
+  ]
+}

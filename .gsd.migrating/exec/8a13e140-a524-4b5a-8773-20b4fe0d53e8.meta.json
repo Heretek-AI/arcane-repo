@@ -1,0 +1,18 @@
+{
+  "id": "8a13e140-a524-4b5a-8773-20b4fe0d53e8",
+  "runtime": "bash",
+  "purpose": "Verify code changes exist outside .gsd",
+  "script_chars": 122,
+  "started_at": "2026-05-07T14:24:07.141Z",
+  "finished_at": "2026-05-07T14:24:19.476Z",
+  "exit_code": 1,
+  "signal": null,
+  "timed_out": false,
+  "duration_ms": 12335,
+  "stdout_bytes": 0,
+  "stderr_bytes": 85,
+  "stdout_truncated": false,
+  "stderr_truncated": false,
+  "stdout_path": "C:\\Users\\Derek\\Desktop\\arcane-repo\\.gsd\\exec\\8a13e140-a524-4b5a-8773-20b4fe0d53e8.stdout",
+  "stderr_path": "C:\\Users\\Derek\\Desktop\\arcane-repo\\.gsd\\exec\\8a13e140-a524-4b5a-8773-20b4fe0d53e8.stderr"
+}

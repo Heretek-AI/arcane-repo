@@ -1,0 +1,89 @@
+{
+  "compiledAt": "2026-05-07T14:37:28.073Z",
+  "milestoneId": "M001",
+  "pipeline": {
+    "clarifyRoundLimit": 3,
+    "researchSynthesized": false,
+    "draftContextIncluded": false,
+    "finalizedContextIncluded": true,
+    "sourcePhase": "completing-milestone"
+  },
+  "nodes": [
+    {
+      "id": "execute-task:M001:S01:T01",
+      "kind": "unit",
+      "dependsOn": [],
+      "writes": [],
+      "metadata": {
+        "unitType": "execute-task",
+        "unitId": "M001.S01.T01",
+        "title": "All 5 structurally fixed Docker workflows dispatched and verified passing on GitHub Actions",
+        "status": "complete"
+      }
+    },
+    {
+      "id": "execute-task:M001:S01:T02",
+      "kind": "unit",
+      "dependsOn": [
+        "execute-task:M001:S01:T01"
+      ],
+      "writes": [
+        "scripts/dockerfiles/sunshine/Dockerfile",
+        ".gsd/milestones/M001/slices/S01/run-log.md"
+      ],
+      "metadata": {
+        "unitType": "execute-task",
+        "unitId": "M001.S01.T02",
+        "title": "Fixed gcc-13 toolchain and pinned Sunshine to v2024.1.1; cmake configure step still fails — error not visible in Actions log",
+        "status": "complete"
+      }
+    },
+    {
+      "id": "execute-task:M001:S01:T03",
+      "kind": "unit",
+      "dependsOn": [
+        "execute-task:M001:S01:T02"
+      ],
+      "writes": [
+        "scripts/dockerfiles/sunshine/Dockerfile",
+        ".gsd/milestones/M001/slices/S01/run-log.md"
+      ],
+      "metadata": {
+        "unitType": "execute-task",
+        "unitId": "M001.S01.T03",
+        "title": "Re-dispatched 6 runner-starved workflows sequentially; 3 already passing (Harbor-LLM, KAG, CC Gateway), 3 still failing (AionUI, WGCloud, Yuxi) — not runner-starved after all",
+        "status": "complete"
+      }
+    },
+    {
+      "id": "execute-task:M001:S01:T04",
+      "kind": "unit",
+      "dependsOn": [
+        "execute-task:M001:S01:T03"
+      ],
+      "writes": [
+        "scripts/dockerfiles/sunshine/Dockerfile",
+        ".gsd/milestones/M001/slices/S01/run-log.md"
+      ],
+      "metadata": {
+        "unitType": "execute-task",
+        "unitId": "M001.S01.T04",
+        "title": "Sunshine cmake configure fixed; workflow now passes",
+        "status": "complete"
+      }
+    },
+    {
+      "id": "complete-slice:M001:S01",
+      "kind": "verification",
+      "dependsOn": [
+        "execute-task:M001:S01:T04"
+      ],
+      "metadata": {
+        "unitType": "complete-slice",
+        "unitId": "M001.S01",
+        "title": "S01",
+        "status": "complete"
+      }
+    }
+  ]
+}

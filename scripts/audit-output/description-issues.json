@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "totalTemplates": 842,
+    "processed": 10,
+    "skipped": 0
+  },
+  "data": [
+    {
+      "templateId": "abantecart",
+      "name": "abantecart",
+      "issues": [
+        {
+          "category": "generic-description",
+          "severity": "medium",
+          "message": "Description matches generic pattern: \"abantecart — self-hosted via Docker Compose\""
+        }
+      ]
+    }
+  ]
+}

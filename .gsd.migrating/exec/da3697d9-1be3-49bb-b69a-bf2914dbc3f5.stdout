@@ -1,0 +1,17 @@
+no-merge-base
+---
+4abade8f chore: auto-commit after execute-task
+904a3434 sunshine: add --recurse-submodules to fetch missing third-party deps (enet, Simple-Web-Server, libdisplaydevice)
+71adcb94 sunshine: pin to v2025.924.154138 (v2024.1.1 tag unavailable); tee build log
+44630c42 sunshine: tee build log to /tmp so cmake errors surface in Actions log
+07db3521 gsd snapshot: uncommitted changes after 35m inactivity
+c9dec891 gsd snapshot: uncommitted changes after 525m inactivity
+d0c8ca5a fix(sunshine): use gcc-12 from Ubuntu apt instead of broken PPA URL
+4329202c fix(sunshine): install gcc-13 toolchain for v2025.923 build
+a4333b26 fix(sunshine): pin to v2025.923.33222, remove --step flags
+1fd7225f fix(unit3d): remove libbcmath-dev bcmath from apt/apt-ext-install
+f676cf87 fix(unit3d): ignore missing platform extensions in composer install
+cc7992d3 fix(mlflow, unit3d): resolve second-pass build failures
+a09070a3 fix(dockerfiles): address build failures from May 6 CI batch
+797ac140 fix: repair three broken Dockerfile builds
+fce894f8 feat: add registry.json to Pages artifact and enable manual workflow dispatch

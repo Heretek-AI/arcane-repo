@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "totalTemplates": 842,
+    "processed": 10,
+    "skipped": 0
+  },
+  "data": [
+    {
+      "templateId": "abantecart",
+      "name": "abantecart",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 1 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "adminer",
+      "name": "Adminer",
+      "issues": [
+        {
+          "category": "no-upstream-link",
+          "severity": "high",
+          "message": "No GitHub project link or Project Homepage section found in README"
+        },
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    },
+    {
+      "templateId": "agent-zero",
+      "name": "Agent Zero",
+      "issues": [
+        {
+          "category": "few-links",
+          "severity": "low",
+          "message": "Only 2 markdown links found in README"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "da3697d9-1be3-49bb-b69a-bf2914dbc3f5",
+  "runtime": "bash",
+  "purpose": "Check branch and merge-base",
+  "script_chars": 265,
+  "started_at": "2026-05-07T14:25:56.513Z",
+  "finished_at": "2026-05-07T14:25:59.014Z",
+  "exit_code": 0,
+  "signal": null,
+  "timed_out": false,
+  "duration_ms": 2501,
+  "stdout_bytes": 1122,
+  "stderr_bytes": 85,
+  "stdout_truncated": false,
+  "stderr_truncated": false,
+  "stdout_path": "C:\\Users\\Derek\\Desktop\\arcane-repo\\.gsd\\exec\\da3697d9-1be3-49bb-b69a-bf2914dbc3f5.stdout",
+  "stderr_path": "C:\\Users\\Derek\\Desktop\\arcane-repo\\.gsd\\exec\\da3697d9-1be3-49bb-b69a-bf2914dbc3f5.stderr"
+}

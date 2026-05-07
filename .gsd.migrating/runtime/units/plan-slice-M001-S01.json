@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "unitType": "plan-slice",
+  "unitId": "M001/S01",
+  "startedAt": 1778124310198,
+  "updatedAt": 1778124340494,
+  "phase": "dispatched",
+  "wrapupWarningSent": false,
+  "continueHereFired": true,
+  "timeoutAt": null,
+  "lastProgressAt": 1778124310198,
+  "progressCount": 0,
+  "lastProgressKind": "dispatch",
+  "recoveryAttempts": 0
+}

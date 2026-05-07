@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "totalTemplates": 842,
+    "processed": 10,
+    "skipped": 0
+  },
+  "data": [
+    {
+      "templateId": "2fauth",
+      "name": "2Fauth",
+      "latestCount": 1
+    },
+    {
+      "templateId": "abantecart",
+      "name": "abantecart",
+      "latestCount": 1
+    },
+    {
+      "templateId": "activepieces",
+      "name": "Activepieces",
+      "latestCount": 1
+    },
+    {
+      "templateId": "adguardhome",
+      "name": "Adguardhome",
+      "latestCount": 1
+    },
+    {
+      "templateId": "admidio",
+      "name": "Admidio",
+      "latestCount": 1
+    },
+    {
+      "templateId": "adminer",
+      "name": "Adminer",
+      "latestCount": 1
+    },
+    {
+      "templateId": "adminerevo",
+      "name": "Adminerevo",
+      "latestCount": 1
+    },
+    {
+      "templateId": "affine",
+      "name": "Affine",
+      "latestCount": 1
+    },
+    {
+      "templateId": "agent-zero",
+      "name": "Agent Zero",
+      "latestCount": 1
+    },
+    {
+      "templateId": "agenta",
+      "name": "Agenta",
+      "latestCount": 1
+    }
+  ]
+}

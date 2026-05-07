@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "auditedAt": "2026-05-07T20:49:45.417Z",
+    "totalTemplates": 842,
+    "processed": 10,
+    "skipped": 0
+  },
+  "data": [
+    {
+      "templateId": "2fauth",
+      "name": "2Fauth",
+      "issues": [
+        {
+          "category": "missing-env-var",
+          "severity": "medium",
+          "message": "Env var \"2FAUTH_PORT\" referenced in docker-compose.yml but not found in .env.example",
+          "composeVar": "2FAUTH_PORT"
+        },
+        {
+          "category": "missing-env-var",
+          "severity": "low",
+          "message": "Env var \"2FAUTH_PORT\" referenced in docker-compose.yml but not defined in .env.example"
+        }
+      ]
+    }
+  ]
+}

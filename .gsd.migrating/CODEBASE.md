@@ -1,7 +1,7 @@
 # Codebase Map
 
-Generated: 2026-05-07T01:34:35Z | Files: 500 | Described: 0/500
-<!-- gsd:codebase-meta {"generatedAt":"2026-05-07T01:34:35Z","fingerprint":"5c6f121e548e909882ac9cf7a0f115615592655a","fileCount":500,"truncated":true} -->
+Generated: 2026-05-07T19:34:36Z | Files: 500 | Described: 0/500
+<!-- gsd:codebase-meta {"generatedAt":"2026-05-07T19:34:36Z","fingerprint":"25604a9124a16aa22952b3df2db471b63e9e2839","fileCount":500,"truncated":true} -->
 Note: Truncated to first 500 files. Run with higher --max-files to include all.
 
 ### (root)/
@@ -13,10 +13,25 @@ Note: Truncated to first 500 files. Run with higher --max-files to include all.
 - *(33 files: 33 .yml)*
 
 ### .gsd.migrating/
+- `.gsd.migrating/CODEBASE.md`
+- `.gsd.migrating/DECISIONS.md`
+- `.gsd.migrating/event-log.jsonl`
 - `.gsd.migrating/gsd.db`
 - `.gsd.migrating/gsd.db-shm`
 - `.gsd.migrating/gsd.db-wal`
+- `.gsd.migrating/last-snapshot.md`
 - `.gsd.migrating/notifications.jsonl`
+- `.gsd.migrating/PROJECT.md`
+- `.gsd.migrating/REQUIREMENTS.md`
+- `.gsd.migrating/state-manifest.json`
+- `.gsd.migrating/STATE.md`
+
+### .gsd.migrating/audit/
+- `.gsd.migrating/audit/events.jsonl`
+
+### .gsd.migrating/milestones/M001/
+- `.gsd.migrating/milestones/M001/M001-CONTEXT.md`
+- `.gsd.migrating/milestones/M001/M001-ROADMAP.md`
 
 ### .gsd.migrating/runtime/
 - `.gsd.migrating/runtime/write-gate-state.json`
@@ -694,20 +709,3 @@ Note: Truncated to first 500 files. Run with higher --max-files to include all.
 - `archived/hat/arcane.json`
 - `archived/hat/docker-compose.yml`
 - `archived/hat/README.md`
-
-### archived/hauk/
-- `archived/hauk/.env.example`
-- `archived/hauk/arcane.json`
-- `archived/hauk/docker-compose.yml`
-- `archived/hauk/README.md`
-
-### archived/headplane/
-- `archived/headplane/.env.example`
-- `archived/headplane/arcane.json`
-- `archived/headplane/docker-compose.yml`
-- `archived/headplane/README.md`
-
-### archived/helloworld/
-- `archived/helloworld/.env.example`
-- `archived/helloworld/arcane.json`
-- `archived/helloworld/README.md`

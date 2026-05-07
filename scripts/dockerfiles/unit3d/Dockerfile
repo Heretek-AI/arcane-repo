@@ -50,7 +50,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxml2-dev \
     libcurl4-openssl-dev \
     libexif-dev \
-    libbcmath-dev \
     unzip \
     ca-certificates \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
@@ -58,7 +57,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         pdo_mysql \
         mbstring \
         xml \
-        bcmath \
         zip \
         intl \
         curl \

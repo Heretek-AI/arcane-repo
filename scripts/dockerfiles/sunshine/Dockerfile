@@ -37,11 +37,18 @@ RUN apt-get update && apt-get install -y software-properties-common && \
 # Build deps, cmake, build, and package
 # Set MAKEFLAGS to limit parallelism and avoid OOM on constrained runners
 ENV MAKEFLAGS="-j2"
+# Tee build output to /tmp so cmake errors survive the artifact capture
 RUN ./scripts/linux_build.sh \
         --sudo-off \
         --publisher-name='LizardByte' \
         --publisher-website='https://app.lizardbyte.dev' \
-        --publisher-issue-url='https://app.lizardbyte.dev/support'
+        --publisher-issue-url='https://app.lizardbyte.dev/support' \
+        2>&1 | tee /tmp/build.log; \
+    test "${PIPESTATUS[0]}" -eq 0 || { \
+        echo "=== BUILD FAILED — dumping /tmp/build.log ==="; \
+        cat /tmp/build.log; \
+        exit 1; \
+    }
 
 # ── Stage 2: Runtime with FastAPI wrapper ──────────────────────────
 

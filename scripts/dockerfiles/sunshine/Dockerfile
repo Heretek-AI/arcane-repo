@@ -8,6 +8,7 @@
 FROM ubuntu:22.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV MAKEFLAGS="-j2"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -23,13 +24,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /build/sunshine
 
-RUN git clone --depth 1 --branch v2025.923.33222 https://github.com/LizardByte/Sunshine.git . \
+RUN git clone --depth 1 --branch v2024.1.1 https://github.com/LizardByte/Sunshine.git . \
     && chmod +x scripts/linux_build.sh
 
-# Install gcc-12 toolchain (Sunshine build dependencies)
-RUN apt-get update && apt-get install -y --no-install-recommends gcc-12 g++-12 &&     rm -rf /var/lib/apt/lists/*
+# Install gcc-13 toolchain via ubuntu-toolchain-r/test PPA (Sunshine build dependencies)
+# Separate the PPA addition and gcc install to avoid layer-cache issues on constrained runners
+RUN apt-get update && apt-get install -y software-properties-common && \
+    add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
+    apt-get update && apt-get install -y --no-install-recommends gcc-13 g++-13 && \
+    rm -rf /var/lib/apt/lists/*
 
-# Build deps, cmake, build, and package (v2025.923 interface: --step= removed, runs full build by default)
+# Build deps, cmake, build, and package
+# Set MAKEFLAGS to limit parallelism and avoid OOM on constrained runners
+ENV MAKEFLAGS="-j2"
 RUN ./scripts/linux_build.sh \
         --sudo-off \
         --publisher-name='LizardByte' \

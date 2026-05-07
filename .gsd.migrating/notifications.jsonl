@@ -1,0 +1,6 @@
+{"id":"e8bd1e49-39a4-4383-879b-fbb96ee73697","ts":"2026-05-07T00:13:12.247Z","severity":"info","message":"Use /gsd prefs project to update project preferences.","source":"notify","read":false}
+{"id":"b0ced596-2551-4583-af4b-45dd659aaf02","ts":"2026-05-07T00:13:17.362Z","severity":"info","message":"Created global GSD skill preferences at C:\\Users\\Derek\\.gsd\\PREFERENCES.md","source":"notify","read":false}
+{"id":"91cf3e84-9f12-4b19-9a5a-b31fbeffb095","ts":"2026-05-07T00:13:17.373Z","severity":"info","message":"GSD preferences (global) — pick a category to configure.","source":"notify","read":false}
+{"id":"1bb15c3c-c88f-434a-9515-efb7cc180593","ts":"2026-05-07T00:13:25.511Z","severity":"info","message":"Mode: solo — defaults: auto_push=true, push_branches=false, pre_merge_check=auto, merge_strategy=squash, isolation=worktree, unique_milestone_ids=false","source":"notify","read":false}
+{"id":"a189c091-e598-44a7-9e51-74383e61466e","ts":"2026-05-07T00:14:10.684Z","severity":"warning","message":"Context7: No CONTEXT7_API_KEY set. Using free tier (1000 req/month limit). Set CONTEXT7_API_KEY for higher limits.","source":"notify","read":false}
+{"id":"2108b68d-7e7d-4d3d-a953-e1817968da34","ts":"2026-05-07T00:14:11.021Z","severity":"info","message":"Saved global preferences to C:\\Users\\Derek\\.gsd\\PREFERENCES.md","source":"notify","read":false}

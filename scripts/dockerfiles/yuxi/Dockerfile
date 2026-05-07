@@ -30,6 +30,6 @@ EXPOSE 8000
 
 ENV YUXI_PORT=8000
 
-COPY scripts/dockerfiles/Yuxi/server.py /app/server.py
+COPY server.py /app/
 
 CMD python3 /app/server.py

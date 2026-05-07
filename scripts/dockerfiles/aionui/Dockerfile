@@ -13,34 +13,34 @@ RUN npm install -g bun
 
 WORKDIR /app
 
-# Clone upstream AionUi
-RUN git clone --depth 1 https://github.com/iOfficeAI/AionUi.git /tmp/aionui && \
-    cp -r /tmp/aionui/* /app/ && \
-    rm -rf /tmp/aionui
+# Clone upstream AionUi (shallow clone, depth 1)
+RUN git clone --depth 1 https://github.com/iOfficeAI/AionUi.git /tmp/aionui \
+    && cp -r /tmp/aionui/. . \
+    && rm -rf /tmp/aionui
 
 # Install all dependencies (including devDeps for build)
-COPY package.json bun.lock ./ 2>/dev/null || true
-COPY patches/ ./patches/ 2>/dev/null || true
+# Note: package.json and bun.lock come from cloned source
 RUN bun install --ignore-scripts
 
 # Build renderer (web) and server bundle
-RUN bun run build:renderer:web && \
-    node scripts/build-server.mjs
+RUN bun run build:renderer:web \
+    && node scripts/build-server.mjs
 
 # ---- Runtime image ----
 FROM oven/bun:latest AS runtime
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ca-certificates \
+    ca-certificates curl \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Copy only build artifacts and production deps
+# Copy build artifacts from builder stage
 COPY --from=builder /app/dist-server ./dist-server
 COPY --from=builder /app/out/renderer ./out/renderer
-COPY package.json bun.lock ./ 2>/dev/null || true
-COPY patches/ ./patches/ 2>/dev/null || true
+COPY --from=builder /app/package.json ./
+
+# Production dependencies only
 RUN bun install --production --ignore-scripts
 
 ENV PORT=3000

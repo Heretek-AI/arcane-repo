@@ -3,7 +3,7 @@
 # 2-stage: Maven build + slim JRE runtime with FastAPI wrapper
 
 # ── Stage 1: Build Spring Boot JAR with Maven ────────────────────
-FROM maven:3.9-eclipse-temurin-11 AS builder
+FROM maven:3.9-eclipse-temurin AS builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
@@ -22,7 +22,7 @@ RUN cd /build/wgcloud-server && \
     cp target/wgcloud-server-*.jar /build/wgcloud-server-release.jar
 
 # ── Stage 2: Production image ────────────────────────────────────
-FROM eclipse-temurin:11-jre-slim
+FROM eclipse-temurin:11-jre
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \

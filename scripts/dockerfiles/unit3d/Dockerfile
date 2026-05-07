@@ -31,7 +31,7 @@ RUN git clone --depth 1 https://github.com/HDInnovations/UNIT3D-Community-Editio
     rm -rf /tmp/unit3d
 
 # Install production PHP dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts --ignore-platform-req=ext-intl --ignore-platform-req=ext-bcmath --ignore-platform-req=ext-ldap --ignore-platform-req=ext-imagick
 
 # ─── Stage 3: Production runtime (PHP-FPM + nginx + supervisord) ────────
 FROM php:8.4-fpm-bookworm

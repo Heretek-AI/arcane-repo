@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Install memvid-sdk from PyPI with document processing extras
 RUN uv pip install --system --no-cache-dir \
-    "memvid-sdk[full]" \
+    memvid-sdk \
     fastapi uvicorn
 
 EXPOSE 8000

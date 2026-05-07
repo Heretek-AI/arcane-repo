@@ -16,7 +16,8 @@ RUN git clone --depth 1 https://github.com/HDInnovations/UNIT3D-Community-Editio
     rm -rf /tmp/unit3d
 
 # Install Node dependencies and build Vite assets
-RUN npm ci --ignore-scripts && npm run build
+RUN npm ci --ignore-scripts --prefer-offline && npm run build || \
+    npm install --ignore-scripts && npm run build
 
 # ─── Stage 2: Composer dependency install ───────────────────────────────
 FROM composer:2 AS composer-builder

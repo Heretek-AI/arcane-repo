@@ -30,6 +30,6 @@ EXPOSE 8000
 
 ENV TRENDRADAR_PORT=8000
 
-COPY scripts/dockerfiles/TrendRadar/server.py /app/server.py
+COPY scripts/dockerfiles/trendradar/server.py /app/server.py
 
 CMD python3 /app/server.py

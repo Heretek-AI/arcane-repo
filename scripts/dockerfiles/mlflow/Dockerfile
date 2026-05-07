@@ -17,7 +17,7 @@ RUN git clone --depth 1 https://github.com/mlflow/mlflow.git /tmp/mlflow && \
 
 # Install MLflow with standard extras
 RUN uv pip install --system --no-cache-dir \
-    .[extras] \
+    "mlflow[extras]" \
     uvicorn
 
 EXPOSE 5000

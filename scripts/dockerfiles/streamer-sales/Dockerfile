@@ -30,6 +30,6 @@ EXPOSE 8000
 
 ENV STREAMER_SALES_PORT=8000
 
-COPY scripts/dockerfiles/Streamer-Sales/server.py /app/server.py
+COPY scripts/dockerfiles/streamer-sales/server.py /app/server.py
 
 CMD python3 /app/server.py

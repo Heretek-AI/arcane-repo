@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
+import { withBase } from 'vitepress'
 import type { TemplateData } from '../data/templates'
 
 const props = withDefaults(
@@ -96,7 +97,7 @@ function goToPage(page: number) {
       <a
         v-for="t in pagedTemplates"
         :key="t.id"
-        :href="`/templates/${t.id}`"
+        :href="withBase(`/templates/${t.id}.html`)"
         class="template-card"
         :class="{ 'template-card--selected': selectedForCompare.has(t.id) }"
       >

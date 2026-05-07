@@ -2,5 +2,5 @@
 layout: category
 category: ai
 title: "ai"
-description: "97 templates tagged with \"ai\""
+description: "105 templates tagged with \"ai\""
 ---

@@ -5,13 +5,13 @@ description: Browse templates by category
 
 # Categories
 
-42 categories covering 786 templates.
+52 categories covering 842 templates.
 
 <div class="category-grid">
 
 <div class="category-card">
 
-<div class="count">654</div>
+<div class="count">683</div>
 
 <div class="label">[self-hosted](/categories/self-hosted)</div>
 
@@ -43,7 +43,7 @@ description: Browse templates by category
 
 <div class="category-card">
 
-<div class="count">97</div>
+<div class="count">105</div>
 
 <div class="label">[ai](/categories/ai)</div>
 
@@ -67,6 +67,22 @@ description: Browse templates by category
 
 <div class="category-card">
 
+<div class="count">26</div>
+
+<div class="label">[llm](/categories/llm)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">26</div>
+
+<div class="label">[devops](/categories/devops)</div>
+
+</div>
+
+<div class="category-card">
+
 <div class="count">22</div>
 
 <div class="label">[agents](/categories/agents)</div>
@@ -75,9 +91,9 @@ description: Browse templates by category
 
 <div class="category-card">
 
-<div class="count">18</div>
+<div class="count">20</div>
 
-<div class="label">[llm](/categories/llm)</div>
+<div class="label">[monitoring](/categories/monitoring)</div>
 
 </div>
 
@@ -85,7 +101,7 @@ description: Browse templates by category
 
 <div class="count">16</div>
 
-<div class="label">[devops](/categories/devops)</div>
+<div class="label">[tools](/categories/tools)</div>
 
 </div>
 
@@ -99,9 +115,9 @@ description: Browse templates by category
 
 <div class="category-card">
 
-<div class="count">15</div>
+<div class="count">13</div>
 
-<div class="label">[monitoring](/categories/monitoring)</div>
+<div class="label">[database](/categories/database)</div>
 
 </div>
 
@@ -125,6 +141,14 @@ description: Browse templates by category
 
 <div class="count">12</div>
 
+<div class="label">[communication](/categories/communication)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">12</div>
+
 <div class="label">[storage](/categories/storage)</div>
 
 </div>
@@ -139,25 +163,33 @@ description: Browse templates by category
 
 <div class="category-card">
 
-<div class="count">9</div>
-
-<div class="label">[communication](/categories/communication)</div>
-
-</div>
-
-<div class="category-card">
-
-<div class="count">9</div>
-
-<div class="label">[database](/categories/database)</div>
-
-</div>
-
-<div class="category-card">
-
-<div class="count">9</div>
+<div class="count">11</div>
 
 <div class="label">[automation](/categories/automation)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">10</div>
+
+<div class="label">[infrastructure](/categories/infrastructure)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">9</div>
+
+<div class="label">[identity](/categories/identity)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">9</div>
+
+<div class="label">[authentication](/categories/authentication)</div>
 
 </div>
 
@@ -173,15 +205,23 @@ description: Browse templates by category
 
 <div class="count">8</div>
 
-<div class="label">[tools](/categories/tools)</div>
+<div class="label">[search](/categories/search)</div>
 
 </div>
 
 <div class="category-card">
 
-<div class="count">8</div>
+<div class="count">7</div>
 
-<div class="label">[search](/categories/search)</div>
+<div class="label">[business](/categories/business)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">7</div>
+
+<div class="label">[e-commerce](/categories/e-commerce)</div>
 
 </div>
 
@@ -253,6 +293,14 @@ description: Browse templates by category
 
 <div class="count">5</div>
 
+<div class="label">[productivity](/categories/productivity)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">5</div>
+
 <div class="label">[paas](/categories/paas)</div>
 
 </div>
@@ -270,6 +318,14 @@ description: Browse templates by category
 <div class="count">5</div>
 
 <div class="label">[reference](/categories/reference)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">5</div>
+
+<div class="label">[media](/categories/media)</div>
 
 </div>
 
@@ -317,7 +373,39 @@ description: Browse templates by category
 
 <div class="count">3</div>
 
+<div class="label">[entertainment](/categories/entertainment)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">3</div>
+
 <div class="label">[inference](/categories/inference)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">2</div>
+
+<div class="label">[collaboration](/categories/collaboration)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">2</div>
+
+<div class="label">[bitcoin](/categories/bitcoin)</div>
+
+</div>
+
+<div class="category-card">
+
+<div class="count">2</div>
+
+<div class="label">[iot](/categories/iot)</div>
 
 </div>
 
@@ -334,14 +422,6 @@ description: Browse templates by category
 <div class="count">1</div>
 
 <div class="label">[custom-build](/categories/custom-build)</div>
-
-</div>
-
-<div class="category-card">
-
-<div class="count">1</div>
-
-<div class="label">[media](/categories/media)</div>
 
 </div>
 </div>

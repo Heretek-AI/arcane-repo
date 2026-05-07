@@ -2,5 +2,5 @@
 layout: category
 category: automation
 title: "automation"
-description: "9 templates tagged with \"automation\""
+description: "11 templates tagged with \"automation\""
 ---

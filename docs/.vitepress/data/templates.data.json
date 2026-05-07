@@ -25,6 +25,28 @@
     "intro": "Self-hosted 2fauth deployment via Docker\r\n\r\nThis template provides a containerized deployment of [2Fauth](https://github.com/2fauth/2fauth) using Docker Compose."
   },
   {
+    "id": "abantecart",
+    "name": "abantecart",
+    "description": "abantecart — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/abantecart/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/abantecart/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/abantecart/README.md",
+    "content_hash": "6d8ffe50cf0aed2894bd1babf2de8f5eaa511475ffafae4ee480f54570592635",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[abantecart]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "activepieces",
     "name": "Activepieces",
     "description": "Open-source workflow automation platform with 400+ app integrations, visual drag-and-drop editor, and AI agent capabilities",
@@ -322,6 +344,27 @@
     "intro": "Self-hosted Agora deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Agora](https://github.com/broadinstitute/agora) using Docker Compose."
   },
   {
+    "id": "aider",
+    "name": "Aider",
+    "description": "Aider — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/aider/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/aider/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/aider/README.md",
+    "content_hash": "71ee396eeac23c1cb3be41e7db450dbfb5a98007a6bc2ef28c4371158db503a4",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/Aider-AI/aider)"
+    },
+    "intro": "[Aider](https://github.com/Aider-AI/aider) — self-hosted via Docker Compose."
+  },
+  {
     "id": "aionui",
     "name": "AionUi",
     "description": "AI-native UI framework — build full-stack AI interfaces with a server-driven rendering approach for React and TypeScript applications",
@@ -492,6 +535,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Anchor deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Anchor](https://github.com/solanafoundation/anchor) using Docker Compose."
+  },
+  {
+    "id": "ansible-semaphore",
+    "name": "Ansible Semaphore",
+    "description": "Ansible Semaphore — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ansible-semaphore/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ansible-semaphore/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ansible-semaphore/README.md",
+    "content_hash": "3da5ac1471e0ce269a711a005b7bc4d83b5d8131627ab8f4c4656584380fbc32",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:3000](http://localhost:3000) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/semaphoreui/semaphore)"
+    },
+    "intro": "[Ansible Semaphore](https://github.com/semaphoreui/semaphore) — self-hosted via Docker Compose."
   },
   {
     "id": "apprise-api",
@@ -888,6 +952,27 @@
       "serviceDetails": "The docker-compose.yml exposes environment variables documented in `.env.example`.\r\n\n> **Status: Library — Uses python:3.12-slim base image**\n> This project is a Python library and does not publish a Docker image.\n> The template installs it via `pip install` at container startup."
     },
     "intro": "[AutoGen](https://github.com/microsoft/autogen) — Multi-agent conversation framework by Microsoft"
+  },
+  {
+    "id": "autogpt",
+    "name": "AutoGPT",
+    "description": "AutoGPT — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/autogpt/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/autogpt/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/autogpt/README.md",
+    "content_hash": "b29e7ae69d9477c6838489d8c1fe12b14ce02172334a70014f60f55362a57e27",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/Significant-Gravitas/AutoGPT)"
+    },
+    "intro": "[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — self-hosted via Docker Compose."
   },
   {
     "id": "automad",
@@ -1933,6 +2018,27 @@
     "intro": "> **Host-level daemon — NOT deployable via `docker compose up`.**\n> [CasaOS](https://www.casaos.io/) is a personal cloud OS installed as a native Go binary\n> on the host system. It manages Docker containers, file sharing, and smart home\n> integration through an intuitive web UI. This Docker Compose template provides a\n> minimal informational API stub.\n>\n> **Install on your host OS:** `curl -fsSL https://get.casaos.io | sudo bash`"
   },
   {
+    "id": "casdoor",
+    "name": "Casdoor",
+    "description": "Casdoor — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/casdoor/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/casdoor/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/casdoor/README.md",
+    "content_hash": "2ce7e4b029b4b5670a3c4634e91148db2a684ca355794393b52c99306fb51054",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8000](http://localhost:8000) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/casdoor/casdoor)"
+    },
+    "intro": "[Casdoor](https://github.com/casdoor/casdoor) — self-hosted via Docker Compose."
+  },
+  {
     "id": "cashpilot",
     "name": "Cashpilot",
     "description": "Self-hosted Cashpilot deployment via Docker",
@@ -2478,6 +2584,28 @@
     "intro": "Self-hosted Cloudreve deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Cloudreve](https://github.com/cloudreve/cloudreve) using Docker Compose."
   },
   {
+    "id": "cockpit",
+    "name": "cockpit",
+    "description": "cockpit — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/cockpit/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/cockpit/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/cockpit/README.md",
+    "content_hash": "95da428caffaf873f1a1290551aef172e5ef6bf0c9ee0655aff3f52dea64993c",
+    "tags": [
+      "communication",
+      "productivity",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[cockpit]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "codex",
     "name": "Codex",
     "description": "Self-hosted Codex deployment via Docker",
@@ -2575,6 +2703,27 @@
     "intro": "[Cognee](https://github.com/topoteretes/cognee) is an open-source, graph-based RAG (Retrieval-Augmented Generation) platform. It extracts structured knowledge graphs from unstructured documents, enabling LLMs to answer complex questions by traversing entity relationships rather than relying on flat vector similarity alone. Cognee supports multiple LLM providers, vector stores, and graph databases.\n\n> **Note:** Cognee does not publish a pre-built Docker image. This template uses `python:3.12-slim` and installs Cognee via `pip` at container startup. The first startup will take 30–60 seconds while packages install."
   },
   {
+    "id": "comfyui",
+    "name": "ComfyUI",
+    "description": "ComfyUI — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/comfyui/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/comfyui/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/comfyui/README.md",
+    "content_hash": "de6096554a5ac3db137558fd3f155d22c1a0d6e19003fd8d034aebb7c69f6227",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8188](http://localhost:8188) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/comfyanonymous/ComfyUI)"
+    },
+    "intro": "[ComfyUI](https://github.com/comfyanonymous/ComfyUI) — self-hosted via Docker Compose."
+  },
+  {
     "id": "commafeed",
     "name": "Commafeed",
     "description": "Self-hosted Commafeed deployment via Docker",
@@ -2625,6 +2774,27 @@
     "intro": "Self-hosted Commandbox deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Commandbox](https://github.com/ortussolutions/commandbox) using Docker Compose."
   },
   {
+    "id": "composio",
+    "name": "Composio",
+    "description": "Composio — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/composio/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/composio/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/composio/README.md",
+    "content_hash": "e42a641ab1720526791afa4a81c4b3a8282a41a379a917fb93a02a3dee906c2f",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/ComposioHQ/composio)"
+    },
+    "intro": "[Composio](https://github.com/ComposioHQ/composio) — self-hosted via Docker Compose."
+  },
+  {
     "id": "conduit",
     "name": "Conduit",
     "description": "Self-hosted Conduit deployment via Docker",
@@ -2648,6 +2818,48 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Conduit deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Conduit](https://github.com/freedom4iran/conduit) using Docker Compose."
+  },
+  {
+    "id": "consul",
+    "name": "Consul",
+    "description": "Consul — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/consul/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/consul/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/consul/README.md",
+    "content_hash": "7d552b9b527f183ee4beb42a3a080d8718405847808a8873973de59b953ca404",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8500](http://localhost:8500) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/hashicorp/consul)"
+    },
+    "intro": "[Consul](https://github.com/hashicorp/consul) — self-hosted via Docker Compose."
+  },
+  {
+    "id": "continue",
+    "name": "Continue",
+    "description": "Continue — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/continue/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/continue/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/continue/README.md",
+    "content_hash": "b2d1dfc637dcd4dee8839ea0834c491c42504de80adbe9fe3c1281234159104a",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/continuedev/continue)"
+    },
+    "intro": "[Continue](https://github.com/continuedev/continue) — self-hosted via Docker Compose."
   },
   {
     "id": "convertx",
@@ -2820,6 +3032,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Couchdb deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Couchdb](couchdb) using Docker Compose."
+  },
+  {
+    "id": "crewai",
+    "name": "CrewAI",
+    "description": "CrewAI — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/crewai/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/crewai/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/crewai/README.md",
+    "content_hash": "06517f41bc9072b9dee36fe4b7f50c23edfc429f8bcb0a08e8d759ff12ff4d37",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/crewAIInc/crewAI)"
+    },
+    "intro": "[CrewAI](https://github.com/crewAIInc/crewAI) — self-hosted via Docker Compose."
   },
   {
     "id": "crewave",
@@ -3331,6 +3564,28 @@
     "intro": "Self-hosted Deluge deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Deluge](https://github.com/linuxserver/deluge) using Docker Compose."
   },
   {
+    "id": "dendrite",
+    "name": "dendrite",
+    "description": "dendrite — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/dendrite/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/dendrite/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/dendrite/README.md",
+    "content_hash": "d15ea74cec86d3b63e964597fac259e59ac7cd9824b685efe4116f23c672399b",
+    "tags": [
+      "communication",
+      "productivity",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8008](http://localhost:8008) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[dendrite]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "dex",
     "name": "Dex",
     "description": "Self-hosted Dex deployment via Docker",
@@ -3379,6 +3634,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Diaspora deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Diaspora](https://github.com/koehn/diaspora) using Docker Compose."
+  },
+  {
+    "id": "diffsynth-studio",
+    "name": "DiffSynth Studio",
+    "description": "DiffSynth Studio — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/diffsynth-studio/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/diffsynth-studio/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/diffsynth-studio/README.md",
+    "content_hash": "5f94c01ed2fa0194dcccef84cf2339dfac368a4a3425b8b2587a1aad36e8bc1d",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:7860](http://localhost:7860) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/modelscope/DiffSynth-Studio)"
+    },
+    "intro": "[DiffSynth Studio](https://github.com/modelscope/DiffSynth-Studio) — self-hosted via Docker Compose."
   },
   {
     "id": "dify",
@@ -4244,6 +4520,28 @@
     "intro": "Self-hosted Duplicati deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Duplicati](https://github.com/duplicati/duplicati) using Docker Compose."
   },
   {
+    "id": "easyappointments",
+    "name": "easyappointments",
+    "description": "easyappointments — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/easyappointments/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/easyappointments/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/easyappointments/README.md",
+    "content_hash": "90df358635b9ed718af289ce7b6471a4ca4d8fbcdb425b5c1d403ce786ebf8a5",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[easyappointments]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "elasticsearch",
     "name": "Elasticsearch",
     "description": "Self-hosted Elasticsearch deployment via Docker",
@@ -4267,6 +4565,28 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Elasticsearch deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Elasticsearch](elasticsearch) using Docker Compose."
+  },
+  {
+    "id": "elasticsearch7",
+    "name": "elasticsearch7",
+    "description": "elasticsearch7 — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/elasticsearch7/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/elasticsearch7/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/elasticsearch7/README.md",
+    "content_hash": "55218d1e89e6b5e45b7fdb4c683ac1344614a93b422921c3d19cee5dd3fe8196",
+    "tags": [
+      "monitoring",
+      "database",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:9200](http://localhost:9200) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[elasticsearch7]() — self-hosted via Docker Compose."
   },
   {
     "id": "elasticsearch8",
@@ -5144,6 +5464,27 @@
     "intro": "Self-hosted Fireshare deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Fireshare](https://github.com/shaneisrael/fireshare) using Docker Compose."
   },
   {
+    "id": "firezone",
+    "name": "Firezone",
+    "description": "Firezone — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/firezone/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/firezone/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/firezone/README.md",
+    "content_hash": "b6dce03bd1151f07638af6edb08810ac6dbd9a78254a6524eb5a3b02759c3740",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:9443](http://localhost:9443) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/firezone/firezone)"
+    },
+    "intro": "[Firezone](https://github.com/firezone/firezone) — self-hosted via Docker Compose."
+  },
+  {
     "id": "fittrackee",
     "name": "Fittrackee",
     "description": "Self-hosted Fittrackee deployment via Docker",
@@ -5469,6 +5810,28 @@
     "intro": "Self-hosted Flyimg deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Flyimg](https://github.com/flyimg/flyimg) using Docker Compose."
   },
   {
+    "id": "focalboard",
+    "name": "focalboard",
+    "description": "focalboard — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/focalboard/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/focalboard/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/focalboard/README.md",
+    "content_hash": "240238cd15b5f25e2e45b9c6a9e25b97b288d564890da73c731c0a22ba781db8",
+    "tags": [
+      "productivity",
+      "collaboration",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8000](http://localhost:8000) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[focalboard]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "forgejo-runner",
     "name": "Forgejo Runner",
     "description": "Self-hosted Forgejo Runner deployment via Docker",
@@ -5643,6 +6006,49 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Frigate deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Frigate](https://github.com/blakeblackshear/frigate) using Docker Compose."
+  },
+  {
+    "id": "frp",
+    "name": "frp",
+    "description": "frp — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/frp/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/frp/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/frp/README.md",
+    "content_hash": "d600579a2f8fbfe2ab8f997f53b868a4248023b9d6105afe865d84ff71c973d2",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:7000](http://localhost:7000) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/fatedier/frp)"
+    },
+    "intro": "[frp](https://github.com/fatedier/frp) — self-hosted via Docker Compose."
+  },
+  {
+    "id": "funkwhale",
+    "name": "Funkwhale",
+    "description": "Funkwhale — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/funkwhale/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/funkwhale/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/funkwhale/README.md",
+    "content_hash": "2369caedd5ab1441b3d7b9f56ca0950c3aab6d58f4079b855301d0a92637db73",
+    "tags": [
+      "media",
+      "entertainment",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[Funkwhale]() — self-hosted via Docker Compose."
   },
   {
     "id": "fusion",
@@ -6471,6 +6877,27 @@
     "intro": "Self-hosted Gull deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Gull](https://github.com/aeolyus/gull) using Docker Compose."
   },
   {
+    "id": "hanko",
+    "name": "Hanko",
+    "description": "Hanko — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/hanko/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/hanko/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/hanko/README.md",
+    "content_hash": "601715611c262241eb6d52b7db95f4838ea9fba654c92f33c74e355171358580",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8000](http://localhost:8000) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/teamhanko/hanko)"
+    },
+    "intro": "[Hanko](https://github.com/teamhanko/hanko) — self-hosted via Docker Compose."
+  },
+  {
     "id": "harbor-llm",
     "name": "Harbor LLM",
     "description": "LLM backend orchestrator — manage Ollama, vLLM, and other LLM runtimes via Docker with a unified CLI and REST API",
@@ -6517,6 +6944,27 @@
       "healthCheck": "```bash\ncurl http://localhost:3000/api/health\n```\n\nFull documentation: [developer.harness.io](https://developer.harness.io/docs/self-managed-enterprise-edition)"
     },
     "intro": "[Harness](https://www.harness.io/) is a modern CI/CD platform that automates the full software delivery pipeline — from code commit through build, test, deploy, and infrastructure provisioning. This is the self-hosted community edition."
+  },
+  {
+    "id": "haystack",
+    "name": "Haystack",
+    "description": "Haystack — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/haystack/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/haystack/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/haystack/README.md",
+    "content_hash": "2c22610ff7ffb8506759cf4d3c90d597aa6fc83d918dc7ec6b78a4b045d27e00",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8000](http://localhost:8000) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/deepset-ai/haystack)"
+    },
+    "intro": "[Haystack](https://github.com/deepset-ai/haystack) — self-hosted via Docker Compose."
   },
   {
     "id": "headphones",
@@ -7168,6 +7616,28 @@
     "intro": "Self-hosted Indico deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Indico](https://github.com/indico/indico) using Docker Compose."
   },
   {
+    "id": "influxdb-v2",
+    "name": "influxdb_v2",
+    "description": "influxdb_v2 — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/influxdb-v2/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/influxdb-v2/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/influxdb-v2/README.md",
+    "content_hash": "25d9dbf8d25db112ddd027fc500dc53ec115182f05d2838332efae163acf0acd",
+    "tags": [
+      "monitoring",
+      "database",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8086](http://localhost:8086) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[influxdb_v2]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "inkheart",
     "name": "Inkheart",
     "description": "Self-hosted Inkheart deployment via Docker",
@@ -7211,6 +7681,29 @@
       "troubleshooting": "| Symptom                                    | Likely Cause                    | Fix                                                |\n|--------------------------------------------|---------------------------------|----------------------------------------------------|\n| PostgREST won't connect to postgres        | Postgres not healthy yet        | Wait 10s and retry                                 |\n| `pg_isready` fails                         | Wrong credentials in `.env`     | Check `POSTGRES_USER` / `POSTGRES_PASSWORD`        |\n| PostgREST returns 503                      | Schema not initialized          | Create tables in the `public` schema via psql      |\n| Need the full UI dashboard                 | Using simplified template       | Clone upstream and run its full `docker-compose.yml` |"
     },
     "intro": "> **Database + REST API layer — postgres and PostgREST.**\n> [InsForge](https://github.com/InsForge/InsForge) gives AI agents everything they need to build full-stack apps:\n> a postgres database with schema auto-generated REST APIs via PostgREST.\n> This template provides the data and API layer using published images.\n> For the full InsForge experience (web UI, Deno runtime), clone the upstream repo."
+  },
+  {
+    "id": "invoice-ninja",
+    "name": "invoice-ninja",
+    "description": "invoice-ninja — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/invoice-ninja/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/invoice-ninja/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/invoice-ninja/README.md",
+    "content_hash": "4cd35c308bc2cbd2a9b5a6c056fcd96a5b6dcc0647d14249da8394fd644a2b7a",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted",
+      "bitcoin"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[invoice-ninja]() — self-hosted via Docker Compose."
   },
   {
     "id": "invoiceshelf",
@@ -7311,6 +7804,28 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted It Tools deployment via Docker\r\n\r\nThis template provides a containerized deployment of [It Tools](https://github.com/corentinth/it-tools) using Docker Compose."
+  },
+  {
+    "id": "itflow",
+    "name": "itflow",
+    "description": "itflow — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/itflow/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/itflow/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/itflow/README.md",
+    "content_hash": "c67e08585380b938e3da1256399dc8e5d97282dbd90e6dc756d837fe01e6ce48",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[itflow]() — self-hosted via Docker Compose."
   },
   {
     "id": "its-mytabs",
@@ -7960,6 +8475,27 @@
     "intro": "Self-hosted Ketesa deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Ketesa](https://github.com/etkecc/ketesa) using Docker Compose."
   },
   {
+    "id": "keycloak",
+    "name": "Keycloak",
+    "description": "Keycloak — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/keycloak/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/keycloak/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/keycloak/README.md",
+    "content_hash": "3195650c30c23b8e92849b32371bf65945ff74cf3133653d19f7fc12eae4e48d",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/keycloak/keycloak)"
+    },
+    "intro": "[Keycloak](https://github.com/keycloak/keycloak) — self-hosted via Docker Compose."
+  },
+  {
     "id": "khoj",
     "name": "Khoj",
     "description": "Open-source, AI-powered personal search assistant — index your documents, notes, and code, then search and chat with them using local or cloud LLMs",
@@ -8058,6 +8594,28 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Kitchenowl deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Kitchenowl](https://github.com/tombursch/kitchenowl) using Docker Compose."
+  },
+  {
+    "id": "koel",
+    "name": "koel",
+    "description": "koel — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/koel/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/koel/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/koel/README.md",
+    "content_hash": "26fe57148e2ae6cd56f8ff61accf8c894df08aab57a715241fc9467e1a1b30bc",
+    "tags": [
+      "media",
+      "entertainment",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[koel]() — self-hosted via Docker Compose."
   },
   {
     "id": "koillection",
@@ -8450,6 +9008,27 @@
     "intro": "Self-hosted Lemmy deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Lemmy](https://github.com/dessalines/lemmy) using Docker Compose."
   },
   {
+    "id": "lemonldap-ng",
+    "name": "LemonLDAP::NG",
+    "description": "LemonLDAP::NG — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/lemonldap-ng/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/lemonldap-ng/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/lemonldap-ng/README.md",
+    "content_hash": "22d564f852f5a2c023710185ee873163388ba0c0795f5d081df4aec0ce516b28",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/LemonLDAPNG/lemonldap-ng)"
+    },
+    "intro": "[LemonLDAP::NG](https://github.com/LemonLDAPNG/lemonldap-ng) — self-hosted via Docker Compose."
+  },
+  {
     "id": "lesma",
     "name": "Lesma",
     "description": "Self-hosted Lesma deployment via Docker",
@@ -8473,6 +9052,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Lesma deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Lesma](https://github.com/ogarcia/lesma) using Docker Compose."
+  },
+  {
+    "id": "letta",
+    "name": "Letta",
+    "description": "Letta — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/letta/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/letta/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/letta/README.md",
+    "content_hash": "5e98bcf56eb7e6bc7efdb5fc932dd0d72f6ccfacf2e386adaa5b6d0eaf98060c",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8283](http://localhost:8283) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/letta-ai/letta)"
+    },
+    "intro": "[Letta](https://github.com/letta-ai/letta) — self-hosted via Docker Compose."
   },
   {
     "id": "libre-relay",
@@ -8976,6 +9576,27 @@
     "intro": "[LiteLLM](https://github.com/BerriAI/litellm) is a lightweight proxy that provides an OpenAI-compatible API endpoint for 100+ LLM providers. Route requests to OpenAI, Anthropic, Google Gemini, open-source models via Together AI, local models via Ollama, and many more — all through a single endpoint with consistent error handling, rate limiting, and spend tracking."
   },
   {
+    "id": "llamaindex",
+    "name": "LlamaIndex",
+    "description": "LlamaIndex — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/llamaindex/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/llamaindex/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/llamaindex/README.md",
+    "content_hash": "583c159166e62be06e738a9464c62931e9160848156d24d285fa14160ef943cc",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/run-llama/llama_index)"
+    },
+    "intro": "[LlamaIndex](https://github.com/run-llama/llama_index) — self-hosted via Docker Compose."
+  },
+  {
     "id": "lldap",
     "name": "Lldap",
     "description": "Self-hosted Lldap deployment via Docker",
@@ -9143,6 +9764,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Logdy deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Logdy](https://github.com/rickraven/logdy) using Docker Compose."
+  },
+  {
+    "id": "logto",
+    "name": "Logto",
+    "description": "Logto — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/logto/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/logto/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/logto/README.md",
+    "content_hash": "45275665b96195fcc8f17d28486a32348a5c9eb7c26b7587635f1058140f9a60",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:3001](http://localhost:3001) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/logto-io/logto)"
+    },
+    "intro": "[Logto](https://github.com/logto-io/logto) — self-hosted via Docker Compose."
   },
   {
     "id": "loki",
@@ -10434,6 +11076,28 @@
     "intro": "Self-hosted Monetr deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Monetr](https://github.com/monetr/monetr) using Docker Compose."
   },
   {
+    "id": "mongo-express",
+    "name": "mongo-express",
+    "description": "mongo-express — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/mongo-express/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/mongo-express/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/mongo-express/README.md",
+    "content_hash": "47e9701fcaf7c2b06c3288365ede648a7740d48a377a306b94d49ebf86d2017e",
+    "tags": [
+      "monitoring",
+      "database",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8081](http://localhost:8081) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[mongo-express]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "monica",
     "name": "Monica",
     "description": "Self-hosted Monica deployment via Docker",
@@ -10507,6 +11171,30 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Morphos deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Morphos](https://github.com/wapmorgan/morphos) using Docker Compose."
+  },
+  {
+    "id": "motioneye",
+    "name": "motioneye",
+    "description": "motioneye — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/motioneye/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/motioneye/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/motioneye/README.md",
+    "content_hash": "92955fc30adc809edd157c30032b10b13f2485023f7d2419f70a24fa5aa12c5b",
+    "tags": [
+      "automation",
+      "iot",
+      "media",
+      "monitoring",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8765](http://localhost:8765) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[motioneye]() — self-hosted via Docker Compose."
   },
   {
     "id": "movim",
@@ -10975,6 +11663,27 @@
     "intro": "[Netdata](https://github.com/netdata/netdata) — Real-time monitoring with metrics, dashboards, and alerts"
   },
   {
+    "id": "netmaker",
+    "name": "Netmaker",
+    "description": "Netmaker — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/netmaker/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/netmaker/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/netmaker/README.md",
+    "content_hash": "b0d48007bc67f594f093545b557ec4a8368e4516a2027122c7416d553ac3b229",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/gravitl/netmaker)"
+    },
+    "intro": "[Netmaker](https://github.com/gravitl/netmaker) — self-hosted via Docker Compose."
+  },
+  {
     "id": "netron",
     "name": "Netron",
     "description": "Model visualization tool for neural networks, machine learning, and AI models",
@@ -11072,6 +11781,27 @@
     "intro": "Self-hosted Nginx deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Nginx](nginx) using Docker Compose."
   },
   {
+    "id": "nginx-proxy-manager",
+    "name": "Nginx Proxy Manager",
+    "description": "Nginx Proxy Manager — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/nginx-proxy-manager/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/nginx-proxy-manager/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/nginx-proxy-manager/README.md",
+    "content_hash": "82b4b443d143f72207599a6cb75768c69cd836ca4b8d1be80d5f788124921e3b",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:81](http://localhost:81) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/NginxProxyManager/nginx-proxy-manager)"
+    },
+    "intro": "[Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) — self-hosted via Docker Compose."
+  },
+  {
     "id": "nginx-ui",
     "name": "Nginx UI",
     "description": "Web-based Nginx configuration manager — edit sites, manage certs, view logs from a modern dashboard",
@@ -11141,6 +11871,28 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Open-source Airtable alternative — create spreadsheets, forms, kanban boards, and galleries with a no-code interface\r\n\r\nThis template provides a containerized deployment of [Nocodb](https://github.com/nocodb/nocodb) using Docker Compose."
+  },
+  {
+    "id": "node-exporter",
+    "name": "node_exporter",
+    "description": "node_exporter — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/node-exporter/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/node-exporter/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/node-exporter/README.md",
+    "content_hash": "d131064f856ddf4a5034752f8590b422772cad2dead0a70a31e8c10ed85f2253",
+    "tags": [
+      "monitoring",
+      "database",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:9100](http://localhost:9100) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[node_exporter]() — self-hosted via Docker Compose."
   },
   {
     "id": "node-red",
@@ -11216,6 +11968,28 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Nodejs deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Nodejs](https://github.com/paketobuildpacks/nodejs) using Docker Compose."
+  },
+  {
+    "id": "nodered",
+    "name": "nodered",
+    "description": "nodered — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/nodered/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/nodered/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/nodered/README.md",
+    "content_hash": "01e4d1313432363e5ace72eef82a34055098c05196ab343271bd3f972f3676fd",
+    "tags": [
+      "automation",
+      "iot",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:1880](http://localhost:1880) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[nodered]() — self-hosted via Docker Compose."
   },
   {
     "id": "nostr-relay",
@@ -11579,6 +12353,27 @@
       "serviceDetails": "The docker-compose.yml exposes environment variables documented in `.env.example`.\n\n> **Status: 🏗️ CI Build Pending**\n> The upstream project includes a Dockerfile, but no pre-built image is published. The template currently\n> references a non-existent image. A CI pipeline will build and publish to GHCR (planned for future update)."
     },
     "intro": "[Onyx](https://github.com/onyx-dot-app/onyx) — Enterprise AI search platform for connecting, indexing, and searching organizational knowledge (formerly Danswer)"
+  },
+  {
+    "id": "open-interpreter",
+    "name": "Open Interpreter",
+    "description": "Open Interpreter — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/open-interpreter/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/open-interpreter/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/open-interpreter/README.md",
+    "content_hash": "44434f8353fbb2391d09f6c88291bf17087e84950d81cbf43dc49382f1e6d197",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/OpenInterpreter/open-interpreter)"
+    },
+    "intro": "[Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) — self-hosted via Docker Compose."
   },
   {
     "id": "open-meteo",
@@ -12162,6 +12957,48 @@
     "intro": "[Ory Hydra](https://github.com/ory/hydra) (17,104 ★) is a hardened, OpenID Certified OAuth 2.0 server and OpenID Connect provider trusted by OpenAI, Lufthansa, and thousands of organizations. It issues access tokens, refresh tokens, and ID tokens at scale.\n\nHydra does **not** provide login/registration pages — you build your own UI and Hydra handles the OAuth 2.0 / OIDC protocol logic. This template ships Hydra v2 with PostgreSQL for persistence."
   },
   {
+    "id": "ory-kratos",
+    "name": "Ory Kratos",
+    "description": "Ory Kratos — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ory-kratos/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ory-kratos/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ory-kratos/README.md",
+    "content_hash": "faa9a7113fb88c27ed29f6d71cfc24487a3610b9c2a5050cf72d403bb7b1062c",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:4433](http://localhost:4433) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/ory/kratos)"
+    },
+    "intro": "[Ory Kratos](https://github.com/ory/kratos) — self-hosted via Docker Compose."
+  },
+  {
+    "id": "ory-oathkeeper",
+    "name": "Ory Oathkeeper",
+    "description": "Ory Oathkeeper — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ory-oathkeeper/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ory-oathkeeper/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/ory-oathkeeper/README.md",
+    "content_hash": "796af0a5beb666c366c05670b1d0e12e5f6f042f1703d3be1e3360548b82bdd0",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:4456](http://localhost:4456) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/ory/oathkeeper)"
+    },
+    "intro": "[Ory Oathkeeper](https://github.com/ory/oathkeeper) — self-hosted via Docker Compose."
+  },
+  {
     "id": "oscam",
     "name": "Oscam",
     "description": "Self-hosted Oscam deployment via Docker",
@@ -12213,6 +13050,28 @@
     "intro": "Self-hosted Otter Wiki deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Otter Wiki](https://github.com/redimp/otterwiki) using Docker Compose."
   },
   {
+    "id": "our-shopping-list",
+    "name": "Our Shopping List",
+    "description": "Our Shopping List — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/our-shopping-list/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/our-shopping-list/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/our-shopping-list/README.md",
+    "content_hash": "6017f24087b575e6ffc9ff68cbd051f1309937964200b4b9c8eb6fd2474389e4",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/nanawel/our-shopping-list)"
+    },
+    "intro": "[Our Shopping List](https://github.com/nanawel/our-shopping-list) — self-hosted via Docker Compose."
+  },
+  {
     "id": "outline",
     "name": "Outline",
     "description": "Self-hosted Outline deployment via Docker",
@@ -12236,6 +13095,28 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Outline deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Outline](https://github.com/outlinewiki/outline) using Docker Compose."
+  },
+  {
+    "id": "overleaf",
+    "name": "overleaf",
+    "description": "overleaf — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/overleaf/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/overleaf/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/overleaf/README.md",
+    "content_hash": "84096d9deacea930b71ec30041b08908b4ea68ac0601c377d1d28cb456bba800",
+    "tags": [
+      "productivity",
+      "collaboration",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[overleaf]() — self-hosted via Docker Compose."
   },
   {
     "id": "overseerr",
@@ -13629,6 +14510,27 @@
     "intro": "Self-hosted Prometheus deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Prometheus](prometheus) using Docker Compose."
   },
   {
+    "id": "promptfoo",
+    "name": "Promptfoo",
+    "description": "Promptfoo — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/promptfoo/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/promptfoo/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/promptfoo/README.md",
+    "content_hash": "9d7826ec4153c1065a7d32c871addc2cd5fd5f33e27406e8d05aebabf4c0b9b4",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:15500](http://localhost:15500) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/promptfoo/promptfoo)"
+    },
+    "intro": "[Promptfoo](https://github.com/promptfoo/promptfoo) — self-hosted via Docker Compose."
+  },
+  {
     "id": "prowlarr",
     "name": "Prowlarr",
     "description": "Self-hosted Prowlarr deployment via Docker",
@@ -13828,6 +14730,27 @@
     "intro": "[Pulse](https://github.com/rcourtman/Pulse) provides real-time server monitoring with AI-powered insights. Track CPU, memory, disk, and network metrics, detect anomalies automatically, and receive intelligent alerts."
   },
   {
+    "id": "pulumi",
+    "name": "Pulumi",
+    "description": "Pulumi — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/pulumi/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/pulumi/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/pulumi/README.md",
+    "content_hash": "f58b8d3ab08a89f10f57cc14cdb3f84c74478828e47cc9ae680f41b0a6bb9899",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/pulumi/pulumi)"
+    },
+    "intro": "[Pulumi](https://github.com/pulumi/pulumi) — self-hosted via Docker Compose."
+  },
+  {
     "id": "pumperly",
     "name": "Pumperly",
     "description": "Self-hosted Pumperly deployment via Docker",
@@ -13976,6 +14899,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Qdirstat deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Qdirstat](https://github.com/jlesage/qdirstat) using Docker Compose."
+  },
+  {
+    "id": "qdrant",
+    "name": "Qdrant",
+    "description": "Qdrant — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/qdrant/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/qdrant/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/qdrant/README.md",
+    "content_hash": "ef73d332be157257f86eef7da5f3004cc587e83a898c663e95c3cacd0b4a13eb",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:6333](http://localhost:6333) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/qdrant/qdrant)"
+    },
+    "intro": "[Qdrant](https://github.com/qdrant/qdrant) — self-hosted via Docker Compose."
   },
   {
     "id": "qflood",
@@ -14644,6 +15588,28 @@
     "intro": "Self-hosted Robosats deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Robosats](https://github.com/recksato/robosats) using Docker Compose."
   },
   {
+    "id": "rocketchat",
+    "name": "rocketchat",
+    "description": "rocketchat — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/rocketchat/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/rocketchat/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/rocketchat/README.md",
+    "content_hash": "b3f8f9b51adbccd42b4c04290639294ad638979f342f5de91892f433a8782215",
+    "tags": [
+      "communication",
+      "productivity",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:3000](http://localhost:3000) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[rocketchat]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "romm",
     "name": "Romm",
     "description": "Self-hosted Romm deployment via Docker",
@@ -14990,6 +15956,29 @@
     "intro": "Self-hosted Sabnzbd deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Sabnzbd](https://github.com/linuxserver/sabnzbd) using Docker Compose."
   },
   {
+    "id": "satsale",
+    "name": "satsale",
+    "description": "satsale — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/satsale/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/satsale/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/satsale/README.md",
+    "content_hash": "2241244cda86dc7325359b5c975df2a5314d81ec7cdd2872e20c17d8e2290a98",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted",
+      "bitcoin"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:5000](http://localhost:5000) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[satsale]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "scanservjs",
     "name": "Scanservjs",
     "description": "Self-hosted Scanservjs deployment via Docker",
@@ -15035,6 +16024,27 @@
       "serviceDetails": "The docker-compose.yml exposes environment variables documented in `.env.example`."
     },
     "intro": "[Scrapling](https://github.com/D4Vinci/Scrapling) — Python web scraping library with AutoDetect parsing and anti-bot bypass"
+  },
+  {
+    "id": "screenshot-to-code",
+    "name": "screenshot-to-code",
+    "description": "screenshot-to-code — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/screenshot-to-code/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/screenshot-to-code/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/screenshot-to-code/README.md",
+    "content_hash": "835540842714713543b26bf307b36a07842dec3729dc17c39f586f531398fbb8",
+    "tags": [
+      "self-hosted",
+      "tools"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:3000](http://localhost:3000) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/abi/screenshot-to-code)"
+    },
+    "intro": "[screenshot-to-code](https://github.com/abi/screenshot-to-code) — self-hosted via Docker Compose."
   },
   {
     "id": "scrutiny",
@@ -15596,6 +16606,28 @@
     "intro": "Self-hosted Snapdrop deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Snapdrop](https://github.com/linuxserver/snapdrop) using Docker Compose."
   },
   {
+    "id": "snipeit",
+    "name": "snipeit",
+    "description": "snipeit — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/snipeit/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/snipeit/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/snipeit/README.md",
+    "content_hash": "03b4ee28e8d07e26ff051a80c6af612eec92e20a6bdd3aa3b4309886214e2fc3",
+    "tags": [
+      "business",
+      "e-commerce",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:80](http://localhost:80) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[snipeit]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "snowflake",
     "name": "Snowflake",
     "description": "Self-hosted Snowflake deployment via Docker",
@@ -16039,6 +17071,28 @@
     "intro": "[Streamer Sales](https://github.com/PeterH0323/Streamer-Sales) (3.6k+ ★) is an AI-powered live streaming sales assistant that automates product demonstrations, answers customer questions, and drives e-commerce conversions during live streams."
   },
   {
+    "id": "stremio",
+    "name": "stremio",
+    "description": "stremio — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/stremio/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/stremio/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/stremio/README.md",
+    "content_hash": "efbba75259144ceb5b67f34250cca57b50b65a6d2fad288a830645ff00247d5c",
+    "tags": [
+      "media",
+      "entertainment",
+      "self-hosted"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:11470](http://localhost:11470) in your browser.",
+      "configuration": "Edit `.env` to customize the port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub]()"
+    },
+    "intro": "[stremio]() — self-hosted via Docker Compose."
+  },
+  {
     "id": "strix",
     "name": "Strix",
     "description": "Self-hosted Strix deployment via Docker",
@@ -16202,6 +17256,27 @@
     "intro": "Self-hosted Superset deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Superset](https://github.com/apache/superset) using Docker Compose."
   },
   {
+    "id": "supertokens",
+    "name": "SuperTokens",
+    "description": "SuperTokens — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/supertokens/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/supertokens/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/supertokens/README.md",
+    "content_hash": "3a0dca3e7503e5eb59c6aad1b3192f38d7135791b7ed2b8ba9bfcc7d6825ed5f",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:3567](http://localhost:3567) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/supertokens/supertokens-core)"
+    },
+    "intro": "[SuperTokens](https://github.com/supertokens/supertokens-core) — self-hosted via Docker Compose."
+  },
+  {
     "id": "sure",
     "name": "Sure",
     "description": "Self-hosted Sure deployment via Docker",
@@ -16250,6 +17325,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Surrealdb deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Surrealdb](https://github.com/surrealdb/surrealdb) using Docker Compose."
+  },
+  {
+    "id": "swe-agent",
+    "name": "SWE-agent",
+    "description": "SWE-agent — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/swe-agent/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/swe-agent/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/swe-agent/README.md",
+    "content_hash": "eaf0e941a5ddc79bb9446d7f8db9c9c9518fb0265c44f6a4752545ca90b2f1d7",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/SWE-agent/SWE-agent)"
+    },
+    "intro": "[SWE-agent](https://github.com/SWE-agent/SWE-agent) — self-hosted via Docker Compose."
   },
   {
     "id": "synapse",
@@ -16352,6 +17448,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Syncthing deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Syncthing](https://github.com/syncthing/syncthing) using Docker Compose."
+  },
+  {
+    "id": "sysdig",
+    "name": "Sysdig",
+    "description": "Sysdig — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/sysdig/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/sysdig/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/sysdig/README.md",
+    "content_hash": "026dfd4ce7351c8220fcef6af7e42334869649aa7e41c4748a2e0f8a48e7c214",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/draios/sysdig)"
+    },
+    "intro": "[Sysdig](https://github.com/draios/sysdig) — self-hosted via Docker Compose."
   },
   {
     "id": "tabby",
@@ -16677,6 +17794,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "A test template for verifying the build-registry script\r\n\r\nThis template provides a containerized deployment of [Test Application](test application) using Docker Compose."
+  },
+  {
+    "id": "text-generation-inference",
+    "name": "Text Generation Inference",
+    "description": "Text Generation Inference — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/text-generation-inference/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/text-generation-inference/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/text-generation-inference/README.md",
+    "content_hash": "ac5547ef7e58dde1cc541558aea816103be2b4548965351849d235de1ca88661",
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/huggingface/text-generation-inference)"
+    },
+    "intro": "[Text Generation Inference](https://github.com/huggingface/text-generation-inference) — self-hosted via Docker Compose."
   },
   {
     "id": "textarea",
@@ -17039,6 +18177,27 @@
       "troubleshooting": "| Symptom | Likely Cause | Fix |\r\n|----------|-------------|-----|\r\n| `docker compose up` fails | Image not yet built/pulled | Run `docker compose build` to build locally, or wait for CI-published image |\r\n| Port conflict | Another service on port 8000 | Change `TRADINGAGENTS_PORT` in `.env` |\r\n| Container exits immediately | Build failure | Run `docker compose logs tradingagents` for details |"
     },
     "intro": "[TradingAgents](https://github.com/TauricResearch/TradingAgents) — AI-powered algorithmic trading with multi-agent collaboration"
+  },
+  {
+    "id": "traefik",
+    "name": "Traefik",
+    "description": "Traefik — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/traefik/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/traefik/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/traefik/README.md",
+    "content_hash": "22459505001076faded14251ff53c06b480fd9aba6fcc4dc639b54d35cbfa756",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/traefik/traefik)"
+    },
+    "intro": "[Traefik](https://github.com/traefik/traefik) — self-hosted via Docker Compose."
   },
   {
     "id": "transfersh",
@@ -17712,6 +18871,27 @@
       "serviceDetails": "The docker-compose.yml exposes environment variables documented in `.env.example`.\r\n\n> **Status: 🏗️ CI Build Pending**\n> The upstream project includes a Dockerfile, but no pre-built image is published. The template currently\n> references a non-existent image. A CI pipeline will build and publish to GHCR (planned for future update)."
     },
     "intro": "[Vane](https://github.com/ItzCrazyKns/Vane) — Visual AI agent builder with drag-and-drop canvas"
+  },
+  {
+    "id": "vault",
+    "name": "Vault",
+    "description": "Vault — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/vault/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/vault/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/vault/README.md",
+    "content_hash": "1f4a4ce65ee3f164f4b106d746438b276f69555d44d460daaa540a096b1528d6",
+    "tags": [
+      "devops",
+      "infrastructure"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8200](http://localhost:8200) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/hashicorp/vault)"
+    },
+    "intro": "[Vault](https://github.com/hashicorp/vault) — self-hosted via Docker Compose."
   },
   {
     "id": "versitygw",
@@ -19244,6 +20424,27 @@
       "prerequisites": "- Docker Engine 20.10+\r\n- Docker Compose v2.0+\r\n- 512MB+ RAM recommended\r\n- 1GB+ free disk space for data storage"
     },
     "intro": "Self-hosted Ziit deployment via Docker\r\n\r\nThis template provides a containerized deployment of [Ziit](https://github.com/0pandadev/ziit) using Docker Compose."
+  },
+  {
+    "id": "zitadel",
+    "name": "Zitadel",
+    "description": "Zitadel — self-hosted via Docker Compose",
+    "version": "1.0.0",
+    "author": "Arcane",
+    "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/zitadel/docker-compose.yml",
+    "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/zitadel/.env.example",
+    "documentation_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/zitadel/README.md",
+    "content_hash": "9ac7e3336156af9bf8c5c966d0e2f09189c8d0bf8da870097d939cbe869f262c",
+    "tags": [
+      "identity",
+      "authentication"
+    ],
+    "sections": {
+      "quickStart": "1. Copy the environment file and adjust as needed:\n\n   ```bash\n   cp .env.example .env\n   ```\n\n2. Start the service:\n\n   ```bash\n   docker compose up -d\n   ```\n\n3. Access the service:\n\n   Open [http://localhost:8080](http://localhost:8080) in your browser.",
+      "configuration": "Edit `.env` to customize port and other settings. See `.env.example` for available options.",
+      "upstream": "- [GitHub](https://github.com/zitadel/zitadel)"
+    },
+    "intro": "[Zitadel](https://github.com/zitadel/zitadel) — self-hosted via Docker Compose."
   },
   {
     "id": "znc",

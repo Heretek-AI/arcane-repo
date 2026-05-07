@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { withBase } from 'vitepress'
 import { marked } from 'marked'
 import {
   getTemplate,
@@ -72,7 +73,7 @@ onUnmounted(() => {
 
 /** Format tag URL for category page */
 function tagUrl(tag: string): string {
-  return `/categories/${tag}`
+  return withBase(`/categories/${tag}.html`)
 }
 </script>
 

@@ -1,11 +1,11 @@
 ---
 title: All Templates
-description: Browse all 786 templates in the Arcane registry
+description: Browse all 842 templates in the Arcane registry
 ---
 
 # All Templates
 
-786 templates in the registry. Use `Ctrl+K` to search.
+842 templates in the registry. Use `Ctrl+K` to search.
 
 <div class="template-grid">
 
@@ -15,7 +15,17 @@ description: Browse all 786 templates in the Arcane registry
 
 Self-hosted 2fauth deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [abantecart](/templates/abantecart)
+
+abantecart — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -25,7 +35,7 @@ Self-hosted 2fauth deployment via Docker
 
 Open-source workflow automation platform with 400+ app integrations, visual drag-and-drop editor, and AI agent capabilities
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -35,7 +45,7 @@ Open-source workflow automation platform with 400+ app integrations, visual drag
 
 Network-wide DNS ad blocker with parental control, safe browsing, and detailed query logging
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -45,7 +55,7 @@ Network-wide DNS ad blocker with parental control, safe browsing, and detailed q
 
 Self-hosted Admidio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -55,7 +65,7 @@ Self-hosted Admidio deployment via Docker
 
 Self-hosted Adminer deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -65,7 +75,7 @@ Self-hosted Adminer deployment via Docker
 
 Self-hosted Adminerevo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -75,7 +85,7 @@ Self-hosted Adminerevo deployment via Docker
 
 Open-source knowledge base and document workspace with real-time collaboration, whiteboards, and markdown support
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -85,7 +95,7 @@ Open-source knowledge base and document workspace with real-time collaboration, 
 
 Open-source AI agent framework — autonomous agents with tool use, memory, multi-model support, and a built-in web interface
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/tools" class="tag-badge">tools</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -95,7 +105,7 @@ Open-source AI agent framework — autonomous agents with tool use, memory, mult
 
 Self-hosted Agenta deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -105,7 +115,7 @@ Self-hosted Agenta deployment via Docker
 
 Multi-agent environment for training and evaluating AI agents
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/research" class="tag-badge">research</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/research.html" class="tag-badge">research</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -115,7 +125,7 @@ Multi-agent environment for training and evaluating AI agents
 
 Survey of agentic RAG patterns and architectures
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/research" class="tag-badge">research</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/research.html" class="tag-badge">research</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -125,7 +135,7 @@ Survey of agentic RAG patterns and architectures
 
 Lightweight AI agent framework for multi-modal agents with tool use and memory
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/python" class="tag-badge">python</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/python.html" class="tag-badge">python</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -135,7 +145,17 @@ Lightweight AI agent framework for multi-modal agents with tool use and memory
 
 Self-hosted Agora deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [Aider](/templates/aider)
+
+Aider — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -145,7 +165,7 @@ Self-hosted Agora deployment via Docker
 
 AI-native UI framework — build full-stack AI interfaces with a server-driven rendering approach for React and TypeScript applications
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/framework" class="tag-badge">framework</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a>
 
 </div>
 
@@ -155,7 +175,7 @@ AI-native UI framework — build full-stack AI interfaces with a server-driven r
 
 Self-hosted Airtrail deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -165,7 +185,7 @@ Self-hosted Airtrail deployment via Docker
 
 Self-hosted Akaunting deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -175,7 +195,7 @@ Self-hosted Akaunting deployment via Docker
 
 Self-hosted Albyhub deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -185,7 +205,7 @@ Self-hosted Albyhub deployment via Docker
 
 Self-hosted email alias and password manager that generates unique email addresses and strong passwords for every service you use.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -195,7 +215,7 @@ Self-hosted email alias and password manager that generates unique email address
 
 Self-hosted Ampache deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -205,7 +225,17 @@ Self-hosted Ampache deployment via Docker
 
 Self-hosted Anchor deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [Ansible Semaphore](/templates/ansible-semaphore)
+
+Ansible Semaphore — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -215,7 +245,7 @@ Self-hosted Anchor deployment via Docker
 
 Self-hosted Apprise Api deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -225,7 +255,7 @@ Self-hosted Apprise Api deployment via Docker
 
 Self-hosted Appsmith deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -235,7 +265,7 @@ Self-hosted Appsmith deployment via Docker
 
 Self-hosted Appwrite deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -245,7 +275,7 @@ Self-hosted Appwrite deployment via Docker
 
 Self-hosted, privacy-friendly analytics platform for mobile and desktop applications with a simple SDK integration.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -255,7 +285,7 @@ Self-hosted, privacy-friendly analytics platform for mobile and desktop applicat
 
 Self-hosted Arcane deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -265,7 +295,7 @@ Self-hosted Arcane deployment via Docker
 
 Self-hosted Archisteamfarm deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -275,7 +305,7 @@ Self-hosted Archisteamfarm deployment via Docker
 
 Self-hosted Archivebox deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -285,7 +315,7 @@ Self-hosted Archivebox deployment via Docker
 
 Self-hosted Argos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -295,7 +325,7 @@ Self-hosted Argos deployment via Docker
 
 Self-hosted Ariang deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -305,7 +335,7 @@ Self-hosted Ariang deployment via Docker
 
 All-in-one AI agent assistant with multi-platform IM integration, LLM backend support, and extensible plugin system
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -315,7 +345,7 @@ All-in-one AI agent assistant with multi-platform IM integration, LLM backend su
 
 Self-hosted Audiobookshelf deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -325,7 +355,7 @@ Self-hosted Audiobookshelf deployment via Docker
 
 Self-hosted Aurral deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -335,7 +365,7 @@ Self-hosted Aurral deployment via Docker
 
 Self-hosted Authelia deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -345,7 +375,7 @@ Self-hosted Authelia deployment via Docker
 
 Self-hosted Authentik deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -355,7 +385,7 @@ Self-hosted Authentik deployment via Docker
 
 Self-hosted Autobrr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -365,7 +395,17 @@ Self-hosted Autobrr deployment via Docker
 
 Multi-agent conversation framework by Microsoft
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
+
+</div>
+
+<div class="template-card">
+
+### [AutoGPT](/templates/autogpt)
+
+AutoGPT — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -375,7 +415,7 @@ Multi-agent conversation framework by Microsoft
 
 Self-hosted Automad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -385,7 +425,7 @@ Self-hosted Automad deployment via Docker
 
 Self-hosted business automation tool that connects your apps and automates workflows without coding, similar to Zapier.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -395,7 +435,7 @@ Self-hosted business automation tool that connects your apps and automates workf
 
 Self-hosted web radio management suite with live broadcasting, media library management, and listener analytics.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -405,7 +445,7 @@ Self-hosted web radio management suite with live broadcasting, media library man
 
 Self-hosted Backdrop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -415,7 +455,7 @@ Self-hosted Backdrop deployment via Docker
 
 Self-hosted Backrest deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -425,7 +465,7 @@ Self-hosted Backrest deployment via Docker
 
 Self-hosted Baikal deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -435,7 +475,7 @@ Self-hosted Baikal deployment via Docker
 
 Self-hosted Baserow deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -445,7 +485,7 @@ Self-hosted Baserow deployment via Docker
 
 Self-hosted Bazarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -455,7 +495,7 @@ Self-hosted Bazarr deployment via Docker
 
 Self-hosted habit tracking application that helps you build and maintain daily habits with a clean, minimal interface.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -465,7 +505,7 @@ Self-hosted habit tracking application that helps you build and maintain daily h
 
 IBM framework for production-ready AI agents
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -475,7 +515,7 @@ IBM framework for production-ready AI agents
 
 Self-hosted Beets deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -485,7 +525,7 @@ Self-hosted Beets deployment via Docker
 
 Self-hosted Bentopdf deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -495,7 +535,7 @@ Self-hosted Bentopdf deployment via Docker
 
 Self-hosted Beszel deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -505,7 +545,7 @@ Self-hosted Beszel deployment via Docker
 
 Self-hosted personal cloud platform for file storage, sharing, and collaboration with a modern web interface.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -515,7 +555,7 @@ Self-hosted personal cloud platform for file storage, sharing, and collaboration
 
 Open-source LLM application platform — build, deploy, and monitor AI applications with a visual workflow editor, RAG pipelines, and multi-model support
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/platform" class="tag-badge">platform</a> <a href="/categories/low-code" class="tag-badge">low-code</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/platform.html" class="tag-badge">platform</a> <a href="/arcane-repo/categories/low-code.html" class="tag-badge">low-code</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
 
 </div>
 
@@ -525,7 +565,7 @@ Open-source LLM application platform — build, deploy, and monitor AI applicati
 
 Self-hosted Bitaxe Sentry deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -535,7 +575,7 @@ Self-hosted Bitaxe Sentry deployment via Docker
 
 Self-hosted Bitcoin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -545,7 +585,7 @@ Self-hosted Bitcoin deployment via Docker
 
 Self-hosted Bitcoin Knots deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -555,7 +595,7 @@ Self-hosted Bitcoin Knots deployment via Docker
 
 Self-hosted Blinko deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -565,7 +605,7 @@ Self-hosted Blinko deployment via Docker
 
 Self-hosted Bludit deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -575,7 +615,7 @@ Self-hosted Bludit deployment via Docker
 
 Self-hosted Bonfire deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -585,7 +625,7 @@ Self-hosted Bonfire deployment via Docker
 
 Self-hosted book tracking and reading log application to catalog your library and monitor reading progress.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -595,7 +635,7 @@ Self-hosted book tracking and reading log application to catalog your library an
 
 Self-hosted Booklore deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -605,7 +645,7 @@ Self-hosted Booklore deployment via Docker
 
 Self-hosted Booksonic deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -615,7 +655,7 @@ Self-hosted Booksonic deployment via Docker
 
 Self-hosted Bookstack deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -625,7 +665,7 @@ Self-hosted Bookstack deployment via Docker
 
 Self-hosted Bookwyrm deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -635,7 +675,7 @@ Self-hosted Bookwyrm deployment via Docker
 
 Self-hosted Borg deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -645,7 +685,7 @@ Self-hosted Borg deployment via Docker
 
 Self-hosted Borgserver deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -655,7 +695,7 @@ Self-hosted Borgserver deployment via Docker
 
 Self-hosted Borgwarehouse deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -665,7 +705,7 @@ Self-hosted Borgwarehouse deployment via Docker
 
 Self-hosted Breezewiki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -675,7 +715,7 @@ Self-hosted Breezewiki deployment via Docker
 
 Self-hosted Btc Rpc Explorer deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -685,7 +725,7 @@ Self-hosted Btc Rpc Explorer deployment via Docker
 
 Self-hosted Budibase deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -695,7 +735,7 @@ Self-hosted Budibase deployment via Docker
 
 Open-source cloud-native Web Application Firewall (WAF) — NGINX-based with seamless Docker integration, ModSecurity, automatic Let's Encrypt certificates, and real-time security monitoring
 
-<a href="/categories/security" class="tag-badge">security</a> <a href="/categories/proxy" class="tag-badge">proxy</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a> <a href="/arcane-repo/categories/proxy.html" class="tag-badge">proxy</a>
 
 </div>
 
@@ -705,7 +745,7 @@ Open-source cloud-native Web Application Firewall (WAF) — NGINX-based with sea
 
 Browser automation agent with natural language — controls web browsers via AI. Primarily a Python library/CLI; this Docker template provides a thin API wrapper for health checks and documentation
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/web" class="tag-badge">web</a> <a href="/categories/python" class="tag-badge">python</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/web.html" class="tag-badge">web</a> <a href="/arcane-repo/categories/python.html" class="tag-badge">python</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -715,7 +755,7 @@ Browser automation agent with natural language — controls web browsers via AI.
 
 Self-hosted code snippet manager for storing, organizing, and sharing code snippets with syntax highlighting.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -725,7 +765,7 @@ Self-hosted code snippet manager for storing, organizing, and sharing code snipp
 
 Self-hosted Caddy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -735,7 +775,7 @@ Self-hosted Caddy deployment via Docker
 
 Self-hosted Calcom deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -745,7 +785,7 @@ Self-hosted Calcom deployment via Docker
 
 Self-hosted Calibre Web Automated deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -755,7 +795,7 @@ Self-hosted Calibre Web Automated deployment via Docker
 
 Self-hosted Calibreweb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -765,7 +805,7 @@ Self-hosted Calibreweb deployment via Docker
 
 Self-hosted Campfire deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -775,7 +815,7 @@ Self-hosted Campfire deployment via Docker
 
 Self-hosted pantry and food inventory tracker that helps manage stored food, expiration dates, and stock levels.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -785,7 +825,17 @@ Self-hosted pantry and food inventory tracker that helps manage stored food, exp
 
 Personal cloud operating system for home servers — host-level daemon for managing Docker containers, file sharing, and smart home integration via an intuitive web UI
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
+
+</div>
+
+<div class="template-card">
+
+### [Casdoor](/templates/casdoor)
+
+Casdoor — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -795,7 +845,7 @@ Personal cloud operating system for home servers — host-level daemon for manag
 
 Self-hosted Cashpilot deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -805,7 +855,7 @@ Self-hosted Cashpilot deployment via Docker
 
 Self-hosted Cashu Me deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -815,7 +865,7 @@ Self-hosted Cashu Me deployment via Docker
 
 Self-hosted Castopod deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -825,7 +875,7 @@ Self-hosted Castopod deployment via Docker
 
 Privacy-preserving AI API reverse proxy with identity forwarding — route LLM requests through an identity-aware gateway
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/proxy" class="tag-badge">proxy</a> <a href="/categories/gateway" class="tag-badge">gateway</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/proxy.html" class="tag-badge">proxy</a> <a href="/arcane-repo/categories/gateway.html" class="tag-badge">gateway</a>
 
 </div>
 
@@ -835,7 +885,7 @@ Privacy-preserving AI API reverse proxy with identity forwarding — route LLM r
 
 Self-hosted Changedetection deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -845,7 +895,7 @@ Self-hosted Changedetection deployment via Docker
 
 Self-hosted Chantools deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -855,7 +905,7 @@ Self-hosted Chantools deployment via Docker
 
 Self-hosted Chatbot Ui deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -865,7 +915,7 @@ Self-hosted Chatbot Ui deployment via Docker
 
 Open-source customer engagement platform — shared team inboxes, live chat, and omnichannel messaging for support and sales teams
 
-<a href="/categories/multi-service" class="tag-badge">multi-service</a>
+<a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a>
 
 </div>
 
@@ -875,7 +925,7 @@ Open-source customer engagement platform — shared team inboxes, live chat, and
 
 Self-hosted Checkcle deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -885,7 +935,7 @@ Self-hosted Checkcle deployment via Docker
 
 Self-hosted Checkmate deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -895,7 +945,7 @@ Self-hosted Checkmate deployment via Docker
 
 Self-hosted Chevereto deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -905,7 +955,7 @@ Self-hosted Chevereto deployment via Docker
 
 Self-hosted Chibisafe deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -915,7 +965,7 @@ Self-hosted Chibisafe deployment via Docker
 
 Self-hosted Chiefonboarding deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -925,7 +975,7 @@ Self-hosted Chiefonboarding deployment via Docker
 
 Self-hosted wallpaper management and rotation tool for organizing and cycling through desktop wallpapers.
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -935,7 +985,7 @@ Self-hosted wallpaper management and rotation tool for organizing and cycling th
 
 Open-source embedding database for RAG and similarity search
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
 
 </div>
 
@@ -945,7 +995,7 @@ Open-source embedding database for RAG and similarity search
 
 Self-hosted Chromium deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -955,7 +1005,7 @@ Self-hosted Chromium deployment via Docker
 
 Self-hosted Cinny deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -965,7 +1015,7 @@ Self-hosted Cinny deployment via Docker
 
 Self-hosted Clamav deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -975,7 +1025,7 @@ Self-hosted Clamav deployment via Docker
 
 Enterprise AI digital employee platform — multi-service workflow builder with visual canvas, agent orchestration, and OKR management
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/workflow" class="tag-badge">workflow</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/low-code" class="tag-badge">low-code</a> <a href="/categories/multi-service" class="tag-badge">multi-service</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/workflow.html" class="tag-badge">workflow</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/low-code.html" class="tag-badge">low-code</a> <a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a>
 
 </div>
 
@@ -985,7 +1035,7 @@ Enterprise AI digital employee platform — multi-service workflow builder with 
 
 Self-hosted Cloudbeaver deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -995,7 +1045,7 @@ Self-hosted Cloudbeaver deployment via Docker
 
 Self-hosted Cloudflared deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1005,7 +1055,17 @@ Self-hosted Cloudflared deployment via Docker
 
 Self-hosted Cloudreve deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [cockpit](/templates/cockpit)
+
+cockpit — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/productivity.html" class="tag-badge">productivity</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -1015,7 +1075,7 @@ Self-hosted Cloudreve deployment via Docker
 
 Self-hosted Codex deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1025,7 +1085,7 @@ Self-hosted Codex deployment via Docker
 
 Self-hosted Codimd deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1035,7 +1095,7 @@ Self-hosted Codimd deployment via Docker
 
 ML container packaging tool — build and run reproducible ML models in containers with cog build, predict, and push
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
 
 </div>
 
@@ -1045,7 +1105,17 @@ ML container packaging tool — build and run reproducible ML models in containe
 
 Open-source, graph-based RAG platform — extract, store, and query knowledge graphs from documents using LLMs, with support for multiple vector stores and LLM providers
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
+
+</div>
+
+<div class="template-card">
+
+### [ComfyUI](/templates/comfyui)
+
+ComfyUI — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -1055,7 +1125,7 @@ Open-source, graph-based RAG platform — extract, store, and query knowledge gr
 
 Self-hosted Commafeed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1065,7 +1135,17 @@ Self-hosted Commafeed deployment via Docker
 
 Self-hosted Commandbox deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [Composio](/templates/composio)
+
+Composio — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -1075,7 +1155,27 @@ Self-hosted Commandbox deployment via Docker
 
 Self-hosted Conduit deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [Consul](/templates/consul)
+
+Consul — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
+
+</div>
+
+<div class="template-card">
+
+### [Continue](/templates/continue)
+
+Continue — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -1085,7 +1185,7 @@ Self-hosted Conduit deployment via Docker
 
 Self-hosted Convertx deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1095,7 +1195,7 @@ Self-hosted Convertx deployment via Docker
 
 Open-source Heroku / Netlify / Vercel alternative — deploy web apps, databases, and services on your own servers with automated SSL, Git integration, and one-click rollbacks
 
-<a href="/categories/paas" class="tag-badge">paas</a> <a href="/categories/platform" class="tag-badge">platform</a>
+<a href="/arcane-repo/categories/paas.html" class="tag-badge">paas</a> <a href="/arcane-repo/categories/platform.html" class="tag-badge">platform</a>
 
 </div>
 
@@ -1105,7 +1205,7 @@ Open-source Heroku / Netlify / Vercel alternative — deploy web apps, databases
 
 Self-hosted Cops deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1115,7 +1215,7 @@ Self-hosted Cops deployment via Docker
 
 Self-hosted Copyparty deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1125,7 +1225,7 @@ Self-hosted Copyparty deployment via Docker
 
 Self-hosted Core Lightning deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1135,7 +1235,7 @@ Self-hosted Core Lightning deployment via Docker
 
 Self-hosted Coturn deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1145,7 +1245,17 @@ Self-hosted Coturn deployment via Docker
 
 Self-hosted Couchdb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [CrewAI](/templates/crewai)
+
+CrewAI — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -1155,7 +1265,7 @@ Self-hosted Couchdb deployment via Docker
 
 Multi-agent orchestration framework for AI agent teams
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -1165,7 +1275,7 @@ Multi-agent orchestration framework for AI agent teams
 
 Self-hosted Cronmaster deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1175,7 +1285,7 @@ Self-hosted Cronmaster deployment via Docker
 
 Self-hosted Cryptpad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1185,7 +1295,7 @@ Self-hosted Cryptpad deployment via Docker
 
 Self-hosted Cyberchef deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1195,7 +1305,7 @@ Self-hosted Cyberchef deployment via Docker
 
 Self-hosted Cypht deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1205,7 +1315,7 @@ Self-hosted Cypht deployment via Docker
 
 Self-hosted Daapd deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1215,7 +1325,7 @@ Self-hosted Daapd deployment via Docker
 
 Self-hosted Dagu deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1225,7 +1335,7 @@ Self-hosted Dagu deployment via Docker
 
 Self-hosted Dailytxt deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1235,7 +1345,7 @@ Self-hosted Dailytxt deployment via Docker
 
 Self-hosted Dashdot deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1245,7 +1355,7 @@ Self-hosted Dashdot deployment via Docker
 
 Self-hosted Databag deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1255,7 +1365,7 @@ Self-hosted Databag deployment via Docker
 
 Web-based PostgreSQL database browser — query, visualize, and manage Postgres databases through a clean web UI
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/sql" class="tag-badge">sql</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/sql.html" class="tag-badge">sql</a>
 
 </div>
 
@@ -1265,7 +1375,7 @@ Web-based PostgreSQL database browser — query, visualize, and manage Postgres 
 
 Open-source cloud data warehouse — run SQL analytics on object storage with MySQL-compatible wire protocol, instant elasticity, and real-time columnar performance
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/analytics" class="tag-badge">analytics</a> <a href="/categories/sql" class="tag-badge">sql</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a> <a href="/arcane-repo/categories/sql.html" class="tag-badge">sql</a>
 
 </div>
 
@@ -1275,7 +1385,7 @@ Open-source cloud data warehouse — run SQL analytics on object storage with My
 
 Self-hosted Databunker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1285,7 +1395,7 @@ Self-hosted Databunker deployment via Docker
 
 Self-hosted Davos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1295,7 +1405,7 @@ Self-hosted Davos deployment via Docker
 
 Self-hosted Dawarich deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1305,7 +1415,7 @@ Self-hosted Dawarich deployment via Docker
 
 Open-source development environment manager
 
-<a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -1315,7 +1425,7 @@ Open-source development environment manager
 
 Universal database tool for MySQL, PostgreSQL, SQLite, Oracle, SQL Server
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/tools" class="tag-badge">tools</a> <a href="/categories/sql" class="tag-badge">sql</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a> <a href="/arcane-repo/categories/sql.html" class="tag-badge">sql</a>
 
 </div>
 
@@ -1325,7 +1435,7 @@ Universal database tool for MySQL, PostgreSQL, SQLite, Oracle, SQL Server
 
 Open-source AI knowledge base powered by AsyncFuncAI — ingest, index, and search your documents and codebases with local LLMs and Retrieval-Augmented Generation
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/search" class="tag-badge">search</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a>
 
 </div>
 
@@ -1335,7 +1445,7 @@ Open-source AI knowledge base powered by AsyncFuncAI — ingest, index, and sear
 
 Real-time event processing and workflow automation engine
 
-<a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/workflow" class="tag-badge">workflow</a>
+<a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/workflow.html" class="tag-badge">workflow</a>
 
 </div>
 
@@ -1345,7 +1455,7 @@ Real-time event processing and workflow automation engine
 
 Self-hosted Deleterr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1355,7 +1465,17 @@ Self-hosted Deleterr deployment via Docker
 
 Self-hosted Deluge deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [dendrite](/templates/dendrite)
+
+dendrite — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/productivity.html" class="tag-badge">productivity</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -1365,7 +1485,7 @@ Self-hosted Deluge deployment via Docker
 
 Self-hosted Dex deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1375,7 +1495,17 @@ Self-hosted Dex deployment via Docker
 
 Self-hosted Diaspora deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [DiffSynth Studio](/templates/diffsynth-studio)
+
+DiffSynth Studio — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -1385,7 +1515,7 @@ Self-hosted Diaspora deployment via Docker
 
 Open-source LLM application development platform — build AI apps with visual workflows, RAG pipelines, agent capabilities, and model management
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/platform" class="tag-badge">platform</a> <a href="/categories/low-code" class="tag-badge">low-code</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/platform.html" class="tag-badge">platform</a> <a href="/arcane-repo/categories/low-code.html" class="tag-badge">low-code</a>
 
 </div>
 
@@ -1395,7 +1525,7 @@ Open-source LLM application development platform — build AI apps with visual w
 
 Self-hosted Directorylister deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1405,7 +1535,7 @@ Self-hosted Directorylister deployment via Docker
 
 Self-hosted Discourse deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1415,7 +1545,7 @@ Self-hosted Discourse deployment via Docker
 
 Self-hosted Diskover deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1425,7 +1555,7 @@ Self-hosted Diskover deployment via Docker
 
 Self-hosted Dittofeed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1435,7 +1565,7 @@ Self-hosted Dittofeed deployment via Docker
 
 Elasticsearch, Logstash, and Kibana stack for centralized log aggregation, search, and visualization — production-ready with health checks on all core services
 
-<a href="/categories/observability" class="tag-badge">observability</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/analytics" class="tag-badge">analytics</a>
+<a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a>
 
 </div>
 
@@ -1445,7 +1575,7 @@ Elasticsearch, Logstash, and Kibana stack for centralized log aggregation, searc
 
 Non-serviceable: Docker Flare has no published Docker image and no upstream Dockerfile. This placeholder serves as a reference to the original project.
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a> <a href="/categories/reference" class="tag-badge">reference</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a> <a href="/arcane-repo/categories/reference.html" class="tag-badge">reference</a>
 
 </div>
 
@@ -1455,7 +1585,7 @@ Non-serviceable: Docker Flare has no published Docker image and no upstream Dock
 
 Self-hosted IPsec/L2TP VPN server — secure remote access, split tunneling, and multi-platform client support (Windows, macOS, iOS, Android, Linux)
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -1465,7 +1595,7 @@ Self-hosted IPsec/L2TP VPN server — secure remote access, split tunneling, and
 
 Self-hosted Docker Mailserver deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1475,7 +1605,7 @@ Self-hosted Docker Mailserver deployment via Docker
 
 Self-hosted Dockge deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1485,7 +1615,7 @@ Self-hosted Dockge deployment via Docker
 
 Complete monitoring stack — Prometheus metrics, Grafana dashboards, AlertManager notifications, cAdvisor container metrics, and Node Exporter host metrics, all reverse-proxied through Caddy
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/observability" class="tag-badge">observability</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a>
 
 </div>
 
@@ -1495,7 +1625,7 @@ Complete monitoring stack — Prometheus metrics, Grafana dashboards, AlertManag
 
 Self-hosted Docmost deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1505,7 +1635,7 @@ Self-hosted Docmost deployment via Docker
 
 Open-source documentation Q&amp;A platform — index your docs, code, and knowledge base, then ask natural language questions with LLM-powered answers and citations
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
 
 </div>
 
@@ -1515,7 +1645,7 @@ Open-source documentation Q&amp;A platform — index your docs, code, and knowle
 
 Self-hosted Docsify deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1525,7 +1655,7 @@ Self-hosted Docsify deployment via Docker
 
 Self-hosted Docuseal deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1535,7 +1665,7 @@ Self-hosted Docuseal deployment via Docker
 
 Docker-powered PaaS for single-server deployments — Git-push workflow, plugin system, and Heroku-compatible buildpacks for hosting apps on your own infrastructure
 
-<a href="/categories/paas" class="tag-badge">paas</a> <a href="/categories/platform" class="tag-badge">platform</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/paas.html" class="tag-badge">paas</a> <a href="/arcane-repo/categories/platform.html" class="tag-badge">platform</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -1545,7 +1675,7 @@ Docker-powered PaaS for single-server deployments — Git-push workflow, plugin 
 
 Self-hosted Dokos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1555,7 +1685,7 @@ Self-hosted Dokos deployment via Docker
 
 Open-source Platform as a Service — deploy and manage applications, databases, and services on your own infrastructure with a clean dashboard
 
-<a href="/categories/paas" class="tag-badge">paas</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/platform" class="tag-badge">platform</a>
+<a href="/arcane-repo/categories/paas.html" class="tag-badge">paas</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/platform.html" class="tag-badge">platform</a>
 
 </div>
 
@@ -1565,7 +1695,7 @@ Open-source Platform as a Service — deploy and manage applications, databases,
 
 Self-hosted Dokuwiki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1575,7 +1705,7 @@ Self-hosted Dokuwiki deployment via Docker
 
 Self-hosted Dolibarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1585,7 +1715,7 @@ Self-hosted Dolibarr deployment via Docker
 
 Self-hosted Domain Locker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1595,7 +1725,7 @@ Self-hosted Domain Locker deployment via Docker
 
 Self-hosted Domoticz deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1605,7 +1735,7 @@ Self-hosted Domoticz deployment via Docker
 
 Self-hosted Donetick deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1615,7 +1745,7 @@ Self-hosted Donetick deployment via Docker
 
 Self-hosted Downtify deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1625,7 +1755,7 @@ Self-hosted Downtify deployment via Docker
 
 Self-hosted Dozzle deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1635,7 +1765,7 @@ Self-hosted Dozzle deployment via Docker
 
 Self-hosted Drop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1645,7 +1775,7 @@ Self-hosted Drop deployment via Docker
 
 Self-hosted Drupal deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1655,7 +1785,7 @@ Self-hosted Drupal deployment via Docker
 
 Self-hosted Dumbbudget deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1665,7 +1795,7 @@ Self-hosted Dumbbudget deployment via Docker
 
 Self-hosted Dumbdo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1675,7 +1805,7 @@ Self-hosted Dumbdo deployment via Docker
 
 Self-hosted Dumbdrop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1685,7 +1815,7 @@ Self-hosted Dumbdrop deployment via Docker
 
 Self-hosted Dumbkan deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1695,7 +1825,7 @@ Self-hosted Dumbkan deployment via Docker
 
 Self-hosted Dumbpad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1705,7 +1835,7 @@ Self-hosted Dumbpad deployment via Docker
 
 Self-hosted Dumbwhois deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1715,7 +1845,7 @@ Self-hosted Dumbwhois deployment via Docker
 
 Self-hosted Duplicacy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1725,7 +1855,17 @@ Self-hosted Duplicacy deployment via Docker
 
 Self-hosted Duplicati deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [easyappointments](/templates/easyappointments)
+
+easyappointments — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -1735,7 +1875,17 @@ Self-hosted Duplicati deployment via Docker
 
 Self-hosted Elasticsearch deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [elasticsearch7](/templates/elasticsearch7)
+
+elasticsearch7 — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -1745,7 +1895,7 @@ Self-hosted Elasticsearch deployment via Docker
 
 Self-hosted Elasticsearch8 deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1755,7 +1905,7 @@ Self-hosted Elasticsearch8 deployment via Docker
 
 Self-hosted Electrs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1765,7 +1915,7 @@ Self-hosted Electrs deployment via Docker
 
 Self-hosted Electrumx deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1775,7 +1925,7 @@ Self-hosted Electrumx deployment via Docker
 
 Self-hosted Eleventy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1785,7 +1935,7 @@ Self-hosted Eleventy deployment via Docker
 
 Open-source AI agent framework — create, deploy, and manage autonomous AI agents with multi-model support, plugin architecture, and cross-platform integrations
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/framework" class="tag-badge">framework</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a>
 
 </div>
 
@@ -1795,7 +1945,7 @@ Open-source AI agent framework — create, deploy, and manage autonomous AI agen
 
 Self-hosted Elk deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1805,7 +1955,7 @@ Self-hosted Elk deployment via Docker
 
 Self-hosted Emby deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1815,7 +1965,7 @@ Self-hosted Emby deployment via Docker
 
 Self-hosted Embystat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1825,7 +1975,7 @@ Self-hosted Embystat deployment via Docker
 
 Self-hosted Enclosed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1835,7 +1985,7 @@ Self-hosted Enclosed deployment via Docker
 
 Self-hosted Endurain deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1845,7 +1995,7 @@ Self-hosted Endurain deployment via Docker
 
 Self-hosted Ergo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1855,7 +2005,7 @@ Self-hosted Ergo deployment via Docker
 
 Self-hosted Esphome deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1865,7 +2015,7 @@ Self-hosted Esphome deployment via Docker
 
 Self-hosted Espocrm deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1875,7 +2025,7 @@ Self-hosted Espocrm deployment via Docker
 
 Self-hosted Etherpad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1885,7 +2035,7 @@ Self-hosted Etherpad deployment via Docker
 
 Self-hosted Excalidraw deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1895,7 +2045,7 @@ Self-hosted Excalidraw deployment via Docker
 
 Non-serviceable: The ezbookkeeping project is no longer available (upstream repository removed). This placeholder serves as a historical reference.
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a> <a href="/categories/reference" class="tag-badge">reference</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a> <a href="/arcane-repo/categories/reference.html" class="tag-badge">reference</a>
 
 </div>
 
@@ -1905,7 +2055,7 @@ Non-serviceable: The ezbookkeeping project is no longer available (upstream repo
 
 Self-hosted Fab Manager deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1915,7 +2065,7 @@ Self-hosted Fab Manager deployment via Docker
 
 Self-hosted Facilmap deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1925,7 +2075,7 @@ Self-hosted Facilmap deployment via Docker
 
 Self-hosted Faircamp deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1935,7 +2085,7 @@ Self-hosted Faircamp deployment via Docker
 
 Self-hosted Fastapi deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1945,7 +2095,7 @@ Self-hosted Fastapi deployment via Docker
 
 Self-hosted Fedimintd deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -1955,7 +2105,7 @@ Self-hosted Fedimintd deployment via Docker
 
 Self-hosted Feedcord deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1965,7 +2115,7 @@ Self-hosted Feedcord deployment via Docker
 
 Self-hosted Ferdium deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -1975,7 +2125,7 @@ Self-hosted Ferdium deployment via Docker
 
 Self-hosted Fider deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -1985,7 +2135,7 @@ Self-hosted Fider deployment via Docker
 
 Self-hosted Fiduswriter deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -1995,7 +2145,7 @@ Self-hosted Fiduswriter deployment via Docker
 
 Self-hosted File Browser deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2005,7 +2155,7 @@ Self-hosted File Browser deployment via Docker
 
 Self-hosted Filebrowser deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2015,7 +2165,7 @@ Self-hosted Filebrowser deployment via Docker
 
 Self-hosted Filegator deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2025,7 +2175,7 @@ Self-hosted Filegator deployment via Docker
 
 Self-hosted Filepizza deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2035,7 +2185,7 @@ Self-hosted Filepizza deployment via Docker
 
 Self-hosted Filerun deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2045,7 +2195,7 @@ Self-hosted Filerun deployment via Docker
 
 Self-hosted Filestash deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2055,7 +2205,7 @@ Self-hosted Filestash deployment via Docker
 
 AI-powered web scraping with JavaScript rendering
 
-<a href="/categories/tools" class="tag-badge">tools</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/web" class="tag-badge">web</a>
+<a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/web.html" class="tag-badge">web</a>
 
 </div>
 
@@ -2065,7 +2215,7 @@ AI-powered web scraping with JavaScript rendering
 
 Self-hosted Firefly Iii deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2075,7 +2225,7 @@ Self-hosted Firefly Iii deployment via Docker
 
 Self-hosted Firefox deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2085,7 +2235,17 @@ Self-hosted Firefox deployment via Docker
 
 Self-hosted Fireshare deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [Firezone](/templates/firezone)
+
+Firezone — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -2095,7 +2255,7 @@ Self-hosted Fireshare deployment via Docker
 
 Self-hosted Fittrackee deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2105,7 +2265,7 @@ Self-hosted Fittrackee deployment via Docker
 
 Self-hosted Fizzy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2115,7 +2275,7 @@ Self-hosted Fizzy deployment via Docker
 
 Open-source feature flag and remote config platform — release features, run A/B tests, and manage configuration across web, mobile, and server-side apps
 
-<a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/multi-service" class="tag-badge">multi-service</a>
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a>
 
 </div>
 
@@ -2125,7 +2285,7 @@ Open-source feature flag and remote config platform — release features, run A/
 
 Self-hosted Flame deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2135,7 +2295,7 @@ Self-hosted Flame deployment via Docker
 
 Self-hosted Flaresolverr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2145,7 +2305,7 @@ Self-hosted Flaresolverr deployment via Docker
 
 Self-hosted Flarum deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2155,7 +2315,7 @@ Self-hosted Flarum deployment via Docker
 
 Self-hosted Flatnotes deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2165,7 +2325,7 @@ Self-hosted Flatnotes deployment via Docker
 
 Self-hosted Flink deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2175,7 +2335,7 @@ Self-hosted Flink deployment via Docker
 
 Self-hosted Flohmarkt deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2185,7 +2345,7 @@ Self-hosted Flohmarkt deployment via Docker
 
 Self-hosted Flood deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2195,7 +2355,7 @@ Self-hosted Flood deployment via Docker
 
 Self-hosted Flowiseai deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2205,7 +2365,7 @@ Self-hosted Flowiseai deployment via Docker
 
 Self-hosted Fluffychat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2215,7 +2375,17 @@ Self-hosted Fluffychat deployment via Docker
 
 Self-hosted Flyimg deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
+
+</div>
+
+<div class="template-card">
+
+### [focalboard](/templates/focalboard)
+
+focalboard — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/productivity.html" class="tag-badge">productivity</a> <a href="/arcane-repo/categories/collaboration.html" class="tag-badge">collaboration</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -2225,7 +2395,7 @@ Self-hosted Flyimg deployment via Docker
 
 Self-hosted Forgejo Runner deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2235,7 +2405,7 @@ Self-hosted Forgejo Runner deployment via Docker
 
 Self-hosted Formicaio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2245,7 +2415,7 @@ Self-hosted Formicaio deployment via Docker
 
 Self-hosted Fossbilling deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2255,7 +2425,7 @@ Self-hosted Fossbilling deployment via Docker
 
 Self-hosted Fossflow deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2265,7 +2435,7 @@ Self-hosted Fossflow deployment via Docker
 
 Self-hosted Freshrss deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2275,7 +2445,7 @@ Self-hosted Freshrss deployment via Docker
 
 Self-hosted Friendica deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2285,7 +2455,27 @@ Self-hosted Friendica deployment via Docker
 
 Self-hosted Frigate deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [frp](/templates/frp)
+
+frp — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
+
+</div>
+
+<div class="template-card">
+
+### [Funkwhale](/templates/funkwhale)
+
+Funkwhale — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/media.html" class="tag-badge">media</a> <a href="/arcane-repo/categories/entertainment.html" class="tag-badge">entertainment</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -2295,7 +2485,7 @@ Self-hosted Frigate deployment via Docker
 
 Self-hosted Fusion deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2305,7 +2495,7 @@ Self-hosted Fusion deployment via Docker
 
 Self-hosted Fx deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2315,7 +2505,7 @@ Self-hosted Fx deployment via Docker
 
 Self-hosted Galette deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2325,7 +2515,7 @@ Self-hosted Galette deployment via Docker
 
 Self-hosted Gameyfin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2335,7 +2525,7 @@ Self-hosted Gameyfin deployment via Docker
 
 Self-hosted Gancio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2345,7 +2535,7 @@ Self-hosted Gancio deployment via Docker
 
 Self-hosted Garage deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2355,7 +2545,7 @@ Self-hosted Garage deployment via Docker
 
 Self-hosted Gathio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2365,7 +2555,7 @@ Self-hosted Gathio deployment via Docker
 
 Self-hosted Gatus deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2375,7 +2565,7 @@ Self-hosted Gatus deployment via Docker
 
 Self-hosted Geeftlist deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2385,7 +2575,7 @@ Self-hosted Geeftlist deployment via Docker
 
 Self-hosted Ghost deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2395,7 +2585,7 @@ Self-hosted Ghost deployment via Docker
 
 Self-hosted Ghostfolio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2405,7 +2595,7 @@ Self-hosted Ghostfolio deployment via Docker
 
 Self-hosted Gitea deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2415,7 +2605,7 @@ Self-hosted Gitea deployment via Docker
 
 Self-hosted Gitingest deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2425,7 +2615,7 @@ Self-hosted Gitingest deployment via Docker
 
 Self-hosted Gitlab deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2435,7 +2625,7 @@ Self-hosted Gitlab deployment via Docker
 
 Self-hosted Gitlab Runner deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2445,7 +2635,7 @@ Self-hosted Gitlab Runner deployment via Docker
 
 Self-hosted Glance deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2455,7 +2645,7 @@ Self-hosted Glance deployment via Docker
 
 Self-hosted Glances deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2465,7 +2655,7 @@ Self-hosted Glances deployment via Docker
 
 Self-hosted Glpi deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2475,7 +2665,7 @@ Self-hosted Glpi deployment via Docker
 
 Self-hosted Go Socks5 Proxy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2485,7 +2675,7 @@ Self-hosted Go Socks5 Proxy deployment via Docker
 
 Self-hosted Gocron deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2495,7 +2685,7 @@ Self-hosted Gocron deployment via Docker
 
 Self-hosted Gogs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2505,7 +2695,7 @@ Self-hosted Gogs deployment via Docker
 
 Self-hosted Gokapi deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2515,7 +2705,7 @@ Self-hosted Gokapi deployment via Docker
 
 Self-hosted Gomft deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2525,7 +2715,7 @@ Self-hosted Gomft deployment via Docker
 
 Self-hosted Gonic deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2535,7 +2725,7 @@ Self-hosted Gonic deployment via Docker
 
 Self-hosted Gotenberg deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2545,7 +2735,7 @@ Self-hosted Gotenberg deployment via Docker
 
 Self-hosted Gotosocial deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2555,7 +2745,7 @@ Self-hosted Gotosocial deployment via Docker
 
 Self-hosted Grafana deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2565,7 +2755,7 @@ Self-hosted Grafana deployment via Docker
 
 Self-hosted Grav deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2575,7 +2765,7 @@ Self-hosted Grav deployment via Docker
 
 Self-hosted Grist deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2585,7 +2775,7 @@ Self-hosted Grist deployment via Docker
 
 Self-hosted Grocy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2595,7 +2785,7 @@ Self-hosted Grocy deployment via Docker
 
 Fast vulnerability scanner for container images and filesystems — produced by Anchore, matches CVEs against multiple databases including NVD, GitHub Advisory, and distro-specific feeds
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -2605,7 +2795,7 @@ Fast vulnerability scanner for container images and filesystems — produced by 
 
 Self-hosted Guacamole deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2615,7 +2805,17 @@ Self-hosted Guacamole deployment via Docker
 
 Self-hosted Gull deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [Hanko](/templates/hanko)
+
+Hanko — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -2625,7 +2825,7 @@ Self-hosted Gull deployment via Docker
 
 LLM backend orchestrator — manage Ollama, vLLM, and other LLM runtimes via Docker with a unified CLI and REST API
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a>
 
 </div>
 
@@ -2635,7 +2835,17 @@ LLM backend orchestrator — manage Ollama, vLLM, and other LLM runtimes via Doc
 
 Open-source CI/CD and DevOps platform — automate builds, tests, deployments, and infrastructure provisioning from a single dashboard
 
-<a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/paas" class="tag-badge">paas</a>
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/paas.html" class="tag-badge">paas</a>
+
+</div>
+
+<div class="template-card">
+
+### [Haystack](/templates/haystack)
+
+Haystack — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -2645,7 +2855,7 @@ Open-source CI/CD and DevOps platform — automate builds, tests, deployments, a
 
 Self-hosted Headphones deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2655,7 +2865,7 @@ Self-hosted Headphones deployment via Docker
 
 Self-hosted Headscale deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2665,7 +2875,7 @@ Self-hosted Headscale deployment via Docker
 
 Self-hosted Healthchecks deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2675,7 +2885,7 @@ Self-hosted Healthchecks deployment via Docker
 
 Self-hosted Hedgedoc deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2685,7 +2895,7 @@ Self-hosted Hedgedoc deployment via Docker
 
 Self-hosted Heimdall deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2695,7 +2905,7 @@ Self-hosted Heimdall deployment via Docker
 
 Self-hosted Helipad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2705,7 +2915,7 @@ Self-hosted Helipad deployment via Docker
 
 Self-hosted Hermes Agent deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2715,7 +2925,7 @@ Self-hosted Hermes Agent deployment via Docker
 
 Nous Research autonomous AI agent framework
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/framework" class="tag-badge">framework</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a>
 
 </div>
 
@@ -2725,7 +2935,7 @@ Nous Research autonomous AI agent framework
 
 Self-hosted Heyform deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2735,7 +2945,7 @@ Self-hosted Heyform deployment via Docker
 
 Self-hosted Hi.Events deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2745,7 +2955,7 @@ Self-hosted Hi.Events deployment via Docker
 
 Self-hosted Holesail Switchboard deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2755,7 +2965,7 @@ Self-hosted Holesail Switchboard deployment via Docker
 
 Self-hosted Home Assistant deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2765,7 +2975,7 @@ Self-hosted Home Assistant deployment via Docker
 
 Self-hosted Homeassistant deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2775,7 +2985,7 @@ Self-hosted Homeassistant deployment via Docker
 
 Self-hosted Homebox deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2785,7 +2995,7 @@ Self-hosted Homebox deployment via Docker
 
 Self-hosted Homebridge deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2795,7 +3005,7 @@ Self-hosted Homebridge deployment via Docker
 
 Self-hosted Homechart deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2805,7 +3015,7 @@ Self-hosted Homechart deployment via Docker
 
 Self-hosted Homer deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2815,7 +3025,7 @@ Self-hosted Homer deployment via Docker
 
 Self-hosted Hotspot deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2825,7 +3035,7 @@ Self-hosted Hotspot deployment via Docker
 
 Self-hosted Hubleys deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2835,7 +3045,7 @@ Self-hosted Hubleys deployment via Docker
 
 Self-hosted Hubzilla deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2845,7 +3055,7 @@ Self-hosted Hubzilla deployment via Docker
 
 Self-hosted Huginn deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2855,7 +3065,7 @@ Self-hosted Huginn deployment via Docker
 
 Self-hosted Humhub deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2865,7 +3075,7 @@ Self-hosted Humhub deployment via Docker
 
 Self-hosted Icecast2 deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2875,7 +3085,7 @@ Self-hosted Icecast2 deployment via Docker
 
 Self-hosted Ihatemoney deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2885,7 +3095,7 @@ Self-hosted Ihatemoney deployment via Docker
 
 Self-hosted Immich deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2895,7 +3105,17 @@ Self-hosted Immich deployment via Docker
 
 Self-hosted Indico deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [influxdb_v2](/templates/influxdb-v2)
+
+influxdb_v2 — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -2905,7 +3125,7 @@ Self-hosted Indico deployment via Docker
 
 Self-hosted Inkheart deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -2915,7 +3135,17 @@ Self-hosted Inkheart deployment via Docker
 
 Open-source agentic backend — postgres + postgREST for building full-stack AI applications with agent-native primitives
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
+
+</div>
+
+<div class="template-card">
+
+### [invoice-ninja](/templates/invoice-ninja)
+
+invoice-ninja — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/bitcoin.html" class="tag-badge">bitcoin</a>
 
 </div>
 
@@ -2925,7 +3155,7 @@ Open-source agentic backend — postgres + postgREST for building full-stack AI 
 
 Self-hosted Invoiceshelf deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2935,7 +3165,7 @@ Self-hosted Invoiceshelf deployment via Docker
 
 Self-hosted Iobroker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2945,7 +3175,7 @@ Self-hosted Iobroker deployment via Docker
 
 Self-hosted Iperf deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2955,7 +3185,17 @@ Self-hosted Iperf deployment via Docker
 
 Self-hosted It Tools deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [itflow](/templates/itflow)
+
+itflow — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -2965,7 +3205,7 @@ Self-hosted It Tools deployment via Docker
 
 Self-hosted Its Mytabs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -2975,7 +3215,7 @@ Self-hosted Its Mytabs deployment via Docker
 
 Self-hosted Ittools deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -2985,7 +3225,7 @@ Self-hosted Ittools deployment via Docker
 
 Self-hosted Jackett deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -2995,7 +3235,7 @@ Self-hosted Jackett deployment via Docker
 
 Self-hosted Jam deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3005,7 +3245,7 @@ Self-hosted Jam deployment via Docker
 
 Self-hosted Jdownloader deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3015,7 +3255,7 @@ Self-hosted Jdownloader deployment via Docker
 
 Self-hosted Jeedom deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3025,7 +3265,7 @@ Self-hosted Jeedom deployment via Docker
 
 Self-hosted Jellyfin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3035,7 +3275,7 @@ Self-hosted Jellyfin deployment via Docker
 
 Self-hosted Jellyfin Vue deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3045,7 +3285,7 @@ Self-hosted Jellyfin Vue deployment via Docker
 
 Self-hosted Jellyseerr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3055,7 +3295,7 @@ Self-hosted Jellyseerr deployment via Docker
 
 Self-hosted Jenkins deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3065,7 +3305,7 @@ Self-hosted Jenkins deployment via Docker
 
 Self-hosted Jetlog deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3075,7 +3315,7 @@ Self-hosted Jetlog deployment via Docker
 
 Open-source code analysis platform — generate code property graphs from source code and query them for vulnerabilities, dependencies, control flow, and data flow across multiple languages
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -3085,7 +3325,7 @@ Open-source code analysis platform — generate code property graphs from source
 
 Self-hosted Joomla deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3095,7 +3335,7 @@ Self-hosted Joomla deployment via Docker
 
 Self-hosted Joplin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3105,7 +3345,7 @@ Self-hosted Joplin deployment via Docker
 
 Self-hosted Jotty deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3115,7 +3355,7 @@ Self-hosted Jotty deployment via Docker
 
 Self-hosted Journiv deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3125,7 +3365,7 @@ Self-hosted Journiv deployment via Docker
 
 Self-hosted Jsoncrack deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3135,7 +3375,7 @@ Self-hosted Jsoncrack deployment via Docker
 
 OpenSPG Knowledge-Augmented Generation framework — build, query, and traverse knowledge graphs enhanced by LLM reasoning for more accurate and explainable AI responses
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -3145,7 +3385,7 @@ OpenSPG Knowledge-Augmented Generation framework — build, query, and traverse 
 
 Self-hosted Kanboard deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3155,7 +3395,7 @@ Self-hosted Kanboard deployment via Docker
 
 Self-hosted Kapowarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3165,7 +3405,7 @@ Self-hosted Kapowarr deployment via Docker
 
 Self-hosted Karakeep deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3175,7 +3415,7 @@ Self-hosted Karakeep deployment via Docker
 
 Self-hosted Kavita deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3185,7 +3425,7 @@ Self-hosted Kavita deployment via Docker
 
 Self-hosted Keeweb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3195,7 +3435,7 @@ Self-hosted Keeweb deployment via Docker
 
 Self-hosted Keila deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3205,7 +3445,7 @@ Self-hosted Keila deployment via Docker
 
 Self-hosted Kestra deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3215,7 +3455,17 @@ Self-hosted Kestra deployment via Docker
 
 Self-hosted Ketesa deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [Keycloak](/templates/keycloak)
+
+Keycloak — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -3225,7 +3475,7 @@ Self-hosted Ketesa deployment via Docker
 
 Open-source, AI-powered personal search assistant — index your documents, notes, and code, then search and chat with them using local or cloud LLMs
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/search" class="tag-badge">search</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a>
 
 </div>
 
@@ -3235,7 +3485,7 @@ Open-source, AI-powered personal search assistant — index your documents, note
 
 Self-hosted Kimai deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3245,7 +3495,7 @@ Self-hosted Kimai deployment via Docker
 
 Self-hosted Kimai2 deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3255,7 +3505,17 @@ Self-hosted Kimai2 deployment via Docker
 
 Self-hosted Kitchenowl deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [koel](/templates/koel)
+
+koel — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/media.html" class="tag-badge">media</a> <a href="/arcane-repo/categories/entertainment.html" class="tag-badge">entertainment</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -3265,7 +3525,7 @@ Self-hosted Kitchenowl deployment via Docker
 
 Self-hosted Koillection deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3275,7 +3535,7 @@ Self-hosted Koillection deployment via Docker
 
 Self-hosted Komga deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3285,7 +3545,7 @@ Self-hosted Komga deployment via Docker
 
 Self-hosted Komodo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3295,7 +3555,7 @@ Self-hosted Komodo deployment via Docker
 
 Cloud-native API gateway with plugins for auth, rate limiting, and logging
 
-<a href="/categories/api" class="tag-badge">api</a> <a href="/categories/gateway" class="tag-badge">gateway</a>
+<a href="/arcane-repo/categories/api.html" class="tag-badge">api</a> <a href="/arcane-repo/categories/gateway.html" class="tag-badge">gateway</a>
 
 </div>
 
@@ -3305,7 +3565,7 @@ Cloud-native API gateway with plugins for auth, rate limiting, and logging
 
 Self-hosted Kresus deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3315,7 +3575,7 @@ Self-hosted Kresus deployment via Docker
 
 Self-hosted Lago deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3325,7 +3585,7 @@ Self-hosted Lago deployment via Docker
 
 LangServe API server — deploy LangChain chains and agents as REST endpoints with built-in streaming, batching, and health checks
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/api" class="tag-badge">api</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/api.html" class="tag-badge">api</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3335,7 +3595,7 @@ LangServe API server — deploy LangChain chains and agents as REST endpoints wi
 
 Visual framework for multi-agent RAG applications
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/low-code" class="tag-badge">low-code</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/agents" class="tag-badge">agents</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/low-code.html" class="tag-badge">low-code</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a>
 
 </div>
 
@@ -3345,7 +3605,7 @@ Visual framework for multi-agent RAG applications
 
 Self-hosted Langfuse deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3355,7 +3615,7 @@ Self-hosted Langfuse deployment via Docker
 
 Framework for stateful multi-actor agent applications
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3365,7 +3625,7 @@ Framework for stateful multi-actor agent applications
 
 Python swarm intelligence for multi-LLM agent coordination
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/python" class="tag-badge">python</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/python.html" class="tag-badge">python</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3375,7 +3635,7 @@ Python swarm intelligence for multi-LLM agent coordination
 
 Self-hosted Languagetool deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3385,7 +3645,7 @@ Self-hosted Languagetool deployment via Docker
 
 Simplified PHP deployment environment — nginx + php-fpm + mysql + redis (not the full Laradock dev stack)
 
-<a href="/categories/web" class="tag-badge">web</a> <a href="/categories/multi-service" class="tag-badge">multi-service</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/web.html" class="tag-badge">web</a> <a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3395,7 +3655,7 @@ Simplified PHP deployment environment — nginx + php-fpm + mysql + redis (not t
 
 Self-hosted Lazylibrarian deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3405,7 +3665,7 @@ Self-hosted Lazylibrarian deployment via Docker
 
 Self-hosted Leantime deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3415,7 +3675,17 @@ Self-hosted Leantime deployment via Docker
 
 Self-hosted Lemmy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [LemonLDAP::NG](/templates/lemonldap-ng)
+
+LemonLDAP::NG — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -3425,7 +3695,17 @@ Self-hosted Lemmy deployment via Docker
 
 Self-hosted Lesma deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [Letta](/templates/letta)
+
+Letta — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -3435,7 +3715,7 @@ Self-hosted Lesma deployment via Docker
 
 Self-hosted Libre Relay deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3445,7 +3725,7 @@ Self-hosted Libre Relay deployment via Docker
 
 Self-hosted Librebooking deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3455,7 +3735,7 @@ Self-hosted Librebooking deployment via Docker
 
 Self-hosted Librechat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3465,7 +3745,7 @@ Self-hosted Librechat deployment via Docker
 
 Self-hosted Libreoffice deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3475,7 +3755,7 @@ Self-hosted Libreoffice deployment via Docker
 
 Self-hosted Librephotos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3485,7 +3765,7 @@ Self-hosted Librephotos deployment via Docker
 
 Self-hosted Librespeed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3495,7 +3775,7 @@ Self-hosted Librespeed deployment via Docker
 
 Self-hosted Libretranslate deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3505,7 +3785,7 @@ Self-hosted Libretranslate deployment via Docker
 
 Self-hosted Lidarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3515,7 +3795,7 @@ Self-hosted Lidarr deployment via Docker
 
 Self-hosted Lidify deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3525,7 +3805,7 @@ Self-hosted Lidify deployment via Docker
 
 Self-hosted Lightning deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3535,7 +3815,7 @@ Self-hosted Lightning deployment via Docker
 
 Self-hosted Lightning Terminal deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3545,7 +3825,7 @@ Self-hosted Lightning Terminal deployment via Docker
 
 Self-hosted Limesurvey deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3555,7 +3835,7 @@ Self-hosted Limesurvey deployment via Docker
 
 Self-hosted Linkace deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3565,7 +3845,7 @@ Self-hosted Linkace deployment via Docker
 
 Self-hosted Linkding deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3575,7 +3855,7 @@ Self-hosted Linkding deployment via Docker
 
 Self-hosted Linkstack deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3585,7 +3865,7 @@ Self-hosted Linkstack deployment via Docker
 
 Self-hosted Linkwarden deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3595,7 +3875,7 @@ Self-hosted Linkwarden deployment via Docker
 
 Self-hosted Listaway deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3605,7 +3885,7 @@ Self-hosted Listaway deployment via Docker
 
 Self-hosted Listmonk deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3615,7 +3895,7 @@ Self-hosted Listmonk deployment via Docker
 
 Self-hosted Litechat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3625,7 +3905,17 @@ Self-hosted Litechat deployment via Docker
 
 Unified AI API proxy for 100+ LLM providers — route requests to OpenAI, Anthropic, Google, open-source models, and more through a single OpenAI-compatible endpoint
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/proxy" class="tag-badge">proxy</a> <a href="/categories/gateway" class="tag-badge">gateway</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/proxy.html" class="tag-badge">proxy</a> <a href="/arcane-repo/categories/gateway.html" class="tag-badge">gateway</a>
+
+</div>
+
+<div class="template-card">
+
+### [LlamaIndex](/templates/llamaindex)
+
+LlamaIndex — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -3635,7 +3925,7 @@ Unified AI API proxy for 100+ LLM providers — route requests to OpenAI, Anthro
 
 Self-hosted Lldap deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3645,7 +3935,7 @@ Self-hosted Lldap deployment via Docker
 
 Self-hosted Lnbits deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3655,7 +3945,7 @@ Self-hosted Lnbits deployment via Docker
 
 Self-hosted Lobe Chat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3665,7 +3955,7 @@ Self-hosted Lobe Chat deployment via Docker
 
 Modern AI chat platform with plugin ecosystem and multi-LLM support
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/chat" class="tag-badge">chat</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/chat.html" class="tag-badge">chat</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -3675,7 +3965,7 @@ Modern AI chat platform with plugin ecosystem and multi-LLM support
 
 Self-hosted OpenAI-compatible API for LLMs and embeddings
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/inference" class="tag-badge">inference</a> <a href="/categories/self-hosted" class="tag-badge">self-hosted</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/inference.html" class="tag-badge">inference</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -3685,7 +3975,17 @@ Self-hosted OpenAI-compatible API for LLMs and embeddings
 
 Self-hosted Logdy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [Logto](/templates/logto)
+
+Logto — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -3695,7 +3995,7 @@ Self-hosted Logdy deployment via Docker
 
 Self-hosted Loki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3705,7 +4005,7 @@ Self-hosted Loki deployment via Docker
 
 Self-hosted Loomio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3715,7 +4015,7 @@ Self-hosted Loomio deployment via Docker
 
 Self-hosted Lubelogger deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3725,7 +4025,7 @@ Self-hosted Lubelogger deployment via Docker
 
 Self-hosted Lunalytics deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3735,7 +4035,7 @@ Self-hosted Lunalytics deployment via Docker
 
 Self-hosted Lute deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3745,7 +4045,7 @@ Self-hosted Lute deployment via Docker
 
 Self-hosted Lxd Dashboard deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3755,7 +4055,7 @@ Self-hosted Lxd Dashboard deployment via Docker
 
 Self-hosted Lychee deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3765,7 +4065,7 @@ Self-hosted Lychee deployment via Docker
 
 Self-hosted Lynxprompt deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3775,7 +4075,7 @@ Self-hosted Lynxprompt deployment via Docker
 
 Self-hosted Mailarchiver deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3785,7 +4085,7 @@ Self-hosted Mailarchiver deployment via Docker
 
 Mailcow mail server suite — full email stack with Postfix, Dovecot, Rspamd, SOGo, and more. The dockerized version is its own compose repo (circular dependency); this template provides an informational API stub
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3795,7 +4095,7 @@ Mailcow mail server suite — full email stack with Postfix, Dovecot, Rspamd, SO
 
 Mailu mail server — lightweight email server with webmail, admin UI, and anti-spam. No public Docker images found on Docker Hub; this template provides an informational API stub
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3805,7 +4105,7 @@ Mailu mail server — lightweight email server with webmail, admin UI, and anti-
 
 Self-hosted Mainsail deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3815,7 +4115,7 @@ Self-hosted Mainsail deployment via Docker
 
 Self-hosted Mantis deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3825,7 +4125,7 @@ Self-hosted Mantis deployment via Docker
 
 Self-hosted Many Notes deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3835,7 +4135,7 @@ Self-hosted Many Notes deployment via Docker
 
 Self-hosted Manyfold deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3845,7 +4145,7 @@ Self-hosted Manyfold deployment via Docker
 
 Self-hosted Marreta deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3855,7 +4155,7 @@ Self-hosted Marreta deployment via Docker
 
 Self-hosted Mastodon deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3865,7 +4165,7 @@ Self-hosted Mastodon deployment via Docker
 
 Self-hosted Matomo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3875,7 +4175,7 @@ Self-hosted Matomo deployment via Docker
 
 Self-hosted Matrix Appservice Irc deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/communication" class="tag-badge">communication</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3885,7 +4185,7 @@ Self-hosted Matrix Appservice Irc deployment via Docker
 
 Lightweight Matrix homeserver powered by Conduit — a fast Rust implementation of the Matrix protocol for federated chat
 
-<a href="/categories/chat" class="tag-badge">chat</a>
+<a href="/arcane-repo/categories/chat.html" class="tag-badge">chat</a>
 
 </div>
 
@@ -3895,7 +4195,7 @@ Lightweight Matrix homeserver powered by Conduit — a fast Rust implementation 
 
 Self-hosted Matterbridge deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3905,7 +4205,7 @@ Self-hosted Matterbridge deployment via Docker
 
 Self-hosted Mautic deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3915,7 +4215,7 @@ Self-hosted Mautic deployment via Docker
 
 Self-hosted Mealie deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -3925,7 +4225,7 @@ Self-hosted Mealie deployment via Docker
 
 Self-hosted Mediawiki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -3935,7 +4235,7 @@ Self-hosted Mediawiki deployment via Docker
 
 AI-powered meeting assistant — native desktop Electron app for real-time transcription, summarization, and action item extraction from meetings
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3945,7 +4245,7 @@ AI-powered meeting assistant — native desktop Electron app for real-time trans
 
 Fast open-source search engine with typo-tolerant full-text search
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/search" class="tag-badge">search</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a>
 
 </div>
 
@@ -3955,7 +4255,7 @@ Fast open-source search engine with typo-tolerant full-text search
 
 Memory layer for AI applications with entity extraction and retrieval
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -3965,7 +4265,7 @@ Memory layer for AI applications with entity extraction and retrieval
 
 Self-hosted Meme Search deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3975,7 +4275,7 @@ Self-hosted Meme Search deployment via Docker
 
 Self-hosted Memex deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -3985,7 +4285,7 @@ Self-hosted Memex deployment via Docker
 
 Self-hosted Memos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -3995,7 +4295,7 @@ Self-hosted Memos deployment via Docker
 
 Memvid — single-file memory layer for AI agents with instant retrieval, long-term memory, and built-in RAG. Serverless memory that replaces complex vector databases
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
 
 </div>
 
@@ -4005,7 +4305,7 @@ Memvid — single-file memory layer for AI agents with instant retrieval, long-t
 
 Self-hosted Meshcentral deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4015,7 +4315,7 @@ Self-hosted Meshcentral deployment via Docker
 
 Self-hosted Metabase deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4025,7 +4325,7 @@ Self-hosted Metabase deployment via Docker
 
 Self-hosted Metube deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4035,7 +4335,7 @@ Self-hosted Metube deployment via Docker
 
 Self-hosted Microbin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4045,7 +4345,7 @@ Self-hosted Microbin deployment via Docker
 
 Secure local programmable sandboxes for AI agents — run untrusted code in isolated micro-VMs with Firecracker, KVM, and resource limits
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -4055,7 +4355,7 @@ Secure local programmable sandboxes for AI agents — run untrusted code in isol
 
 AI-powered UI automation and testing tool — visually understand and interact with web UI using natural language, run via npx or integrate into Playwright/Jest test suites
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -4065,7 +4365,7 @@ AI-powered UI automation and testing tool — visually understand and interact w
 
 Open-source vector database built for scalable similarity search — manage billion-scale vector datasets with GPU-accelerated indexing, hybrid search, and multi-language SDKs
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/search" class="tag-badge">search</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a>
 
 </div>
 
@@ -4075,7 +4375,7 @@ Open-source vector database built for scalable similarity search — manage bill
 
 AI database that enables you to build, train, and deploy ML models using SQL
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/database" class="tag-badge">database</a> <a href="/categories/sql" class="tag-badge">sql</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/sql.html" class="tag-badge">sql</a>
 
 </div>
 
@@ -4085,7 +4385,7 @@ AI database that enables you to build, train, and deploy ML models using SQL
 
 Self-hosted Minetest deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4095,7 +4395,7 @@ Self-hosted Minetest deployment via Docker
 
 Self-hosted Minidlna deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4105,7 +4405,7 @@ Self-hosted Minidlna deployment via Docker
 
 Self-hosted Miniflux deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4115,7 +4415,7 @@ Self-hosted Miniflux deployment via Docker
 
 Self-hosted Minimal Git Server deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/devops" class="tag-badge">devops</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4125,7 +4425,7 @@ Self-hosted Minimal Git Server deployment via Docker
 
 Self-hosted Minio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4135,7 +4435,7 @@ Self-hosted Minio deployment via Docker
 
 Self-hosted Minisatip deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4145,7 +4445,7 @@ Self-hosted Minisatip deployment via Docker
 
 Self-hosted WebRTC video conferencing — multi-party video calls with screen sharing, chat, and recording using a Selective Forwarding Unit architecture
 
-<a href="/categories/chat" class="tag-badge">chat</a>
+<a href="/arcane-repo/categories/chat.html" class="tag-badge">chat</a>
 
 </div>
 
@@ -4155,7 +4455,7 @@ Self-hosted WebRTC video conferencing — multi-party video calls with screen sh
 
 Self-hosted Misago deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4165,7 +4465,7 @@ Self-hosted Misago deployment via Docker
 
 Self-hosted Misskey deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4175,7 +4475,7 @@ Self-hosted Misskey deployment via Docker
 
 Self-hosted Mitra deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4185,7 +4485,7 @@ Self-hosted Mitra deployment via Docker
 
 Open-source MLflow tracking server — experiment tracking, model registry, and deployment management for machine learning workflows
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
 
 </div>
 
@@ -4195,7 +4495,7 @@ Open-source MLflow tracking server — experiment tracking, model registry, and 
 
 Self-hosted Mobilizon deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4205,7 +4505,7 @@ Self-hosted Mobilizon deployment via Docker
 
 Self-hosted Mollysocket deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4215,7 +4515,17 @@ Self-hosted Mollysocket deployment via Docker
 
 Self-hosted Monetr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [mongo-express](/templates/mongo-express)
+
+mongo-express — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4225,7 +4535,7 @@ Self-hosted Monetr deployment via Docker
 
 Self-hosted Monica deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4235,7 +4545,7 @@ Self-hosted Monica deployment via Docker
 
 Self-hosted Moodle deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4245,7 +4555,17 @@ Self-hosted Moodle deployment via Docker
 
 Self-hosted Morphos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [motioneye](/templates/motioneye)
+
+motioneye — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/iot.html" class="tag-badge">iot</a> <a href="/arcane-repo/categories/media.html" class="tag-badge">media</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4255,7 +4575,7 @@ Self-hosted Morphos deployment via Docker
 
 Self-hosted Movim deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4265,7 +4585,7 @@ Self-hosted Movim deployment via Docker
 
 Self-hosted Mqttx Web deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4275,7 +4595,7 @@ Self-hosted Mqttx Web deployment via Docker
 
 Self-hosted Mstream deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4285,7 +4605,7 @@ Self-hosted Mstream deployment via Docker
 
 Self-hosted Mtg deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4295,7 +4615,7 @@ Self-hosted Mtg deployment via Docker
 
 Non-serviceable: Music Tag Web has no Docker Hub image and no Dockerfile in its upstream repository. This placeholder documents the project and suggests alternatives.
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a> <a href="/categories/reference" class="tag-badge">reference</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a> <a href="/arcane-repo/categories/reference.html" class="tag-badge">reference</a>
 
 </div>
 
@@ -4305,7 +4625,7 @@ Non-serviceable: Music Tag Web has no Docker Hub image and no Dockerfile in its 
 
 Self-hosted Musicbrainz deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4315,7 +4635,7 @@ Self-hosted Musicbrainz deployment via Docker
 
 Self-hosted Muximux deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4325,7 +4645,7 @@ Self-hosted Muximux deployment via Docker
 
 Self-hosted My Webapp deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4335,7 +4655,7 @@ Self-hosted My Webapp deployment via Docker
 
 Self-hosted Mylar deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4345,7 +4665,7 @@ Self-hosted Mylar deployment via Docker
 
 Self-hosted Myspeed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4355,7 +4675,7 @@ Self-hosted Myspeed deployment via Docker
 
 Fair-code workflow automation platform — connect apps, APIs, and services with drag-and-drop logic, 400+ integrations, and customizable AI agents
 
-<a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/workflow" class="tag-badge">workflow</a> <a href="/categories/low-code" class="tag-badge">low-code</a>
+<a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/workflow.html" class="tag-badge">workflow</a> <a href="/arcane-repo/categories/low-code.html" class="tag-badge">low-code</a>
 
 </div>
 
@@ -4365,7 +4685,7 @@ Fair-code workflow automation platform — connect apps, APIs, and services with
 
 Lightweight AI chatbot framework with tool calling and multi-provider support
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/framework" class="tag-badge">framework</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a>
 
 </div>
 
@@ -4375,7 +4695,7 @@ Lightweight AI chatbot framework with tool calling and multi-provider support
 
 Self-hosted Navidrome deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4385,7 +4705,7 @@ Self-hosted Navidrome deployment via Docker
 
 Self-hosted Neko deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4395,7 +4715,7 @@ Self-hosted Neko deployment via Docker
 
 Self-hosted Neonlink deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4405,7 +4725,7 @@ Self-hosted Neonlink deployment via Docker
 
 Self-hosted Netalertx deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4415,7 +4735,7 @@ Self-hosted Netalertx deployment via Docker
 
 Self-hosted Netbird deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4425,7 +4745,7 @@ Self-hosted Netbird deployment via Docker
 
 Self-hosted Netbox deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4435,7 +4755,17 @@ Self-hosted Netbox deployment via Docker
 
 Real-time monitoring with metrics, dashboards, and alerts
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/observability" class="tag-badge">observability</a> <a href="/categories/devops" class="tag-badge">devops</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a> <a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a>
+
+</div>
+
+<div class="template-card">
+
+### [Netmaker](/templates/netmaker)
+
+Netmaker — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -4445,7 +4775,7 @@ Real-time monitoring with metrics, dashboards, and alerts
 
 Model visualization tool for neural networks, machine learning, and AI models
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/tools" class="tag-badge">tools</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -4455,7 +4785,7 @@ Model visualization tool for neural networks, machine learning, and AI models
 
 Self-hosted content collaboration platform with file sync, calendar, contacts, and extensive app ecosystem
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4465,7 +4795,7 @@ Self-hosted content collaboration platform with file sync, calendar, contacts, a
 
 Self-hosted Nexterm deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4475,7 +4805,17 @@ Self-hosted Nexterm deployment via Docker
 
 Self-hosted Nginx deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [Nginx Proxy Manager](/templates/nginx-proxy-manager)
+
+Nginx Proxy Manager — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -4485,7 +4825,7 @@ Self-hosted Nginx deployment via Docker
 
 Web-based Nginx configuration manager — edit sites, manage certs, view logs from a modern dashboard
 
-<a href="/categories/devops" class="tag-badge">devops</a>
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a>
 
 </div>
 
@@ -4495,7 +4835,7 @@ Web-based Nginx configuration manager — edit sites, manage certs, view logs fr
 
 Self-hosted Nitter deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4505,7 +4845,7 @@ Self-hosted Nitter deployment via Docker
 
 Open-source Airtable alternative — create spreadsheets, forms, kanban boards, and galleries with a no-code interface
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4515,7 +4855,17 @@ Open-source Airtable alternative — create spreadsheets, forms, kanban boards, 
 
 Self-hosted Node Red deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [node_exporter](/templates/node-exporter)
+
+node_exporter — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4525,7 +4875,7 @@ Self-hosted Node Red deployment via Docker
 
 Self-hosted Nodebb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4535,7 +4885,17 @@ Self-hosted Nodebb deployment via Docker
 
 Self-hosted Nodejs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [nodered](/templates/nodered)
+
+nodered — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/iot.html" class="tag-badge">iot</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4545,7 +4905,7 @@ Self-hosted Nodejs deployment via Docker
 
 Self-hosted Nostr Relay deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4555,7 +4915,7 @@ Self-hosted Nostr Relay deployment via Docker
 
 Non-serviceable: The notediscovery project is no longer available (upstream repository removed). This placeholder serves as a historical reference.
 
-<a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a> <a href="/categories/reference" class="tag-badge">reference</a>
+<a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a> <a href="/arcane-repo/categories/reference.html" class="tag-badge">reference</a>
 
 </div>
 
@@ -4565,7 +4925,7 @@ Non-serviceable: The notediscovery project is no longer available (upstream repo
 
 Self-hosted Ntfy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4575,7 +4935,7 @@ Self-hosted Ntfy deployment via Docker
 
 Self-hosted Nutify deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4585,7 +4945,7 @@ Self-hosted Nutify deployment via Docker
 
 Self-hosted Nzbget deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4595,7 +4955,7 @@ Self-hosted Nzbget deployment via Docker
 
 Self-hosted Obsidian deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4605,7 +4965,7 @@ Self-hosted Obsidian deployment via Docker
 
 Self-hosted Octoprint deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4615,7 +4975,7 @@ Self-hosted Octoprint deployment via Docker
 
 Self-hosted Ocular deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4625,7 +4985,7 @@ Self-hosted Ocular deployment via Docker
 
 Self-hosted Odoo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4635,7 +4995,7 @@ Self-hosted Odoo deployment via Docker
 
 Self-hosted Ojs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4645,7 +5005,7 @@ Self-hosted Ojs deployment via Docker
 
 Self-hosted Olivetin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4655,7 +5015,7 @@ Self-hosted Olivetin deployment via Docker
 
 Local LLM inference server with Ollama — pull and run open-source models like Llama 3, Mistral, and Gemma on your own hardware
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/inference" class="tag-badge">inference</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/inference.html" class="tag-badge">inference</a>
 
 </div>
 
@@ -4665,7 +5025,7 @@ Local LLM inference server with Ollama — pull and run open-source models like 
 
 Modular AI Runtime for Robots — multi-modal AI agent with vision, audio, speech processing, and hardware integration (headless container mode with hardware passthrough support)
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a>
 
 </div>
 
@@ -4675,7 +5035,7 @@ Modular AI Runtime for Robots — multi-modal AI agent with vision, audio, speec
 
 Self-hosted Ombi deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4685,7 +5045,17 @@ Self-hosted Ombi deployment via Docker
 
 Enterprise AI search platform for connecting, indexing, and searching organizational knowledge — formerly Danswer
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/search" class="tag-badge">search</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
+
+</div>
+
+<div class="template-card">
+
+### [Open Interpreter](/templates/open-interpreter)
+
+Open Interpreter — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -4695,7 +5065,7 @@ Enterprise AI search platform for connecting, indexing, and searching organizati
 
 Self-hosted Open Meteo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4705,7 +5075,7 @@ Self-hosted Open Meteo deployment via Docker
 
 Self-hosted Open Web Calendar deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4715,7 +5085,7 @@ Self-hosted Open Web Calendar deployment via Docker
 
 Self-hosted Open Webui deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4725,7 +5095,7 @@ Self-hosted Open Webui deployment via Docker
 
 Self-hosted ChatGPT-like interface with RAG and multi-user
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/chat" class="tag-badge">chat</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/self-hosted" class="tag-badge">self-hosted</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/chat.html" class="tag-badge">chat</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4735,7 +5105,7 @@ Self-hosted ChatGPT-like interface with RAG and multi-user
 
 Open-source investment research platform with AI-powered trading strategies
 
-<a href="/categories/analytics" class="tag-badge">analytics</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -4745,7 +5115,7 @@ Open-source investment research platform with AI-powered trading strategies
 
 Self-hosted Openbudgeteer deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4755,7 +5125,7 @@ Self-hosted Openbudgeteer deployment via Docker
 
 Community and event platform API server — a modern Node.js backend with PostgreSQL, ready for extension
 
-<a href="/categories/api" class="tag-badge">api</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/api.html" class="tag-badge">api</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -4765,7 +5135,7 @@ Community and event platform API server — a modern Node.js backend with Postgr
 
 Self-hosted Opencloud deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4775,7 +5145,7 @@ Self-hosted Opencloud deployment via Docker
 
 Self-hosted Opencode deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4785,7 +5155,7 @@ Self-hosted Opencode deployment via Docker
 
 Self-hosted Openemr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4795,7 +5165,7 @@ Self-hosted Openemr deployment via Docker
 
 Open-source Agent Operating System — Federated Learning Attack Platform with multi-agent orchestration, tool integration, and development/debugging workflows
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/security" class="tag-badge">security</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a> <a href="/categories/tools" class="tag-badge">tools</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/security.html" class="tag-badge">security</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -4805,7 +5175,7 @@ Open-source Agent Operating System — Federated Learning Attack Platform with m
 
 Self-hosted pastebin and git snippet host — create, share, and manage code snippets with Git-backed versioning
 
-<a href="/categories/tools" class="tag-badge">tools</a> <a href="/categories/web" class="tag-badge">web</a>
+<a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a> <a href="/arcane-repo/categories/web.html" class="tag-badge">web</a>
 
 </div>
 
@@ -4815,7 +5185,7 @@ Self-hosted pastebin and git snippet host — create, share, and manage code sni
 
 Self-hosted Openhabittracker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4825,7 +5195,7 @@ Self-hosted Openhabittracker deployment via Docker
 
 Self-hosted Openhands deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4835,7 +5205,7 @@ Self-hosted Openhands deployment via Docker
 
 Self-hosted Openobserve deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4845,7 +5215,7 @@ Self-hosted Openobserve deployment via Docker
 
 Self-hosted Openproject deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4855,7 +5225,7 @@ Self-hosted Openproject deployment via Docker
 
 Self-hosted Openresty Manager deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4865,7 +5235,7 @@ Self-hosted Openresty Manager deployment via Docker
 
 Code execution sandbox environment — secure, isolated code compilation and execution for multiple programming languages with REST API
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/api" class="tag-badge">api</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/api.html" class="tag-badge">api</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -4875,7 +5245,7 @@ Code execution sandbox environment — secure, isolated code compilation and exe
 
 Self-hosted Opensearch deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4885,7 +5255,7 @@ Self-hosted Opensearch deployment via Docker
 
 Google DeepMind framework for game theory and reinforcement learning
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/research" class="tag-badge">research</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/research.html" class="tag-badge">research</a>
 
 </div>
 
@@ -4895,7 +5265,7 @@ Google DeepMind framework for game theory and reinforcement learning
 
 Self-hosted Openvpn As deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4905,7 +5275,7 @@ Self-hosted Openvpn As deployment via Docker
 
 Self-hosted Orangehrm deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4915,7 +5285,7 @@ Self-hosted Orangehrm deployment via Docker
 
 Self-hosted Oras deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/priority" class="tag-badge">priority</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/priority.html" class="tag-badge">priority</a>
 
 </div>
 
@@ -4925,7 +5295,27 @@ Self-hosted Oras deployment via Docker
 
 Hardened, OpenID Certified OAuth 2.0 and OpenID Connect provider trusted by OpenAI — self-hosted authorization server with PostgreSQL persistence
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
+
+</div>
+
+<div class="template-card">
+
+### [Ory Kratos](/templates/ory-kratos)
+
+Ory Kratos — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
+
+</div>
+
+<div class="template-card">
+
+### [Ory Oathkeeper](/templates/ory-oathkeeper)
+
+Ory Oathkeeper — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -4935,7 +5325,7 @@ Hardened, OpenID Certified OAuth 2.0 and OpenID Connect provider trusted by Open
 
 Self-hosted Oscam deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -4945,7 +5335,17 @@ Self-hosted Oscam deployment via Docker
 
 Self-hosted Otter Wiki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
+
+</div>
+
+<div class="template-card">
+
+### [Our Shopping List](/templates/our-shopping-list)
+
+Our Shopping List — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4955,7 +5355,17 @@ Self-hosted Otter Wiki deployment via Docker
 
 Self-hosted Outline deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [overleaf](/templates/overleaf)
+
+overleaf — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/productivity.html" class="tag-badge">productivity</a> <a href="/arcane-repo/categories/collaboration.html" class="tag-badge">collaboration</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -4965,7 +5375,7 @@ Self-hosted Outline deployment via Docker
 
 Self-hosted Overseerr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -4975,7 +5385,7 @@ Self-hosted Overseerr deployment via Docker
 
 Self-hosted Owncast deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -4985,7 +5395,7 @@ Self-hosted Owncast deployment via Docker
 
 Self-hosted Paaster deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -4995,7 +5405,7 @@ Self-hosted Paaster deployment via Docker
 
 Alibaba Page Agent — JavaScript in-page GUI agent that controls web interfaces with natural language. Primarily a browser-based CLI tool; this Docker template provides a thin API wrapper for orchestration
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/web" class="tag-badge">web</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/web.html" class="tag-badge">web</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -5005,7 +5415,7 @@ Alibaba Page Agent — JavaScript in-page GUI agent that controls web interfaces
 
 Self-hosted Paheko deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5015,7 +5425,7 @@ Self-hosted Paheko deployment via Docker
 
 Self-hosted Pairdrop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5025,7 +5435,7 @@ Self-hosted Pairdrop deployment via Docker
 
 Self-hosted Palmr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5035,7 +5445,7 @@ Self-hosted Palmr deployment via Docker
 
 Self-hosted Pangolin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -5045,7 +5455,7 @@ Self-hosted Pangolin deployment via Docker
 
 Self-hosted document management system that scans, indexes, and archives paper documents with full-text search
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5055,7 +5465,7 @@ Self-hosted document management system that scans, indexes, and archives paper d
 
 Self-hosted Papra deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -5065,7 +5475,7 @@ Self-hosted Papra deployment via Docker
 
 Cloud-native log observability engine — store, search, and analyze logs at scale with an S3-compatible backend
 
-<a href="/categories/observability" class="tag-badge">observability</a> <a href="/categories/analytics" class="tag-badge">analytics</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a>
+<a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a> <a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a>
 
 </div>
 
@@ -5075,7 +5485,7 @@ Cloud-native log observability engine — store, search, and analyze logs at sca
 
 Self-hosted Passbolt deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5085,7 +5495,7 @@ Self-hosted Passbolt deployment via Docker
 
 Self-hosted Passed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5095,7 +5505,7 @@ Self-hosted Passed deployment via Docker
 
 Self-hosted Pastefy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5105,7 +5515,7 @@ Self-hosted Pastefy deployment via Docker
 
 Ready-to-run RAG, AI pipelines, and enterprise search templates — deploy document-aware Q&amp;A, live data indexing, and real-time AI with Pathway
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -5115,7 +5525,7 @@ Ready-to-run RAG, AI pipelines, and enterprise search templates — deploy docum
 
 Self-hosted Paymenter deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5125,7 +5535,7 @@ Self-hosted Paymenter deployment via Docker
 
 Self-hosted Peer Calls deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5135,7 +5545,7 @@ Self-hosted Peer Calls deployment via Docker
 
 Self-hosted Peertube deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5145,7 +5555,7 @@ Self-hosted Peertube deployment via Docker
 
 Self-hosted Pelican deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5155,7 +5565,7 @@ Self-hosted Pelican deployment via Docker
 
 AI penetration testing with autonomous security assessment
 
-<a href="/categories/security" class="tag-badge">security</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/automation" class="tag-badge">automation</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a>
 
 </div>
 
@@ -5165,7 +5575,7 @@ AI penetration testing with autonomous security assessment
 
 Self-hosted Perplexica deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5175,7 +5585,7 @@ Self-hosted Perplexica deployment via Docker
 
 Self-hosted Pgadmin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5185,7 +5595,7 @@ Self-hosted Pgadmin deployment via Docker
 
 Self-hosted Pgweb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5195,7 +5605,7 @@ Self-hosted Pgweb deployment via Docker
 
 Self-hosted Phanpy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5205,7 +5615,7 @@ Self-hosted Phanpy deployment via Docker
 
 AI-powered photo management with automatic tagging and face recognition
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/self-hosted" class="tag-badge">self-hosted</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -5215,7 +5625,7 @@ AI-powered photo management with automatic tagging and face recognition
 
 Self-hosted Photoshow deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5225,7 +5635,7 @@ Self-hosted Photoshow deployment via Docker
 
 Self-hosted Photoview deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5235,7 +5645,7 @@ Self-hosted Photoview deployment via Docker
 
 Self-hosted Phpldapadmin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5245,7 +5655,7 @@ Self-hosted Phpldapadmin deployment via Docker
 
 Self-hosted Phpmyadmin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5255,7 +5665,7 @@ Self-hosted Phpmyadmin deployment via Docker
 
 Self-hosted Picsur deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -5265,7 +5675,7 @@ Self-hosted Picsur deployment via Docker
 
 Self-hosted Piefed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5275,7 +5685,7 @@ Self-hosted Piefed deployment via Docker
 
 Self-hosted Pihole deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5285,7 +5695,7 @@ Self-hosted Pihole deployment via Docker
 
 Self-hosted Pinchflat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5295,7 +5705,7 @@ Self-hosted Pinchflat deployment via Docker
 
 Self-hosted Pinepods deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -5305,7 +5715,7 @@ Self-hosted Pinepods deployment via Docker
 
 Self-hosted Pingvin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5315,7 +5725,7 @@ Self-hosted Pingvin deployment via Docker
 
 Self-hosted Pingvin Share deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5325,7 +5735,7 @@ Self-hosted Pingvin Share deployment via Docker
 
 Self-hosted Piped deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5335,7 +5745,7 @@ Self-hosted Piped deployment via Docker
 
 Self-hosted Piwigo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5345,7 +5755,7 @@ Self-hosted Piwigo deployment via Docker
 
 Self-hosted Pixel Server deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5355,7 +5765,7 @@ Self-hosted Pixel Server deployment via Docker
 
 Self-hosted Plainpad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5365,7 +5775,7 @@ Self-hosted Plainpad deployment via Docker
 
 Self-hosted Plane deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5375,7 +5785,7 @@ Self-hosted Plane deployment via Docker
 
 Self-hosted Plateau deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5385,7 +5795,7 @@ Self-hosted Plateau deployment via Docker
 
 Self-hosted Plesk deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5395,7 +5805,7 @@ Self-hosted Plesk deployment via Docker
 
 Self-hosted Plex deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5405,7 +5815,7 @@ Self-hosted Plex deployment via Docker
 
 AI agent orchestration with observability and debugging
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a> <a href="/categories/observability" class="tag-badge">observability</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a>
 
 </div>
 
@@ -5415,7 +5825,7 @@ AI agent orchestration with observability and debugging
 
 Self-hosted Plik deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5425,7 +5835,7 @@ Self-hosted Plik deployment via Docker
 
 Self-hosted Pocket Id deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5435,7 +5845,7 @@ Self-hosted Pocket Id deployment via Docker
 
 Self-hosted Pollaris deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5445,7 +5855,7 @@ Self-hosted Pollaris deployment via Docker
 
 Self-hosted Poste.Io deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5455,7 +5865,7 @@ Self-hosted Poste.Io deployment via Docker
 
 Self-hosted Postgresql deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5465,7 +5875,7 @@ Self-hosted Postgresql deployment via Docker
 
 Self-hosted Postiz deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5475,7 +5885,7 @@ Self-hosted Postiz deployment via Docker
 
 Self-hosted Prestashop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5485,7 +5895,7 @@ Self-hosted Prestashop deployment via Docker
 
 Self-hosted Pritunl deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5495,7 +5905,7 @@ Self-hosted Pritunl deployment via Docker
 
 Self-hosted Processwire deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5505,7 +5915,7 @@ Self-hosted Processwire deployment via Docker
 
 Self-hosted Profilarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5515,7 +5925,7 @@ Self-hosted Profilarr deployment via Docker
 
 Self-hosted Projectsend deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5525,7 +5935,17 @@ Self-hosted Projectsend deployment via Docker
 
 Self-hosted Prometheus deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [Promptfoo](/templates/promptfoo)
+
+Promptfoo — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -5535,7 +5955,7 @@ Self-hosted Prometheus deployment via Docker
 
 Self-hosted Prowlarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5545,7 +5965,7 @@ Self-hosted Prowlarr deployment via Docker
 
 Self-hosted Proxitok deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5555,7 +5975,7 @@ Self-hosted Proxitok deployment via Docker
 
 Self-hosted Psitransfer deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5565,7 +5985,7 @@ Self-hosted Psitransfer deployment via Docker
 
 Self-hosted Public Pool deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5575,7 +5995,7 @@ Self-hosted Public Pool deployment via Docker
 
 Self-hosted Public Pool Web deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5585,7 +6005,7 @@ Self-hosted Public Pool Web deployment via Docker
 
 AI agent orchestration and automation tool — manage and coordinate multi-agent workflows with configurable pipelines and event-driven execution
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a> <a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/workflow" class="tag-badge">workflow</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/workflow.html" class="tag-badge">workflow</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -5595,7 +6015,7 @@ AI agent orchestration and automation tool — manage and coordinate multi-agent
 
 Self-hosted Pufferpanel deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5605,7 +6025,17 @@ Self-hosted Pufferpanel deployment via Docker
 
 Real-time infrastructure monitoring with AI-powered insights — track server health, detect anomalies, and get intelligent alerts
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/observability" class="tag-badge">observability</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a>
+
+</div>
+
+<div class="template-card">
+
+### [Pulumi](/templates/pulumi)
+
+Pulumi — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -5615,7 +6045,7 @@ Real-time infrastructure monitoring with AI-powered insights — track server he
 
 Self-hosted Pumperly deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5625,7 +6055,7 @@ Self-hosted Pumperly deployment via Docker
 
 Self-hosted Pydio deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5635,7 +6065,7 @@ Self-hosted Pydio deployment via Docker
 
 Self-hosted Pyinventory deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5645,7 +6075,7 @@ Self-hosted Pyinventory deployment via Docker
 
 Self-hosted Pyload Ng deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5655,7 +6085,7 @@ Self-hosted Pyload Ng deployment via Docker
 
 Self-hosted Qbittorrent deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5665,7 +6095,17 @@ Self-hosted Qbittorrent deployment via Docker
 
 Self-hosted Qdirstat deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [Qdrant](/templates/qdrant)
+
+Qdrant — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -5675,7 +6115,7 @@ Self-hosted Qdirstat deployment via Docker
 
 Self-hosted Qflood deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5685,7 +6125,7 @@ Self-hosted Qflood deployment via Docker
 
 Self-hosted Quassel Core deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5695,7 +6135,7 @@ Self-hosted Quassel Core deployment via Docker
 
 Self-hosted Qui deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5705,7 +6145,7 @@ Self-hosted Qui deployment via Docker
 
 Open-source second brain with RAG-powered Q&amp;A and knowledge management
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
 
 </div>
 
@@ -5715,7 +6155,7 @@ Open-source second brain with RAG-powered Q&amp;A and knowledge management
 
 Self-hosted Rabbitmq deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5725,7 +6165,7 @@ Self-hosted Rabbitmq deployment via Docker
 
 Self-hosted Radarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5735,7 +6175,7 @@ Self-hosted Radarr deployment via Docker
 
 Self-hosted Rahoot deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5745,7 +6185,7 @@ Self-hosted Rahoot deployment via Docker
 
 Self-hosted Rallly deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5755,7 +6195,7 @@ Self-hosted Rallly deployment via Docker
 
 Self-hosted Rclone deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5765,7 +6205,7 @@ Self-hosted Rclone deployment via Docker
 
 Microsoft RD-Agent — automated research &amp; development agent that uses LLMs to drive the R&amp;D process autonomously, from idea formulation to code generation and evaluation
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/research" class="tag-badge">research</a> <a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/research.html" class="tag-badge">research</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -5775,7 +6215,7 @@ Microsoft RD-Agent — automated research &amp; development agent that uses LLMs
 
 Self-hosted Reactive Resume deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5785,7 +6225,7 @@ Self-hosted Reactive Resume deployment via Docker
 
 Self-hosted Readarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5795,7 +6235,7 @@ Self-hosted Readarr deployment via Docker
 
 Self-hosted Readeck deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5805,7 +6245,7 @@ Self-hosted Readeck deployment via Docker
 
 Self-hosted Readflow deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5815,7 +6255,7 @@ Self-hosted Readflow deployment via Docker
 
 Self-hosted Readur deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5825,7 +6265,7 @@ Self-hosted Readur deployment via Docker
 
 Self-hosted Redash deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -5835,7 +6275,7 @@ Self-hosted Redash deployment via Docker
 
 AI-powered image and text content generator for social media — Xiaohongshu-style content creation with LLM + image generation
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
 
 </div>
 
@@ -5845,7 +6285,7 @@ AI-powered image and text content generator for social media — Xiaohongshu-sty
 
 In-memory data store used as a database, cache, message broker, and streaming engine for high-performance applications
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5855,7 +6295,7 @@ In-memory data store used as a database, cache, message broker, and streaming en
 
 Self-hosted Redlib deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5865,7 +6305,7 @@ Self-hosted Redlib deployment via Docker
 
 Self-hosted Redmine deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5875,7 +6315,7 @@ Self-hosted Redmine deployment via Docker
 
 Self-hosted Reiverr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5885,7 +6325,7 @@ Self-hosted Reiverr deployment via Docker
 
 Self-hosted Remmina deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5895,7 +6335,7 @@ Self-hosted Remmina deployment via Docker
 
 Self-hosted Restic deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5905,7 +6345,7 @@ Self-hosted Restic deployment via Docker
 
 Self-hosted Restreamer deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5915,7 +6355,7 @@ Self-hosted Restreamer deployment via Docker
 
 Self-hosted Retroarch deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5925,7 +6365,7 @@ Self-hosted Retroarch deployment via Docker
 
 Self-hosted Reveal.Js deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5935,7 +6375,17 @@ Self-hosted Reveal.Js deployment via Docker
 
 Self-hosted Robosats deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [rocketchat](/templates/rocketchat)
+
+rocketchat — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/communication.html" class="tag-badge">communication</a> <a href="/arcane-repo/categories/productivity.html" class="tag-badge">productivity</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -5945,7 +6395,7 @@ Self-hosted Robosats deployment via Docker
 
 Self-hosted Romm deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -5955,7 +6405,7 @@ Self-hosted Romm deployment via Docker
 
 Self-hosted Rosariosis deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -5965,7 +6415,7 @@ Self-hosted Rosariosis deployment via Docker
 
 Self-hosted Rotki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5975,7 +6425,7 @@ Self-hosted Rotki deployment via Docker
 
 Self-hosted Route96 deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -5985,7 +6435,7 @@ Self-hosted Route96 deployment via Docker
 
 Open-source AI coworker with knowledge graph — turns work into a knowledge graph and acts on it
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/multi-service" class="tag-badge">multi-service</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a>
 
 </div>
 
@@ -5995,7 +6445,7 @@ Open-source AI coworker with knowledge graph — turns work into a knowledge gra
 
 Self-hosted Rspamd deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6005,7 +6455,7 @@ Self-hosted Rspamd deployment via Docker
 
 Self-hosted Rss Bridge deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6015,7 +6465,7 @@ Self-hosted Rss Bridge deployment via Docker
 
 Self-hosted Rsshub deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6025,7 +6475,7 @@ Self-hosted Rsshub deployment via Docker
 
 Self-hosted Rustdesk Server deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6035,7 +6485,7 @@ Self-hosted Rustdesk Server deployment via Docker
 
 Self-hosted Rusty Kaspad deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6045,7 +6495,7 @@ Self-hosted Rusty Kaspad deployment via Docker
 
 Self-hosted Rutorrent deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6055,7 +6505,7 @@ Self-hosted Rutorrent deployment via Docker
 
 Self-hosted Rybbit deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6065,7 +6515,7 @@ Self-hosted Rybbit deployment via Docker
 
 Self-hosted Ryot deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6075,7 +6525,17 @@ Self-hosted Ryot deployment via Docker
 
 Self-hosted Sabnzbd deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [satsale](/templates/satsale)
+
+satsale — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/bitcoin.html" class="tag-badge">bitcoin</a>
 
 </div>
 
@@ -6085,7 +6545,7 @@ Self-hosted Sabnzbd deployment via Docker
 
 Self-hosted Scanservjs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6095,7 +6555,17 @@ Self-hosted Scanservjs deployment via Docker
 
 Python web scraping library with AutoDetect parsing and anti-bot bypass
 
-<a href="/categories/tools" class="tag-badge">tools</a> <a href="/categories/python" class="tag-badge">python</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a> <a href="/arcane-repo/categories/python.html" class="tag-badge">python</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
+
+</div>
+
+<div class="template-card">
+
+### [screenshot-to-code](/templates/screenshot-to-code)
+
+screenshot-to-code — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -6105,7 +6575,7 @@ Python web scraping library with AutoDetect parsing and anti-bot bypass
 
 Self-hosted Scrutiny deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6115,7 +6585,7 @@ Self-hosted Scrutiny deployment via Docker
 
 Self-hosted Searxng deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6125,7 +6595,7 @@ Self-hosted Searxng deployment via Docker
 
 Self-hosted Seaweedfs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6135,7 +6605,7 @@ Self-hosted Seaweedfs deployment via Docker
 
 Reference architecture for self-hosted Sentry error tracking — 7-service core compose (postgres, redis, kafka, clickhouse, snuba, web, nginx) that works after running the official install.sh for one-time setup
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/observability" class="tag-badge">observability</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a>
 
 </div>
 
@@ -6145,7 +6615,7 @@ Reference architecture for self-hosted Sentry error tracking — 7-service core 
 
 Self-hosted Servas deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6155,7 +6625,7 @@ Self-hosted Servas deployment via Docker
 
 Fully featured SFTP server with web admin UI
 
-<a href="/categories/storage" class="tag-badge">storage</a>
+<a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a>
 
 </div>
 
@@ -6165,7 +6635,7 @@ Fully featured SFTP server with web admin UI
 
 Self-hosted Shaarli deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6175,7 +6645,7 @@ Self-hosted Shaarli deployment via Docker
 
 Self-hosted Sheetable deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6185,7 +6655,7 @@ Self-hosted Sheetable deployment via Docker
 
 Self-hosted Shields deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6195,7 +6665,7 @@ Self-hosted Shields deployment via Docker
 
 Self-hosted Shifter deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6205,7 +6675,7 @@ Self-hosted Shifter deployment via Docker
 
 Self-hosted Shipshipship deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6215,7 +6685,7 @@ Self-hosted Shipshipship deployment via Docker
 
 Self-hosted Shlink deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6225,7 +6695,7 @@ Self-hosted Shlink deployment via Docker
 
 Self-hosted Shopstr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6235,7 +6705,7 @@ Self-hosted Shopstr deployment via Docker
 
 Shynet web analytics — privacy-friendly, cookie-free analytics. No Docker image or upstream Dockerfile exists; this template provides an informational API stub
 
-<a href="/categories/analytics" class="tag-badge">analytics</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -6245,7 +6715,7 @@ Shynet web analytics — privacy-friendly, cookie-free analytics. No Docker imag
 
 Self-hosted Sickchill deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6255,7 +6725,7 @@ Self-hosted Sickchill deployment via Docker
 
 Self-hosted Signaturepdf deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6265,7 +6735,7 @@ Self-hosted Signaturepdf deployment via Docker
 
 LLM chat frontend for interacting with various AI backends — text generation, roleplay, and character management
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/chat" class="tag-badge">chat</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/chat.html" class="tag-badge">chat</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -6275,7 +6745,7 @@ LLM chat frontend for interacting with various AI backends — text generation, 
 
 Self-hosted Silverbullet deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6285,7 +6755,7 @@ Self-hosted Silverbullet deployment via Docker
 
 3D simulation and AI agent environment platform — create, train, and evaluate AI agents in photorealistic 3D virtual worlds for reinforcement learning and embodied AI research
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -6295,7 +6765,7 @@ Self-hosted Silverbullet deployment via Docker
 
 Self-hosted Slash deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6305,7 +6775,7 @@ Self-hosted Slash deployment via Docker
 
 Self-hosted Slink deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6315,7 +6785,7 @@ Self-hosted Slink deployment via Docker
 
 Self-hosted Smokeping deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6325,7 +6795,17 @@ Self-hosted Smokeping deployment via Docker
 
 Self-hosted Snapdrop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [snipeit](/templates/snipeit)
+
+snipeit — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/business.html" class="tag-badge">business</a> <a href="/arcane-repo/categories/e-commerce.html" class="tag-badge">e-commerce</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -6335,7 +6815,7 @@ Self-hosted Snapdrop deployment via Docker
 
 Self-hosted Snowflake deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6345,7 +6825,7 @@ Self-hosted Snowflake deployment via Docker
 
 Self-hosted Snserver deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6355,7 +6835,7 @@ Self-hosted Snserver deployment via Docker
 
 Self-hosted Sogo deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6365,7 +6845,7 @@ Self-hosted Sogo deployment via Docker
 
 Event-driven multi-agent framework with real-time collaboration
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a>
 
 </div>
 
@@ -6375,7 +6855,7 @@ Event-driven multi-agent framework with real-time collaboration
 
 Self-hosted Solectrus deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6385,7 +6865,7 @@ Self-hosted Solectrus deployment via Docker
 
 Self-hosted Solidtime deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6395,7 +6875,7 @@ Self-hosted Solidtime deployment via Docker
 
 Self-hosted Solr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6405,7 +6885,7 @@ Self-hosted Solr deployment via Docker
 
 Self-hosted Sonarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6415,7 +6895,7 @@ Self-hosted Sonarr deployment via Docker
 
 Self-hosted Spacedeck deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6425,7 +6905,7 @@ Self-hosted Spacedeck deployment via Docker
 
 Self-hosted Sparkyfitness deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6435,7 +6915,7 @@ Self-hosted Sparkyfitness deployment via Docker
 
 Self-hosted Spip deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6445,7 +6925,7 @@ Self-hosted Spip deployment via Docker
 
 Self-hosted Sqlitebrowser deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6455,7 +6935,7 @@ Self-hosted Sqlitebrowser deployment via Docker
 
 Self-hosted Squeaknode deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6465,7 +6945,7 @@ Self-hosted Squeaknode deployment via Docker
 
 Self-hosted Sshwifty deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6475,7 +6955,7 @@ Self-hosted Sshwifty deployment via Docker
 
 Self-hosted Stalwart deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6485,7 +6965,7 @@ Self-hosted Stalwart deployment via Docker
 
 Self-hosted Starbase 80 deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6495,7 +6975,7 @@ Self-hosted Starbase 80 deployment via Docker
 
 Self-hosted PDF manipulation toolkit for merging, splitting, converting, OCR, and watermarking documents
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6505,7 +6985,17 @@ Self-hosted PDF manipulation toolkit for merging, splitting, converting, OCR, an
 
 AI-powered live stream sales assistant — core bot service for automated product demonstrations and sales conversations
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
+
+</div>
+
+<div class="template-card">
+
+### [stremio](/templates/stremio)
+
+stremio — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/media.html" class="tag-badge">media</a> <a href="/arcane-repo/categories/entertainment.html" class="tag-badge">entertainment</a> <a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a>
 
 </div>
 
@@ -6515,7 +7005,7 @@ AI-powered live stream sales assistant — core bot service for automated produc
 
 Self-hosted Strix deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6525,7 +7015,7 @@ Self-hosted Strix deployment via Docker
 
 Self-hosted Stump deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6535,7 +7025,7 @@ Self-hosted Stump deployment via Docker
 
 Self-hosted dashboard and startpage — organize apps, bookmarks, and widgets in a clean, customizable web panel
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/web" class="tag-badge">web</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/web.html" class="tag-badge">web</a>
 
 </div>
 
@@ -6545,7 +7035,7 @@ Self-hosted dashboard and startpage — organize apps, bookmarks, and widgets in
 
 AI-powered content generation with customizable brand voice
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
 
 </div>
 
@@ -6555,7 +7045,7 @@ AI-powered content generation with customizable brand voice
 
 Self-hosted game stream host for Moonlight — stream games to any device
 
-<a href="/categories/web" class="tag-badge">web</a> <a href="/categories/tools" class="tag-badge">tools</a>
+<a href="/arcane-repo/categories/web.html" class="tag-badge">web</a> <a href="/arcane-repo/categories/tools.html" class="tag-badge">tools</a>
 
 </div>
 
@@ -6565,7 +7055,7 @@ Self-hosted game stream host for Moonlight — stream games to any device
 
 Open-source Firebase alternative — PostgreSQL database, auth, realtime subscriptions, storage, and edge functions
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/api" class="tag-badge">api</a> <a href="/categories/multi-service" class="tag-badge">multi-service</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/api.html" class="tag-badge">api</a> <a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a>
 
 </div>
 
@@ -6575,7 +7065,17 @@ Open-source Firebase alternative — PostgreSQL database, auth, realtime subscri
 
 Self-hosted Superset deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
+
+</div>
+
+<div class="template-card">
+
+### [SuperTokens](/templates/supertokens)
+
+SuperTokens — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -6585,7 +7085,7 @@ Self-hosted Superset deployment via Docker
 
 Self-hosted Sure deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6595,7 +7095,17 @@ Self-hosted Sure deployment via Docker
 
 Self-hosted Surrealdb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
+
+</div>
+
+<div class="template-card">
+
+### [SWE-agent](/templates/swe-agent)
+
+SWE-agent — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -6605,7 +7115,7 @@ Self-hosted Surrealdb deployment via Docker
 
 Self-hosted Synapse deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6615,7 +7125,7 @@ Self-hosted Synapse deployment via Docker
 
 Self-hosted Synapse Admin deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6625,7 +7135,7 @@ Self-hosted Synapse Admin deployment via Docker
 
 Self-hosted Syncserver Rs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6635,7 +7145,17 @@ Self-hosted Syncserver Rs deployment via Docker
 
 Self-hosted Syncthing deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
+
+</div>
+
+<div class="template-card">
+
+### [Sysdig](/templates/sysdig)
+
+Sysdig — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -6645,7 +7165,7 @@ Self-hosted Syncthing deployment via Docker
 
 T-Pot multi-honeypot platform with 5 core honeypot services (conpot, cowrie, dionaea, elasticpot, honeytrap) plus the management web UI — attack detection and visualization for security research
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -6655,7 +7175,7 @@ T-Pot multi-honeypot platform with 5 core honeypot services (conpot, cowrie, dio
 
 Self-hosted Tabby deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6665,7 +7185,7 @@ Self-hosted Tabby deployment via Docker
 
 Self-hosted Tailscale deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6675,7 +7195,7 @@ Self-hosted Tailscale deployment via Docker
 
 Self-hosted Tasks.Md deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6685,7 +7205,7 @@ Self-hosted Tasks.Md deployment via Docker
 
 Self-hosted Tautulli deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6695,7 +7215,7 @@ Self-hosted Tautulli deployment via Docker
 
 Self-hosted Tdarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6705,7 +7225,7 @@ Self-hosted Tdarr deployment via Docker
 
 Self-hosted Teampass deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6715,7 +7235,7 @@ Self-hosted Teampass deployment via Docker
 
 Self-hosted Teamspeak deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6725,7 +7245,7 @@ Self-hosted Teamspeak deployment via Docker
 
 Self-hosted Telepresence deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/priority" class="tag-badge">priority</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/priority.html" class="tag-badge">priority</a>
 
 </div>
 
@@ -6735,7 +7255,7 @@ Self-hosted Telepresence deployment via Docker
 
 TEN-framework/ten-framework — open-source framework for building conversational voice AI agents. Uses a complex GN/C++ build; this Docker template provides a thin API wrapper with documentation
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/framework" class="tag-badge">framework</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/framework.html" class="tag-badge">framework</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -6745,7 +7265,7 @@ TEN-framework/ten-framework — open-source framework for building conversationa
 
 Open-source AI inference gateway — unified API for OpenAI, Anthropic, AWS Bedrock, Ollama, and more with fallbacks, load balancing, and observability
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a> <a href="/categories/gateway" class="tag-badge">gateway</a> <a href="/categories/inference" class="tag-badge">inference</a> <a href="/categories/observability" class="tag-badge">observability</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a> <a href="/arcane-repo/categories/gateway.html" class="tag-badge">gateway</a> <a href="/arcane-repo/categories/inference.html" class="tag-badge">inference</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a>
 
 </div>
 
@@ -6755,7 +7275,7 @@ Open-source AI inference gateway — unified API for OpenAI, Anthropic, AWS Bedr
 
 Self-hosted Termix deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6765,7 +7285,7 @@ Self-hosted Termix deployment via Docker
 
 Self-hosted Terraforming Mars deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6775,7 +7295,17 @@ Self-hosted Terraforming Mars deployment via Docker
 
 A test template for verifying the build-registry script
 
-<a href="/categories/reference" class="tag-badge">reference</a>
+<a href="/arcane-repo/categories/reference.html" class="tag-badge">reference</a>
+
+</div>
+
+<div class="template-card">
+
+### [Text Generation Inference](/templates/text-generation-inference)
+
+Text Generation Inference — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -6785,7 +7315,7 @@ A test template for verifying the build-registry script
 
 Self-hosted Textarea deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6795,7 +7325,7 @@ Self-hosted Textarea deployment via Docker
 
 Self-hosted Thelounge deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6805,7 +7335,7 @@ Self-hosted Thelounge deployment via Docker
 
 Self-hosted Thunderhub deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6815,7 +7345,7 @@ Self-hosted Thunderhub deployment via Docker
 
 All-in-one website analytics, uptime monitoring, and server status dashboard — lightweight, self-hosted, and privacy-first
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/analytics" class="tag-badge">analytics</a> <a href="/categories/observability" class="tag-badge">observability</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a> <a href="/arcane-repo/categories/observability.html" class="tag-badge">observability</a>
 
 </div>
 
@@ -6825,7 +7355,7 @@ All-in-one website analytics, uptime monitoring, and server status dashboard —
 
 Distributed SQL database with MySQL compatibility and HTAP capabilities
 
-<a href="/categories/database" class="tag-badge">database</a> <a href="/categories/sql" class="tag-badge">sql</a>
+<a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/sql.html" class="tag-badge">sql</a>
 
 </div>
 
@@ -6835,7 +7365,7 @@ Distributed SQL database with MySQL compatibility and HTAP capabilities
 
 Self-hosted Tine deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -6845,7 +7375,7 @@ Self-hosted Tine deployment via Docker
 
 Self-hosted Tinyfeed deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6855,7 +7385,7 @@ Self-hosted Tinyfeed deployment via Docker
 
 Self-hosted Tinyfilemanager deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6865,7 +7395,7 @@ Self-hosted Tinyfilemanager deployment via Docker
 
 Self-hosted Tinymediamanager deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6875,7 +7405,7 @@ Self-hosted Tinymediamanager deployment via Docker
 
 Self-hosted Tooljet deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6885,7 +7415,7 @@ Self-hosted Tooljet deployment via Docker
 
 Self-hosted Torq deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6895,7 +7425,7 @@ Self-hosted Torq deployment via Docker
 
 Self-hosted Toshi Moto deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -6905,7 +7435,7 @@ Self-hosted Toshi Moto deployment via Docker
 
 Self-hosted Traccar deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6915,7 +7445,17 @@ Self-hosted Traccar deployment via Docker
 
 AI-powered algorithmic trading with multi-agent collaboration
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a>
+
+</div>
+
+<div class="template-card">
+
+### [Traefik](/templates/traefik)
+
+Traefik — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -6925,7 +7465,7 @@ AI-powered algorithmic trading with multi-agent collaboration
 
 Self-hosted Transfersh deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -6935,7 +7475,7 @@ Self-hosted Transfersh deployment via Docker
 
 Self-hosted Transmission deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6945,7 +7485,7 @@ Self-hosted Transmission deployment via Docker
 
 Self-hosted Transmission Openvpn deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6955,7 +7495,7 @@ Self-hosted Transmission Openvpn deployment via Docker
 
 Multi-platform news aggregation and sentiment analysis engine — track trending topics across news sources with AI-powered analysis
 
-<a href="/categories/ai" class="tag-badge">ai</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a>
 
 </div>
 
@@ -6965,7 +7505,7 @@ Multi-platform news aggregation and sentiment analysis engine — track trending
 
 Open-source platform for creating reliable, long-running background jobs and workflows — durable execution with TypeScript, automatic retries, and real-time observability
 
-<a href="/categories/workflow" class="tag-badge">workflow</a> <a href="/categories/automation" class="tag-badge">automation</a>
+<a href="/arcane-repo/categories/workflow.html" class="tag-badge">workflow</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a>
 
 </div>
 
@@ -6975,7 +7515,7 @@ Open-source platform for creating reliable, long-running background jobs and wor
 
 Self-hosted Trilium deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -6985,7 +7525,7 @@ Self-hosted Trilium deployment via Docker
 
 Comprehensive vulnerability, misconfiguration, and secrets scanner for containers, filesystems, and Git repositories — scan images, IaC, and Kubernetes manifests
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -6995,7 +7535,7 @@ Comprehensive vulnerability, misconfiguration, and secrets scanner for container
 
 Self-hosted Ttrss deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7005,7 +7545,7 @@ Self-hosted Ttrss deployment via Docker
 
 Self-hosted Tubearchivist deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7015,7 +7555,7 @@ Self-hosted Tubearchivist deployment via Docker
 
 Self-hosted Tunarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7025,7 +7565,7 @@ Self-hosted Tunarr deployment via Docker
 
 Self-hosted Tuwunel deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7035,7 +7575,7 @@ Self-hosted Tuwunel deployment via Docker
 
 Self-hosted Tvheadend deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7045,7 +7585,7 @@ Self-hosted Tvheadend deployment via Docker
 
 Self-hosted Twenty deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7055,7 +7595,7 @@ Self-hosted Twenty deployment via Docker
 
 AI-powered semantic search and RAG platform
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/search" class="tag-badge">search</a> <a href="/categories/rag" class="tag-badge">rag</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -7065,7 +7605,7 @@ AI-powered semantic search and RAG platform
 
 Self-hosted Typebot deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7075,7 +7615,7 @@ Self-hosted Typebot deployment via Docker
 
 Open-source, typo-tolerant search engine — blazing fast full-text search with typo correction, faceted filtering, geosearch, and instant response times under 50ms
 
-<a href="/categories/search" class="tag-badge">search</a> <a href="/categories/database" class="tag-badge">database</a> <a href="/categories/api" class="tag-badge">api</a>
+<a href="/arcane-repo/categories/search.html" class="tag-badge">search</a> <a href="/arcane-repo/categories/database.html" class="tag-badge">database</a> <a href="/arcane-repo/categories/api.html" class="tag-badge">api</a>
 
 </div>
 
@@ -7085,7 +7625,7 @@ Open-source, typo-tolerant search engine — blazing fast full-text search with 
 
 Self-hosted Ubooquity deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7095,7 +7635,7 @@ Self-hosted Ubooquity deployment via Docker
 
 Self-hosted Ubuntu deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7105,7 +7645,7 @@ Self-hosted Ubuntu deployment via Docker
 
 Fix Docker and UFW security flaw — automatically manages UFW firewall rules for Docker containers so published ports respect UFW policies instead of bypassing them via iptables
 
-<a href="/categories/security" class="tag-badge">security</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a>
 
 </div>
 
@@ -7115,7 +7655,7 @@ Fix Docker and UFW security flaw — automatically manages UFW firewall rules fo
 
 Self-hosted Umap deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7125,7 +7665,7 @@ Self-hosted Umap deployment via Docker
 
 Self-hosted Ums deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7135,7 +7675,7 @@ Self-hosted Ums deployment via Docker
 
 Lightweight container orchestration across Docker hosts with WireGuard mesh networking — bridge the gap between Docker and Kubernetes
 
-<a href="/categories/paas" class="tag-badge">paas</a> <a href="/categories/orchestration" class="tag-badge">orchestration</a>
+<a href="/arcane-repo/categories/paas.html" class="tag-badge">paas</a> <a href="/arcane-repo/categories/orchestration.html" class="tag-badge">orchestration</a>
 
 </div>
 
@@ -7145,7 +7685,7 @@ Lightweight container orchestration across Docker hosts with WireGuard mesh netw
 
 Self-hosted private torrent tracker built with Laravel, Livewire, and AlpineJS
 
-<a href="/categories/multi-service" class="tag-badge">multi-service</a> <a href="/categories/custom-build" class="tag-badge">custom-build</a> <a href="/categories/media" class="tag-badge">media</a>
+<a href="/arcane-repo/categories/multi-service.html" class="tag-badge">multi-service</a> <a href="/arcane-repo/categories/custom-build.html" class="tag-badge">custom-build</a> <a href="/arcane-repo/categories/media.html" class="tag-badge">media</a>
 
 </div>
 
@@ -7155,7 +7695,7 @@ Self-hosted private torrent tracker built with Laravel, Livewire, and AlpineJS
 
 Self-hosted Unmanic deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7165,7 +7705,7 @@ Self-hosted Unmanic deployment via Docker
 
 Self-hosted Upsnap deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7175,7 +7715,7 @@ Self-hosted Upsnap deployment via Docker
 
 Self-hosted monitoring tool for tracking uptime of websites, APIs, databases, and services with alerting
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7185,7 +7725,7 @@ Self-hosted monitoring tool for tracking uptime of websites, APIs, databases, an
 
 Self-hosted Usertour deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7195,7 +7735,17 @@ Self-hosted Usertour deployment via Docker
 
 Visual AI agent builder with drag-and-drop canvas
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/low-code" class="tag-badge">low-code</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/low-code.html" class="tag-badge">low-code</a>
+
+</div>
+
+<div class="template-card">
+
+### [Vault](/templates/vault)
+
+Vault — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/devops.html" class="tag-badge">devops</a> <a href="/arcane-repo/categories/infrastructure.html" class="tag-badge">infrastructure</a>
 
 </div>
 
@@ -7205,7 +7755,7 @@ Visual AI agent builder with drag-and-drop canvas
 
 Self-hosted Versitygw deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7215,7 +7765,7 @@ Self-hosted Versitygw deployment via Docker
 
 Self-hosted Vert deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7225,7 +7775,7 @@ Self-hosted Vert deployment via Docker
 
 Self-hosted Vikunja deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7235,7 +7785,7 @@ Self-hosted Vikunja deployment via Docker
 
 Self-hosted Virtualtabletop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7245,7 +7795,7 @@ Self-hosted Virtualtabletop deployment via Docker
 
 Self-hosted Viseron deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7255,7 +7805,7 @@ Self-hosted Viseron deployment via Docker
 
 AI voice synthesis and speech generation platform — create natural, expressive speech from text with voice cloning, emotion control, and multi-language support
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -7265,7 +7815,7 @@ AI voice synthesis and speech generation platform — create natural, expressive
 
 Multi-agent framework for autonomous AI workflows
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/agents" class="tag-badge">agents</a> <a href="/categories/workflow" class="tag-badge">workflow</a> <a href="/categories/automation" class="tag-badge">automation</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/agents.html" class="tag-badge">agents</a> <a href="/arcane-repo/categories/workflow.html" class="tag-badge">workflow</a> <a href="/arcane-repo/categories/automation.html" class="tag-badge">automation</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -7275,7 +7825,7 @@ Multi-agent framework for autonomous AI workflows
 
 Self-hosted Vouchervault deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7285,7 +7835,7 @@ Self-hosted Vouchervault deployment via Docker
 
 Self-hosted Vpnclient deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7295,7 +7845,7 @@ Self-hosted Vpnclient deployment via Docker
 
 Pre-built vulnerable environments collection — ~200 compose-based CVE labs for security training and exploit development
 
-<a href="/categories/security" class="tag-badge">security</a> <a href="/categories/non-serviceable" class="tag-badge">non-serviceable</a>
+<a href="/arcane-repo/categories/security.html" class="tag-badge">security</a> <a href="/arcane-repo/categories/non-serviceable.html" class="tag-badge">non-serviceable</a>
 
 </div>
 
@@ -7305,7 +7855,7 @@ Pre-built vulnerable environments collection — ~200 compose-based CVE labs for
 
 Self-hosted Vvveb deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7315,7 +7865,7 @@ Self-hosted Vvveb deployment via Docker
 
 Self-hosted Wallabag deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7325,7 +7875,7 @@ Self-hosted Wallabag deployment via Docker
 
 Self-hosted Wallos deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7335,7 +7885,7 @@ Self-hosted Wallos deployment via Docker
 
 Self-hosted Warpgate deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7345,7 +7895,7 @@ Self-hosted Warpgate deployment via Docker
 
 Self-hosted Warracker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7355,7 +7905,7 @@ Self-hosted Warracker deployment via Docker
 
 Self-hosted Watcharr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7365,7 +7915,7 @@ Self-hosted Watcharr deployment via Docker
 
 Self-hosted Watchdog deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7375,7 +7925,7 @@ Self-hosted Watchdog deployment via Docker
 
 Self-hosted Watchtower deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7385,7 +7935,7 @@ Self-hosted Watchtower deployment via Docker
 
 Self-hosted Watchyourlan deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7395,7 +7945,7 @@ Self-hosted Watchyourlan deployment via Docker
 
 Self-hosted Wavelog deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7405,7 +7955,7 @@ Self-hosted Wavelog deployment via Docker
 
 Open-source vector database — store, index, and search vector embeddings with built-in hybrid (vector + keyword) search, CRUD, and multi-tenancy
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/search" class="tag-badge">search</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/search.html" class="tag-badge">search</a>
 
 </div>
 
@@ -7415,7 +7965,7 @@ Open-source vector database — store, index, and search vector embeddings with 
 
 Self-hosted Webcheck deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7425,7 +7975,7 @@ Self-hosted Webcheck deployment via Docker
 
 Self-hosted Weblate deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7435,7 +7985,7 @@ Self-hosted Weblate deployment via Docker
 
 Self-hosted Webtop deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7445,7 +7995,7 @@ Self-hosted Webtop deployment via Docker
 
 Self-hosted Webtor deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7455,7 +8005,7 @@ Self-hosted Webtor deployment via Docker
 
 Self-hosted Webtrees deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7465,7 +8015,7 @@ Self-hosted Webtrees deployment via Docker
 
 Self-hosted Wekan deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7475,7 +8025,7 @@ Self-hosted Wekan deployment via Docker
 
 Open-source enterprise AI knowledge assistant by Tencent — deploy a private RAG-powered assistant with document analysis, multi-LLM support, and built-in agent skills
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/rag" class="tag-badge">rag</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/rag.html" class="tag-badge">rag</a>
 
 </div>
 
@@ -7485,7 +8035,7 @@ Open-source enterprise AI knowledge assistant by Tencent — deploy a private RA
 
 Self-hosted Wetty deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7495,7 +8045,7 @@ Self-hosted Wetty deployment via Docker
 
 Java Spring Boot distributed monitoring system — CPU, memory, disk, GPU, Docker, network, service API monitoring with web SSH and topology visualization
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a>
 
 </div>
 
@@ -7505,7 +8055,7 @@ Java Spring Boot distributed monitoring system — CPU, memory, disk, GPU, Docke
 
 Self-hosted What To Cook? deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
 
 </div>
 
@@ -7515,7 +8065,7 @@ Self-hosted What To Cook? deployment via Docker
 
 Self-hosted Whisparr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7525,7 +8075,7 @@ Self-hosted Whisparr deployment via Docker
 
 Self-hosted Whoogle Search deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7535,7 +8085,7 @@ Self-hosted Whoogle Search deployment via Docker
 
 Self-hosted Wiki Go deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7545,7 +8095,7 @@ Self-hosted Wiki Go deployment via Docker
 
 Self-hosted Wikidocs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7555,7 +8105,7 @@ Self-hosted Wikidocs deployment via Docker
 
 Self-hosted Wikijs deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7565,7 +8115,7 @@ Self-hosted Wikijs deployment via Docker
 
 Self-hosted Wikimore deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7575,7 +8125,7 @@ Self-hosted Wikimore deployment via Docker
 
 Self-hosted Wingfit deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7585,7 +8135,7 @@ Self-hosted Wingfit deployment via Docker
 
 Self-hosted Wireguard deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7595,7 +8145,7 @@ Self-hosted Wireguard deployment via Docker
 
 Self-hosted Wondercms deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7605,7 +8155,7 @@ Self-hosted Wondercms deployment via Docker
 
 Self-hosted Woodpecker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7615,7 +8165,7 @@ Self-hosted Woodpecker deployment via Docker
 
 Self-hosted Wordpress deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7625,7 +8175,7 @@ Self-hosted Wordpress deployment via Docker
 
 Self-hosted Workout Cool deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7635,7 +8185,7 @@ Self-hosted Workout Cool deployment via Docker
 
 Self-hosted Workout Tracker deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7645,7 +8195,7 @@ Self-hosted Workout Tracker deployment via Docker
 
 Real-time global monitoring and alerting system
 
-<a href="/categories/monitoring" class="tag-badge">monitoring</a> <a href="/categories/analytics" class="tag-badge">analytics</a>
+<a href="/arcane-repo/categories/monitoring.html" class="tag-badge">monitoring</a> <a href="/arcane-repo/categories/analytics.html" class="tag-badge">analytics</a>
 
 </div>
 
@@ -7655,7 +8205,7 @@ Real-time global monitoring and alerting system
 
 Self-hosted Writefreely deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7665,7 +8215,7 @@ Self-hosted Writefreely deployment via Docker
 
 Self-hosted Xbackbone deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7675,7 +8225,7 @@ Self-hosted Xbackbone deployment via Docker
 
 Xiaomi smart speaker music player with LLM integration — control your Xiaomi speaker with natural language music requests. Custom-build from hanxi/xiaomusic source
 
-<a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -7685,7 +8235,7 @@ Xiaomi smart speaker music player with LLM integration — control your Xiaomi s
 
 Self-hosted Xwiki deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/cms" class="tag-badge">cms</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/cms.html" class="tag-badge">cms</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7695,7 +8245,7 @@ Self-hosted Xwiki deployment via Docker
 
 Self-hosted Yacht deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7705,7 +8255,7 @@ Self-hosted Yacht deployment via Docker
 
 Self-hosted Yamtrack deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7715,7 +8265,7 @@ Self-hosted Yamtrack deployment via Docker
 
 Self-hosted Yarr deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7725,7 +8275,7 @@ Self-hosted Yarr deployment via Docker
 
 Self-hosted Yeetfile deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/storage" class="tag-badge">storage</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/storage.html" class="tag-badge">storage</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7735,7 +8285,7 @@ Self-hosted Yeetfile deployment via Docker
 
 Self-hosted Yellow deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7745,7 +8295,7 @@ Self-hosted Yellow deployment via Docker
 
 Self-hosted Your Spotify deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7755,7 +8305,7 @@ Self-hosted Your Spotify deployment via Docker
 
 Self-hosted Yourls deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7765,7 +8315,7 @@ Self-hosted Yourls deployment via Docker
 
 Self-hosted Youtubedl Material deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7775,7 +8325,7 @@ Self-hosted Youtubedl Material deployment via Docker
 
 Self-hosted Yucca deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7785,7 +8335,7 @@ Self-hosted Yucca deployment via Docker
 
 Multi-agent LLM conversation platform with modular agent architecture, knowledge base integration, and tool ecosystem
 
-<a href="/categories/ai" class="tag-badge">ai</a> <a href="/categories/llm" class="tag-badge">llm</a>
+<a href="/arcane-repo/categories/ai.html" class="tag-badge">ai</a> <a href="/arcane-repo/categories/llm.html" class="tag-badge">llm</a>
 
 </div>
 
@@ -7795,7 +8345,7 @@ Multi-agent LLM conversation platform with modular agent architecture, knowledge
 
 Self-hosted Zen deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7805,7 +8355,7 @@ Self-hosted Zen deployment via Docker
 
 Self-hosted Zigbee2Mqtt deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7815,7 +8365,17 @@ Self-hosted Zigbee2Mqtt deployment via Docker
 
 Self-hosted Ziit deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/awesome-selfhosted" class="tag-badge">awesome-selfhosted</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/awesome-selfhosted.html" class="tag-badge">awesome-selfhosted</a>
+
+</div>
+
+<div class="template-card">
+
+### [Zitadel](/templates/zitadel)
+
+Zitadel — self-hosted via Docker Compose
+
+<a href="/arcane-repo/categories/identity.html" class="tag-badge">identity</a> <a href="/arcane-repo/categories/authentication.html" class="tag-badge">authentication</a>
 
 </div>
 
@@ -7825,7 +8385,7 @@ Self-hosted Ziit deployment via Docker
 
 Self-hosted Znc deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7835,7 +8395,7 @@ Self-hosted Znc deployment via Docker
 
 Self-hosted Zoraxy deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/umbrel" class="tag-badge">umbrel</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/umbrel.html" class="tag-badge">umbrel</a>
 
 </div>
 
@@ -7845,7 +8405,7 @@ Self-hosted Zoraxy deployment via Docker
 
 Self-hosted Ztnet deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/portainer" class="tag-badge">portainer</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/portainer.html" class="tag-badge">portainer</a>
 
 </div>
 
@@ -7855,7 +8415,7 @@ Self-hosted Ztnet deployment via Docker
 
 Self-hosted Zusam deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 
@@ -7865,7 +8425,7 @@ Self-hosted Zusam deployment via Docker
 
 Self-hosted Zwave Js Ui deployment via Docker
 
-<a href="/categories/self-hosted" class="tag-badge">self-hosted</a> <a href="/categories/yunohost" class="tag-badge">yunohost</a>
+<a href="/arcane-repo/categories/self-hosted.html" class="tag-badge">self-hosted</a> <a href="/arcane-repo/categories/yunohost.html" class="tag-badge">yunohost</a>
 
 </div>
 </div>

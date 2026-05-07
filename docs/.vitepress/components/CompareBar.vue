@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRouter } from 'vitepress'
+import { useRouter, withBase } from 'vitepress'
 import type { TemplateData } from '../data/templates'
 
 defineOptions({ name: 'CompareBar' })
@@ -26,7 +26,7 @@ function getTemplateName(id: string): string {
 
 function goToCompare() {
   const ids = props.selectedIds.join(',')
-  router.go(`/compare?ids=${ids}`)
+  router.go(`/compare.html?ids=${ids}`)
 }
 
 function onRemove(id: string) {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute } from 'vitepress'
+import { ref, computed, onMounted } from 'vue'
+import { useRoute, withBase } from 'vitepress'
 import { marked } from 'marked'
 import {
   getTemplate,
@@ -61,7 +61,7 @@ function renderMd(md: string): string {
 }
 
 function templateDetailUrl(id: string): string {
-  return `/templates/${id}`
+  return withBase(`/templates/${id}.html`)
 }
 </script>
 
@@ -71,14 +71,14 @@ function templateDetailUrl(id: string): string {
     <p class="compare-empty__icon">📊</p>
     <p class="compare-empty__title">No templates selected</p>
     <p class="compare-empty__desc">Select 2–3 templates from the browse page to compare them side by side.</p>
-    <a href="/browse" class="compare-empty__link">Browse Templates →</a>
+    <a :href="withBase('/browse.html')" class="compare-empty__link">Browse Templates →</a>
   </div>
 
   <div v-else-if="selectedIds.length === 1" class="compare-empty">
     <p class="compare-empty__icon">📊</p>
     <p class="compare-empty__title">Select at least 2 templates</p>
     <p class="compare-empty__desc">You need at least 2 templates to compare. Go back and select one more.</p>
-    <a href="/browse" class="compare-empty__link">Browse Templates →</a>
+    <a :href="withBase('/browse.html')" class="compare-empty__link">Browse Templates →</a>
   </div>
 
   <div v-else class="compare-view">

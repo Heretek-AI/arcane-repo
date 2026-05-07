@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
-import { useRouter, useRoute } from 'vitepress'
+import { useRouter, useRoute, withBase } from 'vitepress'
 import { getAllTemplates } from '../data/templates'
 import type { TemplateData } from '../data/templates'
 import FilterBar from './FilterBar.vue'
@@ -181,7 +181,7 @@ function onPageChange(page: number) {
 
 <template>
   <div class="category-view" :class="{ 'category-view--has-compare': selectedForCompare.size > 0 }">
-    <a class="category-view__back" href="/browse">← Back to Browse</a>
+    <a class="category-view__back" :href="withBase('/browse.html')">← Back to Browse</a>
     <h1 class="category-view__title">{{ category }}</h1>
     <p class="category-view__subtitle">
       {{ categoryTemplates.length }} templates tagged with "{{ category }}".

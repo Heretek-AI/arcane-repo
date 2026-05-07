@@ -38,7 +38,7 @@ function escapeHtml(str) {
 
 function badgeHtml(tag) {
   const slug = tagSlug(tag);
-  return `<a href="/categories/${slug}" class="tag-badge">${escapeHtml(tag)}</a>`;
+  return `<a href="/arcane-repo/categories/${slug}.html" class="tag-badge">${escapeHtml(tag)}</a>`;
 }
 
 // Section name → camelCase key mapping (exact match and prefix match for variants)

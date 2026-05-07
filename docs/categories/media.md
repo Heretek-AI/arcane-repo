@@ -2,5 +2,5 @@
 layout: category
 category: media
 title: "media"
-description: "1 templates tagged with \"media\""
+description: "5 templates tagged with \"media\""
 ---

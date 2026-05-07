@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "exported_at": "2026-05-07T02:56:47.833Z",
+  "milestones": [
+    {
+      "id": "M001",
+      "title": "Fix All Failing Docker Builds",
+      "status": "active",
+      "depends_on": [],
+      "created_at": "2026-05-07T02:56:47.822Z",
+      "completed_at": null,
+      "vision": "All 37 Docker image build workflows in the arcane-repo GitHub Actions CI pass reliably. Every workflow builds its upstream project, installs dependencies via uv/npm, and pushes a working image to the container registry.",
+      "success_criteria": [
+        "All 37 Docker build workflows pass on GitHub Actions",
+        "Final CI run shows 37/37 green (or 32/32 if Sunshine is deferred with documented reason)",
+        "All workflow run IDs recorded in run log"
+      ],
+      "key_risks": [
+        {
+          "risk": "Sunshine upstream cmake compatibility",
+          "whyItMatters": "cmake interface changed in v2025.924.154138; if pinning to older tag also fails, Sunshine may need a full re-architect of the build script"
+        },
+        {
+          "risk": "UNIT3D OOM on frontend-builder stage",
+          "whyItMatters": "Vite asset compilation exhausts runner memory even with fallback; may need to skip frontend or reduce parallelism"
+        },
+        {
+          "risk": "Runner starvation on re-dispatch",
+          "whyItMatters": "6 workflows failed simultaneously in May 6 batch; re-dispatching all at once risks the same failure"
+        }
+      ],
+      "proof_strategy": [
+        {
+          "riskOrUnknown": "Sunshine upstream cmake compatibility",
+          "retireIn": "S01",
+          "whatWillBeProven": "Sunshine workflow run shows green status with cmake completing successfully"
+        },
+        {
+          "riskOrUnknown": "UNIT3D OOM on frontend-builder stage",
+          "retireIn": "S01",
+          "whatWillBeProven": "UNIT3D workflow completes without exit code 254"
+        },
+        {
+          "riskOrUnknown": "Runner starvation on re-dispatch",
+          "retireIn": "S01",
+          "whatWillBeProven": "All 6 re-dispatched workflows complete with green status"
+        }
+      ],
+      "verification_contract": "\"gh run list --workflow=docker-*.yml --status=success --json status,name,conclusion,databaseId | jq '.[] | select(.conclusion == \\\"success\\\")' — all 37 builds show \\\"success\\\" conclusion\"",
+      "verification_integration": "\"Workflows run in sequence or small batches; each workflow pushes a Docker image tag to GHCR\"",
+      "verification_operational": "\"None — CI-only, no live service\"",
+      "verification_uat": "",
+      "definition_of_done": [
+        "All 5 applied-fix builds (MemVid, Streamer-Sales, TrendRadar, UNIT3D, MLflow) confirmed green",
+        "Sunshine cmake fix applied and confirmed green (or deferred with written reason)",
+        "Runner-starved batch (6 workflows) re-dispatched and confirmed green",
+        "37/37 (or documented reason for any remaining failures)"
+      ],
+      "requirement_coverage": "\"Covers: R001, R002, R003, R004, R005, R006, R007\"",
+      "boundary_map_markdown": "\"### S01 → done\\nProduces:\\n- scripts/dockerfiles/*/Dockerfile — fixed build definitions\\n- .github/workflows/*.yml — verified working CI\\n\\nConsumes: nothing\"",
+      "sequence": 0
+    }
+  ],
+  "slices": [
+    {
+      "milestone_id": "M001",
+      "id": "S01",
+      "title": "Fix and verify all failing Docker builds",
+      "status": "pending",
+      "risk": "high",
+      "depends": [],
+      "demo": "All Docker image build workflows show green/pass status on GitHub Actions — including the previously broken builds and the runner-starved batch.",
+      "created_at": "2026-05-07T02:56:47.823Z",
+      "completed_at": null,
+      "full_summary_md": "",
+      "full_uat_md": "",
+      "goal": "Fix all 7 broken Docker builds: verify 5 applied fixes are green, fix Sunshine cmake compatibility, and re-dispatch runner-starved workflows.",
+      "success_criteria": "- MemVid, Streamer-Sales, TrendRadar, UNIT3D, MLflow all show GitHub Actions green status\n- Sunshine builds without cmake errors (upstream tag pinned or script patched)\n- AionUI, Harbor-LLM, KAG, WGCloud, Yuxi, CC Gateway re-dispatched and passing",
+      "proof_level": "GitHub Actions run URL with green status for each workflow",
+      "integration_closure": "Final GitHub Actions run for each project shows image pushed to registry",
+      "observability_impact": "GitHub Actions UI status indicators",
+      "sequence": 1,
+      "replan_triggered_at": null,
+      "is_sketch": 0,
+      "sketch_scope": ""
+    }
+  ],
+  "tasks": [],
+  "decisions": [],
+  "verification_evidence": []
+}

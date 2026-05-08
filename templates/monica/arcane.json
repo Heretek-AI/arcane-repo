@@ -1,7 +1,7 @@
 {
   "id": "monica",
   "name": "Monica",
-  "description": "Self-hosted Monica deployment via Docker",
+  "description": "Open-source personal relationship manager (PRM) for managing contacts",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,105 +1,134 @@
 # Backdrop
 
-Self-hosted Backdrop deployment via Docker
+Open-source CMS — Drupal fork for simplicity
 
-This template provides a containerized deployment of [Backdrop](backdrop) using Docker Compose.
+## Project Overview
 
-## Quick Start
-
-1. **Clone and configure:**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-2. **Start the service:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-3. **Verify it's running:**
-
-   ```bash
-   docker compose ps
-   curl -s http://localhost:8080/ | head -c 200
-   ```
-
-4. **Access the application:**
-
-   Open [http://localhost:8080](http://localhost:8080) in your browser.
+[Backdrop](https://github.com/backdrop/backdrop) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Backdrop in a containerized environment with persistent storage, health checks, and environment-based configuration.
 
 ## Architecture
 
-| Component | Image | Purpose |
-|-----------|-------|---------|
-| `backdrop` | docker.io/library/backdrop:latest | Main application service |
-| `backdrop_data` | (volume) | Persistent data storage |
+### Services
 
-Services communicate over a shared Docker network. Data is persisted in named volumes.
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `backdrop` | `docker.io/library/backdrop:latest` | Main application service |
 
-## Configuration
+### Volumes
 
-## Configuration
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `backdrop_data` | (varies) | Persistent data storage |
 
-Environment variables (set in `.env`):
+### Health Check
+
+The container runs a health check every 30s (3 retries, 30s start period). Docker will report the container as unhealthy if the endpoint fails consistently.
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
+
+## Quick Start
+
+### 1. Configure environment
+
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+### 2. Start the service
+
+```bash
+docker compose up -d
+```
+
+### 3. Verify it's running
+
+```bash
+docker compose ps
+curl -s http://localhost:8080/ | head -c 200
+```
+
+### 4. Access the application
+
+Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `BACKDROP_PORT` | `8080` | Configuration variable |
+| `BACKDROP_PORT` | `8080` | backdrop host port (default: 8080) |
 
 
 ## Troubleshooting
 
-**Container won't start:**
+### Container won't start
+
+Check the logs for error messages:
+
 ```bash
-docker compose logs backdrop
+docker compose logs
 ```
 
-**Port conflict:**
-Edit `.env` and change `BACKDROP_PORT` to an available port, then restart:
+### Port conflict
+
+If the default port 8080 is already in use, change it in `.env` and restart:
+
 ```bash
+# Edit .env and change to an available port
 docker compose down && docker compose up -d
 ```
 
-**Permission errors:**
-Ensure the Docker user has write access to the data volume:
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
 ```bash
-docker compose exec backdrop ls -la /data
+docker compose logs
 ```
 
-**Health check failing:**
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
 ```bash
-docker compose ps  # Check STATUS column
-docker inspect backdrop --format='{{json .State.Health}}'
+docker compose exec backdrop ls -la /data 2>/dev/null || echo "Volume directory not accessible"
 ```
 
 ## Backup & Recovery
 
-**Backup:**
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
 ```bash
-# Stop the service
 docker compose down
-
-# Backup the data volume
-docker run --rm -v backdrop_data:/data -v $(pwd):/backup alpine tar czf /backup/backdrop-backup-$(date +%Y%m%d).tar.gz /data
-
-# Restart
+docker run --rm -v backdrop_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/backdrop-backup-$(date +%Y%m%d).tar.gz -C /data .
 docker compose up -d
 ```
 
-**Restore:**
+### Recovery
+
 ```bash
 docker compose down
-docker run --rm -v backdrop_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/backdrop-backup.tar.gz -C /"
+docker run --rm -v backdrop_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/backdrop-backup-YYYYMMDD.tar.gz -C /data
 docker compose up -d
 ```
 
-## Links
+## Project Homepage
 
+- **Project site:** [Backdrop](https://github.com/backdrop/backdrop)
 - **Docker Image:** `docker.io/library/backdrop:latest`
-
+- **Issues:** [GitHub Issues](https://github.com/backdrop/backdrop/issues)
 
 ## Prerequisites
 

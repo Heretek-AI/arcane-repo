@@ -1,7 +1,7 @@
 {
   "id": "dokploy",
   "name": "Dokploy",
-  "description": "Open-source Platform as a Service — deploy and manage applications, databases, and services on your own infrastructure with a clean dashboard",
+  "description": "Self-hosted deployment platform for applications and databases",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "backdrop",
   "name": "Backdrop",
-  "description": "Self-hosted Backdrop deployment via Docker",
+  "description": "Open-source content management system — a fork of Drupal focused on simplicity and ease of use",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

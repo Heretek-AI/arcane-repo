@@ -1,7 +1,7 @@
 {
   "id": "znc",
   "name": "Znc",
-  "description": "Self-hosted Znc deployment via Docker",
+  "description": "IRC bouncer — stays connected to IRC networks and delivers messages when you reconnect",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

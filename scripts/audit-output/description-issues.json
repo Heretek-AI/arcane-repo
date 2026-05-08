@@ -1,6 +1,6 @@
 {
   "meta": {
-    "auditedAt": "2026-05-07T21:44:16.687Z",
+    "auditedAt": "2026-05-08T02:34:22.740Z",
     "totalTemplates": 842,
     "processed": 804,
     "skipped": 38
@@ -13,7 +13,7 @@
         {
           "category": "generic-description",
           "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted 2fauth deployment via Docker\""
+          "message": "Description matches generic pattern: \"2Fauth — self-hosted via Docker Compose\""
         }
       ]
     },
@@ -36,17 +36,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Admidio deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "adminer",
-      "name": "Adminer",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Adminer deployment via Docker\""
         }
       ]
     },
@@ -315,17 +304,6 @@
       ]
     },
     {
-      "templateId": "backdrop",
-      "name": "Backdrop",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Backdrop deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "backrest",
       "name": "Backrest",
       "issues": [
@@ -542,17 +520,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Budibase deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "caddy",
-      "name": "Caddy",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Caddy deployment via Docker\""
         }
       ]
     },
@@ -916,17 +883,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Coturn deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "couchdb",
-      "name": "Couchdb",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Couchdb deployment via Docker\""
         }
       ]
     },
@@ -1316,17 +1272,6 @@
       ]
     },
     {
-      "templateId": "drupal",
-      "name": "Drupal",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Drupal deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "dumbbudget",
       "name": "Dumbbudget",
       "issues": [
@@ -1422,17 +1367,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"easyappointments — self-hosted via Docker Compose\""
-        }
-      ]
-    },
-    {
-      "templateId": "elasticsearch",
-      "name": "Elasticsearch",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Elasticsearch deployment via Docker\""
         }
       ]
     },
@@ -1965,17 +1899,6 @@
       ]
     },
     {
-      "templateId": "friendica",
-      "name": "Friendica",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Friendica deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "frigate",
       "name": "Frigate",
       "issues": [
@@ -2104,17 +2027,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Geeftlist deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "ghost",
-      "name": "Ghost",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Ghost deployment via Docker\""
         }
       ]
     },
@@ -2269,17 +2181,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Gotosocial deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "grafana",
-      "name": "Grafana",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Grafana deployment via Docker\""
         }
       ]
     },
@@ -2775,17 +2676,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Jetlog deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "joomla",
-      "name": "Joomla",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Joomla deployment via Docker\""
         }
       ]
     },
@@ -3505,17 +3395,6 @@
       ]
     },
     {
-      "templateId": "matomo",
-      "name": "Matomo",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Matomo deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "matterbridge",
       "name": "Matterbridge",
       "issues": [
@@ -3545,17 +3424,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Mealie deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "mediawiki",
-      "name": "Mediawiki",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Mediawiki deployment via Docker\""
         }
       ]
     },
@@ -3659,17 +3527,6 @@
       ]
     },
     {
-      "templateId": "minio",
-      "name": "Minio",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Minio deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "minisatip",
       "name": "Minisatip",
       "issues": [
@@ -3754,17 +3611,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"mongo-express — self-hosted via Docker Compose\""
-        }
-      ]
-    },
-    {
-      "templateId": "monica",
-      "name": "Monica",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Monica deployment via Docker\""
         }
       ]
     },
@@ -3963,17 +3809,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Nexterm deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "nginx",
-      "name": "Nginx",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Nginx deployment via Docker\""
         }
       ]
     },
@@ -4583,17 +4418,6 @@
       ]
     },
     {
-      "templateId": "phpmyadmin",
-      "name": "Phpmyadmin",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Phpmyadmin deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "picsur",
       "name": "Picsur",
       "issues": [
@@ -4847,17 +4671,6 @@
       ]
     },
     {
-      "templateId": "prometheus",
-      "name": "Prometheus",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Prometheus deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "promptfoo",
       "name": "Promptfoo",
       "issues": [
@@ -5008,17 +4821,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Qui deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "rabbitmq",
-      "name": "Rabbitmq",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Rabbitmq deployment via Docker\""
         }
       ]
     },
@@ -5925,17 +5727,6 @@
       ]
     },
     {
-      "templateId": "teamspeak",
-      "name": "Teamspeak",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Teamspeak deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "telepresence",
       "name": "Telepresence",
       "issues": [
@@ -6207,17 +5998,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Ubooquity deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "ubuntu",
-      "name": "Ubuntu",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Ubuntu deployment via Docker\""
         }
       ]
     },
@@ -6640,17 +6420,6 @@
       ]
     },
     {
-      "templateId": "wordpress",
-      "name": "Wordpress",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Wordpress deployment via Docker\""
-        }
-      ]
-    },
-    {
       "templateId": "writefreely",
       "name": "Writefreely",
       "issues": [
@@ -6669,17 +6438,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Self-hosted Xbackbone deployment via Docker\""
-        }
-      ]
-    },
-    {
-      "templateId": "xwiki",
-      "name": "Xwiki",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Xwiki deployment via Docker\""
         }
       ]
     },
@@ -6801,17 +6559,6 @@
           "category": "generic-description",
           "severity": "medium",
           "message": "Description matches generic pattern: \"Zitadel — self-hosted via Docker Compose\""
-        }
-      ]
-    },
-    {
-      "templateId": "znc",
-      "name": "Znc",
-      "issues": [
-        {
-          "category": "generic-description",
-          "severity": "medium",
-          "message": "Description matches generic pattern: \"Self-hosted Znc deployment via Docker\""
         }
       ]
     },

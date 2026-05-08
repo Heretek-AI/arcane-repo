@@ -1,7 +1,7 @@
 {
   "id": "nginx",
   "name": "Nginx",
-  "description": "Self-hosted Nginx deployment via Docker",
+  "description": "High-performance HTTP server, reverse proxy, and load balancer",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

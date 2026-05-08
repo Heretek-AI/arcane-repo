@@ -1,123 +1,150 @@
-# DocsGPT — Documentation Q&A Platform
+# DocsGPT
 
-[DocsGPT](https://docsgpt.ai/) is an open-source platform that turns your documentation, codebase, and knowledge base into a natural-language Q&A system. Index your content and ask questions with LLM-powered answers and source citations.
+AI-powered documentation assistant
+
+## Project Overview
+
+[DocsGPT](https://github.com/arc53/DocsGPT) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run DocsGPT in a containerized environment with persistent storage, health checks, and environment-based configuration.
+
+## Architecture
+
+### Services
+
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `postgres` | `postgres:16` | Database storage |
+| `docsgpt` | `arc53/docsgpt:latest` | Main application service |
+
+### Volumes
+
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `docsgpt_postgres_data` | (varies) | Persistent data storage |
+
+### Health Check
+
+The container runs a health check every 10s (5 retries, 30s start period). Docker will report the container as unhealthy if the endpoint fails consistently.
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
 
 ## Quick Start
 
-1. **Copy and edit the environment file:**
-
-   ```bash
-   cp .env.example .env
-   # Set SECRET_KEY, DOCSGPT_DB_PASSWORD, and at least one LLM provider key
-   ```
-
-2. **Start the services:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-3. **Access the web UI:**
-
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-4. **Verify the API:**
-
-   ```bash
-   curl http://localhost:3000/api/health
-   ```
-
-   Expected response: `{"status":"ok"}` or similar health indication.
-
-## Configuration
-
-Copy `.env.example` to `.env` and edit:
-
-| Variable               | Default                               | Description                                     |
-|------------------------|---------------------------------------|-------------------------------------------------|
-| `SECRET_KEY`           | — **(required)**                      | Application secret key (generate with `openssl rand -hex 32`) |
-| `DOCSGPT_DB_PASSWORD`  | — **(required)**                      | PostgreSQL password                             |
-| `DOCSGPT_DB_USER`      | `docsgpt`                             | PostgreSQL user                                 |
-| `DOCSGPT_DB_NAME`      | `docsgpt`                             | PostgreSQL database name                        |
-| `DOCSGPT_PORT`         | `3000`                                | Host port for the web UI and API                |
-| `DOCSGPT_DB_PORT`      | `5432`                                | Host port for PostgreSQL                        |
-| `LLM_NAME`             | `gpt-4o`                              | LLM model to use for answering questions        |
-| `OPENAI_API_KEY`       | —                                     | OpenAI API key (required for OpenAI models)     |
-| `OLLAMA_BASE_URL`      | `http://host.docker.internal:11434`   | Local Ollama endpoint                           |
-| `EMBEDDINGS_NAME`      | —                                     | Override embedding model (optional)             |
-| `EMBEDDINGS_KEY`       | —                                     | Embedding API key (optional)                    |
-| `APP_ENV`              | `production`                          | Application environment                         |
-
-## API Endpoints
-
-| Endpoint                 | Method | Description                                |
-|--------------------------|--------|--------------------------------------------|
-| `/api/health`            | GET    | Health check                               |
-| `/api/train`             | POST   | Index documentation (train on new content) |
-| `/api/ask`               | POST   | Ask a question against indexed content     |
-| `/api/training-examples` | GET    | List indexed documents                     |
-| `/api/chat`              | POST   | Chat with context (conversation mode)      |
-
-### Ask a Question
+### 1. Configure environment
 
 ```bash
-curl -X POST http://localhost:3000/api/ask \
-  -H "Content-Type: application/json" \
-  -d '{
-    "question": "How do I install the CLI?",
-    "history": []
-  }'
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
-### Index Documentation
+### 2. Start the service
 
 ```bash
-curl -X POST http://localhost:3000/api/train \
-  -H "Content-Type: application/json" \
-  -d '{
-    "url": "https://docs.example.com/getting-started"
-  }'
+docker compose up -d
 ```
 
-## Health Check
+### 3. Verify it's running
 
 ```bash
-curl http://localhost:3000/api/health
+docker compose ps
+curl -s http://localhost:5432/ | head -c 200
 ```
 
-Expected response:
-```json
-{"status":"ok"}
-```
+### 4. Access the application
 
-## Managing DocsGPT
+Open [http://localhost:5432](http://localhost:5432) in your browser.
 
-**View logs:**
+## Configuration Reference
 
-```bash
-docker compose logs -f docsgpt
-```
+### Environment Variables
 
-**Re-index content:**
+Set these in your `.env` file (copy from `.env.example`):
 
-```bash
-curl -X POST http://localhost:3000/api/train \
-  -H "Content-Type: application/json" \
-  -d '{"url": "https://your-docs-site.com"}'
-```
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SECRET_KEY` | `change-me-to-a-random-64-char-hex-string` | Generate with: openssl rand -hex 32 |
+| `DOCSGPT_DB_PASSWORD` | `change-me-to-a-strong-password` | Database password (required) |
+| `DOCSGPT_PORT` | `3000` | DocsGPT application port (default: 3000) |
+| `DOCSGPT_DB_PORT` | `5432` | Host port for PostgreSQL (default: 5432) |
+| `DOCSGPT_DB_USER` | `docsgpt` | ── Database ─────────────────────────────────────────────────────── |
+| `DOCSGPT_DB_NAME` | `docsgpt` | DOCSGPT_DB_NAME configuration value |
+| `LLM_NAME` | `gpt-4o` | Primary LLM provider (e.g., gpt-4o, gpt-4-turbo) |
+| `OPENAI_API_KEY` | `—` | OpenAI API key (required for OpenAI models) |
+| `OLLAMA_BASE_URL` | `http://host.docker.internal:11434` | For local inference via Ollama |
+| `EMBEDDINGS_NAME` | `—` | Override default embedding provider if needed |
+| `EMBEDDINGS_KEY` | `—` | EMBEDDINGS_KEY configuration value |
+| `APP_ENV` | `production` | ── Application ──────────────────────────────────────────────────── |
 
-**Stop the services:**
-
-```bash
-docker compose down
-```
 
 ## Troubleshooting
 
-| Symptom                                    | Likely Cause                      | Fix                                                  |
-|--------------------------------------------|-----------------------------------|------------------------------------------------------|
-| `Connection refused` on port 3000          | Container still starting          | Wait and retry — first start can take 60s+           |
-| `401 Unauthorized` when asking questions   | No API key configured             | Set `OPENAI_API_KEY` in `.env`                       |
-| Answers are low quality                    | Wrong model or no RAG content     | Index documentation first, or change `LLM_NAME`      |
-| Database connection error                  | Wrong DB credentials              | Verify `DOCSGPT_DB_PASSWORD` matches between services|
-| Ollama returns 404                         | Model not pulled                  | Run `docker exec docsgpt ollama pull <model>`        |
+### Container won't start
+
+Check the logs for error messages:
+
+```bash
+docker compose logs
+```
+
+### Port conflict
+
+If the default port 5432 is already in use, change it in `.env` and restart:
+
+```bash
+# Edit .env and change to an available port
+docker compose down && docker compose up -d
+```
+
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
+```bash
+docker compose logs
+```
+
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
+```bash
+docker compose exec postgres ls -la /data 2>/dev/null || echo "Volume directory not accessible"
+```
+
+## Backup & Recovery
+
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
+```bash
+docker compose down
+docker run --rm -v docsgpt_postgres_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/docsgpt-backup-$(date +%Y%m%d).tar.gz -C /data .
+docker compose up -d
+```
+
+### Recovery
+
+```bash
+docker compose down
+docker run --rm -v docsgpt_postgres_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/docsgpt-backup-YYYYMMDD.tar.gz -C /data
+docker compose up -d
+```
+
+## Project Homepage
+
+- **Project site:** [DocsGPT](https://github.com/arc53/DocsGPT)
+- **Docker Image:** `postgres:16`
+- **Issues:** [GitHub Issues](https://github.com/arc53/DocsGPT/issues)
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

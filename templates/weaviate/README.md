@@ -1,144 +1,138 @@
-# Weaviate — Vector Database
+# Weaviate
 
-[Weaviate](https://weaviate.io) is an open-source vector database that stores both objects and vector embeddings, enabling hybrid search (vector + keyword), similarity search, and generative AI retrieval-augmented generation (RAG) pipelines. This template runs a single Weaviate node with persistent storage and module support for popular embedding providers.
+AI-native vector database
+
+## Project Overview
+
+[Weaviate](https://github.com/weaviate/weaviate) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Weaviate in a containerized environment with persistent storage, health checks, and environment-based configuration.
+
+## Architecture
+
+### Services
+
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `weaviate` | `semitechnologies/weaviate:latest` | Main application service |
+
+### Volumes
+
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `weaviate_data` | (varies) | Persistent data storage |
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
 
 ## Quick Start
 
-1. **Start the server:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-2. **Verify it's running:**
-
-   ```bash
-   curl http://localhost:8080/v1/.well-known/ready
-   ```
-
-   Expected response: `{"ready": true}`
-
-3. **Create a class (collection) with auto-generated vectors:**
-
-   ```bash
-   curl -X POST http://localhost:8080/v1/schema \
-     -H "Content-Type: application/json" \
-     -d '{
-       "class": "Document",
-       "description": "A text document",
-       "properties": [
-         {"name": "content", "dataType": ["text"], "description": "The document content"}
-       ]
-     }'
-   ```
-
-4. **Insert an object:**
-
-   ```bash
-   curl -X POST http://localhost:8080/v1/objects \
-     -H "Content-Type: application/json" \
-     -d '{
-       "class": "Document",
-       "properties": {
-         "content": "Weaviate is an open-source vector database."
-       }
-     }'
-   ```
-
-5. **Search with a vector query:**
-
-   ```bash
-   curl -X POST http://localhost:8080/v1/graphql \
-     -H "Content-Type: application/json" \
-     -d '{
-       "query": "{
-         Get {
-           Document(nearText: {concepts: [\"vector database\"]}) {
-             content
-           }
-         }
-       }"
-     }'
-   ```
-
-## Configuration
-
-Copy `.env.example` to `.env` and edit:
-
-| Variable                                 | Default     | Description                                            |
-|------------------------------------------|-------------|--------------------------------------------------------|
-| `WEAVIATE_PORT`                          | `8080`      | Host port for the Weaviate API                         |
-| `AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED`| `true`      | Allow unauthenticated access                           |
-| `CLUSTER_HOSTNAME`                       | `weaviate-node-0` | Node name for multi-node deployments            |
-| `DEFAULT_VECTORIZER_MODULE`              | `none`      | Default vectorizer (set to a module for auto-vectorization) |
-
-### Vectorizer Modules
-
-Weaviate supports pluggable vectorizer modules that auto-generate embeddings during import. To enable a specific vectorizer, set `DEFAULT_VECTORIZER_MODULE` and ensure the corresponding API key is available:
-
-| Module                           | API Key Env Var                                                   |
-|----------------------------------|-------------------------------------------------------------------|
-| `text2vec-openai`                | `OPENAI_APIKEY`                                                   |
-| `text2vec-cohere`                | `COHERE_APIKEY`                                                   |
-| `text2vec-huggingface`           | `HUGGINGFACE_APIKEY`                                              |
-| `text2vec-ollama`                | None (local, but Ollama must be reachable at `OLLAMA_HOST`)       |
-
-Without a vectorizer module, you must provide your own embeddings when inserting objects (e.g., from an external embedding API).
-
-## API Endpoints
-
-Weaviate exposes a REST API and a GraphQL API on port 8080:
-
-| Endpoint                          | Method | Description                                    |
-|-----------------------------------|--------|------------------------------------------------|
-| `/v1/.well-known/ready`           | GET    | Readiness check                                |
-| `/v1/.well-known/live`            | GET    | Liveness check                                 |
-| `/v1/schema`                      | GET    | List all classes                               |
-| `/v1/schema`                      | POST   | Create a class                                 |
-| `/v1/objects`                     | GET    | List objects                                   |
-| `/v1/objects`                     | POST   | Create an object                               |
-| `/v1/graphql`                     | POST   | GraphQL query (Get, Aggregate, Explore)        |
-| `/v1/classification`              | POST   | Start a classification                         |
-| `/v1/meta`                        | GET    | Weaviate version and configuration metadata    |
-
-## Health Check
+### 1. Configure environment
 
 ```bash
-curl http://localhost:8080/v1/.well-known/ready
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
-A ready node returns:
-```json
-{"ready": true}
-```
-
-## Managing Weaviate
-
-**View logs:**
+### 2. Start the service
 
 ```bash
-docker compose logs -f weaviate
+docker compose up -d
 ```
 
-**Import data from a file (using the REST API):**
+### 3. Verify it's running
 
 ```bash
-curl -X POST http://localhost:8080/v1/batch/objects \
-  -H "Content-Type: application/json" \
-  -d '{"objects": [{"class": "Document", "properties": {"content": "First document"}}, {"class": "Document", "properties": {"content": "Second document"}}]}'
+docker compose ps
+curl -s http://localhost:8080/ | head -c 200
 ```
 
-**Check Weaviate version:**
+### 4. Access the application
 
-```bash
-curl http://localhost:8080/v1/meta
-```
+Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `WEAVIATE_PORT` | `8080` | Host port to expose the Weaviate API on (default: 8080) |
+| `AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED` | `true` | Set to false and configure an API key or OIDC for production |
+| `CLUSTER_HOSTNAME` | `weaviate-node-0` | Cluster hostname for multi-node setups (default: weaviate-node-0) |
+| `DEFAULT_VECTORIZER_MODULE` | `none` | Options: text2vec-cohere, text2vec-huggingface, text2vec-openai, text2vec-ollama, none |
+| `ENABLE_MODULES` | `text2vec-cohere,text2vec-huggingface,text2vec-openai,text2vec-ollama,generative-openai,generative-cohere,generative-ollama,qna-openai` | Comma-separated list of vectorizer and generative modules to enable. |
+
 
 ## Troubleshooting
 
-| Symptom                                               | Likely Cause                            | Fix                                                  |
-|-------------------------------------------------------|-----------------------------------------|------------------------------------------------------|
-| Connection refused on port 8080                       | Container still starting                 | Wait a few seconds and retry                         |
-| `{"error":[{"message":"no module with name ..."}]}`   | Vectorizer module not enabled            | Set `ENABLE_MODULES` env var with the module name    |
-| 401 Unauthorized                                      | Anonymous access disabled but no key set | Set `AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true` or configure an API key |
-| Objects inserted but search returns no results        | No vectorizer and no vectors provided    | Either enable a vectorizer module or supply vectors manually |
+### Container won't start
+
+Check the logs for error messages:
+
+```bash
+docker compose logs
+```
+
+### Port conflict
+
+If the default port 8080 is already in use, change it in `.env` and restart:
+
+```bash
+# Edit .env and change to an available port
+docker compose down && docker compose up -d
+```
+
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
+```bash
+docker compose logs
+```
+
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
+```bash
+docker compose exec weaviate ls -la /data 2>/dev/null || echo "Volume directory not accessible"
+```
+
+## Backup & Recovery
+
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
+```bash
+docker compose down
+docker run --rm -v weaviate_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/weaviate-backup-$(date +%Y%m%d).tar.gz -C /data .
+docker compose up -d
+```
+
+### Recovery
+
+```bash
+docker compose down
+docker run --rm -v weaviate_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/weaviate-backup-YYYYMMDD.tar.gz -C /data
+docker compose up -d
+```
+
+## Project Homepage
+
+- **Project site:** [Weaviate](https://github.com/weaviate/weaviate)
+- **Docker Image:** `semitechnologies/weaviate:latest`
+- **Issues:** [GitHub Issues](https://github.com/weaviate/weaviate/issues)
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

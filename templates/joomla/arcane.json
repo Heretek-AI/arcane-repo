@@ -1,7 +1,7 @@
 {
   "id": "joomla",
   "name": "Joomla",
-  "description": "Self-hosted Joomla deployment via Docker",
+  "description": "Award-winning open-source content management system for building websites",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

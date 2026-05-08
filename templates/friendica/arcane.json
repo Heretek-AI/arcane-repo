@@ -1,7 +1,7 @@
 {
   "id": "friendica",
   "name": "Friendica",
-  "description": "Self-hosted Friendica deployment via Docker",
+  "description": "Decentralized social networking platform in the Fediverse ecosystem",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -44,6 +44,7 @@ function badgeHtml(tag) {
 // Section name → camelCase key mapping (exact match and prefix match for variants)
 const SECTION_MAP = {
   'Project Overview': 'projectOverview',
+  'Project Homepage': 'upstream',
   'Architecture': 'architecture',
   'Quick Start': 'quickStart',
   'Configuration': 'configuration',

@@ -1,7 +1,7 @@
 {
   "id": "adminer",
   "name": "Adminer",
-  "description": "Self-hosted Adminer deployment via Docker",
+  "description": "Lightweight web-based database management tool (MySQL, PostgreSQL, SQLite, and more)",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "caddy",
   "name": "Caddy",
-  "description": "Self-hosted Caddy deployment via Docker",
+  "description": "Modern, automatic-HTTPS web server with a focus on simplicity and security",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

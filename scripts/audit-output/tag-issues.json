@@ -1,288 +1,11 @@
 {
   "meta": {
-    "auditedAt": "2026-05-07T21:44:16.687Z",
+    "auditedAt": "2026-05-08T02:34:22.740Z",
     "totalTemplates": 842,
     "processed": 804,
     "skipped": 38
   },
   "data": [
-    {
-      "templateId": "chatwoot",
-      "name": "Chatwoot",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"multi-service\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "cog",
-      "name": "Cog",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "docker-ipsec-vpn",
-      "name": "Docker IPSec VPN Server",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "grype",
-      "name": "Grype",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "insforge",
-      "name": "InsForge",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "joern",
-      "name": "Joern",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "matrix-server",
-      "name": "Matrix Server",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"chat\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "mirotalksfu",
-      "name": "MiroTalk SFU",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"chat\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "mlflow",
-      "name": "MLflow",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "nginx-ui",
-      "name": "Nginx UI",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"devops\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "ory-hydra",
-      "name": "Ory Hydra — OAuth 2.0 & OpenID Connect Provider",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "redink",
-      "name": "RedInk",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "sftpgo",
-      "name": "SFTPGo",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"storage\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "streamer-sales",
-      "name": "Streamer Sales",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "suna",
-      "name": "Suna",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "test-app",
-      "name": "Test Application",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"reference\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "tpotce",
-      "name": "T-Pot — All-in-One Multi Honeypot Platform",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "trendradar",
-      "name": "TrendRadar",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"ai\". Consider adding more descriptive tags."
-        },
-        {
-          "category": "short-tag",
-          "severity": "low",
-          "message": "Tag \"ai\" is very short"
-        }
-      ]
-    },
-    {
-      "templateId": "trivy",
-      "name": "Trivy",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "ufw-docker",
-      "name": "UFW Docker",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"security\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "wgcloud",
-      "name": "WGCloud",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"monitoring\". Consider adding more descriptive tags."
-        }
-      ]
-    },
-    {
-      "templateId": "xiaomusic",
-      "name": "Xiaomusic",
-      "issues": [
-        {
-          "category": "single-tag",
-          "severity": "medium",
-          "message": "Only 1 tag: \"llm\". Consider adding more descriptive tags."
-        }
-      ]
-    },
     {
       "templateId": "agent-zero",
       "name": "Agent Zero",
@@ -396,6 +119,17 @@
     {
       "templateId": "clawith",
       "name": "Clawith",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
+      "templateId": "cog",
+      "name": "Cog",
       "issues": [
         {
           "category": "short-tag",
@@ -603,6 +337,17 @@
       ]
     },
     {
+      "templateId": "insforge",
+      "name": "InsForge",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
       "templateId": "joomla",
       "name": "Joomla",
       "issues": [
@@ -781,6 +526,17 @@
     {
       "templateId": "mindsdb",
       "name": "MindsDB",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
+      "templateId": "mlflow",
+      "name": "MLflow",
       "issues": [
         {
           "category": "short-tag",
@@ -977,6 +733,17 @@
       ]
     },
     {
+      "templateId": "redink",
+      "name": "RedInk",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
       "templateId": "rowboat",
       "name": "Rowboat",
       "issues": [
@@ -1001,6 +768,28 @@
     {
       "templateId": "solacemesh",
       "name": "Solace Agent Mesh",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
+      "templateId": "streamer-sales",
+      "name": "Streamer Sales",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
+      "templateId": "suna",
+      "name": "Suna",
       "issues": [
         {
           "category": "short-tag",
@@ -1065,6 +854,17 @@
       ]
     },
     {
+      "templateId": "trendradar",
+      "name": "TrendRadar",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
       "templateId": "vane",
       "name": "Vane",
       "issues": [
@@ -1089,6 +889,17 @@
     {
       "templateId": "weknora",
       "name": "WeKnora (Tencent AI Assistant)",
+      "issues": [
+        {
+          "category": "short-tag",
+          "severity": "low",
+          "message": "Tag \"ai\" is very short"
+        }
+      ]
+    },
+    {
+      "templateId": "xiaomusic",
+      "name": "Xiaomusic",
       "issues": [
         {
           "category": "short-tag",

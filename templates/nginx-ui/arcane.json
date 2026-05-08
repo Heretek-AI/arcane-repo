@@ -5,7 +5,9 @@
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [
-    "devops"
+    "devops",
+    "proxy",
+    "web"
   ],
   "upstream": {
     "repo": "0xJacky/nginx-ui",

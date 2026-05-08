@@ -1,137 +1,144 @@
-# Databend — Cloud Data Warehouse
+# Databend
 
-[Databend](https://databend.com) is an open-source cloud data warehouse. It provides fast, elastic SQL analytics on object storage with MySQL wire-compatible protocol, real-time columnar performance, and instant scaling.
+Cloud-native data warehouse
+
+## Project Overview
+
+[Databend](https://github.com/databendlabs/databend) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Databend in a containerized environment with persistent storage, health checks, and environment-based configuration.
+
+## Architecture
+
+### Services
+
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `databend` | `datafuselabs/databend:latest` | Main application service |
+
+### Volumes
+
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `databend_data` | (varies) | Persistent data storage |
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
 
 ## Quick Start
 
-1. **Start the server:**
-
-   ```bash
-   cp .env.example .env
-   docker compose up -d
-   ```
-
-2. **Connect using the MySQL client:**
-
-   ```bash
-   mysql -h 127.0.0.1 -P 8000 -u root
-   ```
-
-3. **Run a query:**
-
-   ```sql
-   SELECT 'Hello, Databend!' AS greeting;
-   ```
-
-4. **Create a table and insert data:**
-
-   ```sql
-   CREATE TABLE IF NOT EXISTS books (
-       id INT,
-       title VARCHAR,
-       author VARCHAR,
-       year INT
-   );
-
-   INSERT INTO books VALUES
-       (1, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925),
-       (2, 'To Kill a Mockingbird', 'Harper Lee', 1960);
-
-   SELECT * FROM books WHERE year > 1950;
-   ```
-
-5. **Use the HTTP handler (REST API):**
-
-   ```bash
-   curl -X POST http://localhost:8124/v1/query \
-     -H "Content-Type: application/json" \
-     -d '{"sql": "SELECT * FROM books"}'
-   ```
-
-## Configuration
-
-Copy `.env.example` to `.env` and edit:
-
-### Optional Variables
-
-| Variable                | Default  | Description                                                   |
-|-------------------------|----------|---------------------------------------------------------------|
-| `DATABEND_PORT`         | `8000`   | MySQL wire protocol port                                      |
-| `DATABEND_HTTP_PORT`    | `8124`   | HTTP handler (REST query) port                                |
-| `DATABEND_MINIO_PORT`   | `9000`   | Embedded MinIO port (when MINIO_ENABLED=true)                 |
-| `QUERY_DEFAULT_USER`    | `root`   | Default SQL user                                              |
-| `QUERY_DEFAULT_PASSWORD`| (empty)  | Default SQL password                                          |
-| `QUERY_STORAGE_TYPE`    | `fs`     | Storage backend: `fs` (local) or `s3`                         |
-| `MINIO_ENABLED`         | `false`  | Enable built-in MinIO for local S3-compatible object storage  |
-
-## API Endpoints
-
-Databend exposes both MySQL-compatible and REST interfaces:
-
-| Interface     | Port  | Protocol        | Description                        |
-|---------------|-------|-----------------|------------------------------------|
-| MySQL Handler | 8000  | MySQL wire      | Connect with any MySQL client      |
-| HTTP Handler  | 8124  | HTTP REST       | SQL queries via JSON API           |
-| MinIO (opt)   | 9000  | S3-compatible   | Built-in object storage (MinIO)    |
-
-### REST API Example
+### 1. Configure environment
 
 ```bash
-curl -X POST http://localhost:8124/v1/query \
-  -H "Content-Type: application/json" \
-  -d '{"sql": "SELECT database(), version()"}'
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
-## Health Check
-
-**MySQL handler health:**
+### 2. Start the service
 
 ```bash
-mysql -h 127.0.0.1 -P 8000 -u root -e "SELECT 1"
-```
-
-**HTTP handler health:**
-
-```bash
-curl -s -X POST http://localhost:8124/v1/query \
-  -H "Content-Type: application/json" \
-  -d '{"sql": "SELECT 1"}' | grep -q "1" && echo "healthy"
-```
-
-A healthy server responds with query results on either interface.
-
-## Managing Databend
-
-**View logs:**
-
-```bash
-docker compose logs -f databend
-```
-
-**Access the Meta service (embedded):**
-
-Databend's all-in-one image includes both the query layer and an embedded meta service. For production, consider deploying separate `databend-query` and `databend-meta` containers with a shared MinIO/S3 backend.
-
-**Reset data:**
-
-```bash
-docker compose down -v
 docker compose up -d
 ```
 
-**Bulk load CSV data:**
+### 3. Verify it's running
 
 ```bash
-curl -X PUT http://localhost:8000/v1/streaming_load \
-  -H "insert_sql: INSERT INTO books FILE_FORMAT = (type = CSV)" \
-  -F "upload=@/path/to/books.csv"
+docker compose ps
+curl -s http://localhost:8000/ | head -c 200
 ```
+
+### 4. Access the application
+
+Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DATABEND_PORT` | `8000` | mysql -h 127.0.0.1 -P 8000 -u root |
+| `DATABEND_HTTP_PORT` | `8124` | HTTP handler port for REST API queries (default: 8124) |
+| `QUERY_DEFAULT_USER` | `root` | Query user credentials (default: root with no password) |
+| `QUERY_DEFAULT_PASSWORD` | `—` | QUERY_DEFAULT_PASSWORD configuration value |
+| `QUERY_STORAGE_TYPE` | `fs` | Storage backend: 'fs' (local filesystem) or 's3' |
+| `AWS_S3_ENDPOINT` | `https://s3.amazonaws.com` | Set QUERY_STORAGE_TYPE=s3 and configure: |
+| `AWS_S3_BUCKET` | `my-databend-bucket` | AWS_S3_BUCKET configuration value |
+| `AWS_ACCESS_KEY_ID` | `your-access-key` | AWS_ACCESS_KEY_ID configuration value |
+| `AWS_SECRET_ACCESS_KEY` | `your-secret-key` | AWS_SECRET_ACCESS_KEY configuration value |
+| `MINIO_ENABLED` | `false` | container for local object storage testing. MinIO available on port 9000. |
+| `DATABEND_MINIO_PORT` | `9000` | Host port for embedded MinIO S3-compatible API (default: 9000) |
+
 
 ## Troubleshooting
 
-| Symptom                                             | Likely Cause                     | Fix                                                      |
-|-----------------------------------------------------|----------------------------------|----------------------------------------------------------|
-| `ERROR 2013 (HY000): Lost connection`               | Server not ready                 | Wait a few seconds and retry                             |
-| `Access denied for user`                            | Wrong credentials                | Verify `QUERY_DEFAULT_USER` and `QUERY_DEFAULT_PASSWORD` |
-| Query returns no results                            | Table or database doesn't exist  | Create the database first with `CREATE DATABASE`         |
-| `No handler for protocol`                           | Wrong port                       | Use port 8000 (MySQL) or 8124 (HTTP)                     |
+### Container won't start
+
+Check the logs for error messages:
+
+```bash
+docker compose logs
+```
+
+### Port conflict
+
+If the default port 8000 is already in use, change it in `.env` and restart:
+
+```bash
+# Edit .env and change to an available port
+docker compose down && docker compose up -d
+```
+
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
+```bash
+docker compose logs
+```
+
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
+```bash
+docker compose exec databend ls -la /data 2>/dev/null || echo "Volume directory not accessible"
+```
+
+## Backup & Recovery
+
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
+```bash
+docker compose down
+docker run --rm -v databend_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/databend-backup-$(date +%Y%m%d).tar.gz -C /data .
+docker compose up -d
+```
+
+### Recovery
+
+```bash
+docker compose down
+docker run --rm -v databend_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/databend-backup-YYYYMMDD.tar.gz -C /data
+docker compose up -d
+```
+
+## Project Homepage
+
+- **Project site:** [Databend](https://github.com/databendlabs/databend)
+- **Docker Image:** `datafuselabs/databend:latest`
+- **Issues:** [GitHub Issues](https://github.com/databendlabs/databend/issues)
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

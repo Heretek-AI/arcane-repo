@@ -1,7 +1,7 @@
 {
   "id": "2fauth",
   "name": "2Fauth",
-  "description": "Self-hosted 2fauth deployment via Docker",
+  "description": "2Fauth — self-hosted via Docker Compose",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

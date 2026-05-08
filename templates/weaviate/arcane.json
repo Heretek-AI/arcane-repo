@@ -1,7 +1,7 @@
 {
   "id": "weaviate",
   "name": "Weaviate",
-  "description": "Open-source vector database — store, index, and search vector embeddings with built-in hybrid (vector + keyword) search, CRUD, and multi-tenancy",
+  "description": "Open-source vector database for AI-powered semantic search applications",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

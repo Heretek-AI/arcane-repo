@@ -1,7 +1,7 @@
 {
   "id": "ghost",
   "name": "Ghost",
-  "description": "Self-hosted Ghost deployment via Docker",
+  "description": "Modern publishing platform for newsletters, blogs, and membership sites",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

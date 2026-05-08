@@ -1,7 +1,7 @@
 {
   "id": "ubuntu",
   "name": "Ubuntu",
-  "description": "Self-hosted Ubuntu deployment via Docker",
+  "description": "Ubuntu Linux container — base operating system for development and testing",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

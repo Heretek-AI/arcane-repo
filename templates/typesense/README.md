@@ -1,154 +1,136 @@
-# TypeSense — Typo-Tolerant Search Engine
+# TypeSense
 
-[TypeSense](https://typesense.org) is an open-source, typo-tolerant search engine. It delivers instant (<50ms) search results with typo correction, faceted filtering, geosearch, vector search, and automatic ranking — all with a simple REST API. Think of it as an open-source alternative to Algolia with a fraction of the infrastructure cost.
+Typo-tolerant search engine
+
+## Project Overview
+
+[TypeSense](https://github.com/typesense/typesense) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run TypeSense in a containerized environment with persistent storage, health checks, and environment-based configuration.
+
+## Architecture
+
+### Services
+
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `typesense` | `typesense/typesense:latest` | Main application service |
+
+### Volumes
+
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `typesense_data` | (varies) | Persistent data storage |
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
 
 ## Quick Start
 
-1. **Set your API key and start the server:**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env — set TYPESENSE_API_KEY to a strong random string
-   docker compose up -d
-   ```
-
-2. **Verify the server is running:**
-
-   ```bash
-   curl -X GET http://localhost:8108/health \
-     -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}"
-   ```
-
-   Expected response: `{"ok": true}`
-
-3. **Create a collection (index):**
-
-   ```bash
-   curl -X POST http://localhost:8108/collections \
-     -H "Content-Type: application/json" \
-     -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}" \
-     -d '{
-       "name": "books",
-       "fields": [
-         {"name": "title", "type": "string"},
-         {"name": "author", "type": "string"},
-         {"name": "year", "type": "int32"},
-         {"name": "rating", "type": "float"}
-       ],
-       "default_sorting_field": "year"
-     }'
-   ```
-
-4. **Index some documents:**
-
-   ```bash
-   curl -X POST http://localhost:8108/collections/books/documents \
-     -H "Content-Type: application/json" \
-     -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}" \
-     -d '{
-       "title": "The Great Gatsby",
-       "author": "F. Scott Fitzgerald",
-       "year": 1925,
-       "rating": 4.5
-     }'
-   ```
-
-5. **Search with typo tolerance:**
-
-   ```bash
-   curl "http://localhost:8108/collections/books/documents/search?q=gatsby&query_by=title&per_page=5" \
-     -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}"
-   ```
-
-   Try a deliberate typo — `gastsby` — and TypeSense will still find "The Great Gatsby".
-
-## Configuration
-
-Copy `.env.example` to `.env` and edit:
-
-### Mandatory Variables
-
-| Variable             | Description                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| `TYPESENSE_API_KEY`  | API key authenticating all requests. Generate with `openssl rand -hex 32`.  |
-
-### Optional Variables
-
-| Variable               | Default | Description                                  |
-|------------------------|---------|----------------------------------------------|
-| `TYPESENSE_PORT`       | `8108`  | Host port for the TypeSense API              |
-| `TYPESENSE_ENABLE_CORS`| `true`  | Allow browser-based requests                 |
-
-## API Endpoints
-
-TypeSense exposes a REST API on port 8108:
-
-| Endpoint                                    | Method | Description                          |
-|---------------------------------------------|--------|--------------------------------------|
-| `/health`                                   | GET    | Health check                         |
-| `/collections`                              | GET    | List all collections                 |
-| `/collections`                              | POST   | Create a collection                  |
-| `/collections/:name`                        | GET    | Retrieve a collection                |
-| `/collections/:name`                        | DELETE | Drop a collection                    |
-| `/collections/:name/documents`              | POST   | Index a document                     |
-| `/collections/:name/documents/search`       | GET    | Search documents                     |
-| `/collections/:name/documents/:id`          | GET    | Retrieve a document                  |
-| `/collections/:name/documents/:id`          | DELETE | Delete a document                    |
-| `/collections/:name/documents/export`       | GET    | Export all documents as JSON lines   |
-| `/collections/:name/documents/import`       | POST   | Bulk import documents (JSON lines)   |
-| `/multi_search`                             | POST   | Search multiple collections at once  |
-
-Full API reference: [typesense.org/docs/latest/api](https://typesense.org/docs/latest/api/)
-
-## Health Check
+### 1. Configure environment
 
 ```bash
-curl -X GET http://localhost:8108/health \
-  -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}"
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
-A healthy server returns:
-```json
-{"ok": true}
-```
-
-## Managing TypeSense
-
-**View logs:**
+### 2. Start the service
 
 ```bash
-docker compose logs -f typesense
+docker compose up -d
 ```
 
-**Bulk import from a JSONL file:**
+### 3. Verify it's running
 
 ```bash
-curl -X POST http://localhost:8108/collections/books/documents/import \
-  -H "Content-Type: text/plain" \
-  -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}" \
-  --data-binary @books.jsonl
+docker compose ps
+curl -s http://localhost:8108/ | head -c 200
 ```
 
-**Export all documents:**
+### 4. Access the application
 
-```bash
-curl http://localhost:8108/collections/books/documents/export \
-  -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}" > books-export.jsonl
-```
+Open [http://localhost:8108](http://localhost:8108) in your browser.
 
-**Check collection statistics:**
+## Configuration Reference
 
-```bash
-curl http://localhost:8108/collections/books \
-  -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY:-your-api-key}"
-```
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `TYPESENSE_API_KEY` | `change-me-to-a-random-64-char-hex-string` | openssl rand -hex 32 |
+| `TYPESENSE_PORT` | `8108` | Host port to expose the TypeSense API on (default: 8108) |
+| `TYPESENSE_ENABLE_CORS` | `true` | Enable CORS headers for browser-based requests (default: true) |
+
 
 ## Troubleshooting
 
-| Symptom                                               | Likely Cause                        | Fix                                                 |
-|-------------------------------------------------------|-------------------------------------|-----------------------------------------------------|
-| `401 Unauthorized`                                    | Missing or incorrect API key        | Verify `TYPESENSE_API_KEY` in `.env` matches the header value |
-| `{"ok": false}` from health endpoint                  | Server not fully initialized        | Wait a few seconds and retry                        |
-| Search returns no results                             | Documents not indexed yet           | Check document count: `GET /collections/:name`      |
-| Slow import performance                               | Importing one document at a time    | Use the bulk import endpoint with JSON lines         |
-| `413 Request Entity Too Large`                        | Document exceeds size limit         | Reduce document size or batch smaller chunks        |
+### Container won't start
+
+Check the logs for error messages:
+
+```bash
+docker compose logs
+```
+
+### Port conflict
+
+If the default port 8108 is already in use, change it in `.env` and restart:
+
+```bash
+# Edit .env and change to an available port
+docker compose down && docker compose up -d
+```
+
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
+```bash
+docker compose logs
+```
+
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
+```bash
+docker compose exec typesense ls -la /data 2>/dev/null || echo "Volume directory not accessible"
+```
+
+## Backup & Recovery
+
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
+```bash
+docker compose down
+docker run --rm -v typesense_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/typesense-backup-$(date +%Y%m%d).tar.gz -C /data .
+docker compose up -d
+```
+
+### Recovery
+
+```bash
+docker compose down
+docker run --rm -v typesense_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/typesense-backup-YYYYMMDD.tar.gz -C /data
+docker compose up -d
+```
+
+## Project Homepage
+
+- **Project site:** [TypeSense](https://github.com/typesense/typesense)
+- **Docker Image:** `typesense/typesense:latest`
+- **Issues:** [GitHub Issues](https://github.com/typesense/typesense/issues)
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

@@ -1,7 +1,7 @@
 {
   "id": "harness",
   "name": "Harness",
-  "description": "Open-source CI/CD and DevOps platform — automate builds, tests, deployments, and infrastructure provisioning from a single dashboard",
+  "description": "AI-native software delivery platform for CI/CD, feature flags, and chaos engineering",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

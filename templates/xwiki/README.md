@@ -1,105 +1,134 @@
 # Xwiki
 
-Self-hosted Xwiki deployment via Docker
+Enterprise wiki platform
 
-This template provides a containerized deployment of [Xwiki](xwiki) using Docker Compose.
+## Project Overview
 
-## Quick Start
-
-1. **Clone and configure:**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-2. **Start the service:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-3. **Verify it's running:**
-
-   ```bash
-   docker compose ps
-   curl -s http://localhost:80/ | head -c 200
-   ```
-
-4. **Access the application:**
-
-   Open [http://localhost:80](http://localhost:80) in your browser.
+[Xwiki](https://github.com/xwiki/xwiki-platform) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Xwiki in a containerized environment with persistent storage, health checks, and environment-based configuration.
 
 ## Architecture
 
-| Component | Image | Purpose |
-|-----------|-------|---------|
-| `xwiki` | docker.io/library/xwiki:latest | Main application service |
-| `xwiki_data` | (volume) | Persistent data storage |
+### Services
 
-Services communicate over a shared Docker network. Data is persisted in named volumes.
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `xwiki` | `docker.io/library/xwiki:latest` | Main application service |
 
-## Configuration
+### Volumes
 
-## Configuration
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `xwiki_data` | (varies) | Persistent data storage |
 
-Environment variables (set in `.env`):
+### Health Check
+
+The container runs a health check every 30s (3 retries, 30s start period). Docker will report the container as unhealthy if the endpoint fails consistently.
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
+
+## Quick Start
+
+### 1. Configure environment
+
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+### 2. Start the service
+
+```bash
+docker compose up -d
+```
+
+### 3. Verify it's running
+
+```bash
+docker compose ps
+curl -s http://localhost:80/ | head -c 200
+```
+
+### 4. Access the application
+
+Open [http://localhost:80](http://localhost:80) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `XWIKI_PORT` | `80` | Configuration variable |
+| `XWIKI_PORT` | `80` | Xwiki host port (default: 80) |
 
 
 ## Troubleshooting
 
-**Container won't start:**
+### Container won't start
+
+Check the logs for error messages:
+
 ```bash
-docker compose logs xwiki
+docker compose logs
 ```
 
-**Port conflict:**
-Edit `.env` and change `XWIKI_PORT` to an available port, then restart:
+### Port conflict
+
+If the default port 80 is already in use, change it in `.env` and restart:
+
 ```bash
+# Edit .env and change to an available port
 docker compose down && docker compose up -d
 ```
 
-**Permission errors:**
-Ensure the Docker user has write access to the data volume:
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
 ```bash
-docker compose exec xwiki ls -la /data
+docker compose logs
 ```
 
-**Health check failing:**
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
 ```bash
-docker compose ps  # Check STATUS column
-docker inspect xwiki --format='{{json .State.Health}}'
+docker compose exec xwiki ls -la /data 2>/dev/null || echo "Volume directory not accessible"
 ```
 
 ## Backup & Recovery
 
-**Backup:**
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
 ```bash
-# Stop the service
 docker compose down
-
-# Backup the data volume
-docker run --rm -v xwiki_data:/data -v $(pwd):/backup alpine tar czf /backup/xwiki-backup-$(date +%Y%m%d).tar.gz /data
-
-# Restart
+docker run --rm -v xwiki_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/xwiki-backup-$(date +%Y%m%d).tar.gz -C /data .
 docker compose up -d
 ```
 
-**Restore:**
+### Recovery
+
 ```bash
 docker compose down
-docker run --rm -v xwiki_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/xwiki-backup.tar.gz -C /"
+docker run --rm -v xwiki_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/xwiki-backup-YYYYMMDD.tar.gz -C /data
 docker compose up -d
 ```
 
-## Links
+## Project Homepage
 
+- **Project site:** [Xwiki](https://github.com/xwiki/xwiki-platform)
 - **Docker Image:** `docker.io/library/xwiki:latest`
-
+- **Issues:** [GitHub Issues](https://github.com/xwiki/xwiki-platform/issues)
 
 ## Prerequisites
 

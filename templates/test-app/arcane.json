@@ -1,7 +1,7 @@
 {
   "id": "test-app",
   "name": "Test Application",
-  "description": "A test template for verifying the build-registry script",
+  "description": "Test template for verifying the Arcane build-registry script",
   "version": "1.0.0",
   "author": "Test Author",
   "tags": [

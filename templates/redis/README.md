@@ -1,105 +1,134 @@
 # Redis
 
-In-memory data store used as a database, cache, message broker, and streaming engine for high-performance applications
+In-memory data store and cache
 
-This template provides a containerized deployment of [Redis](redis) using Docker Compose.
+## Project Overview
 
-## Quick Start
-
-1. **Clone and configure:**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-2. **Start the service:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-3. **Verify it's running:**
-
-   ```bash
-   docker compose ps
-   curl -s http://localhost:8080/ | head -c 200
-   ```
-
-4. **Access the application:**
-
-   Open [http://localhost:8080](http://localhost:8080) in your browser.
+[Redis](https://github.com/redis/redis) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Redis in a containerized environment with persistent storage, health checks, and environment-based configuration.
 
 ## Architecture
 
-| Component | Image | Purpose |
-|-----------|-------|---------|
-| `redis` | docker.io/redislabs/redis:latest | Main application service |
-| `redis_data` | (volume) | Persistent data storage |
+### Services
 
-Services communicate over a shared Docker network. Data is persisted in named volumes.
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `redis` | `docker.io/redislabs/redis:latest` | Caching layer |
 
-## Configuration
+### Volumes
 
-## Configuration
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `redis_data` | (varies) | Persistent data storage |
 
-Environment variables (set in `.env`):
+### Health Check
+
+The container runs a health check every 30s (3 retries, 10s start period). Docker will report the container as unhealthy if the endpoint fails consistently.
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
+
+## Quick Start
+
+### 1. Configure environment
+
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+### 2. Start the service
+
+```bash
+docker compose up -d
+```
+
+### 3. Verify it's running
+
+```bash
+docker compose ps
+curl -s http://localhost:8080/ | head -c 200
+```
+
+### 4. Access the application
+
+Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `REDIS_PORT` | `8080` | Configuration variable |
+| `REDIS_PORT` | `8080` | Redis host port (default: 8080) |
 
 
 ## Troubleshooting
 
-**Container won't start:**
+### Container won't start
+
+Check the logs for error messages:
+
 ```bash
-docker compose logs redis
+docker compose logs
 ```
 
-**Port conflict:**
-Edit `.env` and change `REDIS_PORT` to an available port, then restart:
+### Port conflict
+
+If the default port 8080 is already in use, change it in `.env` and restart:
+
 ```bash
+# Edit .env and change to an available port
 docker compose down && docker compose up -d
 ```
 
-**Permission errors:**
-Ensure the Docker user has write access to the data volume:
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
 ```bash
-docker compose exec redis ls -la /data
+docker compose logs
 ```
 
-**Health check failing:**
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
 ```bash
-docker compose ps  # Check STATUS column
-docker inspect redis --format='{{json .State.Health}}'
+docker compose exec redis ls -la /data 2>/dev/null || echo "Volume directory not accessible"
 ```
 
 ## Backup & Recovery
 
-**Backup:**
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
 ```bash
-# Stop the service
 docker compose down
-
-# Backup the data volume
-docker run --rm -v redis_data:/data -v $(pwd):/backup alpine tar czf /backup/redis-backup-$(date +%Y%m%d).tar.gz /data
-
-# Restart
+docker run --rm -v redis_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/redis-backup-$(date +%Y%m%d).tar.gz -C /data .
 docker compose up -d
 ```
 
-**Restore:**
+### Recovery
+
 ```bash
 docker compose down
-docker run --rm -v redis_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/redis-backup.tar.gz -C /"
+docker run --rm -v redis_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/redis-backup-YYYYMMDD.tar.gz -C /data
 docker compose up -d
 ```
 
-## Links
+## Project Homepage
 
+- **Project site:** [Redis](https://github.com/redis/redis)
 - **Docker Image:** `docker.io/redislabs/redis:latest`
-
+- **Issues:** [GitHub Issues](https://github.com/redis/redis/issues)
 
 ## Prerequisites
 

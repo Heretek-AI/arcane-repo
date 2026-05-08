@@ -1,7 +1,7 @@
 {
   "id": "grafana",
   "name": "Grafana",
-  "description": "Self-hosted Grafana deployment via Docker",
+  "description": "Open-source analytics and interactive visualization web application for infrastructure monitoring",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

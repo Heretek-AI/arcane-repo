@@ -1,7 +1,7 @@
 {
   "id": "wordpress",
   "name": "Wordpress",
-  "description": "Self-hosted Wordpress deployment via Docker",
+  "description": "World's most popular content management system — powers 40%+ of the web",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

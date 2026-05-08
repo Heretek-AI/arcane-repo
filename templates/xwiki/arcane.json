@@ -1,7 +1,7 @@
 {
   "id": "xwiki",
   "name": "Xwiki",
-  "description": "Self-hosted Xwiki deployment via Docker",
+  "description": "Advanced open-source enterprise wiki and collaboration platform",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

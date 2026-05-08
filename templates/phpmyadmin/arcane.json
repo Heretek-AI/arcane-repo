@@ -1,7 +1,7 @@
 {
   "id": "phpmyadmin",
   "name": "Phpmyadmin",
-  "description": "Self-hosted Phpmyadmin deployment via Docker",
+  "description": "Popular web-based MySQL and MariaDB database administration tool",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

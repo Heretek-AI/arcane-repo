@@ -1,7 +1,7 @@
 {
   "id": "docsgpt",
   "name": "DocsGPT",
-  "description": "Open-source documentation Q&A platform — index your docs, code, and knowledge base, then ask natural language questions with LLM-powered answers and citations",
+  "description": "AI-powered documentation assistant — chat with your documentation using LLMs",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

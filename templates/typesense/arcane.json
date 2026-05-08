@@ -1,7 +1,7 @@
 {
   "id": "typesense",
   "name": "TypeSense",
-  "description": "Open-source, typo-tolerant search engine — blazing fast full-text search with typo correction, faceted filtering, geosearch, and instant response times under 50ms",
+  "description": "Open-source, typo-tolerant search engine with instant results",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

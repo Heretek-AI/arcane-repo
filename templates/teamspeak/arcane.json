@@ -1,7 +1,7 @@
 {
   "id": "teamspeak",
   "name": "Teamspeak",
-  "description": "Self-hosted Teamspeak deployment via Docker",
+  "description": "Voice communication platform for gamers and communities",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "nextcloud",
   "name": "Nextcloud",
-  "description": "Self-hosted content collaboration platform with file sync, calendar, contacts, and extensive app ecosystem",
+  "description": "Self-hosted productivity platform — files, calendar, contacts, and collaboration",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

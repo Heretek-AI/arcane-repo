@@ -1,57 +1,137 @@
-# Harness — Open-Source CI/CD & DevOps Platform
+# Harness
 
-[Harness](https://www.harness.io/) is a modern CI/CD platform that automates the full software delivery pipeline — from code commit through build, test, deploy, and infrastructure provisioning. This is the self-hosted community edition.
+AI-native software delivery platform
 
-## Quick Start
+## Project Overview
 
-1. **Start the service:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-2. **Access the dashboard** at [http://localhost:3000](http://localhost:3000)
-
-3. **Log in** with the admin password from your `.env` file (default: `changeme`).
-
-4. **Enable Docker-in-Docker** by uncommenting the `/var/run/docker.sock` mount in `docker-compose.yml` — required for pipeline execution.
-
-## Configuration
-
-Copy `.env.example` to `.env` and edit:
-
-| Variable                | Default      | Description                                   |
-|-------------------------|--------------|-----------------------------------------------|
-| `HARNESS_WEB_PORT`      | `3000`       | Host port for the web dashboard               |
-| `HARNESS_SSH_PORT`      | `3022`       | Host port for SSH-based deployments           |
-| `HARNESS_MODE`          | `standalone` | Deployment mode (standalone or cluster)       |
-| `HARNESS_ADMIN_PASSWORD`| `changeme`   | Admin password — **change for production**    |
+[Harness](https://github.com/harness/harness) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Harness in a containerized environment with persistent storage, health checks, and environment-based configuration.
 
 ## Architecture
 
-- **harness**: Single Docker container running the complete Harness platform — manager, delegate, pipeline engine, and web UI. Self-contained; no external DB required for standalone mode. Optional Docker socket mount enables pipeline execution on the host.
+### Services
 
-## Features
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `harness` | `harness/harness:latest` | Main application service |
 
-- **Pipeline automation**: Visual pipeline builder with CI, CD, and custom workflow stages
-- **Git triggers**: Start pipelines automatically on push, PR, tag, or schedule
-- **Secret management**: Encrypted secrets scoped to projects and environments
-- **Approval gates**: Manual and automated approval steps within deployment pipelines
-- **Infrastructure as code**: Provision cloud resources directly from pipeline steps
+### Volumes
 
-## Docker Socket
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `harness_data` | (varies) | Persistent data storage |
 
-The Docker socket mount (`/var/run/docker.sock`) is required for:
-- Building Docker images inside pipelines
-- Running containers for test or build steps
-- Deploying to local Docker hosts
+### Networks
 
-It is **commented by default** — uncomment in `docker-compose.yml` when you need pipeline execution.
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
 
-## Health Check
+## Quick Start
+
+### 1. Configure environment
 
 ```bash
-curl http://localhost:3000/api/health
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
-Full documentation: [developer.harness.io](https://developer.harness.io/docs/self-managed-enterprise-edition)
+### 2. Start the service
+
+```bash
+docker compose up -d
+```
+
+### 3. Verify it's running
+
+```bash
+docker compose ps
+curl -s http://localhost:3000/ | head -c 200
+```
+
+### 4. Access the application
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `HARNESS_WEB_PORT` | `3000` | Host port for Harness web UI (default: 3000) |
+| `HARNESS_SSH_PORT` | `3022` | Host port for Harness SSH service (default: 3022) |
+| `HARNESS_MODE` | `standalone` | Deployment mode: standalone (single-node) or cluster (multi-node) |
+| `HARNESS_ADMIN_PASSWORD` | `changeme` | Admin password for the web dashboard (change this!) |
+
+
+## Troubleshooting
+
+### Container won't start
+
+Check the logs for error messages:
+
+```bash
+docker compose logs
+```
+
+### Port conflict
+
+If the default port 3000 is already in use, change it in `.env` and restart:
+
+```bash
+# Edit .env and change to an available port
+docker compose down && docker compose up -d
+```
+
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
+```bash
+docker compose logs
+```
+
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
+```bash
+docker compose exec harness ls -la /data 2>/dev/null || echo "Volume directory not accessible"
+```
+
+## Backup & Recovery
+
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
+```bash
+docker compose down
+docker run --rm -v harness_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/harness-backup-$(date +%Y%m%d).tar.gz -C /data .
+docker compose up -d
+```
+
+### Recovery
+
+```bash
+docker compose down
+docker run --rm -v harness_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/harness-backup-YYYYMMDD.tar.gz -C /data
+docker compose up -d
+```
+
+## Project Homepage
+
+- **Project site:** [Harness](https://github.com/harness/harness)
+- **Docker Image:** `harness/harness:latest`
+- **Issues:** [GitHub Issues](https://github.com/harness/harness/issues)
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

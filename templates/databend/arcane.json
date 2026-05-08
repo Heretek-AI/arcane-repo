@@ -1,7 +1,7 @@
 {
   "id": "databend",
   "name": "Databend",
-  "description": "Open-source cloud data warehouse — run SQL analytics on object storage with MySQL-compatible wire protocol, instant elasticity, and real-time columnar performance",
+  "description": "Cloud-native data warehouse with instant elasticity and real-time query capabilities",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

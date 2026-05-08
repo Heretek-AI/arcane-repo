@@ -1,7 +1,7 @@
 {
   "id": "matomo",
   "name": "Matomo",
-  "description": "Self-hosted Matomo deployment via Docker",
+  "description": "Open-source web analytics platform — a privacy-friendly alternative to Google Analytics",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "id": "prometheus",
   "name": "Prometheus",
-  "description": "Self-hosted Prometheus deployment via Docker",
+  "description": "Open-source systems monitoring and alerting toolkit with a dimensional data model",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

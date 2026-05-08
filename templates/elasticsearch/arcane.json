@@ -1,7 +1,7 @@
 {
   "id": "elasticsearch",
   "name": "Elasticsearch",
-  "description": "Self-hosted Elasticsearch deployment via Docker",
+  "description": "Distributed search and analytics engine for all types of data",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

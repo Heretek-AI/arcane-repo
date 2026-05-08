@@ -1,7 +1,7 @@
 {
   "id": "parseable",
   "name": "Parseable",
-  "description": "Cloud-native log observability engine — store, search, and analyze logs at scale with an S3-compatible backend",
+  "description": "Observability platform for log analytics and event data at scale",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

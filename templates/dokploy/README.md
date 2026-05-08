@@ -1,57 +1,136 @@
-# Dokploy — Open-Source Platform as a Service
+# Dokploy
 
-[Dokploy](https://dokploy.com/) is an open-source PaaS that lets you deploy and manage applications, databases, and services on your own infrastructure. Think Vercel or Railway, but running on your own servers.
+Self-hosted deployment platform
 
-## Quick Start
+## Project Overview
 
-1. **Start the service:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-2. **Access the dashboard** at [http://localhost:3000](http://localhost:3000)
-
-3. **Create your admin account** on first launch.
-
-4. **Enable Docker management** by uncommenting the `/var/run/docker.sock` mount in `docker-compose.yml` — required to manage containers from the dashboard.
-
-## Configuration
-
-Copy `.env.example` to `.env` and edit:
-
-| Variable              | Default      | Description                                   |
-|-----------------------|--------------|-----------------------------------------------|
-| `DOKPLOY_PORT`        | `3000`       | Host port for the web dashboard               |
-| `DOKPLOY_NODE_ENV`    | `production` | Node.js environment mode                     |
-| `DOKPLOY_SECRET_KEY`  | (empty)      | Session encryption secret — **required**      |
+[Dokploy](https://github.com/Dokploy/dokploy) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Dokploy in a containerized environment with persistent storage, health checks, and environment-based configuration.
 
 ## Architecture
 
-- **dokploy**: Single Node.js container running the complete Dokploy platform — API server, web dashboard, background task runner, and database (internal SQLite, no external DB needed). Self-contained. Optional Docker socket mount enables full container lifecycle management.
+### Services
 
-## Features
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `dokploy` | `dokploy/dokploy:latest` | Main application service |
 
-- **Application deployment**: Deploy from Git, Docker images, or Docker Compose files
-- **Database provisioning**: One-click PostgreSQL, MySQL, MongoDB, and Redis instances
-- **Automatic SSL**: Built-in Let's Encrypt integration for HTTPS
-- **Rolling updates**: Zero-downtime deploys with automatic rollback on failure
-- **Resource monitoring**: CPU, memory, and network metrics per application
-- **Team management**: Role-based access with project-level permissions
+### Volumes
 
-## Docker Socket
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `dokploy_data` | (varies) | Persistent data storage |
 
-The Docker socket mount (`/var/run/docker.sock`) is required for:
-- Creating and managing containers through the dashboard
-- Reading container logs and metrics
-- Starting, stopping, and restarting applications
+### Networks
 
-It is **commented by default** — uncomment in `docker-compose.yml` when you want full PaaS functionality.
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
 
-## Health Check
+## Quick Start
+
+### 1. Configure environment
 
 ```bash
-curl http://localhost:3000/api/health
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
-Full documentation: [dokploy.com/docs](https://dokploy.com/docs)
+### 2. Start the service
+
+```bash
+docker compose up -d
+```
+
+### 3. Verify it's running
+
+```bash
+docker compose ps
+curl -s http://localhost:3000/ | head -c 200
+```
+
+### 4. Access the application
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DOKPLOY_PORT` | `3000` | Host port for Dokploy web dashboard (default: 3000) |
+| `DOKPLOY_NODE_ENV` | `production` | Node.js environment mode: production, development |
+| `DOKPLOY_SECRET_KEY` | `—` | Secret key for session encryption (generate a random string) |
+
+
+## Troubleshooting
+
+### Container won't start
+
+Check the logs for error messages:
+
+```bash
+docker compose logs
+```
+
+### Port conflict
+
+If the default port 3000 is already in use, change it in `.env` and restart:
+
+```bash
+# Edit .env and change to an available port
+docker compose down && docker compose up -d
+```
+
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
+```bash
+docker compose logs
+```
+
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
+```bash
+docker compose exec dokploy ls -la /data 2>/dev/null || echo "Volume directory not accessible"
+```
+
+## Backup & Recovery
+
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
+```bash
+docker compose down
+docker run --rm -v dokploy_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/dokploy-backup-$(date +%Y%m%d).tar.gz -C /data .
+docker compose up -d
+```
+
+### Recovery
+
+```bash
+docker compose down
+docker run --rm -v dokploy_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/dokploy-backup-YYYYMMDD.tar.gz -C /data
+docker compose up -d
+```
+
+## Project Homepage
+
+- **Project site:** [Dokploy](https://github.com/Dokploy/dokploy)
+- **Docker Image:** `dokploy/dokploy:latest`
+- **Issues:** [GitHub Issues](https://github.com/Dokploy/dokploy/issues)
+
+## Prerequisites
+
+- Docker Engine 20.10+
+- Docker Compose v2.0+
+- 512MB+ RAM recommended
+- 1GB+ free disk space for data storage

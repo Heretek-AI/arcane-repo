@@ -1,105 +1,134 @@
 # Elasticsearch
 
-Self-hosted Elasticsearch deployment via Docker
+Distributed search and analytics engine
 
-This template provides a containerized deployment of [Elasticsearch](elasticsearch) using Docker Compose.
+## Project Overview
 
-## Quick Start
-
-1. **Clone and configure:**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-2. **Start the service:**
-
-   ```bash
-   docker compose up -d
-   ```
-
-3. **Verify it's running:**
-
-   ```bash
-   docker compose ps
-   curl -s http://localhost:9200/ | head -c 200
-   ```
-
-4. **Access the application:**
-
-   Open [http://localhost:9200](http://localhost:9200) in your browser.
+[Elasticsearch](https://github.com/elastic/elasticsearch) is a self-hosted deployment packaged as a Docker Compose template. This template provides everything needed to run Elasticsearch in a containerized environment with persistent storage, health checks, and environment-based configuration.
 
 ## Architecture
 
-| Component | Image | Purpose |
-|-----------|-------|---------|
-| `elasticsearch` | docker.io/bitnamicharts/elasticsearch:latest | Main application service |
-| `elasticsearch_data` | (volume) | Persistent data storage |
+### Services
 
-Services communicate over a shared Docker network. Data is persisted in named volumes.
+| Service | Image | Purpose |
+|---------|-------|---------|
+| `elasticsearch` | `docker.io/bitnamicharts/elasticsearch:latest` | Main application service |
 
-## Configuration
+### Volumes
 
-## Configuration
+| Volume | Mount | Purpose |
+|--------|-------|---------|
+| `elasticsearch_data` | (varies) | Persistent data storage |
 
-Environment variables (set in `.env`):
+### Health Check
+
+The container runs a health check every 30s (3 retries, 30s start period). Docker will report the container as unhealthy if the endpoint fails consistently.
+
+### Networks
+
+Uses the default Docker bridge network. If you need to connect to other services (databases, APIs, reverse proxy), attach it to a shared Docker network.
+
+## Quick Start
+
+### 1. Configure environment
+
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+### 2. Start the service
+
+```bash
+docker compose up -d
+```
+
+### 3. Verify it's running
+
+```bash
+docker compose ps
+curl -s http://localhost:9200/ | head -c 200
+```
+
+### 4. Access the application
+
+Open [http://localhost:9200](http://localhost:9200) in your browser.
+
+## Configuration Reference
+
+### Environment Variables
+
+Set these in your `.env` file (copy from `.env.example`):
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `ELASTICSEARCH_PORT` | `9200` | Configuration variable |
+| `ELASTICSEARCH_PORT` | `9200` | Elasticsearch host port (default: 9200) |
 
 
 ## Troubleshooting
 
-**Container won't start:**
+### Container won't start
+
+Check the logs for error messages:
+
 ```bash
-docker compose logs elasticsearch
+docker compose logs
 ```
 
-**Port conflict:**
-Edit `.env` and change `ELASTICSEARCH_PORT` to an available port, then restart:
+### Port conflict
+
+If the default port 9200 is already in use, change it in `.env` and restart:
+
 ```bash
+# Edit .env and change to an available port
 docker compose down && docker compose up -d
 ```
 
-**Permission errors:**
-Ensure the Docker user has write access to the data volume:
+### Health check shows unhealthy
+
+The container may need more time to start on first run or low-resource hosts. Check the logs:
+
 ```bash
-docker compose exec elasticsearch ls -la /data
+docker compose logs
 ```
 
-**Health check failing:**
+If needed, increase `start_period` in `docker-compose.yml`.
+
+### Permission errors
+
+Ensure the Docker user has write access to the data volume:
+
 ```bash
-docker compose ps  # Check STATUS column
-docker inspect elasticsearch --format='{{json .State.Health}}'
+docker compose exec elasticsearch ls -la /data 2>/dev/null || echo "Volume directory not accessible"
 ```
 
 ## Backup & Recovery
 
-**Backup:**
+### Backup
+
+Stop the service to ensure data consistency, then back up the data volume:
+
 ```bash
-# Stop the service
 docker compose down
-
-# Backup the data volume
-docker run --rm -v elasticsearch_data:/data -v $(pwd):/backup alpine tar czf /backup/elasticsearch-backup-$(date +%Y%m%d).tar.gz /data
-
-# Restart
+docker run --rm -v elasticsearch_data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/elasticsearch-backup-$(date +%Y%m%d).tar.gz -C /data .
 docker compose up -d
 ```
 
-**Restore:**
+### Recovery
+
 ```bash
 docker compose down
-docker run --rm -v elasticsearch_data:/data -v $(pwd):/backup alpine sh -c "rm -rf /data/* && tar xzf /backup/elasticsearch-backup.tar.gz -C /"
+docker run --rm -v elasticsearch_data:/data -v $(pwd):/backup alpine \
+  tar xzf /backup/elasticsearch-backup-YYYYMMDD.tar.gz -C /data
 docker compose up -d
 ```
 
-## Links
+## Project Homepage
 
+- **Project site:** [Elasticsearch](https://github.com/elastic/elasticsearch)
 - **Docker Image:** `docker.io/bitnamicharts/elasticsearch:latest`
-
+- **Issues:** [GitHub Issues](https://github.com/elastic/elasticsearch/issues)
 
 ## Prerequisites
 

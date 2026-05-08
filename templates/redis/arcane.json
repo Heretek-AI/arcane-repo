@@ -1,7 +1,7 @@
 {
   "id": "redis",
   "name": "Redis",
-  "description": "In-memory data store used as a database, cache, message broker, and streaming engine for high-performance applications",
+  "description": "In-memory data structure store — database, cache, and message broker",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

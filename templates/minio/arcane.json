@@ -1,7 +1,7 @@
 {
   "id": "minio",
   "name": "Minio",
-  "description": "Self-hosted Minio deployment via Docker",
+  "description": "High-performance, S3-compatible object storage for AI and data workloads",
   "version": "1.0.0",
   "author": "Arcane",
   "tags": [

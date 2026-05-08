@@ -9,5 +9,5 @@ services:
       - "${LANGFLOW_PORT:-7860}:7860"
     restart: unless-stopped
     environment:
-      - LANGLOW_PORT=${LANGLOW_PORT:-7860}
+      - LANGFLOW_PORT=${LANGFLOW_PORT:-7860}
 

@@ -8,18 +8,27 @@ services:
     ports:
       - "${LITELLM_PORT:-4000}:4000"
     volumes:
-      - ./config.yaml:/app/config.yaml:ro
       - litellm_data:/app/data
     restart: unless-stopped
     environment:
-      - LITELLM_MASTER_KEY=${LITELLM_MASTER_KEY:-sk-liteLLM-master-key}
-      - LITELLM_SALT_KEY=${LITELLM_SALT_KEY:-sk-liteLLM-salt-key}
+      # ── Required ──────────────────────────────────────────────────────────
+      - LITELLM_MASTER_KEY=${LITELLM_MASTER_KEY:-sk-liteLLM-master-key-change-me}
+      - LITELLM_SALT_KEY=${LITELLM_SALT_KEY:-sk-liteLLM-salt-key-change-me}
+      # ── Database (optional — SQLite used if unset) ───────────────────────
       - DATABASE_URL=${DATABASE_URL:-}
+      # ── Provider API Keys (set at least one) ────────────────────────────
       - OPENAI_API_KEY=${OPENAI_API_KEY:-}
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
       - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - AZURE_OPENAI_API_KEY=${AZURE_OPENAI_API_KEY:-}
+      - AZURE_OPENAI_API_BASE=${AZURE_OPENAI_API_BASE:-}
       - COHERE_API_KEY=${COHERE_API_KEY:-}
       - TOGETHERAI_API_KEY=${TOGETHERAI_API_KEY:-}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-}
+      # ── Proxy Settings ───────────────────────────────────────────────────
+      - LITELLM_DROP_PARAMS=${LITELLM_DROP_PARAMS:-false}
+      - LITELLM_MAX_PARALLEL_REQUESTS=${LITELLM_MAX_PARALLEL_REQUESTS:-}
+      - LITELLM_REQUEST_TIMEOUT=${LITELLM_REQUEST_TIMEOUT:-60}
 
 volumes:
   litellm_data:

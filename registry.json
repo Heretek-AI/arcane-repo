@@ -1,5 +1,5 @@
 {
-  "$schema": "https://registry.getarcane.app/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/schema.json",
   "name": "Heretek AI Arcane Templates",
   "description": "Arcane Docker Compose templates",
   "author": "Heretek-AI",

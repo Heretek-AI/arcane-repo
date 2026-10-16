@@ -1,0 +1,27 @@
+{
+  "$schema": "https://registry.getarcane.app/schema.json",
+  "name": "Heretek AI Arcane Templates",
+  "description": "Arcane Docker Compose templates",
+  "author": "Heretek-AI",
+  "url": "https://github.com/Heretek-AI/arcane-repo",
+  "version": "1.1.0",
+  "templates": [
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "description": "Self-hosted web scraping API for AI agents: scrape, crawl, map, and extract structured data.",
+      "version": "1.0.0",
+      "author": "Heretek-AI",
+      "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/firecrawl/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/firecrawl/.env.example",
+      "documentation_url": "https://github.com/Heretek-AI/arcane-repo/tree/main/templates/firecrawl",
+      "content_hash": "567c8f5dbb8e21cc06f57b3f3058447269b60a3dc92d8cd7855b45a2691a3b49",
+      "tags": [
+        "ai",
+        "automation",
+        "search"
+      ],
+      "icon_url": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/firecrawl.svg"
+    }
+  ]
+}

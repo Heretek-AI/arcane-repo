@@ -1,0 +1,64 @@
+name: Publish Registry
+
+# Regenerates registry.json from templates/ and commits it back to main,
+# mirroring how https://registry.getarcane.app/registry.json is published.
+# Template files are served straight from this repo via raw.githubusercontent.com
+# (see PUBLIC_BASE below), so no extra hosting is needed.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish.yml"
+      - "schema.json"
+      - "scripts/**"
+      - "tags.json"
+      - "templates/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-registry
+  cancel-in-progress: false
+
+env:
+  PUBLIC_BASE: https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates
+  DOCS_BASE: https://github.com/Heretek-AI/arcane-repo/tree/main/templates
+  REGISTRY_URL: https://github.com/Heretek-AI/arcane-repo
+  SCHEMA_URL: https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/schema.json
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema
+
+      - name: Lint templates and validate registry
+        run: python3 scripts/build_registry.py validate
+
+      - name: Generate registry.json
+        run: python3 scripts/build_registry.py generate
+
+      - name: Commit registry.json when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add registry.json
+          if git diff --cached --quiet; then
+            echo "registry.json is already up to date"
+          else
+            git commit -m "chore: regenerate registry.json"
+            git push
+          fi

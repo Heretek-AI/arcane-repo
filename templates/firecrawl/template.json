@@ -1,0 +1,7 @@
+{
+  "name": "Firecrawl",
+  "description": "Self-hosted web scraping API for AI agents: scrape, crawl, map, and extract structured data.",
+  "author": "Heretek-AI",
+  "icon_url": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/firecrawl.svg",
+  "tags": ["ai", "automation", "search"]
+}

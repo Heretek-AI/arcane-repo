@@ -1,0 +1,11 @@
+# Local reference material (upstream sources, not part of the registry).
+review/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editors
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,36 @@
+name: Validate Templates
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/validate.yml"
+      - "schema.json"
+      - "scripts/**"
+      - "tags.json"
+      - "templates/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema
+
+      - name: Lint templates and validate registry
+        run: python3 scripts/build_registry.py validate

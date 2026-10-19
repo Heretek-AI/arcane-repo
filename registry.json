@@ -4,8 +4,25 @@
   "description": "Arcane Docker Compose templates",
   "author": "Heretek-AI",
   "url": "https://github.com/Heretek-AI/arcane-repo",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "templates": [
+    {
+      "id": "crawl4ai",
+      "name": "Crawl4AI",
+      "description": "Open-source web crawler for LLMs and AI agents: scrape pages to markdown and run structured extraction over REST and MCP.",
+      "version": "1.0.0",
+      "author": "Heretek-AI",
+      "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/crawl4ai/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/crawl4ai/.env.example",
+      "documentation_url": "https://github.com/Heretek-AI/arcane-repo/tree/main/templates/crawl4ai",
+      "content_hash": "5050a13dd0aa5da150633e661e7045cd255df4a45aaa67af4a39fe8866a98b49",
+      "tags": [
+        "ai",
+        "automation",
+        "search"
+      ],
+      "icon_url": "https://crawl4ai.com/favicon.ico"
+    },
     {
       "id": "firecrawl",
       "name": "Firecrawl",

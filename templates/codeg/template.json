@@ -1,0 +1,7 @@
+{
+  "name": "Codeg",
+  "description": "Multi-agent coding workspace: run Claude Code, Codex, Gemini CLI and more from one self-hosted web UI.",
+  "author": "Heretek-AI",
+  "icon_url": "https://raw.githubusercontent.com/spacering-net/codeg/main/public/icon.svg",
+  "tags": ["ai", "development"]
+}

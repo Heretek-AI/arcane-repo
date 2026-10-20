@@ -1,0 +1,37 @@
+name: codeg
+
+x-arcane:
+  icon: https://raw.githubusercontent.com/spacering-net/codeg/main/public/icon.svg
+  urls:
+    - https://github.com/spacering-net/codeg
+    - https://docs.codeg.app
+    - https://docs.codeg.app/getting-started/deployment
+
+services:
+  codeg:
+    image: ghcr.io/spacering-net/codeg:latest
+    restart: unless-stopped
+    environment:
+      CODEG_PORT: "3080"
+      CODEG_HOST: "0.0.0.0"
+      CODEG_DATA_DIR: /data
+      CODEG_STATIC_DIR: /app/web
+      SHELL: /bin/bash
+      CODEG_TOKEN: ${CODEG_TOKEN}
+      CODEG_BRIDGE_PORTS: ${CODEG_BRIDGE_PORTS:-3081-3090}
+      CODEG_BRIDGE_HOST_PATTERN: ${CODEG_BRIDGE_HOST_PATTERN:-}
+      CODEG_BRIDGE_PUBLIC_HOST: ${CODEG_BRIDGE_PUBLIC_HOST:-}
+      CODEG_ACP_FS_POLICY: ${CODEG_ACP_FS_POLICY:-}
+      CODEG_ACP_FS_EXTRA_ROOTS: ${CODEG_ACP_FS_EXTRA_ROOTS:-}
+    ports:
+      - "${PORT:-3080}:3080"
+      - "3081-3090:3081-3090"
+    volumes:
+      - codeg-data:/data
+      # Mount your project directories so agents can work on real code (optional):
+      # - /path/to/projects:/projects
+    labels:
+      com.getarcaneapp.arcane.icon: https://raw.githubusercontent.com/spacering-net/codeg/main/public/icon.svg
+
+volumes:
+  codeg-data:

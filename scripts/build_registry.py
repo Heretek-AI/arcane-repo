@@ -77,6 +77,7 @@ STATEFUL_IMAGE_RES = (
     "cassandra",
     "couchdb",
     "neo4j",
+    "qdrant",
     "minio",
     "nats",
     "kafka",

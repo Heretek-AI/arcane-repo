@@ -4,7 +4,7 @@
   "description": "Arcane Docker Compose templates",
   "author": "Heretek-AI",
   "url": "https://github.com/Heretek-AI/arcane-repo",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "templates": [
     {
       "id": "codeg",
@@ -55,6 +55,22 @@
         "search"
       ],
       "icon_url": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/firecrawl.svg"
+    },
+    {
+      "id": "memos",
+      "name": "MemOS",
+      "description": "Self-evolving memory operating system for LLMs and AI agents with Neo4j graph and Qdrant vector memory.",
+      "version": "1.0.0",
+      "author": "Heretek-AI",
+      "compose_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/memos/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/templates/memos/.env.example",
+      "documentation_url": "https://github.com/Heretek-AI/arcane-repo/tree/main/templates/memos",
+      "content_hash": "a6b835d6b2b9acd478adac62b0907cf7aa7361a94cccde1a8fac23a116f18088",
+      "tags": [
+        "ai",
+        "development"
+      ],
+      "icon_url": "https://github.com/MemTensor.png"
     }
   ]
 }

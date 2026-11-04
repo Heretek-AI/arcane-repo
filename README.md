@@ -11,7 +11,10 @@ https://raw.githubusercontent.com/Heretek-AI/arcane-repo/main/registry.json
 
 | Template | Description |
 | -------- | ----------- |
+| [codeg](templates/codeg) | Multi-agent coding workspace (Claude Code, Codex, Gemini CLI) |
+| [crawl4ai](templates/crawl4ai) | Open-source LLM-friendly web crawler & scraper |
 | [firecrawl](templates/firecrawl) | Self-hosted web scraping API for AI agents |
+| [memos](templates/memos) | Self-evolving memory OS for LLMs & AI agents |
 
 ## Adding a template
 

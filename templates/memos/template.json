@@ -1,0 +1,7 @@
+{
+  "name": "MemOS",
+  "description": "Self-evolving memory operating system for LLMs and AI agents with Neo4j graph and Qdrant vector memory.",
+  "author": "Heretek-AI",
+  "icon_url": "https://github.com/MemTensor.png",
+  "tags": ["ai", "development"]
+}

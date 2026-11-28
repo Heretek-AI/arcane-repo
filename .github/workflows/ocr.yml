@@ -4,7 +4,7 @@ concurrency:
   group: >-
     ${{
       (
-        github.event_name == 'pull_request_target'
+        github.event_name == 'pull_request'
         || (
           github.event_name == 'issue_comment'
           && github.event.issue.pull_request
@@ -26,7 +26,7 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
   issue_comment:
     types: [created]
@@ -37,5 +37,7 @@ permissions:
 
 jobs:
   review:
-    uses: Heretek-AI/.github/.github/workflows/ocr-review.yml@c18a8f547aed325acf7d49bff1f8457e042d22ca # main
-    secrets: inherit
+    uses: Heretek-AI/.github/.github/workflows/ocr-review.yml@ac505182b7c2b7a4cefc7ac3dccbb18fcc4f7a38 # main
+    secrets:
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      OCR_LLM_TOKEN: ${{ secrets.OCR_LLM_TOKEN }}

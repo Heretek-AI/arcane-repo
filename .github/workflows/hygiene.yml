@@ -1,0 +1,15 @@
+name: Hygiene
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  hygiene:
+    uses: Heretek-AI/.github/.github/workflows/hygiene.yml@ac505182b7c2b7a4cefc7ac3dccbb18fcc4f7a38 # main
+    with:
+      audit_workflows: true
